@@ -1,0 +1,17 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Rebecca Jennifer"
+  navbar:
+    left:
+      - text: "Home"
+        href: index.qmd
+      - text: "Education"
+        href: how-to-learn.qmd
+      - text: "ColorClock"
+        href: index.qmd
+      - text: "Contact"
+        href: index.qmd
+
