@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>how-to-learn – Rebecca Jennifer</title>
+<title>Computer Systems and Assembly Language – Rebecca Jennifer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,24 +23,24 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="site_libs/quarto-html/anchor.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap-efbb0f2b46fb480e22bac773f8c50dab.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="https://cdn.jsdelivr.net/npm/jquery@3.5.1/dist/jquery.min.js" integrity="sha384-ZvpUoO/+PpLXR1lu4jmpXWu80pZlYUAfxl5NsBMWOEPSjUn/6Z/hRTt8+pR6L4N2" crossorigin="anonymous"></script><script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -68,9 +68,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
+
+<script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
 
-<link rel="stylesheet" href="flux-bunny.css">
+<link rel="stylesheet" href="../flux-bunny.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -80,9 +83,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="./index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Rebecca Jennifer</span>
     </a>
   </div>
@@ -91,21 +94,32 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link active" href="./how-to-learn.html" aria-current="page"> 
-<span class="menu-text">Education</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-education" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Education</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-education">    
+        <li>
+    <a class="dropdown-item" href="../education/comp-org.html">
+ <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="../education/how-to-learn.html">
+ <span class="dropdown-text">How to Learn</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../color-clock.html"> 
 <span class="menu-text">ColorClock</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -121,44 +135,115 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Computer Systems and Assembly Language</h1>
+</div>
 
 
 
+<div class="quarto-title-meta">
 
-<section id="how-to-learn" class="level1">
-<h1>How To Learn</h1>
-<p>Show up. Do the things. Be consistent.</p>
-<section id="show-up" class="level2">
-<h2 class="anchored" data-anchor-id="show-up">Show Up</h2>
-<p>A large part of making progress is just showing up – even if you don’t feel like it.</p>
-<p>In the case of academics, to increase the probability that you might learn something from lecture, come to class prepared. Bring:</p>
-<ul>
-<li>Paper</li>
-<li>A writing utensil</li>
-<li>A notebook</li>
-<li>Colored pens or highlighters</li>
-</ul>
-<p>Be present in class; eliminate distractions by stashing your electronics.</p>
-</section>
-<section id="do-the-things" class="level2">
-<h2 class="anchored" data-anchor-id="do-the-things">Do The Things</h2>
-<p>Just “do the things,” i.e.&nbsp;practice with intention.</p>
-<p>My number #1 tip: Find a study group. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered.</p>
-<p>Review your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture.</p>
-<p>Repetition is key to understanding. Spending time to strengthen your knowledge foundation will serve you in completing the lab assignments.</p>
-<p>Start assignments early. You will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting labs early enables you to catch these issues early on so you are not panicked at 11 pm on the due date.</p>
-<p>Make up your own examples. Rewrite the homework with different numbers. Solve this new version of the homework.</p>
-<p>If you feel that you’ve been “doing the things” and you are still stuck, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others to get their feedback and form a new plan.</p>
-</section>
-<section id="be-consistent" class="level2">
-<h2 class="anchored" data-anchor-id="be-consistent">Be Consistent</h2>
-<p>The key to progression in any context is consistency. We can’t expect to learn a new subject or skill if we don’t work it into our weekly schedule. So, just show up and do the things. Consistently.</p>
+    
+  
+    
+  </div>
+  
+
+
+</header>
+
+
+<p>This page serves as the course website for Computer Systems and Assembly Language.</p>
 <hr>
-<p>“We can determine how to be masters of our habits so that our habits may be useful servants to us.”</p>
+<section id="worksheets" class="level2">
+<h2 class="anchored" data-anchor-id="worksheets">Worksheets</h2>
+<p>I teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.</p>
+<p>These worksheets allows students to handwrite notes and follow along in class, without getting overwhelmed with feeling like they need to write everything. I include examples for students to work out both during lecture with their classmates, and outside of class.</p>
+<div id="2683581f" class="cell" data-execution_count="1">
+<div class="cell-output cell-output-display">
 
+<details><summary><strong>Notes  0: Intro To Computing Systems</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/1fPTFiTZXDPQUzYn2miww7W_TBVUmKdPxsUDLVlnlVkY/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>history of computing, computing levels of abstraction</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="https://www.youtube.com/watch?v=d1pvc9Zh7Tg&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R">who invented the computer?</a></p>
+  <br>
+</details>
 
+<details><summary><strong>Notes  1: Integer Numbering Systems</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/1kvzlGUqJ5IVvs863-Thrl_0iFYKP6HWctyPdlnSxolA/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>unary, grouping, positional, decimal, octal, hexadecimal, binary</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="https://betterexplained.com/articles/numbers-and-bases/">Number Systems and Bases: Better Explained</a></p> <a href="https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/number-systems-introduction">Introduction to number systems and binary: Khan Academy</a><p></p> <a href="http://www.cleavebooks.co.uk/scol/calnumba.htm">The Number Base Calculator: Cleave Books</a><p></p>
+  <br>
+</details>
+
+<details><summary><strong>Notes 2a: Combinational Logic 1</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/13ej2h2ShRISkXNLjBpBXqjTulfWLduqRunDzogxeV5U/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="https://youtu.be/_SwY-WfWTQo?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;t=786">CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)</a></p>
+  <br>
+</details>
+
+<details><summary><strong>Notes 2b: Combinational Logic 2</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/1os_NDBybj-U4lpMppG6Scfyo-fkgZNdNs4ktxt-pSd4/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="https://www.youtube.com/watch?v=d-amzrRVhfE&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=10">Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures</a></p> <a href="https://www.youtube.com/watch?v=8nEPfx2_uGY&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=26">SOP and POS: Peter Mathys</a><p></p>
+  <br>
+</details>
+
+<details><summary><strong>Notes 2c: Combinational Logic 3</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/16UiRg7d-cPHNblD39rClBkAHcE9duKxdpO069fMucKo/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU</p>
+  
+  <br>
+</details>
+
+<details><summary><strong>Notes  3: Boolean Algebra</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/1SxFqLJwsOVqsR0jmjLnuVdjkjfHjMjiFTCfNGT1R0yk/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>Boolean identities, De Morgan's Law</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="https://electronics-course.com/boolean-algebra">Boolean Algebra: electronics-course.com</a></p> <a href="https://www.youtube.com/watch?v=VhU0Nah-NUc&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=20">Boolean Algebra Example: Peter Mathys</a><p></p> <a href="https://www.youtube.com/watch?v=fz4stq2jQTQ&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=16&amp;t=0s">NAND/NOR Only Example: Peter Mathys</a><p></p>
+  <br>
+</details>
+
+<details><summary><strong>Notes  4: Sequential Logic</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/1jCjqp91cu7EGFc4wIt5kTKMEKL2UGNL0MBPBEJVgmJM/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>SR latch, active high, active low, D latch, D flip-flop</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="https://www.youtube.com/watch?v=7Gf7N424v3k&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=56">Timing Diagrams: EngMicroLectures</a></p> <a href="https://www.youtube.com/watch?v=CUfZladDqq8&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=21">SR Latches, D Latches, and D Flip-flops: EngMicroLectures</a><p></p> <a href="https://www.youtube.com/watch?v=KM0DdEaY5sY&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=43&amp;t=0s">SR Latch: Ben Eater</a><p></p> <a href="https://www.youtube.com/watch?v=kt8d3CYWGH4&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=23&amp;t=0s">SR Latch | NOR and NAND SR Latch: Neso Academy</a><p></p> <a href="https://www.youtube.com/watch?v=OfxYoQn7uJ4&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=22&amp;t=0s">Registers, Flip-flops, and Modular Design: EngMicroLectures</a><p></p>
+  <br>
+</details>
+
+<details><summary><strong>Notes  5: Signed Integer Representation</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/143qds1MCfpPgRptP9A1u9eGqQYaqzC764fSWuxQicZ0/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="youtube.com/watch?v=4qH4unVtJkE&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=28">Two's Complement: Negative Numbers in Binary: Ben Eater</a></p> <a href="https://www.youtube.com/watch?v=T8EAMYPYG28&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=30">Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato</a><p></p>
+  <br>
+</details>
+
+<details><summary><strong>Notes  6: Arithmetic and Logic Operations</strong></summary>
+  <br>
+  <p><a href="https://docs.google.com/document/d/1YbZT9WkQChuxxNOaQgxiQbxoD0Kv_ibijjsxvufAoE8/edit?usp=sharing"><strong>WORKSHEET</strong></a></p>
+  <p>carry out, overflow, bitwise, reduction, shifts, rotate</p>
+  <p><strong>SUPPLEMENTS</strong><br> <a href="https://www.youtube.com/watch?v=rnQwucEfT6A&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=29">Two's Complement Representation and Overflow: EngMicroLectures</a></p>
+  <br>
+</details>
+</div>
+</div>
 </section>
+<section id="admin" class="level2">
+<h2 class="anchored" data-anchor-id="admin">Admin</h2>
+<p>test</p>
+
+
 </section>
 
 </main> <!-- /main -->
@@ -235,7 +320,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/rebeccajennifer\.github\.io\/website\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

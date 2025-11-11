@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Welcome – Rebecca Jennifer</title>
+<title>Rebecca Jennifer</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -70,6 +70,7 @@ ul.task-list li input[type="checkbox"] {
 }</script>
 
 
+<link rel="stylesheet" href="flux-bunny.css">
 </head>
 
 <body class="nav-fixed fullcontent quarto-light">
@@ -90,17 +91,28 @@ ul.task-list li input[type="checkbox"] {
   <span class="navbar-toggler-icon"></span>
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
+            <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
     <a class="nav-link active" href="./index.html" aria-current="page"> 
 <span class="menu-text">Home</span></a>
   </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="./how-to-learn.html"> 
-<span class="menu-text">Education</span></a>
+  <li class="nav-item dropdown ">
+    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-education" role="link" data-bs-toggle="dropdown" aria-expanded="false">
+ <span class="menu-text">Education</span>
+    </a>
+    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-education">    
+        <li>
+    <a class="dropdown-item" href="./education/comp-org.html">
+ <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
+        <li>
+    <a class="dropdown-item" href="./education/how-to-learn.html">
+ <span class="dropdown-text">How to Learn</span></a>
+  </li>  
+    </ul>
+  </li>
   <li class="nav-item">
-    <a class="nav-link" href="./index.html"> 
+    <a class="nav-link" href="./color-clock.html"> 
 <span class="menu-text">ColorClock</span></a>
   </li>  
   <li class="nav-item">
@@ -120,32 +132,24 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Welcome</h1>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<section id="hello" class="level1">
-<h1>Hello!</h1>
-<p>This is my minimal Quarto website.</p>
+<section id="salutations" class="level1">
+<h1>Salutations!</h1>
+<p>My name is Rebecca.</p>
+<section id="who-i-am" class="level2">
+<h2 class="anchored" data-anchor-id="who-i-am">Who I Am</h2>
+<p>I am an engineer and movement coach, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰</p>
+</section>
+<section id="what-i-care-about" class="level2">
+<h2 class="anchored" data-anchor-id="what-i-care-about">What I Care about</h2>
+<p><a href="./education/comp-org.html">Engineering</a> <a href="https://flyingrabbitmovement.com">Movement</a> <a href="education">Education</a> <a href="./color-clock.html">Creativity</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -222,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/rebeccajennifer\.github\.io\/website\/");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
