@@ -5,13 +5,22 @@ project:
 website:
   title: "Rebecca Jennifer"
   navbar:
-    left:
+    right:
       - text: "Home"
         href: index.qmd
       - text: "Education"
-        href: how-to-learn.qmd
+        menu:
+          - text: "Computer Systems and Assembly Course"
+            href: education/comp-org.qmd
+          - text: "How to Learn"
+            href: education/how-to-learn.qmd
       - text: "ColorClock"
-        href: index.qmd
+        href: color-clock.qmd
       - text: "Contact"
         href: index.qmd
 
+format:
+  html:
+    theme: default
+    css: flux-bunny.css
+    code-fold: true

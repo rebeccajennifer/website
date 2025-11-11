@@ -1,0 +1,265 @@
+---
+title: Computer Systems and Assembly Language
+format: html
+---
+
+This page serves as the course website for Computer Systems and Assembly
+Language.
+
+---
+
+## Worksheets
+
+I teach Computer Systems and Assembly language using fill-in-the-blank
+worksheets that I’ve designed. Students who manually write out notes
+are more likely to retain information presented in class over students
+who type notes.
+
+These worksheets allows students to handwrite notes and follow along in
+class, without getting overwhelmed with feeling like they need to write
+everything. I include examples for students to work out both during
+lecture with their classmates, and outside of class.
+
+
+```{python}
+#| echo: false
+from IPython.display import display, HTML
+
+rows: list =\
+  [ { 'heading'   : 'Notes  0: Intro To Computing Systems'
+    , 'desc'      : 'history of computing, computing levels of abstraction'
+    , 'worksheet' : 'https://docs.google.com/document/d/1fPTFiTZXDPQUzYn2miww7W_TBVUmKdPxsUDLVlnlVkY/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'who invented the computer?'
+        , 'link'  : 'https://www.youtube.com/watch?v=d1pvc9Zh7Tg&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  1: Integer Numbering Systems'
+    , 'desc'      : 'unary, grouping, positional, decimal, octal, hexadecimal, binary'
+    , 'worksheet' : 'https://docs.google.com/document/d/1kvzlGUqJ5IVvs863-Thrl_0iFYKP6HWctyPdlnSxolA/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'Number Systems and Bases: Better Explained'
+        , 'link'  : 'https://betterexplained.com/articles/numbers-and-bases/'
+        }
+      , { 'desc'  : 'Introduction to number systems and binary: Khan Academy'
+        , 'link'  : 'https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/number-systems-introduction'
+        }
+      , { 'desc'  : 'The Number Base Calculator: Cleave Books'
+        , 'link'  : 'http://www.cleavebooks.co.uk/scol/calnumba.htm'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes 2a: Combinational Logic 1'
+    , 'desc'      : 'MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams'
+    , 'worksheet' : 'https://docs.google.com/document/d/13ej2h2ShRISkXNLjBpBXqjTulfWLduqRunDzogxeV5U/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)'
+        , 'link'  : 'https://youtu.be/_SwY-WfWTQo?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&t=786'
+        }
+
+      ]
+    }
+
+  , { 'heading'   : 'Notes 2b: Combinational Logic 2'
+    , 'desc'      : 'digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)'
+    , 'worksheet' : 'https://docs.google.com/document/d/1os_NDBybj-U4lpMppG6Scfyo-fkgZNdNs4ktxt-pSd4/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=d-amzrRVhfE&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=10'
+        }
+      , { 'desc'  : 'SOP and POS: Peter Mathys'
+        , 'link'  : 'https://www.youtube.com/watch?v=8nEPfx2_uGY&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=26'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes 2c: Combinational Logic 3'
+    , 'desc'      : 'multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU'
+    , 'worksheet' : 'https://docs.google.com/document/d/16UiRg7d-cPHNblD39rClBkAHcE9duKxdpO069fMucKo/edit?usp=sharing'
+    , 'supplement':
+      [
+      ]
+    }
+
+  , { 'heading'   : 'Notes  3: Boolean Algebra'
+    , 'desc'      : 'Boolean identities, De Morgan\'s Law'
+    , 'worksheet' : 'https://docs.google.com/document/d/1SxFqLJwsOVqsR0jmjLnuVdjkjfHjMjiFTCfNGT1R0yk/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'Boolean Algebra: electronics-course.com'
+        , 'link'  : 'https://electronics-course.com/boolean-algebra'
+        }
+      , { 'desc'  : 'Boolean Algebra Example: Peter Mathys'
+        , 'link'  : 'https://www.youtube.com/watch?v=VhU0Nah-NUc&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=20'
+        }
+      , { 'desc'  : 'NAND/NOR Only Example: Peter Mathys'
+        , 'link'  : 'https://www.youtube.com/watch?v=fz4stq2jQTQ&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=16&t=0s'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  4: Sequential Logic'
+    , 'desc'      : 'SR latch, active high, active low, D latch, D flip-flop'
+    , 'worksheet' : 'https://docs.google.com/document/d/1jCjqp91cu7EGFc4wIt5kTKMEKL2UGNL0MBPBEJVgmJM/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'Timing Diagrams: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=7Gf7N424v3k&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=56'
+        }
+      , { 'desc'  : 'SR Latches, D Latches, and D Flip-flops: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=CUfZladDqq8&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=21'
+        }
+      , { 'desc'  : 'SR Latch: Ben Eater'
+        , 'link'  : 'https://www.youtube.com/watch?v=KM0DdEaY5sY&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=43&t=0s'
+        }
+      , { 'desc'  : 'SR Latch | NOR and NAND SR Latch: Neso Academy'
+        , 'link'  : 'https://www.youtube.com/watch?v=kt8d3CYWGH4&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=23&t=0s'
+        }
+      , { 'desc'  : 'Registers, Flip-flops, and Modular Design: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=OfxYoQn7uJ4&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=22&t=0s'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  5: Signed Integer Representation'
+    , 'desc'      : 'signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point'
+    , 'worksheet' : 'https://docs.google.com/document/d/143qds1MCfpPgRptP9A1u9eGqQYaqzC764fSWuxQicZ0/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'Two\'s Complement: Negative Numbers in Binary: Ben Eater'
+        , 'link'  : 'youtube.com/watch?v=4qH4unVtJkE&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=28'
+        }
+      , { 'desc'  : 'Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato'
+        , 'link'  : 'https://www.youtube.com/watch?v=T8EAMYPYG28&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=30'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  6: Arithmetic and Logic Operations'
+    , 'desc'      : 'carry out, overflow, bitwise, reduction, shifts, rotate'
+    , 'worksheet' : 'https://docs.google.com/document/d/1YbZT9WkQChuxxNOaQgxiQbxoD0Kv_ibijjsxvufAoE8/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'Two\'s Complement Representation and Overflow: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=rnQwucEfT6A&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=29'
+        }
+      ]
+    }
+
+  #, { 'heading'   : 'Notes  7: Fractional Representation'
+  #  , 'desc'      : 'fixed point, IEEE 754 single precision floating point'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1jsAnou7zBUgTmDnK9bsCB7X0NkSvieR5vPLtNuQ6GSI/edit?usp=sharing'
+  #  'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+
+  #, { 'heading'   : 'Notes  8: Text Representation'
+  #  'desc'      : 'ASCII, UTF-8'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1HR3GmBqNPuw2lhfSVADLGE7EXkIh_JLzvePAWOmnex4/edit#heading=h.yn6mbr4hmcer'
+  #  , 'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+
+  #, { 'heading'   : 'Notes  9: von Neumann Model'
+  #  , 'desc'      : 'von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1QhW1mmrz5equfd_FMN5gNJRvsOLxMXhIZlyLw2ezh40/edit?usp=sharing'
+  #  , 'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+
+  #, { 'heading'   : 'Notes 10: MIPS Instruction Set Architecture'
+  #  , 'desc'      : 'general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1flarjrWNTOC31J5RhwrEeUzf6_Q0pLvSWkamfe3ZDK8/edit?usp=sharing'
+  #  , 'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+
+  #, { 'heading'   : 'Notes 11: MARS: MIPS Assembler and Runtime Simulator'
+  #  , 'desc'      : 'memory display, syscalls'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1DUJ8j9j1HXQEfuP6l0Pfezo_ZtnvGUtCLWUqC6PV0qY/edit?usp=sharing'
+  #  , 'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+
+  #, { 'heading'   : 'Notes 12: MIPS Addressing Modes'
+  #  , 'desc'      : 'register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1Y7osQkg3xhCjvHCQKXgmypmTUhmqGEJ_uGj_pQcqguI/edit?usp=sharing'
+  #  , 'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+
+  #, { 'heading'   : 'Notes 13: Stacks and Subroutines'
+  #  , 'desc'      : 'stack, jump instructions, return address, subroutines'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1nYxqvRtyQcw67LvYJBq_Vg8MaX8NKCO1oWMOy_NkLDA/edit#'
+  #  , 'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+
+  #, { 'heading'   : 'Notes 14: MIPS Data Path'
+  #  , 'desc'      : 'mips data path, r-type, i-type, j-type, pc, register file, alu, control unit'
+  #  , 'worksheet' : 'https://docs.google.com/document/d/1Mh_K32zhWOYp28H-d642PAsac-U753cz7Ne74F-vcjY/edit?usp=sharing'
+  #  , 'supplement':
+  #    [ { 'desc'  : ''
+  #      , 'link'  : ''
+  #      }
+  #    ]
+  #  }
+  ]
+
+html_parts = []
+
+for r in rows:
+
+  supplement_list: str = ''
+
+  if (r['supplement'] != []):
+
+    supplement_list: str = '<p><strong>SUPPLEMENTS</strong></br>'
+
+    # Construct list of supplemental materials.
+    for i in range(len(r['supplement'])):
+      sup: dict = r['supplement']
+
+      supplement_list = supplement_list +\
+        f' <a href="{sup[i]['link']}">{sup[i]['desc']}</a>'
+
+      supplement_list = supplement_list + '</p>'
+
+  html_parts.append(f"""
+<details><summary><strong>{r['heading']}</strong></summary>
+  </br>
+  <p><a href="{r['worksheet']}"><strong>WORKSHEET</strong></a></p>
+  <p>{r['desc']}</p>
+  {supplement_list}
+  </br>
+</details>
+""")
+
+# join and display as raw HTML so Quarto renders it as actual collapsible sections
+display(HTML("".join(html_parts)))
+
+```
+
+## Admin
+test
+
