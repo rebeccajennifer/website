@@ -1,0 +1,20 @@
+---
+title: SPOILER ALERT
+format: html
+---
+
+### How to view the worksheet answers
+
+The worksheet answers are hidden in the Google Doc style Heading 4.
+Follow these instructions to view the answers.
+
+1. Make a copy of the worksheet and save to your Google Drive.
+
+1. Select some answer text.
+
+1. Change the text color.
+
+1. While the text is selected, change the color for Heading 4 by
+   selecting `Update 'Heading 4' to match`.
+
+Now the answers are visible!

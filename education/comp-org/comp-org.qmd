@@ -3,10 +3,22 @@ title: COMPUTER SYSTEMS AND ASSEMBLY LANGUAGE
 format: html
 ---
 
-This page serves as the course website for Computer Systems and Assembly
-Language.
+I find magic in the 1s and 0s that make a computer work.
+From 2018–2019, I had the privilege of teaching Computer Systems and
+Assembly Language at the University of California, Santa Cruz. In this
+“computer engineering 101” course, I restructured the curriculum and
+taught foundational concepts including binary, digital logic design,
+memory alignment, and assembly language.
 
----
+My favorite topic to teach was _data path_ where I guided students
+through how an assembly instruction breaks down into machine code and
+how those ones and zeros flow through the processor.
+
+This page contains the course material from that class to serve as a
+reference for anyone interested, and as an example of my work in
+education, documentation, and curriculum design.
+
+{{< include ../assets/ui-elements/section-divider-blu.html >}}
 
 ## Worksheets
 
@@ -167,13 +179,13 @@ rows: list =\
     , 'worksheet' : 'https://docs.google.com/document/d/1flarjrWNTOC31J5RhwrEeUzf6_Q0pLvSWkamfe3ZDK8/edit?usp=sharing'
     , 'supplement':
       [ { 'desc'  : 'MIPS Reference Table: Rebecca Rashkin'
-        , 'link'  : '/pdf/comp-org/mips-reference-table.pdf'
+        , 'link'  : '/pdf/comp-org/reference/mips-reference-table.pdf'
         }
       , { 'desc'  : 'MIPS Instruction Format: Rebecca Rashkin'
-        , 'link'  : '/pdf/comp-org/mips-instruction-format.pdf'
+        , 'link'  : '/pdf/comp-org/reference/mips-instruction-format.pdf'
         }
       , { 'desc'  : 'Printable ASCII Characters: Rebecca Rashkin'
-        , 'link'  : '/pdf/comp-org/printable-ascii-characters.pdf'
+        , 'link'  : '/pdf/comp-org/reference/printable-ascii-characters.pdf'
         }
       ]
     }
@@ -186,32 +198,27 @@ rows: list =\
   , { 'heading'   : 'Notes 12: MIPS Addressing Modes'
     , 'desc'      : 'register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct'
     , 'worksheet' : 'https://docs.google.com/document/d/1Y7osQkg3xhCjvHCQKXgmypmTUhmqGEJ_uGj_pQcqguI/edit?usp=sharing'
+    }
+
+  , { 'heading'   : 'Notes 13: Stacks and Subroutines'
+    , 'desc'      : 'stack, jump instructions, return address, subroutines'
+    , 'worksheet' : 'https://docs.google.com/document/d/1nYxqvRtyQcw67LvYJBq_Vg8MaX8NKCO1oWMOy_NkLDA/edit#'
     , 'supplement':
-      [ { 'desc'  : ''
-        , 'link'  : ''
+      [ { 'desc'  : 'MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)'
+        , 'link'  : 'https://www.youtube.com/watch?v=NjWZxz0GqFM&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=40'
         }
       ]
     }
 
-  #, { 'heading'   : 'Notes 13: Stacks and Subroutines'
-  #  , 'desc'      : 'stack, jump instructions, return address, subroutines'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1nYxqvRtyQcw67LvYJBq_Vg8MaX8NKCO1oWMOy_NkLDA/edit#'
-  #  , 'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
-
-  #, { 'heading'   : 'Notes 14: MIPS Data Path'
-  #  , 'desc'      : 'mips data path, r-type, i-type, j-type, pc, register file, alu, control unit'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1Mh_K32zhWOYp28H-d642PAsac-U753cz7Ne74F-vcjY/edit?usp=sharing'
-  #  , 'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
+  , { 'heading'   : 'Notes 14: MIPS Data Path'
+    , 'desc'      : 'mips data path, r-type, i-type, j-type, pc, register file, alu, control unit'
+    , 'worksheet' : 'https://docs.google.com/document/d/1Mh_K32zhWOYp28H-d642PAsac-U753cz7Ne74F-vcjY/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'MIPS32 Data Path: Rebecca Rashkin'
+        , 'link'  : '../assets/pdf/comp-org/reference/mips-data-path.pdf'
+        }
+      ]
+    }
   ]
 
 html_parts = []
@@ -236,19 +243,10 @@ for r in rows:
   html_parts.append(f"""
 <details><summary><strong>{r['heading']}</strong></summary>
   </br>
-
-  <table><tr>
-      <td>
-        <a class="flux-button" href="{r['worksheet']}">WORKSHEET</a>
-      </td>
-      <td>
-        <table><tr><td><p>{r['desc']}</p></td></tr>
-        <tr><td>{supplement_list}</td></tr></table>
-  </tr></table>
-
-
-
-
+  <p><a class="flux-button" href="{r['worksheet']}">WORKSHEET</a>
+  </br>
+  {r['desc']}
+  {supplement_list}
   </br>
 </details>
 """)
@@ -258,6 +256,13 @@ display(HTML("".join(html_parts)))
 
 ```
 
+## Exams
+
+
+## Resources
+
+
 ## Admin
+
 test
 
