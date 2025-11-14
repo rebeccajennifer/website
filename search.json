@@ -2,42 +2,42 @@
   {
     "objectID": "index.html",
     "href": "index.html",
-    "title": "Salutations!",
+    "title": "SALUTATIONS!",
     "section": "",
     "text": "My name is Rebecca.\n\n\nI am an engineer and movement coach, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰\n\n\n\nEngineering Movement Education Creativity"
   },
   {
     "objectID": "index.html#who-i-am",
     "href": "index.html#who-i-am",
-    "title": "Salutations!",
+    "title": "SALUTATIONS!",
     "section": "",
     "text": "I am an engineer and movement coach, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰"
   },
   {
     "objectID": "index.html#what-i-care-about",
     "href": "index.html#what-i-care-about",
-    "title": "Salutations!",
+    "title": "SALUTATIONS!",
     "section": "",
     "text": "Engineering Movement Education Creativity"
   },
   {
     "objectID": "education/comp-org.html",
     "href": "education/comp-org.html",
-    "title": "Computer Systems and Assembly Language",
+    "title": "COMPUTER SYSTEMS AND ASSEMBLY LANGUAGE",
     "section": "",
     "text": "This page serves as the course website for Computer Systems and Assembly Language."
   },
   {
     "objectID": "education/comp-org.html#worksheets",
     "href": "education/comp-org.html#worksheets",
-    "title": "Computer Systems and Assembly Language",
+    "title": "COMPUTER SYSTEMS AND ASSEMBLY LANGUAGE",
     "section": "Worksheets",
-    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allows students to handwrite notes and follow along in class, without getting overwhelmed with feeling like they need to write everything. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\n\nNotes  0: Intro To Computing Systems\n  \n  WORKSHEET\n  history of computing, computing levels of abstraction\n  SUPPLEMENTS who invented the computer?\n  \n\n\nNotes  1: Integer Numbering Systems\n  \n  WORKSHEET\n  unary, grouping, positional, decimal, octal, hexadecimal, binary\n  SUPPLEMENTS Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\nNotes 2a: Combinational Logic 1\n  \n  WORKSHEET\n  MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n  SUPPLEMENTS CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\nNotes 2b: Combinational Logic 2\n  \n  WORKSHEET\n  digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n  SUPPLEMENTS Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\nNotes 2c: Combinational Logic 3\n  \n  WORKSHEET\n  multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU\n  \n  \n\n\nNotes  3: Boolean Algebra\n  \n  WORKSHEET\n  Boolean identities, De Morgan's Law\n  SUPPLEMENTS Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\nNotes  4: Sequential Logic\n  \n  WORKSHEET\n  SR latch, active high, active low, D latch, D flip-flop\n  SUPPLEMENTS Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\nNotes  5: Signed Integer Representation\n  \n  WORKSHEET\n  signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point\n  SUPPLEMENTS Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  \n  WORKSHEET\n  carry out, overflow, bitwise, reduction, shifts, rotate\n  SUPPLEMENTS Two's Complement Representation and Overflow: EngMicroLectures"
+    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allows students to handwrite notes and follow along in class, without getting overwhelmed with feeling like they need to write everything. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\nNotes  0: Intro To Computing Systems\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        history of computing, computing levels of abstraction\n        SUPPLEMENTS Who invented the computer?\n  \n\n\n\n\n  \n\n\nNotes  1: Integer Numbering Systems\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        unary, grouping, positional, decimal, octal, hexadecimal, binary\n        SUPPLEMENTS Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\n\n\n  \n\n\nNotes 2a: Combinational Logic 1\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n        SUPPLEMENTS CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\n\n\n  \n\n\nNotes 2b: Combinational Logic 2\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n        SUPPLEMENTS Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\n\n\n  \n\n\nNotes 2c: Combinational Logic 3\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU\n        \n  \n\n\n\n\n  \n\n\nNotes  3: Boolean Algebra\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        Boolean identities, De Morgan's Law\n        SUPPLEMENTS Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\n\n\n  \n\n\nNotes  4: Sequential Logic\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        SR latch, active high, active low, D latch, D flip-flop\n        SUPPLEMENTS Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\n\n\n  \n\n\nNotes  5: Signed Integer Representation\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point\n        SUPPLEMENTS Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\n\n\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        carry out, overflow, bitwise, reduction, shifts, rotate\n        SUPPLEMENTS Two's Complement Representation and Overflow: EngMicroLectures\n  \n\n\n\n\n  \n\n\nNotes  7: Fractional Representation\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        fixed point, IEEE 754 single precision floating point\n        SUPPLEMENTS Binary Fractions: Electronics Tutorials\n  \n\n\n\n\n  \n\n\nNotes  8: Text Representation\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        ASCII, UTF-8\n        \n  \n\n\n\n\n  \n\n\nNotes  9: von Neumann Model\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory\n        \n  \n\n\n\n\n  \n\n\nNotes 10: MIPS Instruction Set Architecture\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding\n        SUPPLEMENTS MIPS Reference Table: Rebecca Rashkin MIPS Instruction Format: Rebecca Rashkin Printable ASCII Characters: Rebecca Rashkin\n  \n\n\n\n\n  \n\n\nNotes 11: MARS: MIPS Assembler and Runtime Simulator\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        memory display, syscalls\n        \n  \n\n\n\n\n  \n\n\nNotes 12: MIPS Addressing Modes\n  \n\n  \n      \n        WORKSHEET\n      \n      \n        register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct\n        SUPPLEMENTS"
   },
   {
     "objectID": "education/comp-org.html#admin",
     "href": "education/comp-org.html#admin",
-    "title": "Computer Systems and Assembly Language",
+    "title": "COMPUTER SYSTEMS AND ASSEMBLY LANGUAGE",
     "section": "Admin",
     "text": "Admin\ntest"
   },
