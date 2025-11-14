@@ -30,6 +30,8 @@
   --flux_wht  : #eeeeee;
   --flux_lte  : #878787;
   --flux_drk  : #262626;
+
+  --button_txt_size : 20px;
 }
 
 body
@@ -49,6 +51,21 @@ h2 { color: var(--flux_vio); }
 
 h4 { margin-left: 0;}
 
+.flux-button
+{
+  display           : inline-block;
+  text-decoration   : none;
+  font-size         : var(--button_txt_size);
+
+  color             : var(--flux_wht);
+  background-color  : var(--flux_cya);
+
+  padding           : 0px 10px;
+  border            : none;
+  border-radius     : 10px;
+  outline           : none;
+  margin            : 10px;
+}
 
 /* Navigation bar */
 .navbar

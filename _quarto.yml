@@ -3,11 +3,9 @@ project:
   output-dir: docs
 
 website:
-  title: "Rebecca Jennifer"
+  title: "REBECCA JENNIFER"
   navbar:
     right:
-      - text: "Home"
-        href: index.qmd
       - text: "Education"
         menu:
           - text: "Computer Systems and Assembly Course"

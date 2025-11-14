@@ -1,5 +1,5 @@
 ---
-title: Computer Systems and Assembly Language
+title: COMPUTER SYSTEMS AND ASSEMBLY LANGUAGE
 format: html
 ---
 
@@ -30,7 +30,7 @@ rows: list =\
     , 'desc'      : 'history of computing, computing levels of abstraction'
     , 'worksheet' : 'https://docs.google.com/document/d/1fPTFiTZXDPQUzYn2miww7W_TBVUmKdPxsUDLVlnlVkY/edit?usp=sharing'
     , 'supplement':
-      [ { 'desc'  : 'who invented the computer?'
+      [ { 'desc'  : 'Who invented the computer?'
         , 'link'  : 'https://www.youtube.com/watch?v=d1pvc9Zh7Tg&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R'
         }
       ]
@@ -79,9 +79,6 @@ rows: list =\
   , { 'heading'   : 'Notes 2c: Combinational Logic 3'
     , 'desc'      : 'multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU'
     , 'worksheet' : 'https://docs.google.com/document/d/16UiRg7d-cPHNblD39rClBkAHcE9duKxdpO069fMucKo/edit?usp=sharing'
-    , 'supplement':
-      [
-      ]
     }
 
   , { 'heading'   : 'Notes  3: Boolean Algebra'
@@ -145,65 +142,56 @@ rows: list =\
       ]
     }
 
-  #, { 'heading'   : 'Notes  7: Fractional Representation'
-  #  , 'desc'      : 'fixed point, IEEE 754 single precision floating point'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1jsAnou7zBUgTmDnK9bsCB7X0NkSvieR5vPLtNuQ6GSI/edit?usp=sharing'
-  #  'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
+  , { 'heading'   : 'Notes  7: Fractional Representation'
+    , 'desc'      : 'fixed point, IEEE 754 single precision floating point'
+    , 'worksheet' : 'https://docs.google.com/document/d/1jsAnou7zBUgTmDnK9bsCB7X0NkSvieR5vPLtNuQ6GSI/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'Binary Fractions: Electronics Tutorials'
+        , 'link'  : 'https://www.electronics-tutorials.ws/binary/binary-fractions.html'
+        }
+      ]
+    }
 
-  #, { 'heading'   : 'Notes  8: Text Representation'
-  #  'desc'      : 'ASCII, UTF-8'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1HR3GmBqNPuw2lhfSVADLGE7EXkIh_JLzvePAWOmnex4/edit#heading=h.yn6mbr4hmcer'
-  #  , 'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
+  , { 'heading'   : 'Notes  8: Text Representation'
+    , 'desc'      : 'ASCII, UTF-8'
+    , 'worksheet' : 'https://docs.google.com/document/d/1HR3GmBqNPuw2lhfSVADLGE7EXkIh_JLzvePAWOmnex4/edit#heading=h.yn6mbr4hmcer'
+    }
 
-  #, { 'heading'   : 'Notes  9: von Neumann Model'
-  #  , 'desc'      : 'von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1QhW1mmrz5equfd_FMN5gNJRvsOLxMXhIZlyLw2ezh40/edit?usp=sharing'
-  #  , 'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
+  , { 'heading'   : 'Notes  9: von Neumann Model'
+    , 'desc'      : 'von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory'
+    , 'worksheet' : 'https://docs.google.com/document/d/1QhW1mmrz5equfd_FMN5gNJRvsOLxMXhIZlyLw2ezh40/edit?usp=sharing'
+    }
 
-  #, { 'heading'   : 'Notes 10: MIPS Instruction Set Architecture'
-  #  , 'desc'      : 'general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1flarjrWNTOC31J5RhwrEeUzf6_Q0pLvSWkamfe3ZDK8/edit?usp=sharing'
-  #  , 'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
+  , { 'heading'   : 'Notes 10: MIPS Instruction Set Architecture'
+    , 'desc'      : 'general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding'
+    , 'worksheet' : 'https://docs.google.com/document/d/1flarjrWNTOC31J5RhwrEeUzf6_Q0pLvSWkamfe3ZDK8/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : 'MIPS Reference Table: Rebecca Rashkin'
+        , 'link'  : '/pdf/comp-org/mips-reference-table.pdf'
+        }
+      , { 'desc'  : 'MIPS Instruction Format: Rebecca Rashkin'
+        , 'link'  : '/pdf/comp-org/mips-instruction-format.pdf'
+        }
+      , { 'desc'  : 'Printable ASCII Characters: Rebecca Rashkin'
+        , 'link'  : '/pdf/comp-org/printable-ascii-characters.pdf'
+        }
+      ]
+    }
 
-  #, { 'heading'   : 'Notes 11: MARS: MIPS Assembler and Runtime Simulator'
-  #  , 'desc'      : 'memory display, syscalls'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1DUJ8j9j1HXQEfuP6l0Pfezo_ZtnvGUtCLWUqC6PV0qY/edit?usp=sharing'
-  #  , 'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
+  , { 'heading'   : 'Notes 11: MARS: MIPS Assembler and Runtime Simulator'
+    , 'desc'      : 'memory display, syscalls'
+    , 'worksheet' : 'https://docs.google.com/document/d/1DUJ8j9j1HXQEfuP6l0Pfezo_ZtnvGUtCLWUqC6PV0qY/edit?usp=sharing'
+    }
 
-  #, { 'heading'   : 'Notes 12: MIPS Addressing Modes'
-  #  , 'desc'      : 'register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct'
-  #  , 'worksheet' : 'https://docs.google.com/document/d/1Y7osQkg3xhCjvHCQKXgmypmTUhmqGEJ_uGj_pQcqguI/edit?usp=sharing'
-  #  , 'supplement':
-  #    [ { 'desc'  : ''
-  #      , 'link'  : ''
-  #      }
-  #    ]
-  #  }
+  , { 'heading'   : 'Notes 12: MIPS Addressing Modes'
+    , 'desc'      : 'register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct'
+    , 'worksheet' : 'https://docs.google.com/document/d/1Y7osQkg3xhCjvHCQKXgmypmTUhmqGEJ_uGj_pQcqguI/edit?usp=sharing'
+    , 'supplement':
+      [ { 'desc'  : ''
+        , 'link'  : ''
+        }
+      ]
+    }
 
   #, { 'heading'   : 'Notes 13: Stacks and Subroutines'
   #  , 'desc'      : 'stack, jump instructions, return address, subroutines'
@@ -232,7 +220,7 @@ for r in rows:
 
   supplement_list: str = ''
 
-  if (r['supplement'] != []):
+  if 'supplement' in r:
 
     supplement_list: str = '<p><strong>SUPPLEMENTS</strong></br>'
 
@@ -248,9 +236,19 @@ for r in rows:
   html_parts.append(f"""
 <details><summary><strong>{r['heading']}</strong></summary>
   </br>
-  <p><a href="{r['worksheet']}"><strong>WORKSHEET</strong></a></p>
-  <p>{r['desc']}</p>
-  {supplement_list}
+
+  <table><tr>
+      <td>
+        <a class="flux-button" href="{r['worksheet']}">WORKSHEET</a>
+      </td>
+      <td>
+        <table><tr><td><p>{r['desc']}</p></td></tr>
+        <tr><td>{supplement_list}</td></tr></table>
+  </tr></table>
+
+
+
+
   </br>
 </details>
 """)
