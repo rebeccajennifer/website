@@ -9,7 +9,7 @@ website:
   title: "Rebecca Jennifer Rashkin"
   navbar:
     right:
-      - text: "Education"
+      - text: "Teaching"
         menu:
           - text: "How to Learn"
             href: education/how-to-learn.qmd
