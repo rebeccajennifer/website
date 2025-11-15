@@ -106,8 +106,18 @@ h4 { margin-left: 0;}
   margin-bottom     : 10px;
 }
 
-.divider.blu { background-color  : var(--flux_blu); height: 10px;}
-.divider.cya { background-color  : var(--flux_cya); height: 05px;}
+.divider.blu
+{
+  background-color  : var(--flux_blu);
+  height            : 10px;
+  margin-top        : 80px;
+}
+
+.divider.cya
+{
+  background-color  : var(--flux_cya);
+  height            : 05px;
+}
 
 .flux-img
 {
