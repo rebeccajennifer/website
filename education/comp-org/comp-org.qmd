@@ -158,6 +158,7 @@ rows: list =\
   , { 'heading'   : 'Notes  6: Arithmetic and Logic Operations'
     , 'desc'      : 'carry out, overflow, bitwise, reduction, shifts, rotate'
     , 'worksheet' : 'https://docs.google.com/document/d/1YbZT9WkQChuxxNOaQgxiQbxoD0Kv_ibijjsxvufAoE8/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes06_arithmetic_logical_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Two\'s Complement Representation and Overflow: EngMicroLectures'
         , 'link'  : 'https://www.youtube.com/watch?v=rnQwucEfT6A&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=29'
@@ -168,6 +169,7 @@ rows: list =\
   , { 'heading'   : 'Notes  7: Fractional Representation'
     , 'desc'      : 'fixed point, IEEE 754 single precision floating point'
     , 'worksheet' : 'https://docs.google.com/document/d/1jsAnou7zBUgTmDnK9bsCB7X0NkSvieR5vPLtNuQ6GSI/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes07_data_rep_fractions_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Binary Fractions: Electronics Tutorials'
         , 'link'  : 'https://www.electronics-tutorials.ws/binary/binary-fractions.html'
@@ -178,16 +180,19 @@ rows: list =\
   , { 'heading'   : 'Notes  8: Text Representation'
     , 'desc'      : 'ASCII, UTF-8'
     , 'worksheet' : 'https://docs.google.com/document/d/1HR3GmBqNPuw2lhfSVADLGE7EXkIh_JLzvePAWOmnex4/edit#heading=h.yn6mbr4hmcer'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes08_data_rep_text_comp_org.pdf'
     }
 
   , { 'heading'   : 'Notes  9: von Neumann Model'
     , 'desc'      : 'von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory'
     , 'worksheet' : 'https://docs.google.com/document/d/1QhW1mmrz5equfd_FMN5gNJRvsOLxMXhIZlyLw2ezh40/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes09_von_neumann_comp_org.pdf'
     }
 
   , { 'heading'   : 'Notes 10: MIPS Instruction Set Architecture'
     , 'desc'      : 'general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding'
     , 'worksheet' : 'https://docs.google.com/document/d/1flarjrWNTOC31J5RhwrEeUzf6_Q0pLvSWkamfe3ZDK8/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes10_mips_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'MIPS Reference Table: Rebecca Rashkin'
         , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/mips-instructions-reference-table.pdf'
@@ -204,16 +209,24 @@ rows: list =\
   , { 'heading'   : 'Notes 11: MARS: MIPS Assembler and Runtime Simulator'
     , 'desc'      : 'memory display, syscalls'
     , 'worksheet' : 'https://docs.google.com/document/d/1DUJ8j9j1HXQEfuP6l0Pfezo_ZtnvGUtCLWUqC6PV0qY/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes11_mars_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc': 'MIPS Tutorial 1 Intro and Mars: Amell Peralta'
+        , 'link': 'https://www.youtube.com/watch?v=u5Foo6mmW0I&list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A&index=1'
+        }
+      ]
     }
 
   , { 'heading'   : 'Notes 12: MIPS Addressing Modes'
     , 'desc'      : 'register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct'
     , 'worksheet' : 'https://docs.google.com/document/d/1Y7osQkg3xhCjvHCQKXgmypmTUhmqGEJ_uGj_pQcqguI/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes12_addressing_modes_comp_org.pdf'
     }
 
   , { 'heading'   : 'Notes 13: Stacks and Subroutines'
     , 'desc'      : 'stack, jump instructions, return address, subroutines'
     , 'worksheet' : 'https://docs.google.com/document/d/1nYxqvRtyQcw67LvYJBq_Vg8MaX8NKCO1oWMOy_NkLDA/edit#'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes13_subroutines_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)'
         , 'link'  : 'https://www.youtube.com/watch?v=NjWZxz0GqFM&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=40'
@@ -224,6 +237,7 @@ rows: list =\
   , { 'heading'   : 'Notes 14: MIPS Data Path'
     , 'desc'      : 'mips data path, r-type, i-type, j-type, pc, register file, alu, control unit'
     , 'worksheet' : 'https://docs.google.com/document/d/1Mh_K32zhWOYp28H-d642PAsac-U753cz7Ne74F-vcjY/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes14_mips_datapath_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'MIPS32 Data Path: Rebecca Rashkin'
         , 'link'  : '../assets/pdf/comp-org/reference/mips-data-path.pdf'
@@ -258,7 +272,7 @@ for r in rows:
     <a  class="flux-button _0" href="{r['worksheet']}">
       Google Doc Worksheet
     </a>
-    <a  class="flux-button _0" href="{r['worksheet']}">
+    <a  class="flux-button _0" href="{r['pdf']}">
       PDF Worksheet
     </a>
   </p>
