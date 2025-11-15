@@ -1,20 +1,27 @@
 ---
-title: SPOILER ALERT
+title: SPOILER ALERT!
 format: html
 ---
 
 ### How to view the worksheet answers
 
-The worksheet answers are hidden in the Google Doc style Heading 4.
-Follow these instructions to view the answers.
+The Computer Systems and Assembly Language worksheet answers are hidden
+in the Google Doc style Heading 4. Follow these instructions to view
+the hidden text.
 
 1. Make a copy of the worksheet and save to your Google Drive.
+![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step1.png){fig-alt="Google Docs screenshot of file menu -> make a copy."}
 
 1. Select some answer text.
+![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step2.png){fig-alt="Screenshot of selection of hidden white answer text."}
 
 1. Change the text color.
+![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step3.png){fig-alt="Screenshot of text color selection."}
+![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step4.png){fig-alt="Screenshot of highlighted text changeed to pink."}
 
 1. While the text is selected, change the color for Heading 4 by
    selecting `Update 'Heading 4' to match`.
+![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step5.png){fig-alt="Screenshot of heading selection menu -> Heading 4 -> Update 'Heading 4' to match."}
 
-Now the answers are visible!
+1. Now the answers are visible!
+![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step6.png){fig-alt="Screenshot of worksheet with previously hidden answers displayed in pink."}

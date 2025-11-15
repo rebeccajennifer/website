@@ -1,10 +1,12 @@
 ---
-title: COMPUTER SYSTEMS AND ASSEMBLY LANGUAGE
+title: Computer Systems and Assembly Language
 format: html
 ---
 
-I find magic in the 1s and 0s that make a computer work.
-From 2018–2019, I had the privilege of teaching Computer Systems and
+I find magic in understanding a computer all the way
+down to its ones and zeros.
+
+From 2018 to 2019, I had the joy of teaching Computer Systems and
 Assembly Language at the University of California, Santa Cruz. In this
 “computer engineering 101” course, I restructured the curriculum and
 taught foundational concepts including binary, digital logic design,
@@ -18,7 +20,8 @@ This page contains the course material from that class to serve as a
 reference for anyone interested, and as an example of my work in
 education, documentation, and curriculum design.
 
-{{< include ../assets/ui-elements/section-divider-blu.html >}}
+![](../../assets/comp-org-assets/img/timing-diagram-whiteboard.jpg){fig-alt="Photograph of whiteboard with a timing diagram."}
+
 
 ## Worksheets
 
@@ -27,9 +30,9 @@ worksheets that I’ve designed. Students who manually write out notes
 are more likely to retain information presented in class over students
 who type notes.
 
-These worksheets allows students to handwrite notes and follow along in
-class, without getting overwhelmed with feeling like they need to write
-everything. I include examples for students to work out both during
+These worksheets allow students to handwrite notes and maintain better
+engagement in class, rather than losing focus by copying slides.
+I include examples for students to work out both during
 lecture with their classmates, and outside of class.
 
 
@@ -242,10 +245,8 @@ for r in rows:
 
   html_parts.append(f"""
 <details><summary><strong>{r['heading']}</strong></summary>
-  </br>
-  <p><a class="flux-button" href="{r['worksheet']}">WORKSHEET</a>
-  </br>
-  {r['desc']}
+  <p><a  class="flux-button _0" href="{r['worksheet']}">worksheet</a></p>
+  <p>{r['desc']}</p>
   {supplement_list}
   </br>
 </details>
@@ -256,11 +257,36 @@ display(HTML("".join(html_parts)))
 
 ```
 
-## Exams
+{{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
+### Spoiler Alert!
 
-## Resources
+How do I see the answers?
+<p><a  class="flux-button _1" href="worksheet-answers">here you go</a></p>
 
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## Sample Exams
+
+### Midterms
+
+[Fall   2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q4_fa_midterm_solution_ce12.pdf)
+[Summer 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q3_su_midterm_ce12.pdf)
+[Spring 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q2_sp_midterm_ce12.pdf)
+[Winter 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q1_wi_midterm_ce12.pdf)
+[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q4_fa_midterm_ce12.pdf)
+[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q3_su_midterm_ce12.pdf)
+
+### Finals
+
+[Fall   2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q4_fa_final_ce12.pdf)
+[Summer 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q3_su_final_ce12.pdf)
+[Spring 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q2_sp_final_ce12.pdf)
+[Winter 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q1_wi_final_ce12.pdf)
+[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q4_fa_final_ce12.pdf)
+[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q3_su_final_ce12.pdf)
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 ## Admin
 

@@ -3,15 +3,18 @@ project:
   output-dir: docs
 
 website:
-  title: "REBECCA JENNIFER"
+  title: "Rebecca Jennifer Rashkin"
   navbar:
     right:
       - text: "Education"
         menu:
-          - text: "Computer Systems and Assembly Course"
-            href: education/comp-org.qmd
           - text: "How to Learn"
             href: education/how-to-learn.qmd
+          - text: "Computer Systems and Assembly Course"
+            href: education/comp-org/comp-org.qmd
+          - text: How to View Worksheet Answers
+            href: education/comp-org/worksheet-answers.qmd
+
       - text: "ColorClock"
         href: color-clock.qmd
       - text: "Contact"
