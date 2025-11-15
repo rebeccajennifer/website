@@ -102,7 +102,6 @@ h4 { margin-left: 0;}
 {
   width             : 100%;
   height            : 10px;
-  margin-top        : 10px;
   margin-bottom     : 10px;
 }
 
@@ -117,6 +116,7 @@ h4 { margin-left: 0;}
 {
   background-color  : var(--flux_cya);
   height            : 05px;
+  margin-top        : 10px;
 }
 
 .flux-img
