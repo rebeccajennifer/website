@@ -182,13 +182,13 @@ rows: list =\
     , 'worksheet' : 'https://docs.google.com/document/d/1flarjrWNTOC31J5RhwrEeUzf6_Q0pLvSWkamfe3ZDK8/edit?usp=sharing'
     , 'supplement':
       [ { 'desc'  : 'MIPS Reference Table: Rebecca Rashkin'
-        , 'link'  : '/pdf/comp-org/reference/mips-reference-table.pdf'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/mips-instructions-reference-table.pdf'
         }
       , { 'desc'  : 'MIPS Instruction Format: Rebecca Rashkin'
-        , 'link'  : '/pdf/comp-org/reference/mips-instruction-format.pdf'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/mips-instruction-format.pdf'
         }
       , { 'desc'  : 'Printable ASCII Characters: Rebecca Rashkin'
-        , 'link'  : '/pdf/comp-org/reference/printable-ascii-characters.pdf'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/printable-ascii-characters.pdf'
         }
       ]
     }
@@ -288,7 +288,80 @@ How do I see the answers?
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
-## Admin
+## Resources
 
-test
+### Course Related
+
+[Syllabus](../../assets/comp-org-assets/pdf/general__comp-org/syllabus_ce12.pdf)
+
+[Documentation standards](../../assets/comp-org-assets/pdf/general__comp-org/documentation_standards_ce12.pdf)
+
+[Course reference playlist](https://www.youtube.com/playlist?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R)
+
+### Reference Tables
+
+[MIPS Instructions](../../assets/comp-org-assets/pdf/reference__comp-org/mips-instructions-reference-table.pdf)
+
+[MIPS Instruction Format](../../assets/comp-org-assets/pdf/reference__comp-org/mips-instruction-format.pdf)
+
+[Printable ASCII Characters](../../assets/comp-org-assets/pdf/reference__comp-org/printable-ascii-characters.pdf)
+
+### Git
+
+[Video references](https://www.youtube.com/watch?v=SWYqp7iY_Tc&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=7)
+[Git documentation](https://git-scm.com/docs)
+
+#### Tutorials
+
+[Git Immersion](https://gitimmersion.com/)
+[Learn Git Branching](https://learngitbranching.js.org/)
+
+### Command Line Interface
+
+#### Videos
+
+[BASH Basics](https://www.youtube.com/watch?v=x73WTEltyHU&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=5)
+[Terminal Basics for Beginners](https://www.youtube.com/watch?v=5XgBd6rjuDQ&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=4)
+
+#### Command Line Text Editor References
+
+[Vim](http://tnerual.eriogerg.free.fr/vimqrc.pdf)
+[Emacs](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
+
+### Lab Applications
+
+#### MARS: MIPS Assembler and Runtime Simulator
+
+[MARS homepage](https://computerscience.missouristate.edu/mars-mips-simulator.htm)
+
+[Video tutorials](https://www.youtube.com/watch?v=u5Foo6mmW0I&list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A)
+
+#### Multimedia Logic
+
+[Multimedia Logic homepage](https://www.softronix.com/logic.html)
+
+[Mac installation tutorial](../../assets/comp-org-assets/pdf/reference__comp-org/mml_mac_installation.pdf)
+
+### Video Playlists
+
+[Course reference playlist](https://www.youtube.com/playlist?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R)
+
+[Digital Logic and Computer Organization: EngMicroLectures](https://www.youtube.com/watch?v=Tus1Tjhnd2w&list=PLA8F3EE4391DF4D0A)
+
+[Computer Organisation & Architecture: Semesters Simplified](https://www.youtube.com/watch?v=h4prlOPOpNQ&list=PLgBlB7BVKQmg__8dTZOkHBSj4WDRgZ4vX&index=2)
+
+[MIPS Instruction Set Architecture 1: David Black-Schaffer](https://www.youtube.com/watch?v=PlavjNH_RRU&list=PLylNWPMX1lPlmEeeMdbEFQo20eHAJL8hx)
+
+[MIPS Instruction Set Architecture 2: David Black-Schaffer](https://www.youtube.com/playlist?list=PLylNWPMX1lPnipZzKdCWRj2-un5xvLLdK)
+
+### Fun Stuff
+
+[TIS-100: assembly language video game](https://www.zachtronics.com/tis-100/)
+
+[Skills based training](https://gmb.io/method/)
+
+[American Amateur Radio League (ARRL)](https://arrl.org)
+
+[Perceptual Noise Generator](https://mynoise.net/NoiseMachines/greyNoiseGenerator.php)
+
 
