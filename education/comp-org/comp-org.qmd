@@ -44,6 +44,7 @@ rows: list =\
   [ { 'heading'   : 'Notes  0: Intro To Computing Systems'
     , 'desc'      : 'history of computing, computing levels of abstraction'
     , 'worksheet' : 'https://docs.google.com/document/d/1fPTFiTZXDPQUzYn2miww7W_TBVUmKdPxsUDLVlnlVkY/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes00_intro_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Who invented the computer?'
         , 'link'  : 'https://www.youtube.com/watch?v=d1pvc9Zh7Tg&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R'
@@ -54,6 +55,7 @@ rows: list =\
   , { 'heading'   : 'Notes  1: Integer Numbering Systems'
     , 'desc'      : 'unary, grouping, positional, decimal, octal, hexadecimal, binary'
     , 'worksheet' : 'https://docs.google.com/document/d/1kvzlGUqJ5IVvs863-Thrl_0iFYKP6HWctyPdlnSxolA/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes01_int_numbering_systems_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Number Systems and Bases: Better Explained'
         , 'link'  : 'https://betterexplained.com/articles/numbers-and-bases/'
@@ -70,6 +72,7 @@ rows: list =\
   , { 'heading'   : 'Notes 2a: Combinational Logic 1'
     , 'desc'      : 'MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams'
     , 'worksheet' : 'https://docs.google.com/document/d/13ej2h2ShRISkXNLjBpBXqjTulfWLduqRunDzogxeV5U/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02a_comb_logic_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)'
         , 'link'  : 'https://youtu.be/_SwY-WfWTQo?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&t=786'
@@ -81,6 +84,7 @@ rows: list =\
   , { 'heading'   : 'Notes 2b: Combinational Logic 2'
     , 'desc'      : 'digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)'
     , 'worksheet' : 'https://docs.google.com/document/d/1os_NDBybj-U4lpMppG6Scfyo-fkgZNdNs4ktxt-pSd4/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02b_comb_logic_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures'
         , 'link'  : 'https://www.youtube.com/watch?v=d-amzrRVhfE&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=10'
@@ -94,11 +98,13 @@ rows: list =\
   , { 'heading'   : 'Notes 2c: Combinational Logic 3'
     , 'desc'      : 'multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU'
     , 'worksheet' : 'https://docs.google.com/document/d/16UiRg7d-cPHNblD39rClBkAHcE9duKxdpO069fMucKo/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02c_comb_logic_comp_org.pdf'
     }
 
   , { 'heading'   : 'Notes  3: Boolean Algebra'
     , 'desc'      : 'Boolean identities, De Morgan\'s Law'
     , 'worksheet' : 'https://docs.google.com/document/d/1SxFqLJwsOVqsR0jmjLnuVdjkjfHjMjiFTCfNGT1R0yk/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes03_boolean_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Boolean Algebra: electronics-course.com'
         , 'link'  : 'https://electronics-course.com/boolean-algebra'
@@ -115,6 +121,7 @@ rows: list =\
   , { 'heading'   : 'Notes  4: Sequential Logic'
     , 'desc'      : 'SR latch, active high, active low, D latch, D flip-flop'
     , 'worksheet' : 'https://docs.google.com/document/d/1jCjqp91cu7EGFc4wIt5kTKMEKL2UGNL0MBPBEJVgmJM/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes04_seq_logic_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Timing Diagrams: EngMicroLectures'
         , 'link'  : 'https://www.youtube.com/watch?v=7Gf7N424v3k&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=56'
@@ -137,6 +144,7 @@ rows: list =\
   , { 'heading'   : 'Notes  5: Signed Integer Representation'
     , 'desc'      : 'signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point'
     , 'worksheet' : 'https://docs.google.com/document/d/143qds1MCfpPgRptP9A1u9eGqQYaqzC764fSWuxQicZ0/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes05_data_rep_ints_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'Two\'s Complement: Negative Numbers in Binary: Ben Eater'
         , 'link'  : 'youtube.com/watch?v=4qH4unVtJkE&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=28'
@@ -232,7 +240,7 @@ for r in rows:
 
   if 'supplement' in r:
 
-    supplement_list: str = '<p><strong>SUPPLEMENTS</strong></br>'
+    supplement_list: str = '<p><h4>Supplements</h4>'
 
     # Construct list of supplemental materials.
     for i in range(len(r['supplement'])):
@@ -244,9 +252,16 @@ for r in rows:
       supplement_list = supplement_list + '</p>'
 
   html_parts.append(f"""
-<details><summary><strong>{r['heading']}</strong></summary>
-  <p><a  class="flux-button _0" href="{r['worksheet']}">worksheet</a></p>
+<details><summary class="h3 mock">{r['heading']}</summary>
   <p>{r['desc']}</p>
+  <p>
+    <a  class="flux-button _0" href="{r['worksheet']}">
+      Google Doc Worksheet
+    </a>
+    <a  class="flux-button _0" href="{r['worksheet']}">
+      PDF Worksheet
+    </a>
+  </p>
   {supplement_list}
   </br>
 </details>
