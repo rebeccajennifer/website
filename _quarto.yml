@@ -1,6 +1,8 @@
 project:
-  type: website
-  output-dir: docs
+  type        : website
+  output-dir  : docs
+  resources   :
+    - assets/ui-elements/**
 
 website:
   title: "Rebecca Jennifer Rashkin"
