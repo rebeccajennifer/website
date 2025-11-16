@@ -28,21 +28,21 @@
   --flux-color-2  : #5fafaf;
   --flux-color-3  : #0087af;
 
-  --flux-greys-0  : #262626;
-  --flux-greys-1  : #eeeeee;
-  --flux-greys-2  : #c0c0c0;
-  --flux-greys-3  : #afafaf;
+  --flux-bg-norm  : #262626;
+  --flux-bg-bold  : #c0c0c0;
+  --flux-fg-norm  : #eeeeee;
+  --flux-fg-bold  : #afafaf;
 
   --flux-color-1  : #874787;
   --flux-color-2  : #478787;
   --flux-color-3  : #475f87;
 
-  --flux-greys-0  : #eeeeee;
-  --flux-greys-1  : #262626;
-  --flux-greys-2  : #d7d7d7;
-  --flux-greys-3  : #afafaf;
+  --flux-bg-norm  : #eeeeee;
+  --flux-bg-bold  : #d7d7d7;
+  --flux-fg-norm  : #262626;
+  --flux-fg-bold  : #5f5f5f;
 
-  --flux_button_text : var(--flux-greys-0);
+  --flux_button_text : var(--flux-bg-norm);
 
   --font-size-base  : clamp(16px, 1vw   + 0.5rem, 20px);
   --font-size-h1    : clamp(28px, 4vw   + 1rem,   48px);
@@ -60,57 +60,8 @@
 body
 {
   font-family       : var(--font-fam-normal);
-  color             : var(--flux-greys-1);
-  background-color  : var(--flux-greys-0);
-}
-
-/*--------------------------------------------------------------------*/
-/* NAVIGATION BAR
-/*--------------------------------------------------------------------*/
-/* Notes
-/* navbar       - Whole navigation bar
-/* navbar-nav   - Container that holds nav links
-/* nav-link     - Each link in navbar
-
-/* Navigation bar */
-.navbar .navbar-nav .nav-link .navbar-line
-{
-  font-family     : var(--font-fam-header);
-  color           : var(--flux-wht);
-}
-
-.navbar
-{
-  background-color: var(--flux-color-1);
-}
-
-.navbar-link
-{
-  color           : var(--flux-wht);
-}
-
-/* Site name */
-.navbar-brand
-{
-  font-family : var(--font-fam-header);
-  color       : var(--flux-greys-0);
-}
-
-.dropdown-menu
-{
-  font-family       : var(--font-fam-normal);
-}
-
-.dropdown-item:hover
-{
-  background-color  : var(--flux-color-3);
-  color             : var(--flux-greys-0);
-  font-weight       : bold;
-}
-
-.dropdown-item
-{
-  background-color  : var(--flux-greys-2);
+  color             : var(--flux-fg-norm);
+  background-color  : var(--flux-bg-norm);
 }
 
 /*--------------------------------------------------------------------*/
@@ -124,10 +75,60 @@ h1, h2, h3, h4
 
 h1      { font-size: var(--font-size-h1); color: var(--flux-color-2); }
 h2      { font-size: var(--font-size-h2); color: var(--flux-color-1); }
-h3      { font-size: var(--font-size-h3); color: var(--flux-color-3); }
-h3-mock { font-size: var(--font-size-h3); color: var(--flux-color-3); }
+h3      { font-size: var(--font-size-h3); color: var(--flux-fg-bold); }
+
+h3-mock {
+  font-size     : var(--font-size-h3);
+  color         : var(--flux-color-1);
+  font-family   : var(--font-fam-header);
+}
 
 h4 { margin-left: 0px;}
+
+
+/*--------------------------------------------------------------------*/
+/* NAVIGATION BAR
+/*--------------------------------------------------------------------*/
+/* Notes
+/* navbar       - Whole navigation bar
+/* navbar-nav   - Container that holds nav links
+/* nav-link     - Each link in navbar
+
+/* Navigation bar */
+.navbar .navbar-nav .nav-link
+{
+  font-family     : var(--font-fam-header);
+  color           : var(--flux-bg-norm);
+}
+
+.navbar
+{
+  background-color: var(--flux-color-1);
+}
+
+/* Site name */
+.navbar-brand
+{
+  font-family       : var(--font-fam-header);
+  color             : var(--flux-bg-norm);
+}
+
+.dropdown-menu
+{
+  font-family       : var(--font-fam-normal);
+}
+
+.dropdown-item:hover
+{
+  background-color  : var(--flux-color-3);
+  color             : var(--flux-bg-norm);
+  font-weight       : bold;
+}
+
+.dropdown-item
+{
+  background-color  : var(--flux-bg-bold);
+}
 
 /*--------------------------------------------------------------------*/
 /* BUTTONS & HYPERLINKS
@@ -137,17 +138,14 @@ h4 { margin-left: 0px;}
 .flux-button
 {
   font-family       : var(--font-fam-header);
-  color             : var(--flux-greys-0);
+  color             : var(--flux-bg-norm);
   display           : inline-block;
   text-decoration   : none;                   /* Don't underline */
   font-size         : var(--font-size-h4);
   text-align        : center;
 
   padding           : 0px 10px; /* Second entry is horizonal padding */
-  /*
-  margin-top        : 20px;
-  margin-bottom     : 20px;
-  */
+  margin-top: 10px;
 
   align-items       : center;
   outline           : none;
@@ -159,32 +157,51 @@ h4 { margin-left: 0px;}
 
 .flux-button._0
 {
-  background-color  : var(--flux-color-2);
+  background-color  : var(--flux-color-1);
 }
 
 .flux-button._1
 {
-  background-color  : var(--flux-color-1);
+  background-color  : var(--flux-color-2);
   font-size         : var(--font-size-h3);
 }
 
 .flux-button:hover
 {
   color             : var(--flux-color-3);
-  background-color  : var(--flux-greys-2);
+  background-color  : var(--flux-bg-bold);
 }
 
 .flux-button:active
 {
-  color             : var(--flux-color-1);
-  background-color  : var(--flux-greys-3);
+  color             : var(--flux-bg-norm);
+  background-color  : var(--flux-fg-bold);
 }
 
 /* Hyperlinks */
 main a         { color        : var(--flux-color-3); }
 main a:hover   { font-weight  : bold; }
-main a:active  { color        : var(--flux-color-3); }
+main a:active  { color        : var(--flux-color-2); }
 main a:visited { color        : var(--flux-color-1); }
+
+.pdf-link-table
+{
+  width   : 100%;
+  border  : none;
+}
+
+.pdf-link-table td,
+pdf-link-table td tr
+{
+  border                      : none;
+  padding                     : 0;
+  box-shadow                  : none;
+}
+
+.pdf-link-table td:first-child
+{
+  width: 30%;
+}
 
 /*--------------------------------------------------------------------*/
 /* DIVIDER
@@ -222,27 +239,31 @@ main a:visited { color        : var(--flux-color-1); }
 code
 {
   color             : var(--flux-color-3);
-  background-color  : var(--flux-greys-2);
+  background-color  : var(--flux-bg-bold);
 }
 
-/* Header for drop down */
-details summary {
+/*--------------------------------------------------------------------*/
+/* DROP DOWN
+/*--------------------------------------------------------------------*/
 
+/* Header for drop down */
+details summary
+{
+  color         : var(--flux-fg-bold);
   cursor        : pointer;
-  display       : list-item;  /* restores disclosure triangle behavior */
-  font-weight   : 600;
-  font-size     : 1.1em;
+  display       : list-item;  /* Restores triangle behavior */
   margin-top    : 0.5em;
-  color         : var(--flux-drk);
 }
 
 details summary:hover
 {
-  color         : var(--flux-color-2);
+  color         : var(--flux-fg-bold);
 }
 
+/* Style when drop down is open */
 details[open] summary {
-  color: var(--flux-color-1);              /* darker when open */
+  color       : var(--flux-color-3);
+  font-weight : bold;
 }
 
 details > *:not(summary) {
@@ -251,6 +272,6 @@ details > *:not(summary) {
 
 details {
   margin-bottom : 1em;
-  border-left   : 3px solid var(--flux-greys-2);
+  border-left   : 3px solid var(--flux-color-2);
   padding-left  : 0.5em;
 }

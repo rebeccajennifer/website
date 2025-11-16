@@ -266,18 +266,18 @@ for r in rows:
       supplement_list = supplement_list + '</p>'
 
   html_parts.append(f"""
-<details><summary class="h3 mock">{r['heading']}</summary>
+<details><summary class="h3-mock">{r['heading']}</summary>
   <p>{r['desc']}</p>
-  <p>
-    <a  class="flux-button _0" href="{r['worksheet']}">
-      Google Doc Worksheet
-    </a>
-    <a  class="flux-button _0" href="{r['pdf']}">
-      PDF Worksheet
-    </a>
-  </p>
+  <div><table class="pdf-link-table"><tr>
+    <td><a  class="flux-button _0" href="{r['worksheet']}">
+      Google Doc
+    </a></td>
+    <td><a  class="flux-button _0" href="{r['pdf']}">
+      PDF
+    </a></td>
+  </tr></table></div>
   {supplement_list}
-  </br>
+  <br>
 </details>
 """)
 
@@ -291,7 +291,72 @@ display(HTML("".join(html_parts)))
 ### Spoiler Alert!
 
 How do I see the answers?
-<p><a  class="flux-button _1" href="worksheet-answers">here you go</a></p>
+<p><a  class="flux-button _0" href="worksheet-answers">Here You Go!</a></p>
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## Extra Credit
+
+```{python}
+#| echo: false
+extra_credit: list =\
+  [ { 'name' : 'Computer Archeology'
+    , 'desc' : str('Write 250 words about the background, functionality, '
+                'and social implications of an artifact from computer '
+                'history. Create 1 - 3 slides on that artifact and '
+                'present it to the class.')
+    , 'gdoc' : 'https://docs.google.com/document/d/1xWWEoFcuVAfYVeNNTZ0uzcnWCCrpk-4avm-DX6vk5Ns/edit?usp=sharing'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_computer_archeology_comp_org.pdf'
+    }
+  , { 'name' : 'Get Your Ham Radio License'
+    , 'desc' : str('Get your ham radio license and attend 4 ucsc '
+                'amateur radio club events.')
+    , 'gdoc' : 'https://docs.google.com/document/d/1kQILW0YurFgD7NVlSuZExkdeF26lnfOxd2BkySUuSDQ/edit?tab=t.0#heading=h.62a682hw0mi3'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_ham_comp_org.pdf'
+    }
+  , { 'name' : 'Skill Progression'
+    , 'desc' : str('Learn a new skill, or progress in a skill you have '
+                'already worked on. Show documentation of your skill '
+                'progression and journal about it four times throughout '
+                'the quarter. Examples: juggling, drawing, singing, '
+                'dancing, playing a musical instrument, movement.')
+    , 'gdoc' : 'https://docs.google.com/document/d/16m6IgjSVFCBmF294mwcZwSEu68nwRM1fCGXdQTStiKA/edit?tab=t.0#heading=h.62a682hw0mi3'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_skill_progression_comp_org.pdf'
+    }
+  , { 'name' : 'Malleable Intelligence Essay'
+    , 'desc' : str('Read the chapter “Intelligence as a Malleable '
+               'Construct” from the Handbook of Intelligence and write '
+               'a 500+ word essay. This assignment will have 3 parts: '
+               'summary, reflection, and recommendations.')
+    , 'gdoc' : 'https://docs.google.com/document/d/1XRfldUyJfRQiahu84b76Jj63me3oi-h3XK7iJZu6Jqo/edit?tab=t.0#heading=h.62a682hw0mi3'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_essay_comp_org.pdf'
+    }
+
+  ]
+
+html_parts = []
+
+for assignment in extra_credit:
+
+  html_parts.append(f"""
+<!--details><summary class="h3-mock">{assignment['name']}</summary-->
+<details><summary>{assignment['name']}</summary>
+  <p>{assignment['desc']}</p>
+  <div><table class="pdf-link-table"><tr>
+    <td><a  class="flux-button _0" href="{assignment['gdoc']}">
+      Google Doc
+    </a></td>
+    <td><a  class="flux-button _0" href="{assignment['pdf']}">
+      PDF
+    </a></td>
+  </tr></table></div>
+</details>
+""")
+
+# join and display as raw HTML so Quarto renders it as actual collapsible sections
+display(HTML("".join(html_parts)))
+
+```
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
