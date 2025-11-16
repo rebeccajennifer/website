@@ -1,24 +1,66 @@
 [
   {
-    "objectID": "site-layout-brainstorm.html",
-    "href": "site-layout-brainstorm.html",
-    "title": "Site Layout",
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Salutations!",
     "section": "",
-    "text": "ce12\n\n\nResume tips\n\n\n\n\nColorClock\nColor Scheme Creator\nThe Book of Plans: A tool for moving towards your ideal self\n\nFor more information about my professional experience, see my LinkedIn Profile\n\n\n\n\n\nMy home gym"
+    "text": "My name is Rebecca."
   },
   {
-    "objectID": "site-layout-brainstorm.html#rebeccajennifer.com",
-    "href": "site-layout-brainstorm.html#rebeccajennifer.com",
-    "title": "Site Layout",
-    "section": "",
-    "text": "ce12\n\n\nResume tips\n\n\n\n\nColorClock\nColor Scheme Creator\nThe Book of Plans: A tool for moving towards your ideal self\n\nFor more information about my professional experience, see my LinkedIn Profile"
+    "objectID": "index.html#who-i-am",
+    "href": "index.html#who-i-am",
+    "title": "Salutations!",
+    "section": "Who I Am",
+    "text": "Who I Am\nI am a software engineer and movement enthusiast, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰"
   },
   {
-    "objectID": "site-layout-brainstorm.html#flying-rabbit-movement",
-    "href": "site-layout-brainstorm.html#flying-rabbit-movement",
-    "title": "Site Layout",
+    "objectID": "index.html#what-i-care-about",
+    "href": "index.html#what-i-care-about",
+    "title": "Salutations!",
+    "section": "What I Care About",
+    "text": "What I Care About\n\n\n\n Engineering \n\n\n Movement \n\n\n Education \n\n\nColor"
+  },
+  {
+    "objectID": "education/comp-org/worksheet-answers.html",
+    "href": "education/comp-org/worksheet-answers.html",
+    "title": "SPOILER ALERT!",
     "section": "",
-    "text": "My home gym"
+    "text": "How to view the worksheet answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
+  },
+  {
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Me",
+    "section": "",
+    "text": "Loading…"
+  },
+  {
+    "objectID": "education/how-to-learn.html",
+    "href": "education/how-to-learn.html",
+    "title": "How To Learn",
+    "section": "",
+    "text": "Show up. Do the things. Be consistent.\n\n\nA large part of making progress is just showing up – even if you don’t feel like it.\nIn the case of academics, to increase the probability that you might learn something from lecture, come to class prepared. Bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\nBe present in class; eliminate distractions by stashing your electronics.\n\n\n\nJust “do the things,” i.e. practice with intention.\nMy number #1 tip: Find a study group. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered.\nReview your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture.\nRepetition is key to understanding. Spending time to strengthen your knowledge foundation will serve you in completing the lab assignments.\nStart assignments early. You will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting labs early enables you to catch these issues early on so you are not panicked at 11 pm on the due date.\nMake up your own examples. Rewrite the homework with different numbers. Solve this new version of the homework.\nIf you feel that you’ve been “doing the things” and you are still stuck, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others to get their feedback and form a new plan.\n\n\n\nThe key to progression in any context is consistency. We can’t expect to learn a new subject or skill if we don’t work it into our weekly schedule. So, just show up and do the things. Consistently.\n\n“We can determine how to be masters of our habits so that our habits may be useful servants to us.”"
+  },
+  {
+    "objectID": "education/how-to-learn.html#show-up",
+    "href": "education/how-to-learn.html#show-up",
+    "title": "How To Learn",
+    "section": "",
+    "text": "A large part of making progress is just showing up – even if you don’t feel like it.\nIn the case of academics, to increase the probability that you might learn something from lecture, come to class prepared. Bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\nBe present in class; eliminate distractions by stashing your electronics."
+  },
+  {
+    "objectID": "education/how-to-learn.html#do-the-things",
+    "href": "education/how-to-learn.html#do-the-things",
+    "title": "How To Learn",
+    "section": "",
+    "text": "Just “do the things,” i.e. practice with intention.\nMy number #1 tip: Find a study group. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered.\nReview your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture.\nRepetition is key to understanding. Spending time to strengthen your knowledge foundation will serve you in completing the lab assignments.\nStart assignments early. You will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting labs early enables you to catch these issues early on so you are not panicked at 11 pm on the due date.\nMake up your own examples. Rewrite the homework with different numbers. Solve this new version of the homework.\nIf you feel that you’ve been “doing the things” and you are still stuck, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others to get their feedback and form a new plan."
+  },
+  {
+    "objectID": "education/how-to-learn.html#be-consistent",
+    "href": "education/how-to-learn.html#be-consistent",
+    "title": "How To Learn",
+    "section": "",
+    "text": "The key to progression in any context is consistency. We can’t expect to learn a new subject or skill if we don’t work it into our weekly schedule. So, just show up and do the things. Consistently.\n\n“We can determine how to be masters of our habits so that our habits may be useful servants to us.”"
   },
   {
     "objectID": "education/comp-org/comp-org.html",
@@ -54,68 +96,5 @@
     "title": "Computer Systems and Assembly Language",
     "section": "Resources",
     "text": "Resources\n\nCourse Related\nSyllabus\nDocumentation standards\nCourse reference playlist\n\n\nReference Tables\nMIPS Instructions\nMIPS Instruction Format\nPrintable ASCII Characters\n\n\nGit\nVideo references Git documentation\n\nTutorials\nGit Immersion Learn Git Branching\n\n\n\nCommand Line Interface\n\nVideos\nBASH Basics Terminal Basics for Beginners\n\n\nCommand Line Text Editor References\nVim Emacs\n\n\n\nLab Applications\n\nMARS: MIPS Assembler and Runtime Simulator\nMARS homepage\nVideo tutorials\n\n\nMultimedia Logic\nMultimedia Logic homepage\nMac installation tutorial\n\n\n\nVideo Playlists\nCourse reference playlist\nDigital Logic and Computer Organization: EngMicroLectures\nComputer Organisation & Architecture: Semesters Simplified\nMIPS Instruction Set Architecture 1: David Black-Schaffer\nMIPS Instruction Set Architecture 2: David Black-Schaffer\n\n\nFun Stuff\nTIS-100: assembly language video game\nSkills based training\nAmerican Amateur Radio League (ARRL)\nPerceptual Noise Generator"
-  },
-  {
-    "objectID": "education/how-to-learn.html",
-    "href": "education/how-to-learn.html",
-    "title": "How To Learn",
-    "section": "",
-    "text": "Show up. Do the things. Be consistent.\n\n\nA large part of making progress is just showing up – even if you don’t feel like it.\nIn the case of academics, to increase the probability that you might learn something from lecture, come to class prepared. Bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\nBe present in class; eliminate distractions by stashing your electronics.\n\n\n\nJust “do the things,” i.e. practice with intention.\nMy number #1 tip: Find a study group. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered.\nReview your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture.\nRepetition is key to understanding. Spending time to strengthen your knowledge foundation will serve you in completing the lab assignments.\nStart assignments early. You will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting labs early enables you to catch these issues early on so you are not panicked at 11 pm on the due date.\nMake up your own examples. Rewrite the homework with different numbers. Solve this new version of the homework.\nIf you feel that you’ve been “doing the things” and you are still stuck, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others to get their feedback and form a new plan.\n\n\n\nThe key to progression in any context is consistency. We can’t expect to learn a new subject or skill if we don’t work it into our weekly schedule. So, just show up and do the things. Consistently.\n\n“We can determine how to be masters of our habits so that our habits may be useful servants to us.”"
-  },
-  {
-    "objectID": "education/how-to-learn.html#show-up",
-    "href": "education/how-to-learn.html#show-up",
-    "title": "How To Learn",
-    "section": "",
-    "text": "A large part of making progress is just showing up – even if you don’t feel like it.\nIn the case of academics, to increase the probability that you might learn something from lecture, come to class prepared. Bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\nBe present in class; eliminate distractions by stashing your electronics."
-  },
-  {
-    "objectID": "education/how-to-learn.html#do-the-things",
-    "href": "education/how-to-learn.html#do-the-things",
-    "title": "How To Learn",
-    "section": "",
-    "text": "Just “do the things,” i.e. practice with intention.\nMy number #1 tip: Find a study group. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered.\nReview your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture.\nRepetition is key to understanding. Spending time to strengthen your knowledge foundation will serve you in completing the lab assignments.\nStart assignments early. You will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting labs early enables you to catch these issues early on so you are not panicked at 11 pm on the due date.\nMake up your own examples. Rewrite the homework with different numbers. Solve this new version of the homework.\nIf you feel that you’ve been “doing the things” and you are still stuck, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others to get their feedback and form a new plan."
-  },
-  {
-    "objectID": "education/how-to-learn.html#be-consistent",
-    "href": "education/how-to-learn.html#be-consistent",
-    "title": "How To Learn",
-    "section": "",
-    "text": "The key to progression in any context is consistency. We can’t expect to learn a new subject or skill if we don’t work it into our weekly schedule. So, just show up and do the things. Consistently.\n\n“We can determine how to be masters of our habits so that our habits may be useful servants to us.”"
-  },
-  {
-    "objectID": "contact.html",
-    "href": "contact.html",
-    "title": "Contact Me",
-    "section": "",
-    "text": "Loading…"
-  },
-  {
-    "objectID": "education/comp-org/worksheet-answers.html",
-    "href": "education/comp-org/worksheet-answers.html",
-    "title": "SPOILER ALERT!",
-    "section": "",
-    "text": "How to view the worksheet answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
-  },
-  {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "Salutations!",
-    "section": "",
-    "text": "My name is Rebecca."
-  },
-  {
-    "objectID": "index.html#who-i-am",
-    "href": "index.html#who-i-am",
-    "title": "Salutations!",
-    "section": "Who I Am",
-    "text": "Who I Am\nI am a software engineer and movement enthusiast, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰"
-  },
-  {
-    "objectID": "index.html#what-i-care-about",
-    "href": "index.html#what-i-care-about",
-    "title": "Salutations!",
-    "section": "What I Care About",
-    "text": "What I Care About\n\n\n\n Engineering \n\n\n Movement \n\n\n Education \n\n\nColor"
   }
 ]
