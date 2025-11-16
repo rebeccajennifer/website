@@ -24,7 +24,7 @@
 |____________________________________________________________________-->
 <!--___________________________________________________________________|
 |   DESCRIPTION
-|   This file contains configuration information for the blog
+|   This file contains configuration information for the blog.
 |____________________________________________________________________-->
 
 ---
