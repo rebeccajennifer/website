@@ -59,6 +59,8 @@ website:
         href: https://github.com/rebeccajennifer
       - icon: instagram
         href: https://www.instagram.com/anonymous_rabbit/
+      - text: "Blog"
+        href: posts.qmd
 
   page-footer:
     center: "©2025 Rebecca Jennifer Rashkin"
