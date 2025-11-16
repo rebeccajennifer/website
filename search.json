@@ -1,31 +1,59 @@
 [
   {
-    "objectID": "index.html",
-    "href": "index.html",
-    "title": "SALUTATIONS!",
+    "objectID": "site-layout-brainstorm.html",
+    "href": "site-layout-brainstorm.html",
+    "title": "Site Layout",
     "section": "",
-    "text": "My name is Rebecca.\n\n\nI am an engineer and movement enthusiast, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰\n\n\n\nEngineering Movement Education Creativity"
+    "text": "ce12\n\n\nResume tips\n\n\n\n\nColorClock\nColor Scheme Creator\nThe Book of Plans: A tool for moving towards your ideal self\n\nFor more information about my professional experience, see my LinkedIn Profile\n\n\n\n\n\nMy home gym"
   },
   {
-    "objectID": "index.html#who-i-am",
-    "href": "index.html#who-i-am",
-    "title": "SALUTATIONS!",
+    "objectID": "site-layout-brainstorm.html#rebeccajennifer.com",
+    "href": "site-layout-brainstorm.html#rebeccajennifer.com",
+    "title": "Site Layout",
     "section": "",
-    "text": "I am an engineer and movement enthusiast, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰"
+    "text": "ce12\n\n\nResume tips\n\n\n\n\nColorClock\nColor Scheme Creator\nThe Book of Plans: A tool for moving towards your ideal self\n\nFor more information about my professional experience, see my LinkedIn Profile"
   },
   {
-    "objectID": "index.html#what-i-care-about",
-    "href": "index.html#what-i-care-about",
-    "title": "SALUTATIONS!",
+    "objectID": "site-layout-brainstorm.html#flying-rabbit-movement",
+    "href": "site-layout-brainstorm.html#flying-rabbit-movement",
+    "title": "Site Layout",
     "section": "",
-    "text": "Engineering Movement Education Creativity"
+    "text": "My home gym"
   },
   {
-    "objectID": "education/comp-org/worksheet-answers.html",
-    "href": "education/comp-org/worksheet-answers.html",
-    "title": "SPOILER ALERT!",
+    "objectID": "education/comp-org/comp-org.html",
+    "href": "education/comp-org/comp-org.html",
+    "title": "Computer Systems and Assembly Language",
     "section": "",
-    "text": "How to view the worksheet answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
+    "text": "I find magic in understanding a computer all the way down to its ones and zeros.\nFrom 2018 to 2019, I had the joy of teaching Computer Systems and Assembly Language at the University of California, Santa Cruz. In this “computer engineering 101” course, I restructured the curriculum and taught foundational concepts including binary, digital logic design, memory alignment, and assembly language.\nMy favorite topic to teach was data path where I guided students through how an assembly instruction breaks down into machine code and how those ones and zeros flow through the processor.\nThis page contains the course material from that class to serve as a reference for anyone interested, and as an example of my work in education, documentation, and curriculum design."
+  },
+  {
+    "objectID": "education/comp-org/comp-org.html#worksheets",
+    "href": "education/comp-org/comp-org.html#worksheets",
+    "title": "Computer Systems and Assembly Language",
+    "section": "Worksheets",
+    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allow students to handwrite notes and maintain better engagement in class, rather than losing focus by copying slides. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\nNotes  0: Intro To Computing Systems\n  history of computing, computing levels of abstraction\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Who invented the computer?\n  \n\n\nNotes  1: Integer Numbering Systems\n  unary, grouping, positional, decimal, octal, hexadecimal, binary\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\nNotes 2a: Combinational Logic 1\n  MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\nNotes 2b: Combinational Logic 2\n  digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\nNotes 2c: Combinational Logic 3\n  multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes  3: Boolean Algebra\n  Boolean identities, De Morgan's Law\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\nNotes  4: Sequential Logic\n  SR latch, active high, active low, D latch, D flip-flop\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\nNotes  5: Signed Integer Representation\n  signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  carry out, overflow, bitwise, reduction, shifts, rotate\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Two's Complement Representation and Overflow: EngMicroLectures\n  \n\n\nNotes  7: Fractional Representation\n  fixed point, IEEE 754 single precision floating point\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Binary Fractions: Electronics Tutorials\n  \n\n\nNotes  8: Text Representation\n  ASCII, UTF-8\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes  9: von Neumann Model\n  von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes 10: MIPS Instruction Set Architecture\n  general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Reference Table: Rebecca Rashkin MIPS Instruction Format: Rebecca Rashkin Printable ASCII Characters: Rebecca Rashkin\n  \n\n\nNotes 11: MARS: MIPS Assembler and Runtime Simulator\n  memory display, syscalls\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Tutorial 1 Intro and Mars: Amell Peralta\n  \n\n\nNotes 12: MIPS Addressing Modes\n  register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes 13: Stacks and Subroutines\n  stack, jump instructions, return address, subroutines\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)\n  \n\n\nNotes 14: MIPS Data Path\n  mips data path, r-type, i-type, j-type, pc, register file, alu, control unit\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS32 Data Path: Rebecca Rashkin\n  \n\n\n\n\n\n\n\n\nSpoiler Alert!\nHow do I see the answers?\n\nHere You Go!"
+  },
+  {
+    "objectID": "education/comp-org/comp-org.html#extra-credit",
+    "href": "education/comp-org/comp-org.html#extra-credit",
+    "title": "Computer Systems and Assembly Language",
+    "section": "Extra Credit",
+    "text": "Extra Credit\n\n\n\nComputer Archeology\n  Write 250 words about the background, functionality, and social implications of an artifact from computer history. Create 1 - 3 slides on that artifact and present it to the class.\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n\n\n\nGet Your Ham Radio License\n  Get your ham radio license and attend 4 ucsc amateur radio club events.\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n\n\n\nSkill Progression\n  Learn a new skill, or progress in a skill you have already worked on. Show documentation of your skill progression and journal about it four times throughout the quarter. Examples: juggling, drawing, singing, dancing, playing a musical instrument, movement.\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n\n\n\nMalleable Intelligence Essay\n  Read the chapter “Intelligence as a Malleable Construct” from the Handbook of Intelligence and write a 500+ word essay. This assignment will have 3 parts: summary, reflection, and recommendations.\n  \n\n\n\nGoogle Doc\nPDF"
+  },
+  {
+    "objectID": "education/comp-org/comp-org.html#sample-exams",
+    "href": "education/comp-org/comp-org.html#sample-exams",
+    "title": "Computer Systems and Assembly Language",
+    "section": "Sample Exams",
+    "text": "Sample Exams\n\nMidterms\nFall 2019 Summer 2019 Spring 2019 Winter 2019 Fall 2018 Summer 2018\n\n\nFinals\nFall 2019 Summer 2019 Spring 2019 Winter 2019 Fall 2018 Summer 2018"
+  },
+  {
+    "objectID": "education/comp-org/comp-org.html#resources",
+    "href": "education/comp-org/comp-org.html#resources",
+    "title": "Computer Systems and Assembly Language",
+    "section": "Resources",
+    "text": "Resources\n\nCourse Related\nSyllabus\nDocumentation standards\nCourse reference playlist\n\n\nReference Tables\nMIPS Instructions\nMIPS Instruction Format\nPrintable ASCII Characters\n\n\nGit\nVideo references Git documentation\n\nTutorials\nGit Immersion Learn Git Branching\n\n\n\nCommand Line Interface\n\nVideos\nBASH Basics Terminal Basics for Beginners\n\n\nCommand Line Text Editor References\nVim Emacs\n\n\n\nLab Applications\n\nMARS: MIPS Assembler and Runtime Simulator\nMARS homepage\nVideo tutorials\n\n\nMultimedia Logic\nMultimedia Logic homepage\nMac installation tutorial\n\n\n\nVideo Playlists\nCourse reference playlist\nDigital Logic and Computer Organization: EngMicroLectures\nComputer Organisation & Architecture: Semesters Simplified\nMIPS Instruction Set Architecture 1: David Black-Schaffer\nMIPS Instruction Set Architecture 2: David Black-Schaffer\n\n\nFun Stuff\nTIS-100: assembly language video game\nSkills based training\nAmerican Amateur Radio League (ARRL)\nPerceptual Noise Generator"
   },
   {
     "objectID": "education/how-to-learn.html",
@@ -56,31 +84,38 @@
     "text": "The key to progression in any context is consistency. We can’t expect to learn a new subject or skill if we don’t work it into our weekly schedule. So, just show up and do the things. Consistently.\n\n“We can determine how to be masters of our habits so that our habits may be useful servants to us.”"
   },
   {
-    "objectID": "education/comp-org/comp-org.html",
-    "href": "education/comp-org/comp-org.html",
-    "title": "Computer Systems and Assembly Language",
+    "objectID": "contact.html",
+    "href": "contact.html",
+    "title": "Contact Me",
     "section": "",
-    "text": "I find magic in understanding a computer all the way down to its ones and zeros.\nFrom 2018 to 2019, I had the joy of teaching Computer Systems and Assembly Language at the University of California, Santa Cruz. In this “computer engineering 101” course, I restructured the curriculum and taught foundational concepts including binary, digital logic design, memory alignment, and assembly language.\nMy favorite topic to teach was data path where I guided students through how an assembly instruction breaks down into machine code and how those ones and zeros flow through the processor.\nThis page contains the course material from that class to serve as a reference for anyone interested, and as an example of my work in education, documentation, and curriculum design."
+    "text": "Loading…\n\nheight =“600”"
   },
   {
-    "objectID": "education/comp-org/comp-org.html#worksheets",
-    "href": "education/comp-org/comp-org.html#worksheets",
-    "title": "Computer Systems and Assembly Language",
-    "section": "Worksheets",
-    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allow students to handwrite notes and maintain better engagement in class, rather than losing focus by copying slides. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\n\nNotes  0: Intro To Computing Systems\n  history of computing, computing levels of abstraction\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Who invented the computer?\n  \n\n\nNotes  1: Integer Numbering Systems\n  unary, grouping, positional, decimal, octal, hexadecimal, binary\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\nNotes 2a: Combinational Logic 1\n  MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\nNotes 2b: Combinational Logic 2\n  digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\nNotes 2c: Combinational Logic 3\n  multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  \n  \n\n\nNotes  3: Boolean Algebra\n  Boolean identities, De Morgan's Law\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\nNotes  4: Sequential Logic\n  SR latch, active high, active low, D latch, D flip-flop\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\nNotes  5: Signed Integer Representation\n  signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  carry out, overflow, bitwise, reduction, shifts, rotate\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Two's Complement Representation and Overflow: EngMicroLectures\n  \n\n\nNotes  7: Fractional Representation\n  fixed point, IEEE 754 single precision floating point\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements Binary Fractions: Electronics Tutorials\n  \n\n\nNotes  8: Text Representation\n  ASCII, UTF-8\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  \n  \n\n\nNotes  9: von Neumann Model\n  von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  \n  \n\n\nNotes 10: MIPS Instruction Set Architecture\n  general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements MIPS Reference Table: Rebecca Rashkin MIPS Instruction Format: Rebecca Rashkin Printable ASCII Characters: Rebecca Rashkin\n  \n\n\nNotes 11: MARS: MIPS Assembler and Runtime Simulator\n  memory display, syscalls\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  \n  \n\n\nNotes 12: MIPS Addressing Modes\n  register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  \n  \n\n\nNotes 13: Stacks and Subroutines\n  stack, jump instructions, return address, subroutines\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)\n  \n\n\nNotes 14: MIPS Data Path\n  mips data path, r-type, i-type, j-type, pc, register file, alu, control unit\n  \n    \n      Google Doc Worksheet\n    \n    \n      PDF Worksheet\n    \n  \n  Supplements MIPS32 Data Path: Rebecca Rashkin\n  \n\n\n\n\n\n\n\nSpoiler Alert!\nHow do I see the answers?\n\nhere you go"
+    "objectID": "education/comp-org/worksheet-answers.html",
+    "href": "education/comp-org/worksheet-answers.html",
+    "title": "SPOILER ALERT!",
+    "section": "",
+    "text": "How to view the worksheet answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
   },
   {
-    "objectID": "education/comp-org/comp-org.html#sample-exams",
-    "href": "education/comp-org/comp-org.html#sample-exams",
-    "title": "Computer Systems and Assembly Language",
-    "section": "Sample Exams",
-    "text": "Sample Exams\n\nMidterms\nFall 2019 Summer 2019 Spring 2019 Winter 2019 Fall 2018 Summer 2018\n\n\nFinals\nFall 2019 Summer 2019 Spring 2019 Winter 2019 Fall 2018 Summer 2018"
+    "objectID": "index.html",
+    "href": "index.html",
+    "title": "Salutations!",
+    "section": "",
+    "text": "My name is Rebecca."
   },
   {
-    "objectID": "education/comp-org/comp-org.html#resources",
-    "href": "education/comp-org/comp-org.html#resources",
-    "title": "Computer Systems and Assembly Language",
-    "section": "Resources",
-    "text": "Resources\n\nCourse Related\nSyllabus\nDocumentation standards\nCourse reference playlist\n\n\nReference Tables\nMIPS Instructions\nMIPS Instruction Format\nPrintable ASCII Characters\n\n\nGit\nVideo references Git documentation\n\nTutorials\nGit Immersion Learn Git Branching\n\n\n\nCommand Line Interface\n\nVideos\nBASH Basics Terminal Basics for Beginners\n\n\nCommand Line Text Editor References\nVim Emacs\n\n\n\nLab Applications\n\nMARS: MIPS Assembler and Runtime Simulator\nMARS homepage\nVideo tutorials\n\n\nMultimedia Logic\nMultimedia Logic homepage\nMac installation tutorial\n\n\n\nVideo Playlists\nCourse reference playlist\nDigital Logic and Computer Organization: EngMicroLectures\nComputer Organisation & Architecture: Semesters Simplified\nMIPS Instruction Set Architecture 1: David Black-Schaffer\nMIPS Instruction Set Architecture 2: David Black-Schaffer\n\n\nFun Stuff\nTIS-100: assembly language video game\nSkills based training\nAmerican Amateur Radio League (ARRL)\nPerceptual Noise Generator"
+    "objectID": "index.html#who-i-am",
+    "href": "index.html#who-i-am",
+    "title": "Salutations!",
+    "section": "Who I Am",
+    "text": "Who I Am\nI am an engineer and movement enthusiast, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰"
+  },
+  {
+    "objectID": "index.html#what-i-care-about",
+    "href": "index.html#what-i-care-about",
+    "title": "Salutations!",
+    "section": "What I Care About",
+    "text": "What I Care About\n\n\n\n Engineering \n\n\n Movement \n\n\n Education \n\n\nCreativity"
   }
 ]
