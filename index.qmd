@@ -55,13 +55,5 @@ favorite things are handstands and rabbits 🐰
 </tr></table>
 
 {{< include assets/ui-elements/section-divider-blu.html >}}
+{{< include assets/ui-elements/contact-form.html >}}
 
-<iframe
-  src="https://docs.google.com/forms/d/e/1FAIpQLSdHvuupXN0I9wwlhMb-Mq48T87F5qkb3xlkFFftAuxnI0qOMQ/viewform?embedded=true"
-  width="100%"
-  height="600"
-  frameborder="0"
-  marginheight="0"
-  marginwidth="0">
-  Loading…
-</iframe>

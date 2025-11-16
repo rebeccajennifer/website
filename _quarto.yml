@@ -26,9 +26,7 @@ project:
   type        : website
   output-dir  : docs
   resources   :
-    - assets/ui-elements/section-divider-blu.html
-    - assets/ui-elements/section-divider-cya.html
-    - assets/icons
+    - assets/**
 
 website:
   title: "Rebecca Jennifer Rashkin"
