@@ -4,6 +4,7 @@ project:
   resources   :
     - assets/ui-elements/section-divider-blu.html
     - assets/ui-elements/section-divider-cya.html
+    - assets/icons
 
 website:
   title: "Rebecca Jennifer Rashkin"
@@ -22,9 +23,16 @@ website:
         href: color-clock.qmd
       - text: "Contact"
         href: index.qmd
+    tools:
+      - icon: linkedin
+        href: https://linkedin.com/in/rebeccajr
+      - icon: github
+        href: https://github.com/rebeccajennifer
+      - icon: instagram
+        href: https://www.instagram.com/anonymous_rabbit/
 
 format:
   html:
-    theme: default
-    css: flux-bunny.css
-    code-fold: true
+    theme     : default
+    css       : flux-bunny.css
+    code-fold : true
