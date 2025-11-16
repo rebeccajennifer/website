@@ -32,14 +32,13 @@ format: html
   table           { width: 100%; }
   td              { width:  25%; text-align: center;}
   .flux-button._1 { width: 100%; }
-
 </style>
 
 My name is Rebecca.
 
 ## Who I Am
 
-I am an engineer and movement enthusiast, but most of all, an educator.
+I am a software engineer and movement enthusiast, but most of all, an educator.
 I am passionate about sharing my knowledge, whether it be about
 computers or movement. I find satisfaction in lifting others up and
 leaving every space I occupy in a better state than I found it. My two
@@ -51,9 +50,8 @@ favorite things are handstands and rabbits 🐰
 <td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Engineering </a></td>
 <td><a class="flux-button _1" href="https://flyingrabbitmovement.com">      Movement    </a></td>
 <td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Education   </a></td>
-<td><a class="flux-button _1" href="/projects/color-clock/color-clock.html">Creativity  </a></td>
+<td><a class="flux-button _1" href="https://github.com/rebeccajennifer/color-clock/blob/main/README.md">Color</a></td>
 </tr></table>
 
 {{< include assets/ui-elements/section-divider-blu.html >}}
-{{< include assets/ui-elements/contact-form.html >}}
 

@@ -86,6 +86,16 @@ h3-mock {
 
 h4 { margin-left: 0px;}
 
+/*--------------------------------------------------------------------*/
+/* FOOTER
+/*--------------------------------------------------------------------*/
+.nav-footer
+{
+  background-color  : var(--flux-bg-bold);
+  color             : var(--flux-fg-bold);
+  font-family       : var(--font-fam-header);
+  z-index           : 1000;
+}
 
 /*--------------------------------------------------------------------*/
 /* NAVIGATION BAR
@@ -139,7 +149,7 @@ h4 { margin-left: 0px;}
 
 .dropdown-item
 {
-  background-color  : var(--flux-bg-bold);
+  background-color  : var(--flux-bg-norm);
 }
 
 .nav-icon

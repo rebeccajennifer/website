@@ -22,9 +22,14 @@
 #______________________________________________________________________#
 #   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   #
 #______________________________________________________________________#
+#   DESCRIPTION
+#   This file contains the configuration information for the quarto
+#   project.
+#______________________________________________________________________#
+
 project:
   type        : website
-  output-dir  : docs
+  output-dir  : publish
   resources   :
     - assets/**
 
@@ -41,11 +46,23 @@ website:
           - text: How to View Worksheet Answers
             href: education/comp-org/worksheet-answers.qmd
 
-      - text: "ColorClock"
-        href: color-clock.qmd
+      - text: "Projects"
+        menu:
+          - text: "ColorClock"
+            href: projects/color-clock/color-clock.qmd
       - text: "Contact"
-        href: index.qmd
+        href: contact.qmd
     tools:
+      - icon: linkedin
+        href: https://linkedin.com/in/rebeccajr
+      - icon: github
+        href: https://github.com/rebeccajennifer
+      - icon: instagram
+        href: https://www.instagram.com/anonymous_rabbit/
+
+  page-footer:
+    center: "©2025 Rebecca Jennifer Rashkin"
+    right:
       - icon: linkedin
         href: https://linkedin.com/in/rebeccajr
       - icon: github
