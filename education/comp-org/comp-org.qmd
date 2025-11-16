@@ -265,7 +265,7 @@ rows: list =\
     , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes14_mips_datapath_comp_org.pdf'
     , 'supplement':
       [ { 'desc'  : 'MIPS32 Data Path: Rebecca Rashkin'
-        , 'link'  : '../assets/pdf/comp-org/reference/mips-data-path.pdf'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/mips-data-path.pdf'
         }
       ]
     }
@@ -393,8 +393,8 @@ display(HTML("".join(html_parts)))
 [Summer 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q3_su_midterm_ce12.pdf)
 [Spring 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q2_sp_midterm_ce12.pdf)
 [Winter 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q1_wi_midterm_ce12.pdf)
-[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q4_fa_midterm_ce12.pdf)
-[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q3_su_midterm_ce12.pdf)
+[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/18q4_fa_midterm_ce12.pdf)
+[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/18q3_su_midterm_ce12.pdf)
 
 ### Finals
 
@@ -402,8 +402,8 @@ display(HTML("".join(html_parts)))
 [Summer 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q3_su_final_ce12.pdf)
 [Spring 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q2_sp_final_ce12.pdf)
 [Winter 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q1_wi_final_ce12.pdf)
-[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q4_fa_final_ce12.pdf)
-[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q3_su_final_ce12.pdf)
+[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q4_fa_final_ce12.pdf)
+[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q3_su_final_ce12.pdf)
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
