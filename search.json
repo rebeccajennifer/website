@@ -18,21 +18,14 @@
     "href": "index.html#what-i-care-about",
     "title": "Salutations!",
     "section": "What I Care About",
-    "text": "What I Care About\n\n\n\n Engineering \n\n\n Movement \n\n\n Education \n\n\nColor"
+    "text": "What I Care About\n\n\n\n Engineering \n\n\n Movement \n\n\n Education \n\n\n Creativity"
   },
   {
     "objectID": "education/comp-org/worksheet-answers.html",
     "href": "education/comp-org/worksheet-answers.html",
-    "title": "SPOILER ALERT!",
+    "title": "Spoiler Alert!",
     "section": "",
     "text": "How to view the worksheet answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
-  },
-  {
-    "objectID": "posts.html",
-    "href": "posts.html",
-    "title": "My Blog",
-    "section": "",
-    "text": "No matching items"
   },
   {
     "objectID": "contact.html",
@@ -40,6 +33,160 @@
     "title": "Contact Me",
     "section": "",
     "text": "Loading…"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
+    "title": "Back In Development",
+    "section": "",
+    "text": "I would like to make the ColorClock code base more robust, so I decided to leverage some of the work I’m doing in my real job and applying it to ColorClock."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#google-test",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#google-test",
+    "title": "Back In Development",
+    "section": "Google Test",
+    "text": "Google Test\nDuring development of ColorClock Version 1, I did some rudimentary unit tests that took the form of print statements in simple C++ programs. I played around with writing makefiles but my unit tests were few and far between.\nIn my latest work, I’m implementing a “real” unit testing framework in using Google Test. Each module has its own test file and I’m using make to build the unit test executable."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#testing-limitations",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#testing-limitations",
+    "title": "Back In Development",
+    "section": "Testing Limitations",
+    "text": "Testing Limitations\nSince ColorClock is designed to work with specific hardware, some of the code isn’t easily testable using Google Test. However, much (or at least some) of the hardware-dependent functionality is protected by preprocessor directives, providing alternate behavior for non-hardware builds. My goal is to write unit tests for as many functions as possible."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#this-is-why-we-test",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#this-is-why-we-test",
+    "title": "Back In Development",
+    "section": "This Is Why We Test",
+    "text": "This Is Why We Test\nSo, I’ve started writing tests for the edge cases in the TimeCalcs module, and guess what? I found some errors in one of the functions 😅\nI didn’t run into these issues with ColorClock Version 1 because it was built for a specific use case, but as I expand the project, I need to address them 😬\nGoogle Test Output for TimeCalcs\n[==========] Running 5 tests from 1 test suite.\n[----------] Global test environment set-up.\n[----------] 5 tests from TimeCalcsGroup\n[ RUN      ] TimeCalcsGroup.TimeAsFractionalOffset_Nominal\n[       OK ] TimeCalcsGroup.TimeAsFractionalOffset_Nominal (0 ms)\n[ RUN      ] TimeCalcsGroup.TimeAsFractionalOffset_Nominal_Swapped\n[       OK ] TimeCalcsGroup.TimeAsFractionalOffset_Nominal_Swapped (0 ms)\n[ RUN      ] TimeCalcsGroup.TimeAsFractionalOffset_Across_Midnight\n/home/flux/git/color-clock/sw/test/build-test/../main/test-time-calcs.cpp:69: Failure\nValue of: function_output == 0.75\n  Actual: false\nExpected: true\n\n[  FAILED  ] TimeCalcsGroup.TimeAsFractionalOffset_Across_Midnight (0 ms)\n[ RUN      ] TimeCalcsGroup.TimeAsFractionalOffset_Midnight_As_24_End\n[       OK ] TimeCalcsGroup.TimeAsFractionalOffset_Midnight_As_24_End (0 ms)\n[ RUN      ] TimeCalcsGroup.TimeAsFractionalOffset_Midnight_As_0_End\n/home/flux/git/color-clock/sw/test/build-test/../main/test-time-calcs.cpp:95: Failure\nValue of: function_output == 0.5\n  Actual: false\nExpected: true\n\n[  FAILED  ] TimeCalcsGroup.TimeAsFractionalOffset_Midnight_As_0_End (0 ms)\n[----------] 5 tests from TimeCalcsGroup (0 ms total)\n\n[----------] Global test environment tear-down\n[==========] 5 tests from 1 test suite ran. (0 ms total)\n[  PASSED  ] 3 tests.\n[  FAILED  ] 2 tests, listed below:\n[  FAILED  ] TimeCalcsGroup.TimeAsFractionalOffset_Across_Midnight\n[  FAILED  ] TimeCalcsGroup.TimeAsFractionalOffset_Midnight_As_0_End\n\n 2 FAILED TESTS"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#build-flags",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#build-flags",
+    "title": "Back In Development",
+    "section": "Build Flags",
+    "text": "Build Flags\nI have a file called flux_macros.hpp that defines all the build flags, including preprocessor directives for enabling hardware-specific functionality. This file is included in every software module. One of its macros, DEBUG_CPP, is meant for non-hardware builds. Until now, I’ve had to manually set this flag in the macros file. To streamline the process, I wrote a simple Python script that automatically uncomments the line.\n// #define DEBUG_CPP\nand converts it to:\n#define DEBUG_CPP\nIn the makefile for the unit tests, I create a phony target that runs the Python script first before building out the unit test executable 😎"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#file-headers",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#file-headers",
+    "title": "Back In Development",
+    "section": "File Headers",
+    "text": "File Headers\nAnother improvement I made to give the code a more professional look was adding a comment header to each file. To make this process more efficient, I wrote a Python script that automatically populates the header in each file.\n//__________________________________________________________________\n//__________________________________________________________________\n//      _   __   _   _ _   _   _   _         _\n// |   |_| | _  | | | V | | | | / |_/ |_| | /\n// |__ | | |__| |_| |   | |_| | \\ |   | | | \\_\n//  _  _         _ ___  _       _ ___   _                   / /\n// /  | | |\\ |  \\   |  | / | | /   |   \\                   (^^)\n// \\_ |_| | \\| _/   |  | \\ |_| \\_  |  _/                   (____)o\n//_________________________________________________________________\n//_________________________________________________________________\n//\n//-----------------------------------------------------------------\n// Copyright 2024, Rebecca Rashkin\n// -------------------------------\n// This code may be copied, redistributed, transformed, or built\n// upon in any format for educational, non-commercial purposes.\n//\n// Please give me appropriate credit should you choose to use this\n// resource. Thank you :)\n//-----------------------------------------------------------------\n//\n//_________________________________________________________________\n// //\\^.^/\\\\   //\\^.^/\\\\   //\\^.^/\\\\   //\\^.^/\\\\   //\\^.^/\\\\   //\\^\n//_________________________________________________________________\nWe named our artist collective (currently me, Bo, and our friend Cody) ‘Lagomorphic Constructs.’ Lagomorpha is the taxonomic order that includes rabbits—and I love rabbits. So, naturally, I went with ‘Lagomorphic Constructs’ 🐰"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#home-display",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#home-display",
+    "title": "Back In Development",
+    "section": "Home Display",
+    "text": "Home Display\nOn a different note, we are also working on installing the light display for ColorClock Version 1 in the house 🏠\nI powered it up for the first time since its display at Burning Man 2024 and was thrilled to see that not only did it work, but the time was still accurate thanks to the ’real-time clock module 🎉\nThe first step to converting it to a home display is to sort out the wiring…\n For ColorClock Version 1, the light display’s wiring was terminated with a Molex connector, which connected to a wire harness. The harness then led to a 12-way terminal block mounted on the structure, which interfaced with the electronics box.\nThe diagram above was generated using DOT, a scripting language for creating vector images. It’s another technology I use at work and have recently started incorporating into ColorClock.\n For home display, we removed the wire harness from Version 1 and directly connected the LED strips to the terminal block, which we relocated to the back of the light display."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#todo",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#todo",
+    "title": "Back In Development",
+    "section": "TODO",
+    "text": "TODO\nMoving forward, I have a few tasks on my to-do list that I’ll continue chipping away at…\n\nUnit Tests\n\nWrite unit tests for modules:\n\nTimeCalcs\nRgbColor\nHsvColor\nColorClock\nTimeController\nTimeDisplay\nTopLevel\n\nFix code for failures found during unit testing\nCreate a pipeline that runs all unit tests"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#documentation",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#documentation",
+    "title": "Back In Development",
+    "section": "Documentation",
+    "text": "Documentation\n\nMake block diagrams of the software architecture of ColorClock using DOT\nAdd Doxygen comments and generate documentation"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#cleanup",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#cleanup",
+    "title": "Back In Development",
+    "section": "Cleanup",
+    "text": "Cleanup\n\nOrganize ColorClock classes into folders\nClean up non-Arduino code"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#hardware",
+    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#hardware",
+    "title": "Back In Development",
+    "section": "Hardware",
+    "text": "Hardware\n\nPrototype a small harware version of the light display for testing purposes\nResearch free PCB board layout programs"
+  },
+  {
+    "objectID": "projects/color-clock/color-clock.html",
+    "href": "projects/color-clock/color-clock.html",
+    "title": "ColorClock",
+    "section": "",
+    "text": "What time is it? Amber o’clock-ish(?)"
+  },
+  {
+    "objectID": "projects/color-clock/color-clock.html#what-is-it",
+    "href": "projects/color-clock/color-clock.html#what-is-it",
+    "title": "ColorClock",
+    "section": "What is it?",
+    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\nColorClock Source Code"
+  },
+  {
+    "objectID": "projects/color-clock/color-clock.html#the-journey",
+    "href": "projects/color-clock/color-clock.html#the-journey",
+    "title": "ColorClock",
+    "section": "The Journey",
+    "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
+    "title": "We Did It",
+    "section": "Contingency Planning",
+    "text": "Contingency Planning\nI packed up spares of all the electronic components in case one of the modules were to go kaput. Time didn’t allow to solder up an entire new circuit board so my contingency plan was to construct a new one with a solderless prototyping board if anything went really wrong.\n The backup box had multiples of all the modules in addition to solderless breadboards and assorted components.\n I also brought my little tool box with oodles of extra wire and tools Thankfully I had no use for any of my extra wiring."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#artery-check-in",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#artery-check-in",
+    "title": "We Did It",
+    "section": "Artery Check In",
+    "text": "Artery Check In\nDuring check-in, The Artery (the Burning Man art department) showed us our placement on the map.\n Part of the check in ritual is to have the artist place a label near the green sticker corresponding with their project on the art map. I was ecstatic to see my little green dot 🤩\n There we are!\n🌈\nAfter identifying our placement on the map, the Field Ops volunteer took us to our actual location on Playa.\n Each project’s physical location is marked with a “floofy” connected to a CD-R bolted into the ground.\n We were brought to our floofy!"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#installation",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#installation",
+    "title": "We Did It",
+    "section": "Installation",
+    "text": "Installation\nThe 2-day, 16 + 2 hour drive to Playa was a little nerve-racking. My poor Subie was at her towing capacity, and let us know with her engine whines. But we made it 😅\n We were able to transport the project mostly assembled to make set up as easy as possible. Our good friend Cody was part of our art crew and helped with the construction.\n Bo is getting the solar panels set up. The wooden box in front of the solar panels housed the battery and solar charge controllers.\nIt had been raining the day before and we were frantically trying to finish assembly before the looming rain. I felt some droplets while I was connecting the light harnesses to the terminal block but we got everything buttoned up without any damage. Due to the threat of rain, we decided to wait until all chances of precipitation had passed before powering up.\n Many art installations at Burning Man are designed for climbing, but ColorClock was not, so we needed a sign to make that clear. Additionally I wanted to ensure participants were aware of the trip hazard posed by the cross beams at the bottom. My campmate Heather had the chance to experiment with a Cricut and created some super cute signs for us 😍.\n I added curtains to the sides of the structure in a futile attempt at making the lights visible during the day, but the Playa sun always wins ☀️ So it turned out to be just a nighttime piece."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#nighttime-viewing",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#nighttime-viewing",
+    "title": "We Did It",
+    "section": "Nighttime Viewing",
+    "text": "Nighttime Viewing\nWhile the colored LEDs were not visible during the day, the colors shined through beautifully at night.\n Bo and I were delighted to see how vibrant the colors glowed at night. Photo courtesy of my dear friend Victoria Hollis.\n Here is a full 360 view of the project displayed on Playa.\n🌈\nThis recording is the tail-end of my presentation where I encouraged my campmates to explore the control panel, figuring out how the buttons influenced the central light. Video courtesy of Victoria Hollis.\n I invited my camp to view the piece and gave a brief presentation explaining the meaning behind the colors of each LED strip in the light display.\n Over the course of the event, almost all of our solar lights to provide safe visibility were destroyed. My amazing camp member, Kerry Veenstra, who also had a piece on Playa, lent us some spare lights that added beautiful lighting to the ground. Photo courtesy of Victoria Hollis."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#participant-interaction",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#participant-interaction",
+    "title": "We Did It",
+    "section": "Participant Interaction",
+    "text": "Participant Interaction\nOn a different note, event participants found my piece difficult to engage with. ColorClock was vandalized twice with mean stickers, and no one I spoke to at the project had the vaguest idea of what they were looking at or what the buttons actually did.\n\nMy camp mate Kerry found this sticker on my piece and promptly removed it. This was the second time someone had vandalized my art. I didn’t take it personally, but it saddens me that some people think it’s acceptable or amusing to deface a project that someone has invested so much time and effort into. Photo courtesy of Kerry Veenstra.\n🌈\nRegardless of how ColorClock was consumed by the public, I’m still damn proud of what we accomplished. And this project wasn’t for anyone one else - it was for me. The magic of ColorClock was in the software which I did not have the time or mental capacity to translate into the visual aesthetic."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#the-end-of-colorclock-version-1",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#the-end-of-colorclock-version-1",
+    "title": "We Did It",
+    "section": "The End of ColorClock Version 1",
+    "text": "The End of ColorClock Version 1\nMany of the art pieces at Burning Man are burned, which I believe symbolizes the impermanence of life. Though our choice to burn our piece was mostly because we simply didn’t want to lug it home 😅 A ceremonial burn-in-place ritual is quite complex due to the need to protect the playa. Instead, we opted to disassemble the piece and burn it in the “Burn Garden.”\n\nBefore disposing of the structure, we salvaged the electrical components and removed all fasteners.\nCody and Bo disassembled the project and removed all screws. Our friend and campmate Asher (not pictured) was helpful in removing staples from the battery box and played a significant role in conducting a MOOP sweep of the area. In Burning Man culture, MOOP stands for Matter Out Of Place. A MOOP sweep involves meticulously combing the area for any debris to uphold the principle of “Leave No Trace.”\nOnly unpainted, untreated wood was permitted in the Burn Garden which is why we left the wood in the structure unfinished. Here, Bo is tossing our disassembled structure into the “Burn Garden”."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#colorclock-version-2",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#colorclock-version-2",
+    "title": "We Did It",
+    "section": "ColorClock Version 2?",
+    "text": "ColorClock Version 2?\nI have a lot of ideas of how to modify ColorClock to be more palatable for the viewer and how to improve the design. So there will definitely be a version 2. Here is a short list of ideas for improvement:\n\nUse individually addressable LEDs.\nDesign and create a printed circuit board.\nModify lights in control panel to respond instantaneously to participant input.\nCome up with a better user interface.\nMake it smaller, reducing the need for a huge trailer.\nMake it cuter. Burners like cute things.\n\nBut there’s another project I’ve been contemplating for a few years so maybe that will be the next endeavor. I’m going to let this year’s experience settle for a bit before I decide on my next project…"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#thank-you",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#thank-you",
+    "title": "We Did It",
+    "section": "Thank You 🙏",
+    "text": "Thank You 🙏\nI would like to extend my heartfelt thanks to several individuals who made significant contributions to ColorClock:\nBo, my partner in project creation and life, played a crucial role in designing and singlehandedly constructing the physical structure. His support gave me the confidence to see the project through to completion even during challenging times. Bo assisted with troubleshooting both hardware and software issues, provided invaluable guidance on software design, including teaching me how to create a state machine, and helped me master Git rebase to keep the ColorClock repository organized.\nCody was incredibly helpful in numerous ways, from lifting heavy objects and loading to taking turns driving the large and unwieldy trailer. Beyond his practical support, Cody’s presence at Burning Man, his assistance with building and striking camp, and his joy and playfulness were heartwarming and made the experience even more special His support was deeply appreciated.\nKerry mentored me during the early stages of software design and inspired me to bring art to the Playa. Kerry also generously loaned and installed new solar lights for my piece when the originals were damaged and has been a steadfast advocate for both my well-being and my art.\nHeather created charming signs that truly brought the piece together, adding a special touch to the overall presentation.\nAustin assisted with 3D printing my test models for the electronics box providing a protective enclosure for the circuit board during its time on the Playa.\nAsher assisted with our MOOP sweep and the disassembly process, ensuring that everything was handled efficiently and effectively.\nTrevor, our Artery liaison, answered all our questions and provided exceptional support throughout the project.\nTo all my campmates with the Funguys, thank you for your warmth and unconditional support. You all are truly family to me 🥰\nFinally, I’d like to extend my gratitude to the Burning Man organization for providing a platform to present ColorClock and for showcasing a diverse range of art and experiences. Their efforts create an environment where unique and extraordinary art forms can truly thrive."
   },
   {
     "objectID": "education/how-to-learn.html",
