@@ -46,14 +46,10 @@ website:
           - text: How to View Worksheet Answers
             href: education/comp-org/worksheet-answers.qmd
 
-      - text: "Projects"
-        menu:
-          - text: "ColorClock"
-            href: projects/color-clock/color-clock.qmd
+      - text: "ColorClock"
+        href: projects/color-clock/color-clock.qmd
       - text: "Contact"
         href: contact.qmd
-      - text: "Blog"
-        href: posts.qmd
 
     tools:
       - icon: linkedin
