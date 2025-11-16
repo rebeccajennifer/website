@@ -317,3 +317,15 @@ details {
   padding           : 20px;
   margin-bottom     : 20px;
 }
+
+div.sourceCode code, pre
+{
+  background-color  : var(--flux-bg-bold);
+  border-radius     : 0px;
+}
+
+/*pre
+{
+/*  background-color  : var(--flux-bg-bold);
+/*  border-radius     : 10px;
+}

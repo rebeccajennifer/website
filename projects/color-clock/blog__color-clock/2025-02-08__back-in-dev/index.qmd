@@ -1,9 +1,10 @@
 ---
-title: "Back In Development"
-description: "Leveling up ColorClock with testing, tooling, and better software design."
-date: 2025-02-08
-categories: [color-clock, testing]
-draft: false
+title       : "Back In Development"
+description : "Leveling up ColorClock with testing, tooling, and better software design."
+date        : 2025-02-08
+categories  : [color-clock, testing]
+image       : ascii-bunny.png
+draft       : false
 ---
 
 I would like to make the ColorClock code base more robust, so I
@@ -152,6 +153,7 @@ the time was still accurate thanks to the 'real-time clock module 🎉
 The first step to converting it to a home display is to sort out the
 wiring...
 
+![](wire-harness-v1-home-display__2025-02-10.png)
 *For ColorClock Version 1, the light display's wiring was terminated
 with a Molex connector, which connected to a wire harness. The harness
 then led to a 12-way terminal block mounted on the structure, which
@@ -161,7 +163,10 @@ The diagram above was generated using DOT, a scripting language for
 creating vector images. It's another technology I use at work and have
 recently started incorporating into ColorClock.
 
-*For home display, we removed the wire harness from Version 1 and directly connected the LED strips to the terminal block, which we relocated to the back of the light display.*
+![](terminal-block.JPEG)
+*For home display, we removed the wire harness from Version 1 and
+directly connected the LED strips to the terminal block, which we
+relocated to the back of the light display.*
 
 ## TODO
 
