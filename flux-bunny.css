@@ -161,7 +161,6 @@ h4 { margin-left: 0px;}
 /* BUTTONS & HYPERLINKS
 /*--------------------------------------------------------------------*/
 
-
 .flux-button
 {
   font-family       : var(--font-fam-header);
@@ -206,10 +205,13 @@ h4 { margin-left: 0px;}
 }
 
 /* Hyperlinks */
+/*
 main a         { color        : var(--flux-color-3); }
-main a:hover   { font-weight  : bold; }
-main a:active  { color        : var(--flux-color-2); }
-main a:visited { color        : var(--flux-color-1); }
+*/
+a         { color        : var(--flux-color-3); }
+a:hover   { font-weight  : bold; }
+a:active  { color        : var(--flux-color-2); }
+a:visited { color        : var(--flux-color-1); }
 
 .pdf-link-table
 {
@@ -301,4 +303,17 @@ details {
   margin-bottom : 1em;
   border-left   : 3px solid var(--flux-color-2);
   padding-left  : 0.5em;
+}
+
+/*--------------------------------------------------------------------*/
+/* BLOG
+/*--------------------------------------------------------------------*/
+
+.quarto-title-banner
+{
+  background-color  : var(--flux-color-3);
+  color             : var(--flux-bg-norm);
+  font-family       : var(--font-fam-header);
+  padding           : 20px;
+  margin-bottom     : 20px;
 }

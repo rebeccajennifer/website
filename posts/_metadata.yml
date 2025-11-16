@@ -1,0 +1,43 @@
+#______________________________________________________________________#
+#______________________________________________________________________#
+#        _   __   _   _ _   _   _   _         _                        #
+#   |   |_| | _  | | | V | | | | / |_/ |_| | /                         #
+#   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        #
+#    _  _         _ ___  _       _ ___   _                    / /      #
+#   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      #
+#   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   #
+#______________________________________________________________________#
+#______________________________________________________________________#
+#                                                                      #
+#----------------------------------------------------------------------#
+#   Copyright 2025, Rebecca Rashkin                                    #
+#   -------------------------------                                    #
+#   This code may be copied, redistributed, transformed, or built      #
+#   upon in any format for educational, non-commercial purposes.       #
+#                                                                      #
+#   Please give me appropriate credit should you choose to use this    #
+#   resource. Thank you :)                                             #
+#----------------------------------------------------------------------#
+#                                                                      #
+#______________________________________________________________________#
+#   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   #
+#______________________________________________________________________#
+#   DESCRIPTION
+#   This file contains metadata for the ColorClock blog.
+#   Options specified here will apply to all posts in this folder.
+#______________________________________________________________________#
+
+#______________________________________________________________________#
+#______________________________________________________________________#
+
+# email: "rebeccajenniferrabbit@gmail.com"
+# Re-render posts only when a change to the source file is made.
+freeze: auto
+
+# Enable banner style title blocks.
+title-block-banner: true
+
+# My author information.
+author:
+  - name: Rebecca Jennifer Rashkin
+    url: https://rebeccajennifer.github.io/website

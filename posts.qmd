@@ -28,10 +28,36 @@
 |____________________________________________________________________-->
 
 ---
-title: "My Blog"
+title: "ColorClock"
 listing:
   contents: posts
   type: grid
   sort: "date desc"
   categories: true
 ---
+
+What time is it?
+Amber o'clock-ish(?)
+
+{{< include assets/ui-elements/section-divider-blu.html >}}
+
+## What is it?
+
+ColorClock is a decade-long passion project that combines art with
+engineering and color with time. In simple terms, it's a
+clock that displays time through color instead of symbols.
+For me, it represents perseverance and pride, and stands as the most
+hard-earned engineering accomplishment I had taken from conception to
+design to full deployment.
+
+ColorClock V1 was an RGB LED art installation displayed at
+Burning Man 2024. It was a simple circular light display housed in a
+practical lean-to structure with a bench.
+
+![](/projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
+
+{{< include assets/ui-elements/section-divider-blu.html >}}
+
+## The Journey
+
+Take a look at my blog to see the evolution of ColorClock.

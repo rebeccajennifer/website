@@ -1,9 +1,6 @@
 ---
 title: "Back In Development"
 description: "Leveling up ColorClock with testing, tooling, and better software design."
-author:
-- name: Rebecca Jennifer Rashkin
-  url: https://github.com/rebeccajennifer
 date: 2025-02-08
 categories: [color-clock, testing]
 draft: false
