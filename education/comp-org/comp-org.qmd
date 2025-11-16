@@ -47,6 +47,7 @@ education, documentation, and curriculum design.
 
 ![](../../assets/comp-org-assets/img/timing-diagram-whiteboard.jpg){fig-alt="Photograph of whiteboard with a timing diagram."}
 
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 ## Worksheets
 

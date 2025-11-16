@@ -24,7 +24,7 @@
 |____________________________________________________________________-->
 
 ---
-title: SPOILER ALERT!
+title: Spoiler Alert!
 format: html
 ---
 

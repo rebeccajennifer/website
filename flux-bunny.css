@@ -74,7 +74,13 @@ h1, h2, h3, h4
   font-family: var(--font-fam-header);
 }
 
-h1      { font-size: var(--font-size-h1); color: var(--flux-color-2); }
+h1
+{
+  font-size       : var(--font-size-h1);
+  color           : var(--flux-color-2);
+  font-variant    : small-caps;
+}
+
 h2      { font-size: var(--font-size-h2); color: var(--flux-color-1); }
 h3      { font-size: var(--font-size-h3); color: var(--flux-fg-bold); }
 
@@ -100,7 +106,6 @@ h4 { margin-left: 0px;}
 /*--------------------------------------------------------------------*/
 /* NAVIGATION BAR
 /*--------------------------------------------------------------------*/
-/* Notes
 /* navbar       - Whole navigation bar
 /* navbar-nav   - Container that holds nav links
 /* nav-link     - Each link in navbar
@@ -123,6 +128,21 @@ h4 { margin-left: 0px;}
   font-family       : var(--font-fam-header);
   font-size         : var(--font-size-h4);
   color             : var(--flux-bg-norm);
+  font-variant      : small-caps;
+}
+.navbar-brand:visited
+{
+  color             : var(--flux-bg-norm);
+}
+
+.navbar-brand:hover
+{
+  font-weight       : normal;
+}
+
+.navbar-link:hover
+{
+  font-weight       : normal;
 }
 
 .navbar-nav
@@ -248,7 +268,8 @@ pdf-link-table td tr
 {
   background-color  : var(--flux-color-3);
   height            : 10px;
-  margin-top        : 80px;
+  margin-top        : 40px;
+  margin-bottom     : 40px;
 }
 
 /* Divider for smaller sections */

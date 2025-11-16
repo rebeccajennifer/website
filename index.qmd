@@ -32,9 +32,14 @@ format: html
   table           { width: 100%; }
   td              { width:  25%; text-align: center;}
   .flux-button._1 { width: 100%; }
+  h1              { color: var(--flux-color-3)}
 </style>
 
 My name is Rebecca.
+
+![](assets/photos-general-assets/flux-grass-cropped-landscape.jpg)
+
+{{< include assets/ui-elements/section-divider-blu.html >}}
 
 ## Who I Am
 
@@ -50,7 +55,7 @@ favorite things are handstands and rabbits 🐰
 <td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Engineering </a></td>
 <td><a class="flux-button _1" href="https://flyingrabbitmovement.com">      Movement    </a></td>
 <td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Education   </a></td>
-<td><a class="flux-button _1" href="https://github.com/rebeccajennifer/color-clock/blob/main/README.md">Color</a></td>
+<td><a class="flux-button _1" href="projects/color-clock/color-clock.html"> Creativity  </a></td>
 </tr></table>
 
 {{< include assets/ui-elements/section-divider-blu.html >}}

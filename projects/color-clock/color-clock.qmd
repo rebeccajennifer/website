@@ -44,7 +44,7 @@ Amber o'clock-ish(?)
 ## What is it?
 
 ColorClock is a decade-long passion project that combines art with
-engineering and color with time. In simple terms, it's a
+engineering and color with time. Put simply, it's a
 clock that displays time through color instead of symbols.
 For me, it represents perseverance and pride, and stands as the most
 hard-earned engineering accomplishment I had taken from conception to
