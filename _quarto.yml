@@ -32,9 +32,11 @@ project:
   output-dir  : publish
   resources   :
     - assets/**
+    - "CNAME"
 
 website:
   title: "Rebecca Jennifer Rashkin"
+  #site-url: https://rebeccajennifer.github.io/website
   navbar:
     right:
       - text: "Teaching"
