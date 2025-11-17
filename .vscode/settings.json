@@ -1,0 +1,7 @@
+{
+  "files.associations": {
+    ".als.json": "jsonc",
+    "iostream": "cpp"
+  },
+  "sarif-viewer.connectToGithubCodeScanning": "off"
+}

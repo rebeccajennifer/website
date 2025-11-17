@@ -1,0 +1,487 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+
+---
+title: Computer Systems and Assembly Language
+format: html
+---
+
+I find magic in understanding a computer all the way
+down to its ones and zeros.
+
+From 2018 to 2019, I had the joy of teaching Computer Systems and
+Assembly Language at the University of California, Santa Cruz. In this
+“computer engineering 101” course, I restructured the curriculum and
+taught foundational concepts including binary, digital logic design,
+memory alignment, and assembly language.
+
+My favorite topic to teach was _data path_ where I guided students
+through how an assembly instruction breaks down into machine code and
+how those ones and zeros flow through the processor.
+
+This page contains the course material from that class to serve as a
+reference for anyone interested, and as an example of my work in
+education, documentation, and curriculum design.
+
+![](../../assets/comp-org-assets/img/timing-diagram-whiteboard.jpg){fig-alt="Photograph of whiteboard with a timing diagram."}
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## Worksheets
+
+I teach Computer Systems and Assembly language using fill-in-the-blank
+worksheets that I’ve designed. Students who manually write out notes
+are more likely to retain information presented in class over students
+who type notes.
+
+These worksheets allow students to handwrite notes and maintain better
+engagement in class, rather than losing focus by copying slides.
+I include examples for students to work out both during
+lecture with their classmates, and outside of class.
+
+
+```{python}
+#| echo: false
+from IPython.display import display, HTML
+
+rows: list =\
+  [ { 'heading'   : 'Notes  0: Intro To Computing Systems'
+    , 'desc'      : 'history of computing, computing levels of abstraction'
+    , 'worksheet' : 'https://docs.google.com/document/d/1fPTFiTZXDPQUzYn2miww7W_TBVUmKdPxsUDLVlnlVkY/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes00_intro_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Who invented the computer?'
+        , 'link'  : 'https://www.youtube.com/watch?v=d1pvc9Zh7Tg&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  1: Integer Numbering Systems'
+    , 'desc'      : 'unary, grouping, positional, decimal, octal, hexadecimal, binary'
+    , 'worksheet' : 'https://docs.google.com/document/d/1kvzlGUqJ5IVvs863-Thrl_0iFYKP6HWctyPdlnSxolA/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes01_int_numbering_systems_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Number Systems and Bases: Better Explained'
+        , 'link'  : 'https://betterexplained.com/articles/numbers-and-bases/'
+        }
+      , { 'desc'  : 'Introduction to number systems and binary: Khan Academy'
+        , 'link'  : 'https://www.khanacademy.org/math/algebra-home/alg-intro-to-algebra/algebra-alternate-number-bases/v/number-systems-introduction'
+        }
+      , { 'desc'  : 'The Number Base Calculator: Cleave Books'
+        , 'link'  : 'http://www.cleavebooks.co.uk/scol/calnumba.htm'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes 2a: Combinational Logic 1'
+    , 'desc'      : 'MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams'
+    , 'worksheet' : 'https://docs.google.com/document/d/13ej2h2ShRISkXNLjBpBXqjTulfWLduqRunDzogxeV5U/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02a_comb_logic_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)'
+        , 'link'  : 'https://youtu.be/_SwY-WfWTQo?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&t=786'
+        }
+
+      ]
+    }
+
+  , { 'heading'   : 'Notes 2b: Combinational Logic 2'
+    , 'desc'      : 'digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)'
+    , 'worksheet' : 'https://docs.google.com/document/d/1os_NDBybj-U4lpMppG6Scfyo-fkgZNdNs4ktxt-pSd4/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02b_comb_logic_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=d-amzrRVhfE&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=10'
+        }
+      , { 'desc'  : 'SOP and POS: Peter Mathys'
+        , 'link'  : 'https://www.youtube.com/watch?v=8nEPfx2_uGY&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=26'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes 2c: Combinational Logic 3'
+    , 'desc'      : 'multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU'
+    , 'worksheet' : 'https://docs.google.com/document/d/16UiRg7d-cPHNblD39rClBkAHcE9duKxdpO069fMucKo/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02c_comb_logic_comp_org.pdf'
+    }
+
+  , { 'heading'   : 'Notes  3: Boolean Algebra'
+    , 'desc'      : 'Boolean identities, De Morgan\'s Law'
+    , 'worksheet' : 'https://docs.google.com/document/d/1SxFqLJwsOVqsR0jmjLnuVdjkjfHjMjiFTCfNGT1R0yk/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes03_boolean_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Boolean Algebra: electronics-course.com'
+        , 'link'  : 'https://electronics-course.com/boolean-algebra'
+        }
+      , { 'desc'  : 'Boolean Algebra Example: Peter Mathys'
+        , 'link'  : 'https://www.youtube.com/watch?v=VhU0Nah-NUc&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=20'
+        }
+      , { 'desc'  : 'NAND/NOR Only Example: Peter Mathys'
+        , 'link'  : 'https://www.youtube.com/watch?v=fz4stq2jQTQ&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=16&t=0s'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  4: Sequential Logic'
+    , 'desc'      : 'SR latch, active high, active low, D latch, D flip-flop'
+    , 'worksheet' : 'https://docs.google.com/document/d/1jCjqp91cu7EGFc4wIt5kTKMEKL2UGNL0MBPBEJVgmJM/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes04_seq_logic_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Timing Diagrams: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=7Gf7N424v3k&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=56'
+        }
+      , { 'desc'  : 'SR Latches, D Latches, and D Flip-flops: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=CUfZladDqq8&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=21'
+        }
+      , { 'desc'  : 'SR Latch: Ben Eater'
+        , 'link'  : 'https://www.youtube.com/watch?v=KM0DdEaY5sY&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=43&t=0s'
+        }
+      , { 'desc'  : 'SR Latch | NOR and NAND SR Latch: Neso Academy'
+        , 'link'  : 'https://www.youtube.com/watch?v=kt8d3CYWGH4&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=23&t=0s'
+        }
+      , { 'desc'  : 'Registers, Flip-flops, and Modular Design: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=OfxYoQn7uJ4&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=22&t=0s'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  5: Signed Integer Representation'
+    , 'desc'      : 'signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point'
+    , 'worksheet' : 'https://docs.google.com/document/d/143qds1MCfpPgRptP9A1u9eGqQYaqzC764fSWuxQicZ0/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes05_data_rep_ints_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Two\'s Complement: Negative Numbers in Binary: Ben Eater'
+        , 'link'  : 'youtube.com/watch?v=4qH4unVtJkE&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=28'
+        }
+      , { 'desc'  : 'Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato'
+        , 'link'  : 'https://www.youtube.com/watch?v=T8EAMYPYG28&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=30'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  6: Arithmetic and Logic Operations'
+    , 'desc'      : 'carry out, overflow, bitwise, reduction, shifts, rotate'
+    , 'worksheet' : 'https://docs.google.com/document/d/1YbZT9WkQChuxxNOaQgxiQbxoD0Kv_ibijjsxvufAoE8/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes06_arithmetic_logical_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Two\'s Complement Representation and Overflow: EngMicroLectures'
+        , 'link'  : 'https://www.youtube.com/watch?v=rnQwucEfT6A&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=29'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  7: Fractional Representation'
+    , 'desc'      : 'fixed point, IEEE 754 single precision floating point'
+    , 'worksheet' : 'https://docs.google.com/document/d/1jsAnou7zBUgTmDnK9bsCB7X0NkSvieR5vPLtNuQ6GSI/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes07_data_rep_fractions_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'Binary Fractions: Electronics Tutorials'
+        , 'link'  : 'https://www.electronics-tutorials.ws/binary/binary-fractions.html'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes  8: Text Representation'
+    , 'desc'      : 'ASCII, UTF-8'
+    , 'worksheet' : 'https://docs.google.com/document/d/1HR3GmBqNPuw2lhfSVADLGE7EXkIh_JLzvePAWOmnex4/edit#heading=h.yn6mbr4hmcer'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes08_data_rep_text_comp_org.pdf'
+    }
+
+  , { 'heading'   : 'Notes  9: von Neumann Model'
+    , 'desc'      : 'von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory'
+    , 'worksheet' : 'https://docs.google.com/document/d/1QhW1mmrz5equfd_FMN5gNJRvsOLxMXhIZlyLw2ezh40/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes09_von_neumann_comp_org.pdf'
+    }
+
+  , { 'heading'   : 'Notes 10: MIPS Instruction Set Architecture'
+    , 'desc'      : 'general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding'
+    , 'worksheet' : 'https://docs.google.com/document/d/1flarjrWNTOC31J5RhwrEeUzf6_Q0pLvSWkamfe3ZDK8/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes10_mips_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'MIPS Reference Table: Rebecca Rashkin'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/mips-instructions-reference-table.pdf'
+        }
+      , { 'desc'  : 'MIPS Instruction Format: Rebecca Rashkin'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/mips-instruction-format.pdf'
+        }
+      , { 'desc'  : 'Printable ASCII Characters: Rebecca Rashkin'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/printable-ascii-characters.pdf'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes 11: MARS: MIPS Assembler and Runtime Simulator'
+    , 'desc'      : 'memory display, syscalls'
+    , 'worksheet' : 'https://docs.google.com/document/d/1DUJ8j9j1HXQEfuP6l0Pfezo_ZtnvGUtCLWUqC6PV0qY/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes11_mars_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc': 'MIPS Tutorial 1 Intro and Mars: Amell Peralta'
+        , 'link': 'https://www.youtube.com/watch?v=u5Foo6mmW0I&list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A&index=1'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes 12: MIPS Addressing Modes'
+    , 'desc'      : 'register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct'
+    , 'worksheet' : 'https://docs.google.com/document/d/1Y7osQkg3xhCjvHCQKXgmypmTUhmqGEJ_uGj_pQcqguI/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes12_addressing_modes_comp_org.pdf'
+    }
+
+  , { 'heading'   : 'Notes 13: Stacks and Subroutines'
+    , 'desc'      : 'stack, jump instructions, return address, subroutines'
+    , 'worksheet' : 'https://docs.google.com/document/d/1nYxqvRtyQcw67LvYJBq_Vg8MaX8NKCO1oWMOy_NkLDA/edit#'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes13_subroutines_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)'
+        , 'link'  : 'https://www.youtube.com/watch?v=NjWZxz0GqFM&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=40'
+        }
+      ]
+    }
+
+  , { 'heading'   : 'Notes 14: MIPS Data Path'
+    , 'desc'      : 'mips data path, r-type, i-type, j-type, pc, register file, alu, control unit'
+    , 'worksheet' : 'https://docs.google.com/document/d/1Mh_K32zhWOYp28H-d642PAsac-U753cz7Ne74F-vcjY/edit?usp=sharing'
+    , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes14_mips_datapath_comp_org.pdf'
+    , 'supplement':
+      [ { 'desc'  : 'MIPS32 Data Path: Rebecca Rashkin'
+        , 'link'  : '../../assets/comp-org-assets/pdf/reference__comp-org/mips-data-path.pdf'
+        }
+      ]
+    }
+  ]
+
+html_parts = []
+
+for r in rows:
+
+  supplement_list: str = ''
+
+  if 'supplement' in r:
+
+    supplement_list: str = '<p><h4>Supplements</h4>'
+
+    # Construct list of supplemental materials.
+    for i in range(len(r['supplement'])):
+      sup: dict = r['supplement']
+
+      supplement_list = supplement_list +\
+        f' <a href="{sup[i]['link']}">{sup[i]['desc']}</a>'
+
+      supplement_list = supplement_list + '</p>'
+
+  html_parts.append(f"""
+<details><summary class="h3-mock">{r['heading']}</summary>
+  <p>{r['desc']}</p>
+  <div><table class="pdf-link-table"><tr>
+    <td><a  class="flux-button _0" href="{r['worksheet']}">
+      Google Doc
+    </a></td>
+    <td><a  class="flux-button _0" href="{r['pdf']}">
+      PDF
+    </a></td>
+  </tr></table></div>
+  {supplement_list}
+  <br>
+</details>
+""")
+
+# join and display as raw HTML so Quarto renders it as actual collapsible sections
+display(HTML("".join(html_parts)))
+
+```
+
+{{< include ../../assets/ui-elements/section-divider-cya.html >}}
+
+### Spoiler Alert!
+
+How do I see the answers?
+<p><a  class="flux-button _0" href="worksheet-answers">Here You Go!</a></p>
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## Extra Credit
+
+```{python}
+#| echo: false
+extra_credit: list =\
+  [ { 'name' : 'Computer Archeology'
+    , 'desc' : str('Write 250 words about the background, functionality, '
+                'and social implications of an artifact from computer '
+                'history. Create 1 - 3 slides on that artifact and '
+                'present it to the class.')
+    , 'gdoc' : 'https://docs.google.com/document/d/1xWWEoFcuVAfYVeNNTZ0uzcnWCCrpk-4avm-DX6vk5Ns/edit?usp=sharing'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_computer_archeology_comp_org.pdf'
+    }
+  , { 'name' : 'Get Your Ham Radio License'
+    , 'desc' : str('Get your ham radio license and attend 4 ucsc '
+                'amateur radio club events.')
+    , 'gdoc' : 'https://docs.google.com/document/d/1kQILW0YurFgD7NVlSuZExkdeF26lnfOxd2BkySUuSDQ/edit?tab=t.0#heading=h.62a682hw0mi3'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_ham_comp_org.pdf'
+    }
+  , { 'name' : 'Skill Progression'
+    , 'desc' : str('Learn a new skill, or progress in a skill you have '
+                'already worked on. Show documentation of your skill '
+                'progression and journal about it four times throughout '
+                'the quarter. Examples: juggling, drawing, singing, '
+                'dancing, playing a musical instrument, movement.')
+    , 'gdoc' : 'https://docs.google.com/document/d/16m6IgjSVFCBmF294mwcZwSEu68nwRM1fCGXdQTStiKA/edit?tab=t.0#heading=h.62a682hw0mi3'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_skill_progression_comp_org.pdf'
+    }
+  , { 'name' : 'Malleable Intelligence Essay'
+    , 'desc' : str('Read the chapter “Intelligence as a Malleable '
+               'Construct” from the Handbook of Intelligence and write '
+               'a 500+ word essay. This assignment will have 3 parts: '
+               'summary, reflection, and recommendations.')
+    , 'gdoc' : 'https://docs.google.com/document/d/1XRfldUyJfRQiahu84b76Jj63me3oi-h3XK7iJZu6Jqo/edit?tab=t.0#heading=h.62a682hw0mi3'
+    , 'pdf'  : '../../assets/comp-org-assets/pdf/extra-credit__comp-org/extra_credit_essay_comp_org.pdf'
+    }
+
+  ]
+
+html_parts = []
+
+for assignment in extra_credit:
+
+  html_parts.append(f"""
+<!--details><summary class="h3-mock">{assignment['name']}</summary-->
+<details><summary>{assignment['name']}</summary>
+  <p>{assignment['desc']}</p>
+  <div><table class="pdf-link-table"><tr>
+    <td><a  class="flux-button _0" href="{assignment['gdoc']}">
+      Google Doc
+    </a></td>
+    <td><a  class="flux-button _0" href="{assignment['pdf']}">
+      PDF
+    </a></td>
+  </tr></table></div>
+</details>
+""")
+
+# join and display as raw HTML so Quarto renders it as actual collapsible sections
+display(HTML("".join(html_parts)))
+
+```
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## Sample Exams
+
+### Midterms
+
+[Fall   2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q4_fa_midterm_solution_ce12.pdf)
+[Summer 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q3_su_midterm_ce12.pdf)
+[Spring 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q2_sp_midterm_ce12.pdf)
+[Winter 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q1_wi_midterm_ce12.pdf)
+[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/18q4_fa_midterm_ce12.pdf)
+[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/18q3_su_midterm_ce12.pdf)
+
+### Finals
+
+[Fall   2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q4_fa_final_ce12.pdf)
+[Summer 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q3_su_final_ce12.pdf)
+[Spring 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q2_sp_final_ce12.pdf)
+[Winter 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q1_wi_final_ce12.pdf)
+[Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q4_fa_final_ce12.pdf)
+[Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q3_su_final_ce12.pdf)
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## Resources
+
+### Course Related
+
+[Syllabus](../../assets/comp-org-assets/pdf/general__comp-org/syllabus_ce12.pdf)
+
+[Documentation standards](../../assets/comp-org-assets/pdf/general__comp-org/documentation_standards_ce12.pdf)
+
+[Course reference playlist](https://www.youtube.com/playlist?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R)
+
+### Reference Tables
+
+[MIPS Instructions](../../assets/comp-org-assets/pdf/reference__comp-org/mips-instructions-reference-table.pdf)
+
+[MIPS Instruction Format](../../assets/comp-org-assets/pdf/reference__comp-org/mips-instruction-format.pdf)
+
+[Printable ASCII Characters](../../assets/comp-org-assets/pdf/reference__comp-org/printable-ascii-characters.pdf)
+
+### Git
+
+[Video references](https://www.youtube.com/watch?v=SWYqp7iY_Tc&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=7)
+[Git documentation](https://git-scm.com/docs)
+
+#### Tutorials
+
+[Git Immersion](https://gitimmersion.com/)
+[Learn Git Branching](https://learngitbranching.js.org/)
+
+### Command Line Interface
+
+#### Videos
+
+[BASH Basics](https://www.youtube.com/watch?v=x73WTEltyHU&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=5)
+[Terminal Basics for Beginners](https://www.youtube.com/watch?v=5XgBd6rjuDQ&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=4)
+
+#### Command Line Text Editor References
+
+[Vim](http://tnerual.eriogerg.free.fr/vimqrc.pdf)
+[Emacs](https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf)
+
+### Lab Applications
+
+#### MARS: MIPS Assembler and Runtime Simulator
+
+[MARS homepage](https://computerscience.missouristate.edu/mars-mips-simulator.htm)
+
+[Video tutorials](https://www.youtube.com/watch?v=u5Foo6mmW0I&list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A)
+
+#### Multimedia Logic
+
+[Multimedia Logic homepage](https://www.softronix.com/logic.html)
+
+[Mac installation tutorial](../../assets/comp-org-assets/pdf/reference__comp-org/mml_mac_installation.pdf)
+
+### Video Playlists
+
+[Course reference playlist](https://www.youtube.com/playlist?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R)
+
+[Digital Logic and Computer Organization: EngMicroLectures](https://www.youtube.com/watch?v=Tus1Tjhnd2w&list=PLA8F3EE4391DF4D0A)
+
+[Computer Organisation & Architecture: Semesters Simplified](https://www.youtube.com/watch?v=h4prlOPOpNQ&list=PLgBlB7BVKQmg__8dTZOkHBSj4WDRgZ4vX&index=2)
+
+[MIPS Instruction Set Architecture 1: David Black-Schaffer](https://www.youtube.com/watch?v=PlavjNH_RRU&list=PLylNWPMX1lPlmEeeMdbEFQo20eHAJL8hx)
+
+[MIPS Instruction Set Architecture 2: David Black-Schaffer](https://www.youtube.com/playlist?list=PLylNWPMX1lPnipZzKdCWRj2-un5xvLLdK)
+
+### Fun Stuff
+
+[TIS-100: assembly language video game](https://www.zachtronics.com/tis-100/)
+
+[Skills based training](https://gmb.io/method/)
+
+[American Amateur Radio League (ARRL)](https://arrl.org)
+
+[Perceptual Noise Generator](https://mynoise.net/NoiseMachines/greyNoiseGenerator.php)
+
+

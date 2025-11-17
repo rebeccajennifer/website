@@ -1,0 +1,124 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+
+# How To Learn
+
+Show up.
+Do the things.
+Be consistent.
+
+{{< include ../assets/ui-elements/section-divider-blu.html >}}
+
+## Show Up
+
+A large part of making progress is just showing up -- _even if you don’t
+feel like it_.
+
+### Be Prepared
+
+Set yourself up for success by preparing yourself appropriately. For
+lecture, make sure to bring:
+
+- Paper
+- A writing utensil
+- A notebook
+- Colored pens or highlighters
+
+### Be Present
+
+Eliminate distractions by stashing your electronics.
+
+{{< include ../assets/ui-elements/section-divider-cya.html >}}
+
+## Do The Things
+
+i.e. practice with intention.
+
+### My Number #1 Tip
+
+__Study with peers__. How do you find a study group? Go to office hours
+and supplementary tutoring sessions if they are offered. Talk to others.
+
+### Review Your Notes Every Day
+
+Review all your notes after every class __starting from the beginning__
+of the quarter. Redo all of the examples, and complete any examples
+not covered in lecture. Spending time to strengthen your
+knowledge foundation will serve you in completing the assignments.
+
+### Start Assignments Early
+
+You will inevitably run into bugs that you have to fix. This often
+takes way longer than you might think to resolve. Starting assignments
+early enables you to catch these issues early on so you are not
+panicked at the 11th hour.
+
+### Make Up Your Own Examples
+
+Rewrite the homework with different numbers. Solve this new version of
+the homework.
+
+### Still Stuck?
+
+If you feel that you've been "doing the things" and are not improving,
+_reflect_ upon the approach you are taking. Are you hitting roadblocks
+in your process? Talk to others and form a new plan.
+
+{{< include ../assets/ui-elements/section-divider-cya.html >}}
+
+## Be Consistent
+
+The key to progression in any context is __repetition__ and consistency.
+
+### Build Habits
+
+In order to progress, one _needs_ to incorporate practice into their
+weekly schedule. Work on building habits for:
+
+- Preparation
+- Showing up
+- Practice
+
+I highly suggest reading (or listening to)
+[Atomic Habits](https://jamesclear.com/atomic-habits) by James Clear.
+
+### Anticipate Obstacles
+
+Reflect on the days where you feel that you fell short. Recognize what
+got in the way and come up with ways to avoid the obstacles.
+
+{{< include ../assets/ui-elements/section-divider-cya.html >}}
+
+## Trust the Process
+
+It takes time to learn. Be kind to yourself and keep going. Prepare,
+show up, do the things. And read
+[Atomic Habits](https://jamesclear.com/atomic-habits) 😉
+
+{{< include ../assets/ui-elements/section-divider-blu.html >}}
+
+### "We can determine how to be the masters of our habits so that our habits can be useful servants to us."
+
+_- John Templeton_

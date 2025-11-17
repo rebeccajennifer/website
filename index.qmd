@@ -1,0 +1,62 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+
+---
+title: Salutations!
+format: html
+---
+
+<style>
+  table           { width: 100%; }
+  td              { width:  25%; text-align: center;}
+  .flux-button._1 { width: 100%; }
+  h1              { color: var(--flux-color-3)}
+</style>
+
+My name is Rebecca.
+
+![](assets/photos-general-assets/flux-grass-cropped-landscape.jpg)
+
+{{< include assets/ui-elements/section-divider-blu.html >}}
+
+## Who I Am
+
+I am a software engineer and movement enthusiast, but most of all, an educator.
+I am passionate about sharing my knowledge, whether it be about
+computers or movement. I find satisfaction in lifting others up and
+leaving every space I occupy in a better state than I found it. My two
+favorite things are handstands and rabbits 🐰
+
+## What I Care About
+
+<table><tr>
+<td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Engineering </a></td>
+<td><a class="flux-button _1" href="https://flyingrabbitmovement.com">      Movement    </a></td>
+<td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Education   </a></td>
+<td><a class="flux-button _1" href="projects/color-clock/color-clock.html"> Creativity  </a></td>
+</tr></table>
+
+{{< include assets/ui-elements/section-divider-blu.html >}}
+

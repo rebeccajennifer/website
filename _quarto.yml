@@ -1,0 +1,78 @@
+#______________________________________________________________________#
+#______________________________________________________________________#
+#        _   __   _   _ _   _   _   _         _                        #
+#   |   |_| | _  | | | V | | | | / |_/ |_| | /                         #
+#   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        #
+#    _  _         _ ___  _       _ ___   _                    / /      #
+#   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      #
+#   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   #
+#______________________________________________________________________#
+#______________________________________________________________________#
+#                                                                      #
+#----------------------------------------------------------------------#
+#   Copyright 2025, Rebecca Rashkin                                    #
+#   -------------------------------                                    #
+#   This code may be copied, redistributed, transformed, or built      #
+#   upon in any format for educational, non-commercial purposes.       #
+#                                                                      #
+#   Please give me appropriate credit should you choose to use this    #
+#   resource. Thank you :)                                             #
+#----------------------------------------------------------------------#
+#                                                                      #
+#______________________________________________________________________#
+#   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   #
+#______________________________________________________________________#
+#   DESCRIPTION
+#   This file contains the configuration information for the quarto
+#   project.
+#______________________________________________________________________#
+
+project:
+  type        : website
+  output-dir  : publish
+  resources   :
+    - assets/**
+    - "CNAME"
+
+website:
+  title: "Rebecca Jennifer Rashkin"
+  #site-url: https://rebeccajennifer.github.io/website
+  navbar:
+    right:
+      - text: "Teaching"
+        menu:
+          - text: "How to Learn"
+            href: education/how-to-learn.qmd
+          - text: "Computer Systems and Assembly Course"
+            href: education/comp-org/comp-org.qmd
+          - text: How to View Worksheet Answers
+            href: education/comp-org/worksheet-answers.qmd
+
+      - text: "ColorClock"
+        href: projects/color-clock/color-clock.qmd
+      - text: "Contact"
+        href: contact.qmd
+
+    tools:
+      - icon: linkedin
+        href: https://linkedin.com/in/rebeccajr
+      - icon: github
+        href: https://github.com/rebeccajennifer
+      - icon: instagram
+        href: https://www.instagram.com/anonymous_rabbit/
+
+  page-footer:
+    center: "©2025 Rebecca Jennifer Rashkin"
+    right:
+      - icon: linkedin
+        href: https://linkedin.com/in/rebeccajr
+      - icon: github
+        href: https://github.com/rebeccajennifer
+      - icon: instagram
+        href: https://www.instagram.com/anonymous_rabbit/
+
+format:
+  html:
+    theme     : default
+    css       : flux-bunny.css
+    code-fold : true

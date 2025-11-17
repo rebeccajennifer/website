@@ -1,0 +1,352 @@
+/*____________________________________________________________________*/
+/*____________________________________________________________________*/
+/*       _   __   _   _ _   _   _   _         _                       */
+/*  |   |_| | _  | | | V | | | | / |_/ |_| | /                        */
+/*  |__ | | |__| |_| |   | |_| | \ |   | | | \_                       */
+/*   _  _         _ ___  _       _ ___   _                    / /     */
+/*  /  | | |\ |  \   |  | / | | /   |   \                    (^^)     */
+/*  \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o  */
+/*____________________________________________________________________*/
+/*____________________________________________________________________*/
+/*                                                                    */
+/*--------------------------------------------------------------------*/
+/*  Copyright 2025, Rebecca Rashkin                                   */
+/* -------------------------------                                    */
+/*  This code may be copied, redistributed, transformed, or built     */
+/*  upon in any format for educational, non-commercial purposes.      */
+/*                                                                    */
+/*  Please give me appropriate credit should you choose to use this   */
+/*  resource. Thank you :)                                            */
+/*--------------------------------------------------------------------*/
+/*                                                                    */
+/*____________________________________________________________________*/
+/*  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  */
+/*____________________________________________________________________*/
+
+:root
+{
+  --flux-color-1  : #875f87;
+  --flux-color-2  : #5fafaf;
+  --flux-color-3  : #0087af;
+
+  --flux-bg-norm  : #262626;
+  --flux-bg-bold  : #c0c0c0;
+  --flux-fg-norm  : #eeeeee;
+  --flux-fg-bold  : #afafaf;
+
+  --flux-color-1  : #874787;
+  --flux-color-2  : #478787;
+  --flux-color-3  : #475f87;
+
+  --flux-bg-norm  : #eeeeee;
+  --flux-bg-bold  : #d7d7d7;
+  --flux-fg-norm  : #262626;
+  --flux-fg-bold  : #5f5f5f;
+
+  --flux_button_text : var(--flux-bg-norm);
+
+  --font-size-base  : clamp(16px, 1vw   + 0.5rem, 20px);
+  --font-size-h1    : clamp(28px, 4vw   + 1rem,   48px);
+  --font-size-h2    : clamp(24px, 3vw   + 0.8rem, 36px);
+  --font-size-h3    : clamp(20px, 2vw   + 0.6rem, 28px);
+  --font-size-h4    : clamp(18px, 1.5vw + 0.5rem, 24px);
+  --font-size-code  : clamp(14px, 1vw   + 0.3rem, 18px);
+
+  --font-fam-header : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
+  --font-fam-normal : 'Consolas', monospace;
+
+  --button_txt_size : 20px;
+}
+
+body
+{
+  font-family       : var(--font-fam-normal);
+  color             : var(--flux-fg-norm);
+  background-color  : var(--flux-bg-norm);
+}
+
+/*--------------------------------------------------------------------*/
+/* HEADINGS
+/*--------------------------------------------------------------------*/
+
+h1, h2, h3, h4
+{
+  font-family: var(--font-fam-header);
+}
+
+h1
+{
+  font-size       : var(--font-size-h1);
+  color           : var(--flux-color-2);
+  font-variant    : small-caps;
+}
+
+h2      { font-size: var(--font-size-h2); color: var(--flux-color-1); }
+h3      { font-size: var(--font-size-h3); color: var(--flux-fg-bold); }
+
+h3-mock {
+  font-size     : var(--font-size-h3);
+  color         : var(--flux-color-1);
+  font-family   : var(--font-fam-header);
+}
+
+h4 { margin-left: 0px;}
+
+/*--------------------------------------------------------------------*/
+/* FOOTER
+/*--------------------------------------------------------------------*/
+.nav-footer
+{
+  background-color  : var(--flux-bg-bold);
+  color             : var(--flux-fg-bold);
+  font-family       : var(--font-fam-header);
+  z-index           : 1000;
+}
+
+/*--------------------------------------------------------------------*/
+/* NAVIGATION BAR
+/*--------------------------------------------------------------------*/
+/* navbar       - Whole navigation bar
+/* navbar-nav   - Container that holds nav links
+/* nav-link     - Each link in navbar
+
+/* Navigation bar */
+.navbar .navbar-nav .nav-link
+{
+  font-family     : var(--font-fam-header);
+  color           : var(--flux-bg-norm);
+}
+
+.navbar
+{
+  background-color: var(--flux-color-1);
+}
+
+/* Site name */
+.navbar-brand
+{
+  font-family       : var(--font-fam-header);
+  font-size         : var(--font-size-h4);
+  color             : var(--flux-bg-norm);
+  font-variant      : small-caps;
+}
+.navbar-brand:visited
+{
+  color             : var(--flux-bg-norm);
+}
+
+.navbar-brand:hover
+{
+  font-weight       : normal;
+}
+
+.navbar-link:hover
+{
+  font-weight       : normal;
+}
+
+.navbar-nav
+{
+  padding-right: 40px;
+}
+
+.navbar-tools
+{
+  padding-right: 40px;
+}
+
+.dropdown-menu
+{
+  font-family       : var(--font-fam-normal);
+}
+
+.dropdown-item:hover
+{
+  background-color  : var(--flux-color-3);
+  color             : var(--flux-bg-norm);
+  font-weight       : bold;
+}
+
+.dropdown-item
+{
+  background-color  : var(--flux-bg-norm);
+}
+
+.nav-icon
+{
+  height: 100px;
+}
+
+/*--------------------------------------------------------------------*/
+/* BUTTONS & HYPERLINKS
+/*--------------------------------------------------------------------*/
+
+.flux-button
+{
+  font-family       : var(--font-fam-header);
+  color             : var(--flux-bg-norm);
+  display           : inline-block;
+  text-decoration   : none;                   /* Don't underline */
+  font-size         : var(--font-size-h4);
+  text-align        : center;
+
+  padding           : 0px 10px; /* Second entry is horizonal padding */
+  margin-top: 10px;
+
+  align-items       : center;
+  outline           : none;
+  border            : none;
+  border-radius     : 10px; /* make rounded */
+}
+
+.flux-button:visited { color: var(--flux_button_text); }
+
+.flux-button._0
+{
+  background-color  : var(--flux-color-1);
+}
+
+.flux-button._1
+{
+  background-color  : var(--flux-color-2);
+  font-size         : var(--font-size-h3);
+}
+
+.flux-button:hover
+{
+  color             : var(--flux-color-3);
+  background-color  : var(--flux-bg-bold);
+}
+
+.flux-button:active
+{
+  color             : var(--flux-bg-norm);
+  background-color  : var(--flux-fg-bold);
+}
+
+/* Hyperlinks */
+/*
+main a         { color        : var(--flux-color-3); }
+*/
+a         { color        : var(--flux-color-3); }
+a:hover   { font-weight  : bold; }
+a:active  { color        : var(--flux-color-2); }
+a:visited { color        : var(--flux-color-1); }
+
+.pdf-link-table
+{
+  width   : 100%;
+  border  : none;
+}
+
+.pdf-link-table td,
+pdf-link-table td tr
+{
+  border                      : none;
+  padding                     : 0;
+  box-shadow                  : none;
+}
+
+.pdf-link-table td:first-child
+{
+  width: 30%;
+}
+
+/*--------------------------------------------------------------------*/
+/* DIVIDER
+/*--------------------------------------------------------------------*/
+
+.divider
+{
+  width             : 100%;
+  height            : 10px;
+  margin-bottom     : 10px;
+}
+
+/* Divider for larger sections */
+.divider.blu
+{
+  background-color  : var(--flux-color-3);
+  height            : 10px;
+  margin-top        : 40px;
+  margin-bottom     : 40px;
+}
+
+/* Divider for smaller sections */
+.divider.cya
+{
+  background-color  : var(--flux-color-2);
+  height            : 05px;
+  margin-top        : 10px;
+}
+
+.flux-img
+{
+  width: 100%;
+}
+
+/* Inline Code Blocks */
+code
+{
+  color             : var(--flux-color-3);
+  background-color  : var(--flux-bg-bold);
+}
+
+/*--------------------------------------------------------------------*/
+/* DROP DOWN
+/*--------------------------------------------------------------------*/
+
+/* Header for drop down */
+details summary
+{
+  color         : var(--flux-fg-bold);
+  cursor        : pointer;
+  display       : list-item;  /* Restores triangle behavior */
+  margin-top    : 0.5em;
+}
+
+details summary:hover
+{
+  color         : var(--flux-fg-bold);
+}
+
+/* Style when drop down is open */
+details[open] summary {
+  color       : var(--flux-color-3);
+  font-weight : bold;
+}
+
+details > *:not(summary) {
+  margin-left: 1em;         /* slight indent for nested content */
+}
+
+details {
+  margin-bottom : 1em;
+  border-left   : 3px solid var(--flux-color-2);
+  padding-left  : 0.5em;
+}
+
+/*--------------------------------------------------------------------*/
+/* BLOG
+/*--------------------------------------------------------------------*/
+
+.quarto-title-banner
+{
+  background-color  : var(--flux-color-3);
+  color             : var(--flux-bg-norm);
+  font-family       : var(--font-fam-header);
+  padding           : 20px;
+  margin-bottom     : 20px;
+}
+
+div.sourceCode code, pre
+{
+  background-color  : var(--flux-bg-bold);
+  border-radius     : 0px;
+}
+
+/*pre
+{
+/*  background-color  : var(--flux-bg-bold);
+/*  border-radius     : 10px;
+}

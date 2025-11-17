@@ -1,0 +1,67 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--___________________________________________________________________|
+|   DESCRIPTION
+|   This file contains configuration information for the blog.
+|____________________________________________________________________-->
+
+---
+title: "ColorClock"
+listing:
+  contents: blog__color-clock
+  type: grid
+  sort: "date desc"
+  categories: true
+---
+
+What time is it?
+Amber o'clock-ish(?)
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## What is it?
+
+ColorClock is a decade-long passion project that combines art with
+engineering and color with time. Put simply, it's a
+clock that displays time through color instead of symbols.
+For me, it represents perseverance and pride, and stands as the most
+hard-earned engineering accomplishment I had taken from conception to
+design to full deployment.
+
+ColorClock V1 was an RGB LED art installation displayed at
+Burning Man 2024. It was a simple circular light display housed in a
+practical lean-to structure with a bench.
+
+![](/projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
+
+<a
+  href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"
+  class="flux-button _1">ColorClock Source Code</a>
+
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+
+## The Journey
+
+Take a look at my blog to see the evolution of ColorClock.
