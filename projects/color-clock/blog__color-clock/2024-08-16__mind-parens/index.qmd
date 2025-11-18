@@ -1,0 +1,126 @@
+---
+title       : "Mind Your Parens"
+
+description : >
+  My lesson on why you should always use parenthesis in preprocessor
+  directives.
+date        : 2024-08-16
+categories  : [color-clock]
+image       : directives.png
+draft       : false
+---
+
+I was cleaning up my code of magic numbers and added a few `#define`
+statements for the frequency values. But after uploading the program
+to the board I didn't understand why the the colors on the light were
+not changing at the correct rate. So I added a couple serial output
+debug prints saw that my frequency was not set properly.
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
+---
+
+## Code
+
+```cpp
+// Time constants
+#define SECONDS_PER_MIN   60.0
+#define MINUTES_PER_HOUR  60.0
+#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR
+
+// Cycle time for ColorClock object 0
+// Should equal 0.00333____
+#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR
+
+//...
+
+Serial.print("SECONDS_PER_HOUR:     ");
+Serial.println(SECONDS_PER_HOUR);
+Serial.print("CC0_CYCLE_TIME_HOURS: ");
+Serial.println(CC0_CYCLE_TIME_HOURS);
+```
+
+## Serial Output
+
+I was expecting `CC0_CYCLE_TIME_HOURS` to print as `0.00333` or even
+`0.`. Why was it printing `12.00`??
+
+```
+CC0_CYCLE_TIME_HOURS: 12.00
+SECONDS_PER_HOUR:     3600.00
+```
+
+I figured out that it had something to do with my `#define` statement. I
+stared at the code for way too long before deciding to do away with
+the `SECONDS_PER_HOUR` constant and just hard code the values directly:
+
+```cpp
+#define CC0_CYCLE_TIME_HOURS 12.0 / 3600.00
+```
+
+And this worked, so whatever. I just figured that the Arduino compiler
+is weird and doesn't treat preprocessor directives the same as gcc. I
+started writing this post to complain about the Arduino compiler, so
+to illustrate my point, I coded up the following simple program to
+compile on my desktop.
+
+## Code
+
+```cpp
+#include <stdio.h>
+
+#define SECONDS_PER_MIN   60.0
+#define MINUTES_PER_HOUR  60.0
+#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR
+
+#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR
+
+int main()
+{
+  printf("\nSECONDS_PER_HOUR:     %f", SECONDS_PER_HOUR);
+  printf("\nCC0_CYCLE_TIME_HOURS: %f", CC0_CYCLE_TIME_HOURS);
+
+  return 0;
+}
+```
+
+But then to my surprise, the console output displayed the same value
+as the Arduino serial out!
+
+## Console Output
+
+```cpp
+SECONDS_PER_HOUR:     3600.000000
+CC0_CYCLE_TIME_HOURS: 12.000000
+```
+
+I stared at the code again and realized that the lack of parenthesis
+in the definition for `SECONDS_PER_HOUR` was the source of my problem.
+The `#define` macro is a simple find and replace, so what the compiler
+saw was:
+
+```cpp
+#define SECONDS_PER_MIN   60.0
+#define MINUTES_PER_HOUR  60.0
+
+// The compiler sees:
+// #define SECONDS_PER_HOUR  60.0 * 60.0
+#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR
+
+// The compiler sees:
+// #define CC0_CYCLE_TIME_HOURS 12.0 / 60.0 * 60.0
+#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR
+```
+
+The compiler was basically seeing:
+
+`12 / 60 * 60`
+
+instead of
+
+`12 / (60* 60)`.
+
+And because of order of operations, `CC0_CYCLE_TIME_HOURS` was indeed
+12, not the `0.003333` that I was hoping for 🤦‍♀️
+
+Lesson learned 😳
