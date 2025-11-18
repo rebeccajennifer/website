@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rebecca Jennifer Rashkin">
+<meta name="dcterms.date" content="2024-08-16">
+<meta name="description" content="My lesson on why you should always use parenthesis in preprocessor directives.">
 
-<title>ColorClock – Rebecca Jennifer Rashkin</title>
+<title>Mind Your Parens – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -20,29 +23,62 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -70,79 +106,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../flux-bunny.css">
+<link rel="stylesheet" href="../../../../flux-bunny.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Rebecca Jennifer Rashkin</span>
     </a>
   </div>
@@ -158,25 +136,25 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../../education/how-to-learn.html">
+    <a class="dropdown-item" href="../../../../education/how-to-learn.html">
  <span class="dropdown-text">How to Learn</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../education/comp-org/comp-org.html">
+    <a class="dropdown-item" href="../../../../education/comp-org/comp-org.html">
  <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../education/comp-org/worksheet-answers.html">
+    <a class="dropdown-item" href="../../../../education/comp-org/worksheet-answers.html">
  <span class="dropdown-text">How to View Worksheet Answers</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../../projects/color-clock/color-clock.html" aria-current="page"> 
+    <a class="nav-link" href="../../../../projects/color-clock/color-clock.html"> 
 <span class="menu-text">ColorClock</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../contact.html"> 
+    <a class="nav-link" href="../../../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -190,63 +168,54 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">Mind Your Parens</h1>
+                  <div>
+        <div class="description">
+          <p>My lesson on why you should always use parenthesis in preprocessor directives.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">color-clock</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="https://rebeccajennifer.github.io/website">Rebecca Jennifer Rashkin</a> </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">August 16, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(4)</span></div><div class="category" data-category="Y29sb3ItY2xvY2s=">color-clock <span class="quarto-category-count">(3)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">ColorClock</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<!--___________________________________________________________________|
-|   DESCRIPTION
-|   This file contains configuration information for the blog.
-|____________________________________________________________________-->
-<p>What time is it? Amber o’clock-ish(?)</p>
+<p>I was cleaning up my code of magic numbers and added a few <code>#define</code> statements for the frequency values. But after uploading the program to the board I didn’t understand why the the colors on the light were not changing at the correct rate. So I added a couple serial output debug prints saw that my frequency was not set properly.</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -274,158 +243,79 @@ window.Quarto = {
 <div class="divider blu">
 
 </div>
-<section id="what-is-it" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>ColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.</p>
-<p>ColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.</p>
-<p><img src="../../projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg" class="img-fluid"></p>
-<p><a href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver" class="flux-button _1">ColorClock Source Code</a></p>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider blu">
-
-</div>
+<hr>
+<section id="code" class="level2">
+<h2 class="anchored" data-anchor-id="code">Code</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Time constants</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_MIN   </span><span class="fl">60.0</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#define MINUTES_PER_HOUR  </span><span class="fl">60.0</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_HOUR  </span>SECONDS_PER_MIN<span class="pp"> </span><span class="op">*</span><span class="pp"> </span>MINUTES_PER_HOUR</span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">// Cycle time for ColorClock object 0</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">// Should equal 0.00333____</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span>SECONDS_PER_HOUR</span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">//...</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>print<span class="op">(</span><span class="st">"SECONDS_PER_HOUR:     "</span><span class="op">);</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>println<span class="op">(</span>SECONDS_PER_HOUR<span class="op">);</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>print<span class="op">(</span><span class="st">"CC0_CYCLE_TIME_HOURS: "</span><span class="op">);</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>println<span class="op">(</span>CC0_CYCLE_TIME_HOURS<span class="op">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="the-journey" class="level2">
-<h2 class="anchored" data-anchor-id="the-journey">The Journey</h2>
-<p>Take a look at my blog to see the evolution of ColorClock.</p>
-
+<section id="serial-output" class="level2">
+<h2 class="anchored" data-anchor-id="serial-output">Serial Output</h2>
+<p>I was expecting <code>CC0_CYCLE_TIME_HOURS</code> to print as <code>0.00333</code> or even <code>0.</code>. Why was it printing <code>12.00</code>??</p>
+<pre><code>CC0_CYCLE_TIME_HOURS: 12.00
+SECONDS_PER_HOUR:     3600.00</code></pre>
+<p>I figured out that it had something to do with my <code>#define</code> statement. I stared at the code for way too long before deciding to do away with the <code>SECONDS_PER_HOUR</code> constant and just hard code the values directly:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span><span class="fl">3600.00</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>And this worked, so whatever. I just figured that the Arduino compiler is weird and doesn’t treat preprocessor directives the same as gcc. I started writing this post to complain about the Arduino compiler, so to illustrate my point, I coded up the following simple program to compile on my desktop.</p>
+</section>
+<section id="code-1" class="level2">
+<h2 class="anchored" data-anchor-id="code-1">Code</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_MIN   </span><span class="fl">60.0</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#define MINUTES_PER_HOUR  </span><span class="fl">60.0</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_HOUR  </span>SECONDS_PER_MIN<span class="pp"> </span><span class="op">*</span><span class="pp"> </span>MINUTES_PER_HOUR</span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span>SECONDS_PER_HOUR</span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">"</span><span class="sc">\n</span><span class="st">SECONDS_PER_HOUR:     </span><span class="sc">%f</span><span class="st">"</span><span class="op">,</span> SECONDS_PER_HOUR<span class="op">);</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">"</span><span class="sc">\n</span><span class="st">CC0_CYCLE_TIME_HOURS: </span><span class="sc">%f</span><span class="st">"</span><span class="op">,</span> CC0_CYCLE_TIME_HOURS<span class="op">);</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>But then to my surprise, the console output displayed the same value as the Arduino serial out!</p>
+</section>
+<section id="console-output" class="level2">
+<h2 class="anchored" data-anchor-id="console-output">Console Output</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>SECONDS_PER_HOUR<span class="op">:</span>     <span class="fl">3600.000000</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>CC0_CYCLE_TIME_HOURS<span class="op">:</span> <span class="fl">12.000000</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>I stared at the code again and realized that the lack of parenthesis in the definition for <code>SECONDS_PER_HOUR</code> was the source of my problem. The <code>#define</code> macro is a simple find and replace, so what the compiler saw was:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_MIN   </span><span class="fl">60.0</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define MINUTES_PER_HOUR  </span><span class="fl">60.0</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">// The compiler sees:</span></span>
+<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">// #define SECONDS_PER_HOUR  60.0 * 60.0</span></span>
+<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_HOUR  </span>SECONDS_PER_MIN<span class="pp"> </span><span class="op">*</span><span class="pp"> </span>MINUTES_PER_HOUR</span>
+<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">// The compiler sees:</span></span>
+<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">// #define CC0_CYCLE_TIME_HOURS 12.0 / 60.0 * 60.0</span></span>
+<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span>SECONDS_PER_HOUR</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>The compiler was basically seeing:</p>
+<p><code>12 / 60 * 60</code></p>
+<p>instead of</p>
+<p><code>12 / (60* 60)</code>.</p>
+<p>And because of order of operations, <code>CC0_CYCLE_TIME_HOURS</code> was indeed 12, not the <code>0.003333</code> that I was hoping for 🤦‍♀️</p>
+<p>Lesson learned 😳</p>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1763347979583" data-listing-reading-time-sort="1" data-listing-word-count-sort="139">
-<a href="../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/things-that-happened.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<div class="listing-item-img-placeholder card-img-top" style="height: 150px;">&nbsp;</div>
-<div class="card-body post-contents">
-<div class="card-text listing-description delink">
-This weekend I’m finally at the point that I wanted to be <em>last</em> weekend After spending almost all of last Saturday soldering I learned that powering the Arduino with 12 volts…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29sb3ItY2xvY2slMkN0ZXN0aW5n" data-listing-date-sort="1738998000000" data-listing-file-modified-sort="1763428834223" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1044">
-<a href="../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/ascii-bunny.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Back In Development
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Leveling up ColorClock with testing, tooling, and better software design.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Feb 8, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1725433200000" data-listing-file-modified-sort="1763428834223" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1305">
-<a href="../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1__color-clock.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-We Did It
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Sep 4, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1763432066100" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="358">
-<a href="../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/directives.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mind Your Parens
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>My lesson on why you should always use parenthesis in preprocessor directives.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Aug 16, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
