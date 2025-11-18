@@ -70,34 +70,6 @@
     "text": "Console Output\nSECONDS_PER_HOUR:     3600.000000\nCC0_CYCLE_TIME_HOURS: 12.000000\nI stared at the code again and realized that the lack of parenthesis in the definition for SECONDS_PER_HOUR was the source of my problem. The #define macro is a simple find and replace, so what the compiler saw was:\n#define SECONDS_PER_MIN   60.0\n#define MINUTES_PER_HOUR  60.0\n\n// The compiler sees:\n// #define SECONDS_PER_HOUR  60.0 * 60.0\n#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR\n\n// The compiler sees:\n// #define CC0_CYCLE_TIME_HOURS 12.0 / 60.0 * 60.0\n#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR\nThe compiler was basically seeing:\n12 / 60 * 60\ninstead of\n12 / (60* 60).\nAnd because of order of operations, CC0_CYCLE_TIME_HOURS was indeed 12, not the 0.003333 that I was hoping for 🤦‍♀️\nLesson learned 😳"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/things-that-happened.html",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/things-that-happened.html",
-    "title": "Rebecca Jennifer Rashkin",
-    "section": "",
-    "text": "This weekend I’m finally at the point that I wanted to be last weekend After spending almost all of last Saturday soldering I learned that powering the Arduino with 12 volts no bueno 😵 But I knew I had some LM7805s (5 volt linear regulators) somewhere. Then a series of unfortunate events ensued…\n\nSoldered it too close to where the Arduino was supposed to go\nBattled with desoldering, surrendered the part\nSoldered in a new voltage regulator\nRealized I soldered it in backward\nAdded new wires to make it work\nPlugged in the wrong Arduino board because it had the same footprint\nRealized level shifter wasn’t working\nBattled with desoldering the headers from the component\nGave up and soldered on longer pins\nWired everything and found the on board buttons weren’t working when the lights were on\nFried my Arduino board while debugging"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html",
-    "href": "projects/color-clock/color-clock.html",
-    "title": "ColorClock",
-    "section": "",
-    "text": "What time is it? Amber o’clock-ish(?)"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html#what-is-it",
-    "href": "projects/color-clock/color-clock.html#what-is-it",
-    "title": "ColorClock",
-    "section": "What is it?",
-    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\nColorClock Source Code"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html#the-journey",
-    "href": "projects/color-clock/color-clock.html#the-journey",
-    "title": "ColorClock",
-    "section": "The Journey",
-    "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
-  },
-  {
     "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
     "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
     "title": "Back In Development",
@@ -173,6 +145,27 @@
     "title": "Back In Development",
     "section": "Hardware",
     "text": "Hardware\n\nPrototype a small harware version of the light display for testing purposes\nResearch free PCB board layout programs"
+  },
+  {
+    "objectID": "projects/color-clock/color-clock.html",
+    "href": "projects/color-clock/color-clock.html",
+    "title": "ColorClock",
+    "section": "",
+    "text": "What time is it? Amber o’clock-ish(?)"
+  },
+  {
+    "objectID": "projects/color-clock/color-clock.html#what-is-it",
+    "href": "projects/color-clock/color-clock.html#what-is-it",
+    "title": "ColorClock",
+    "section": "What is it?",
+    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\nColorClock Source Code"
+  },
+  {
+    "objectID": "projects/color-clock/color-clock.html#the-journey",
+    "href": "projects/color-clock/color-clock.html#the-journey",
+    "title": "ColorClock",
+    "section": "The Journey",
+    "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
