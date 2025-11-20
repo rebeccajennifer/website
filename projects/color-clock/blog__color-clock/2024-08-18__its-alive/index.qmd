@@ -1,0 +1,152 @@
+---
+title       : "It's Alive!"
+
+description : >
+  Our scheduled live demo pushed us to finish the project just in time.
+  The event was a success and I even got to play teacher again 👩‍🏫
+date        : 2024-08-17
+image       : final-light-display.jpeg
+categories  : [color-clock]
+draft       : false
+---
+<figure>
+![](final-light-display.jpeg)
+<figcaption>
+The outer ring cycles through the whole spectrum over 24 hours, the
+second to the outer ring cycles over one hour, the inner ring cycles
+over 1 minute and the central flower-looking light can be controlled
+by the participant. This photo was taken at 9:09 AM. Don't mind the
+dead button LED. This will be fixed 😅
+</figcaption>
+</figure>
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
+## No Regrets
+
+For a long time, I regretting getting my bachelor's in electrical
+rather than computer engineering. Often enough I have questions about
+software engineering design concepts that might have been answered had
+I chosen a different major. However, while working on ColorClock I
+realize that my degree gave me familiarity with electronic components
+and datasheets that I might not have gotten with a different
+undergraduate focus. And for the first time since I graduated, I
+sincerely have no regrets about my choice.
+
+A lot has happened since the last post, including completely
+resoldering a new circuit board followed by a very sad afternoon where
+I was ready to give up after burning *another* Arduino board. But Bo
+came to the rescue and discovered that it was just a grounding problem.
+
+<figure>
+![](../../assets__color-clock/photos__color-clock/circuit__photos__color-clock/final-circuit-board.jpeg)
+<figcaption>
+Here is the final wiring of the circuit board. Isn't it beautiful? 🥰
+</figcaption>
+</figure>
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
+## We Did It!
+
+A couple months ago we decided to schedule a live demo as motivation
+to get the project finished a week before leaving. The looming
+date of the demo gave us the motivation to finish with exactly one
+weekend to spare to get ready 😵‍💫
+
+Last weekend was the demo and it was a success! After scrambling to
+get it all wired up (which involved an embarrassing number of
+alligator clips), I threw together a slide deck that I presented to
+kick off the event. I added some of the slides at the end of this post
+for your enjoyment.
+
+<figure>
+![](demo-presentation__color-clock.jpeg)
+<figcaption>
+I discussed some of concepts of RGB LEDs, how a level shifter works, and
+explained the wiring of the circuit board. I was excited to play
+teacher again 👩‍🏫  Don't mind our camping boxes and living room
+workbench -- Photo courtesy of Stasi Silvares.
+</figcaption>
+</figure>
+
+🌈
+
+<figure>
+![](bo-and-kyle__color-clock.jpeg)
+<figcaption>
+Bo and friend discussing the meaning behind the colors -- Photo courtesy
+of Stasi Silvares.
+</figcaption>
+</figure>
+
+🌈
+
+<figure>
+![](solar-panels__color-clock.jpeg)
+<figcaption>
+We'll be using solar to charge the batter that powers ColorClock ⚡️
+</figcaption>
+</figure>
+
+🌈
+
+<figure>
+![](participant-view-unlit__color-clock.jpeg)
+<figcaption>
+The participant will be able to sit on the bench while viewing the light
+display and manipulating the controls 🎮
+</figcaption>
+</figure>
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
+## The Final Touches
+
+This is our last weekend before we deliver and I'm thrilled that we
+are really just putting on the final touches. Although I learned today
+that last minute software changes can be quite risky.
+
+🌈
+
+<figure>
+{{< video https://youtu.be/9BzPTI5HZrY >}}
+<figcaption>
+I decided to change the initial colors for the the participant
+controlled central light, but because of the wonky logic for how the
+buttons interact with the colors, I got less ideal results.
+</figcaption>
+</figure>
+
+🌈
+
+<figure>
+{{< video https://youtu.be/CMCiZth6IXw >}}
+<figcaption>
+I reverted my software change and now it's working 🥳
+</figcaption>
+</figure>
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
+## It's Actually Happening!
+
+We leave in less than a week 😶
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
+## Slide Dump
+
+The full presentation can be found [here](../../assets__color-clock/slide-deck__color-clock/color-clock-demo__2024-08-10.pdf).
+
+I've included a few slides below for your enjoyment 🙂 These diagrams were
+created using AutoCAD.
+
+![](../../assets__color-clock/slide-deck__color-clock/09__circuit-board-full.png )
+![](../../assets__color-clock/slide-deck__color-clock/10__circuit-board-wire.png)
+![](../../assets__color-clock/slide-deck__color-clock/05__level-shifter.png)
+![](../../assets__color-clock/slide-deck__color-clock/08__level-shifter.png)
+![](../../assets__color-clock/slide-deck__color-clock/01__pigment-color.png)
+![](../../assets__color-clock/slide-deck__color-clock/02__light-color.png)
+![](../../assets__color-clock/slide-deck__color-clock/03__rgb-led-common-anode.png)
+![](../../assets__color-clock/slide-deck__color-clock/04__rgb-color-mix.png)

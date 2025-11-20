@@ -332,7 +332,7 @@ details {
 
 .quarto-title-banner
 {
-  background-color  : var(--flux-color-3);
+  background-color  : var(--flux-color-2);
   color             : var(--flux-bg-norm);
   font-family       : var(--font-fam-header);
   padding           : 20px;
@@ -343,6 +343,15 @@ div.sourceCode code, pre
 {
   background-color  : var(--flux-bg-bold);
   border-radius     : 0px;
+}
+
+figcaption
+{
+  font-size         : var(--font-size-base);
+  color             : var(--flux-fg-bold);
+  text-align        : left;
+  margin-top        : 5px;
+  font-style        : italic;
 }
 
 /*pre
