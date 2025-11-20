@@ -168,6 +168,48 @@
     "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
   },
   {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
+    "title": "It’s Alive!",
+    "section": "",
+    "text": "The outer ring cycles through the whole spectrum over 24 hours, the second to the outer ring cycles over one hour, the inner ring cycles over 1 minute and the central flower-looking light can be controlled by the participant. This photo was taken at 9:09 AM. Don’t mind the dead button LED. This will be fixed 😅"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
+    "title": "It’s Alive!",
+    "section": "No Regrets",
+    "text": "No Regrets\nFor a long time, I regretting getting my bachelor’s in electrical rather than computer engineering. Often enough I have questions about software engineering design concepts that might have been answered had I chosen a different major. However, while working on ColorClock I realize that my degree gave me familiarity with electronic components and datasheets that I might not have gotten with a different undergraduate focus. And for the first time since I graduated, I sincerely have no regrets about my choice.\nA lot has happened since the last post, including completely resoldering a new circuit board followed by a very sad afternoon where I was ready to give up after burning another Arduino board. But Bo came to the rescue and discovered that it was just a grounding problem.\n\n\n\nHere is the final wiring of the circuit board. Isn’t it beautiful? 🥰"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
+    "title": "It’s Alive!",
+    "section": "We Did It!",
+    "text": "We Did It!\nA couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫\nLast weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.\n\n\n\nI discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nBo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nWe’ll be using solar to charge the batter that powers ColorClock ⚡️\n\n\n🌈\n\n\n\nThe participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
+    "title": "It’s Alive!",
+    "section": "The Final Touches",
+    "text": "The Final Touches\nThis is our last weekend before we deliver and I’m thrilled that we are really just putting on the final touches. Although I learned today that last minute software changes can be quite risky.\n🌈\n\n\n\nI decided to change the initial colors for the the participant controlled central light, but because of the wonky logic for how the buttons interact with the colors, I got less ideal results.\n\n\n🌈\n\n\n\nI reverted my software change and now it’s working 🥳"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
+    "title": "It’s Alive!",
+    "section": "It’s Actually Happening!",
+    "text": "It’s Actually Happening!\nWe leave in less than a week 😶"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
+    "title": "It’s Alive!",
+    "section": "Slide Dump",
+    "text": "Slide Dump\nThe full presentation can be found here.\nI’ve included a few slides below for your enjoyment 🙂 These diagrams were created using AutoCAD."
+  },
+  {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
     "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
     "title": "We Did It",
