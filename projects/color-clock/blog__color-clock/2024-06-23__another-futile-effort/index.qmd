@@ -67,9 +67,9 @@ void setup()
 }
 ```
 
-### Test 1: Perform analogWrite and Channel Select Sequentially
+[This video](https://www.youtube.com/shorts/O1nh9n2yPmc?feature=share) is a compilation of all tests described below. Because the video is less than a minute I  wasn't able to embed it into the site.
 
-<iframe width="1905" height="824" src="https://www.youtube.com/embed/-PWweseDs4E?list=PLbI1gaV_RzjdkYlin50oWDiLHygY1F2Lv" title="Mux as PWM Expander Test 1  2024 06 23" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+### Test 1: Perform analogWrite and Channel Select Sequentially
 
 ```cpp
 void loop()
@@ -102,7 +102,6 @@ muxxy.channel(0);
     analogWrite(common_pin, color.rgb_[Rgb::BLU]);
 ```
 
-{{< video https://www.youtube.com/watch?v=-PWweseDs4E >}}
 
 There is no significant different between selecting the channel before the analog write.
 
@@ -113,7 +112,6 @@ There is no significant different between selecting the channel before the analo
     analogWrite(common_pin, color.rgb_[Rgb::RED]);
 ```
 
-{{< video  >}}
 Only writing to one channel displays the color properly. This test was performed just to ensure it was actually writing the value.
 
 ### Test 4: Only Write to Red and Green Channels
@@ -127,8 +125,6 @@ Only writing to one channel displays the color properly. This test was performed
     Debug::print_labeled_int("green val: ", color.rgb_[Rgb::GRN]);
 ```
 
-{{< video  >}}
-
 There is no green in magenta, so this test should only display red on the LED. Instead, we are seeing green flickering, and not any red at all. I also output a serial print for the value of green to ensure that green was indeed set to zero, and this was true.
 
 ### Test 5: Reset Output to 0
@@ -141,8 +137,6 @@ There is no green in magenta, so this test should only display red on the LED. I
     analogWrite(common_pin, color.rgb_[Rgb::GRN]);
     analogWrite(common_pin, 0);
 ```
-
-{{< video  >}}
 
 Resetting the output pin to zero before switching channels just makes it look more choppy. Green is still displayed, though it shouldn't be.
 
