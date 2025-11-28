@@ -4,7 +4,7 @@ title       : "Another Futile Effort"
 description : >
   My slow burn realization that I won't be able to use
   a multiplexer as an IO expander for RGB output.
-image       : ./
+image       : ./mux-rgb__2024-06-23.png
 date        : 2024-06-23
 categories  : [color-clock]
 draft       : false
@@ -23,7 +23,9 @@ A couple months ago I tried to use a constant current I/O expander to write to P
 To review some digital logic, a multiplexer is basically a switch that can select from many inputs. When I used to teach, I compared it to a vending machine. There are many inputs (e.g. chips, granola, gum, candy) and one output (your selection). We type in a code on the keypad to select what kind of snack we want.
 
 <figure>
+
 ![](./mux-vending-machine__2024-06-23.png)
+
 <figcaption>
 The snacks are the selection of inputs and the dispensing slot is the output. The keypad acts as the set of control signals used to select which input should be connected to the output.
 <figcaption>
