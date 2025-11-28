@@ -2,13 +2,14 @@
 title       : "The Optimal Solution"
 
 description : >
-
+  This week I contemplated the optimal solution for the circuit board
+  layout.
+image       : ./breadboard-full__2024-07-13.png
 date        : 2024-07-13
 categories  : [color-clock]
 draft       : true
 ---
 
-image       : ![]
 
 As a child, I could spend entire days engrossed in puzzles. My favorites were the Mind Benders series logic puzzles, where a set of clues were provided to determine matches with limited information, such as figuring out which child owned which pet. I found immense satisfaction in solving these problems and took comfort in the certainty that there was always one correct solution. My chosen career path reflects this passion for problem-solving. Today, the puzzles I tackle are far more complex, with numerous possible solutions, each varying in its degree of optimality.
 
@@ -22,7 +23,7 @@ My big puzzle for the week has been how to lay out the final circuit board. Ther
 I decided to go with a board that is connected much like a solderless prototyping breadboard, where each column of holes are electrically connected. This does limit the possible orientation of the modules, but it will make the final wiring a little easier given that it can be laid out nearly exactly the same as the solderless prototype.
 
 <figure>
-![]
+![](./breadboard-underside.JPEG)
 <figcaption>
 This photo shows the underside of one of the ElectroCookie  breadboards. The project will have two boards side-by-side to accommodate for all of the control electronics. The stand offs in the middle of the board are to raise it up off the bottom of the electronics enclosure.
 </figcaption>
@@ -31,7 +32,7 @@ This photo shows the underside of one of the ElectroCookie  breadboards. The pro
 🌈
 
 <figure>
-![]
+![](./breadboard-full__2024-07-13.png)
 <figcaption>
 This diagram illustrates the layout of the board, and is mostly to scale. The groups of wires extending beyond the breadboard's borders will be routed to external electronics, such as the participant buttons, power input, and light display. Although the wires are shown overlapping the modules in the diagram, they will actually be routed underneath the modules, as the modules will be elevated using female headers.
 </figcaption>
@@ -40,7 +41,7 @@ This diagram illustrates the layout of the board, and is mostly to scale. The gr
 🌈
 
 <figure>
-![]
+![](./breadboard-wiring__2024-07-13.png)
 <figcaption>
 This diagram illustrates the soldering layout primarily for the wires and female headers.
 </figcaption>
@@ -55,7 +56,7 @@ The control panel enclosure will house the participant-facing buttons in additio
 The participant control panel will be located beneath the light display, which is mounted on a 45-degree wooden panel. The enclosure is designed as a diagonally cut rectangular prism to position the buttons vertically for easy access.
 
 <figure>
-![]
+![](./participant-ctrl-0__2024-07-13.png)
 <figcaption>
 This is the initial 3D model I was planning on printing. The triangular holes in the front are for the arcade buttons that the participants can use to modify one of the LED strips. With this design, there is no way to access the enclosed electronics without unscrewing the cover from the wooden panel that it would be mounted to.
 </figcaption>
@@ -64,7 +65,7 @@ This is the initial 3D model I was planning on printing. The triangular holes in
 🌈
 
 <figure>
-![]
+![](./participant-ctrl-1__2024-07-13.png)
 <figcaption>
 The little nubs at the bottom of the box are to stabilize the stand offs used to elevate the circuit board off the bottom of the box.
 </figcaption>
@@ -77,7 +78,7 @@ The little nubs at the bottom of the box are to stabilize the stand offs used to
 My partner, Bo, has been working hard on the structure, experiencing a multitude of challenges, and has practically rebuilt the frame, piece by piece. Home Depot has become our second home 😅 I have such immense respect for his tenacity in constructing a sturdy frame to bring my vision to fruition.
 
 <figure>
-![]
+![](./bo-drill-structure.JPEG)
 <figcaption>
 We each spent most of the day working on our respective parts of ColorClock. I was mostly CAD-ing in the AC while he was sweating in the garage playing with power tools.
 </figcaption>
@@ -86,7 +87,7 @@ We each spent most of the day working on our respective parts of ColorClock. I w
 🌈
 
 <figure>
-![]
+![](./bo-standing-in-front-of-structure.JPEG)
 <figcaption>
 This is Bo's exasperated "I can't wait to burn this thing" look. I love him 😘
 </figcaption>
@@ -95,7 +96,7 @@ This is Bo's exasperated "I can't wait to burn this thing" look. I love him 😘
 🌈
 
 <figure>
-![]
+![](./me-for-scale.JPEG)
 <figcaption>
 Me, for scale.
 </figcaption>
@@ -109,4 +110,4 @@ Me, for scale.
 - Model circuit board enclosure
 - Modify software to output lower power at night
 
-😬
+## 😬
