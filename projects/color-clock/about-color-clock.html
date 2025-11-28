@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>ColorClock – Rebecca Jennifer Rashkin</title>
+<title>About ColorClock – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -71,70 +69,12 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../flux-bunny.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -205,15 +145,13 @@ window.Quarto = {
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Y29sb3ItY2xvY2s=">color-clock <span class="quarto-category-count">(5)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">ColorClock</h1>
+<h1 class="title">About ColorClock</h1>
 </div>
 
 
@@ -258,7 +196,11 @@ window.Quarto = {
 |   DESCRIPTION
 |   This file contains configuration information for the blog.
 |____________________________________________________________________-->
-<p>What time is it? Amber o’clock-ish(?)</p>
+<style>
+.flux-button._1       { width: 100%; }
+table td:first-child  { width:  50%; }
+</style>
+<p><img src="../../projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg" class="img-fluid"></p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -288,10 +230,18 @@ window.Quarto = {
 </div>
 <section id="what-is-it" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>ColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.</p>
+<p>ColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I have taken from conception to design to full deployment.</p>
 <p>ColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.</p>
-<p><img src="../../projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg" class="img-fluid"></p>
-<p><a href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver" class="flux-button _1">ColorClock Source Code</a></p>
+<table style="width: 100%">
+<tbody><tr>
+<td>
+<a href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver" class="flux-button _1">Source Code</a>
+</td>
+<td>
+<a href="color-clock-evolution.html" class="flux-button _1">Blog</a>
+</td>
+</tr>
+</tbody></table>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -319,167 +269,11 @@ window.Quarto = {
 <div class="divider blu">
 
 </div>
-</section>
-<section id="the-journey" class="level2">
-<h2 class="anchored" data-anchor-id="the-journey">The Journey</h2>
-<p>Take a look at my blog to see the evolution of ColorClock.</p>
-
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29sb3ItY2xvY2slMkN0ZXN0aW5n" data-listing-date-sort="1738998000000" data-listing-file-modified-sort="1764301348383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1044">
-<a href="../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/ascii-bunny.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Back In Development
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Leveling up ColorClock with testing, tooling, and better software design.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Feb 8, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1725433200000" data-listing-file-modified-sort="1764302555064" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1358">
-<a href="../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1__color-clock.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-We Did It
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Sep 4, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723878000000" data-listing-file-modified-sort="1764301413990" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="485">
-<a href="../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/final-light-display.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-It’s Alive!
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Our scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Aug 17, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1763434214383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="358">
-<a href="../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/directives.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mind Your Parens
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>My lesson on why you should always use parenthesis in preprocessor directives.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Aug 16, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1720854000000" data-listing-file-modified-sort="1764305734430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="705">
-<a href="../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/breadboard-full__2024-07-13.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The Optimal Solution
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>This week I contemplated the optimal solution for the circuit board layout.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Jul 13, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

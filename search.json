@@ -25,7 +25,7 @@
     "href": "education/comp-org/worksheet-answers.html",
     "title": "Spoiler Alert!",
     "section": "",
-    "text": "How to view the worksheet answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
+    "text": "This page describes how to reveal the answers in the worksheets for computer systems and assembly language.\n\nDisplay Worksheet Answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
   },
   {
     "objectID": "contact.html",
@@ -68,6 +68,48 @@
     "title": "Mind Your Parens",
     "section": "Console Output",
     "text": "Console Output\nSECONDS_PER_HOUR:     3600.000000\nCC0_CYCLE_TIME_HOURS: 12.000000\nI stared at the code again and realized that the lack of parenthesis in the definition for SECONDS_PER_HOUR was the source of my problem. The #define macro is a simple find and replace, so what the compiler saw was:\n#define SECONDS_PER_MIN   60.0\n#define MINUTES_PER_HOUR  60.0\n\n// The compiler sees:\n// #define SECONDS_PER_HOUR  60.0 * 60.0\n#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR\n\n// The compiler sees:\n// #define CC0_CYCLE_TIME_HOURS 12.0 / 60.0 * 60.0\n#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR\nThe compiler was basically seeing:\n12 / 60 * 60\ninstead of\n12 / (60* 60).\nAnd because of order of operations, CC0_CYCLE_TIME_HOURS was indeed 12, not the 0.003333 that I was hoping for 🤦‍♀️\nLesson learned 😳"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
+    "title": "It’s Alive!",
+    "section": "",
+    "text": "The outer ring cycles through the whole spectrum over 24 hours, the second to the outer ring cycles over one hour, the inner ring cycles over 1 minute and the central flower-looking light can be controlled by the participant. This photo was taken at 9:09 AM. Don’t mind the dead button LED. This will be fixed 😅"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
+    "title": "It’s Alive!",
+    "section": "No Regrets",
+    "text": "No Regrets\nFor a long time, I regretting getting my bachelor’s in electrical rather than computer engineering. Often enough I have questions about software engineering design concepts that might have been answered had I chosen a different major. However, while working on ColorClock I realize that my degree gave me familiarity with electronic components and datasheets that I might not have gotten with a different undergraduate focus. And for the first time since I graduated, I sincerely have no regrets about my choice.\nA lot has happened since the last post, including completely resoldering a new circuit board followed by a very sad afternoon where I was ready to give up after burning another Arduino board. But Bo came to the rescue and discovered that it was just a grounding problem.\n\n\n\nHere is the final wiring of the circuit board. Isn’t it beautiful? 🥰"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
+    "title": "It’s Alive!",
+    "section": "We Did It!",
+    "text": "We Did It!\nA couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫\nLast weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.\n\n\n\nI discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nBo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nWe’ll be using solar to charge the batter that powers ColorClock ⚡️\n\n\n🌈\n\n\n\nThe participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
+    "title": "It’s Alive!",
+    "section": "The Final Touches",
+    "text": "The Final Touches\nThis is our last weekend before we deliver and I’m thrilled that we are really just putting on the final touches. Although I learned today that last minute software changes can be quite risky.\n🌈\n\n\n\nI decided to change the initial colors for the the participant controlled central light, but because of the wonky logic for how the buttons interact with the colors, I got less ideal results.\n\n\n🌈\n\n\n\nI reverted my software change and now it’s working 🥳"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
+    "title": "It’s Alive!",
+    "section": "It’s Actually Happening!",
+    "text": "It’s Actually Happening!\nWe leave in less than a week 😶"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
+    "title": "It’s Alive!",
+    "section": "Slide Dump",
+    "text": "Slide Dump\nThe full presentation can be found here.\nI’ve included a few slides below for your enjoyment 🙂 These diagrams were created using AutoCAD."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
@@ -147,6 +189,13 @@
     "text": "Hardware\n\nPrototype a small harware version of the light display for testing purposes\nResearch free PCB board layout programs"
   },
   {
+    "objectID": "projects/color-clock/about-color-clock.html#what-is-it",
+    "href": "projects/color-clock/about-color-clock.html#what-is-it",
+    "title": "About ColorClock",
+    "section": "What is it?",
+    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I have taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\n\n\nSource Code\n\n\nBlog"
+  },
+  {
     "objectID": "projects/color-clock/color-clock.html",
     "href": "projects/color-clock/color-clock.html",
     "title": "ColorClock",
@@ -168,88 +217,102 @@
     "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
-    "title": "It’s Alive!",
+    "objectID": "projects/color-clock/color-clock-evolution.html",
+    "href": "projects/color-clock/color-clock-evolution.html",
+    "title": "The Evolution of ColorClock",
     "section": "",
-    "text": "The outer ring cycles through the whole spectrum over 24 hours, the second to the outer ring cycles over one hour, the inner ring cycles over 1 minute and the central flower-looking light can be controlled by the participant. This photo was taken at 9:09 AM. Don’t mind the dead button LED. This will be fixed 😅"
+    "text": "Check out ColorClock development journey 🌈 ⏱️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack In Development\n\n\n\ncolor-clock\n\ntesting\n\n\n\nLeveling up ColorClock with testing, tooling, and better software design.\n\n\n\nRebecca Jennifer Rashkin\n\n\nFeb 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe Did It\n\n\n\ncolor-clock\n\n\n\nTen years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅\n\n\n\nRebecca Jennifer Rashkin\n\n\nSep 4, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt’s Alive!\n\n\n\ncolor-clock\n\n\n\nOur scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 17, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMind Your Parens\n\n\n\ncolor-clock\n\n\n\nMy lesson on why you should always use parenthesis in preprocessor directives.\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Optimal Solution\n\n\n\ncolor-clock\n\n\n\nThis week I contemplated the optimal solution for the circuit board layout.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJul 13, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
-    "title": "It’s Alive!",
-    "section": "No Regrets",
-    "text": "No Regrets\nFor a long time, I regretting getting my bachelor’s in electrical rather than computer engineering. Often enough I have questions about software engineering design concepts that might have been answered had I chosen a different major. However, while working on ColorClock I realize that my degree gave me familiarity with electronic components and datasheets that I might not have gotten with a different undergraduate focus. And for the first time since I graduated, I sincerely have no regrets about my choice.\nA lot has happened since the last post, including completely resoldering a new circuit board followed by a very sad afternoon where I was ready to give up after burning another Arduino board. But Bo came to the rescue and discovered that it was just a grounding problem.\n\n\n\nHere is the final wiring of the circuit board. Isn’t it beautiful? 🥰"
+    "objectID": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html",
+    "href": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html",
+    "title": "The Optimal Solution",
+    "section": "",
+    "text": "As a child, I could spend entire days engrossed in puzzles. My favorites were the Mind Benders series logic puzzles, where a set of clues were provided to determine matches with limited information, such as figuring out which child owned which pet. I found immense satisfaction in solving these problems and took comfort in the certainty that there was always one correct solution. My chosen career path reflects this passion for problem-solving. Today, the puzzles I tackle are far more complex, with numerous possible solutions, each varying in its degree of optimality."
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
-    "title": "It’s Alive!",
-    "section": "We Did It!",
-    "text": "We Did It!\nA couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫\nLast weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.\n\n\n\nI discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nBo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nWe’ll be using solar to charge the batter that powers ColorClock ⚡️\n\n\n🌈\n\n\n\nThe participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮"
+    "objectID": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#the-circuit-board",
+    "href": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#the-circuit-board",
+    "title": "The Optimal Solution",
+    "section": "The Circuit Board",
+    "text": "The Circuit Board\nMy big puzzle for the week has been how to lay out the final circuit board. There wasn’t enough time to have a board printed, so I’ll be wiring and soldering everything manually. For the second version of ColorClock, I would like to design a printed circuit board (PCB) to simplify the soldering effort. All integrated component boards, e.g. level shifter, Arduino board, will be attached to the board with female headers, so if a component dies for some reason it can easily be swapped out without re-soldering.\nI decided to go with a board that is connected much like a solderless prototyping breadboard, where each column of holes are electrically connected. This does limit the possible orientation of the modules, but it will make the final wiring a little easier given that it can be laid out nearly exactly the same as the solderless prototype.\n\n\n\nThis photo shows the underside of one of the ElectroCookie breadboards. The project will have two boards side-by-side to accommodate for all of the control electronics. The stand offs in the middle of the board are to raise it up off the bottom of the electronics enclosure.\n\n\n🌈\n\n\n\nThis diagram illustrates the layout of the board, and is mostly to scale. The groups of wires extending beyond the breadboard’s borders will be routed to external electronics, such as the participant buttons, power input, and light display. Although the wires are shown overlapping the modules in the diagram, they will actually be routed underneath the modules, as the modules will be elevated using female headers.\n\n\n🌈\n\n\n\nThis diagram illustrates the soldering layout primarily for the wires and female headers."
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
-    "title": "It’s Alive!",
-    "section": "The Final Touches",
-    "text": "The Final Touches\nThis is our last weekend before we deliver and I’m thrilled that we are really just putting on the final touches. Although I learned today that last minute software changes can be quite risky.\n🌈\n\n\n\nI decided to change the initial colors for the the participant controlled central light, but because of the wonky logic for how the buttons interact with the colors, I got less ideal results.\n\n\n🌈\n\n\n\nI reverted my software change and now it’s working 🥳"
+    "objectID": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#the-box",
+    "href": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#the-box",
+    "title": "The Optimal Solution",
+    "section": "The Box",
+    "text": "The Box\nThe control panel enclosure will house the participant-facing buttons in addition to the control electronics for the installation, i.e. the breadboard discussed earlier in this post. I was planning on modeling and 3D printing the enclosure, but now I am contemplating making it out of wood and simply printing an enclosure for the breadboard that will sit inside the box. With regards to the enclosure as a whole, there are a few mechanical factors to consider, like how it will be mounted and accessed from the outside in case of malfunction.\nThe participant control panel will be located beneath the light display, which is mounted on a 45-degree wooden panel. The enclosure is designed as a diagonally cut rectangular prism to position the buttons vertically for easy access.\n\n\n\nThis is the initial 3D model I was planning on printing. The triangular holes in the front are for the arcade buttons that the participants can use to modify one of the LED strips. With this design, there is no way to access the enclosed electronics without unscrewing the cover from the wooden panel that it would be mounted to.\n\n\n🌈\n\n\n\nThe little nubs at the bottom of the box are to stabilize the stand offs used to elevate the circuit board off the bottom of the box."
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
-    "title": "It’s Alive!",
-    "section": "It’s Actually Happening!",
-    "text": "It’s Actually Happening!\nWe leave in less than a week 😶"
+    "objectID": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#the-structure",
+    "href": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#the-structure",
+    "title": "The Optimal Solution",
+    "section": "The Structure",
+    "text": "The Structure\nMy partner, Bo, has been working hard on the structure, experiencing a multitude of challenges, and has practically rebuilt the frame, piece by piece. Home Depot has become our second home 😅 I have such immense respect for his tenacity in constructing a sturdy frame to bring my vision to fruition.\n\n\n\nWe each spent most of the day working on our respective parts of ColorClock. I was mostly CAD-ing in the AC while he was sweating in the garage playing with power tools.\n\n\n🌈\n\n\n\nThis is Bo’s exasperated “I can’t wait to burn this thing” look. I love him 😘\n\n\n🌈\n\n\n\nMe, for scale."
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
-    "title": "It’s Alive!",
-    "section": "Slide Dump",
-    "text": "Slide Dump\nThe full presentation can be found here.\nI’ve included a few slides below for your enjoyment 🙂 These diagrams were created using AutoCAD."
+    "objectID": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#todos-for-this-week",
+    "href": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#todos-for-this-week",
+    "title": "The Optimal Solution",
+    "section": "TODOs For This Week",
+    "text": "TODOs For This Week\n\nSolder circuit board\nModel circuit board enclosure\nModify software to output lower power at night"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#section",
+    "href": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html#section",
+    "title": "The Optimal Solution",
+    "section": "😬",
+    "text": "😬"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html",
+    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html",
+    "title": "We Did It",
+    "section": "",
+    "text": "Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅"
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
     "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
     "title": "We Did It",
     "section": "Contingency Planning",
-    "text": "Contingency Planning\nI packed up spares of all the electronic components in case one of the modules were to go kaput. Time didn’t allow to solder up an entire new circuit board so my contingency plan was to construct a new one with a solderless prototyping board if anything went really wrong.\n The backup box had multiples of all the modules in addition to solderless breadboards and assorted components.\n I also brought my little tool box with oodles of extra wire and tools Thankfully I had no use for any of my extra wiring."
+    "text": "Contingency Planning\nI packed up spares of all the electronic components in case one of the modules were to go kaput. Time didn’t allow to solder up an entire new circuit board so my contingency plan was to construct a new one with a solderless prototyping board if anything went really wrong.\n\n\n\nThe backup box had multiples of all the modules in addition to solderless breadboards and assorted components.\n\n\n🌈\n\n\n\nI also brought my little tool box with oodles of extra wire and tools Thankfully I had no use for any of my extra wiring."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#artery-check-in",
     "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#artery-check-in",
     "title": "We Did It",
     "section": "Artery Check In",
-    "text": "Artery Check In\nDuring check-in, The Artery (the Burning Man art department) showed us our placement on the map.\n Part of the check in ritual is to have the artist place a label near the green sticker corresponding with their project on the art map. I was ecstatic to see my little green dot 🤩\n There we are!\n🌈\nAfter identifying our placement on the map, the Field Ops volunteer took us to our actual location on Playa.\n Each project’s physical location is marked with a “floofy” connected to a CD-R bolted into the ground.\n We were brought to our floofy!"
+    "text": "Artery Check In\nDuring check-in, The Artery (the Burning Man art department) showed us our placement on the map.\n\n\n\nPart of the check in ritual is to have the artist place a label near the green sticker corresponding with their project on the art map. I was ecstatic to see my little green dot 🤩\n\n\n🌈\n\n\n\nThere we are!\n\n\n🌈\nAfter identifying our placement on the map, the Field Ops volunteer took us to our actual location on Playa.\n\n\n\nEach project’s physical location is marked with a “floofy” connected to a CD-R bolted into the ground.\n\n\n🌈\n\n\n\nWe were brought to our floofy!"
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#installation",
     "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#installation",
     "title": "We Did It",
     "section": "Installation",
-    "text": "Installation\nThe 2-day, 16 + 2 hour drive to Playa was a little nerve-racking. My poor Subie was at her towing capacity, and let us know with her engine whines. But we made it 😅\n We were able to transport the project mostly assembled to make set up as easy as possible. Our good friend Cody was part of our art crew and helped with the construction.\n Bo is getting the solar panels set up. The wooden box in front of the solar panels housed the battery and solar charge controllers.\nIt had been raining the day before and we were frantically trying to finish assembly before the looming rain. I felt some droplets while I was connecting the light harnesses to the terminal block but we got everything buttoned up without any damage. Due to the threat of rain, we decided to wait until all chances of precipitation had passed before powering up.\n Many art installations at Burning Man are designed for climbing, but ColorClock was not, so we needed a sign to make that clear. Additionally I wanted to ensure participants were aware of the trip hazard posed by the cross beams at the bottom. My campmate Heather had the chance to experiment with a Cricut and created some super cute signs for us 😍.\n I added curtains to the sides of the structure in a futile attempt at making the lights visible during the day, but the Playa sun always wins ☀️ So it turned out to be just a nighttime piece."
+    "text": "Installation\nThe 2-day, 16 + 2 hour drive to Playa was a little nerve-racking. My poor Subie was at her towing capacity, and let us know with her engine whines. But we made it 😅\n\n\n\nWe were able to transport the project mostly assembled to make set up as easy as possible. Our good friend Cody was part of our art crew and helped with the construction.\n\n\n🌈\n\n\n\nBo is getting the solar panels set up. The wooden box in front of the solar panels housed the battery and solar charge controllers.\n\n\nIt had been raining the day before and we were frantically trying to finish assembly before the looming rain. I felt some droplets while I was connecting the light harnesses to the terminal block but we got everything buttoned up without any damage. Due to the threat of rain, we decided to wait until all chances of precipitation had passed before powering up.\n🌈\n\n\n\nMany art installations at Burning Man are designed for climbing, but ColorClock was not, so we needed a sign to make that clear. Additionally I wanted to ensure participants were aware of the trip hazard posed by the cross beams at the bottom. My campmate Heather had the chance to experiment with a Cricut and created some super cute signs for us 😍.\n\n\n🌈\n\n\n\nI added curtains to the sides of the structure in a futile attempt at making the lights visible during the day, but the Playa sun always wins ☀️ So it turned out to be just a nighttime piece."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#nighttime-viewing",
     "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#nighttime-viewing",
     "title": "We Did It",
     "section": "Nighttime Viewing",
-    "text": "Nighttime Viewing\nWhile the colored LEDs were not visible during the day, the colors shined through beautifully at night.\n Bo and I were delighted to see how vibrant the colors glowed at night. Photo courtesy of my dear friend Victoria Hollis.\n Here is a full 360 view of the project displayed on Playa.\n🌈\nThis recording is the tail-end of my presentation where I encouraged my campmates to explore the control panel, figuring out how the buttons influenced the central light. Video courtesy of Victoria Hollis.\n I invited my camp to view the piece and gave a brief presentation explaining the meaning behind the colors of each LED strip in the light display.\n Over the course of the event, almost all of our solar lights to provide safe visibility were destroyed. My amazing camp member, Kerry Veenstra, who also had a piece on Playa, lent us some spare lights that added beautiful lighting to the ground. Photo courtesy of Victoria Hollis."
+    "text": "Nighttime Viewing\nWhile the colored LEDs were not visible during the day, the colors shined through beautifully at night.\n\n\n\nBo and I were delighted to see how vibrant the colors glowed at night. Photo courtesy of my dear friend Victoria Hollis.\n\n\n🌈\n\n\n\nHere is a full 360 view of the project displayed on Playa.\n\n\n🌈\nThis recording is the tail-end of my presentation where I encouraged my campmates to explore the control panel, figuring out how the buttons influenced the central light. Video courtesy of Victoria Hollis.\n\n\n\nI invited my camp to view the piece and gave a brief presentation explaining the meaning behind the colors of each LED strip in the light display.\n\n\n🌈\n\n\n\nOver the course of the event, almost all of our solar lights to provide safe visibility were destroyed. My amazing camp member, Kerry Veenstra, who also had a piece on Playa, lent us some spare lights that added beautiful lighting to the ground. Photo courtesy of Victoria Hollis."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#participant-interaction",
     "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#participant-interaction",
     "title": "We Did It",
     "section": "Participant Interaction",
-    "text": "Participant Interaction\nOn a different note, event participants found my piece difficult to engage with. ColorClock was vandalized twice with mean stickers, and no one I spoke to at the project had the vaguest idea of what they were looking at or what the buttons actually did.\n\nMy camp mate Kerry found this sticker on my piece and promptly removed it. This was the second time someone had vandalized my art. I didn’t take it personally, but it saddens me that some people think it’s acceptable or amusing to deface a project that someone has invested so much time and effort into. Photo courtesy of Kerry Veenstra.\n🌈\nRegardless of how ColorClock was consumed by the public, I’m still damn proud of what we accomplished. And this project wasn’t for anyone one else - it was for me. The magic of ColorClock was in the software which I did not have the time or mental capacity to translate into the visual aesthetic."
+    "text": "Participant Interaction\nOn a different note, event participants found my piece difficult to engage with. ColorClock was vandalized twice with mean stickers, and no one I spoke to at the project had the vaguest idea of what they were looking at or what the buttons actually did.\n\n\n\nMy camp mate Kerry found this sticker on my piece and promptly removed it. This was the second time someone had vandalized my art. I didn’t take it personally, but it saddens me that some people think it’s acceptable or amusing to deface a project that someone has invested so much time and effort into. Photo courtesy of Kerry Veenstra.\n\n\n🌈\nRegardless of how ColorClock was consumed by the public, I’m still damn proud of what we accomplished. And this project wasn’t for anyone one else - it was for me. The magic of ColorClock was in the software which I did not have the time or mental capacity to translate into the visual aesthetic."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#the-end-of-colorclock-version-1",
     "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#the-end-of-colorclock-version-1",
     "title": "We Did It",
     "section": "The End of ColorClock Version 1",
-    "text": "The End of ColorClock Version 1\nMany of the art pieces at Burning Man are burned, which I believe symbolizes the impermanence of life. Though our choice to burn our piece was mostly because we simply didn’t want to lug it home 😅 A ceremonial burn-in-place ritual is quite complex due to the need to protect the playa. Instead, we opted to disassemble the piece and burn it in the “Burn Garden.”\n\nBefore disposing of the structure, we salvaged the electrical components and removed all fasteners.\nCody and Bo disassembled the project and removed all screws. Our friend and campmate Asher (not pictured) was helpful in removing staples from the battery box and played a significant role in conducting a MOOP sweep of the area. In Burning Man culture, MOOP stands for Matter Out Of Place. A MOOP sweep involves meticulously combing the area for any debris to uphold the principle of “Leave No Trace.”\nOnly unpainted, untreated wood was permitted in the Burn Garden which is why we left the wood in the structure unfinished. Here, Bo is tossing our disassembled structure into the “Burn Garden”."
+    "text": "The End of ColorClock Version 1\nMany of the art pieces at Burning Man are burned, which I believe symbolizes the impermanence of life. Though our choice to burn our piece was mostly because we simply didn’t want to lug it home 😅 A ceremonial burn-in-place ritual is quite complex due to the need to protect the playa. Instead, we opted to disassemble the piece and burn it in the “Burn Garden.”\n\n\n\nBefore disposing of the structure, we salvaged the electrical components and removed all fasteners.\n\n\nCody and Bo disassembled the project and removed all screws. Our friend and campmate Asher (not pictured) was helpful in removing staples from the battery box and played a significant role in conducting a MOOP sweep of the area. In Burning Man culture, MOOP stands for Matter Out Of Place. A MOOP sweep involves meticulously combing the area for any debris to uphold the principle of “Leave No Trace.”\n\n\n\nOnly unpainted, untreated wood was permitted in the Burn Garden which is why we left the wood in the structure unfinished. Here, Bo is tossing our disassembled structure into the “Burn Garden”."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#colorclock-version-2",
@@ -312,7 +375,7 @@
     "href": "education/comp-org/comp-org.html#worksheets",
     "title": "Computer Systems and Assembly Language",
     "section": "Worksheets",
-    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allow students to handwrite notes and maintain better engagement in class, rather than losing focus by copying slides. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\nNotes  0: Intro To Computing Systems\n  history of computing, computing levels of abstraction\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Who invented the computer?\n  \n\n\nNotes  1: Integer Numbering Systems\n  unary, grouping, positional, decimal, octal, hexadecimal, binary\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\nNotes 2a: Combinational Logic 1\n  MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\nNotes 2b: Combinational Logic 2\n  digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\nNotes 2c: Combinational Logic 3\n  multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes  3: Boolean Algebra\n  Boolean identities, De Morgan's Law\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\nNotes  4: Sequential Logic\n  SR latch, active high, active low, D latch, D flip-flop\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\nNotes  5: Signed Integer Representation\n  signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  carry out, overflow, bitwise, reduction, shifts, rotate\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Two's Complement Representation and Overflow: EngMicroLectures\n  \n\n\nNotes  7: Fractional Representation\n  fixed point, IEEE 754 single precision floating point\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Binary Fractions: Electronics Tutorials\n  \n\n\nNotes  8: Text Representation\n  ASCII, UTF-8\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes  9: von Neumann Model\n  von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes 10: MIPS Instruction Set Architecture\n  general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Reference Table: Rebecca Rashkin MIPS Instruction Format: Rebecca Rashkin Printable ASCII Characters: Rebecca Rashkin\n  \n\n\nNotes 11: MARS: MIPS Assembler and Runtime Simulator\n  memory display, syscalls\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Tutorial 1 Intro and Mars: Amell Peralta\n  \n\n\nNotes 12: MIPS Addressing Modes\n  register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes 13: Stacks and Subroutines\n  stack, jump instructions, return address, subroutines\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)\n  \n\n\nNotes 14: MIPS Data Path\n  mips data path, r-type, i-type, j-type, pc, register file, alu, control unit\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS32 Data Path: Rebecca Rashkin\n  \n\n\n\n\n\n\n\n\nSpoiler Alert!\nHow do I see the answers?\n\nHere You Go!"
+    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allow students to handwrite notes and maintain better engagement in class, rather than losing focus by copying slides. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\nNotes  0: Intro To Computing Systems\n  history of computing, computing levels of abstraction\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Who invented the computer?\n  \n\n\nNotes  1: Integer Numbering Systems\n  unary, grouping, positional, decimal, octal, hexadecimal, binary\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\nNotes 2a: Combinational Logic 1\n  MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\nNotes 2b: Combinational Logic 2\n  digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\nNotes 2c: Combinational Logic 3\n  multiplexers, decoders, half adder, full adder, ripple-carry adder, ALU\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes  3: Boolean Algebra\n  Boolean identities, De Morgan's Law\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\nNotes  4: Sequential Logic\n  SR latch, active high, active low, D latch, D flip-flop\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\nNotes  5: Signed Integer Representation\n  signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  carry out, overflow, bitwise, reduction, shifts, rotate\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Two's Complement Representation and Overflow: EngMicroLectures\n  \n\n\nNotes  7: Fractional Representation\n  fixed point, IEEE 754 single precision floating point\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements Binary Fractions: Electronics Tutorials\n  \n\n\nNotes  8: Text Representation\n  ASCII, UTF-8\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes  9: von Neumann Model\n  von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes 10: MIPS Instruction Set Architecture\n  general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Reference Table: Rebecca Rashkin MIPS Instruction Format: Rebecca Rashkin Printable ASCII Characters: Rebecca Rashkin\n  \n\n\nNotes 11: MARS: MIPS Assembler and Runtime Simulator\n  memory display, syscalls\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Tutorial 1 Intro and Mars: Amell Peralta\n  \n\n\nNotes 12: MIPS Addressing Modes\n  register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  \n  \n\n\nNotes 13: Stacks and Subroutines\n  stack, jump instructions, return address, subroutines\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)\n  \n\n\nNotes 14: MIPS Data Path\n  mips data path, r-type, i-type, j-type, pc, register file, alu, control unit\n  \n\n\n\nGoogle Doc\nPDF\n\n\n\n\n  Supplements MIPS32 Data Path: Rebecca Rashkin\n  \n\n\n\n\n\n\n\n\nSpoiler Alert!\nHow do I see the answers?\n\nHere You Go!"
   },
   {
     "objectID": "education/comp-org/comp-org.html#extra-credit",

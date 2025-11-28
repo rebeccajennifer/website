@@ -6,8 +6,11 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Rebecca Jennifer Rashkin">
+<meta name="dcterms.date" content="2024-07-13">
+<meta name="description" content="This week I contemplated the optimal solution for the circuit board layout.">
 
-<title>ColorClock – Rebecca Jennifer Rashkin</title>
+<title>The Optimal Solution – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +26,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../">
-<link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../../../">
+<link href="../../../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,79 +72,21 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../../flux-bunny.css">
+<link rel="stylesheet" href="../../../../flux-bunny.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-fixed fullcontent quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top quarto-banner">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../index.html">
+    <a class="navbar-brand" href="../../../../index.html">
     <span class="navbar-title">Rebecca Jennifer Rashkin</span>
     </a>
   </div>
@@ -159,15 +102,15 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../../education/how-to-learn.html">
+    <a class="dropdown-item" href="../../../../education/how-to-learn.html">
  <span class="dropdown-text">How to Learn</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../education/comp-org/comp-org.html">
+    <a class="dropdown-item" href="../../../../education/comp-org/comp-org.html">
  <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../education/comp-org/worksheet-answers.html">
+    <a class="dropdown-item" href="../../../../education/comp-org/worksheet-answers.html">
  <span class="dropdown-text">How to View Worksheet Answers</span></a>
   </li>  
     </ul>
@@ -178,17 +121,17 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-colorclock">    
         <li>
-    <a class="dropdown-item" href="../../projects/color-clock/about-color-clock.html">
+    <a class="dropdown-item" href="../../../../projects/color-clock/about-color-clock.html">
  <span class="dropdown-text">About ColorClock</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../projects/color-clock/color-clock-evolution.html">
+    <a class="dropdown-item" href="../../../../projects/color-clock/color-clock-evolution.html">
  <span class="dropdown-text">The Evolution of ColorClock</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../contact.html"> 
+    <a class="nav-link" href="../../../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -202,34 +145,54 @@ window.Quarto = {
     </nav>
 </header>
 <!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<header id="title-block-header" class="quarto-title-block default page-columns page-full">
+  <div class="quarto-title-banner page-columns page-full">
+    <div class="quarto-title column-body">
+      <h1 class="title">The Optimal Solution</h1>
+                  <div>
+        <div class="description">
+          <p>This week I contemplated the optimal solution for the circuit board layout.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
+                <div class="quarto-category">color-clock</div>
+              </div>
+                  </div>
+  </div>
+    
+  
+  <div class="quarto-title-meta">
+
+      <div>
+      <div class="quarto-title-meta-heading">Author</div>
+      <div class="quarto-title-meta-contents">
+               <p><a href="https://rebeccajennifer.github.io/website">Rebecca Jennifer Rashkin</a> </p>
+            </div>
+    </div>
+      
+      <div>
+      <div class="quarto-title-meta-heading">Published</div>
+      <div class="quarto-title-meta-contents">
+        <p class="date">July 13, 2024</p>
+      </div>
+    </div>
+    
+      
+    </div>
+    
+  
+  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(5)</span></div><div class="category" data-category="Y29sb3ItY2xvY2s=">color-clock <span class="quarto-category-count">(5)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(1)</span></div></div></div>
+    
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">ColorClock</h1>
-</div>
+<main class="content quarto-banner-title-block" id="quarto-document-content">
 
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
+<p>As a child, I could spend entire days engrossed in puzzles. My favorites were the Mind Benders series logic puzzles, where a set of clues were provided to determine matches with limited information, such as figuring out which child owned which pet. I found immense satisfaction in solving these problems and took comfort in the certainty that there was always one correct solution. My chosen career path reflects this passion for problem-solving. Today, the puzzles I tackle are far more complex, with numerous possible solutions, each varying in its degree of optimality.</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -254,44 +217,33 @@ window.Quarto = {
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
-<!--___________________________________________________________________|
-|   DESCRIPTION
-|   This file contains configuration information for the blog.
-|____________________________________________________________________-->
-<p>What time is it? Amber o’clock-ish(?)</p>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider blu">
+<div class="divider cya">
 
 </div>
-<section id="what-is-it" class="level2">
-<h2 class="anchored" data-anchor-id="what-is-it">What is it?</h2>
-<p>ColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.</p>
-<p>ColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.</p>
-<p><img src="../../projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg" class="img-fluid"></p>
-<p><a href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver" class="flux-button _1">ColorClock Source Code</a></p>
+<section id="the-circuit-board" class="level2">
+<h2 class="anchored" data-anchor-id="the-circuit-board">The Circuit Board</h2>
+<p>My big puzzle for the week has been how to lay out the final circuit board. There wasn’t enough time to have a board printed, so I’ll be wiring and soldering everything manually. For the second version of ColorClock, I would like to design a printed circuit board (PCB) to simplify the soldering effort. All integrated component boards, e.g.&nbsp;level shifter, Arduino board, will be attached to the board with female headers, so if a component dies for some reason it can easily be swapped out without re-soldering.</p>
+<p>I decided to go with a board that is connected much like a solderless prototyping breadboard, where each column of holes are electrically connected. This does limit the possible orientation of the modules, but it will make the final wiring a little easier given that it can be laid out nearly exactly the same as the solderless prototype.</p>
+<figure class="figure">
+<img src="./breadboard-underside.JPEG" class="img-fluid figure-img">
+<figcaption>
+This photo shows the underside of one of the ElectroCookie breadboards. The project will have two boards side-by-side to accommodate for all of the control electronics. The stand offs in the middle of the board are to raise it up off the bottom of the electronics enclosure.
+</figcaption>
+</figure>
+<p>🌈</p>
+<figure class="figure">
+<img src="./breadboard-full__2024-07-13.png" class="img-fluid figure-img">
+<figcaption>
+This diagram illustrates the layout of the board, and is mostly to scale. The groups of wires extending beyond the breadboard’s borders will be routed to external electronics, such as the participant buttons, power input, and light display. Although the wires are shown overlapping the modules in the diagram, they will actually be routed underneath the modules, as the modules will be elevated using female headers.
+</figcaption>
+</figure>
+<p>🌈</p>
+<figure class="figure">
+<img src="./breadboard-wiring__2024-07-13.png" class="img-fluid figure-img">
+<figcaption>
+This diagram illustrates the soldering layout primarily for the wires and female headers.
+</figcaption>
+</figure>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -316,170 +268,121 @@ window.Quarto = {
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
-<div class="divider blu">
+<div class="divider cya">
 
 </div>
 </section>
-<section id="the-journey" class="level2">
-<h2 class="anchored" data-anchor-id="the-journey">The Journey</h2>
-<p>Take a look at my blog to see the evolution of ColorClock.</p>
+<section id="the-box" class="level2">
+<h2 class="anchored" data-anchor-id="the-box">The Box</h2>
+<p>The control panel enclosure will house the participant-facing buttons in addition to the control electronics for the installation, i.e.&nbsp;the breadboard discussed earlier in this post. I was planning on modeling and 3D printing the enclosure, but now I am contemplating making it out of wood and simply printing an enclosure for the breadboard that will sit inside the box. With regards to the enclosure as a whole, there are a few mechanical factors to consider, like how it will be mounted and accessed from the outside in case of malfunction.</p>
+<p>The participant control panel will be located beneath the light display, which is mounted on a 45-degree wooden panel. The enclosure is designed as a diagonally cut rectangular prism to position the buttons vertically for easy access.</p>
+<figure class="figure">
+<img src="./participant-ctrl-0__2024-07-13.png" class="img-fluid figure-img">
+<figcaption>
+This is the initial 3D model I was planning on printing. The triangular holes in the front are for the arcade buttons that the participants can use to modify one of the LED strips. With this design, there is no way to access the enclosed electronics without unscrewing the cover from the wooden panel that it would be mounted to.
+</figcaption>
+</figure>
+<p>🌈</p>
+<figure class="figure">
+<img src="./participant-ctrl-1__2024-07-13.png" class="img-fluid figure-img">
+<figcaption>
+The little nubs at the bottom of the box are to stabilize the stand offs used to elevate the circuit board off the bottom of the box.
+</figcaption>
+</figure>
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<div class="divider cya">
 
+</div>
+</section>
+<section id="the-structure" class="level2">
+<h2 class="anchored" data-anchor-id="the-structure">The Structure</h2>
+<p>My partner, Bo, has been working hard on the structure, experiencing a multitude of challenges, and has practically rebuilt the frame, piece by piece. Home Depot has become our second home 😅 I have such immense respect for his tenacity in constructing a sturdy frame to bring my vision to fruition.</p>
+<figure class="figure">
+<img src="./bo-drill-structure.JPEG" class="img-fluid figure-img">
+<figcaption>
+We each spent most of the day working on our respective parts of ColorClock. I was mostly CAD-ing in the AC while he was sweating in the garage playing with power tools.
+</figcaption>
+</figure>
+<p>🌈</p>
+<figure class="figure">
+<img src="./bo-standing-in-front-of-structure.JPEG" class="img-fluid figure-img">
+<figcaption>
+This is Bo’s exasperated “I can’t wait to burn this thing” look. I love him 😘
+</figcaption>
+</figure>
+<p>🌈</p>
+<figure class="figure">
+<img src="./me-for-scale.JPEG" class="img-fluid figure-img">
+<figcaption>
+Me, for scale.
+</figcaption>
+</figure>
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<div class="divider cya">
+
+</div>
+</section>
+<section id="todos-for-this-week" class="level2">
+<h2 class="anchored" data-anchor-id="todos-for-this-week">TODOs For This Week</h2>
+<ul>
+<li>Solder circuit board</li>
+<li>Model circuit board enclosure</li>
+<li>Modify software to output lower power at night</li>
+</ul>
+</section>
+<section id="section" class="level2">
+<h2 class="anchored" data-anchor-id="section">😬</h2>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29sb3ItY2xvY2slMkN0ZXN0aW5n" data-listing-date-sort="1738998000000" data-listing-file-modified-sort="1764301348383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1044">
-<a href="../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/ascii-bunny.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Back In Development
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-<div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Leveling up ColorClock with testing, tooling, and better software design.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Feb 8, 2025
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1725433200000" data-listing-file-modified-sort="1764302555064" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1358">
-<a href="../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1__color-clock.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-We Did It
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Sep 4, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723878000000" data-listing-file-modified-sort="1764301413990" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="485">
-<a href="../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/final-light-display.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-It’s Alive!
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>Our scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Aug 17, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1763434214383" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="358">
-<a href="../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/directives.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mind Your Parens
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>My lesson on why you should always use parenthesis in preprocessor directives.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Aug 16, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1720854000000" data-listing-file-modified-sort="1764305734430" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="705">
-<a href="../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/breadboard-full__2024-07-13.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The Optimal Solution
-</h5>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
-
-</div>
-<div class="card-text listing-description delink">
-<p>This week I contemplated the optimal solution for the circuit board layout.</p>
-</div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-<div class="listing-date">
-Jul 13, 2024
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
