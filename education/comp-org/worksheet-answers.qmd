@@ -28,7 +28,10 @@ title: Spoiler Alert!
 format: html
 ---
 
-### How to view the worksheet answers
+This page describes how to reveal the answers in the worksheets for
+computer systems and assembly language.
+
+### Display Worksheet Answers
 
 The Computer Systems and Assembly Language worksheet answers are hidden
 in the Google Doc style Heading 4. Follow these instructions to view
