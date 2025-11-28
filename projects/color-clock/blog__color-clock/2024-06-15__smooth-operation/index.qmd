@@ -1,5 +1,8 @@
 ---
 title       : Smooth Operation
+description : >
+  My experiments with an IO expander, level shifter, and a lesson
+  learned.
 image       : ./level-shifter-wiring__2024-06-06.png
 date        : 2024-06-15
 categories  : [color-clock]
@@ -54,7 +57,7 @@ After successfully testing the level shifter, I quickly integrated the three add
 
 I barely touched the code! I was worried there was something on the board shorting so it took me about a day of swapping out hardware, doing incremental testing, and meticulously comparing Git commits before I identified the problem.
 
-In the last commit where everything broke, I made one tiny optimization in an effort to reduce the use of 'magic numbers'... In the definition of the time periods for each color clock, I used a static member variable, TimeCalcs::SEC_IN_HR.
+In the last commit where everything broke, I made one tiny optimization in an effort to reduce the use of 'magic numbers'. In the definition of the time periods for each color clock, I used a static member variable, TimeCalcs::SEC_IN_HR.
 
 ```cpp
 float cc0_period =  6.0 / TimeCalcs::SEC_IN_HR;
@@ -104,7 +107,9 @@ The two videos included below demonstate the differences when updating the color
 🌈
 
 <figure>
-![]()
+
+{{< video https://youtu.be/Jz6OTALZE4k?list=PLbI1gaV_RzjdkYlin50oWDiLHygY1F2Lv >}}
+
 <figcaption>
 In this implementation, the program is updating the color output every second. Notice how abrupt the color transitions appear.
 </figcaption>
@@ -113,7 +118,9 @@ In this implementation, the program is updating the color output every second. N
 🌈
 
 <figure>
-![]()
+
+{{< video https://youtu.be/IndqAqKtxb8?list=PLbI1gaV_RzjdkYlin50oWDiLHygY1F2Lv >}}
+
 <figcaption>
 Here, the colors are updated every millisecond. The transitions in this implementation are much smoother than before.
 </figcaption>
