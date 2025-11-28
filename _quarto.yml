@@ -49,7 +49,12 @@ website:
             href: education/comp-org/worksheet-answers.qmd
 
       - text: "ColorClock"
-        href: projects/color-clock/color-clock.qmd
+        menu:
+          - text: "About ColorClock"
+            href: projects/color-clock/about-color-clock.qmd
+          - text: "The Evolution of ColorClock"
+            href: projects/color-clock/color-clock-evolution.qmd
+
       - text: "Contact"
         href: contact.qmd
 
