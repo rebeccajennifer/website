@@ -122,7 +122,7 @@ rows: list =\
     }
 
   , { 'heading'   : 'Notes 2c: Combinational Logic 3'
-    , 'desc'      : 'multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU'
+    , 'desc'      : 'multiplexers, decoders, half adder, full adder, ripple-carry adder, ALU'
     , 'worksheet' : 'https://docs.google.com/document/d/16UiRg7d-cPHNblD39rClBkAHcE9duKxdpO069fMucKo/edit?usp=sharing'
     , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02c_comb_logic_comp_org.pdf'
     }
