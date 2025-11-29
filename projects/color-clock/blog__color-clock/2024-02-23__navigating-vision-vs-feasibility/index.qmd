@@ -3,7 +3,7 @@ title       : Navigating Vision vs Feasibility
 description : >
   Finding the balance between artistic vision and feasibility of execution for the user interface.
 date        : 2024-02-23
-image       : ../../assets__color-clock/diagrams__color-clock/light-display_2024-02-23.png)
+image       : ../../assets__color-clock/diagrams__color-clock/light-display_2024-02-23.png
 categories  : [color-clock]
 draft       : false
 ---
