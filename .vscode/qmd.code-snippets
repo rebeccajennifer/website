@@ -1,0 +1,22 @@
+{
+  "Blog Post": { "prefix"      : "blog"
+  , "description" : "Basic Quarto QMD document layout"
+  , "scope"       : "quarto,markdown"
+  , "body"        : ["---"
+    , "title       : "
+    , "description : >"
+    , ""
+    , "date        : "
+    , "image       : "
+    , "categories  : "
+    , "draft       : "
+    , "---"
+    , ""
+    , "{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}"
+    , ""
+    , ""
+    , "{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}"
+    , ""
+    ]
+  }
+}
