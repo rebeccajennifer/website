@@ -3,7 +3,7 @@ title       : Goodbye Windows
 description : >
   A mystery solved, a Linux partition, and we're officially listed!
 date        : 2024-05-12
-image       : ../../assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06
+image       : ../../assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png
 categories  : [color-clock]
 draft       : false
 ---
