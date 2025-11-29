@@ -1,6 +1,5 @@
 ---
 title       : "It's Alive!"
-
 description : >
   Our scheduled live demo pushed us to finish the project just in time.
   The event was a success and I even got to play teacher again 👩‍🏫
@@ -9,6 +8,7 @@ image       : final-light-display.jpeg
 categories  : [color-clock]
 draft       : false
 ---
+
 <figure>
 ![](final-light-display.jpeg)
 <figcaption>

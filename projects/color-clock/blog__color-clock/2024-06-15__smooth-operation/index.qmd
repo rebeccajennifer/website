@@ -154,18 +154,3 @@ The soldering work is not beautiful but it gets the job done.
 </figcaption>
 </figure>
 
-🌈
-
-<figure>
-![]()
-<figcaption>
-</figcaption>
-</figure>
-
-🌈
-
-<figure>
-![]()
-<figcaption>
-</figcaption>
-</figure>

@@ -131,31 +131,3 @@ According to my empirical testing, the following pins are available for variable
 \* I learned that the A0 pin provides a true analog output, not a PWM signal which is why it was listed on neither the website nor the datasheet as a PWM pin. This page describes the difference between analog and PWM output.
 
 \*\* Pins 9 and 12, as listed on the datasheet and website, respectively, did not produce variable output voltages in my experiment.
-
-
-
-
-
-
-<figure>
-![]()
-<figcaption>
-</figcaption>
-</figure>
-
-
-
-
-##
-
-##
-##
-
-<figure>
-![]()
-<figcaption>
-</figcaption>
-</figure>
-
-🌈
-

@@ -1,0 +1,31 @@
+---
+title       : Build Flags? Please?
+description : >
+
+date        : 2024-04-12
+image       : ./flux-carpet.jpeg
+categories  : [color-clock]
+draft       :  true
+
+
+---
+
+## Background
+
+Every software hurdle feels like an epic journey. My latest challenge was learning how to set build flags.
+
+<figure>
+![]()
+<figcaption>
+</figcaption>
+</figure>
+
+🌈
+
+<figure>
+![]()
+<figcaption>
+</figcaption>
+</figure>
+
+
