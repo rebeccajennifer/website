@@ -1,6 +1,8 @@
 ---
 title       : Build Flags? Please?
 description : >
+  Every software hurdle feels like an epic journey. My latest
+  challenge was learning how to set build flags.
 
 date        : 2024-04-12
 image       : ./flux-carpet.jpeg
@@ -139,11 +141,15 @@ But this didn't work either! However, I did see a note just above the build.extr
 Eureka! 🥳 FINALLY the compiler recognized my build flag.
 
 
-## It Worked, But Come On
+### Well That Seemed Excessive
 
 However, digging that deep into an installation directory just to set a build flag seems a little excessive, so I'd like to learn more about the `platform.local.txt` file. Buuuut.... for now, I really only have one build flag that I care about and I'm ok hacking my way through setting a build flag if it means I can progress in my development.
 
 Ok, now what was I trying to do again? 😅
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
+## Who is Flux?
 
 <figure>
 ![](./flux-carpet.jpeg)

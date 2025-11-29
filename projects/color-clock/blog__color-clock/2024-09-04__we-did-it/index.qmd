@@ -8,7 +8,7 @@ description : >
 
 date        : 2024-09-04
 categories  : [color-clock]
-image       : ../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1__color-clock.jpg
+image       : ../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg
 draft       : false
 ---
 
@@ -204,7 +204,7 @@ light display.
 🌈
 
 <figure>
-![](./../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1__color-clock.jpg)
+![](./../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg)
 <figcaption>
 Over the course of the event, almost all of our solar lights to
 provide safe visibility were destroyed. My amazing camp member, Kerry

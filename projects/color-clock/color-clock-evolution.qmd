@@ -38,6 +38,6 @@ listing:
 
 Check out ColorClock development journey 🌈 ⏱️
 
-![](assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1__color-clock.jpg)
+![](assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg)
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}

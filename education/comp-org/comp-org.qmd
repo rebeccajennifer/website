@@ -37,10 +37,6 @@ Assembly Language at the University of California, Santa Cruz. In this
 taught foundational concepts including binary, digital logic design,
 memory alignment, and assembly language.
 
-My favorite topic to teach was _data path_ where I guided students
-through how an assembly instruction breaks down into machine code and
-how those ones and zeros flow through the processor.
-
 This page contains the course material from that class to serve as a
 reference for anyone interested, and as an example of my work in
 education, documentation, and curriculum design.
