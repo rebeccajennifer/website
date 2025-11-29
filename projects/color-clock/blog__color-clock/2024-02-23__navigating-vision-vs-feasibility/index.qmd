@@ -27,7 +27,6 @@ Recent software development efforts have been focused on button logic. The contr
 1. Time set control (should only need to be used once)
 1. User interface control
 
-
 I created a [class](https://www.geeksforgeeks.org/c-classes-and-objects/) for a momentary switch with a [state machine](https://www.geeksforgeeks.org/difference-between-mealy-machine-and-moore-machine/?ref=header_search) to determine the kind of input it might receive by the user, e.g. short press, long press, double press. And of course before it enters the state machine I added a function to [debounce](https://docs.arduino.cc/built-in-examples/digital/Debounce/) the input so that the electronics would not register multiple button presses even though the user intended to only press the button once.
 
 In the last few days I've realized that I will need to have different kinds of MomentarySwitch classes to register different types of button presses. For instance, the MomentarySwitch class I designed will not register a press and hold for the purpose of incrementing a value multiple times. For example, if we want to set our oven timer to 90 minutes, we shouldn't have to press the increase time button 90x. We know that we can hold the button then it will start to increment first by 1 minute, then 10.

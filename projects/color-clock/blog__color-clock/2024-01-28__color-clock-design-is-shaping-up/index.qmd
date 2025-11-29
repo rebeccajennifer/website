@@ -39,6 +39,15 @@ The current design of ColorClock calls for non-addressable RGB LEDs, since the l
 
 The bulk of the software design and architecture is complete; the time-to-color algorithm is working, and the gradual change from one color to the next is also functioning properly. I paused development in 2021 when my test circuit was not smoothly transitioning from one color to the next but we figured out that I was simply using the wrong output pins of the Arduino. The next software task is to take user input in the form of switches to allow the time to be set externally.
 
+<figure>
+
+{{< video https://www.youtube.com/embed/LSga2Tqg9b0 >}}
+
+<figcaption>
+I programed a simple test program to make an RGB LED cycle through all the possible colors.
+</figcaption>
+</figure>
+
 The current software design uses the assumption that the LEDs are non-addressable. The time-to-color algorithm outputs three values, red, green, and blue. But if I end up using addressable LEDs, I will have to add another layer of architecture to take the RGB values and send them to the board. I'll cross that bridge when/if I get there.
 
 Though it's possible my LED programming design will have to be modified, for now I'm directing my attention to debounce logic for pushbutton input 🤓
