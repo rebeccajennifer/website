@@ -109,6 +109,12 @@ h4 { margin-left: 0px;}
 /* navbar       - Whole navigation bar
 /* navbar-nav   - Container that holds nav links
 /* nav-link     - Each link in navbar
+/*--------------------------------------------------------------------*/
+
+span.menu-text
+{
+  font-variant    : small-caps;
+}
 
 /* Navigation bar */
 .navbar .navbar-nav .nav-link
