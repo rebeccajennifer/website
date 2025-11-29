@@ -1,0 +1,39 @@
+---
+title       : Top Level Block Diagram
+description : >
+  An illustration of my top level design using a Raspberry Pi.
+date        : 2022-05-02
+image       : ./color-clock-block__2022-04.png
+categories  : [color-clock]
+draft       : true
+---
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
+This diagram illustrates the first iteration of the design. The host computer is a Raspberry Pi which runs the code to interface with the peripheral devices. Descriptions of the components listed below.
+
+![](./color-clock-block__2022-04.png)
+
+### RGB LEDs
+The RGB LEDs make up the heart of the piece - the main display light intended for audience view.
+
+### Raspberry Pi
+The Raspberry Pi is the development computer used to do the data and signal processing. Note that final design will likely use an Arduino development board instead of a Raspberry Pi.
+
+### PixelBlaze
+
+The PixelBlaze is a development board used to control addressable LEDs. It is possible that this component might not be used in the final design.
+
+### Clock Module
+
+The clock module is an I2C device used to keep accurate time over long periods of time. It it possible that the clock module will not be used in the first iteration of the prototype.
+
+### Manual Time Set
+
+The manual time set is a cluster of 4 buttons that allow the developer / artist to set the time manually. These buttons can also potentially be used to interface with the piece in additional ways, e.g. change the color profile, change cycle time.
+
+### Debug Display
+
+This is a set of (4) 14-segment LED displays used to display the time or other items that the developer might want to view. This display is intended to be displayed on the backside of the piece so it is not visible to the public.
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
