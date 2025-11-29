@@ -29,7 +29,6 @@ format: html
 ---
 
 <style>
-
 .flux-button
 {
   width   : 23%;
@@ -40,7 +39,6 @@ format: html
     width: 40%;
   }
 }
-
 </style>
 
 My name is Rebecca.

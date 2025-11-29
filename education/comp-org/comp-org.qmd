@@ -27,6 +27,19 @@
 title: Computer Systems and Assembly Language
 format: html
 ---
+<style>
+.flux-button
+{
+  width   : 25%;
+}
+
+@media (max-width: 600px) {
+  .flux-button {
+    display : block;
+  }
+}
+</style>
+
 
 I find magic in understanding a computer all the way
 down to its ones and zeros.
@@ -290,14 +303,10 @@ for r in rows:
   html_parts.append(f"""
 <details><summary class="h3-mock">{r['heading']}</summary>
   <p>{r['desc']}</p>
-  <div><table class="pdf-link-table"><tr>
-    <td><a  class="flux-button _0" href="{r['worksheet']}">
-      Google Doc
-    </a></td>
-    <td><a  class="flux-button _0" href="{r['pdf']}">
-      PDF
-    </a></td>
-  </tr></table></div>
+  <div>
+    <a  class="flux-button _0" href="{r['worksheet']}">Google Doc </a>
+    <a  class="flux-button _0" href="{r['pdf']}">      PDF        </a>
+  </div>
   {supplement_list}
   <br>
 </details>
@@ -364,14 +373,10 @@ for assignment in extra_credit:
 <!--details><summary class="h3-mock">{assignment['name']}</summary-->
 <details><summary>{assignment['name']}</summary>
   <p>{assignment['desc']}</p>
-  <div><table class="pdf-link-table"><tr>
-    <td><a  class="flux-button _0" href="{assignment['gdoc']}">
-      Google Doc
-    </a></td>
-    <td><a  class="flux-button _0" href="{assignment['pdf']}">
-      PDF
-    </a></td>
-  </tr></table></div>
+  <div>
+    <a  class="flux-button _0" href="{assignment['gdoc']}">Google Doc</a>
+    <a  class="flux-button _0" href="{assignment['pdf']}"> PDF       </a>
+  </div>
 </details>
 """)
 
