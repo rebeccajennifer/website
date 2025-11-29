@@ -8,6 +8,7 @@
 
 <meta name="author" content="Rebecca Jennifer Rashkin">
 <meta name="dcterms.date" content="2024-06-15">
+<meta name="description" content="My experiments with an IO expander, level shifter, and a lesson learned.">
 
 <title>Smooth Operation – Rebecca Jennifer Rashkin</title>
 <style>
@@ -183,7 +184,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
       <h1 class="title">Smooth Operation</h1>
-                                <div class="quarto-categories">
+                  <div>
+        <div class="description">
+          <p>My experiments with an IO expander, level shifter, and a lesson learned.</p>
+        </div>
+      </div>
+                          <div class="quarto-categories">
                 <div class="quarto-category">color-clock</div>
               </div>
                   </div>
@@ -245,7 +251,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
-<div class="divider cya">
+<div class="divider blu">
 
 </div>
 <section id="io-expander-analog-write-fails-me" class="level2">
@@ -333,7 +339,7 @@ The level shifter input pins are connected to the Arduino analog output pins and
 <h2 class="anchored" data-anchor-id="lesson-learned-dont-use-a-member-variable-to-define-a-global">Lesson Learned: Don’t Use a Member Variable to Define a Global</h2>
 <p>After successfully testing the level shifter, I quickly integrated the three additional ColorClock objects into the code, assigning analog output pins for each new strip. However, upon connecting more LED strips and running the code, the board appeared to freeze. Subsequent attempts to upload new code failed as the computer no longer detected the Arduino’s serial port. Resetting the board and reseating the USB cable eventually restored the serial port connection. Despite this, re-uploading the program continued to cause the board to freeze again 😵‍💫</p>
 <p>I barely touched the code! I was worried there was something on the board shorting so it took me about a day of swapping out hardware, doing incremental testing, and meticulously comparing Git commits before I identified the problem.</p>
-<p>In the last commit where everything broke, I made one tiny optimization in an effort to reduce the use of ‘magic numbers’… In the definition of the time periods for each color clock, I used a static member variable, TimeCalcs::SEC_IN_HR.</p>
+<p>In the last commit where everything broke, I made one tiny optimization in an effort to reduce the use of ‘magic numbers’. In the definition of the time periods for each color clock, I used a static member variable, TimeCalcs::SEC_IN_HR.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">float</span> cc0_period <span class="op">=</span>  <span class="fl">6.0</span> <span class="op">/</span> TimeCalcs<span class="op">::</span>SEC_IN_HR<span class="op">;</span></span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="dt">float</span> cc1_period <span class="op">=</span> <span class="fl">12.0</span> <span class="op">/</span> TimeCalcs<span class="op">::</span>SEC_IN_HR<span class="op">;</span></span>
 <span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="dt">float</span> cc2_period <span class="op">=</span> <span class="fl">30.0</span> <span class="op">/</span> TimeCalcs<span class="op">::</span>SEC_IN_HR<span class="op">;</span></span>
@@ -394,14 +400,14 @@ The level shifter input pins are connected to the Arduino analog output pins and
 <p>The two videos included below demonstate the differences when updating the color output every second versus every millisecond. The three RGB LED strips in the videos cycle through all hues in the color wheel at different rates: 6 seconds, 12 seconds, and 30 seconds.</p>
 <p>🌈</p>
 <figure class="figure">
-<img src=".png" class="img-fluid figure-img">
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/Jz6OTALZE4k?list=PLbI1gaV_RzjdkYlin50oWDiLHygY1F2Lv" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <figcaption>
 In this implementation, the program is updating the color output every second. Notice how abrupt the color transitions appear.
 </figcaption>
 </figure>
 <p>🌈</p>
 <figure class="figure">
-<img src=".png" class="img-fluid figure-img">
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/IndqAqKtxb8?list=PLbI1gaV_RzjdkYlin50oWDiLHygY1F2Lv" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 <figcaption>
 Here, the colors are updated every millisecond. The transitions in this implementation are much smoother than before.
 </figcaption>
@@ -481,18 +487,33 @@ In this small prototype I’m using breadboard-sized push buttons and LEDs. The 
 The soldering work is not beautiful but it gets the job done.
 </figcaption>
 </figure>
-<p>🌈</p>
-<figure class="figure">
-<img src=".png" class="img-fluid figure-img">
-<figcaption>
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src=".png" class="img-fluid figure-img">
-<figcaption>
-</figcaption>
-</figure>
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<div class="divider blu">
+
+</div>
 
 
 </section>

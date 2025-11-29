@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rebecca Jennifer Rashkin">
-<meta name="dcterms.date" content="2024-08-17">
-<meta name="description" content="Our scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫">
+<meta name="dcterms.date" content="2024-05-28">
 
-<title>It’s Alive! – Rebecca Jennifer Rashkin</title>
+<title>Persistence Makes Progress – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,13 +147,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">It’s Alive!</h1>
-                  <div>
-        <div class="description">
-          <p>Our scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫</p>
-        </div>
-      </div>
-                          <div class="quarto-categories">
+      <h1 class="title">Persistence Makes Progress</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">color-clock</div>
               </div>
                   </div>
@@ -173,7 +167,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 17, 2024</p>
+        <p class="date">May 28, 2024</p>
       </div>
     </div>
     
@@ -219,12 +213,17 @@ ul.task-list li input[type="checkbox"] {
 <div class="divider blu">
 
 </div>
+<section id="a-beautiful-breadboard" class="level2">
+<h2 class="anchored" data-anchor-id="a-beautiful-breadboard">A Beautiful Breadboard</h2>
+<p>Behold! The first design of the of the fully populated solderless breadboard!</p>
 <figure class="figure">
-<img src="final-light-display.jpeg" class="img-fluid figure-img">
+<img src="./solderless-breadboard-layout-rev-a-no-anno__2024-05-28.png" class="img-fluid figure-img">
 <figcaption>
-The outer ring cycles through the whole spectrum over 24 hours, the second to the outer ring cycles over one hour, the inner ring cycles over 1 minute and the central flower-looking light can be controlled by the participant. This photo was taken at 9:09 AM. Don’t mind the dead button LED. This will be fixed 😅
+This to-scale-ish design contains all of the modules that will be present on the final circuit board for ColorClock. The user interface controls are not present on this board.
 </figcaption>
 </figure>
+<p>🌈</p>
+<p>To streamline the final phase of hardware testing and preempt the challenges of electronic troubleshooting, I found it important to meticulously design the layout of the prototyping breadboard. I started this layout by looking at the datasheets, obtaining the dimensions of each module, and drawing each component to scale. Then I decided it would be actually be more functional if I were using units of breadboard holes (approximately 0.1” between holes) instead of true dimensions. To determine the size represented on the diagram I placed each module on the breadboard and noted how many holes they covered and the positioning of all the pins. The next step is to actually wire this thing up and get to testing with the real LED light display 🙌</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -252,14 +251,21 @@ The outer ring cycles through the whole spectrum over 24 hours, the second to th
 <div class="divider cya">
 
 </div>
-<section id="no-regrets" class="level2">
-<h2 class="anchored" data-anchor-id="no-regrets">No Regrets</h2>
-<p>For a long time, I regretting getting my bachelor’s in electrical rather than computer engineering. Often enough I have questions about software engineering design concepts that might have been answered had I chosen a different major. However, while working on ColorClock I realize that my degree gave me familiarity with electronic components and datasheets that I might not have gotten with a different undergraduate focus. And for the first time since I graduated, I sincerely have no regrets about my choice.</p>
-<p>A lot has happened since the last post, including completely resoldering a new circuit board followed by a very sad afternoon where I was ready to give up after burning <em>another</em> Arduino board. But Bo came to the rescue and discovered that it was just a grounding problem.</p>
+</section>
+<section id="clock-crafting" class="level2">
+<h2 class="anchored" data-anchor-id="clock-crafting">Clock Crafting</h2>
+<p>And on the topic of the light display, it’s just about finished! My partner bought a plunge base and circle jig in order to cut the circle and route out pockets for the LED strips to rest in. I’m very pleased with the results 😀 We are using a reflective metallic finish to maximize the light output, and a sheet of translucent acrylic that will sit on top to diffuse the light.</p>
 <figure class="figure">
-<img src="../../assets__color-clock/photos__color-clock/circuit__photos__color-clock/final-circuit-board.jpeg" class="img-fluid figure-img">
+<img src="./bo-router-plunge-base.JPEG" class="img-fluid figure-img">
 <figcaption>
-Here is the final wiring of the circuit board. Isn’t it beautiful? 🥰
+The final routed wood piece features outer rings designed to house RGB LED strips. Each ring will display colors corresponding to the current time in days, hours, and minutes. The center of the piece will have a flower-like shape of LEDs that will be controllable by participant interaction via user control panel.
+</figcaption>
+</figure>
+<p>🌈</p>
+<figure class="figure">
+<img src="./bo-measuring-lite-display.JPEG" class="img-fluid figure-img">
+<figcaption>
+The LEDs are glued to the inside of the pockets, and the colored light will be reflected off the metallic finish.
 </figcaption>
 </figure>
 <!--___________________________________________________________________|
@@ -290,35 +296,50 @@ Here is the final wiring of the circuit board. Isn’t it beautiful? 🥰
 
 </div>
 </section>
-<section id="we-did-it" class="level2">
-<h2 class="anchored" data-anchor-id="we-did-it">We Did It!</h2>
-<p>A couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫</p>
-<p>Last weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.</p>
+<section id="io-expander-integration-trials" class="level2">
+<h2 class="anchored" data-anchor-id="io-expander-integration-trials">IO Expander Integration Trials</h2>
+<p>In my last post, I was working on integrating the Arduino Nano ESP32 into the project. I successfully tested this board with the new RTC module and the new alphanumeric display 🤗 But then… I was in the process of testing the IO expander and ended up messing with my board configuration so much that I was no longer able to upload any code to the board 😦 Thankfully, ptillisch came to the rescue and resolved my issue 🥳</p>
+<p>Though I was able to talk to the Nano board, I was unable to include the library to interface with the IO expander 😭 I chased my tail for a couple of weeks before I decided to move in a different direction (see notes at the end of this post).</p>
+<p>The good news was that I could interface the IO expander with the MKR 1000 that I had been testing on before I got the Nano board. Sooooo I ordered two more Arduinos, the MKR 1010 (they no longer make the MKR 1000) and decided to move forward.</p>
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<div class="divider cya">
+
+</div>
+</section>
+<section id="can-i-just-get-some-variable-voltage-control" class="level2">
+<h2 class="anchored" data-anchor-id="can-i-just-get-some-variable-voltage-control">Can I Just Get Some Variable Voltage Control??</h2>
+<p>The plan: - Use the <strong>IO expander</strong> for analog output (required to create the RGB color mixing) - Use the <strong>Arduino on-board GPIO</strong> for digital input from user interface</p>
+<p>When the new boards came in, I promptly began testing the IO expander. I was able to get the digitalWrite functions to work with ease, but I struggled with the analogWrite function. After days of banging my head against the wall 😖 my new contingency plan was to swap the IO functionality of the on-board Arduino GPIO and the IO expander, i.e.&nbsp;the IO expander for the digital IO and Arduino PWM for the RGB LED control.</p>
+<p>ColorClock has four light strips and three variable voltage lines per strip (one for each red, green and blue) so I need exactly 12 PWM pins. According to the product page for the MKR 1010, there are supposed to be 13 PWM pins on the board BUT one of those listed pins would be unusable for variable voltage output on ColorClock because it needed to be used for the I2C SCL required for communication to the various modules.</p>
+<p>This PWM output count would leave me NO wiggle room if one of the pins didn’t work as expected. My concern grew when I noticed that the datasheet had conflicting information from the product website on which pins were capable of PWM output (see the notes at the end of this post for more information).</p>
+<p>So, to get some clarity, I manually tested each individual pin. I wrote a tiny test program and hooked up a simple circuit with an LED where I varied the output voltage. I observed the LED to see if the light got brighter as the value of the output increased. I discovered more discrepancies between my empirical testing and the documentation (see notes).</p>
 <figure class="figure">
-<img src="demo-presentation__color-clock.jpeg" class="img-fluid figure-img">
+<img src="./led-protoboard-brewery.JPEG" class="img-fluid figure-img">
 <figcaption>
-I discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="bo-and-kyle__color-clock.jpeg" class="img-fluid figure-img">
-<figcaption>
-Bo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="solar-panels__color-clock.jpeg" class="img-fluid figure-img">
-<figcaption>
-We’ll be using solar to charge the batter that powers ColorClock ⚡️
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="participant-view-unlit__color-clock.jpeg" class="img-fluid figure-img">
-<figcaption>
-The participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮
+We spent the afternoon at a brewery where I performed my variable output voltage test while my partner played his Steam Deck killing zombies or something.
 </figcaption>
 </figure>
 <!--___________________________________________________________________|
@@ -349,23 +370,10 @@ The participant will be able to sit on the bench while viewing the light display
 
 </div>
 </section>
-<section id="the-final-touches" class="level2">
-<h2 class="anchored" data-anchor-id="the-final-touches">The Final Touches</h2>
-<p>This is our last weekend before we deliver and I’m thrilled that we are really just putting on the final touches. Although I learned today that last minute software changes can be quite risky.</p>
-<p>🌈</p>
-<figure class="figure">
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/9BzPTI5HZrY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption>
-I decided to change the initial colors for the the participant controlled central light, but because of the wonky logic for how the buttons interact with the colors, I got less ideal results.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/CMCiZth6IXw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption>
-I reverted my software change and now it’s working 🥳
-</figcaption>
-</figure>
+<section id="wiring-matters" class="level2">
+<h2 class="anchored" data-anchor-id="wiring-matters">Wiring Matters</h2>
+<p>The inconsistency between my findings and the documentation left me uneasy, so I went back to testing the IO expander with a minimal example. I knew my code was solid, so I double-checked the circuit wiring and sure enough, there was a mistake. After fixing it, I was able to see a variable output voltage on a multimeter using the analogWrite function using the IO expander 🎉 So now I’m back to the original plan of using the IO expander to control the lights, and the on-board GPIO for the digital inputs.</p>
+<p>The input values set by my program didn’t correlate as expected with the measured voltage with the multimeter, so it looks like I’ll need to write some calibration functions so I can programmatically compensate for hardware characteristics.</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -394,9 +402,56 @@ I reverted my software change and now it’s working 🥳
 
 </div>
 </section>
-<section id="its-actually-happening" class="level2">
-<h2 class="anchored" data-anchor-id="its-actually-happening">It’s Actually Happening!</h2>
-<p>We leave in less than a week 😶</p>
+<section id="moving-forward" class="level2">
+<h2 class="anchored" data-anchor-id="moving-forward">Moving Forward</h2>
+<p>So, next steps will be:</p>
+<p>Wire up the breadboard so beautifully depicted above.</p>
+<p>Characterize the RGB LED strip, so I can programmatically adjust for the non-linear relationship between the IO expander’s output voltage and the visible color from the lights.</p>
+<p>We’ve got 2 1/2 months and counting… 😅</p>
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<div class="divider cya">
+
+</div>
+</section>
+<section id="notes" class="level2">
+<h2 class="anchored" data-anchor-id="notes">Notes</h2>
+<section id="io-expander-adafruit-aw9523" class="level3">
+<h3 class="anchored" data-anchor-id="io-expander-adafruit-aw9523">IO Expander Adafruit AW9523</h3>
+<p>There have been others that have had issues integrating the Adafruit_AW9523 library with the Arduino Nano ESP32. Though the GitHub issues page states that this issue was resolved, I’m not so sure it was…</p>
+</section>
+<section id="arduino-mkr-1010-pwm-pins" class="level3">
+<h3 class="anchored" data-anchor-id="arduino-mkr-1010-pwm-pins">Arduino MKR 1010 PWM Pins</h3>
+<p>According to the MKR 1010 product website, the following pins are available for PWM out:</p>
+<pre class="text"><code>0 .. 8, 10, 12, A3, A4</code></pre>
+<p>According to the MKR 1010 datasheet the following pins are available for PWM out:</p>
+<pre class="text"><code>0 .. 9</code></pre>
+<p>According to my empirical testing, the following pins are available for variable voltage output:</p>
+<pre class="text"><code>0 .. 8, 10, A3, A4, A0* **</code></pre>
+<p>* I learned that the A0 pin provides a true analog output, not a PWM signal which is why it was listed on neither the website nor the datasheet as a PWM pin. This page describes the difference between analog and PWM output.</p>
+<p>** Pins 9 and 12, as listed on the datasheet and website, respectively, did not produce variable output voltages in my experiment.</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -424,14 +479,9 @@ I reverted my software change and now it’s working 🥳
 <div class="divider blu">
 
 </div>
+
+
 </section>
-<section id="slide-dump" class="level2">
-<h2 class="anchored" data-anchor-id="slide-dump">Slide Dump</h2>
-<p>The full presentation can be found <a href="../../assets__color-clock/slide-deck__color-clock/color-clock-demo__2024-08-10.pdf">here</a>.</p>
-<p>I’ve included a few slides below for your enjoyment 🙂 These diagrams were created using AutoCAD.</p>
-<p><img src="../../assets__color-clock/slide-deck__color-clock/09__circuit-board-full.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/10__circuit-board-wire.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/05__level-shifter.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/08__level-shifter.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/01__pigment-color.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/02__light-color.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/03__rgb-led-common-anode.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/04__rgb-color-mix.png" class="img-fluid"></p>
-
-
 </section>
 
 </main> <!-- /main -->

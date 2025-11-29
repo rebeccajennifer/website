@@ -7,10 +7,9 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rebecca Jennifer Rashkin">
-<meta name="dcterms.date" content="2024-08-17">
-<meta name="description" content="Our scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫">
+<meta name="dcterms.date" content="2024-04-12">
 
-<title>It’s Alive! – Rebecca Jennifer Rashkin</title>
+<title>Build Flags? Please? – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -22,6 +21,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -148,13 +182,8 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">It’s Alive!</h1>
-                  <div>
-        <div class="description">
-          <p>Our scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫</p>
-        </div>
-      </div>
-                          <div class="quarto-categories">
+      <h1 class="title">Build Flags? Please?</h1>
+                                <div class="quarto-categories">
                 <div class="quarto-category">color-clock</div>
               </div>
                   </div>
@@ -173,7 +202,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">August 17, 2024</p>
+        <p class="date">April 12, 2024</p>
       </div>
     </div>
     
@@ -219,108 +248,49 @@ ul.task-list li input[type="checkbox"] {
 <div class="divider blu">
 
 </div>
-<figure class="figure">
-<img src="final-light-display.jpeg" class="img-fluid figure-img">
-<figcaption>
-The outer ring cycles through the whole spectrum over 24 hours, the second to the outer ring cycles over one hour, the inner ring cycles over 1 minute and the central flower-looking light can be controlled by the participant. This photo was taken at 9:09 AM. Don’t mind the dead button LED. This will be fixed 😅
-</figcaption>
-</figure>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider cya">
-
-</div>
-<section id="no-regrets" class="level2">
-<h2 class="anchored" data-anchor-id="no-regrets">No Regrets</h2>
-<p>For a long time, I regretting getting my bachelor’s in electrical rather than computer engineering. Often enough I have questions about software engineering design concepts that might have been answered had I chosen a different major. However, while working on ColorClock I realize that my degree gave me familiarity with electronic components and datasheets that I might not have gotten with a different undergraduate focus. And for the first time since I graduated, I sincerely have no regrets about my choice.</p>
-<p>A lot has happened since the last post, including completely resoldering a new circuit board followed by a very sad afternoon where I was ready to give up after burning <em>another</em> Arduino board. But Bo came to the rescue and discovered that it was just a grounding problem.</p>
-<figure class="figure">
-<img src="../../assets__color-clock/photos__color-clock/circuit__photos__color-clock/final-circuit-board.jpeg" class="img-fluid figure-img">
-<figcaption>
-Here is the final wiring of the circuit board. Isn’t it beautiful? 🥰
-</figcaption>
-</figure>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider cya">
-
-</div>
-</section>
-<section id="we-did-it" class="level2">
-<h2 class="anchored" data-anchor-id="we-did-it">We Did It!</h2>
-<p>A couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫</p>
-<p>Last weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.</p>
-<figure class="figure">
-<img src="demo-presentation__color-clock.jpeg" class="img-fluid figure-img">
-<figcaption>
-I discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="bo-and-kyle__color-clock.jpeg" class="img-fluid figure-img">
-<figcaption>
-Bo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="solar-panels__color-clock.jpeg" class="img-fluid figure-img">
-<figcaption>
-We’ll be using solar to charge the batter that powers ColorClock ⚡️
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="participant-view-unlit__color-clock.jpeg" class="img-fluid figure-img">
-<figcaption>
-The participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮
-</figcaption>
-</figure>
+<p>Every software hurdle feels like an epic journey. My latest challenge was learning how to set build flags.</p>
+<section id="background" class="level2">
+<h2 class="anchored" data-anchor-id="background">Background</h2>
+<p>I have a class called ColorClock with a member variable, clock_, which is of type DS3231, a real-time clock (RTC) module that keeps time. There’s a simple API to interact with this object over I2C. A ColorClock object uses clock_ to get the current time in order to determine which color to display. E.g.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;DS3231.h&gt;</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="kw">class</span> ColorClock <span class="op">{</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>  <span class="kw">private</span><span class="op">:</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    DS3231 <span class="va">clock_</span><span class="op">;</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>  <span class="co">//...</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>RgbColor ColorClock<span class="op">::</span>time_to_color<span class="op">()</span> <span class="op">{</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="co">//...</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="dt">float</span> the_hr  <span class="op">=</span> <span class="op">(</span><span class="dt">float</span><span class="op">)</span> <span class="va">clock_</span><span class="op">-&gt;</span>get_hr<span class="op">();</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="co">//...</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Right now the only application for a ColorClock object is in the the context of the physical light installation. However, there might be an application in the future where I want to use the <code>ColorClock</code> class in a different project with different hardware, or just for a general purpose computer application. Due to the possibility of using this code with a variety of different hardware configurations, I wanted to make the ColorClock class more modular, and not have the code directly tied to the RTC module mentioned above.</p>
+<p>So, I decided to make a wrapper class for the clock, which I’m going to call <code>FluxClock</code>*. The intention of this class would be a general clock object that I can use to get or set the time. I would have build environment variables that tell the compiler to include or exclude certain parts of the code. For example, the <code>FluxClock::get_month()</code> function would look like this:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#if ARDUINO_BUILD</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;DS3231.h&gt;</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#else</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;ctime&gt;</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#endif</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span>
+<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>byte FluxClock<span class="op">::</span>get_month<span class="op">()</span></span>
+<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
+<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a><span class="pp">#if ARDUINO_BUILD</span></span>
+<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span>
+<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a><span class="co">// The century_bit toggles when there is roll-over to a new</span></span>
+<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a><span class="co">// century, e.g. from year 2099 to 2100. The century_bit will</span></span>
+<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a><span class="co">// likely never be relevant for any use case for this code base.</span></span>
+<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span>
+<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>  <span class="dt">bool</span> century_bit<span class="op">;</span></span>
+<span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="va">rtc_</span><span class="op">.</span>getMonth<span class="op">(</span>century_bit<span class="op">);</span></span>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a><span class="pp">#else</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>  time<span class="op">(&amp;</span><span class="va">clock_</span><span class="op">);</span></span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>  <span class="va">time_</span> <span class="op">=</span> localtime<span class="op">(&amp;</span><span class="va">clock_</span><span class="op">);</span></span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="va">time_</span><span class="op">-&gt;</span>tm_mon<span class="op">;</span></span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a><span class="pp">#endif</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>My challenge was to figure out how to set these build environment variables so that the compiler would only compile what was necessary for the specific build configuration.</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -349,23 +319,36 @@ The participant will be able to sit on the bench while viewing the light display
 
 </div>
 </section>
-<section id="the-final-touches" class="level2">
-<h2 class="anchored" data-anchor-id="the-final-touches">The Final Touches</h2>
-<p>This is our last weekend before we deliver and I’m thrilled that we are really just putting on the final touches. Although I learned today that last minute software changes can be quite risky.</p>
-<p>🌈</p>
-<figure class="figure">
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/9BzPTI5HZrY" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption>
-I decided to change the initial colors for the the participant controlled central light, but because of the wonky logic for how the buttons interact with the colors, I got less ideal results.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/CMCiZth6IXw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption>
-I reverted my software change and now it’s working 🥳
-</figcaption>
-</figure>
+<section id="the-things-that-didnt-work" class="level2">
+<h2 class="anchored" data-anchor-id="the-things-that-didnt-work">The Things That Didn’t Work</h2>
+<section id="define-in-a-header-file" class="level3">
+<h3 class="anchored" data-anchor-id="define-in-a-header-file">Define in a Header File</h3>
+<p>Initially, I included the macro definition, <code>ARDUINO_BUILD</code> in a separate file called <code>macros.h</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define ARDUINO_BUILD </span><span class="dv">1</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>I included macros in <code>ColorClock.hpp</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">"macros.h"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>A more experienced software engineer, or even just someone who’s taken a compiler class (it’s on my list of things to do) would probably know immediately why this didn’t work. But with my limited time, I was less interested in the why-it-doesn’t-work part; I was more in the in the how-do-I-get-it-to-work mindset (though feel free to school me on this topic).</p>
+</section>
+<section id="build-properties-in-arduino.json" class="level3">
+<h3 class="anchored" data-anchor-id="build-properties-in-arduino.json">Build Properties in <code>arduino.json</code></h3>
+<p>For reasons mentioned in a previous post, I (was) using the Microsoft Visual Studio Code Arduino plugin to build and upload my code. The internet told me that I could set build environment variables in the arduino.json file but this didn’t work either 😕</p>
+<p>(I don’t actually remember the syntax I used in arduino.json - maybe something with defines (?) - otherwise I would have included it here as something not to do…)</p>
+</section>
+<section id="windows-arduino-command-line" class="level3">
+<h3 class="anchored" data-anchor-id="windows-arduino-command-line">Windows Arduino Command Line</h3>
+<p>So then I decided to ditch the plugin and go back to command line using arduino-cli (on Windows). I tried using the arduino-cli command in Git Bash, and PowerShell but Windows didn’t recognize the command. So I downloaded arduino-cli and stuck the arduino-cli.exe file right in my code directory and Git Bash finally found it when I ran ./arduino-cli. I realize now that I probably just needed to add the location of arduino-cli.exe to my path, but yeah, I was just in a frenzy trying to get something to work. I made a minimal example without any build flags and spent way too much time just figuring out how to set the right serial port so I could upload the code to the board. But I was able to figure that part out.</p>
+<p>Now on to the build flags problem… I tried many variations of setting a build flag (FLUX) in the command line argument of arduino-cli compile. But the compiler spit out all sorts of weird errors with every variation. Don’t use this command, it doesn’t work:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">arduino-cli</span> compile <span class="at">--fqbn</span> arduino:samd:mkr1000 <span class="at">--build-properties</span> build.extra_flags=-DFLUX=42</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="old-tech-with-a-config-file" class="level3">
+<h3 class="anchored" data-anchor-id="old-tech-with-a-config-file">Old Tech with a Config File</h3>
+<p>I gave up on Windows and went back to my 10 year old MacBook and started from scratch with my familiar, safe, UNIX command line. I did more internetting (with my friend ChatGPT) and found that I should be able to set build flags in an arduino config file.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">build</span><span class="kw">:</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="at">  </span><span class="fu">properties</span><span class="kw">:</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="at">    FLUX:"42"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>I set the config file path in my command line argument…</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">arduino-cli</span> compile <span class="at">--fqbn</span> arduino:samd:mkr1000 <span class="at">--config-file</span> path/to/arduino_cli.yaml</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>but nope, this didn’t work either. ChatGPT failed me. It then clarified that that the compiler might not actually recognize the flag 😐</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -394,9 +377,30 @@ I reverted my software change and now it’s working 🥳
 
 </div>
 </section>
-<section id="its-actually-happening" class="level2">
-<h2 class="anchored" data-anchor-id="its-actually-happening">It’s Actually Happening!</h2>
-<p>We leave in less than a week 😶</p>
+</section>
+<section id="the-thing-that-worked" class="level2">
+<h2 class="anchored" data-anchor-id="the-thing-that-worked">The Thing That Worked</h2>
+<section id="deep-in-the-arduino-installation-directory" class="level3">
+<h3 class="anchored" data-anchor-id="deep-in-the-arduino-installation-directory">Deep in the Arduino Installation Directory…</h3>
+<p>Once again, after spending what seemed like ages (but was probably closer to an hour) searching on the internet and more talking to ChatGPT, I learned that I needed to edit the platform.txt file deep inside my install directory:</p>
+<p><code>Users/rebeccarashkin/Library/Arduino15/packages/arduino/hardware/samd/1.8.13/</code></p>
+<p>and set my build flags in build.extra_flags:</p>
+<p><code>build.extra_flags= -DFLUX=42</code></p>
+<p>But this didn’t work either! However, I did see a note just above the build.extra_flags line that said <code>These can be overridden in platform.local.txt</code> so I figured build.extra_flags might be getting overridden in the build process. I also read somewhere that I can also edit build flags in <code>boards.txt</code>. So I opened boards.txt in the same directory and found the <code>build.extra_flags</code> variable for my board and appended the variable that corresponded with my Arduino board, the MKR 1000.</p>
+<p><code>mkr1000.build.extra_flags= -DFLUX=42</code></p>
+<p>Eureka! 🥳 FINALLY the compiler recognized my build flag.</p>
+</section>
+</section>
+<section id="it-worked-but-come-on" class="level2">
+<h2 class="anchored" data-anchor-id="it-worked-but-come-on">It Worked, But Come On</h2>
+<p>However, digging that deep into an installation directory just to set a build flag seems a little excessive, so I’d like to learn more about the <code>platform.local.txt</code> file. Buuuut…. for now, I really only have one build flag that I care about and I’m ok hacking my way through setting a build flag if it means I can progress in my development.</p>
+<p>Ok, now what was I trying to do again? 😅</p>
+<figure class="figure">
+<img src="./flux-carpet.jpeg" class="img-fluid figure-img">
+<figcaption>
+* Flux was my beloved rabbit companion for over 10 years and died in 2019. His memory lives on in nearly all of my software engineering endeavors.
+</figcaption>
+</figure>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -424,12 +428,6 @@ I reverted my software change and now it’s working 🥳
 <div class="divider blu">
 
 </div>
-</section>
-<section id="slide-dump" class="level2">
-<h2 class="anchored" data-anchor-id="slide-dump">Slide Dump</h2>
-<p>The full presentation can be found <a href="../../assets__color-clock/slide-deck__color-clock/color-clock-demo__2024-08-10.pdf">here</a>.</p>
-<p>I’ve included a few slides below for your enjoyment 🙂 These diagrams were created using AutoCAD.</p>
-<p><img src="../../assets__color-clock/slide-deck__color-clock/09__circuit-board-full.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/10__circuit-board-wire.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/05__level-shifter.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/08__level-shifter.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/01__pigment-color.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/02__light-color.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/03__rgb-led-common-anode.png" class="img-fluid"> <img src="../../assets__color-clock/slide-deck__color-clock/04__rgb-color-mix.png" class="img-fluid"></p>
 
 
 </section>

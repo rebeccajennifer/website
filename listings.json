@@ -1,17 +1,5 @@
 [
   {
-    "listing": "/projects/color-clock/color-clock-evolution.html",
-    "items": [
-      "/projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
-      "/projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html",
-      "/projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
-      "/projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html",
-      "/projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html",
-      "/projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html",
-      "/projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html"
-    ]
-  },
-  {
     "listing": "/projects/color-clock/color-clock.html",
     "items": [
       "/projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
@@ -20,7 +8,25 @@
       "/projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html",
       "/projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html",
       "/projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html",
-      "/projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html"
+      "/projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html",
+      "/projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html",
+      "/projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html",
+      "/projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/color-clock/color-clock-evolution.html",
+    "items": [
+      "/projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
+      "/projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html",
+      "/projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
+      "/projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html",
+      "/projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html",
+      "/projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html",
+      "/projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html",
+      "/projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html",
+      "/projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html",
+      "/projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html"
     ]
   }
 ]

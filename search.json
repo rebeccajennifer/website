@@ -35,6 +35,55 @@
     "text": "Loading…"
   },
   {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#a-beautiful-breadboard",
+    "href": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#a-beautiful-breadboard",
+    "title": "Persistence Makes Progress",
+    "section": "A Beautiful Breadboard",
+    "text": "A Beautiful Breadboard\nBehold! The first design of the of the fully populated solderless breadboard!\n\n\n\nThis to-scale-ish design contains all of the modules that will be present on the final circuit board for ColorClock. The user interface controls are not present on this board.\n\n\n🌈\nTo streamline the final phase of hardware testing and preempt the challenges of electronic troubleshooting, I found it important to meticulously design the layout of the prototyping breadboard. I started this layout by looking at the datasheets, obtaining the dimensions of each module, and drawing each component to scale. Then I decided it would be actually be more functional if I were using units of breadboard holes (approximately 0.1” between holes) instead of true dimensions. To determine the size represented on the diagram I placed each module on the breadboard and noted how many holes they covered and the positioning of all the pins. The next step is to actually wire this thing up and get to testing with the real LED light display 🙌"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#clock-crafting",
+    "href": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#clock-crafting",
+    "title": "Persistence Makes Progress",
+    "section": "Clock Crafting",
+    "text": "Clock Crafting\nAnd on the topic of the light display, it’s just about finished! My partner bought a plunge base and circle jig in order to cut the circle and route out pockets for the LED strips to rest in. I’m very pleased with the results 😀 We are using a reflective metallic finish to maximize the light output, and a sheet of translucent acrylic that will sit on top to diffuse the light.\n\n\n\nThe final routed wood piece features outer rings designed to house RGB LED strips. Each ring will display colors corresponding to the current time in days, hours, and minutes. The center of the piece will have a flower-like shape of LEDs that will be controllable by participant interaction via user control panel.\n\n\n🌈\n\n\n\nThe LEDs are glued to the inside of the pockets, and the colored light will be reflected off the metallic finish."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#io-expander-integration-trials",
+    "href": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#io-expander-integration-trials",
+    "title": "Persistence Makes Progress",
+    "section": "IO Expander Integration Trials",
+    "text": "IO Expander Integration Trials\nIn my last post, I was working on integrating the Arduino Nano ESP32 into the project. I successfully tested this board with the new RTC module and the new alphanumeric display 🤗 But then… I was in the process of testing the IO expander and ended up messing with my board configuration so much that I was no longer able to upload any code to the board 😦 Thankfully, ptillisch came to the rescue and resolved my issue 🥳\nThough I was able to talk to the Nano board, I was unable to include the library to interface with the IO expander 😭 I chased my tail for a couple of weeks before I decided to move in a different direction (see notes at the end of this post).\nThe good news was that I could interface the IO expander with the MKR 1000 that I had been testing on before I got the Nano board. Sooooo I ordered two more Arduinos, the MKR 1010 (they no longer make the MKR 1000) and decided to move forward."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#can-i-just-get-some-variable-voltage-control",
+    "href": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#can-i-just-get-some-variable-voltage-control",
+    "title": "Persistence Makes Progress",
+    "section": "Can I Just Get Some Variable Voltage Control??",
+    "text": "Can I Just Get Some Variable Voltage Control??\nThe plan: - Use the IO expander for analog output (required to create the RGB color mixing) - Use the Arduino on-board GPIO for digital input from user interface\nWhen the new boards came in, I promptly began testing the IO expander. I was able to get the digitalWrite functions to work with ease, but I struggled with the analogWrite function. After days of banging my head against the wall 😖 my new contingency plan was to swap the IO functionality of the on-board Arduino GPIO and the IO expander, i.e. the IO expander for the digital IO and Arduino PWM for the RGB LED control.\nColorClock has four light strips and three variable voltage lines per strip (one for each red, green and blue) so I need exactly 12 PWM pins. According to the product page for the MKR 1010, there are supposed to be 13 PWM pins on the board BUT one of those listed pins would be unusable for variable voltage output on ColorClock because it needed to be used for the I2C SCL required for communication to the various modules.\nThis PWM output count would leave me NO wiggle room if one of the pins didn’t work as expected. My concern grew when I noticed that the datasheet had conflicting information from the product website on which pins were capable of PWM output (see the notes at the end of this post for more information).\nSo, to get some clarity, I manually tested each individual pin. I wrote a tiny test program and hooked up a simple circuit with an LED where I varied the output voltage. I observed the LED to see if the light got brighter as the value of the output increased. I discovered more discrepancies between my empirical testing and the documentation (see notes).\n\n\n\nWe spent the afternoon at a brewery where I performed my variable output voltage test while my partner played his Steam Deck killing zombies or something."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#wiring-matters",
+    "href": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#wiring-matters",
+    "title": "Persistence Makes Progress",
+    "section": "Wiring Matters",
+    "text": "Wiring Matters\nThe inconsistency between my findings and the documentation left me uneasy, so I went back to testing the IO expander with a minimal example. I knew my code was solid, so I double-checked the circuit wiring and sure enough, there was a mistake. After fixing it, I was able to see a variable output voltage on a multimeter using the analogWrite function using the IO expander 🎉 So now I’m back to the original plan of using the IO expander to control the lights, and the on-board GPIO for the digital inputs.\nThe input values set by my program didn’t correlate as expected with the measured voltage with the multimeter, so it looks like I’ll need to write some calibration functions so I can programmatically compensate for hardware characteristics."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#moving-forward",
+    "href": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#moving-forward",
+    "title": "Persistence Makes Progress",
+    "section": "Moving Forward",
+    "text": "Moving Forward\nSo, next steps will be:\nWire up the breadboard so beautifully depicted above.\nCharacterize the RGB LED strip, so I can programmatically adjust for the non-linear relationship between the IO expander’s output voltage and the visible color from the lights.\nWe’ve got 2 1/2 months and counting… 😅"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#notes",
+    "href": "projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html#notes",
+    "title": "Persistence Makes Progress",
+    "section": "Notes",
+    "text": "Notes\n\nIO Expander Adafruit AW9523\nThere have been others that have had issues integrating the Adafruit_AW9523 library with the Arduino Nano ESP32. Though the GitHub issues page states that this issue was resolved, I’m not so sure it was…\n\n\nArduino MKR 1010 PWM Pins\nAccording to the MKR 1010 product website, the following pins are available for PWM out:\n0 .. 8, 10, 12, A3, A4\nAccording to the MKR 1010 datasheet the following pins are available for PWM out:\n0 .. 9\nAccording to my empirical testing, the following pins are available for variable voltage output:\n0 .. 8, 10, A3, A4, A0* **\n* I learned that the A0 pin provides a true analog output, not a PWM signal which is why it was listed on neither the website nor the datasheet as a PWM pin. This page describes the difference between analog and PWM output.\n** Pins 9 and 12, as listed on the datasheet and website, respectively, did not produce variable output voltages in my experiment."
+  },
+  {
     "objectID": "projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html#io-expander-analog-write-fails-me",
     "href": "projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html#io-expander-analog-write-fails-me",
     "title": "Smooth Operation",
@@ -53,7 +102,7 @@
     "href": "projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html#lesson-learned-dont-use-a-member-variable-to-define-a-global",
     "title": "Smooth Operation",
     "section": "Lesson Learned: Don’t Use a Member Variable to Define a Global",
-    "text": "Lesson Learned: Don’t Use a Member Variable to Define a Global\nAfter successfully testing the level shifter, I quickly integrated the three additional ColorClock objects into the code, assigning analog output pins for each new strip. However, upon connecting more LED strips and running the code, the board appeared to freeze. Subsequent attempts to upload new code failed as the computer no longer detected the Arduino’s serial port. Resetting the board and reseating the USB cable eventually restored the serial port connection. Despite this, re-uploading the program continued to cause the board to freeze again 😵‍💫\nI barely touched the code! I was worried there was something on the board shorting so it took me about a day of swapping out hardware, doing incremental testing, and meticulously comparing Git commits before I identified the problem.\nIn the last commit where everything broke, I made one tiny optimization in an effort to reduce the use of ‘magic numbers’… In the definition of the time periods for each color clock, I used a static member variable, TimeCalcs::SEC_IN_HR.\nfloat cc0_period =  6.0 / TimeCalcs::SEC_IN_HR;\nfloat cc1_period = 12.0 / TimeCalcs::SEC_IN_HR;\nfloat cc2_period = 30.0 / TimeCalcs::SEC_IN_HR;\nfloat cc3_period = 60.0 / TimeCalcs::SEC_IN_HR;\nI should note that the three cc#_period variables used are globals in the main driver file. It seemed like the driver file was not aware of the value of TimeCalcs::SEC_IN_HR by the time it ran that part of the code. When I removed this reference to TimeCalcs::SEC_IN_HR it worked again 😅\nfloat cc0_period =  6.0 / 3600.0;\nfloat cc1_period = 12.0 / 3600.0;\nfloat cc2_period = 30.0 / 3600.0;\nfloat cc3_period = 60.0 / 3600.0;\nI’ll probably create some #defines at the top of the file to keep it looking a little cleaner."
+    "text": "Lesson Learned: Don’t Use a Member Variable to Define a Global\nAfter successfully testing the level shifter, I quickly integrated the three additional ColorClock objects into the code, assigning analog output pins for each new strip. However, upon connecting more LED strips and running the code, the board appeared to freeze. Subsequent attempts to upload new code failed as the computer no longer detected the Arduino’s serial port. Resetting the board and reseating the USB cable eventually restored the serial port connection. Despite this, re-uploading the program continued to cause the board to freeze again 😵‍💫\nI barely touched the code! I was worried there was something on the board shorting so it took me about a day of swapping out hardware, doing incremental testing, and meticulously comparing Git commits before I identified the problem.\nIn the last commit where everything broke, I made one tiny optimization in an effort to reduce the use of ‘magic numbers’. In the definition of the time periods for each color clock, I used a static member variable, TimeCalcs::SEC_IN_HR.\nfloat cc0_period =  6.0 / TimeCalcs::SEC_IN_HR;\nfloat cc1_period = 12.0 / TimeCalcs::SEC_IN_HR;\nfloat cc2_period = 30.0 / TimeCalcs::SEC_IN_HR;\nfloat cc3_period = 60.0 / TimeCalcs::SEC_IN_HR;\nI should note that the three cc#_period variables used are globals in the main driver file. It seemed like the driver file was not aware of the value of TimeCalcs::SEC_IN_HR by the time it ran that part of the code. When I removed this reference to TimeCalcs::SEC_IN_HR it worked again 😅\nfloat cc0_period =  6.0 / 3600.0;\nfloat cc1_period = 12.0 / 3600.0;\nfloat cc2_period = 30.0 / 3600.0;\nfloat cc3_period = 60.0 / 3600.0;\nI’ll probably create some #defines at the top of the file to keep it looking a little cleaner."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html#smooth-transitions",
@@ -74,7 +123,7 @@
     "href": "projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html#user-interface-software-design-begins",
     "title": "Smooth Operation",
     "section": "User Interface Software Design Begins!",
-    "text": "User Interface Software Design Begins!\nThe next step in the ColorClock saga is to design the software implementation for the participant-facing user control panel. I wired up a little prototype for testing. The final design will use arcade buttons embedded in an enclosure that will house the electronics.\n\n\n\nIn this small prototype I’m using breadboard-sized push buttons and LEDs. The final control panel will use light up triangular arcade buttons for red, green, blue, and frequency modification. I’m using one current-limiting resistor for all the LEDs and 10K pull-down resistors for each push-button.\n\n\n🌈\n\n\n\nThe soldering work is not beautiful but it gets the job done.\n\n\n🌈\n\n\n\n\n\n🌈"
+    "text": "User Interface Software Design Begins!\nThe next step in the ColorClock saga is to design the software implementation for the participant-facing user control panel. I wired up a little prototype for testing. The final design will use arcade buttons embedded in an enclosure that will house the electronics.\n\n\n\nIn this small prototype I’m using breadboard-sized push buttons and LEDs. The final control panel will use light up triangular arcade buttons for red, green, blue, and frequency modification. I’m using one current-limiting resistor for all the LEDs and 10K pull-down resistors for each push-button.\n\n\n🌈\n\n\n\nThe soldering work is not beautiful but it gets the job done."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html",
@@ -119,81 +168,39 @@
     "text": "😬"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html",
-    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html",
-    "title": "Another Futile Effort",
-    "section": "",
-    "text": "It looks like using a multiplexer as a PWM expander is not going to work. As previously discussed, in order to wire up three RGB LED strips to change colors at different frequencies, there is need for 12 analog output pins, one each for red, green and blue on each of the RGB LED strips. For the Arduino that we have selected, this will completely max out the number of analog output pins I have.\nA couple months ago I tried to use a constant current I/O expander to write to PWM pins, but my tests did not yield favorable results. I did some googling and found that some developers will use a multiplexer as a way to increase the number of I/O pins to write to (or read from). I found the CD74HC4067 part, which is a 16-1 mux (with 4 control signals) which would provide ample outputs for the number of analog signals required by ColorClock."
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
+    "title": "It’s Alive!",
+    "section": "No Regrets",
+    "text": "No Regrets\nFor a long time, I regretting getting my bachelor’s in electrical rather than computer engineering. Often enough I have questions about software engineering design concepts that might have been answered had I chosen a different major. However, while working on ColorClock I realize that my degree gave me familiarity with electronic components and datasheets that I might not have gotten with a different undergraduate focus. And for the first time since I graduated, I sincerely have no regrets about my choice.\nA lot has happened since the last post, including completely resoldering a new circuit board followed by a very sad afternoon where I was ready to give up after burning another Arduino board. But Bo came to the rescue and discovered that it was just a grounding problem.\n\n\n\nHere is the final wiring of the circuit board. Isn’t it beautiful? 🥰"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#mux-for-pwm-output-maybe",
-    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#mux-for-pwm-output-maybe",
-    "title": "Another Futile Effort",
-    "section": "Mux for PWM Output? Maybe?",
-    "text": "Mux for PWM Output? Maybe?\n\nBack to Computer Engineering 101\nTo review some digital logic, a multiplexer is basically a switch that can select from many inputs. When I used to teach, I compared it to a vending machine. There are many inputs (e.g. chips, granola, gum, candy) and one output (your selection). We type in a code on the keypad to select what kind of snack we want.\n\n\n\nThe snacks are the selection of inputs and the dispensing slot is the output. The keypad acts as the set of control signals used to select which input should be connected to the output.\n\n\n\n\nWishful Thinking 🥺\nWe can flip this diagram 180 and instead of having many inputs to one output, we can have one input to many outputs. If we change the selection fast enough, we can write to all of the outputs (allegedly) virtually simultaneously.\n\n\n\nThe idea here is to have one common signal pin (with the PWM value) that can write to one of many outputs (RGB LED terminals). You can switch the control lines to change the output, i.e. channel, of the mux and do an analogWrite for each channel.\n\n\nSo we can write the PWM value for a red pin, change the channel, write to the green pin, change the channel, write to the blue output, etc. My thought was because our eye’s persistence of vision, we wouldn’t be able to detect any flickering.\nBuuuuuuut… that wasn’t the case 😑 My tests showed significant flicker (even only writing to two channels) and the colors just didn’t display properly. The videos below show the results of my tests."
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
+    "title": "It’s Alive!",
+    "section": "We Did It!",
+    "text": "We Did It!\nA couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫\nLast weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.\n\n\n\nI discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nBo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nWe’ll be using solar to charge the batter that powers ColorClock ⚡️\n\n\n🌈\n\n\n\nThe participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#test-results",
-    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#test-results",
-    "title": "Another Futile Effort",
-    "section": "Test Results",
-    "text": "Test Results\nIn all of the tests described below, I am trying to display magenta on my RGB LED:\nvoid setup()\n{\n    //____________________________________________\n    // Common pin that all values are written to\n    //____________________________________________\n    pinMode(common_pin, OUTPUT);\n\n    //____________________________________________\n    // Display the color magenta,\n    // i.e. max values for red and blue, no green\n    //____________________________________________\n    color = RgbColor(0xFF00FF);\n    //____________________________________________\n}\nThis video is a compilation of all tests described below. Because the video is less than a minute I wasn’t able to embed it into the site.\n\nTest 1: Perform analogWrite and Channel Select Sequentially\nvoid loop()\n{\n    //____________________________________________\n    // NOTES:\n    // 1) `Rgb::RED`, `Rgb::GRN`, `Rgb::BLU`\n    //    are values from an enumeration\n    // 2) muxxy is the multiplexer object\n    //____________________________________________\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::BLU]);\n    muxxy.channel(2);\n}\nThe light should be displaying a magenta color, i.e. equal voltage on the red and blue pins, and no voltage on the green pin. Instead, the light looks white, which equates to equal voltage on each of the red, green and blue pins.\n\n\nTest 2: Set Channel Before analogWrite\nmuxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n    muxxy.channel(2);\n    analogWrite(common_pin, color.rgb_[Rgb::BLU]);\nThere is no significant different between selecting the channel before the analog write.\n\n\nTest 3: Only Write to Red Channel\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\nOnly writing to one channel displays the color properly. This test was performed just to ensure it was actually writing the value.\n\n\nTest 4: Only Write to Red and Green Channels\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n\n    Debug::print_labeled_int(\"green val: \", color.rgb_[Rgb::GRN]);\nThere is no green in magenta, so this test should only display red on the LED. Instead, we are seeing green flickering, and not any red at all. I also output a serial print for the value of green to ensure that green was indeed set to zero, and this was true.\n\n\nTest 5: Reset Output to 0\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    analogWrite(common_pin, 0);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n    analogWrite(common_pin, 0);\nResetting the output pin to zero before switching channels just makes it look more choppy. Green is still displayed, though it shouldn’t be."
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
+    "title": "It’s Alive!",
+    "section": "The Final Touches",
+    "text": "The Final Touches\nThis is our last weekend before we deliver and I’m thrilled that we are really just putting on the final touches. Although I learned today that last minute software changes can be quite risky.\n🌈\n\n\n\nI decided to change the initial colors for the the participant controlled central light, but because of the wonky logic for how the buttons interact with the colors, I got less ideal results.\n\n\n🌈\n\n\n\nI reverted my software change and now it’s working 🥳"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#we-cant-have-everything",
-    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#we-cant-have-everything",
-    "title": "Another Futile Effort",
-    "section": "We Can’t Have Everything",
-    "text": "We Can’t Have Everything\nSo… I’m sticking to the PWM (analog) out pins from the Arduino for now. I also wanted to have a variable output for the light-up arcade buttons on the participant control panel so the brightness of the buttons would change as a result of participant interaction. I won’t be able to do this because I have no free analog output pins 😒\nIn addition to the outputs for the light display, I also need digital input pins from the participant and programmer control panels (the programmer control panel will be hidden from the audience and is used for time set control). So I will proceed to test the previous I/O expander I used (Adafruit AW9523) for digital input and hope it works for this purpose."
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
+    "title": "It’s Alive!",
+    "section": "It’s Actually Happening!",
+    "text": "It’s Actually Happening!\nWe leave in less than a week 😶"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#hindsight-is-2020",
-    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#hindsight-is-2020",
-    "title": "Another Futile Effort",
-    "section": "Hindsight is 20/20",
-    "text": "Hindsight is 20/20\nIn retrospect, I really should have just selected individually addressable LED strips for the light display. This would have eliminated all need for analog output because I would have been able to control the lights with a simple I2C line. But the code was already written assuming PWM outputs, and I didn’t want to write another interfacing layer. But with all the extra code I’ve had to write to test these additional modules, an interface layer to I2C would have been trivial.\nBut… we’re here now. Initially, I was only anticipating one LED strip, a color clock that would cycle over 24 hours, so I would have only needed three PWM pins for the light display. But scope creep happened (for good reason - this design is way more interesting) and now we have four LED strips, all cycling through the spectrum at different frequencies."
-  },
-  {
-    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#theres-one-win",
-    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#theres-one-win",
-    "title": "Another Futile Effort",
-    "section": "There’s One Win…",
-    "text": "There’s One Win…\nIn other good news, I wrote the code to modify colors based on participant input, so yay!\nAlright… now I’m back to testing the original I/O expander, this time to take digital input 😵‍💫"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock-evolution.html",
-    "href": "projects/color-clock/color-clock-evolution.html",
-    "title": "The Evolution of ColorClock",
-    "section": "",
-    "text": "Check out ColorClock development journey 🌈 ⏱️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack In Development\n\n\n\ncolor-clock\n\ntesting\n\n\n\nLeveling up ColorClock with testing, tooling, and better software design.\n\n\n\nRebecca Jennifer Rashkin\n\n\nFeb 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe Did It\n\n\n\ncolor-clock\n\n\n\nTen years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅\n\n\n\nRebecca Jennifer Rashkin\n\n\nSep 4, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt’s Alive!\n\n\n\ncolor-clock\n\n\n\nOur scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 17, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMind Your Parens\n\n\n\ncolor-clock\n\n\n\nMy lesson on why you should always use parenthesis in preprocessor directives.\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Optimal Solution\n\n\n\ncolor-clock\n\n\n\nThis week I contemplated the optimal solution for the circuit board layout.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJul 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnother Futile Effort\n\n\n\ncolor-clock\n\n\n\nMy slow burn realization that I won’t be able to use a multiplexer as an IO expander for RGB output.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmooth Operation\n\n\n\ncolor-clock\n\n\n\n\n\n\n\nRebecca Jennifer Rashkin\n\n\nJun 15, 2024\n\n\n\n\n\n\nNo matching items"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html",
-    "href": "projects/color-clock/color-clock.html",
-    "title": "ColorClock",
-    "section": "",
-    "text": "What time is it? Amber o’clock-ish(?)"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html#what-is-it",
-    "href": "projects/color-clock/color-clock.html#what-is-it",
-    "title": "ColorClock",
-    "section": "What is it?",
-    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\nColorClock Source Code"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html#the-journey",
-    "href": "projects/color-clock/color-clock.html#the-journey",
-    "title": "ColorClock",
-    "section": "The Journey",
-    "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
-  },
-  {
-    "objectID": "projects/color-clock/about-color-clock.html#what-is-it",
-    "href": "projects/color-clock/about-color-clock.html#what-is-it",
-    "title": "About ColorClock",
-    "section": "What is it?",
-    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I have taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\n\n\nSource Code\n\n\nBlog"
+    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
+    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
+    "title": "It’s Alive!",
+    "section": "Slide Dump",
+    "text": "Slide Dump\nThe full presentation can be found here.\nI’ve included a few slides below for your enjoyment 🙂 These diagrams were created using AutoCAD."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
@@ -249,70 +256,119 @@
     "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#todo",
     "title": "Back In Development",
     "section": "TODO",
-    "text": "TODO\nMoving forward, I have a few tasks on my to-do list that I’ll continue chipping away at…\n\nUnit Tests\n\nWrite unit tests for modules:\n\nTimeCalcs\nRgbColor\nHsvColor\nColorClock\nTimeController\nTimeDisplay\nTopLevel\n\nFix code for failures found during unit testing\nCreate a pipeline that runs all unit tests"
+    "text": "TODO\nMoving forward, I have a few tasks on my to-do list that I’ll continue chipping away at…\n\nUnit Tests\n\nWrite unit tests for modules:\n\nTimeCalcs\nRgbColor\nHsvColor\nColorClock\nTimeController\nTimeDisplay\nTopLevel\n\nFix code for failures found during unit testing\nCreate a pipeline that runs all unit tests\n\n\n\nDocumentation\n\nMake block diagrams of the software architecture of ColorClock using DOT\nAdd Doxygen comments and generate documentation\n\n\n\nCleanup\n\nOrganize ColorClock classes into folders\nClean up non-Arduino code\n\n\n\nHardware\n\nPrototype a small harware version of the light display for testing purposes\nResearch free PCB board layout programs"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#documentation",
-    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#documentation",
-    "title": "Back In Development",
-    "section": "Documentation",
-    "text": "Documentation\n\nMake block diagrams of the software architecture of ColorClock using DOT\nAdd Doxygen comments and generate documentation"
+    "objectID": "projects/color-clock/about-color-clock.html#what-is-it",
+    "href": "projects/color-clock/about-color-clock.html#what-is-it",
+    "title": "About ColorClock",
+    "section": "What is it?",
+    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I have taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\n\n\nSource Code\n\n\nBlog"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#cleanup",
-    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#cleanup",
-    "title": "Back In Development",
-    "section": "Cleanup",
-    "text": "Cleanup\n\nOrganize ColorClock classes into folders\nClean up non-Arduino code"
-  },
-  {
-    "objectID": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#hardware",
-    "href": "projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html#hardware",
-    "title": "Back In Development",
-    "section": "Hardware",
-    "text": "Hardware\n\nPrototype a small harware version of the light display for testing purposes\nResearch free PCB board layout programs"
-  },
-  {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html",
-    "title": "It’s Alive!",
+    "objectID": "projects/color-clock/color-clock.html",
+    "href": "projects/color-clock/color-clock.html",
+    "title": "ColorClock",
     "section": "",
-    "text": "The outer ring cycles through the whole spectrum over 24 hours, the second to the outer ring cycles over one hour, the inner ring cycles over 1 minute and the central flower-looking light can be controlled by the participant. This photo was taken at 9:09 AM. Don’t mind the dead button LED. This will be fixed 😅"
+    "text": "What time is it? Amber o’clock-ish(?)"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#no-regrets",
-    "title": "It’s Alive!",
-    "section": "No Regrets",
-    "text": "No Regrets\nFor a long time, I regretting getting my bachelor’s in electrical rather than computer engineering. Often enough I have questions about software engineering design concepts that might have been answered had I chosen a different major. However, while working on ColorClock I realize that my degree gave me familiarity with electronic components and datasheets that I might not have gotten with a different undergraduate focus. And for the first time since I graduated, I sincerely have no regrets about my choice.\nA lot has happened since the last post, including completely resoldering a new circuit board followed by a very sad afternoon where I was ready to give up after burning another Arduino board. But Bo came to the rescue and discovered that it was just a grounding problem.\n\n\n\nHere is the final wiring of the circuit board. Isn’t it beautiful? 🥰"
+    "objectID": "projects/color-clock/color-clock.html#what-is-it",
+    "href": "projects/color-clock/color-clock.html#what-is-it",
+    "title": "ColorClock",
+    "section": "What is it?",
+    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\nColorClock Source Code"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
-    "title": "It’s Alive!",
-    "section": "We Did It!",
-    "text": "We Did It!\nA couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫\nLast weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.\n\n\n\nI discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nBo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nWe’ll be using solar to charge the batter that powers ColorClock ⚡️\n\n\n🌈\n\n\n\nThe participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮"
+    "objectID": "projects/color-clock/color-clock.html#the-journey",
+    "href": "projects/color-clock/color-clock.html#the-journey",
+    "title": "ColorClock",
+    "section": "The Journey",
+    "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
-    "title": "It’s Alive!",
-    "section": "The Final Touches",
-    "text": "The Final Touches\nThis is our last weekend before we deliver and I’m thrilled that we are really just putting on the final touches. Although I learned today that last minute software changes can be quite risky.\n🌈\n\n\n\nI decided to change the initial colors for the the participant controlled central light, but because of the wonky logic for how the buttons interact with the colors, I got less ideal results.\n\n\n🌈\n\n\n\nI reverted my software change and now it’s working 🥳"
+    "objectID": "projects/color-clock/color-clock-evolution.html",
+    "href": "projects/color-clock/color-clock-evolution.html",
+    "title": "The Evolution of ColorClock",
+    "section": "",
+    "text": "Check out ColorClock development journey 🌈 ⏱️\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nBack In Development\n\n\n\ncolor-clock\n\ntesting\n\n\n\nLeveling up ColorClock with testing, tooling, and better software design.\n\n\n\nRebecca Jennifer Rashkin\n\n\nFeb 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe Did It\n\n\n\ncolor-clock\n\n\n\nTen years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅\n\n\n\nRebecca Jennifer Rashkin\n\n\nSep 4, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt’s Alive!\n\n\n\ncolor-clock\n\n\n\nOur scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 17, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMind Your Parens\n\n\n\ncolor-clock\n\n\n\nMy lesson on why you should always use parenthesis in preprocessor directives.\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Optimal Solution\n\n\n\ncolor-clock\n\n\n\nThis week I contemplated the optimal solution for the circuit board layout.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJul 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnother Futile Effort\n\n\n\ncolor-clock\n\n\n\nMy slow burn realization that I won’t be able to use a multiplexer as an IO expander for RGB output.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmooth Operation\n\n\n\ncolor-clock\n\n\n\nMy experiments with an IO expander, level shifter, and a lesson learned.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJun 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nPersistence Makes Progress\n\n\n\ncolor-clock\n\n\n\n\n\n\n\nRebecca Jennifer Rashkin\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye Windows\n\n\n\ncolor-clock\n\n\n\nA mystery solved, a Linux partition, and we’re officially listed!\n\n\n\nRebecca Jennifer Rashkin\n\n\nMay 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Flags? Please?\n\n\n\ncolor-clock\n\n\n\n\n\n\n\nRebecca Jennifer Rashkin\n\n\nApr 12, 2024\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#its-actually-happening",
-    "title": "It’s Alive!",
-    "section": "It’s Actually Happening!",
-    "text": "It’s Actually Happening!\nWe leave in less than a week 😶"
+    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html",
+    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html",
+    "title": "Another Futile Effort",
+    "section": "",
+    "text": "It looks like using a multiplexer as a PWM expander is not going to work. As previously discussed, in order to wire up three RGB LED strips to change colors at different frequencies, there is need for 12 analog output pins, one each for red, green and blue on each of the RGB LED strips. For the Arduino that we have selected, this will completely max out the number of analog output pins I have.\nA couple months ago I tried to use a constant current I/O expander to write to PWM pins, but my tests did not yield favorable results. I did some googling and found that some developers will use a multiplexer as a way to increase the number of I/O pins to write to (or read from). I found the CD74HC4067 part, which is a 16-1 mux (with 4 control signals) which would provide ample outputs for the number of analog signals required by ColorClock."
   },
   {
-    "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
-    "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#slide-dump",
-    "title": "It’s Alive!",
-    "section": "Slide Dump",
-    "text": "Slide Dump\nThe full presentation can be found here.\nI’ve included a few slides below for your enjoyment 🙂 These diagrams were created using AutoCAD."
+    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#mux-for-pwm-output-maybe",
+    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#mux-for-pwm-output-maybe",
+    "title": "Another Futile Effort",
+    "section": "Mux for PWM Output? Maybe?",
+    "text": "Mux for PWM Output? Maybe?\n\nBack to Computer Engineering 101\nTo review some digital logic, a multiplexer is basically a switch that can select from many inputs. When I used to teach, I compared it to a vending machine. There are many inputs (e.g. chips, granola, gum, candy) and one output (your selection). We type in a code on the keypad to select what kind of snack we want.\n\n\n\nThe snacks are the selection of inputs and the dispensing slot is the output. The keypad acts as the set of control signals used to select which input should be connected to the output.\n\n\n\n\nWishful Thinking 🥺\nWe can flip this diagram 180 and instead of having many inputs to one output, we can have one input to many outputs. If we change the selection fast enough, we can write to all of the outputs (allegedly) virtually simultaneously.\n\n\n\nThe idea here is to have one common signal pin (with the PWM value) that can write to one of many outputs (RGB LED terminals). You can switch the control lines to change the output, i.e. channel, of the mux and do an analogWrite for each channel.\n\n\nSo we can write the PWM value for a red pin, change the channel, write to the green pin, change the channel, write to the blue output, etc. My thought was because our eye’s persistence of vision, we wouldn’t be able to detect any flickering.\nBuuuuuuut… that wasn’t the case 😑 My tests showed significant flicker (even only writing to two channels) and the colors just didn’t display properly. The videos below show the results of my tests."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#test-results",
+    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#test-results",
+    "title": "Another Futile Effort",
+    "section": "Test Results",
+    "text": "Test Results\nIn all of the tests described below, I am trying to display magenta on my RGB LED:\nvoid setup()\n{\n    //____________________________________________\n    // Common pin that all values are written to\n    //____________________________________________\n    pinMode(common_pin, OUTPUT);\n\n    //____________________________________________\n    // Display the color magenta,\n    // i.e. max values for red and blue, no green\n    //____________________________________________\n    color = RgbColor(0xFF00FF);\n    //____________________________________________\n}\nThis video is a compilation of all tests described below. Because the video is less than a minute I wasn’t able to embed it into the site.\n\nTest 1: Perform analogWrite and Channel Select Sequentially\nvoid loop()\n{\n    //____________________________________________\n    // NOTES:\n    // 1) `Rgb::RED`, `Rgb::GRN`, `Rgb::BLU`\n    //    are values from an enumeration\n    // 2) muxxy is the multiplexer object\n    //____________________________________________\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::BLU]);\n    muxxy.channel(2);\n}\nThe light should be displaying a magenta color, i.e. equal voltage on the red and blue pins, and no voltage on the green pin. Instead, the light looks white, which equates to equal voltage on each of the red, green and blue pins.\n\n\nTest 2: Set Channel Before analogWrite\nmuxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n    muxxy.channel(2);\n    analogWrite(common_pin, color.rgb_[Rgb::BLU]);\nThere is no significant different between selecting the channel before the analog write.\n\n\nTest 3: Only Write to Red Channel\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\nOnly writing to one channel displays the color properly. This test was performed just to ensure it was actually writing the value.\n\n\nTest 4: Only Write to Red and Green Channels\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n\n    Debug::print_labeled_int(\"green val: \", color.rgb_[Rgb::GRN]);\nThere is no green in magenta, so this test should only display red on the LED. Instead, we are seeing green flickering, and not any red at all. I also output a serial print for the value of green to ensure that green was indeed set to zero, and this was true.\n\n\nTest 5: Reset Output to 0\n    muxxy.channel(0);\n    analogWrite(common_pin, color.rgb_[Rgb::RED]);\n    analogWrite(common_pin, 0);\n    muxxy.channel(1);\n    analogWrite(common_pin, color.rgb_[Rgb::GRN]);\n    analogWrite(common_pin, 0);\nResetting the output pin to zero before switching channels just makes it look more choppy. Green is still displayed, though it shouldn’t be."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#we-cant-have-everything",
+    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#we-cant-have-everything",
+    "title": "Another Futile Effort",
+    "section": "We Can’t Have Everything",
+    "text": "We Can’t Have Everything\nSo… I’m sticking to the PWM (analog) out pins from the Arduino for now. I also wanted to have a variable output for the light-up arcade buttons on the participant control panel so the brightness of the buttons would change as a result of participant interaction. I won’t be able to do this because I have no free analog output pins 😒\nIn addition to the outputs for the light display, I also need digital input pins from the participant and programmer control panels (the programmer control panel will be hidden from the audience and is used for time set control). So I will proceed to test the previous I/O expander I used (Adafruit AW9523) for digital input and hope it works for this purpose."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#hindsight-is-2020",
+    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#hindsight-is-2020",
+    "title": "Another Futile Effort",
+    "section": "Hindsight is 20/20",
+    "text": "Hindsight is 20/20\nIn retrospect, I really should have just selected individually addressable LED strips for the light display. This would have eliminated all need for analog output because I would have been able to control the lights with a simple I2C line. But the code was already written assuming PWM outputs, and I didn’t want to write another interfacing layer. But with all the extra code I’ve had to write to test these additional modules, an interface layer to I2C would have been trivial.\nBut… we’re here now. Initially, I was only anticipating one LED strip, a color clock that would cycle over 24 hours, so I would have only needed three PWM pins for the light display. But scope creep happened (for good reason - this design is way more interesting) and now we have four LED strips, all cycling through the spectrum at different frequencies."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#theres-one-win",
+    "href": "projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html#theres-one-win",
+    "title": "Another Futile Effort",
+    "section": "There’s One Win…",
+    "text": "There’s One Win…\nIn other good news, I wrote the code to modify colors based on participant input, so yay!\nAlright… now I’m back to testing the original I/O expander, this time to take digital input 😵‍💫"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html",
+    "href": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html",
+    "title": "Build Flags? Please?",
+    "section": "",
+    "text": "Every software hurdle feels like an epic journey. My latest challenge was learning how to set build flags."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#background",
+    "href": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#background",
+    "title": "Build Flags? Please?",
+    "section": "Background",
+    "text": "Background\nI have a class called ColorClock with a member variable, clock_, which is of type DS3231, a real-time clock (RTC) module that keeps time. There’s a simple API to interact with this object over I2C. A ColorClock object uses clock_ to get the current time in order to determine which color to display. E.g.\n#include &lt;DS3231.h&gt;\n\nclass ColorClock {\n  private:\n    DS3231 clock_;\n  //...\n}\n\nRgbColor ColorClock::time_to_color() {\n  //...\n  float the_hr  = (float) clock_-&gt;get_hr();\n  //...\n}\nRight now the only application for a ColorClock object is in the the context of the physical light installation. However, there might be an application in the future where I want to use the ColorClock class in a different project with different hardware, or just for a general purpose computer application. Due to the possibility of using this code with a variety of different hardware configurations, I wanted to make the ColorClock class more modular, and not have the code directly tied to the RTC module mentioned above.\nSo, I decided to make a wrapper class for the clock, which I’m going to call FluxClock*. The intention of this class would be a general clock object that I can use to get or set the time. I would have build environment variables that tell the compiler to include or exclude certain parts of the code. For example, the FluxClock::get_month() function would look like this:\n#if ARDUINO_BUILD\n#include &lt;DS3231.h&gt;\n#else\n#include &lt;ctime&gt;\n#endif\n//_________________________________________________________________\nbyte FluxClock::get_month()\n{\n#if ARDUINO_BUILD\n//_________________________________________________________________\n// The century_bit toggles when there is roll-over to a new\n// century, e.g. from year 2099 to 2100. The century_bit will\n// likely never be relevant for any use case for this code base.\n//_________________________________________________________________\n  bool century_bit;\n  return rtc_.getMonth(century_bit);\n#else\n  time(&clock_);\n  time_ = localtime(&clock_);\n  return time_-&gt;tm_mon;\n#endif\n}\n//_________________________________________________________________\nMy challenge was to figure out how to set these build environment variables so that the compiler would only compile what was necessary for the specific build configuration."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#the-things-that-didnt-work",
+    "href": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#the-things-that-didnt-work",
+    "title": "Build Flags? Please?",
+    "section": "The Things That Didn’t Work",
+    "text": "The Things That Didn’t Work\n\nDefine in a Header File\nInitially, I included the macro definition, ARDUINO_BUILD in a separate file called macros.h:\n#define ARDUINO_BUILD 1\nI included macros in ColorClock.hpp:\n#include \"macros.h\"\nA more experienced software engineer, or even just someone who’s taken a compiler class (it’s on my list of things to do) would probably know immediately why this didn’t work. But with my limited time, I was less interested in the why-it-doesn’t-work part; I was more in the in the how-do-I-get-it-to-work mindset (though feel free to school me on this topic).\n\n\nBuild Properties in arduino.json\nFor reasons mentioned in a previous post, I (was) using the Microsoft Visual Studio Code Arduino plugin to build and upload my code. The internet told me that I could set build environment variables in the arduino.json file but this didn’t work either 😕\n(I don’t actually remember the syntax I used in arduino.json - maybe something with defines (?) - otherwise I would have included it here as something not to do…)\n\n\nWindows Arduino Command Line\nSo then I decided to ditch the plugin and go back to command line using arduino-cli (on Windows). I tried using the arduino-cli command in Git Bash, and PowerShell but Windows didn’t recognize the command. So I downloaded arduino-cli and stuck the arduino-cli.exe file right in my code directory and Git Bash finally found it when I ran ./arduino-cli. I realize now that I probably just needed to add the location of arduino-cli.exe to my path, but yeah, I was just in a frenzy trying to get something to work. I made a minimal example without any build flags and spent way too much time just figuring out how to set the right serial port so I could upload the code to the board. But I was able to figure that part out.\nNow on to the build flags problem… I tried many variations of setting a build flag (FLUX) in the command line argument of arduino-cli compile. But the compiler spit out all sorts of weird errors with every variation. Don’t use this command, it doesn’t work:\narduino-cli compile --fqbn arduino:samd:mkr1000 --build-properties build.extra_flags=-DFLUX=42\n\n\nOld Tech with a Config File\nI gave up on Windows and went back to my 10 year old MacBook and started from scratch with my familiar, safe, UNIX command line. I did more internetting (with my friend ChatGPT) and found that I should be able to set build flags in an arduino config file.\nbuild:\n  properties:\n    FLUX:\"42\"\nI set the config file path in my command line argument…\narduino-cli compile --fqbn arduino:samd:mkr1000 --config-file path/to/arduino_cli.yaml\nbut nope, this didn’t work either. ChatGPT failed me. It then clarified that that the compiler might not actually recognize the flag 😐"
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#the-thing-that-worked",
+    "href": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#the-thing-that-worked",
+    "title": "Build Flags? Please?",
+    "section": "The Thing That Worked",
+    "text": "The Thing That Worked\n\nDeep in the Arduino Installation Directory…\nOnce again, after spending what seemed like ages (but was probably closer to an hour) searching on the internet and more talking to ChatGPT, I learned that I needed to edit the platform.txt file deep inside my install directory:\nUsers/rebeccarashkin/Library/Arduino15/packages/arduino/hardware/samd/1.8.13/\nand set my build flags in build.extra_flags:\nbuild.extra_flags= -DFLUX=42\nBut this didn’t work either! However, I did see a note just above the build.extra_flags line that said These can be overridden in platform.local.txt so I figured build.extra_flags might be getting overridden in the build process. I also read somewhere that I can also edit build flags in boards.txt. So I opened boards.txt in the same directory and found the build.extra_flags variable for my board and appended the variable that corresponded with my Arduino board, the MKR 1000.\nmkr1000.build.extra_flags= -DFLUX=42\nEureka! 🥳 FINALLY the compiler recognized my build flag."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#it-worked-but-come-on",
+    "href": "projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html#it-worked-but-come-on",
+    "title": "Build Flags? Please?",
+    "section": "It Worked, But Come On",
+    "text": "It Worked, But Come On\nHowever, digging that deep into an installation directory just to set a build flag seems a little excessive, so I’d like to learn more about the platform.local.txt file. Buuuut…. for now, I really only have one build flag that I care about and I’m ok hacking my way through setting a build flag if it means I can progress in my development.\nOk, now what was I trying to do again? 😅\n\n\n\n* Flux was my beloved rabbit companion for over 10 years and died in 2019. His memory lives on in nearly all of my software engineering endeavors."
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html",
@@ -348,13 +404,6 @@
     "title": "Mind Your Parens",
     "section": "Console Output",
     "text": "Console Output\nSECONDS_PER_HOUR:     3600.000000\nCC0_CYCLE_TIME_HOURS: 12.000000\nI stared at the code again and realized that the lack of parenthesis in the definition for SECONDS_PER_HOUR was the source of my problem. The #define macro is a simple find and replace, so what the compiler saw was:\n#define SECONDS_PER_MIN   60.0\n#define MINUTES_PER_HOUR  60.0\n\n// The compiler sees:\n// #define SECONDS_PER_HOUR  60.0 * 60.0\n#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR\n\n// The compiler sees:\n// #define CC0_CYCLE_TIME_HOURS 12.0 / 60.0 * 60.0\n#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR\nThe compiler was basically seeing:\n12 / 60 * 60\ninstead of\n12 / (60* 60).\nAnd because of order of operations, CC0_CYCLE_TIME_HOURS was indeed 12, not the 0.003333 that I was hoping for 🤦‍♀️\nLesson learned 😳"
-  },
-  {
-    "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html",
-    "href": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html",
-    "title": "We Did It",
-    "section": "",
-    "text": "Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅"
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html#contingency-planning",
@@ -411,6 +460,48 @@
     "title": "We Did It",
     "section": "Thank You 🙏",
     "text": "Thank You 🙏\nI would like to extend my heartfelt thanks to several individuals who made significant contributions to ColorClock:\nBo, my partner in project creation and life, played a crucial role in designing and singlehandedly constructing the physical structure. His support gave me the confidence to see the project through to completion even during challenging times. Bo assisted with troubleshooting both hardware and software issues, provided invaluable guidance on software design, including teaching me how to create a state machine, and helped me master Git rebase to keep the ColorClock repository organized.\nCody was incredibly helpful in numerous ways, from lifting heavy objects and loading to taking turns driving the large and unwieldy trailer. Beyond his practical support, Cody’s presence at Burning Man, his assistance with building and striking camp, and his joy and playfulness were heartwarming and made the experience even more special His support was deeply appreciated.\nKerry mentored me during the early stages of software design and inspired me to bring art to the Playa. Kerry also generously loaned and installed new solar lights for my piece when the originals were damaged and has been a steadfast advocate for both my well-being and my art.\nHeather created charming signs that truly brought the piece together, adding a special touch to the overall presentation.\nAustin assisted with 3D printing my test models for the electronics box providing a protective enclosure for the circuit board during its time on the Playa.\nAsher assisted with our MOOP sweep and the disassembly process, ensuring that everything was handled efficiently and effectively.\nTrevor, our Artery liaison, answered all our questions and provided exceptional support throughout the project.\nTo all my campmates with the Funguys, thank you for your warmth and unconditional support. You all are truly family to me 🥰\nFinally, I’d like to extend my gratitude to the Burning Man organization for providing a platform to present ColorClock and for showcasing a diverse range of art and experiences. Their efforts create an environment where unique and extraordinary art forms can truly thrive."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#the-mystery-of-the-missing-package",
+    "href": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#the-mystery-of-the-missing-package",
+    "title": "Goodbye Windows",
+    "section": "The Mystery of the Missing Package",
+    "text": "The Mystery of the Missing Package\nA couple weeks ago I was tearing my house apart to find a package from Adafruit that I remember arriving a couple months prior. I’m not one to put something in a random place (except for my phone, an ongoing challenge I’m actively addressing!), so it turned into a whole week of organizing and repeatedly checking all the logical places it could be. I felt like I was going crazy.\nI finally decided to find the email delivery confirmation but it was non existent in my inbox. And then I went to the Adafruit website and found a shopping cart containing all the items I was expecting in my package 😑 Looking at my shopping cart of unpurchased items, the real memory of what happened came flooding back… I was shopping for an encoder but couldn’t commit and probably went to bed with intentions of finishing my shopping the next day but life got in the way. Studying my shopping cart, I discovered that one of the items I had planned to purchase was no longer in stock 😫\n\nLesons Learned\n\nWhen having trouble finding a mailed package, first check if the items were ever ordered.\nDon’t put off ordering a shopping cart full of items in hopes of finding that last perfect addition."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#a-new-arduino",
+    "href": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#a-new-arduino",
+    "title": "Goodbye Windows",
+    "section": "A New Arduino",
+    "text": "A New Arduino\nOne of the other items I had ordered that week was a new, smaller Arduino board. I have been using this old board I acquired from my brother years earlier that he was never able to connect to (it turns out he was using a power cable instead of a data cable to program 😅). For the final ColorClock installation, I want to make two identical circuit boards so I have a backup in case there are any problems during the week the project is being displayed.\nI ordered an Arduino Nano ESP32 where nearly all of the pins are configurable to have PWM, a way to fake out an analog output with a digital signal. PWM output is what I need to have variable output voltage so I can send different outputs to the RGB LED pins creating different colors."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#nothing-good-is-ever-easy",
+    "href": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#nothing-good-is-ever-easy",
+    "title": "Goodbye Windows",
+    "section": "Nothing Good is Ever Easy",
+    "text": "Nothing Good is Ever Easy\nSo, I had this new Arduino and I just wanted to do a simple test so that I know I can talk to it. In my last post I shared my frustration with figuring out how to set build variables so I went back to developing on my beloved decade-old MacBook Pro. But after I figured out how to set build variables I migrated back to my new fancy Windows machine and applied the same changes to the boards.txt deep in the file system in the Arudino hardware folder. At that point I continued development on Windows.\nOk, back to the new Arduino board… I installed the drivers to talk to this board but I kept getting errors when trying to program it:\ndfu-util: Cannot open DFU device 2341:0070 found on devnum 10 (LIBUSB_ERROR_ACCESS)\ndfu-util: No DFU capable USB device available\nFailed uploading: uploading error: exit status 74\nI discovered that this was a known problem with this board and found in the Arduino forums that there is a post_install.sh script I need to run for the computer to see the Arduino. But this was a Bash script, and I was developing on Windows. I tried running the command in Git Bash, but I needed to use sudo and Git Bash didn’t have sudo then I tried to run it in PowerShell just for fun.\n\nA Side Note\nSkipping ahead to the present, as I’m cleaning up this post and adding links, I have discovered that there is indeed a post_install.bat script that I probably could have run on Windows, but we’re here now."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#a-solution-to-my-development-woes",
+    "href": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#a-solution-to-my-development-woes",
+    "title": "Goodbye Windows",
+    "section": "A Solution to My Development Woes",
+    "text": "A Solution to My Development Woes\nThe time had come to create a Linux partition. I was experiencing the same level of fear I had about arduino-cli, the command line tool for building and uploading Arduino code. Creating a Linux partition seemed scary because I had never done it before. But dammit I am a software engineer and I can do hard things!\nMy supportive partner assured me that setting up a Linux partition was not complicated. All I needed to do was download the Linux installer, put it on a USB drive, make it bootable, then boot into that USB drive. deep breath I can do this.\n\nSteps For Creating A Linux Partition\nCreating a bootable USB was surprisingly painless. There are tons of instructions on the internet. The basic steps were:\n\nDownload the Linux installer image.\nMake the USB stick bootable.\nRestart the computer and enter the BIOS.\nSelect the USB from the boot menu.\nFollow on-screen instructions.\n\nSo I did it! I am actually writing this from my Ubuntu partition right now!\nLike any new computer, there’s the initial setup process, which, in my case, was missing even basic tools like Vim. But I’m no stranger to starting over."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#back-to-the-new-arduino",
+    "href": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#back-to-the-new-arduino",
+    "title": "Goodbye Windows",
+    "section": "Back to the New Arduino",
+    "text": "Back to the New Arduino\nThe catalyst for the Linux partition was so that I could run a script that would allow my computer to see the Arudino Nano ESP32. I did all the things (installed arduino-cli, ran the post_install.sh script) and it’s all working!\nMy next challenge is to test my new RTC module, test the I/O expander 🥺 (also scary) and start laying out the ‘final’ V1 version of the circuit board."
+  },
+  {
+    "objectID": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#were-famous",
+    "href": "projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html#were-famous",
+    "title": "Goodbye Windows",
+    "section": "We’re Famous!",
+    "text": "We’re Famous!\nColorClock is officially listed as 2024 Playa Art!! (go on, click the picture 😀)"
   },
   {
     "objectID": "education/how-to-learn.html",
