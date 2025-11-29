@@ -7,10 +7,10 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 <meta name="author" content="Rebecca Jennifer Rashkin">
-<meta name="dcterms.date" content="2024-09-04">
-<meta name="description" content="Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅">
+<meta name="dcterms.date" content="2024-01-10">
+<meta name="description" content="Windows Subsystem for Linux 2 cannot interface with my computer’s serial ports and it makes me very sad 😭">
 
-<title>We Did It – Rebecca Jennifer Rashkin</title>
+<title>A Tale of the Lost Serial Ports, and the Linux Environment that Could Have Been – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -148,10 +148,10 @@ ul.task-list li input[type="checkbox"] {
 <header id="title-block-header" class="quarto-title-block default page-columns page-full">
   <div class="quarto-title-banner page-columns page-full">
     <div class="quarto-title column-body">
-      <h1 class="title">We Did It</h1>
+      <h1 class="title">A Tale of the Lost Serial Ports, and the Linux Environment that Could Have Been</h1>
                   <div>
         <div class="description">
-          <p>Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅</p>
+          <p>Windows Subsystem for Linux 2 cannot interface with my computer’s serial ports and it makes me very sad 😭</p>
         </div>
       </div>
                           <div class="quarto-categories">
@@ -173,7 +173,7 @@ ul.task-list li input[type="checkbox"] {
       <div>
       <div class="quarto-title-meta-heading">Published</div>
       <div class="quarto-title-meta-contents">
-        <p class="date">September 4, 2024</p>
+        <p class="date">January 10, 2024</p>
       </div>
     </div>
     
@@ -219,12 +219,11 @@ ul.task-list li input[type="checkbox"] {
 <div class="divider blu">
 
 </div>
-<figure class="figure">
-<img src="../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0__color-clock.jpg" class="img-fluid figure-img">
-<figcaption>
-Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅
-</figcaption>
-</figure>
+<p><a href="https://learn.microsoft.com/en-us/windows/wsl/install">Windows Subsystem for Linux (WSL) 2</a> cannot interface with the serial ports on my PC and it makes me sad. Because that means I can’t use WSL for the one use case I reallllly want it for: programming an Arduino.</p>
+<p>It’s been about a year and a half since last looking at the code base for my ColorClock project and I finally have the mental capacity to continue work on this endeavor. In one of my previous posts I shared my excitement over using the <a href="https://arduino.github.io/arduino-cli/0.35/">Arduino Command Line Interface</a> because it enabled me to code and upload my programs all in a single terminal window. But, I should mention that all of my Arduino development up until this point has been on a MacBook i.e.&nbsp;a UNIX environment.</p>
+<p>This past weekend I tried to recreate this development environment on my newly remodeled Windows gaming tower. I was super excited about the prospect of getting to use Windows Subsystem for Linux (WSL) and no longer needing to use Cygwin or some other Linux emulator-like-thing.</p>
+<p>It took me hours to just to get compiling again - between dealing with Git issues, installing the toolchain, tracking and installing library files, and relearning how to interact with Arduino CLI. My efforts felt worth something for a tiny while because I got it to compile on the command line 🥳 But then… the internet rained on my parade 😭</p>
+<p>I read somewhere that WSL doesn’t play nice with the serial ports, but I was not deterred. Surely SOMEONE has been able to get WSL to communicate through serial? I was determined to find a way.</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -252,81 +251,9 @@ Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It 
 <div class="divider cya">
 
 </div>
-<section id="contingency-planning" class="level2">
-<h2 class="anchored" data-anchor-id="contingency-planning">Contingency Planning</h2>
-<p>I packed up spares of all the electronic components in case one of the modules were to go kaput. Time didn’t allow to solder up an entire new circuit board so my contingency plan was to construct a new one with a solderless prototyping board if anything went really wrong.</p>
-<figure class="figure">
-<img src="./contingency-planning.JPEG" class="img-fluid figure-img">
-<figcaption>
-The backup box had multiples of all the modules in addition to solderless breadboards and assorted components.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="./backup-box.JPEG" class="img-fluid figure-img">
-<figcaption>
-I also brought my little tool box with oodles of extra wire and tools Thankfully I had no use for any of my extra wiring.
-</figcaption>
-</figure>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider cya">
-
-</div>
-</section>
-<section id="artery-check-in" class="level2">
-<h2 class="anchored" data-anchor-id="artery-check-in">Artery Check In</h2>
-<p>During check-in, The Artery (the Burning Man art department) showed us our placement on the map.</p>
-<figure class="figure">
-<img src="./artery-check-in-0.JPEG" class="img-fluid figure-img">
-<figcaption>
-Part of the check in ritual is to have the artist place a label near the green sticker corresponding with their project on the art map. I was ecstatic to see my little green dot 🤩
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="./artery-check-in-1.JPEG" class="img-fluid figure-img">
-<figcaption>
-There we are!
-</figcaption>
-</figure>
-<p>🌈</p>
-<p>After identifying our placement on the map, the Field Ops volunteer took us to our actual location on Playa.</p>
-<figure class="figure">
-<img src="floofy.JPEG" class="img-fluid figure-img">
-<figcaption>
-Each project’s physical location is marked with a “floofy” connected to a CD-R bolted into the ground.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="bo-and-becca-floofy__20240824.JPG" class="img-fluid figure-img">
-<figcaption>
-We were brought to our floofy!
-</figcaption>
-</figure>
+<section id="a-possible-solution" class="level2">
+<h2 class="anchored" data-anchor-id="a-possible-solution">A Possible Solution?</h2>
+<p>I learned about a third party program, <a href="https://github.com/dorssel/usbipd-win">USBIPD</a> that would allow WSL to see my serial ports. And this was confirmed! I performed the commands on the PowerShell side (e.g.&nbsp;bind, attach) and then I saw my Arduino on the WSL side using lsusb!! But when when it was time to run the upload command my console spits out a no communication error.</p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -355,37 +282,14 @@ We were brought to our floofy!
 
 </div>
 </section>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">Installation</h2>
-<p>The 2-day, 16 + 2 hour drive to Playa was a little nerve-racking. My poor Subie was at her towing capacity, and let us know with her engine whines. But we made it 😅</p>
-<figure class="figure">
-<img src="./cody-and-bo-unloading.JPEG" class="img-fluid figure-img">
-<figcaption>
-We were able to transport the project mostly assembled to make set up as easy as possible. Our good friend Cody was part of our art crew and helped with the construction.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="./install-1-bo-solar.JPEG" class="img-fluid figure-img">
-<figcaption>
-Bo is getting the solar panels set up. The wooden box in front of the solar panels housed the battery and solar charge controllers.
-</figcaption>
-</figure>
-<p>It had been raining the day before and we were frantically trying to finish assembly before the looming rain. I felt some droplets while I was connecting the light harnesses to the terminal block but we got everything buttoned up without any damage. Due to the threat of rain, we decided to wait until all chances of precipitation had passed before powering up.</p>
-<p>🌈</p>
-<figure class="figure">
-<img src="./../../assets__color-clock/photos__color-clock/overall__photos__color-clock/final-installation-daytime.JPEG" class="img-fluid figure-img">
-<figcaption>
-Many art installations at Burning Man are designed for climbing, but ColorClock was not, so we needed a sign to make that clear. Additionally I wanted to ensure participants were aware of the trip hazard posed by the cross beams at the bottom. My campmate Heather had the chance to experiment with a Cricut and created some super cute signs for us 😍.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/8i0VIQzflGM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption>
-I added curtains to the sides of the structure in a futile attempt at making the lights visible during the day, but the Playa sun always wins ☀️ So it turned out to be just a nighttime piece.
-</figcaption>
-</figure>
+<section id="i-accept-defeat" class="level2">
+<h2 class="anchored" data-anchor-id="i-accept-defeat">I Accept Defeat</h2>
+<p>I felt defeated. Fine. Windows. YOU WIN.</p>
+<p>It crossed my mind to use keep using my old development environment, but that was using my 10 year old Macbook - which I love, but I have a new computer and I want to use it!</p>
+<p>I proceeded to use VS Code with the Arduino plugin, had trouble, got it to work with PlatformIO, which worked but created so much overhead I went back to the Arduino extension and FINALLY got it to work.</p>
+<p>To be fair, I like VS Code. The more I learn about it the more I like it. The Vim plugin is actually quite good (I can use my own .vimrc file) and the Python debugger is pretty sweet.</p>
+<p>Honestly, I’m just happy to be working on a fun project again.</p>
+<p><img src="./vs-code-screenshot.png" class="img-fluid"></p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -414,200 +318,9 @@ I added curtains to the sides of the structure in a futile attempt at making the
 
 </div>
 </section>
-<section id="nighttime-viewing" class="level2">
-<h2 class="anchored" data-anchor-id="nighttime-viewing">Nighttime Viewing</h2>
-<p>While the colored LEDs were not visible during the day, the colors shined through beautifully at night.</p>
-<figure class="figure">
-<img src="../../assets__color-clock/photos__color-clock/overall__photos__color-clock/bo-and-becca-final-nighttime.jpg" class="img-fluid figure-img">
-<figcaption>
-Bo and I were delighted to see how vibrant the colors glowed at night. Photo courtesy of my dear friend Victoria Hollis.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/ehi4QDr_o1Y" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption>
-Here is a full 360 view of the project displayed on Playa.
-</figcaption>
-</figure>
-<p>🌈</p>
-<p>This recording is the tail-end of my presentation where I encouraged my campmates to explore the control panel, figuring out how the buttons influenced the central light. Video courtesy of Victoria Hollis.</p>
-<figure class="figure">
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/6AFWDotffws" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<figcaption>
-I invited my camp to view the piece and gave a brief presentation explaining the meaning behind the colors of each LED strip in the light display.
-</figcaption>
-</figure>
-<p>🌈</p>
-<figure class="figure">
-<img src="./../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg" class="img-fluid figure-img">
-<figcaption>
-Over the course of the event, almost all of our solar lights to provide safe visibility were destroyed. My amazing camp member, Kerry Veenstra, who also had a piece on Playa, lent us some spare lights that added beautiful lighting to the ground. Photo courtesy of Victoria Hollis.
-</figcaption>
-</figure>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider cya">
-
-</div>
-</section>
-<section id="participant-interaction" class="level2">
-<h2 class="anchored" data-anchor-id="participant-interaction">Participant Interaction</h2>
-<p>On a different note, event participants found my piece difficult to engage with. ColorClock was vandalized twice with mean stickers, and no one I spoke to at the project had the vaguest idea of what they were looking at or what the buttons actually did.</p>
-<figure class="figure">
-<img src="color-clock-vandalism.JPEG" class="img-fluid figure-img">
-<figcaption>
-My camp mate Kerry found this sticker on my piece and promptly removed it. This was the second time someone had vandalized my art. I didn’t take it personally, but it saddens me that some people think it’s acceptable or amusing to deface a project that someone has invested so much time and effort into. Photo courtesy of Kerry Veenstra.
-</figcaption>
-</figure>
-<p>🌈</p>
-<p>Regardless of how ColorClock was consumed by the public, I’m still damn proud of what we accomplished. And this project wasn’t for anyone one else - it was for me. The magic of ColorClock was in the software which I did not have the time or mental capacity to translate into the visual aesthetic.</p>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider cya">
-
-</div>
-</section>
-<section id="the-end-of-colorclock-version-1" class="level2">
-<h2 class="anchored" data-anchor-id="the-end-of-colorclock-version-1">The End of ColorClock Version 1</h2>
-<p>Many of the art pieces at Burning Man are burned, which I believe symbolizes the impermanence of life. Though our choice to burn our piece was mostly because we simply didn’t want to lug it home 😅 A ceremonial burn-in-place ritual is quite complex due to the need to protect the playa. Instead, we opted to disassemble the piece and burn it in the “Burn Garden.”</p>
-<figure class="figure">
-<img src="deconstruction.JPEG" class="img-fluid figure-img">
-<figcaption>
-Before disposing of the structure, we salvaged the electrical components and removed all fasteners.
-</figcaption>
-</figure>
-<p>Cody and Bo disassembled the project and removed all screws. Our friend and campmate Asher (not pictured) was helpful in removing staples from the battery box and played a significant role in conducting a MOOP sweep of the area. In Burning Man culture, MOOP stands for Matter Out Of Place. A MOOP sweep involves meticulously combing the area for any debris to uphold the principle of “Leave No Trace.”</p>
-<figure class="figure">
-<img src="deconstruction.JPEG" class="img-fluid figure-img">
-<figcaption>
-Only unpainted, untreated wood was permitted in the Burn Garden which is why we left the wood in the structure unfinished. Here, Bo is tossing our disassembled structure into the “Burn Garden”.
-</figcaption>
-</figure>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider cya">
-
-</div>
-</section>
-<section id="colorclock-version-2" class="level2">
-<h2 class="anchored" data-anchor-id="colorclock-version-2">ColorClock Version 2?</h2>
-<p>I have a lot of ideas of how to modify ColorClock to be more palatable for the viewer and how to improve the design. So there will definitely be a version 2. Here is a short list of ideas for improvement:</p>
-<ul>
-<li>Use individually addressable LEDs.</li>
-<li>Design and create a printed circuit board.</li>
-<li>Modify lights in control panel to respond instantaneously to participant input.</li>
-<li>Come up with a better user interface.</li>
-<li>Make it smaller, reducing the need for a huge trailer.</li>
-<li>Make it cuter. Burners like cute things.</li>
-</ul>
-<p>But there’s another project I’ve been contemplating for a few years so maybe that will be the next endeavor. I’m going to let this year’s experience settle for a bit before I decide on my next project…</p>
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<div class="divider cya">
-
-</div>
-</section>
-<section id="thank-you" class="level2">
-<h2 class="anchored" data-anchor-id="thank-you">Thank You 🙏</h2>
-<p>I would like to extend my heartfelt thanks to several individuals who made significant contributions to ColorClock:</p>
-<p><strong>Bo</strong>, my partner in project creation and life, played a crucial role in designing and singlehandedly constructing the physical structure. His support gave me the confidence to see the project through to completion even during challenging times. Bo assisted with troubleshooting both hardware and software issues, provided invaluable guidance on software design, including teaching me how to create a state machine, and helped me master Git rebase to keep the ColorClock repository organized.</p>
-<p><strong>Cody</strong> was incredibly helpful in numerous ways, from lifting heavy objects and loading to taking turns driving the large and unwieldy trailer. Beyond his practical support, Cody’s presence at Burning Man, his assistance with building and striking camp, and his joy and playfulness were heartwarming and made the experience even more special His support was deeply appreciated.</p>
-<p><strong>Kerry</strong> mentored me during the early stages of software design and inspired me to bring art to the Playa. Kerry also generously loaned and installed new solar lights for my piece when the originals were damaged and has been a steadfast advocate for both my well-being and my art.</p>
-<p><strong>Heather</strong> created charming signs that truly brought the piece together, adding a special touch to the overall presentation.</p>
-<p><strong>Austin</strong> assisted with 3D printing my test models for the electronics box providing a protective enclosure for the circuit board during its time on the Playa.</p>
-<p><strong>Asher</strong> assisted with our MOOP sweep and the disassembly process, ensuring that everything was handled efficiently and effectively.</p>
-<p><strong>Trevor</strong>, our Artery liaison, answered all our questions and provided exceptional support throughout the project.</p>
-<p>To all my campmates with the <strong>Funguys</strong>, thank you for your warmth and unconditional support. You all are truly family to me 🥰</p>
-<p>Finally, I’d like to extend my gratitude to the <strong>Burning Man organization</strong> for providing a platform to present ColorClock and for showcasing a diverse range of art and experiences. Their efforts create an environment where unique and extraordinary art forms can truly thrive.</p>
+<section id="references" class="level2">
+<h2 class="anchored" data-anchor-id="references">References</h2>
+<p><a href="https://arduino.github.io/arduino-cli/0.35/">Arduino CLI</a> <a href="https://platformio.org/install/ide?install=vscode">PlatformIO</a> <a href="https://github.com/dorssel/usbipd-win">USBIPD</a> <a href="https://code.visualstudio.com/">VS Code</a> <a href="https://learn.microsoft.com/en-us/windows/wsl/install">WSL</a></p>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
