@@ -193,10 +193,18 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <style>
-  table           { width: 100%; }
-  td              { width:  25%; text-align: center;}
-  .flux-button._1 { width: 24%; }
-  h1              { color: var(--flux-color-3)}
+
+.flux-button
+{
+  width   : 23%;
+}
+
+@media (max-width: 600px) {
+  .flux-button {
+    width: 40%;
+  }
+}
+
 </style>
 <p>My name is Rebecca.</p>
 <p><img src="assets/photos-general-assets/flux-grass-cropped-landscape.jpg" class="img-fluid"></p>
@@ -234,14 +242,7 @@ ul.task-list li input[type="checkbox"] {
 <section id="what-i-care-about" class="level2">
 <h2 class="anchored" data-anchor-id="what-i-care-about">What I Care About</h2>
 <div style="text-align: center;">
-<a class="flux-button _1" href="./education/comp-org/comp-org.html"> Engineering </a>
-
-<a class="flux-button _1" href="https://flyingrabbitmovement.com"> Movement </a>
-
-<a class="flux-button _1" href="./education/comp-org/comp-org.html"> Education </a>
-
-<a class="flux-button _1" href="projects/color-clock/color-clock.html"> Creativity </a>
-
+<p><a class="flux-button _1" href="./education/comp-org/comp-org.html">Engineering</a> <a class="flux-button _1" href="https://flyingrabbitmovement.com">Movement</a> <a class="flux-button _1" href="./education/comp-org/comp-org.html">Education</a> <a class="flux-button _1" href="projects/color-clock/color-clock.html">Creativity</a></p>
 </div>
 <!--___________________________________________________________________|
 |______________________________________________________________________|
