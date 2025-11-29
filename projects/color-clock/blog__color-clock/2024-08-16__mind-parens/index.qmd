@@ -10,15 +10,16 @@ image       : directives.png
 draft       : false
 ---
 
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
 I was cleaning up my code of magic numbers and added a few `#define`
 statements for the frequency values. But after uploading the program
 to the board I didn't understand why the the colors on the light were
 not changing at the correct rate. So I added a couple serial output
 debug prints saw that my frequency was not set properly.
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
----
 
 ## Code
 
@@ -39,6 +40,8 @@ Serial.println(SECONDS_PER_HOUR);
 Serial.print("CC0_CYCLE_TIME_HOURS: ");
 Serial.println(CC0_CYCLE_TIME_HOURS);
 ```
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Serial Output
 
@@ -64,6 +67,8 @@ started writing this post to complain about the Arduino compiler, so
 to illustrate my point, I coded up the following simple program to
 compile on my desktop.
 
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
 ## Code
 
 ```cpp
@@ -86,6 +91,8 @@ int main()
 
 But then to my surprise, the console output displayed the same value
 as the Arduino serial out!
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Console Output
 
@@ -124,3 +131,5 @@ And because of order of operations, `CC0_CYCLE_TIME_HOURS` was indeed
 12, not the `0.003333` that I was hoping for 🤦‍♀️
 
 Lesson learned 😳
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

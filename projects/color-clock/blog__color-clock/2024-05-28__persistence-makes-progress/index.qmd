@@ -5,11 +5,11 @@ descrtipion : >
   beginning of IO expander integration.
 date        : 2024-05-28
 categories  : [color-clock]
-image       : ./bo-router-plunge-base.png
-draft       : true
+image       : ./bo-router-plunge-base.JPEG
+draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 ## A Beautiful Breadboard
 
@@ -131,3 +131,5 @@ According to my empirical testing, the following pins are available for variable
 \* I learned that the A0 pin provides a true analog output, not a PWM signal which is why it was listed on neither the website nor the datasheet as a PWM pin. This page describes the difference between analog and PWM output.
 
 \*\* Pins 9 and 12, as listed on the datasheet and website, respectively, did not produce variable output voltages in my experiment.
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

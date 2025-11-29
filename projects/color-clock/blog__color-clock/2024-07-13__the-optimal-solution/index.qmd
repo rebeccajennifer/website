@@ -10,6 +10,8 @@ categories  : [color-clock]
 draft       : false
 ---
 
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
 As a child, I could spend entire days engrossed in puzzles. My favorites were the Mind Benders series logic puzzles, where a set of clues were provided to determine matches with limited information, such as figuring out which child owned which pet. I found immense satisfaction in solving these problems and took comfort in the certainty that there was always one correct solution. My chosen career path reflects this passion for problem-solving. Today, the puzzles I tackle are far more complex, with numerous possible solutions, each varying in its degree of optimality.
 
 
@@ -110,3 +112,5 @@ Me, for scale.
 - Modify software to output lower power at night
 
 ## 😬
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

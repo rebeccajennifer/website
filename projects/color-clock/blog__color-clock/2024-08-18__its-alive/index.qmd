@@ -9,6 +9,8 @@ categories  : [color-clock]
 draft       : false
 ---
 
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
 <figure>
 ![](final-light-display.jpeg)
 <figcaption>
@@ -20,7 +22,7 @@ dead button LED. This will be fixed 😅
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## No Regrets
 

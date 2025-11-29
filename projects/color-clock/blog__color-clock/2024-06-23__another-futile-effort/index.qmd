@@ -10,6 +10,8 @@ categories  : [color-clock]
 draft       : false
 ---
 
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
 It looks like using a multiplexer as a PWM expander is not going to work. As previously discussed, in order to wire up three RGB LED strips to change colors at different frequencies, there is need for 12 analog output pins, one each for red, green and blue on each of the RGB LED strips. For the Arduino that we have selected, this will completely max out the number of analog output pins I have.
 
 A couple months ago I tried to use a constant current I/O expander to write to PWM pins, but my tests did not yield favorable results. I did some googling and found that some developers will use a multiplexer as a way to increase the number of I/O pins to write to (or read from). I found the CD74HC4067 part, which is a 16-1 mux (with 4 control signals) which would provide ample outputs for the number of analog signals required by ColorClock.
@@ -39,8 +41,8 @@ We can flip this diagram 180 and instead of having many inputs to one output, we
 ![](./mux-rgb__2024-06-23.png)
 <figcaption>
 The idea here is to have one common signal pin (with the PWM value) that can write to one of many outputs (RGB LED terminals). You can switch the control lines to change the output, i.e. channel, of the mux and do an analogWrite for each channel.
-<figcaption>
 </figcaption>
+</figure>
 
 So we can write the PWM value for a red pin, change the channel, write to the green pin, change the channel, write to the blue output, etc. My thought was because our eye's persistence of vision, we wouldn't be able to detect any flickering.
 
@@ -142,11 +144,15 @@ There is no green in magenta, so this test should only display red on the LED. I
 
 Resetting the output pin to zero before switching channels just makes it look more choppy. Green is still displayed, though it shouldn't be.
 
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
 ## We Can't Have Everything
 
 So... I'm sticking to the PWM (analog) out pins from the Arduino for now. I also wanted to have a variable output for the light-up arcade buttons on the participant control panel so the brightness of the buttons would change as a result of participant interaction. I won't be able to do this because I have no free analog output pins 😒
 
 In addition to the outputs for the light display, I also need digital input pins from the participant and programmer control panels (the programmer control panel will be hidden from the audience and is used for time set control). So I will proceed to test the previous I/O expander I used (Adafruit AW9523) for digital input and hope it works for this purpose.
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Hindsight is 20/20
 
@@ -154,8 +160,12 @@ In retrospect, I really should have just selected individually addressable LED s
 
 But... we're here now. Initially, I was only anticipating one LED strip, a color clock that would cycle over 24 hours, so I would have only needed three PWM pins for the light display. But scope creep happened (for good reason - this design is way more interesting) and now we have four LED strips, all cycling through the spectrum at different frequencies.
 
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
 ## There's One Win...
 
 In other good news, I wrote the code to modify colors based on participant input, so yay!
 
 Alright... now I'm back to testing the original I/O expander, this time to take digital input 😵‍💫
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

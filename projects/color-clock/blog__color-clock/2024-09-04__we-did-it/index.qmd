@@ -12,6 +12,8 @@ image       : ../../assets__color-clock/photos__color-clock/overall__photos__col
 draft       : false
 ---
 
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
 <figure>
 ![](../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
 <figcaption>
@@ -351,3 +353,5 @@ organization** for providing a platform to present ColorClock and for
 showcasing a diverse range of art and experiences. Their efforts
 create an environment where unique and extraordinary art forms can
 truly thrive.
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

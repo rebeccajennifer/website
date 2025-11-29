@@ -9,7 +9,7 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 ## IO Expander Analog Write Fails Me
 
@@ -154,3 +154,4 @@ The soldering work is not beautiful but it gets the job done.
 </figcaption>
 </figure>
 
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

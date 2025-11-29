@@ -9,6 +9,7 @@ draft       : false
 ---
 
 {{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
 ## The Mystery of the Missing Package
 
 A couple weeks ago I was tearing my house apart to find a package from Adafruit that I remember arriving a couple months prior. I'm not one to put something in a random place (except for my phone, an ongoing challenge I'm actively addressing!), so it turned into a whole week of organizing and repeatedly checking all the logical places it could be. I felt like I was going crazy.
@@ -85,3 +86,5 @@ My next challenge is to test my new RTC module, test the I/O expander 🥺 (also
 ColorClock is officially listed as 2024 Playa Art!! (go on, click the picture 😀)
 
 [![](../../assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png)](https://burningman.org/about/history/brc-history/event-archives/2024-event-archive/2024-art-installations/?yyyy&aq=colorclock&support_project=0)
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
