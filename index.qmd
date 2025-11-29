@@ -29,10 +29,18 @@ format: html
 ---
 
 <style>
-  table           { width: 100%; }
-  td              { width:  25%; text-align: center;}
-  .flux-button._1 { width: 100%; }
-  h1              { color: var(--flux-color-3)}
+
+.flux-button
+{
+  width   : 23%;
+}
+
+@media (max-width: 600px) {
+  .flux-button {
+    width: 40%;
+  }
+}
+
 </style>
 
 My name is Rebecca.
@@ -51,12 +59,12 @@ favorite things are handstands and rabbits 🐰
 
 ## What I Care About
 
-<table><tr>
-<td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Engineering </a></td>
-<td><a class="flux-button _1" href="https://flyingrabbitmovement.com">      Movement    </a></td>
-<td><a class="flux-button _1" href="/education/comp-org/comp-org.html">     Education   </a></td>
-<td><a class="flux-button _1" href="projects/color-clock/color-clock.html"> Creativity  </a></td>
-</tr></table>
+<div style="text-align: center;">
+  <a class="flux-button _1" href="/education/comp-org/comp-org.html">Engineering</a>
+  <a class="flux-button _1" href="https://flyingrabbitmovement.com">Movement</a>
+  <a class="flux-button _1" href="/education/comp-org/comp-org.html">Education</a>
+  <a class="flux-button _1" href="projects/color-clock/color-clock.html">Creativity</a>
+</div>
 
 {{< include assets/ui-elements/section-divider-blu.html >}}
 
