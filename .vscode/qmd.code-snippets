@@ -1,5 +1,5 @@
 {
-  "Blog Post": { "prefix"      : "blog"
+  "Blog Post": { "prefix"      : "blog-color-clock"
   , "description" : "Basic Quarto QMD document layout"
   , "scope"       : "quarto,markdown"
   , "body"        : ["---"
@@ -8,8 +8,8 @@
     , ""
     , "date        : "
     , "image       : "
-    , "categories  : "
-    , "draft       : "
+    , "categories  : [color-clock]"
+    , "draft       : true"
     , "---"
     , ""
     , "{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}"
