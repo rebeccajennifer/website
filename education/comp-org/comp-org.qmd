@@ -22,11 +22,30 @@
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
+<!--
+________________________________________________________________________
+    DESCRIPTION
+    Course website for Computer Systems and Assembly Language
+_____________________________________________________________________-->
 
 ---
 title: Computer Systems and Assembly Language
 format: html
 ---
+
+<style>
+.flux-button
+{
+  width   : 25%;
+}
+
+@media (max-width: 600px) {
+  .flux-button {
+    display : block;
+  }
+}
+</style>
+
 
 I find magic in understanding a computer all the way
 down to its ones and zeros.
@@ -36,10 +55,6 @@ Assembly Language at the University of California, Santa Cruz. In this
 “computer engineering 101” course, I restructured the curriculum and
 taught foundational concepts including binary, digital logic design,
 memory alignment, and assembly language.
-
-My favorite topic to teach was _data path_ where I guided students
-through how an assembly instruction breaks down into machine code and
-how those ones and zeros flow through the processor.
 
 This page contains the course material from that class to serve as a
 reference for anyone interested, and as an example of my work in
@@ -122,7 +137,7 @@ rows: list =\
     }
 
   , { 'heading'   : 'Notes 2c: Combinational Logic 3'
-    , 'desc'      : 'multiplexors, decoders, half adder, full adder, ripple-carry adder, ALU'
+    , 'desc'      : 'multiplexers, decoders, half adder, full adder, ripple-carry adder, ALU'
     , 'worksheet' : 'https://docs.google.com/document/d/16UiRg7d-cPHNblD39rClBkAHcE9duKxdpO069fMucKo/edit?usp=sharing'
     , 'pdf'       : '../../assets/comp-org-assets/pdf/worksheets__comp-org/notes02c_comb_logic_comp_org.pdf'
     }
@@ -294,14 +309,10 @@ for r in rows:
   html_parts.append(f"""
 <details><summary class="h3-mock">{r['heading']}</summary>
   <p>{r['desc']}</p>
-  <div><table class="pdf-link-table"><tr>
-    <td><a  class="flux-button _0" href="{r['worksheet']}">
-      Google Doc
-    </a></td>
-    <td><a  class="flux-button _0" href="{r['pdf']}">
-      PDF
-    </a></td>
-  </tr></table></div>
+  <div>
+    <a  class="flux-button _0" href="{r['worksheet']}">Google Doc </a>
+    <a  class="flux-button _0" href="{r['pdf']}">      PDF        </a>
+  </div>
   {supplement_list}
   <br>
 </details>
@@ -368,14 +379,10 @@ for assignment in extra_credit:
 <!--details><summary class="h3-mock">{assignment['name']}</summary-->
 <details><summary>{assignment['name']}</summary>
   <p>{assignment['desc']}</p>
-  <div><table class="pdf-link-table"><tr>
-    <td><a  class="flux-button _0" href="{assignment['gdoc']}">
-      Google Doc
-    </a></td>
-    <td><a  class="flux-button _0" href="{assignment['pdf']}">
-      PDF
-    </a></td>
-  </tr></table></div>
+  <div>
+    <a  class="flux-button _0" href="{assignment['gdoc']}">Google Doc</a>
+    <a  class="flux-button _0" href="{assignment['pdf']}"> PDF       </a>
+  </div>
 </details>
 """)
 

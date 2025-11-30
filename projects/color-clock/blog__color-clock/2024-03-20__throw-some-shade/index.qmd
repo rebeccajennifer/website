@@ -1,0 +1,64 @@
+---
+title       : Throw Some Shade
+description : >
+  We decided to extend the shade portion of the structure to give the
+  participant more space.
+date        : 2024-03-20
+image       : ./structure-v1-photo__2024-03-02.jpg
+categories  : [color-clock]
+draft       : false
+---
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
+## A Tight Fit
+
+In the previous construction design we had a simple lean-to structure where the participant would be sitting under the diagonally positioned shade panel. We mocked it up in the garage and noticed that the participant would be a little too cozy with the light display. We decided to create an extension with a roof-top to enable a greater appreciation for the piece.
+
+<figure>
+![](./structure-v1-photo_2024-03-02.jpg)
+<figcaption>
+The participant is sitting quite close to the light display in the original structural design.
+</figcaption>
+</figure>
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
+## The Rooftop Extension
+
+I don't have much experience with structural fabrication, so my construction lead sketched out this design of the rooftop extension.
+
+<figure>
+![](./structure-bo-hand-drawn.png)
+<figcaption>
+The rooftop extension enables the participant to sit further from the light.
+</figcaption>
+</figure>
+
+🌈
+
+Then I prettied it up and drafted a couple kind-of-but-not-exactly-to-scale isometric and side views.
+
+<figure>
+![](../../assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png)
+<figcaption>
+To provide scale, the human figure in the side view is approximately me-sized (around 5 ft tall). As for the light display, each ring's color corresponds to different time granularities, such as day, hour, and minute. The central light will be user-controllable.
+</figcaption>
+</figure>
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
+## Time Controller Development
+
+Regarding the software, I've been working on developing the time controller. This element enables the artist to designate the current time, which acts as the input for the RGB LED light display, mapping time to color.
+
+<figure>
+![](./time-display__2024-03-20.jpg)
+<figcaption>
+</figcaption>
+</figure>
+
+There's a lot left to do and we have about five months to complete this thing. But I know we'll make it happen 🤓
+
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

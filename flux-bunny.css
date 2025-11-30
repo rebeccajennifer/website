@@ -1,28 +1,35 @@
-/*____________________________________________________________________*/
-/*____________________________________________________________________*/
-/*       _   __   _   _ _   _   _   _         _                       */
-/*  |   |_| | _  | | | V | | | | / |_/ |_| | /                        */
-/*  |__ | | |__| |_| |   | |_| | \ |   | | | \_                       */
-/*   _  _         _ ___  _       _ ___   _                    / /     */
-/*  /  | | |\ |  \   |  | / | | /   |   \                    (^^)     */
-/*  \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o  */
-/*____________________________________________________________________*/
-/*____________________________________________________________________*/
-/*                                                                    */
-/*--------------------------------------------------------------------*/
-/*  Copyright 2025, Rebecca Rashkin                                   */
-/* -------------------------------                                    */
-/*  This code may be copied, redistributed, transformed, or built     */
-/*  upon in any format for educational, non-commercial purposes.      */
-/*                                                                    */
-/*  Please give me appropriate credit should you choose to use this   */
-/*  resource. Thank you :)                                            */
-/*--------------------------------------------------------------------*/
-/*                                                                    */
-/*____________________________________________________________________*/
-/*  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  */
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|______________________________________________________________________|
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS Stylesheet for website.
 /*____________________________________________________________________*/
 
+/*--------------------------------------------------------------------*/
+/* CONSTANTS
+/*--------------------------------------------------------------------*/
 :root
 {
   --flux-color-1  : #875f87;
@@ -109,6 +116,12 @@ h4 { margin-left: 0px;}
 /* navbar       - Whole navigation bar
 /* navbar-nav   - Container that holds nav links
 /* nav-link     - Each link in navbar
+/*--------------------------------------------------------------------*/
+
+span.menu-text
+{
+  font-variant    : small-caps;
+}
 
 /* Navigation bar */
 .navbar .navbar-nav .nav-link
@@ -233,25 +246,6 @@ a:hover   { font-weight  : bold; }
 a:active  { color        : var(--flux-color-2); }
 a:visited { color        : var(--flux-color-1); }
 
-.pdf-link-table
-{
-  width   : 100%;
-  border  : none;
-}
-
-.pdf-link-table td,
-pdf-link-table td tr
-{
-  border                      : none;
-  padding                     : 0;
-  box-shadow                  : none;
-}
-
-.pdf-link-table td:first-child
-{
-  width: 30%;
-}
-
 /*--------------------------------------------------------------------*/
 /* DIVIDER
 /*--------------------------------------------------------------------*/
@@ -332,7 +326,7 @@ details {
 
 .quarto-title-banner
 {
-  background-color  : var(--flux-color-3);
+  background-color  : var(--flux-color-2);
   color             : var(--flux-bg-norm);
   font-family       : var(--font-fam-header);
   padding           : 20px;
@@ -343,6 +337,15 @@ div.sourceCode code, pre
 {
   background-color  : var(--flux-bg-bold);
   border-radius     : 0px;
+}
+
+figcaption
+{
+  font-size         : var(--font-size-base);
+  color             : var(--flux-fg-bold);
+  text-align        : left;
+  margin-top        : 5px;
+  font-style        : italic;
 }
 
 /*pre

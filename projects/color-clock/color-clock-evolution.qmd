@@ -22,38 +22,22 @@
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
+<!--___________________________________________________________________|
+|   DESCRIPTION
+|   This file contains configuration information for the blog.
+|____________________________________________________________________-->
 
 ---
-title: Spoiler Alert!
-format: html
+title: "The Evolution of ColorClock"
+listing:
+  contents: blog__color-clock
+  type: grid
+  sort: "date desc"
+  categories: true
 ---
 
-This page describes how to reveal the answers in the worksheets for
-[Computer Systems and Assembly Language](./comp-org.qmd).
+Check out ColorClock development journey 🌈 ⏱️
 
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
-
-## Display Worksheet Answers
-
-The Computer Systems and Assembly Language worksheet answers are hidden
-in the Google Doc style Heading 4. Follow these instructions to view
-the hidden text.
-
-1. Make a copy of the worksheet and save to your Google Drive.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step1.png){fig-alt="Google Docs screenshot of file menu -> make a copy."}
-
-1. Select some answer text.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step2.png){fig-alt="Screenshot of selection of hidden white answer text."}
-
-1. Change the text color.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step3.png){fig-alt="Screenshot of text color selection."}
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step4.png){fig-alt="Screenshot of highlighted text changeed to pink."}
-
-1. While the text is selected, change the color for Heading 4 by
-   selecting `Update 'Heading 4' to match`.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step5.png){fig-alt="Screenshot of heading selection menu -> Heading 4 -> Update 'Heading 4' to match."}
-
-1. Now the answers are visible!
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step6.png){fig-alt="Screenshot of worksheet with previously hidden answers displayed in pink."}
+![](assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg)
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}

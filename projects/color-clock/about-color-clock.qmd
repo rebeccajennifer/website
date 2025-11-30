@@ -22,38 +22,46 @@
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
+<!--___________________________________________________________________|
+|   DESCRIPTION
+|   This file contains configuration information for the blog.
+|____________________________________________________________________-->
 
 ---
-title: Spoiler Alert!
-format: html
+title: "About ColorClock"
 ---
 
-This page describes how to reveal the answers in the worksheets for
-[Computer Systems and Assembly Language](./comp-org.qmd).
+<style>
+.flux-button._1       { width: 100%; }
+table td:first-child  { width:  50%; }
+</style>
+
+![](/projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
-## Display Worksheet Answers
+## What is it?
 
-The Computer Systems and Assembly Language worksheet answers are hidden
-in the Google Doc style Heading 4. Follow these instructions to view
-the hidden text.
+ColorClock is a decade-long passion project that combines art with
+engineering and color with time. Put simply, it's a
+clock that displays time through color instead of symbols.
+For me, it represents perseverance and pride, and stands as the most
+hard-earned engineering accomplishment I have taken from conception to
+design to full deployment.
 
-1. Make a copy of the worksheet and save to your Google Drive.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step1.png){fig-alt="Google Docs screenshot of file menu -> make a copy."}
+ColorClock V1 was an RGB LED art installation displayed at
+Burning Man 2024. It was a simple circular light display housed in a
+practical lean-to structure with a bench.
 
-1. Select some answer text.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step2.png){fig-alt="Screenshot of selection of hidden white answer text."}
 
-1. Change the text color.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step3.png){fig-alt="Screenshot of text color selection."}
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step4.png){fig-alt="Screenshot of highlighted text changeed to pink."}
-
-1. While the text is selected, change the color for Heading 4 by
-   selecting `Update 'Heading 4' to match`.
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step5.png){fig-alt="Screenshot of heading selection menu -> Heading 4 -> Update 'Heading 4' to match."}
-
-1. Now the answers are visible!
-![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step6.png){fig-alt="Screenshot of worksheet with previously hidden answers displayed in pink."}
+<table style="width: 100%"><tr>
+<td><a
+  href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"
+  class="flux-button _1">Source Code</a></td>
+<td><a
+  href="color-clock-evolution.html"
+  class="flux-button _1">Blog</a>
+</td>
+</tr></table>
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}

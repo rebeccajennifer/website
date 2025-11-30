@@ -1,0 +1,44 @@
+---
+title       : Arduino CLI Induced Flow
+description : >
+  Once upon a time I was intimidated by the command line. Today, I get
+  annoyed when I can't use Vim.
+date        : 2022-05-30
+image       : ./color-clock-progress-timer__2022-05-29.JPEG
+categories  : [color-clock]
+draft       : false
+---
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
+
+Progress is happening. In 2014, prior to becoming a software engineer, I started programming ColorClock using Processing to map the system time to a colored eclipse displayed on my computer screen. Six years later, in 2020, I dabbled in this project a little more to entertain myself during the early months of the pandemic. I cringed at my previous work as I refactored the code into functions. And today, I’m refactoring further, making the code more modular and porting it into C++ / Arduino.
+
+Since I picked up ColorClock again about a month ago (May 2022), I have been coding at work using Vim because it improves my workflow. My fingers never have to leave the keys so it's easier for me to become deeply immersed in the task at hand. But the Arduino IDE does not have a Vim extension. Going back to this coding environment was painful 😣
+
+The time had come to explore the Arduino Command Line Interface (CLI). I was holding back because though I had become proficient in command line computing, a part of me felt intimidated again.
+
+Despite my hesitation to explore the Arduino CLI, the drive to improve my development workflow motivated me to just RTFM. And so I did. And now I'm done with the Arduino IDE. Because the Arduino CLI is working 🌻beautifully🌻
+
+This past weekend I found my flow again. Now I can code, compile, and upload my program to the Arduino board without ever letting my fingers leave the keyboard 🥳
+
+<figure>
+
+{{< video https://www.youtube.com/embed/lFAEUV1nliQ >}}
+
+<figcaption>
+I've wired up the alphanumeric display and real time clock module and it's working!
+</figcaption>
+</figure>
+
+{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
+
+## Glossary
+
+Term | Description
+-|-
+CLI  | Command line interface
+IDE  | Integrated development environment
+RTFM | Read the **friendly** manual
+Vim  | A command line text editor with a steep learning curve that makes many people upset and can drastically improve your workflow if you are committed to practice
+
+{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
