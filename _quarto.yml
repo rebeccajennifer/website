@@ -68,7 +68,8 @@ website:
 
   page-footer:
     center: "©2025 Rebecca Jennifer Rashkin"
-    right:
+    left  : rebeccarashkin (at) gmail (dot) com
+    right :
       - icon: linkedin
         href: https://linkedin.com/in/rebeccajr
       - icon: github
