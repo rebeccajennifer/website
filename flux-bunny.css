@@ -219,6 +219,11 @@ span.menu-text
   background-color  : var(--flux-color-1);
 }
 
+.flux-button._2
+{
+  background-color  : var(--flux-color-3);
+}
+
 .flux-button._1
 {
   background-color  : var(--flux-color-2);
@@ -348,8 +353,39 @@ figcaption
   font-style        : italic;
 }
 
-/*pre
+/*--------------------------------------------------------------------*/
+/* TABLE OF CONTENTS
+/*--------------------------------------------------------------------*/
+
+#toc-title
 {
-/*  background-color  : var(--flux-bg-bold);
-/*  border-radius     : 10px;
+  font-family       : var(--font-fam-header);
+  font-size         : var(--font-size-h3);
+  color             : var(--flux-fg-norm);
+}
+
+/*
+#quarto-margin-sidebar a
+{
+  color             : var(--flux-color-3);
+}
+  */
+
+#quarto-margin-sidebar a:hover
+{
+  color             : var(--flux-color-1) !important;
+}
+
+#quarto-margin-sidebar a.active
+{
+  color             : var(--flux-color-2) !important;
+  font-style        : bold !important;
+  border            : none;
+}
+
+.nav-link.active
+{
+  color             : var(--flux-color-2) !important;
+  font-weight       : bold !important;
+  border            : none;
 }

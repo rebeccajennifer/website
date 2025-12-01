@@ -55,6 +55,12 @@ website:
           - text: "The Evolution of ColorClock"
             href: projects/color-clock/color-clock-evolution.qmd
 
+      - text: "The Book of Plans"
+        menu:
+          - text: "About The Book of Plans"
+            href: projects/the-book-of-plans/the-book-of-plans.qmd
+          - text: "How to Use The Book of Plans"
+            href: projects/the-book-of-plans/how-to-use.qmd
       - text: "Contact"
         href: contact.qmd
 

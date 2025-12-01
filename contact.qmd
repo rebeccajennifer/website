@@ -25,7 +25,6 @@
 
 ---
 title: Contact Me
-formal: html
 ---
 
 {{< include assets/ui-elements/contact-form.html >}}
