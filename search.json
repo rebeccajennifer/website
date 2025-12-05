@@ -504,18 +504,11 @@
     "text": "Weekly and Daily Logs\nThe weekly and daily logs are the core of the planner. Reflect weekly, plan ahead with your goals in mind, and use each day to restate your values, set priorities, and check in with your emotional state.\n\nWeekly Log\n\n\n\nIn the top-right corner, record the date of the week’s first day.\n\n\n\n\n\nDaily Log\n\n\n\nThe right side of the page allows space for reflection or notes."
   },
   {
-    "objectID": "projects/the-book-of-plans/how-to-use.html#nightly-log-optional",
-    "href": "projects/the-book-of-plans/how-to-use.html#nightly-log-optional",
+    "objectID": "projects/the-book-of-plans/how-to-use.html#optional-pages",
+    "href": "projects/the-book-of-plans/how-to-use.html#optional-pages",
     "title": "How to Use The Book of Plans",
-    "section": "Nightly Log (Optional)",
-    "text": "Nightly Log (Optional)\nIn this optional section, use the space to write a few sentences about what you did that day, how you felt, or anything else you want to track on a daily basis. I personally keep these pages in a separate notebook that stays on my bedside table.\n\n\n\nA few brief notes are enough; it doesn’t need to be detailed."
-  },
-  {
-    "objectID": "projects/the-book-of-plans/how-to-use.html#ace-exercises-optional",
-    "href": "projects/the-book-of-plans/how-to-use.html#ace-exercises-optional",
-    "title": "How to Use The Book of Plans",
-    "section": "ACE Exercises (Optional)",
-    "text": "ACE Exercises (Optional)\nThoughts and emotions can sometimes interfere with daily life and pull us away from our goals. ACE stands for Accept, Connect, and Re-Engage. It is a simple exercise that helps reduce the intensity of uncomfortable emotions and the dysregulation they can cause. This model is inspired by the work of Russ Harris and Anna Runkle. Use these pages whenever you feel your nervous system is becoming dysregulated.\n\n\n\nOne exercise for nervous system regulation is 5-4-3-2-1 Sense Awareness that can help us become grounded in the present."
+    "section": "Optional Pages",
+    "text": "Optional Pages\n\nNightly Log\nIn this optional section, use the space to write a few sentences about what you did that day, how you felt, or anything else you want to track on a daily basis. I personally keep these pages in a separate notebook that stays on my bedside table.\n\n\n\nA few brief notes are enough; it doesn’t need to be detailed.\n\n\n\n\n\n\n\n\nACE Exercises\nThoughts and emotions can sometimes interfere with daily life and pull us away from our goals. ACE stands for Accept, Connect, and Re-Engage. It is a simple exercise that helps reduce the intensity of uncomfortable emotions and the dysregulation they can cause. This model is inspired by the work of Russ Harris and Anna Runkle. Use these pages whenever you feel your nervous system is becoming dysregulated.\n\n\n\nThis printout gives an overview of the ACE method and how to use the worksheet.\n\n\n\n\n\n\nOne exercise for nervous system regulation is 5-4-3-2-1 Sense Awareness that can help us become grounded in the present."
   },
   {
     "objectID": "projects/the-book-of-plans/the-book-of-plans.html",
@@ -536,7 +529,7 @@
     "href": "projects/the-book-of-plans/the-book-of-plans.html#about-the-code",
     "title": "The Book of Plans",
     "section": "About the Code",
-    "text": "About the Code\nThe Book of Plans was created in Python using the modules svgwrite and PdfWriter. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.\nThe Source Code"
+    "text": "About the Code\nThe Book of Plans was created in Python using the modules svgwrite and PdfWriter. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.\nSource Code"
   },
   {
     "objectID": "projects/the-book-of-plans/assembly-instructions.html",
@@ -544,6 +537,27 @@
     "title": "How to Assemble The Book of Plans",
     "section": "",
     "text": "The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
+    "title": "How to Assemble The Book of Plans",
+    "section": "Required Tools",
+    "text": "Required Tools\nPaper cutter\n1/2 sheet 3 hole punch\n3-ring mini binder"
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#instructions",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#instructions",
+    "title": "How to Assemble The Book of Plans",
+    "section": "Instructions",
+    "text": "Instructions\n\nHole Punch Settings\nSet your holes to punch at the following measurements to fit in a 3-ring mini binder:\n\n\n\nGeneral Notes\n\nPrint, cut and stack each individual PDF separately to ensure proper page ordering.\nYou can mix single- and double-sided printing. I print everything single-sided except the nightly log, which I print double-sided. Do whatever works for you.\n\n\n\nSingle-Sided Assembly Instruction\n\nEach PDF should be printed with the following settings:\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\nfalse\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Take the stack on the left, and put it right on top of the stack on the right.\nHole punch the packet.\nInsert into binder.\n\n\n\nDouble-Sided Print Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\n\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\ntrue, set to flip on short edge &lt;- This will likely be different from the default print double-sided setting.\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Think of this as an open book. Take the left stack and fold it over the right stack like you are closing a book.\nHole punch the packet.\nInsert into binder."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
+    "title": "How to Assemble The Book of Plans",
+    "section": "The PDFs",
+    "text": "The PDFs\n\nPDF Descriptions\n\n\n\n\n\n\n\n\nFile Name\nPrint Quantity\nDescription\n\n\n\n\n__0__main-intr.pdf\nPrint one copy for the entire quarter.\nContains vision prompts, goal entries, calendar.\n\n\n__1__main-week.pdf\nPrint one copy per week, i.e. 12 copies total.\nContains\n\n\n__2__xtra-nite.pdf\nPrint as needed.\nEach side contains enough space for 1 week’s worth of entries\n\n\n__3__ace_-ref_.pdf\nPrint once.\nContains instructions for using the ACE Worksheets.\n\n\n__4__ace_-wksh.pdf\nPrint as needed.\nContains worksheets for the ACE exercise.\n\n\n\n\n\nSingle-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed single-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf\n\n\nDouble-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed double-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf"
   },
   {
     "objectID": "projects/color-clock/color-clock.html",
