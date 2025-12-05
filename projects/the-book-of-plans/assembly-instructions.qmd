@@ -33,7 +33,52 @@ ________________________________________________________________________
 title: How to Assemble The Book of Plans
 ---
 
+<style>
+    a.flux-button._2
+    {
+      font-family       : var(--font-fam-normal);
+      display           : block;
+      width             : fit-content;
+     }
+
+    a.flux-button._2 code
+    {
+      display           : inline;
+      font-family       : var(--font-fam-normal);
+      background-color  : transparent;
+     }
+</style>
+
 The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below.
 
+## The PDFs
 
+### PDF Descriptions
 
+File Name | Print Quantity | Description
+-|-|-
+`__0__main-intr.pdf` | Print one copy for the entire quarter.           | Contains vision prompts, goal entries, calendar.
+`__1__main-week.pdf` | Print one copy per week, i.e. 12 copies total.   | Contains
+`__2__xtra-nite.pdf` | Print as needed.                                 | Each side contains enough space for 1 week's worth of entries
+`__3__ace_-ref_.pdf` | Print once.                                      | Contains instructions for using the ACE Worksheets.
+`__4__ace_-wksh.pdf` | Print as needed.                                 | Contains worksheets for the ACE exercise.
+
+### Single-Sided PDFs
+
+This section contains links to the PDFs that are intended to be printed single-sided.
+
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/single-sided/pdf/__0__main-intr.pdf">`__0__main-intr.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/single-sided/pdf/__1__main-week.pdf">`__1__main-week.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/single-sided/pdf/__2__xtra-nite.pdf">`__2__xtra-nite.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/single-sided/pdf/__3__ace_-ref_.pdf">`__3__ace_-ref_.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/single-sided/pdf/__4__ace_-wksh.pdf">`__4__ace_-wksh.pdf`</a>
+
+### Double-Sided PDFs
+
+This section contains links to the PDFs that are intended to be printed double-sided.
+
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__0__main-intr.pdf">`__0__main-intr.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__1__main-week.pdf">`__1__main-week.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__2__xtra-nite.pdf">`__2__xtra-nite.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__3__ace_-ref_.pdf">`__3__ace_-ref_.pdf`</a>
+<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__4__ace_-wksh.pdf">`__4__ace_-wksh.pdf`</a>

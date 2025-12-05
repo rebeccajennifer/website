@@ -123,7 +123,9 @@ The right side of the page allows space for reflection or notes.
 
 {{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
-## Nightly Log (Optional)
+## Optional Pages
+
+### Nightly Log
 
 In this optional section, use the space to write a few sentences about what you did that day, how you felt, or anything else you want to track on a daily basis. I personally keep these pages in a separate notebook that stays on my bedside table.
 
@@ -137,19 +139,24 @@ A few brief notes are enough; it doesn't need to be detailed.
 {{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
 
-## ACE Exercises (Optional)
+### ACE Exercises
 
 Thoughts and emotions can sometimes interfere with daily life and pull us away from our goals. ACE stands for Accept, Connect, and Re-Engage. It is a simple exercise that helps reduce the intensity of uncomfortable emotions and the dysregulation they can cause. This model is inspired by the work of Russ Harris and Anna Runkle. Use these pages whenever you feel your nervous system is becoming dysregulated.
 
 <figure>
 ![](./ace-reference.png)
 <figcaption>
-One exercise for nervous system regulation is __5-4-3-2-1 Sense Awareness__ that can help us become grounded in the present.
+This printout gives an overview of the ACE method and how to use the worksheet.
 </figcaption>
 </figure>
 
+---
 
-
-
+<figure>
+![](./ace-worksheet.png)
+<figcaption>
+One exercise for nervous system regulation is __5-4-3-2-1 Sense Awareness__ that can help us become grounded in the present.
+</figcaption>
+</figure>
 
 {{< include ../../assets/ui-elements/section-divider-blu.html >}}
