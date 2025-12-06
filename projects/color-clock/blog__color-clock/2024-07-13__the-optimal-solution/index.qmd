@@ -10,12 +10,9 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 As a child, I could spend entire days engrossed in puzzles. My favorites were the Mind Benders series logic puzzles, where a set of clues were provided to determine matches with limited information, such as figuring out which child owned which pet. I found immense satisfaction in solving these problems and took comfort in the certainty that there was always one correct solution. My chosen career path reflects this passion for problem-solving. Today, the puzzles I tackle are far more complex, with numerous possible solutions, each varying in its degree of optimality.
 
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## The Circuit Board
 
@@ -48,8 +45,6 @@ This diagram illustrates the soldering layout primarily for the wires and female
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## The Box
 
 The control panel enclosure will house the participant-facing buttons in addition to the control electronics for the installation, i.e. the breadboard discussed earlier in this post. I was planning on modeling and 3D printing the enclosure, but now I am contemplating making it out of wood and simply printing an enclosure for the breadboard that will sit inside the box. With regards to the enclosure as a whole, there are a few mechanical factors to consider, like how it will be mounted and accessed from the outside in case of malfunction.
@@ -71,8 +66,6 @@ This is the initial 3D model I was planning on printing. The triangular holes in
 The little nubs at the bottom of the box are to stabilize the stand offs used to elevate the circuit board off the bottom of the box.
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## The Structure
 
@@ -103,8 +96,6 @@ Me, for scale.
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## TODOs For This Week
 
 - Solder circuit board
@@ -113,4 +104,3 @@ Me, for scale.
 
 ## 😬
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

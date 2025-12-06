@@ -8,8 +8,6 @@ categories  : [color-clock]
 draft       : true
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
-
 This diagram illustrates the first iteration of the design. The host computer is a Raspberry Pi which runs the code to interface with the peripheral devices. Descriptions of the components listed below.
 
 ![](./color-clock-block__2022-04.png)
@@ -36,4 +34,3 @@ The manual time set is a cluster of 4 buttons that allow the developer / artist 
 
 This is a set of (4) 14-segment LED displays used to display the time or other items that the developer might want to view. This display is intended to be displayed on the backside of the piece so it is not visible to the public.
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

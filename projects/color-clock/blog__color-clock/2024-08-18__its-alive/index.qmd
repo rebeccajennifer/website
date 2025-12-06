@@ -9,7 +9,6 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 <figure>
 ![](final-light-display.jpeg)
@@ -21,8 +20,6 @@ by the participant. This photo was taken at 9:09 AM. Don't mind the
 dead button LED. This will be fixed 😅
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## No Regrets
 
@@ -46,8 +43,6 @@ came to the rescue and discovered that it was just a grounding problem.
 Here is the final wiring of the circuit board. Isn't it beautiful? 🥰
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## We Did It!
 
@@ -101,8 +96,6 @@ display and manipulating the controls 🎮
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## The Final Touches
 
 This is our last weekend before we deliver and I'm thrilled that we
@@ -129,13 +122,10 @@ I reverted my software change and now it's working 🥳
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## It's Actually Happening!
 
 We leave in less than a week 😶
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 ## Slide Dump
 

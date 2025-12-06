@@ -30,6 +30,8 @@ _____________________________________________________________________-->
 
 ---
 title: Computer Systems and Assembly Language
+subtitle: >
+  Discover the magic of ones and zeros.
 ---
 
 <style>
@@ -44,10 +46,6 @@ title: Computer Systems and Assembly Language
   }
 }
 </style>
-
-Discover the magic of ones and zeros.
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 From 2018 to 2019, I had the joy of teaching Computer Systems and
 Assembly Language at the University of California, Santa Cruz. In this
@@ -321,9 +319,6 @@ for r in rows:
 display(HTML("".join(html_parts)))
 
 ```
-
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
-
 ### Spoiler Alert!
 
 How do I see the answers?

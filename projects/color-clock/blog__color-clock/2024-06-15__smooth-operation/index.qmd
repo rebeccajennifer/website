@@ -9,7 +9,6 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 ## IO Expander Analog Write Fails Me
 
@@ -34,8 +33,6 @@ The new multiplexer. I'll need to solder on the headers prior to testing.
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## 12V Level Shifter Works!
 
 In this project, an Arduino output pin provides up to 3.3V, insufficient for the 12V needed by the RGB LED strips. So we're using a level shifter to boost the voltage to 12V.
@@ -48,8 +45,6 @@ In recent testing, I connected the Arduino's analog output to the level shifter 
 The level shifter input pins are connected to the Arduino analog output pins and the level shifter output pins are connected to the RGB LED strips.
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Lesson Learned: Don't Use a Member Variable to Define a Global
 
@@ -75,8 +70,6 @@ float cc3_period = 60.0 / 3600.0;
 ```
 
 I'll probably create some `#defines` at the top of the file to keep it looking a little cleaner.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Smooth Transitions
 
@@ -126,13 +119,9 @@ Here, the colors are updated every millisecond. The transitions in this implemen
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## OS Reinstallation is Always an Option
 
 In the period of time that I started writing this post, I experienced an issue where the Ubuntu partition on my desktop decided not to connect to the internet. I struggled for a few days with all sorts of network settings before I realized it wasn't worth the trouble and just reinstalled Ubuntu in its entirety. As I was going through my whole new environment setup process, I documented most of what I did to streamline the next time I have to start over 😅
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## User Interface Software Design Begins!
 
@@ -154,4 +143,3 @@ The soldering work is not beautiful but it gets the job done.
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

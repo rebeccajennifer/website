@@ -32,11 +32,8 @@ ________________________________________________________________________
 ---
 title: How to Use The Book of Plans
 toc: true
+subtitle: How to fill out planner pages.
 ---
-
-Instructions for how to fill out each section of the planner.
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 ## Sections
 
@@ -54,8 +51,6 @@ This planner has four main sections and optional add-ons to help you practically
 1. Nightly log
 2. ACE exercise pages
 
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Vision
 
 This section includes prompts and free-write space to help you shape your vision over different time frames, along with a commitment to support your accountability.
@@ -63,39 +58,33 @@ This section includes prompts and free-write space to help you shape your vision
 Take your time. You might want to complete this section over several days of contemplation. These exercises help you surface what matters most and align your goals with those priorities.
 
 <figure>
-![](./year-vision.png)
+![](images__the-book-of-plans/year-vision.png)
 <figcaption>
 For this prompt, imagine what your ideal life could be in one year if you stick to your commitments.
 </figcaption>
 </figure>
-
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Goals
 
 After completing your responses to your vision, set up to four bold yet realistic goals for the quarter. How can you break down that goal into smaller targets? What are tangible outcomes of reaching the goal? What obstacles to follow through can you anticipate? How often can you commit to working on that goal? How will you celebrate?
 
 <figure>
-![](./goal.png)
+![](images__the-book-of-plans/goal.png)
 <figcaption>
 Think about steps you can take over the three months that will help you stay on track to reach your goal.
 </figcaption>
 </figure>
-
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Calendar
 
 Use the calendar section however it best supports you, whether for goal targets or noting important dates.
 
 <figure>
-![](./calendar.png)
+![](images__the-book-of-plans/calendar.png)
 <figcaption>
 The last page of the calendar section gives space to track dates that aren't in the time frame of this quarter, or other important dates you don't want to forget.
 </figcaption>
 </figure>
-
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Weekly and Daily Logs
 
@@ -104,7 +93,7 @@ The weekly and daily logs are the core of the planner. Reflect weekly, plan ahea
 ### Weekly Log
 
 <figure>
-![](./week-reflection-plan.png)
+![](images__the-book-of-plans/week-reflection-plan.png)
 <figcaption>
 In the top-right corner, record the date of the week’s first day.
 </figcaption>
@@ -115,13 +104,11 @@ In the top-right corner, record the date of the week’s first day.
 ### Daily Log
 
 <figure>
-![](./daily-log.png)
+![](images__the-book-of-plans/daily-log.png)
 <figcaption>
 The right side of the page allows space for reflection or notes.
 </figcaption>
 </figure>
-
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Optional Pages
 
@@ -130,13 +117,11 @@ The right side of the page allows space for reflection or notes.
 In this optional section, use the space to write a few sentences about what you did that day, how you felt, or anything else you want to track on a daily basis. I personally keep these pages in a separate notebook that stays on my bedside table.
 
 <figure>
-![](./nighty-reflection.png)
+![](images__the-book-of-plans/nighty-reflection.png)
 <figcaption>
 A few brief notes are enough; it doesn't need to be detailed.
 </figcaption>
 </figure>
-
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
 
 
 ### ACE Exercises
@@ -144,7 +129,7 @@ A few brief notes are enough; it doesn't need to be detailed.
 Thoughts and emotions can sometimes interfere with daily life and pull us away from our goals. ACE stands for Accept, Connect, and Re-Engage. It is a simple exercise that helps reduce the intensity of uncomfortable emotions and the dysregulation they can cause. This model is inspired by the work of Russ Harris and Anna Runkle. Use these pages whenever you feel your nervous system is becoming dysregulated.
 
 <figure>
-![](./ace-reference.png)
+![](images__the-book-of-plans/ace-reference.png)
 <figcaption>
 This printout gives an overview of the ACE method and how to use the worksheet.
 </figcaption>
@@ -153,7 +138,7 @@ This printout gives an overview of the ACE method and how to use the worksheet.
 ---
 
 <figure>
-![](./ace-worksheet.png)
+![](images__the-book-of-plans/ace-worksheet.png)
 <figcaption>
 One exercise for nervous system regulation is __5-4-3-2-1 Sense Awareness__ that can help us become grounded in the present.
 </figcaption>

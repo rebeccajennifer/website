@@ -9,7 +9,6 @@ image       : ./bo-router-plunge-base.JPEG
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 ## A Beautiful Breadboard
 
@@ -25,8 +24,6 @@ This to-scale-ish design contains all of the modules that will be present on the
 🌈
 
 To streamline the final phase of hardware testing and preempt the challenges of electronic troubleshooting, I found it important to meticulously design the layout of the prototyping breadboard. I started this layout by looking at the datasheets, obtaining the dimensions of each module, and drawing each component to scale. Then I decided it would be actually be more functional if I were using units of breadboard holes (approximately 0.1" between holes) instead of true dimensions. To determine the size represented on the diagram I placed each module on the breadboard and noted how many holes they covered and the positioning of all the pins. The next step is to actually wire this thing up and get to testing with the real LED light display 🙌
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Clock Crafting
 
@@ -48,8 +45,6 @@ The LEDs are glued to the inside of the pockets, and the colored light will be r
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## IO Expander Integration Trials
 
 In my last post, I was working on integrating the Arduino Nano ESP32 into the project. I successfully tested this board with the new RTC module and the new alphanumeric display 🤗 But then... I was in the process of testing the IO expander and ended up messing with my board configuration so much that I was no longer able to upload any code to the board 😦 Thankfully, ptillisch came to the rescue and resolved my issue 🥳
@@ -57,8 +52,6 @@ In my last post, I was working on integrating the Arduino Nano ESP32 into the pr
 Though I was able to talk to the Nano board, I was unable to include the library to interface with the IO expander 😭 I chased my tail for a couple of weeks before I decided to move in a different direction (see notes at the end of this post).
 
 The good news was that I could interface the IO expander with the MKR 1000 that I had been testing on before I got the Nano board. Sooooo I ordered two more Arduinos, the MKR 1010 (they no longer make the MKR 1000) and decided to move forward.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Can I Just Get Some Variable Voltage Control??
 
@@ -81,15 +74,11 @@ We spent the afternoon at a brewery where I performed my variable output voltage
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Wiring Matters
 
 The inconsistency between my findings and the documentation left me uneasy, so I went back to testing the IO expander with a minimal example. I knew my code was solid, so I double-checked the circuit wiring and sure enough, there was a mistake. After fixing it, I was able to see a variable output voltage on a multimeter using the analogWrite function using the IO expander 🎉 So now I'm back to the original plan of using the IO expander to control the lights, and the on-board GPIO for the digital inputs.
 
 The input values set by my program didn’t correlate as expected with the measured voltage with the multimeter, so it looks like I’ll need to write some calibration functions so I can programmatically compensate for hardware characteristics.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Moving Forward
 
@@ -100,8 +89,6 @@ Wire up the breadboard so beautifully depicted above.
 Characterize the RGB LED strip, so I can programmatically adjust for the non-linear relationship between the IO expander's output voltage and the visible color from the lights.
 
 We've got 2 1/2 months and counting... 😅
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Notes
 
@@ -131,5 +118,3 @@ According to my empirical testing, the following pins are available for variable
 \* I learned that the A0 pin provides a true analog output, not a PWM signal which is why it was listed on neither the website nor the datasheet as a PWM pin. This page describes the difference between analog and PWM output.
 
 \*\* Pins 9 and 12, as listed on the datasheet and website, respectively, did not produce variable output voltages in my experiment.
-
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

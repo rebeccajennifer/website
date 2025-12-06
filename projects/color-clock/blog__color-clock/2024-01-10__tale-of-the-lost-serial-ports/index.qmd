@@ -9,7 +9,6 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 [Windows Subsystem for Linux (WSL) 2](https://learn.microsoft.com/en-us/windows/wsl/install) cannot interface with the serial ports on my PC and it makes me sad. Because that means I can't use WSL for the one use case I reallllly want it for: programming an Arduino.
 
@@ -21,13 +20,9 @@ It took me hours to just to get compiling again - between dealing with Git issue
 
 I read somewhere that WSL doesn't play nice with the serial ports, but I was not deterred. Surely SOMEONE has been able to get WSL to communicate through serial? I was determined to find a way.
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## A Possible Solution?
 
 I learned about a third party program, [USBIPD](https://github.com/dorssel/usbipd-win) that would allow WSL to see my serial ports. And this was confirmed! I performed the commands on the PowerShell side (e.g. bind, attach) and then I saw my Arduino on the WSL side using lsusb!! But when when it was time to run the upload command my console spits out a no communication error.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## I Accept Defeat
 
@@ -43,8 +38,6 @@ Honestly, I'm  just happy to be working on a fun project again.
 
 ![](./vs-code-screenshot.png)
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## References
 
 [Arduino CLI](https://arduino.github.io/arduino-cli/0.35/)
@@ -53,6 +46,5 @@ Honestly, I'm  just happy to be working on a fun project again.
 [VS Code](https://code.visualstudio.com/)
 [WSL](https://learn.microsoft.com/en-us/windows/wsl/install)
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 
