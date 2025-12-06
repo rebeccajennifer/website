@@ -39,15 +39,6 @@ website:
   favicon: assets/icons/rabbit-face.png
   navbar:
     right:
-      - text: "Teaching"
-        menu:
-          - text: "How to Learn"
-            href: education/how-to-learn.qmd
-          - text: "Computer Systems and Assembly Course"
-            href: education/comp-org/comp-org.qmd
-          - text: How to View Worksheet Answers
-            href: education/comp-org/worksheet-answers.qmd
-
       - text: "ColorClock"
         menu:
           - text: "About ColorClock"
@@ -61,8 +52,22 @@ website:
             href: projects/the-book-of-plans/the-book-of-plans.qmd
           - text: "How to Use The Book of Plans"
             href: projects/the-book-of-plans/how-to-use.qmd
+          - text: "Planner Assembly Instructions"
+            href: projects/the-book-of-plans/assembly-instructions.qmd
+
+
+      - text: "Teaching"
+        menu:
+          - text: "How to Learn"
+            href: education/how-to-learn.qmd
+          - text: "Computer Systems and Assembly Course"
+            href: education/comp-org/comp-org.qmd
+          - text: How to View Worksheet Answers
+            href: education/comp-org/worksheet-answers.qmd
+
       - text: "Contact"
         href: contact.qmd
+
 
     tools:
       - icon: linkedin
