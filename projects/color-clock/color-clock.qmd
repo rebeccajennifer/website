@@ -39,8 +39,6 @@ listing:
 What time is it?
 Amber o'clock-ish(?)
 
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
-
 ## What is it?
 
 ColorClock is a decade-long passion project that combines art with
@@ -59,8 +57,6 @@ practical lean-to structure with a bench.
 <a
   href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"
   class="flux-button _1">ColorClock Source Code</a>
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 ## The Journey
 

@@ -26,6 +26,7 @@
 ---
 title: Salutations!
 format: html
+subtitle: My name is Rebecca.
 ---
 
 <style>
@@ -41,11 +42,8 @@ format: html
 }
 </style>
 
-My name is Rebecca.
 
 ![](assets/photos-general-assets/flux-grass-cropped-landscape.jpg)
-
-{{< include assets/ui-elements/section-divider-blu.html >}}
 
 ## Who I Am
 
@@ -63,6 +61,3 @@ favorite things are handstands and rabbits 🐰
   <a class="flux-button _1" href="/education/comp-org/comp-org.html">Education</a>
   <a class="flux-button _1" href="projects/color-clock/color-clock.html">Creativity</a>
 </div>
-
-{{< include assets/ui-elements/section-divider-blu.html >}}
-

@@ -143,5 +143,3 @@ This printout gives an overview of the ACE method and how to use the worksheet.
 One exercise for nervous system regulation is __5-4-3-2-1 Sense Awareness__ that can help us become grounded in the present.
 </figcaption>
 </figure>
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}

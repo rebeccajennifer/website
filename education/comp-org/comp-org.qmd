@@ -59,7 +59,6 @@ education, documentation, and curriculum design.
 
 ![](../../assets/comp-org-assets/img/timing-diagram-whiteboard.jpg){fig-alt="Photograph of whiteboard with a timing diagram."}
 
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 ## Worksheets
 
@@ -324,8 +323,6 @@ display(HTML("".join(html_parts)))
 How do I see the answers?
 <p><a  class="flux-button _0" href="worksheet-answers">Here You Go!</a></p>
 
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
-
 ## Extra Credit
 
 ```{python}
@@ -385,8 +382,6 @@ display(HTML("".join(html_parts)))
 
 ```
 
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
-
 ## Sample Exams
 
 ### Midterms
@@ -406,8 +401,6 @@ display(HTML("".join(html_parts)))
 [Winter 2019](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q1_wi_final_ce12.pdf)
 [Fall   2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q4_fa_final_ce12.pdf)
 [Summer 2018](../../assets/comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q3_su_final_ce12.pdf)
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 ## Resources
 
@@ -484,5 +477,3 @@ display(HTML("".join(html_parts)))
 [American Amateur Radio League (ARRL)](https://arrl.org)
 
 [Perceptual Noise Generator](https://mynoise.net/NoiseMachines/greyNoiseGenerator.php)
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}

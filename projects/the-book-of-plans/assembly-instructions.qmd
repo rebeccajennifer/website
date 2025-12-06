@@ -141,5 +141,3 @@ This section contains links to the PDFs that are intended to be printed double-s
 <a class="flux-button" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__2__xtra-nite.pdf">`__2__xtra-nite.pdf`</a>
 <a class="flux-button" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__3__ace_-ref_.pdf">`__3__ace_-ref_.pdf`</a>
 <a class="flux-button" href="https://github.com/rebeccajennifer/responsible-rabbit/blob/main/planner/layouts/double-sided/pdf/__4__ace_-wksh.pdf">`__4__ace_-wksh.pdf`</a>
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}

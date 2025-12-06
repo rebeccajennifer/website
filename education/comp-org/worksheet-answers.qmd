@@ -31,8 +31,6 @@ format: html
 This page describes how to reveal the answers in the worksheets for
 [Computer Systems and Assembly Language](./comp-org.qmd).
 
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
-
 ## Display Worksheet Answers
 
 The Computer Systems and Assembly Language worksheet answers are hidden
@@ -55,5 +53,3 @@ the hidden text.
 
 1. Now the answers are visible!
 ![](../../assets/comp-org-assets/img/display-wksht-answers/display-wksht-answers-step6.png){fig-alt="Screenshot of worksheet with previously hidden answers displayed in pink."}
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}

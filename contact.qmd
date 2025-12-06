@@ -25,6 +25,7 @@
 
 ---
 title: Contact Me
+subtitle: I'd love to hear from you!
 ---
 
 {{< include assets/ui-elements/contact-form.html >}}

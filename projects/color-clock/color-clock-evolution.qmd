@@ -29,6 +29,7 @@
 
 ---
 title: "The Evolution of ColorClock"
+subtitle: Check out the ColorClock development journey 🌈 ⏱️
 listing:
   contents: blog__color-clock
   type: grid
@@ -36,8 +37,5 @@ listing:
   categories: true
 ---
 
-Check out ColorClock development journey 🌈 ⏱️
 
 ![](assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg)
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
