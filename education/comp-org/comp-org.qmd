@@ -30,7 +30,6 @@ _____________________________________________________________________-->
 
 ---
 title: Computer Systems and Assembly Language
-format: html
 ---
 
 <style>
@@ -46,9 +45,9 @@ format: html
 }
 </style>
 
+Discover the magic of ones and zeros.
 
-I find magic in understanding a computer all the way
-down to its ones and zeros.
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 From 2018 to 2019, I had the joy of teaching Computer Systems and
 Assembly Language at the University of California, Santa Cruz. In this
@@ -491,4 +490,4 @@ display(HTML("".join(html_parts)))
 
 [Perceptual Noise Generator](https://mynoise.net/NoiseMachines/greyNoiseGenerator.php)
 
-
+{{< include ../../assets/ui-elements/section-divider-blu.html >}}
