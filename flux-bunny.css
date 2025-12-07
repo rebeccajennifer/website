@@ -429,6 +429,18 @@ details {
   margin-bottom     : var(--content-padding);
 }
 
+.quarto-title-banner.page-columns.page-full .quarto-title.column-body
+{
+  border-bottom     : none !important;
+}
+
+.quarto-title .description p
+{
+  color             : var(--flux-bg-norm);
+}
+
+
+
 div.sourceCode code, pre
 {
   background-color  : var(--flux-bg-bold);

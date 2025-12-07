@@ -82,7 +82,7 @@ of Stasi Silvares.
 <figure>
 ![](solar-panels__color-clock.jpeg)
 <figcaption>
-We'll be using solar to charge the batter that powers ColorClock ⚡️
+We'll be using solar to charge the battery that powers ColorClock ⚡️
 </figcaption>
 </figure>
 
