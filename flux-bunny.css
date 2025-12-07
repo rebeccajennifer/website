@@ -58,7 +58,7 @@
 
   --content-padding : 20px;
   --toc-link-padding:  8px;
-  --pg-padding      : 50px;
+  --pg-padding      : 40px;
 
   --flux_button_txt : var(--flux-bg-norm);
 
@@ -208,6 +208,7 @@ h4 { margin-left: 0px;}
 {
   padding-bottom  : var(--content-padding);
   border-bottom   : var(--content-border);
+  margin-bottom   : var(--pg-padding);
 }
 
 /*--------------------------------------------------------------------*/
