@@ -32,6 +32,7 @@ _____________________________________________________________________-->
 title: Computer Systems and Assembly Language
 subtitle: >
   Discover the magic of ones and zeros.
+toc: true
 ---
 
 <style>
@@ -47,10 +48,12 @@ subtitle: >
 }
 </style>
 
+## About This Page
+
 From 2018 to 2019, I had the joy of teaching Computer Systems and
 Assembly Language at the University of California, Santa Cruz. In this
-“computer engineering 101” course, I restructured the curriculum and
-taught foundational concepts including binary, digital logic design,
+“computer engineering 101” course, I restructured the course materials
+and taught foundational concepts including binary, digital logic design,
 memory alignment, and assembly language.
 
 This page contains the course material from that class to serve as a
