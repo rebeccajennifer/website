@@ -28,13 +28,14 @@ ________________________________________________________________________
     Steps on how to learn
 _____________________________________________________________________-->
 
-# How To Learn
-
-Show up.
-Do the things.
-Be consistent.
-
-{{< include ../assets/ui-elements/section-divider-blu.html >}}
+---
+title: How To Learn
+subtitle: >
+  Show up.
+  Do the things.
+  Be consistent.
+toc: true
+---
 
 ## Show Up
 
@@ -54,8 +55,6 @@ lecture, make sure to bring:
 ### Be Present
 
 Eliminate distractions by stashing your electronics.
-
-{{< include ../assets/ui-elements/section-divider-cya.html >}}
 
 ## Do The Things
 
@@ -91,8 +90,6 @@ If you feel that you've been "doing the things" and are not improving,
 _reflect_ upon the approach you are taking. Are you hitting roadblocks
 in your process? Talk to others and form a new plan.
 
-{{< include ../assets/ui-elements/section-divider-cya.html >}}
-
 ## Be Consistent
 
 The key to progression in any context is __repetition__ and consistency.
@@ -114,15 +111,11 @@ I highly suggest reading (or listening to)
 Reflect on the days where you feel that you fell short. Recognize what
 got in the way and come up with ways to avoid the obstacles.
 
-{{< include ../assets/ui-elements/section-divider-cya.html >}}
-
 ## Trust the Process
 
 It takes time to learn. Be kind to yourself and keep going. Prepare,
 show up, do the things. And read
 [Atomic Habits](https://jamesclear.com/atomic-habits) 😉
-
-{{< include ../assets/ui-elements/section-divider-blu.html >}}
 
 ### "We can determine how to be the masters of our habits so that our habits can be useful servants to us."
 
