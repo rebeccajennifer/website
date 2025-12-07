@@ -25,11 +25,10 @@
 
 ---
 title: Spoiler Alert!
-format: html
+subtitle:  >
+  Get the worksheet answers for
+  [Computer Systems and Assembly Language](./comp-org.qmd).
 ---
-
-This page describes how to reveal the answers in the worksheets for
-[Computer Systems and Assembly Language](./comp-org.qmd).
 
 ## Display Worksheet Answers
 
