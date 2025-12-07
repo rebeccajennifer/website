@@ -67,7 +67,7 @@
     "href": "education/how-to-learn.html",
     "title": "How To Learn",
     "section": "",
-    "text": "Show up. Do the things. Be consistent.\n\n\n\n\n\n\nA large part of making progress is just showing up – even if you don’t feel like it.\n\n\nSet yourself up for success by preparing yourself appropriately. For lecture, make sure to bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\n\n\n\nEliminate distractions by stashing your electronics.\n\n\n\n\n\n\n\n\ni.e. practice with intention.\n\n\nStudy with peers. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered. Talk to others.\n\n\n\nReview all your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture. Spending time to strengthen your knowledge foundation will serve you in completing the assignments.\n\n\n\nYou will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting assignments early enables you to catch these issues early on so you are not panicked at the 11th hour.\n\n\n\nRewrite the homework with different numbers. Solve this new version of the homework.\n\n\n\nIf you feel that you’ve been “doing the things” and are not improving, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others and form a new plan.\n\n\n\n\n\n\n\n\nThe key to progression in any context is repetition and consistency.\n\n\nIn order to progress, one needs to incorporate practice into their weekly schedule. Work on building habits for:\n\nPreparation\nShowing up\nPractice\n\nI highly suggest reading (or listening to) Atomic Habits by James Clear.\n\n\n\nReflect on the days where you feel that you fell short. Recognize what got in the way and come up with ways to avoid the obstacles.\n\n\n\n\n\n\n\n\nIt takes time to learn. Be kind to yourself and keep going. Prepare, show up, do the things. And read Atomic Habits 😉\n\n\n\n\n\n\n- John Templeton"
+    "text": "A large part of making progress is just showing up – even if you don’t feel like it.\n\n\nSet yourself up for success by preparing yourself appropriately. For lecture, make sure to bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\n\n\n\nEliminate distractions by stashing your electronics."
   },
   {
     "objectID": "education/how-to-learn.html#show-up",
@@ -80,22 +80,22 @@
     "objectID": "education/how-to-learn.html#do-the-things",
     "href": "education/how-to-learn.html#do-the-things",
     "title": "How To Learn",
-    "section": "",
-    "text": "i.e. practice with intention.\n\n\nStudy with peers. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered. Talk to others.\n\n\n\nReview all your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture. Spending time to strengthen your knowledge foundation will serve you in completing the assignments.\n\n\n\nYou will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting assignments early enables you to catch these issues early on so you are not panicked at the 11th hour.\n\n\n\nRewrite the homework with different numbers. Solve this new version of the homework.\n\n\n\nIf you feel that you’ve been “doing the things” and are not improving, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others and form a new plan."
+    "section": "Do The Things",
+    "text": "Do The Things\ni.e. practice with intention.\n\nMy Number #1 Tip\nStudy with peers. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered. Talk to others.\n\n\nReview Your Notes Every Day\nReview all your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture. Spending time to strengthen your knowledge foundation will serve you in completing the assignments.\n\n\nStart Assignments Early\nYou will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting assignments early enables you to catch these issues early on so you are not panicked at the 11th hour.\n\n\nMake Up Your Own Examples\nRewrite the homework with different numbers. Solve this new version of the homework.\n\n\nStill Stuck?\nIf you feel that you’ve been “doing the things” and are not improving, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others and form a new plan."
   },
   {
     "objectID": "education/how-to-learn.html#be-consistent",
     "href": "education/how-to-learn.html#be-consistent",
     "title": "How To Learn",
-    "section": "",
-    "text": "The key to progression in any context is repetition and consistency.\n\n\nIn order to progress, one needs to incorporate practice into their weekly schedule. Work on building habits for:\n\nPreparation\nShowing up\nPractice\n\nI highly suggest reading (or listening to) Atomic Habits by James Clear.\n\n\n\nReflect on the days where you feel that you fell short. Recognize what got in the way and come up with ways to avoid the obstacles."
+    "section": "Be Consistent",
+    "text": "Be Consistent\nThe key to progression in any context is repetition and consistency.\n\nBuild Habits\nIn order to progress, one needs to incorporate practice into their weekly schedule. Work on building habits for:\n\nPreparation\nShowing up\nPractice\n\nI highly suggest reading (or listening to) Atomic Habits by James Clear.\n\n\nAnticipate Obstacles\nReflect on the days where you feel that you fell short. Recognize what got in the way and come up with ways to avoid the obstacles."
   },
   {
     "objectID": "education/how-to-learn.html#trust-the-process",
     "href": "education/how-to-learn.html#trust-the-process",
     "title": "How To Learn",
-    "section": "",
-    "text": "It takes time to learn. Be kind to yourself and keep going. Prepare, show up, do the things. And read Atomic Habits 😉\n\n\n\n\n\n\n- John Templeton"
+    "section": "Trust the Process",
+    "text": "Trust the Process\nIt takes time to learn. Be kind to yourself and keep going. Prepare, show up, do the things. And read Atomic Habits 😉\n\n“We can determine how to be the masters of our habits so that our habits can be useful servants to us.”\n- John Templeton"
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html",
@@ -690,7 +690,7 @@
     "href": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#we-did-it",
     "title": "It’s Alive!",
     "section": "We Did It!",
-    "text": "We Did It!\nA couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫\nLast weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.\n\n\n\nI discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nBo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nWe’ll be using solar to charge the batter that powers ColorClock ⚡️\n\n\n🌈\n\n\n\nThe participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮"
+    "text": "We Did It!\nA couple months ago we decided to schedule a live demo as motivation to get the project finished a week before leaving. The looming date of the demo gave us the motivation to finish with exactly one weekend to spare to get ready 😵‍💫\nLast weekend was the demo and it was a success! After scrambling to get it all wired up (which involved an embarrassing number of alligator clips), I threw together a slide deck that I presented to kick off the event. I added some of the slides at the end of this post for your enjoyment.\n\n\n\nI discussed some of concepts of RGB LEDs, how a level shifter works, and explained the wiring of the circuit board. I was excited to play teacher again 👩‍🏫 Don’t mind our camping boxes and living room workbench – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nBo and friend discussing the meaning behind the colors – Photo courtesy of Stasi Silvares.\n\n\n🌈\n\n\n\nWe’ll be using solar to charge the battery that powers ColorClock ⚡️\n\n\n🌈\n\n\n\nThe participant will be able to sit on the bench while viewing the light display and manipulating the controls 🎮"
   },
   {
     "objectID": "projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html#the-final-touches",
@@ -900,14 +900,14 @@
     "href": "education/comp-org/worksheet-answers.html",
     "title": "Spoiler Alert!",
     "section": "",
-    "text": "This page describes how to reveal the answers in the worksheets for Computer Systems and Assembly Language."
+    "text": "The Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
   },
   {
     "objectID": "education/comp-org/worksheet-answers.html#display-worksheet-answers",
     "href": "education/comp-org/worksheet-answers.html#display-worksheet-answers",
     "title": "Spoiler Alert!",
-    "section": "Display Worksheet Answers",
-    "text": "Display Worksheet Answers\nThe Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
+    "section": "",
+    "text": "The Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!"
   },
   {
     "objectID": "index.html#who-i-am",
