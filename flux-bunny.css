@@ -62,9 +62,11 @@
 
   --flux_button_txt : var(--flux-bg-norm);
 
-  --content-border  : 8px solid var(--flux-color-3);
-  --h2-border       : 4px solid var(--flux-color-2);
-  --h3-border       : 1px solid var(--flux-bg-bold);
+  --site-title-brdr : 16px solid var(--flux-color-3);
+
+  --content-border  :  8px solid var(--flux-color-3);
+  --h2-border       :  4px solid var(--flux-color-2);
+  --h3-border       :  1px solid var(--flux-bg-bold);
 
   --size-base       : clamp(16px, 1vw   + 0.5rem, 20px);
   --size-site-title : clamp(48px, 4vw   + 1rem,   60px);
@@ -112,9 +114,9 @@ h1, h2, h3, h4, .h1-mock
 
 h1
 {
-  font-size       : var(--size-h1);
-  color           : var(--flux-color-2);
-  font-variant    : small-caps;
+  font-size     : var(--size-h1);
+  color         : var(--flux-color-2);
+  font-variant  : small-caps;
 }
 
 .h1-mock
@@ -141,7 +143,7 @@ h3
   color         : var(--flux-fg-bold);
   padding-top   : var(--content-padding);
   border-top    : var(--h3-border);
-  font-variant    : small-caps;
+  font-variant  : small-caps;
 }
 
 /*--------------------------------------------------------------------*/
@@ -165,7 +167,7 @@ h3
 
 #quarto-margin-sidebar a:hover
 {
-  color             : var(--flux-color-2) !important;
+  color         : var(--flux-color-2) !important;
 }
 
 #quarto-margin-sidebar #TOC .nav-link
@@ -175,16 +177,15 @@ h3
 
 #quarto-margin-sidebar #TOC .nav-link.active
 {
-  color             : var(--flux-color-1) !important;
-  font-weight       : bold !important;
-  border            : none;
+  color         : var(--flux-color-1) !important;
+  font-weight   : bold !important;
+  border        : none;
 }
 
 /* Keep the Quarto margin sidebar TOC fully expanded */
 #quarto-margin-sidebar #TOC .collapse {
   display: block;
 }
-
 
 /* Top level link in TOC */
 #quarto-margin-sidebar #TOC > ul > li:not(:has(ul)) > a.nav-link,
@@ -230,6 +231,13 @@ h4 { margin-left: 0px;}
   padding-bottom  : var(--content-padding);
   border-bottom   : var(--content-border);
   margin-bottom   : var(--pg-padding);
+}
+
+.flux-subtitle
+{
+  font-size       : var(--size-h4);
+  color           : var(--flux-fg-bold);
+  font-family     : var(--font-fam-header);
 }
 
 /*--------------------------------------------------------------------*/
@@ -383,11 +391,8 @@ main
 }
 
 /* Hyperlinks */
-/*
-main a         { color        : var(--flux-color-3); }
-*/
 a         { color        : var(--flux-color-3); }
-a:hover   { font-weight  : bold; }
+a:hover   { font-weight  : bold;                }
 a:active  { color        : var(--flux-color-2); }
 a:visited { color        : var(--flux-color-1); }
 
@@ -397,11 +402,21 @@ a:visited { color        : var(--flux-color-1); }
   width: 100%;
 }
 
+/*--------------------------------------------------------------------*/
+/* CODE BLOCKS
+/*--------------------------------------------------------------------*/
+
 /* Inline Code Blocks */
 code
 {
   color             : var(--flux-color-3);
   background-color  : var(--flux-bg-bold);
+}
+
+div.sourceCode code, pre
+{
+  background-color  : var(--flux-bg-bold);
+  border-radius     : 0px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -459,14 +474,6 @@ details {
 .quarto-title .description p
 {
   color             : var(--flux-bg-norm);
-}
-
-
-
-div.sourceCode code, pre
-{
-  background-color  : var(--flux-bg-bold);
-  border-radius     : 0px;
 }
 
 figcaption

@@ -24,9 +24,11 @@
 |____________________________________________________________________-->
 
 <!--
+---
 title: Salutations!
 format: html
 subtitle: My name is Rebecca.
+---
 -->
 
 <style>
@@ -43,7 +45,7 @@ subtitle: My name is Rebecca.
 
 .grid {
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 1fr 2fr;
   align-items: start;
 }
 div{vertical-align: top;}
@@ -51,8 +53,20 @@ div{vertical-align: top;}
 .site-title-container
 {
   width           : 100%;
-  border-bottom   : var(--content-border);
-  border-top      : var(--content-border);
+  border-bottom   : var(--site-title-brdr);
+}
+
+/*--------------------------------------------------------------------*/
+/* Make site title grid flush with top of page
+/*--------------------------------------------------------------------*/
+#title-block-header { margin  : 0px; }
+#quarto-content>*   { padding : 0px;}
+.content            { margin  : 0px;}
+/*--------------------------------------------------------------------*/
+
+main
+{
+  border-bottom: none;
 }
 
 </style>
@@ -71,12 +85,11 @@ div{vertical-align: top;}
   ">
 
   <p class="h1-mock" style="border: none; padding-top: 0px; text-align: center;">Salutations!</p>
-  <br>
-  <p style="text-align: center;">My name is Rebecca.</p>
+  <p class="flux-subtitle">My name is Rebecca.</p>
   </div>
   <div>
   <img
-      src="assets/photos-general-assets/flux-grass-cropped-landscape.jpg"
+      src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg"
       style="
         width : 100%;
       ">
@@ -85,7 +98,7 @@ div{vertical-align: top;}
 :::
 
 ## Who I Am
-  I’m a software engineer who values clean code, workflow efficiency, and clear documentation. I’m also an educator who enjoys sharing my knowledge of computer engineering and movement, two disciplines that bring me joy in different ways. I find satisfaction in lifting others up and leaving every space I occupy better than I found it. My favorite things are coding, handstands, and rabbits 🐰
+  I’m a software engineer who values clean code, workflow efficiency, and clear documentation. I’m also an educator and enjoy sharing my knowledge of computer engineering and movement, two areas that bring me joy. I find satisfaction in lifting others up and leaving every space I occupy better than I found it. My favorite things are coding, handstands, and rabbits 🐰
 
 ## What I Care About
 
