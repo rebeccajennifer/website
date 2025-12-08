@@ -23,11 +23,11 @@
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 
----
+<!--
 title: Salutations!
 format: html
 subtitle: My name is Rebecca.
----
+-->
 
 <style>
 .flux-button
@@ -40,18 +40,52 @@ subtitle: My name is Rebecca.
     width: 40%;
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  align-items: start;
+}
+div{vertical-align: top;}
+
+.site-title-container
+{
+  width           : 100%;
+  border-bottom   : var(--content-border);
+  border-top      : var(--content-border);
+}
+
 </style>
 
+::: {.full-bleed}
+<div
+  class="grid site-title-container"
+>
+  <div
+    style="
+      display         : flex;
+      flex-direction  : column;
+      align-items     : center;
+      height          : 100%;
+      justify-content : center;
+  ">
 
-![](assets/photos-general-assets/flux-grass-cropped-landscape.jpg)
+  <p class="h1-mock" style="border: none; padding-top: 0px; text-align: center;">Salutations!</p>
+  <br>
+  <p style="text-align: center;">My name is Rebecca.</p>
+  </div>
+  <div>
+  <img
+      src="assets/photos-general-assets/flux-grass-cropped-landscape.jpg"
+      style="
+        width : 100%;
+      ">
+  </div>
+</div>
+:::
 
 ## Who I Am
-
-I am a software engineer and movement enthusiast, but most of all, an educator.
-I am passionate about sharing my knowledge, whether it be about
-computers or movement. I find satisfaction in lifting others up and
-leaving every space I occupy in a better state than I found it. My two
-favorite things are handstands and rabbits 🐰
+  I’m a software engineer who values clean code, workflow efficiency, and clear documentation. I’m also an educator who enjoys sharing my knowledge of computer engineering and movement, two disciplines that bring me joy in different ways. I find satisfaction in lifting others up and leaving every space I occupy better than I found it. My favorite things are coding, handstands, and rabbits 🐰
 
 ## What I Care About
 

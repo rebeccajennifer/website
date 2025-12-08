@@ -67,6 +67,7 @@
   --h3-border       : 1px solid var(--flux-bg-bold);
 
   --size-base       : clamp(16px, 1vw   + 0.5rem, 20px);
+  --size-site-title : clamp(48px, 4vw   + 1rem,   60px);
   --size-h1         : clamp(28px, 4vw   + 1rem,   48px);
   --size-h2         : clamp(24px, 3vw   + 0.8rem, 36px);
   --size-h3         : clamp(20px, 2vw   + 0.6rem, 28px);
@@ -90,10 +91,21 @@ body
 }
 
 /*--------------------------------------------------------------------*/
+/* FULL WIDTH ELEMENTS
+/*--------------------------------------------------------------------*/
+.full-bleed
+{
+  width       : 100vw;
+  /* Adjust for the center justification of quarto content */
+  margin-left : 50%;
+  transform   : translateX(-50%);
+}
+
+/*--------------------------------------------------------------------*/
 /* HEADINGS
 /*--------------------------------------------------------------------*/
 
-h1, h2, h3, h4
+h1, h2, h3, h4, .h1-mock
 {
   font-family: var(--font-fam-header);
 }
@@ -103,6 +115,15 @@ h1
   font-size       : var(--size-h1);
   color           : var(--flux-color-2);
   font-variant    : small-caps;
+}
+
+.h1-mock
+{
+  font-family   : var(--font-fam-header);
+  font-size     : var(--size-site-title);
+  color         : var(--flux-color-2);
+  font-weight   : bold;
+  font-variant  : small-caps;
 }
 
 h2
