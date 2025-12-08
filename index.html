@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Salutations! – Rebecca Jennifer Rashkin</title>
+<title>Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -166,26 +166,9 @@ ul.task-list li input[type="checkbox"] {
 <!-- margin-sidebar -->
     
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Salutations!</h1>
-<p class="subtitle lead">My name is Rebecca.</p>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"></header>
 
 
-
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
-
-
-</header>
 
 
 <!--___________________________________________________________________|
@@ -212,6 +195,13 @@ ul.task-list li input[type="checkbox"] {
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
+<!--
+---
+title: Salutations!
+format: html
+subtitle: My name is Rebecca.
+---
+-->
 <style>
 .flux-button
 {
@@ -223,11 +213,60 @@ ul.task-list li input[type="checkbox"] {
     width: 40%;
   }
 }
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 2fr;
+  align-items: start;
+}
+div{vertical-align: top;}
+
+.site-title-container
+{
+  width           : 100%;
+  border-bottom   : var(--site-title-brdr);
+}
+
+/*--------------------------------------------------------------------*/
+/* Make site title grid flush with top of page
+/*--------------------------------------------------------------------*/
+#title-block-header { margin  : 0px; }
+#quarto-content>*   { padding : 0px;}
+.content            { margin  : 0px;}
+/*--------------------------------------------------------------------*/
+
+main
+{
+  border-bottom: none;
+}
+
 </style>
-<p><img src="assets/photos-general-assets/flux-grass-cropped-landscape.jpg" class="img-fluid"></p>
+<div class="full-bleed">
+<div class="grid site-title-container">
+<div style="
+      display         : flex;
+      flex-direction  : column;
+      align-items     : center;
+      height          : 100%;
+      justify-content : center;
+  ">
+<p class="h1-mock" style="border: none; padding-top: 0px; text-align: center;">
+Salutations!
+</p>
+<p class="flux-subtitle">
+My name is Rebecca.
+</p>
+</div>
+<div>
+<img src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg" style="
+        width : 100%;
+      ">
+</div>
+</div>
+</div>
 <section id="who-i-am" class="level2">
 <h2 class="anchored" data-anchor-id="who-i-am">Who I Am</h2>
-<p>I am a software engineer and movement enthusiast, but most of all, an educator. I am passionate about sharing my knowledge, whether it be about computers or movement. I find satisfaction in lifting others up and leaving every space I occupy in a better state than I found it. My two favorite things are handstands and rabbits 🐰</p>
+<p>I’m a software engineer who values clean code, workflow efficiency, and clear documentation. I’m also an educator and enjoy sharing my knowledge of computer engineering and movement, two areas that bring me joy. I find satisfaction in lifting others up and leaving every space I occupy better than I found it. My favorite things are coding, handstands, and rabbits 🐰</p>
 </section>
 <section id="what-i-care-about" class="level2">
 <h2 class="anchored" data-anchor-id="what-i-care-about">What I Care About</h2>
