@@ -329,76 +329,6 @@
     "text": "Back In Development\n\n\n\ncolor-clock\n\ntesting\n\n\n\nLeveling up ColorClock with testing, tooling, and better software design.\n\n\n\nRebecca Jennifer Rashkin\n\n\nFeb 8, 2025\n\n\n\n\n\n\n\n\n\n\n\n\n\nWe Did It\n\n\n\ncolor-clock\n\n\n\nTen years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅\n\n\n\nRebecca Jennifer Rashkin\n\n\nSep 4, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nIt’s Alive!\n\n\n\ncolor-clock\n\n\n\nOur scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 17, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nMind Your Parens\n\n\n\ncolor-clock\n\n\n\nMy lesson on why you should always use parenthesis in preprocessor directives.\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 16, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nThe Optimal Solution\n\n\n\ncolor-clock\n\n\n\nThis week I contemplated the optimal solution for the circuit board layout.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJul 13, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAnother Futile Effort\n\n\n\ncolor-clock\n\n\n\nMy slow burn realization that I won’t be able to use a multiplexer as an IO expander for RGB output.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJun 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nSmooth Operation\n\n\n\ncolor-clock\n\n\n\nMy experiments with an IO expander, level shifter, and a lesson learned.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJun 15, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nPersistence Makes Progress\n\n\n\ncolor-clock\n\n\n\n\n\n\n\nRebecca Jennifer Rashkin\n\n\nMay 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nGoodbye Windows\n\n\n\ncolor-clock\n\n\n\nA mystery solved, a Linux partition, and we’re officially listed!\n\n\n\nRebecca Jennifer Rashkin\n\n\nMay 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nBuild Flags? Please?\n\n\n\ncolor-clock\n\n\n\nEvery software hurdle feels like an epic journey. My latest challenge was learning how to set build flags.\n\n\n\nRebecca Jennifer Rashkin\n\n\nApr 12, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nThrow Some Shade\n\n\n\ncolor-clock\n\n\n\nWe decided to extend the shade portion of the structure to give the participant more space.\n\n\n\nRebecca Jennifer Rashkin\n\n\nMar 20, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nNavigating Vision vs Feasibility\n\n\n\ncolor-clock\n\n\n\nFinding the balance between artistic vision and feasibility of execution for the user interface.\n\n\n\nRebecca Jennifer Rashkin\n\n\nFeb 23, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nAn Iterative Approach\n\n\n\ncolor-clock\n\n\n\nMy multi-stage approach to development.\n\n\n\nRebecca Jennifer Rashkin\n\n\nFeb 3, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nColorClock Design is Shaping Up\n\n\n\ncolor-clock\n\n\n\nAfter a weekend of rapid fire brainstorming discussions, we have decided on an overall physical design of the project.\n\n\n\nRebecca Jennifer Rashkin\n\n\nJan 28, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nA Tale of the Lost Serial Ports, and the Linux Environment that Could Have Been\n\n\n\ncolor-clock\n\n\n\nWindows Subsystem for Linux 2 cannot interface with my computer’s serial ports and it makes me very sad 😭\n\n\n\nRebecca Jennifer Rashkin\n\n\nJan 10, 2024\n\n\n\n\n\n\n\n\n\n\n\n\n\nTest Early. Test Often. Refactor if Necessary.\n\n\n\ncolor-clock\n\n\n\nI’m learning the importance of incremental development.\n\n\n\nRebecca Jennifer Rashkin\n\n\nAug 6, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nArduino CLI Induced Flow\n\n\n\ncolor-clock\n\n\n\nOnce upon a time I was intimidated by the command line. Today, I get annoyed when I can’t use Vim.\n\n\n\nRebecca Jennifer Rashkin\n\n\nMay 30, 2022\n\n\n\n\n\n\n\n\n\n\n\n\n\nGetting Started? Just Show Up\n\n\n\ncolor-clock\n\n\n\nWhen starting out, avoid getting caught up in the details of implementation, and instead invest your energy in preparing to show up.\n\n\n\nRebecca Jennifer Rashkin\n\n\nMay 15, 2022\n\n\n\n\n\n\nNo matching items"
   },
   {
-    "objectID": "projects/color-clock/color-clock.html",
-    "href": "projects/color-clock/color-clock.html",
-    "title": "ColorClock",
-    "section": "",
-    "text": "What time is it? Amber o’clock-ish(?)"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html#what-is-it",
-    "href": "projects/color-clock/color-clock.html#what-is-it",
-    "title": "ColorClock",
-    "section": "What is it?",
-    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I had taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\nColorClock Source Code"
-  },
-  {
-    "objectID": "projects/color-clock/color-clock.html#the-journey",
-    "href": "projects/color-clock/color-clock.html#the-journey",
-    "title": "ColorClock",
-    "section": "The Journey",
-    "text": "The Journey\nTake a look at my blog to see the evolution of ColorClock."
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html",
-    "href": "projects/the-book-of-plans/assembly-instructions.html",
-    "title": "How to Assemble The Book of Plans",
-    "section": "",
-    "text": "The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below.\nThese steps are admittedly tedious. I can print and prepare the pages for you and mail them for a fee. Contact me if you’d like to arrange this."
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
-    "href": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
-    "title": "How to Assemble The Book of Plans",
-    "section": "Required Tools",
-    "text": "Required Tools\nPaper cutter\n1/2 sheet 3 hole punch\n3-ring mini binder\n\nNote\nThese products are just examples of tools you can use to assemble The Book of Plans. I’m not an Amazon affiliate and don’t earn anything from these links."
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html#instructions",
-    "href": "projects/the-book-of-plans/assembly-instructions.html#instructions",
-    "title": "How to Assemble The Book of Plans",
-    "section": "Instructions",
-    "text": "Instructions\n\nHole Punch Settings\nSet your holes to punch at the following measurements to fit in a 3-ring mini binder:\n\n\n\nGeneral Notes\n\nPrint, cut and stack each individual PDF separately to ensure proper page ordering.\nYou can mix single- and double-sided printing. I print everything single-sided except the nightly log, which I print double-sided. Do whatever works for you.\n\n\n\nSingle-Sided Assembly Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\nfalse\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Take the stack on the left, and put it right on top of the stack on the right.\nHole punch the packet.\nInsert into binder.\n\n\n\nDouble-Sided Print Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\n\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\ntrue, set to flip on short edge &lt;- This will likely be different from the default print double-sided setting.\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Think of this as an open book. Take the left stack and fold it over the right stack like you are closing a book.\nHole punch the packet.\nInsert into binder."
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
-    "href": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
-    "title": "How to Assemble The Book of Plans",
-    "section": "The PDFs",
-    "text": "The PDFs\n\nPDF Descriptions\n\n\n\n\n\n\n\n\nFile Name\nPrint Quantity\nDescription\n\n\n\n\n__0__main-intr.pdf\nPrint one copy for the entire quarter.\nContains vision prompts, goal entries, calendar.\n\n\n__1__main-week.pdf\nPrint one copy per week, i.e. 12 copies total.\nContains one weekly log and seven daily logs.\n\n\n__2__xtra-nite.pdf\nPrint as needed.\nEach page contains enough space for one week’s worth of entries.\n\n\n__3__ace_-ref_.pdf\nPrint once.\nContains instructions for using the ACE Worksheets.\n\n\n__4__ace_-wksh.pdf\nPrint as needed.\nContains worksheets for the ACE exercise.\n\n\n\n\n\nSingle-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed single-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf\n\n\nDouble-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed double-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf"
-  },
-  {
-    "objectID": "projects/the-book-of-plans/the-book-of-plans.html",
-    "href": "projects/the-book-of-plans/the-book-of-plans.html",
-    "title": "The Book of Plans",
-    "section": "",
-    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder. Assembly instructions are provided here.\n\n\nThree months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.\n\n\n\nHere is a sample layout of one of the pages."
-  },
-  {
-    "objectID": "projects/the-book-of-plans/the-book-of-plans.html#about-the-book-of-plans",
-    "href": "projects/the-book-of-plans/the-book-of-plans.html#about-the-book-of-plans",
-    "title": "The Book of Plans",
-    "section": "",
-    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder. Assembly instructions are provided here.\n\n\nThree months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.\n\n\n\nHere is a sample layout of one of the pages."
-  },
-  {
-    "objectID": "projects/the-book-of-plans/the-book-of-plans.html#about-the-code",
-    "href": "projects/the-book-of-plans/the-book-of-plans.html#about-the-code",
-    "title": "The Book of Plans",
-    "section": "About the Code",
-    "text": "About the Code\nThe Book of Plans was created in Python using the modules svgwrite and PdfWriter. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.\nSource Code"
-  },
-  {
     "objectID": "projects/the-book-of-plans/how-to-use.html",
     "href": "projects/the-book-of-plans/how-to-use.html",
     "title": "How to Use The Book of Plans",
@@ -446,6 +376,55 @@
     "title": "How to Use The Book of Plans",
     "section": "Optional Pages",
     "text": "Optional Pages\n\nNightly Log\nIn this optional section, use the space to write a few sentences about what you did that day, how you felt, or anything else you want to track on a daily basis. I personally keep these pages in a separate notebook that stays on my bedside table.\n\n\n\nA few brief notes are enough; it doesn’t need to be detailed.\n\n\n\n\nACE Exercises\nThoughts and emotions can sometimes interfere with daily life and pull us away from our goals. ACE stands for Accept, Connect, and Re-Engage. It is a simple exercise that helps reduce the intensity of uncomfortable emotions and the dysregulation they can cause. This model is inspired by the work of Russ Harris and Anna Runkle. Use these pages whenever you feel your nervous system is becoming dysregulated.\n\n\n\nThis printout gives an overview of the ACE method and how to use the worksheet.\n\n\n\n\n\n\nOne exercise for nervous system regulation is 5-4-3-2-1 Sense Awareness that can help us become grounded in the present."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/the-book-of-plans.html",
+    "href": "projects/the-book-of-plans/the-book-of-plans.html",
+    "title": "The Book of Plans",
+    "section": "",
+    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder. Assembly instructions are provided here.\n\n\nThree months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.\n\n\n\nHere is a sample layout of one of the pages."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/the-book-of-plans.html#about-the-book-of-plans",
+    "href": "projects/the-book-of-plans/the-book-of-plans.html#about-the-book-of-plans",
+    "title": "The Book of Plans",
+    "section": "",
+    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder. Assembly instructions are provided here.\n\n\nThree months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.\n\n\n\nHere is a sample layout of one of the pages."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/the-book-of-plans.html#about-the-code",
+    "href": "projects/the-book-of-plans/the-book-of-plans.html#about-the-code",
+    "title": "The Book of Plans",
+    "section": "About the Code",
+    "text": "About the Code\nThe Book of Plans was created in Python using the modules svgwrite and PdfWriter. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.\nSource Code"
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html",
+    "href": "projects/the-book-of-plans/assembly-instructions.html",
+    "title": "How to Assemble The Book of Plans",
+    "section": "",
+    "text": "The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below.\nThese steps are admittedly tedious. I can print and prepare the pages for you and mail them for a fee. Contact me if you’d like to arrange this."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
+    "title": "How to Assemble The Book of Plans",
+    "section": "Required Tools",
+    "text": "Required Tools\nPaper cutter\n1/2 sheet 3 hole punch\n3-ring mini binder\n\nNote\nThese products are just examples of tools you can use to assemble The Book of Plans. I’m not an Amazon affiliate and don’t earn anything from these links."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#instructions",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#instructions",
+    "title": "How to Assemble The Book of Plans",
+    "section": "Instructions",
+    "text": "Instructions\n\nHole Punch Settings\nSet your holes to punch at the following measurements to fit in a 3-ring mini binder:\n\n\n\nGeneral Notes\n\nPrint, cut and stack each individual PDF separately to ensure proper page ordering.\nYou can mix single- and double-sided printing. I print everything single-sided except the nightly log, which I print double-sided. Do whatever works for you.\n\n\n\nSingle-Sided Assembly Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\nfalse\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Take the stack on the left, and put it right on top of the stack on the right.\nHole punch the packet.\nInsert into binder.\n\n\n\nDouble-Sided Print Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\n\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\ntrue, set to flip on short edge &lt;- This will likely be different from the default print double-sided setting.\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Think of this as an open book. Take the left stack and fold it over the right stack like you are closing a book.\nHole punch the packet.\nInsert into binder."
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
+    "title": "How to Assemble The Book of Plans",
+    "section": "The PDFs",
+    "text": "The PDFs\n\nPDF Descriptions\n\n\n\n\n\n\n\n\nFile Name\nPrint Quantity\nDescription\n\n\n\n\n__0__main-intr.pdf\nPrint one copy for the entire quarter.\nContains vision prompts, goal entries, calendar.\n\n\n__1__main-week.pdf\nPrint one copy per week, i.e. 12 copies total.\nContains one weekly log and seven daily logs.\n\n\n__2__xtra-nite.pdf\nPrint as needed.\nEach page contains enough space for one week’s worth of entries.\n\n\n__3__ace_-ref_.pdf\nPrint once.\nContains instructions for using the ACE Worksheets.\n\n\n__4__ace_-wksh.pdf\nPrint as needed.\nContains worksheets for the ACE exercise.\n\n\n\n\n\nSingle-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed single-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf\n\n\nDouble-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed double-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf"
   },
   {
     "objectID": "projects/color-clock/about-color-clock.html#what-is-it",
