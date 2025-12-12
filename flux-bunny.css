@@ -32,32 +32,55 @@
 /*--------------------------------------------------------------------*/
 :root
 {
-  --flux-color-1  : #875f87;
-  --flux-color-2  : #5fafaf;
-  --flux-color-3  : #0087af;
+/*--------------------------------------------------------------------*/
+/* Dark theme, need to implement
+/*--------------------------------------------------------------------*/
+  --flux-color-1    : #875f87;
+  --flux-color-2    : #5fafaf;
+  --flux-color-3    : #0087af;
 
-  --flux-bg-norm  : #262626;
-  --flux-bg-bold  : #c0c0c0;
-  --flux-fg-norm  : #eeeeee;
-  --flux-fg-bold  : #afafaf;
+  --flux-bg-norm    : #262626;
+  --flux-bg-bold    : #c0c0c0;
+  --flux-fg-norm    : #eeeeee;
+  --flux-fg-bold    : #afafaf;
 
-  --flux-color-1  : #874787;
-  --flux-color-2  : #478787;
-  --flux-color-3  : #475f87;
+/*--------------------------------------------------------------------*/
+/* Light theme, current
+/*--------------------------------------------------------------------*/
+  --flux-color-1    : #874787;
+  --flux-color-2    : #478787;
+  --flux-color-3    : #475f87;
 
-  --flux-bg-norm  : #eeeeee;
-  --flux-bg-bold  : #d7d7d7;
-  --flux-fg-norm  : #262626;
-  --flux-fg-bold  : #5f5f5f;
+  --flux-bg-norm    : #eeeeee;
+  --flux-bg-bold    : #d7d7d7;
+  --flux-fg-norm    : #262626;
+  --flux-fg-bold    : #5f5f5f;
 
-  --flux_button_text : var(--flux-bg-norm);
+  --content-padding : 20px;
+  --toc-link-padding:  8px;
+  --pg-padding      : 40px;
 
-  --font-size-base  : clamp(16px, 1vw   + 0.5rem, 20px);
-  --font-size-h1    : clamp(28px, 4vw   + 1rem,   48px);
-  --font-size-h2    : clamp(24px, 3vw   + 0.8rem, 36px);
-  --font-size-h3    : clamp(20px, 2vw   + 0.6rem, 28px);
-  --font-size-h4    : clamp(18px, 1.5vw + 0.5rem, 24px);
-  --font-size-code  : clamp(14px, 1vw   + 0.3rem, 18px);
+  --flux_button_txt : var(--flux-bg-norm);
+
+  --site-title-brdr : 16px solid var(--flux-color-3);
+
+  --content-border  :  8px solid var(--flux-color-3);
+  --h2-border       :  4px solid var(--flux-color-2);
+  --h3-border       :  1px solid var(--flux-bg-bold);
+
+  --margin-site-title : clamp(28px, 4vw   + 1rem,   60px);
+  --size-base       : clamp(16px, 1vw   + 0.5rem, 20px);
+
+  --size-site-title : clamp(48px, 4vw   + 1rem,   68px);
+  --size-h1         : clamp(28px, 4vw   + 1rem,   48px);
+  --size-h2         : clamp(24px, 3vw   + 0.8rem, 36px);
+  --size-h3         : clamp(20px, 2vw   + 0.6rem, 28px);
+  --size-h4         : clamp(18px, 1.5vw + 0.5rem, 24px);
+
+  --size-code       : clamp(14px, 1vw   + 0.3rem, 18px);
+
+  --size-toc-top    : clamp(12px, 1vw   + 0.4rem, 16px);
+  --size-toc-gen    : clamp(10px, 1vw   + 0.2rem, 12px);
 
   --font-fam-header : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
   --font-fam-normal : 'Consolas', monospace;
@@ -73,41 +96,188 @@ body
 }
 
 /*--------------------------------------------------------------------*/
+/* FULL WIDTH ELEMENTS
+/*--------------------------------------------------------------------*/
+.full-bleed
+{
+  width       : 100vw;
+  /* Adjust for the center justification of quarto content */
+  margin-left : 50%;
+  transform   : translateX(-50%);
+}
+
+/*--------------------------------------------------------------------*/
 /* HEADINGS
 /*--------------------------------------------------------------------*/
 
-h1, h2, h3, h4
+h1, h2, h3, h4, .flux-site-title
 {
   font-family: var(--font-fam-header);
 }
 
 h1
 {
-  font-size       : var(--font-size-h1);
-  color           : var(--flux-color-2);
-  font-variant    : small-caps;
+  font-size     : var(--size-h1);
+  color         : var(--flux-color-2);
+  font-variant  : small-caps;
 }
 
-h2      { font-size: var(--font-size-h2); color: var(--flux-color-1); }
-h3      { font-size: var(--font-size-h3); color: var(--flux-fg-bold); }
+.flux-site-title
+{
+  font-family   : var(--font-fam-header);
+  font-size     : var(--size-site-title);
+  color         : var(--flux-color-2);
+  font-weight   : bold;
+  font-variant  : small-caps;
+  text-align    : center;
+  border        : none;
+  padding-top   : 0px;
+  /*
+  margin-left   : var(--margin-site-title);
+  margin-right  : var(--margin-site-title);
+  */
+}
 
+.site-subtitle
+{
+  font-size       : var(--size-h4);
+  color           : var(--flux-fg-bold);
+  font-family     : var(--font-fam-header);
+  text-align      : center;
+  border          : none; padding-top: 0px;
+  /*
+  margin-left     : var(--margin-site-title);
+  margin-right    : var(--margin-site-title);
+  */
+}
+
+
+
+h2
+{
+  font-size     : var(--size-h2);
+  color         : var(--flux-color-1);
+  padding-top   : var(--content-padding);
+  border-top    : var(--h2-border);
+  border-bottom : none;
+}
+
+h3
+{
+  font-size     : var(--size-h3);
+  color         : var(--flux-fg-bold);
+  padding-top   : var(--content-padding);
+  border-top    : var(--h3-border);
+  font-variant  : small-caps;
+}
+
+/*--------------------------------------------------------------------*/
+/* TABLE OF CONTENTS SIDE BAR
+/*--------------------------------------------------------------------*/
+#toc-title
+{
+  font-family   : var(--font-fam-header);
+  color         : var(--flux-fg-bold);
+  font-variant  : small-caps;
+  border-top    : none;
+  font-size     : var(--size-h4);
+}
+
+#quarto-margin-sidebar #TOC
+{
+  border-left   : var(--h3-border);
+  padding-left  : var(--content-padding);
+  color         : var(--flux-fg-bold);
+}
+
+#quarto-margin-sidebar a:hover
+{
+  color         : var(--flux-color-2) !important;
+}
+
+#quarto-margin-sidebar #TOC .nav-link
+{
+  font-size     : var(--size-toc-gen);
+}
+
+#quarto-margin-sidebar #TOC .nav-link.active
+{
+  color         : var(--flux-color-1) !important;
+  font-weight   : bold !important;
+  border        : none;
+}
+
+/* Keep the Quarto margin sidebar TOC fully expanded */
+#quarto-margin-sidebar #TOC .collapse {
+  display: block;
+}
+
+/* Top level link in TOC */
+#quarto-margin-sidebar #TOC > ul > li:not(:has(ul)) > a.nav-link,
+#quarto-margin-sidebar #TOC > ul > li:has(> ul) > a.nav-link
+{
+  font-family   : var(--font-fam-normal);
+  font-size     : var(--size-toc-top);
+  padding-top   : var(--toc-link-padding);
+}
+
+
+/*--------------------------------------------------------------------*/
+/* Don't apply top border to first h2 in main content.
+/* Each time h2 is used in quarto, it adds a new .level2 section.
+/* This code is targeting the h2 of first instance of level2 in main.
+/*--------------------------------------------------------------------*/
+main .level2:first-of-type h2{
+  border-top: none;
+}
+
+/*--------------------------------------------------------------------*/
 h3-mock {
-  font-size     : var(--font-size-h3);
+  font-size     : var(--size-h3);
   color         : var(--flux-color-1);
   font-family   : var(--font-fam-header);
 }
 
 h4 { margin-left: 0px;}
 
+
+/*--------------------------------------------------------------------*/
+/* PAGE TITLE
+/*--------------------------------------------------------------------*/
+.quarto-title p
+{
+  font-size       : var(--size-h4);
+  color           : var(--flux-fg-bold);
+  font-family     : var(--font-fam-header);
+}
+
+.quarto-title
+{
+  padding-bottom  : var(--content-padding);
+  border-bottom   : var(--content-border);
+  margin-bottom   : var(--pg-padding);
+}
+
 /*--------------------------------------------------------------------*/
 /* FOOTER
 /*--------------------------------------------------------------------*/
 .nav-footer
 {
-  background-color  : var(--flux-bg-bold);
-  color             : var(--flux-fg-bold);
+  background-color  : var(--flux-color-1);
+  color             : var(--flux-bg-norm);
   font-family       : var(--font-fam-header);
   z-index           : 1000;
+}
+
+.nav-footer .nav-link, .nav-footer .nav-link:visited
+{
+  color             : var(--flux-bg-norm);
+}
+
+main
+{
+  padding-bottom  : var(--pg-padding);
+  border-bottom   : var(--content-border)
 }
 
 /*--------------------------------------------------------------------*/
@@ -118,16 +288,17 @@ h4 { margin-left: 0px;}
 /* nav-link     - Each link in navbar
 /*--------------------------------------------------------------------*/
 
-span.menu-text
-{
-  font-variant    : small-caps;
-}
-
-/* Navigation bar */
 .navbar .navbar-nav .nav-link
 {
   font-family     : var(--font-fam-header);
   color           : var(--flux-bg-norm);
+  font-variant    : small-caps;
+}
+
+.navbar .navbar-nav .nav-link:hover
+{
+  font-weight     : normal;
+  text-decoration : underline;
 }
 
 .navbar
@@ -139,10 +310,11 @@ span.menu-text
 .navbar-brand
 {
   font-family       : var(--font-fam-header);
-  font-size         : var(--font-size-h4);
+  font-size         : var(--size-h4);
   color             : var(--flux-bg-norm);
   font-variant      : small-caps;
 }
+
 .navbar-brand:visited
 {
   color             : var(--flux-bg-norm);
@@ -160,12 +332,12 @@ span.menu-text
 
 .navbar-nav
 {
-  padding-right: 40px;
+  padding-right: var(--pg-padding);
 }
 
 .navbar-tools
 {
-  padding-right: 40px;
+  padding-right: var(--pg-padding);
 }
 
 .dropdown-menu
@@ -177,7 +349,6 @@ span.menu-text
 {
   background-color  : var(--flux-color-3);
   color             : var(--flux-bg-norm);
-  font-weight       : bold;
 }
 
 .dropdown-item
@@ -200,7 +371,7 @@ span.menu-text
   color             : var(--flux-bg-norm);
   display           : inline-block;
   text-decoration   : none;                   /* Don't underline */
-  font-size         : var(--font-size-h4);
+  font-size         : var(--size-h4);
   text-align        : center;
 
   padding           : 0px 10px; /* Second entry is horizonal padding */
@@ -212,7 +383,7 @@ span.menu-text
   border-radius     : 10px; /* make rounded */
 }
 
-.flux-button:visited { color: var(--flux_button_text); }
+.flux-button:visited { color: var(--flux_button_txt); }
 
 .flux-button._0
 {
@@ -222,12 +393,13 @@ span.menu-text
 .flux-button._2
 {
   background-color  : var(--flux-color-3);
+  font-size         : var(--size-h3);
 }
 
 .flux-button._1
 {
   background-color  : var(--flux-color-2);
-  font-size         : var(--font-size-h3);
+  font-size         : var(--size-h3);
 }
 
 .flux-button:hover
@@ -243,52 +415,32 @@ span.menu-text
 }
 
 /* Hyperlinks */
-/*
-main a         { color        : var(--flux-color-3); }
-*/
 a         { color        : var(--flux-color-3); }
-a:hover   { font-weight  : bold; }
+a:hover   { font-weight  : bold;                }
 a:active  { color        : var(--flux-color-2); }
 a:visited { color        : var(--flux-color-1); }
 
 /*--------------------------------------------------------------------*/
-/* DIVIDER
-/*--------------------------------------------------------------------*/
-
-.divider
-{
-  width             : 100%;
-  height            : 10px;
-  margin-bottom     : 10px;
-}
-
-/* Divider for larger sections */
-.divider.blu
-{
-  background-color  : var(--flux-color-3);
-  height            : 10px;
-  margin-top        : 40px;
-  margin-bottom     : 40px;
-}
-
-/* Divider for smaller sections */
-.divider.cya
-{
-  background-color  : var(--flux-color-2);
-  height            : 05px;
-  margin-top        : 10px;
-}
-
 .flux-img
 {
   width: 100%;
 }
+
+/*--------------------------------------------------------------------*/
+/* CODE BLOCKS
+/*--------------------------------------------------------------------*/
 
 /* Inline Code Blocks */
 code
 {
   color             : var(--flux-color-3);
   background-color  : var(--flux-bg-bold);
+}
+
+div.sourceCode code, pre
+{
+  background-color  : var(--flux-bg-bold);
+  border-radius     : 0px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -334,58 +486,35 @@ details {
   background-color  : var(--flux-color-2);
   color             : var(--flux-bg-norm);
   font-family       : var(--font-fam-header);
-  padding           : 20px;
-  margin-bottom     : 20px;
+  padding           : var(--content-padding);
+  margin-bottom     : var(--content-padding);
 }
 
-div.sourceCode code, pre
+.quarto-title-banner.page-columns.page-full .quarto-title.column-body
 {
-  background-color  : var(--flux-bg-bold);
-  border-radius     : 0px;
+  border-bottom     : none !important;
+  height            : auto;
+  margin            : 0px;
+}
+
+.quarto-title.column-body
+{
+  padding: 0px;
+  /*
+  */
+}
+
+
+.quarto-title .description p
+{
+  color             : var(--flux-bg-norm);
 }
 
 figcaption
 {
-  font-size         : var(--font-size-base);
+  font-size         : var(--size-base);
   color             : var(--flux-fg-bold);
   text-align        : left;
   margin-top        : 5px;
   font-style        : italic;
-}
-
-/*--------------------------------------------------------------------*/
-/* TABLE OF CONTENTS
-/*--------------------------------------------------------------------*/
-
-#toc-title
-{
-  font-family       : var(--font-fam-header);
-  font-size         : var(--font-size-h3);
-  color             : var(--flux-fg-norm);
-}
-
-/*
-#quarto-margin-sidebar a
-{
-  color             : var(--flux-color-3);
-}
-  */
-
-#quarto-margin-sidebar a:hover
-{
-  color             : var(--flux-color-1) !important;
-}
-
-#quarto-margin-sidebar a.active
-{
-  color             : var(--flux-color-2) !important;
-  font-style        : bold !important;
-  border            : none;
-}
-
-.nav-link.active
-{
-  color             : var(--flux-color-2) !important;
-  font-weight       : bold !important;
-  border            : none;
 }

@@ -11,12 +11,6 @@
     , "categories  : [color-clock]"
     , "draft       : true"
     , "---"
-    , ""
-    , "{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}"
-    , ""
-    , ""
-    , "{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}"
-    , ""
     ]
   }
 }

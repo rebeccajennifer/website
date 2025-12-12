@@ -9,7 +9,6 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 ## A Tight Fit
 
@@ -21,8 +20,6 @@ In the previous construction design we had a simple lean-to structure where the 
 The participant is sitting quite close to the light display in the original structural design.
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## The Rooftop Extension
 
@@ -46,8 +43,6 @@ To provide scale, the human figure in the side view is approximately me-sized (a
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Time Controller Development
 
 Regarding the software, I've been working on developing the time controller. This element enables the artist to designate the current time, which acts as the input for the RGB LED light display, mapping time to color.
@@ -60,5 +55,3 @@ Regarding the software, I've been working on developing the time controller. Thi
 
 There's a lot left to do and we have about five months to complete this thing. But I know we'll make it happen 🤓
 
-
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

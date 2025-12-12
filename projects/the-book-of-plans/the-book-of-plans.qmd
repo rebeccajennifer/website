@@ -31,11 +31,8 @@ ________________________________________________________________________
 
 ---
 title: The Book of Plans
+subtitle: Enable your journey to your ideal self.
 ---
-
-Enable your journey to your ideal self.
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
 
 ## About The Book of Plans
 
@@ -48,18 +45,14 @@ The planner consists of a series of PDFs formatted for printing on 8.5×11 sheet
 Three months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.
 
 <figure>
-![](./week-reflection-plan.png)
+![](images__the-book-of-plans/week-reflection-plan.png)
 <figcaption>
 Here is a sample layout of one of the pages.
 </figcaption>
 </figure>
 
-{{< include ../../assets/ui-elements/section-divider-cya.html >}}
-
 ## About the Code
 
 ___The Book of Plans___ was created in Python using the modules [svgwrite](https://pypi.org/project/svgwrite/) and [PdfWriter](https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html). Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.
 
-<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/python">Source Code</a>
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+<a class="flux-button _1" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/python">Source Code</a>

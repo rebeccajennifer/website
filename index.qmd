@@ -23,10 +23,13 @@
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 
+<!--
 ---
 title: Salutations!
 format: html
+subtitle: My name is Rebecca.
 ---
+-->
 
 <style>
 .flux-button
@@ -34,35 +37,97 @@ format: html
   width   : 23%;
 }
 
-@media (max-width: 600px) {
-  .flux-button {
+.site-title-img
+{
+  width: 100%;
+}
+
+.site-title-banner
+{
+  width           : 100%;
+  display         : grid;
+  grid-template-columns : 1fr 2fr;
+  border-bottom   : var(--site-title-brdr);
+  margin-bottom   : var(--pg-padding);
+}
+/*--------------------------------------------------------------------*/
+/* Mobile viewing
+/*--------------------------------------------------------------------*/
+@media (max-width: 800px)
+{
+  .flux-button
+  {
     width: 40%;
   }
+
+  /*------------------------------------------------------------------*/
+  /* Stack title and image for mobile
+  /*------------------------------------------------------------------*/
+  .site-title-banner
+  {
+    grid-template-columns : 1fr;
+  }
+
+  .site-title-img
+  {
+    width           : 100%;
+    padding-bottom  : var(--pg-padding);
+    padding-top     : var(--pg-padding);
+    border-top      : var(--site-title-brdr);
+  }
+  .site-title-container
+  {
+    padding         : var(--pg-padding);
+    margin-bottom   : var(--pg-padding);
+    width           : 100%;
+  }
 }
+/*--------------------------------------------------------------------*/
+
+
+/*--------------------------------------------------------------------*/
+/* Make site title grid flush with top of page
+/*--------------------------------------------------------------------*/
+#title-block-header { margin  : 0px; }
+#quarto-content>*   { padding : 0px; }
+.content            { margin  : 0px; }
+/*--------------------------------------------------------------------*/
+
+main
+{
+  border-bottom: none;
+}
+
 </style>
 
-My name is Rebecca.
+::: {.full-bleed}
+<div class="site-title-banner">
 
-![](assets/photos-general-assets/flux-grass-cropped-landscape.jpg)
+<div class="site-title-container" style="margin: auto;">
+<div class="flux-site-title" style="">Salutations!</div>
+<div class="site-subtitle">My name is Rebecca.</div>
+</div>
 
-{{< include assets/ui-elements/section-divider-blu.html >}}
+<div>
+  <p style="margin:0;">
+  <img
+    src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg"
+    class="site-title-img"
+    >
+  </p>
+</div>
+
+</div>
+:::
 
 ## Who I Am
-
-I am a software engineer and movement enthusiast, but most of all, an educator.
-I am passionate about sharing my knowledge, whether it be about
-computers or movement. I find satisfaction in lifting others up and
-leaving every space I occupy in a better state than I found it. My two
-favorite things are handstands and rabbits 🐰
+  I’m a software engineer who values clean code, workflow efficiency, and clear documentation. I’m also an educator and enjoy sharing my knowledge of computer engineering and movement, two areas that bring me joy. I find satisfaction in lifting others up and leaving every space I occupy better than I found it. My favorite things are coding, handstands, and rabbits 🐰
 
 ## What I Care About
 
 <div style="text-align: center;">
-  <a class="flux-button _1" href="/education/comp-org/comp-org.html">Engineering</a>
-  <a class="flux-button _1" href="https://flyingrabbitmovement.com">Movement</a>
-  <a class="flux-button _1" href="/education/comp-org/comp-org.html">Education</a>
-  <a class="flux-button _1" href="projects/color-clock/color-clock.html">Creativity</a>
+  <a class="flux-button _2" href="/education/comp-org/comp-org.html">Engineering</a>
+  <a class="flux-button _2" href="https://flyingrabbitmovement.com">Movement</a>
+  <a class="flux-button _2" href="/education/comp-org/comp-org.html">Education</a>
+  <a class="flux-button _2" href="projects/color-clock/about-color-clock.html">Creativity</a>
 </div>
-
-{{< include assets/ui-elements/section-divider-blu.html >}}
-

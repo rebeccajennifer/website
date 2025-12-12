@@ -13,11 +13,8 @@ draft       : false
 img { display: block; margin-left: auto; margin-right: auto; }
 </style>
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 This week I've been navigating the balance between my artistic vision and feasibility of execution for the user interface of the piece. I've also been working on the software development involved in accepting user input through button presses.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Software Development
 
@@ -32,8 +29,6 @@ I created a [class](https://www.geeksforgeeks.org/c-classes-and-objects/) for a 
 In the last few days I've realized that I will need to have different kinds of MomentarySwitch classes to register different types of button presses. For instance, the MomentarySwitch class I designed will not register a press and hold for the purpose of incrementing a value multiple times. For example, if we want to set our oven timer to 90 minutes, we shouldn't have to press the increase time button 90x. We know that we can hold the button then it will start to increment first by 1 minute, then 10.
 
 So I will likely have a base class of MomentarySwitch with a set of states (IDLE, PRESS, RELEASE, WAIT) and several sub classes that will handle states differently.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## User Interface Design
 
@@ -101,4 +96,3 @@ My quest for RGB LED arcade buttons revealed only round options. For aesthetic p
 
 The control panel design will likely continue to evolve as I search for slider switches that align with my vision, but for now I need to put some of these buttons on order. And in the mean time I need to expand my software to account for new switch input behavior.
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

@@ -7,13 +7,10 @@ image       : ascii-bunny.png
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 I would like to make the ColorClock code base more robust, so I
 decided to leverage some of the work I'm doing in my real job and
 applying it to ColorClock.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Google Test
 
@@ -26,8 +23,6 @@ In my latest work, I'm implementing a "real" unit testing framework in
 using Google Test. Each module has its own test file and I'm using
 **make** to build the unit test executable.
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Testing Limitations
 
 Since ColorClock is designed to work with specific hardware, some of the
@@ -36,8 +31,6 @@ some) of the hardware-dependent functionality is protected by
 preprocessor directives, providing alternate behavior for non-hardware
 builds. My goal is to write unit tests for as many functions as
 possible.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## This Is Why We Test
 
@@ -86,8 +79,6 @@ Expected: true
  2 FAILED TESTS
 ```
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Build Flags
 
 I have a file called [flux_macros.hpp](https://github.com/rebeccajr/color-clock/blob/main/sw/arduino/color-clock-driver/flux-macros.hpp)
@@ -111,8 +102,6 @@ and converts it to:
 In the [makefile](https://github.com/rebeccajr/color-clock/blob/main/sw/test/build-test/Makefile)
 for the unit tests, I create a phony target that runs the Python script
 first before building out the unit test executable 😎
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## File Headers
 
@@ -153,8 +142,6 @@ header in each file.
 includes rabbits—and I love rabbits. So, naturally, I went with
 'Lagomorphic Constructs' 🐰*
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Home Display
 
 On a different note, we are also working on installing the light display
@@ -181,8 +168,6 @@ recently started incorporating into ColorClock.
 *For home display, we removed the wire harness from Version 1 and
 directly connected the LED strips to the terminal block, which we
 relocated to the back of the light display.*
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## TODO
 
@@ -219,4 +204,3 @@ chipping away at...
   purposes
 - Research free PCB board layout programs
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

@@ -8,7 +8,6 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 ## The Mystery of the Missing Package
 
@@ -21,15 +20,11 @@ I finally decided to find the email delivery confirmation but it was non existen
 1. When having trouble finding a mailed package, first check if the items were ever ordered.
 1. Don't put off ordering a shopping cart full of items in hopes of finding that last perfect addition.
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## A New Arduino
 
 One of the other items I had ordered that week was a new, smaller Arduino board. I have been using this old board I acquired from my brother years earlier that he was never able to connect to (it turns out he was using a power cable instead of a data cable to program 😅). For the final ColorClock installation, I want to make two identical circuit boards so I have a backup in case there are any problems during the week the project is being displayed.
 
 I ordered an Arduino Nano ESP32 where nearly all of the pins are configurable to have PWM, a way to fake out an analog output with a digital signal. PWM output is what I need to have variable output voltage so I can send different outputs to the RGB LED pins creating different colors.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Nothing Good is Ever Easy
 
@@ -48,8 +43,6 @@ I discovered that this was a known problem with this board and found in the Ardu
 ### A Side Note
 
 Skipping ahead to the present, as I'm cleaning up this post and adding links, I have discovered that there is indeed a `post_install.bat` script that I probably could have run on Windows, but we're here now.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## A Solution to My Development Woes
 
@@ -71,15 +64,11 @@ So I did it! I am actually writing this from my Ubuntu partition right now!
 
 Like any new computer, there's the initial setup process, which, in my case, was missing even basic tools like Vim. But I'm no stranger to starting over.
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Back to the New Arduino
 
 The catalyst for the Linux partition was so that I could run a script that would allow my computer to see the Arudino Nano ESP32. I did all the things (installed arduino-cli, ran the post_install.sh script) and it's all working!
 
 My next challenge is to test my new RTC module, test the I/O expander 🥺 (also scary) and start laying out the 'final' V1 version of the circuit board.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## We're Famous!
 
@@ -87,4 +76,3 @@ ColorClock is officially listed as 2024 Playa Art!! (go on, click the picture �
 
 [![](../../assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png)](https://burningman.org/about/history/brc-history/event-archives/2024-event-archive/2024-art-installations/?yyyy&aq=colorclock&support_project=0)
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

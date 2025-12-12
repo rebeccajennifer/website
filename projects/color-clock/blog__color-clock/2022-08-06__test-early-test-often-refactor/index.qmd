@@ -8,11 +8,8 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 “It doesn’t matter how slow you progress so as long as you never stop.” I think my grad school advisor shared this with me. Maybe that wasn’t the really the quote. And maybe it wasn’t my advisor. But you get the gist 😉
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## The First Software Prototype
 
@@ -25,8 +22,6 @@ This video demonstrates how the color changes over time. The cycle length displa
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## The Importance of Incremental Development
 
 A month or two ago I had to start over because I realized that I was converting code but barely testing it beyond making sure that the project built properly - and then at some point it stopped compiling 😬 And even though I was using version control, I couldn’t figure out the last commit with a known good build 😩 Though this is a personal project, it was crazy to reflect on similar challenges I have experienced in my work life.
@@ -36,8 +31,6 @@ Soooooooo…
 Since then, I have added a debug class for serial monitor print statements, refactored the project to be completely object oriented, and started using branches and pull requests for my repository even though I’m the only developer.
 
 This past week I also started exploring how to unit test portions of the code without running it on actual hardware. The Arduino language is basically C++ so I just made a small driver function where I include my classes that don’t have any Arduino dependencies. I’m proud of myself for the forethought I put in to the architecture so that I can build software only tests without needing to modify the code I’m testing 🤓
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Hardware Prototyping Progress
 
@@ -49,10 +42,7 @@ The photo below depicts the current state of the hardware prototype. The alphanu
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Sometimes You Just Need to Stare at It
 
 I’m actually kind of stuck at the moment - the contents of my RGB <-> HSV color conversion functions seem to be working, but not when the class definitions are included in a different file 🤷‍♀️ I’m going to stare at the code a bit more and possibly call in some reinforcements 🧑‍💻
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

@@ -29,6 +29,7 @@
 
 ---
 title: "About ColorClock"
+subtitle: A passion project.
 ---
 
 <style>
@@ -38,7 +39,7 @@ table td:first-child  { width:  50%; }
 
 ![](/projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
 
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}
+# About ColorClock
 
 ## What is it?
 
@@ -63,5 +64,3 @@ practical lean-to structure with a bench.
   class="flux-button _1">Blog</a>
 </td>
 </tr></table>
-
-{{< include ../../assets/ui-elements/section-divider-blu.html >}}

@@ -93,3 +93,4 @@ format:
     theme     : default
     css       : flux-bunny.css
     code-fold : true
+    toc-title : "Table of Contents"

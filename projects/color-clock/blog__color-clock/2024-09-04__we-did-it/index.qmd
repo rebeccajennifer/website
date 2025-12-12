@@ -12,7 +12,6 @@ image       : ../../assets__color-clock/photos__color-clock/overall__photos__col
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 <figure>
 ![](../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
@@ -22,8 +21,6 @@ Ten years in the making and ColorClock was deployed at Burning Man
 the backup electronics box 😅
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Contingency Planning
 
@@ -50,8 +47,6 @@ I also brought my little tool box with oodles of extra wire and tools
 Thankfully I had no use for any of my extra wiring.
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Artery Check In
 
@@ -97,8 +92,6 @@ to a CD-R bolted into the ground.
 We were brought to our floofy!
 </figcaption>
 </figure>
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Installation
 
@@ -158,8 +151,6 @@ wins ☀️ So it turned out to be just a nighttime piece.
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Nighttime Viewing
 
 While the colored LEDs were not visible during the day, the colors
@@ -214,8 +205,6 @@ Victoria Hollis.
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Participant Interaction
 
 On a different note, event participants found my piece difficult to
@@ -241,8 +230,6 @@ damn proud of what we accomplished. And this project wasn’t for anyone
 one else - it was for me. The magic of ColorClock was in the software
 which I did not have the time or mental capacity to translate into the
 visual aesthetic.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## The End of ColorClock Version 1
 
@@ -279,8 +266,6 @@ tossing our disassembled structure into the "Burn Garden".
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## ColorClock Version 2?
 
 I have a lot of ideas of how to modify ColorClock to be more palatable
@@ -300,8 +285,6 @@ be a version 2. Here is a short list of ideas for improvement:
 But there’s another project I’ve been contemplating for a few years so
 maybe that will be the next endeavor. I’m going to let this year’s
 experience settle for a bit before I decide on my next project…
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Thank You 🙏
 
@@ -354,4 +337,3 @@ showcasing a diverse range of art and experiences. Their efforts
 create an environment where unique and extraordinary art forms can
 truly thrive.
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

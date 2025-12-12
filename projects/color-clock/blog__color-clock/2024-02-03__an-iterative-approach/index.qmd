@@ -9,7 +9,6 @@ draft       : false
 ---
 
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 I have decided on a multi-stage approach to development where each iteration has increased functionality to the previous. This diagram illustrates the top-level electronic design, with each iteration of implementation.
 
@@ -35,4 +34,3 @@ V1 | Includes interface and second ColorClock for participant interaction
 V2 | Includes additional ColorClock to previous versions with 60 min cycle time
 V3 | Includes additional ColorClock to previous versions with cycle time equivalent to length of event week
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

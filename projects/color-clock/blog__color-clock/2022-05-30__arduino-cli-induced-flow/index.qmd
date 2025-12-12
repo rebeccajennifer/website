@@ -9,7 +9,6 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 Progress is happening. In 2014, prior to becoming a software engineer, I started programming ColorClock using Processing to map the system time to a colored eclipse displayed on my computer screen. Six years later, in 2020, I dabbled in this project a little more to entertain myself during the early months of the pandemic. I cringed at my previous work as I refactored the code into functions. And today, I’m refactoring further, making the code more modular and porting it into C++ / Arduino.
 
@@ -30,8 +29,6 @@ I've wired up the alphanumeric display and real time clock module and it's worki
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Glossary
 
 Term | Description
@@ -41,4 +38,3 @@ IDE  | Integrated development environment
 RTFM | Read the **friendly** manual
 Vim  | A command line text editor with a steep learning curve that makes many people upset and can drastically improve your workflow if you are committed to practice
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}

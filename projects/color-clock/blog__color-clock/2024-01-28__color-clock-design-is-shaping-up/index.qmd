@@ -8,11 +8,8 @@ categories  : [color-clock]
 draft       : false
 ---
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
 
 It's been a productive weekend for ColorClock design. My collaborator / partner and I have decided on a form that we are happy with and are now looking into materials - and consequently design modifications to accommodate for standard sizing and availability of said materials.
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Fabrication
 
@@ -26,14 +23,10 @@ This diagram illustrates an isometric, profile and inside view of the structure.
 </figure>
 
 
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
-
 ## Hardware
 
 The current design of ColorClock calls for non-addressable RGB LEDs, since the light only needs to display one color at any given time. We are considering either constructing our own light fixture with RGB LED strips, individual LEDs, or using a pre-fabricated circular PCB with a LED matrix. As of yesterday morning, we were leaning more towards using a pre-fabricated board to reduce the complexity of assembly and it will probably just be prettier than something we make ourselves. But when considering the size of the light that we would like (~3 foot radius), buying something pre-fab might not be feasible. There's also the question of whether we want to use RGB LED strips, or to use individual LEDs, and embark on the challenge of soldering ~200 LEDs by hand 😅
 
-
-{{< include ../../../../assets/ui-elements/section-divider-cya.html >}}
 
 ## Software
 
@@ -59,4 +52,3 @@ This is my basic prototyping setup to test pushbutton logic.
 </figcaption>
 </figure>
 
-{{< include ../../../../assets/ui-elements/section-divider-blu.html >}}
