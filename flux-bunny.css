@@ -393,6 +393,7 @@ main
 .flux-button._2
 {
   background-color  : var(--flux-color-3);
+  font-size         : var(--size-h3);
 }
 
 .flux-button._1
@@ -492,7 +493,17 @@ details {
 .quarto-title-banner.page-columns.page-full .quarto-title.column-body
 {
   border-bottom     : none !important;
+  height            : auto;
+  margin            : 0px;
 }
+
+.quarto-title.column-body
+{
+  padding: 0px;
+  /*
+  */
+}
+
 
 .quarto-title .description p
 {

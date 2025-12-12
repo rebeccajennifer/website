@@ -224,23 +224,31 @@ subtitle: My name is Rebecca.
 /*--------------------------------------------------------------------*/
 /* Mobile viewing
 /*--------------------------------------------------------------------*/
-@media (max-width: 750px) {
-  .flux-button {
+@media (max-width: 800px)
+{
+  .flux-button
+  {
     width: 40%;
   }
+
+  /*------------------------------------------------------------------*/
+  /* Stack title and image for mobile
+  /*------------------------------------------------------------------*/
   .site-title-banner
   {
     grid-template-columns : 1fr;
-    border: none;
   }
+
   .site-title-img
   {
-    width       : 100%;
+    width           : 100%;
+    padding-bottom  : var(--pg-padding);
+    padding-top     : var(--pg-padding);
+    border-top      : var(--site-title-brdr);
   }
   .site-title-container
   {
     padding         : var(--pg-padding);
-    border-bottom   : var(--site-title-brdr);
     margin-bottom   : var(--pg-padding);
     width           : 100%;
   }
@@ -286,7 +294,7 @@ My name is Rebecca.
 <section id="what-i-care-about" class="level2">
 <h2 class="anchored" data-anchor-id="what-i-care-about">What I Care About</h2>
 <div style="text-align: center;">
-<p><a class="flux-button _1" href="./education/comp-org/comp-org.html">Engineering</a> <a class="flux-button _1" href="https://flyingrabbitmovement.com">Movement</a> <a class="flux-button _1" href="./education/comp-org/comp-org.html">Education</a> <a class="flux-button _1" href="projects/color-clock/about-color-clock.html">Creativity</a></p>
+<p><a class="flux-button _2" href="./education/comp-org/comp-org.html">Engineering</a> <a class="flux-button _2" href="https://flyingrabbitmovement.com">Movement</a> <a class="flux-button _2" href="./education/comp-org/comp-org.html">Education</a> <a class="flux-button _2" href="projects/color-clock/about-color-clock.html">Creativity</a></p>
 </div>
 
 
