@@ -39,21 +39,29 @@
 //
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Find the moon icon Quarto generates
-  const icon = document.querySelector('nav .bi-moon');
-  if (!icon) {
-    console.log("Moon icon not found.");
-    return;
+  // Restore dark mode from previous sessions
+  const saved = localStorage.getItem("dark-mode");
+  if (saved === "true") {
+    document.documentElement.classList.add("dark-mode");
   }
 
-  // The actual clickable button is the <a> containing the icon
+  // Find the Quarto moon icon
+  const icon = document.querySelector("nav .bi-moon");
+  if (!icon) return;
+
+  // The clickable element is the parent <a>
   const btn = icon.closest("a");
-  btn.id = "FLUX";   // optional, but matches your earlier code
 
   btn.addEventListener("click", (e) => {
     e.preventDefault();
+
     document.documentElement.classList.toggle("dark-mode");
+
+    // Save preference
+    const isDark = document.documentElement.classList.contains("dark-mode");
+    localStorage.setItem("dark-mode", isDark);
   });
 });
+
 
 

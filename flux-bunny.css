@@ -343,14 +343,10 @@ main
   padding-right: var(--pg-padding);
 }
 
-.quarto-navbar-tools tools-wide
-{
-  color:#FF0000;
-}
-
 .dropdown-menu
 {
   font-family       : var(--font-fam-normal);
+  background-color: #0087af;
 }
 
 .dropdown-item:hover
@@ -361,7 +357,8 @@ main
 
 .dropdown-item
 {
-  background-color  : var(--flux-bg-norm);
+  background-color  : var(--flux-bg-bold);
+  color             : var(--flux-fg-norm);
 }
 
 .nav-icon
