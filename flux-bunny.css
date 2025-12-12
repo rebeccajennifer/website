@@ -343,10 +343,22 @@ main
   padding-right: var(--pg-padding);
 }
 
+/*--------------------------------------------------------------------*/
+/* Icon colors
+/*--------------------------------------------------------------------*/
+.quarto-navbar-tools .quarto-navigation-tool
+{
+  color: var(--flux-bg-norm) !important;
+}
+.aa-DetachedSearchButtonIcon svg {
+  color: var(--flux-bg-norm) !important;
+}
+/*--------------------------------------------------------------------*/
+
 .dropdown-menu
 {
   font-family       : var(--font-fam-normal);
-  background-color: #0087af;
+  background-color  : #0087af;
 }
 
 .dropdown-item:hover
