@@ -37,7 +37,7 @@ subtitle: A passion project.
 table td:first-child  { width:  50%; }
 </style>
 
-![](/projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
+![](/projects/color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
 
 # About ColorClock
 
