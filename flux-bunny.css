@@ -68,12 +68,15 @@
   --h2-border       :  4px solid var(--flux-color-2);
   --h3-border       :  1px solid var(--flux-bg-bold);
 
+  --margin-site-title : clamp(28px, 4vw   + 1rem,   60px);
   --size-base       : clamp(16px, 1vw   + 0.5rem, 20px);
-  --size-site-title : clamp(48px, 4vw   + 1rem,   60px);
+
+  --size-site-title : clamp(48px, 4vw   + 1rem,   68px);
   --size-h1         : clamp(28px, 4vw   + 1rem,   48px);
   --size-h2         : clamp(24px, 3vw   + 0.8rem, 36px);
   --size-h3         : clamp(20px, 2vw   + 0.6rem, 28px);
   --size-h4         : clamp(18px, 1.5vw + 0.5rem, 24px);
+
   --size-code       : clamp(14px, 1vw   + 0.3rem, 18px);
 
   --size-toc-top    : clamp(12px, 1vw   + 0.4rem, 16px);
@@ -107,7 +110,7 @@ body
 /* HEADINGS
 /*--------------------------------------------------------------------*/
 
-h1, h2, h3, h4, .h1-mock
+h1, h2, h3, h4, .flux-site-title
 {
   font-family: var(--font-fam-header);
 }
@@ -119,14 +122,36 @@ h1
   font-variant  : small-caps;
 }
 
-.h1-mock
+.flux-site-title
 {
   font-family   : var(--font-fam-header);
   font-size     : var(--size-site-title);
   color         : var(--flux-color-2);
   font-weight   : bold;
   font-variant  : small-caps;
+  text-align    : center;
+  border        : none;
+  padding-top   : 0px;
+  /*
+  margin-left   : var(--margin-site-title);
+  margin-right  : var(--margin-site-title);
+  */
 }
+
+.site-subtitle
+{
+  font-size       : var(--size-h4);
+  color           : var(--flux-fg-bold);
+  font-family     : var(--font-fam-header);
+  text-align      : center;
+  border          : none; padding-top: 0px;
+  /*
+  margin-left     : var(--margin-site-title);
+  margin-right    : var(--margin-site-title);
+  */
+}
+
+
 
 h2
 {
@@ -233,22 +258,20 @@ h4 { margin-left: 0px;}
   margin-bottom   : var(--pg-padding);
 }
 
-.flux-subtitle
-{
-  font-size       : var(--size-h4);
-  color           : var(--flux-fg-bold);
-  font-family     : var(--font-fam-header);
-}
-
 /*--------------------------------------------------------------------*/
 /* FOOTER
 /*--------------------------------------------------------------------*/
 .nav-footer
 {
-  background-color  : var(--flux-bg-bold);
-  color             : var(--flux-fg-bold);
+  background-color  : var(--flux-color-1);
+  color             : var(--flux-bg-norm);
   font-family       : var(--font-fam-header);
   z-index           : 1000;
+}
+
+.nav-footer .nav-link, .nav-footer .nav-link:visited
+{
+  color             : var(--flux-bg-norm);
 }
 
 main

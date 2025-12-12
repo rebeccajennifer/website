@@ -37,31 +37,52 @@ subtitle: My name is Rebecca.
   width   : 23%;
 }
 
-@media (max-width: 600px) {
+.site-title-img
+{
+  width: 100%;
+}
+
+.site-title-banner
+{
+  width           : 100%;
+  display         : grid;
+  grid-template-columns : 1fr 2fr;
+  border-bottom   : var(--site-title-brdr);
+  margin-bottom   : var(--pg-padding);
+}
+/*--------------------------------------------------------------------*/
+/* Mobile viewing
+/*--------------------------------------------------------------------*/
+@media (max-width: 750px) {
   .flux-button {
     width: 40%;
   }
+  .site-title-banner
+  {
+    grid-template-columns : 1fr;
+    border: none;
+  }
+  .site-title-img
+  {
+    width       : 100%;
+  }
+  .site-title-container
+  {
+    padding         : var(--pg-padding);
+    border-bottom   : var(--site-title-brdr);
+    margin-bottom   : var(--pg-padding);
+    width           : 100%;
+  }
 }
+/*--------------------------------------------------------------------*/
 
-.grid {
-  display: grid;
-  grid-template-columns: 1fr 2fr;
-  align-items: start;
-}
-div{vertical-align: top;}
-
-.site-title-container
-{
-  width           : 100%;
-  border-bottom   : var(--site-title-brdr);
-}
 
 /*--------------------------------------------------------------------*/
 /* Make site title grid flush with top of page
 /*--------------------------------------------------------------------*/
 #title-block-header { margin  : 0px; }
-#quarto-content>*   { padding : 0px;}
-.content            { margin  : 0px;}
+#quarto-content>*   { padding : 0px; }
+.content            { margin  : 0px; }
 /*--------------------------------------------------------------------*/
 
 main
@@ -72,28 +93,22 @@ main
 </style>
 
 ::: {.full-bleed}
-<div
-  class="grid site-title-container"
->
-  <div
-    style="
-      display         : flex;
-      flex-direction  : column;
-      align-items     : center;
-      height          : 100%;
-      justify-content : center;
-  ">
+<div class="site-title-banner">
 
-  <p class="h1-mock" style="border: none; padding-top: 0px; text-align: center;">Salutations!</p>
-  <p class="flux-subtitle">My name is Rebecca.</p>
-  </div>
-  <div>
+<div class="site-title-container" style="margin: auto;">
+<div class="flux-site-title" style="">Salutations!</div>
+<div class="site-subtitle">My name is Rebecca.</div>
+</div>
+
+<div>
+  <p style="margin:0;">
   <img
-      src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg"
-      style="
-        width : 100%;
-      ">
-  </div>
+    src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg"
+    class="site-title-img"
+    >
+  </p>
+</div>
+
 </div>
 :::
 

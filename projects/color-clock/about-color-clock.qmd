@@ -39,6 +39,8 @@ table td:first-child  { width:  50%; }
 
 ![](/projects/color-clock/assets__color-clock/photos/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
 
+# About ColorClock
+
 ## What is it?
 
 ColorClock is a decade-long passion project that combines art with
