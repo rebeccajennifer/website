@@ -38,6 +38,8 @@
 //});
 //
 
+
+/*
 document.addEventListener("DOMContentLoaded", () => {
   // Restore dark mode from previous sessions
   const saved = localStorage.getItem("dark-mode");
@@ -65,3 +67,17 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+*/
+
+document.addEventListener("DOMContentLoaded", () => {
+  const moon = document.querySelector('nav .bi-moon');
+  console.log("moon element:", moon);
+
+  if (!moon) return;
+
+  moon.addEventListener("click", () => {
+    console.log("Moon clicked!");
+    document.documentElement.classList.toggle("dark-mode");
+
+  });
+});
