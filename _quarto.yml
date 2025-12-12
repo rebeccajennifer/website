@@ -97,3 +97,4 @@ format:
     css       : flux-bunny.css
     code-fold : true
     toc-title : "Table of Contents"
+    include-after-body: _quarto/footer.html

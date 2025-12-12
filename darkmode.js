@@ -26,50 +26,15 @@
 //  Toggle dark mode.
 //______________________________________________________________________
 
-//document.addEventListener("DOMContentLoaded", () => {
-//  const btn = document.querySelector('#FLUX');
-//  if (!btn) return;
-//
-//  btn.addEventListener("click", (e) => {
-//    e.preventDefault();
-//    btn.textContent = "Hello, world!";
-//    document.documentElement.classList.toggle("dark-mode");
-//  });
-//});
-//
-
-
 /*
+*/
 document.addEventListener("DOMContentLoaded", () => {
-  // Restore dark mode from previous sessions
-  const saved = localStorage.getItem("dark-mode");
-  if (saved === "true") {
+  // --- Restore saved state (minimal) ---
+  if (localStorage.getItem("dark-mode") === "true") {
     document.documentElement.classList.add("dark-mode");
   }
 
-  // Find the Quarto moon icon
-  const icon = document.querySelector("nav .bi-moon");
-  if (!icon) return;
-
-  // The clickable element is the parent <a>
-  const btn = icon.closest("a");
-
-  btn.addEventListener("click", (e) => {
-    e.preventDefault();
-
-    document.documentElement.classList.toggle("dark-mode");
-
-    // Save preference
-    const isDark = document.documentElement.classList.contains("dark-mode");
-    localStorage.setItem("dark-mode", isDark);
-  });
-});
-
-
-
-*/
-
-document.addEventListener("DOMContentLoaded", () => {
+  // --- Your existing working handler (only tiny change: save state) ---
   const moon = document.querySelector('nav .bi-moon');
   console.log("moon element:", moon);
 
@@ -77,7 +42,10 @@ document.addEventListener("DOMContentLoaded", () => {
 
   moon.addEventListener("click", () => {
     console.log("Moon clicked!");
-    document.documentElement.classList.toggle("dark-mode");
+    // toggle the class exactly as you had it
+    const isDarkNow = document.documentElement.classList.toggle("dark-mode");
 
+    // persist minimal: store boolean as string
+    localStorage.setItem("dark-mode", isDarkNow ? "true" : "false");
   });
 });
