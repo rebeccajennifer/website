@@ -70,11 +70,13 @@
 
   --margin-site-title : clamp(28px, 4vw   + 1rem,   60px);
   --size-base       : clamp(16px, 1vw   + 0.5rem, 20px);
-  --size-site-title : clamp(28px, 4vw   + 1rem,   60px);
+
+  --size-site-title : clamp(48px, 4vw   + 1rem,   68px);
   --size-h1         : clamp(28px, 4vw   + 1rem,   48px);
   --size-h2         : clamp(24px, 3vw   + 0.8rem, 36px);
   --size-h3         : clamp(20px, 2vw   + 0.6rem, 28px);
   --size-h4         : clamp(18px, 1.5vw + 0.5rem, 24px);
+
   --size-code       : clamp(14px, 1vw   + 0.3rem, 18px);
 
   --size-toc-top    : clamp(12px, 1vw   + 0.4rem, 16px);

@@ -208,31 +208,52 @@ subtitle: My name is Rebecca.
   width   : 23%;
 }
 
-@media (max-width: 600px) {
-  .flux-button {
-    width: 40%;
-  }
+.site-title-img
+{
+  width: 100%;
 }
 
-.grid {
-  display               : grid;
-  grid-template-columns : 1fr 2fr;
-  gap                   : 0;
-}
-
-.site-title-container
+.site-title-banner
 {
   width           : 100%;
+  display         : grid;
+  grid-template-columns : 1fr 2fr;
   border-bottom   : var(--site-title-brdr);
   margin-bottom   : var(--pg-padding);
 }
+/*--------------------------------------------------------------------*/
+/* Mobile viewing
+/*--------------------------------------------------------------------*/
+@media (max-width: 750px) {
+  .flux-button {
+    width: 40%;
+  }
+  .site-title-banner
+  {
+    grid-template-columns : 1fr;
+    border: none;
+  }
+  .site-title-img
+  {
+    width       : 100%;
+  }
+  .site-title-container
+  {
+    padding         : var(--pg-padding);
+    border-bottom   : var(--site-title-brdr);
+    margin-bottom   : var(--pg-padding);
+    width           : 100%;
+  }
+}
+/*--------------------------------------------------------------------*/
+
 
 /*--------------------------------------------------------------------*/
 /* Make site title grid flush with top of page
 /*--------------------------------------------------------------------*/
 #title-block-header { margin  : 0px; }
-#quarto-content>*   { padding : 0px;}
-.content            { margin  : 0px;}
+#quarto-content>*   { padding : 0px; }
+.content            { margin  : 0px; }
 /*--------------------------------------------------------------------*/
 
 main
@@ -242,17 +263,8 @@ main
 
 </style>
 <div class="full-bleed">
-<div class="grid site-title-container" style="
-">
-<div style="
-      display         : flex;
-      flex-direction  : column;
-      align-items     : center;
-      /*
-      height          : 100%;
-      */
-      justify-content : center;
-  ">
+<div class="site-title-banner">
+<div class="site-title-container" style="margin: auto;">
 <div class="flux-site-title" style="">
 Salutations!
 </div>
@@ -261,12 +273,9 @@ My name is Rebecca.
 </div>
 </div>
 <div>
-<img src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg" style="
-        width : 100%;
-        /*
-        max-height: 400px
-        */
-      ">
+<p style="margin:0;">
+<img src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg" class="site-title-img">
+</p>
 </div>
 </div>
 </div>
