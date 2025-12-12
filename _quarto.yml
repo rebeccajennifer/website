@@ -33,6 +33,7 @@ project:
   resources   :
     - assets/**
     - "CNAME"
+    - darkmode.js
 
 website:
   title: "Rebecca Jennifer Rashkin"
@@ -55,7 +56,6 @@ website:
           - text: "Planner Assembly Instructions"
             href: projects/the-book-of-plans/assembly-instructions.qmd
 
-
       - text: "Teaching"
         menu:
           - text: "How to Learn"
@@ -70,6 +70,10 @@ website:
 
 
     tools:
+
+      - icon: moon
+        href: "javascript:void(0)"
+
       - icon: linkedin
         href: https://linkedin.com/in/rebeccajr
       - icon: github
@@ -90,7 +94,6 @@ website:
 
 format:
   html:
-    theme     : default
     css       : flux-bunny.css
     code-fold : true
     toc-title : "Table of Contents"

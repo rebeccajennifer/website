@@ -30,22 +30,25 @@
 /*--------------------------------------------------------------------*/
 /* CONSTANTS
 /*--------------------------------------------------------------------*/
-:root
-{
 /*--------------------------------------------------------------------*/
 /* Dark theme, need to implement
 /*--------------------------------------------------------------------*/
-  --flux-color-1    : #875f87;
+:root.dark-mode
+{
+  --flux-color-1    : #af87af;
   --flux-color-2    : #5fafaf;
   --flux-color-3    : #0087af;
 
   --flux-bg-norm    : #262626;
-  --flux-bg-bold    : #c0c0c0;
+  --flux-bg-bold    : #303030;
   --flux-fg-norm    : #eeeeee;
   --flux-fg-bold    : #afafaf;
+}
 
+:root
+{
 /*--------------------------------------------------------------------*/
-/* Light theme, current
+/* Light theme, default
 /*--------------------------------------------------------------------*/
   --flux-color-1    : #874787;
   --flux-color-2    : #478787;
@@ -338,6 +341,11 @@ main
 .navbar-tools
 {
   padding-right: var(--pg-padding);
+}
+
+.quarto-navbar-tools tools-wide
+{
+  color:#FF0000;
 }
 
 .dropdown-menu
