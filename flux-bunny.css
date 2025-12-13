@@ -196,7 +196,7 @@ h3
 
 #quarto-margin-sidebar a:hover
 {
-  color         : var(--flux-color-2) !important;
+  color         : var(--flux-color-2) !important;         /* ! needed */
 }
 
 #quarto-margin-sidebar #TOC .nav-link
@@ -206,8 +206,8 @@ h3
 
 #quarto-margin-sidebar #TOC .nav-link.active
 {
-  color         : var(--flux-color-1) !important;
-  font-weight   : bold !important;
+  color         : var(--flux-color-1)!important;          /* ! needed */
+  font-weight   : bold;
   border        : none;
 }
 
@@ -352,8 +352,8 @@ main
 
 .aa-Panel *
 {
-  color             : var(--flux-fg-norm) !important;
-  background-color  : var(--flux-bg-norm) !important;
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
 }
 
 .search-result-container:hover
@@ -362,42 +362,41 @@ main
 , .search-result-doc-section.search-item:hover *:not(.search-match)
 , .search-result-more:hover
 {
-  color             : var(--flux-bg-norm) !important;
-  background-color  : var(--flux-color-2) !important;
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
 }
 
 .search-match
 {
-  color             : var(--flux-bg-norm) !important;
-  background-color  : var(--flux-color-1) !important;
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-1) !important;     /* ! needed */
 }
 
 /* Search entry pop up */
 .aa-DetachedFormContainer
 {
-  color             : var(--flux-fg-norm) !important;
-  background-color  : var(--flux-bg-norm) !important;
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
 }
 
 /* Cancel search button */
 .aa-DetachedCancelButton
 {
-  color             : var(--flux-bg-norm) !important;
-  background-color  : var(--flux-color-2) !important;
-  font-family       : var(--font-fam-header) !important;
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
+  font-family       : var(--font-fam-header) !important;  /* ! needed */
   border            : none;
 }
 
 /* Text entry */
 input
 {
-  color             : var(--flux-fg-norm) !important;
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
 }
 
 /* Search text entry */
 .aa-Form.d-flex
 {
-  background-color  : var(--flux-bg-bold) !important;
+  background-color  : var(--flux-bg-bold);
   border            : 1px solid var(--flux-fg-bold);
 }
 /*--------------------------------------------------------------------*/
@@ -405,10 +404,10 @@ input
 /*--------------------------------------------------------------------*/
 .quarto-navbar-tools .quarto-navigation-tool
 {
-  color           : var(--flux-bg-norm) !important;
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
 }
 .aa-DetachedSearchButtonIcon svg {
-  color           : var(--flux-bg-norm) !important;
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
 }
 
 .navbar-toggler-icon{background-image: none;}
@@ -590,8 +589,9 @@ details {
 
 .quarto-title-banner.page-columns.page-full .quarto-title.column-body
 {
-  border-bottom     : none !important;
-  height            : auto;
+  border-bottom     : none;
+
+  /* Remove extra bottom space in blog title banner */
   margin            : 0px;
 }
 
