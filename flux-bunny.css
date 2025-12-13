@@ -353,6 +353,21 @@ main
 .aa-DetachedSearchButtonIcon svg {
   color: var(--flux-bg-norm) !important;
 }
+
+.navbar-toggler-icon{background-image: none;}
+/* Hamburger menu icon for mobile */
+.navbar-toggler-icon::before {
+  content: "☰";
+  font-size: var(--size-h4);
+  color: var(--flux-bg-norm);
+}
+
+/* Hamburger menu icon positioning */
+.navbar-toggler-icon {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 /*--------------------------------------------------------------------*/
 
 .dropdown-menu
