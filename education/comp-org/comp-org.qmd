@@ -22,11 +22,9 @@
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
-<!--
-________________________________________________________________________
-    DESCRIPTION
-    Course website for Computer Systems and Assembly Language
-_____________________________________________________________________-->
+<!--DESCRIPTION
+|   Course website for Computer Systems and Assembly Language
+|____________________________________________________________________-->
 
 ---
 title: Computer Systems and Assembly Language
@@ -46,9 +44,14 @@ toc: true
     display : block;
   }
 }
-</style>
 
-## About This Page
+handout-title {
+  font-size     : var(--size-h3);
+  color         : var(--flux-color-1);
+  font-family   : var(--font-fam-header);
+}
+
+</style>
 
 From 2018 to 2019, I had the joy of teaching Computer Systems and
 Assembly Language at the University of California, Santa Cruz. In this
@@ -306,7 +309,7 @@ for r in rows:
       supplement_list = supplement_list + '</p>'
 
   html_parts.append(f"""
-<details><summary class="h3-mock">{r['heading']}</summary>
+<details><summary class="handout-title">{r['heading']}</summary>
   <p>{r['desc']}</p>
   <div>
     <a  class="flux-button _0" href="{r['worksheet']}">Google Doc </a>
@@ -370,7 +373,7 @@ html_parts = []
 for assignment in extra_credit:
 
   html_parts.append(f"""
-<!--details><summary class="h3-mock">{assignment['name']}</summary-->
+<!--details><summary class="handout-title">{assignment['name']}</summary-->
 <details><summary>{assignment['name']}</summary>
   <p>{assignment['desc']}</p>
   <div>

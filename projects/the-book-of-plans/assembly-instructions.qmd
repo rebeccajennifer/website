@@ -22,12 +22,9 @@
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
-<!--
-________________________________________________________________________
-    DESCRIPTION
-    Instructions on how to assemble The Book of Plans
-________________________________________________________________________
--->
+<!--DESCRIPTION
+|   Instructions on how to assemble The Book of Plans
+|____________________________________________________________________-->
 
 ---
 title: How to Assemble The Book of Plans
@@ -76,7 +73,7 @@ These products are just examples of tools you can use to assemble _The Book of P
 
 Set your holes to punch at the following measurements to fit in a 3-ring mini binder:
 
-![](mini-binder-holes.png){width="50%"}
+![](./images__the-book-of-plans/mini-binder-holes.png){width="50%"}
 
 ### General Notes
 

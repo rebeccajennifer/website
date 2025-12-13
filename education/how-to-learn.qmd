@@ -22,11 +22,9 @@
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
-<!--
-________________________________________________________________________
-    DESCRIPTION
-    Steps on how to learn
-_____________________________________________________________________-->
+<!--DESCRIPTION
+|   Steps on how to learn.
+|____________________________________________________________________-->
 
 ---
 title: How To Learn
@@ -36,6 +34,8 @@ subtitle: >
   Be consistent.
 toc: true
 ---
+
+Learning something new can feel impossible at times. This page offers a clear set of steps to help you start learning something new or move forward in a skill you’re already developing.
 
 ## Show Up
 

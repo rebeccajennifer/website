@@ -21,7 +21,6 @@
 |                                                                      |
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|______________________________________________________________________|
 |_____________________________________________________________________*/
 /*  DESCRIPTION
 /*  CSS Stylesheet for website.
@@ -30,62 +29,72 @@
 /*--------------------------------------------------------------------*/
 /* CONSTANTS
 /*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/* Dark theme - colors become active when moon icon selected
+/*--------------------------------------------------------------------*/
+:root.dark-mode
+{
+  --flux-color-1      : #af87af;
+  --flux-color-2      : #5fafaf;
+  --flux-color-3      : #0087af;
+
+  --flux-bg-norm      : #262626;
+  --flux-bg-bold      : #303030;
+  --flux-fg-norm      : #eeeeee;
+  --flux-fg-bold      : #afafaf;
+}
+
 :root
 {
-/*--------------------------------------------------------------------*/
-/* Dark theme, need to implement
-/*--------------------------------------------------------------------*/
-  --flux-color-1    : #875f87;
-  --flux-color-2    : #5fafaf;
-  --flux-color-3    : #0087af;
 
-  --flux-bg-norm    : #262626;
-  --flux-bg-bold    : #c0c0c0;
-  --flux-fg-norm    : #eeeeee;
-  --flux-fg-bold    : #afafaf;
+  /*------------------------------------------------------------------*/
+  /* Light theme, default
+  /*------------------------------------------------------------------*/
+  --flux-color-1      : #874787;
+  --flux-color-2      : #478787;
+  --flux-color-3      : #475f87;
 
-/*--------------------------------------------------------------------*/
-/* Light theme, current
-/*--------------------------------------------------------------------*/
-  --flux-color-1    : #874787;
-  --flux-color-2    : #478787;
-  --flux-color-3    : #475f87;
+  --flux-bg-norm      : #eeeeee;
+  --flux-bg-bold      : #d7d7d7;
+  --flux-fg-norm      : #262626;
+  --flux-fg-bold      : #5f5f5f;
+  /*------------------------------------------------------------------*/
 
-  --flux-bg-norm    : #eeeeee;
-  --flux-bg-bold    : #d7d7d7;
-  --flux-fg-norm    : #262626;
-  --flux-fg-bold    : #5f5f5f;
+  --flux-wht---7      : #eeeeee;
 
-  --content-padding : 20px;
-  --toc-link-padding:  8px;
-  --pg-padding      : 40px;
+  /*------------------------------------------------------------------*/
+  /* Dimensions
+  /*------------------------------------------------------------------*/
+  --content-padding   : 20px;
+  --toc-link-padding  :  8px;
+  --pg-padding        : 40px;
 
-  --flux_button_txt : var(--flux-bg-norm);
+  --flux_button_txt   : var(--flux-bg-norm);
 
-  --site-title-brdr : 16px solid var(--flux-color-3);
+  --site-title-brdr   : 16px solid var(--flux-color-3);
 
-  --content-border  :  8px solid var(--flux-color-3);
-  --h2-border       :  4px solid var(--flux-color-2);
-  --h3-border       :  1px solid var(--flux-bg-bold);
+  --content-border    :  8px solid var(--flux-color-3);
+  --h2-border         :  4px solid var(--flux-color-2);
+  --h3-border         :  1px solid var(--flux-bg-bold);
 
   --margin-site-title : clamp(28px, 4vw   + 1rem,   60px);
-  --size-base       : clamp(16px, 1vw   + 0.5rem, 20px);
+  --size-base         : clamp(16px, 1vw   + 0.5rem, 20px);
 
-  --size-site-title : clamp(48px, 4vw   + 1rem,   68px);
-  --size-h1         : clamp(28px, 4vw   + 1rem,   48px);
-  --size-h2         : clamp(24px, 3vw   + 0.8rem, 36px);
-  --size-h3         : clamp(20px, 2vw   + 0.6rem, 28px);
-  --size-h4         : clamp(18px, 1.5vw + 0.5rem, 24px);
+  --size-site-title   : clamp(48px, 4vw   + 1rem,   68px);
+  --size-h1           : clamp(28px, 4vw   + 1rem,   48px);
+  --size-h2           : clamp(24px, 3vw   + 0.8rem, 36px);
+  --size-h3           : clamp(20px, 2vw   + 0.6rem, 28px);
+  --size-h4           : clamp(18px, 1.5vw + 0.5rem, 24px);
 
-  --size-code       : clamp(14px, 1vw   + 0.3rem, 18px);
+  --size-code         : clamp(14px, 1vw   + 0.3rem, 18px);
 
-  --size-toc-top    : clamp(12px, 1vw   + 0.4rem, 16px);
-  --size-toc-gen    : clamp(10px, 1vw   + 0.2rem, 12px);
+  --size-toc-top      : clamp(12px, 1vw   + 0.4rem, 16px);
+  --size-toc-gen      : clamp(10px, 1vw   + 0.2rem, 12px);
 
-  --font-fam-header : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
-  --font-fam-normal : 'Consolas', monospace;
+  --font-fam-header   : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
+  --font-fam-normal   : 'Consolas', monospace;
 
-  --button_txt_size : 20px;
+  --button_txt_size   : 20px;
 }
 
 body
@@ -132,10 +141,6 @@ h1
   text-align    : center;
   border        : none;
   padding-top   : 0px;
-  /*
-  margin-left   : var(--margin-site-title);
-  margin-right  : var(--margin-site-title);
-  */
 }
 
 .site-subtitle
@@ -145,13 +150,7 @@ h1
   font-family     : var(--font-fam-header);
   text-align      : center;
   border          : none; padding-top: 0px;
-  /*
-  margin-left     : var(--margin-site-title);
-  margin-right    : var(--margin-site-title);
-  */
 }
-
-
 
 h2
 {
@@ -169,6 +168,11 @@ h3
   padding-top   : var(--content-padding);
   border-top    : var(--h3-border);
   font-variant  : small-caps;
+}
+
+h4
+{
+  margin-left: 0px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -192,7 +196,7 @@ h3
 
 #quarto-margin-sidebar a:hover
 {
-  color         : var(--flux-color-2) !important;
+  color         : var(--flux-color-2) !important;         /* ! needed */
 }
 
 #quarto-margin-sidebar #TOC .nav-link
@@ -202,12 +206,12 @@ h3
 
 #quarto-margin-sidebar #TOC .nav-link.active
 {
-  color         : var(--flux-color-1) !important;
-  font-weight   : bold !important;
+  color         : var(--flux-color-1) !important;         /* ! needed */
+  font-weight   : bold;
   border        : none;
 }
 
-/* Keep the Quarto margin sidebar TOC fully expanded */
+/* Keep the quarto margin sidebar TOC fully expanded */
 #quarto-margin-sidebar #TOC .collapse {
   display: block;
 }
@@ -221,25 +225,20 @@ h3
   padding-top   : var(--toc-link-padding);
 }
 
-
 /*--------------------------------------------------------------------*/
 /* Don't apply top border to first h2 in main content.
 /* Each time h2 is used in quarto, it adds a new .level2 section.
 /* This code is targeting the h2 of first instance of level2 in main.
+/*
+/* Not currently active but keeping for reference.
 /*--------------------------------------------------------------------*/
+/*
 main .level2:first-of-type h2{
   border-top: none;
 }
+*/
 
 /*--------------------------------------------------------------------*/
-h3-mock {
-  font-size     : var(--size-h3);
-  color         : var(--flux-color-1);
-  font-family   : var(--font-fam-header);
-}
-
-h4 { margin-left: 0px;}
-
 
 /*--------------------------------------------------------------------*/
 /* PAGE TITLE
@@ -340,9 +339,90 @@ main
   padding-right: var(--pg-padding);
 }
 
+/*--------------------------------------------------------------------*/
+/* Search window
+/*--------------------------------------------------------------------*/
+
+.aa-Panel *
+{
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
+}
+
+.search-result-container:hover
+, .search-result-container:hover *:not(.search-match)
+, .search-result-doc-section.search-item:hover
+, .search-result-doc-section.search-item:hover *:not(.search-match)
+, .search-result-more:hover
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
+}
+
+.search-match
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-1) !important;     /* ! needed */
+}
+
+/* Search entry pop up */
+.aa-DetachedFormContainer
+{
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
+}
+
+/* Cancel search button */
+.aa-DetachedCancelButton
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
+  font-family       : var(--font-fam-header) !important;  /* ! needed */
+  border            : none;
+}
+
+/* Text entry */
+input
+{
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+}
+
+/* Search text entry */
+.aa-Form.d-flex
+{
+  background-color  : var(--flux-bg-bold);
+  border            : 1px solid var(--flux-fg-bold);
+}
+/*--------------------------------------------------------------------*/
+/* Icon colors
+/*--------------------------------------------------------------------*/
+.quarto-navbar-tools .quarto-navigation-tool
+{
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
+}
+.aa-DetachedSearchButtonIcon svg {
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
+}
+
+.navbar-toggler-icon{background-image: none;}
+/* Hamburger menu icon for mobile */
+.navbar-toggler-icon::before {
+  content         : "☰";
+  font-size       : var(--size-h4);
+  color           : var(--flux-bg-norm);
+}
+
+/* Hamburger menu icon positioning */
+.navbar-toggler-icon {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+}
+/*--------------------------------------------------------------------*/
+
 .dropdown-menu
 {
   font-family       : var(--font-fam-normal);
+  background-color  : #0087af;
 }
 
 .dropdown-item:hover
@@ -353,7 +433,8 @@ main
 
 .dropdown-item
 {
-  background-color  : var(--flux-bg-norm);
+  background-color  : var(--flux-bg-bold);
+  color             : var(--flux-fg-norm);
 }
 
 .nav-icon
@@ -370,12 +451,12 @@ main
   font-family       : var(--font-fam-header);
   color             : var(--flux-bg-norm);
   display           : inline-block;
-  text-decoration   : none;                   /* Don't underline */
+  text-decoration   : none; /* Don't underline */
   font-size         : var(--size-h4);
   text-align        : center;
 
   padding           : 0px 10px; /* Second entry is horizonal padding */
-  margin-top: 10px;
+  margin-top        : 10px;
 
   align-items       : center;
   outline           : none;
@@ -421,12 +502,6 @@ a:active  { color        : var(--flux-color-2); }
 a:visited { color        : var(--flux-color-1); }
 
 /*--------------------------------------------------------------------*/
-.flux-img
-{
-  width: 100%;
-}
-
-/*--------------------------------------------------------------------*/
 /* CODE BLOCKS
 /*--------------------------------------------------------------------*/
 
@@ -450,21 +525,21 @@ div.sourceCode code, pre
 /* Header for drop down */
 details summary
 {
-  color         : var(--flux-fg-bold);
-  cursor        : pointer;
-  display       : list-item;  /* Restores triangle behavior */
-  margin-top    : 0.5em;
+  color           : var(--flux-fg-bold);
+  cursor          : pointer;
+  display         : list-item;  /* Restores triangle behavior */
+  margin-top      : 0.5em;
 }
 
 details summary:hover
 {
-  color         : var(--flux-fg-bold);
+  color           : var(--flux-fg-bold);
 }
 
 /* Style when drop down is open */
 details[open] summary {
-  color       : var(--flux-color-3);
-  font-weight : bold;
+  color         : var(--flux-color-3);
+  font-weight   : bold;
 }
 
 details > *:not(summary) {
@@ -472,15 +547,16 @@ details > *:not(summary) {
 }
 
 details {
-  margin-bottom : 1em;
-  border-left   : 3px solid var(--flux-color-2);
-  padding-left  : 0.5em;
+  margin-bottom   : 1em;
+  border-left     : 3px solid var(--flux-color-2);
+  padding-left    : 0.5em;
 }
 
 /*--------------------------------------------------------------------*/
 /* BLOG
 /*--------------------------------------------------------------------*/
 
+/* Blog entry title background */
 .quarto-title-banner
 {
   background-color  : var(--flux-color-2);
@@ -490,21 +566,41 @@ details {
   margin-bottom     : var(--content-padding);
 }
 
+/* Blog entry title */
+.quarto-title-banner.page-columns.page-full h1.title
+{
+  color             : var(--flux-bg-norm);
+}
+
+/* Blog entry preview */
+.quarto-grid-item.card
+{
+  color             : var(--flux-fg-norm);
+  background-color  : var(--flux-bg-bold);
+  border            : 1px solid var(--flux-bg-bold);
+}
+
 .quarto-title-banner.page-columns.page-full .quarto-title.column-body
 {
-  border-bottom     : none !important;
-  height            : auto;
+  border-bottom     : none;
+
+  /* Remove extra bottom space in blog title banner */
   margin            : 0px;
 }
 
 .quarto-title.column-body
 {
   padding: 0px;
-  /*
-  */
 }
 
+/* Ensures all images are visible, even in dark mode */
+img
+{
+  background-color  : var(--flux-wht---7);
+  border            : 1px solid var(--flux-bg-bold);
+}
 
+/* Blog description on page under title */
 .quarto-title .description p
 {
   color             : var(--flux-bg-norm);

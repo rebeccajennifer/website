@@ -1,0 +1,1 @@
+This repository contains the source code for my personal website. I use the Quarto framework to build most of the content in Markdown, with colors and other styling defined in CSS. The site is hosted on GitHub Pages.
