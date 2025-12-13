@@ -21,7 +21,6 @@
 |                                                                      |
 |______________________________________________________________________|
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|______________________________________________________________________|
 |_____________________________________________________________________*/
 /*  DESCRIPTION
 /*  CSS Stylesheet for website.
@@ -348,29 +347,83 @@ main
 }
 
 /*--------------------------------------------------------------------*/
+/* Search window
+/*--------------------------------------------------------------------*/
+
+.aa-Panel *
+{
+  color             : var(--flux-fg-norm) !important;
+  background-color  : var(--flux-bg-norm) !important;
+}
+
+.search-result-container:hover
+, .search-result-container:hover *:not(.search-match)
+, .search-result-doc-section.search-item:hover
+, .search-result-doc-section.search-item:hover *:not(.search-match)
+, .search-result-more:hover
+{
+  color             : var(--flux-bg-norm) !important;
+  background-color  : var(--flux-color-2) !important;
+}
+
+.search-match
+{
+  color             : var(--flux-bg-norm) !important;
+  background-color  : var(--flux-color-1) !important;
+}
+
+/* Search entry pop up */
+.aa-DetachedFormContainer
+{
+  color             : var(--flux-fg-norm) !important;
+  background-color  : var(--flux-bg-norm) !important;
+}
+
+/* Cancel search button */
+.aa-DetachedCancelButton
+{
+  color             : var(--flux-bg-norm) !important;
+  background-color  : var(--flux-color-2) !important;
+  font-family       : var(--font-fam-header) !important;
+  border            : none;
+}
+
+/* Text entry */
+input
+{
+  color             : var(--flux-fg-norm) !important;
+}
+
+/* Search text entry */
+.aa-Form.d-flex
+{
+  background-color  : var(--flux-bg-bold) !important;
+  border            : 1px solid var(--flux-fg-bold);
+}
+/*--------------------------------------------------------------------*/
 /* Icon colors
 /*--------------------------------------------------------------------*/
 .quarto-navbar-tools .quarto-navigation-tool
 {
-  color: var(--flux-bg-norm) !important;
+  color           : var(--flux-bg-norm) !important;
 }
 .aa-DetachedSearchButtonIcon svg {
-  color: var(--flux-bg-norm) !important;
+  color           : var(--flux-bg-norm) !important;
 }
 
 .navbar-toggler-icon{background-image: none;}
 /* Hamburger menu icon for mobile */
 .navbar-toggler-icon::before {
-  content: "☰";
-  font-size: var(--size-h4);
-  color: var(--flux-bg-norm);
+  content         : "☰";
+  font-size       : var(--size-h4);
+  color           : var(--flux-bg-norm);
 }
 
 /* Hamburger menu icon positioning */
 .navbar-toggler-icon {
-  display: flex;
-  align-items: center;
-  justify-content: center;
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
 }
 /*--------------------------------------------------------------------*/
 
@@ -480,21 +533,21 @@ div.sourceCode code, pre
 /* Header for drop down */
 details summary
 {
-  color         : var(--flux-fg-bold);
-  cursor        : pointer;
-  display       : list-item;  /* Restores triangle behavior */
-  margin-top    : 0.5em;
+  color           : var(--flux-fg-bold);
+  cursor          : pointer;
+  display         : list-item;  /* Restores triangle behavior */
+  margin-top      : 0.5em;
 }
 
 details summary:hover
 {
-  color         : var(--flux-fg-bold);
+  color           : var(--flux-fg-bold);
 }
 
 /* Style when drop down is open */
 details[open] summary {
-  color       : var(--flux-color-3);
-  font-weight : bold;
+  color         : var(--flux-color-3);
+  font-weight   : bold;
 }
 
 details > *:not(summary) {
@@ -502,9 +555,9 @@ details > *:not(summary) {
 }
 
 details {
-  margin-bottom : 1em;
-  border-left   : 3px solid var(--flux-color-2);
-  padding-left  : 0.5em;
+  margin-bottom   : 1em;
+  border-left     : 3px solid var(--flux-color-2);
+  padding-left    : 0.5em;
 }
 
 /*--------------------------------------------------------------------*/
@@ -550,9 +603,8 @@ details {
 /* Ensures all images are visible, even in dark mode */
 img
 {
-  background-color: var(--flux-wht---7);
-
-  border          : 1px solid var(--flux-bg-bold);
+  background-color  : var(--flux-wht---7);
+  border            : 1px solid var(--flux-bg-bold);
 }
 
 /* Blog description on page under title */
