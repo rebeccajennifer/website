@@ -48,8 +48,6 @@ toc: true
 }
 </style>
 
-## About This Page
-
 From 2018 to 2019, I had the joy of teaching Computer Systems and
 Assembly Language at the University of California, Santa Cruz. In this
 “computer engineering 101” course, I restructured the course materials

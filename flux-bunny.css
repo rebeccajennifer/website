@@ -232,9 +232,11 @@ h3
 /* Each time h2 is used in quarto, it adds a new .level2 section.
 /* This code is targeting the h2 of first instance of level2 in main.
 /*--------------------------------------------------------------------*/
+/*
 main .level2:first-of-type h2{
   border-top: none;
 }
+*/
 
 /*--------------------------------------------------------------------*/
 h3-mock {

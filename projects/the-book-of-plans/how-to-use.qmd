@@ -35,6 +35,8 @@ toc: true
 subtitle: How to fill out planner pages.
 ---
 
+This page describes each of the types of pages in _The Book of Plans_ and instructions on how to fill them out.
+
 ## Sections
 
 This planner has four main sections and optional add-ons to help you practically move toward your ideal self. A full preview of the planner can be found [here](https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/layouts/preview/pdf). Note that this preview is not formatted for printing. For printing and assembly instructions, see [this page](./assembly-instructions.qmd).

@@ -37,6 +37,8 @@ subtitle: >
 toc: true
 ---
 
+Learning something new can feel impossible at times. This page offers a clear set of steps to help you start learning something new or move forward in a skill you’re already developing.
+
 ## Show Up
 
 A large part of making progress is just showing up -- _even if you don’t
