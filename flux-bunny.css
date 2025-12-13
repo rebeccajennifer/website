@@ -59,6 +59,8 @@
   --flux-fg-norm    : #262626;
   --flux-fg-bold    : #5f5f5f;
 
+  --flux-wht---7    : #eeeeee;
+
   --content-padding : 20px;
   --toc-link-padding:  8px;
   --pg-padding      : 40px;
@@ -407,7 +409,7 @@ main
   text-align        : center;
 
   padding           : 0px 10px; /* Second entry is horizonal padding */
-  margin-top: 10px;
+  margin-top        : 10px;
 
   align-items       : center;
   outline           : none;
@@ -451,12 +453,6 @@ a         { color        : var(--flux-color-3); }
 a:hover   { font-weight  : bold;                }
 a:active  { color        : var(--flux-color-2); }
 a:visited { color        : var(--flux-color-1); }
-
-/*--------------------------------------------------------------------*/
-.flux-img
-{
-  width: 100%;
-}
 
 /*--------------------------------------------------------------------*/
 /* CODE BLOCKS
@@ -513,6 +509,7 @@ details {
 /* BLOG
 /*--------------------------------------------------------------------*/
 
+/* Blog entry title background*/
 .quarto-title-banner
 {
   background-color  : var(--flux-color-2);
@@ -520,6 +517,20 @@ details {
   font-family       : var(--font-fam-header);
   padding           : var(--content-padding);
   margin-bottom     : var(--content-padding);
+}
+
+/* Blog entry title */
+.quarto-title-banner.page-columns.page-full h1.title
+{
+  color             : var(--flux-bg-norm);
+}
+
+/* Blog entry preview */
+.quarto-grid-item.card
+{
+  color             : var(--flux-fg-norm);
+  background-color  : var(--flux-bg-bold);
+  border            : 1px solid var(--flux-bg-bold);
 }
 
 .quarto-title-banner.page-columns.page-full .quarto-title.column-body
@@ -532,11 +543,17 @@ details {
 .quarto-title.column-body
 {
   padding: 0px;
-  /*
-  */
 }
 
+/* Ensures all images are visible, even in dark mode */
+img
+{
+  background-color: var(--flux-wht---7);
 
+  border          : 1px solid var(--flux-bg-bold);
+}
+
+/* Blog description on page under title */
 .quarto-title .description p
 {
   color             : var(--flux-bg-norm);
