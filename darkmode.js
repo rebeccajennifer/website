@@ -26,8 +26,6 @@
 //  Toggle dark mode.
 //______________________________________________________________________
 
-/*
-*/
 document.addEventListener("DOMContentLoaded", () => {
   // --- Restore saved state (minimal) ---
   if (localStorage.getItem("dark-mode") === "true") {
