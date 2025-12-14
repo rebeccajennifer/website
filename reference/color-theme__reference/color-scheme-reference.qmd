@@ -1,0 +1,47 @@
+
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for color scheme related information.
+|____________________________________________________________________-->
+
+---
+title: Color Scheme Reference
+subtitle: Bring joy into your environment.
+---
+
+Color brings me joy, and integrating color into my development
+environment brings an extra level of satisfaction to coding.
+
+This set of pages is a collection of resources I've collected in my
+efforts to unify color schemes across multiple terminal and coding
+environments.
+
+{{< include ../../assets/ui-elements/ansi256-color-graphic.html >}}
+
+## General Information
+
+[ANSI 256 Color Table](./ansi256-colors.qmd)
+[ANSI Codes Explained](./ansi-color-explained.qmd)

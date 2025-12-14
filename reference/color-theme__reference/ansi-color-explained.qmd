@@ -1,0 +1,111 @@
+
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for information about ANSI colors.
+|____________________________________________________________________-->
+
+---
+title: ANSI Color Codes Explained
+subtitle: ANSI 256? ANSI 16? 24-Bit Color?
+toc: true
+---
+
+ANSI color codes, as used in terminals, can be categorized into three main types:
+
+1. 16 colors
+2. 256 colors
+3. 24-bit true colors
+
+
+
+## ANSI 16 Color Codes (Standard Colors)
+
+This is the original set of terminal colors defined by the ANSI standard.
+
+ANSI color codes use a consistent pattern: the final digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / 'bright'.
+
+### ANSI 16 Prefix
+
+This is a list of the prefixes used in ANSI 16 color codes.
+
+Prefix | Application
+-|-
+`3` | Foreground, normal
+`4` | Background, normal
+`9` | Foreground, bold
+`10`| Background, bold
+
+
+### ANSI 16 Color Codes
+
+Here is a list of the ANSI 16 color codes and their meanings.
+
+Name | Base Index | FG Normal | BG Normal | FG Bold | BG Bold
+-|-|-|-|-|-
+Black   | `0` | `30` | `40` | `90` | `100`
+Red     | `1` | `31` | `41` | `91` | `101`
+Green   | `2` | `32` | `42` | `92` | `102`
+Yellow  | `3` | `33` | `43` | `93` | `103`
+Blue    | `4` | `34` | `44` | `94` | `104`
+Magenta | `5` | `35` | `45` | `95` | `105`
+Cyan    | `6` | `36` | `46` | `96` | `106`
+White   | `7` | `37` | `47` | `97` | `107`
+
+
+---
+
+## ANSI 256-Color Codes (Extended Colors)
+
+This adds more colors for modern terminals and breaks down into:
+
+1. 16 Base Colors (0–15):
+   - The original 16 colors, now accessible as part of the 256-color space.
+   - These map to the same values as the 16-color codes.
+   - These colors are often set by your terminal environment.
+
+2. 216 Color Cube (16–231):
+   - A 6x6x6 RGB cube with varying intensities of red, green, and blue.
+   - Example: `16` is black (`R=0, G=0, B=0`), `231` is white (`R=255, G=255, B=255`).
+
+3. Grayscale (232–255):
+   - 24 shades of gray, from near-black (232) to near-white (255).
+
+---
+
+## 24-bit True Color (16 Million Colors)
+
+Supported by most modern terminals, 24-bit true color allows you to specify exact RGB values.
+
+- **Foreground Format**: `\e[38;2;<R>;<G>;<B>m`
+- **Background Format**: `\e[48;2;<R>;<G>;<B>m`
+
+Example:
+```bash
+echo -e "\e[38;2;255;0;0mThis is bright red text\e[0m"
+```
+
+- `38` for foreground, 48 for background.
+- `<R>`, `<G>`, `<B>` represent red, green, and blue values (0–255).

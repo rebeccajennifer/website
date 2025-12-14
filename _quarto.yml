@@ -65,6 +65,11 @@ website:
           - text: How to View Worksheet Answers
             href: education/comp-org/worksheet-answers.qmd
 
+      - text: "Reference"
+        menu:
+          - text: Color
+            href: reference/color-theme__reference/color-scheme-reference.qmd
+
       - text: "Contact"
         href: contact.qmd
 
