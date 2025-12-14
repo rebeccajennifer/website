@@ -31,4 +31,4 @@ title: ANSI 256 Color Table
 subtitle: List of ANSI 256 colors and their corresponding RGB values
 ---
 
-{{< include ansi256-color-table.html >}}
+{{< include ../../assets/ui-elements/ansi256-color-table.html >}}
