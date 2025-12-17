@@ -30,66 +30,71 @@
 /* CONSTANTS
 /*--------------------------------------------------------------------*/
 /*--------------------------------------------------------------------*/
-/* Dark theme, need to implement
+/* Dark theme - colors become active when moon icon selected
 /*--------------------------------------------------------------------*/
 :root.dark-mode
 {
-  --flux-color-1    : #af87af;
-  --flux-color-2    : #5fafaf;
-  --flux-color-3    : #0087af;
+  --flux-color-1      : #af87af;
+  --flux-color-2      : #5fafaf;
+  --flux-color-3      : #0087af;
 
-  --flux-bg-norm    : #262626;
-  --flux-bg-bold    : #303030;
-  --flux-fg-norm    : #eeeeee;
-  --flux-fg-bold    : #afafaf;
+  --flux-bg-norm      : #262626;
+  --flux-bg-bold      : #303030;
+  --flux-fg-norm      : #eeeeee;
+  --flux-fg-bold      : #afafaf;
 }
 
 :root
 {
-/*--------------------------------------------------------------------*/
-/* Light theme, default
-/*--------------------------------------------------------------------*/
-  --flux-color-1    : #874787;
-  --flux-color-2    : #478787;
-  --flux-color-3    : #475f87;
 
-  --flux-bg-norm    : #eeeeee;
-  --flux-bg-bold    : #d7d7d7;
-  --flux-fg-norm    : #262626;
-  --flux-fg-bold    : #5f5f5f;
+  /*------------------------------------------------------------------*/
+  /* Light theme, default
+  /*------------------------------------------------------------------*/
+  --flux-color-1      : #874787;
+  --flux-color-2      : #478787;
+  --flux-color-3      : #475f87;
 
-  --flux-wht---7    : #eeeeee;
+  --flux-bg-norm      : #eeeeee;
+  --flux-bg-bold      : #d7d7d7;
+  --flux-fg-norm      : #262626;
+  --flux-fg-bold      : #5f5f5f;
+  /*------------------------------------------------------------------*/
 
-  --content-padding : 20px;
-  --toc-link-padding:  8px;
-  --pg-padding      : 40px;
+  --flux-wht---7      : #eeeeee;
 
-  --flux_button_txt : var(--flux-bg-norm);
+  /*------------------------------------------------------------------*/
+  /* Dimensions
+  /*------------------------------------------------------------------*/
+  --content-padding   : 20px;
+  --toc-link-padding  :  8px;
+  --pg-padding        : 40px;
 
-  --site-title-brdr : 16px solid var(--flux-color-3);
+  --flux_button_txt   : var(--flux-bg-norm);
 
-  --content-border  :  8px solid var(--flux-color-3);
-  --h2-border       :  4px solid var(--flux-color-2);
-  --h3-border       :  1px solid var(--flux-bg-bold);
+  --site-title-brdr   : 16px solid var(--flux-color-3);
+
+  --content-border    :  8px solid var(--flux-color-3);
+  --h2-border         :  4px solid var(--flux-color-2);
+  --h3-border         :  1px solid var(--flux-bg-bold);
 
   --margin-site-title : clamp(28px, 4vw   + 1rem,   60px);
-  --size-base       : clamp(16px, 1vw   + 0.5rem, 20px);
+  --size-base         : clamp(16px, 1vw   + 0.5rem, 20px);
 
-  --size-site-title : clamp(48px, 4vw   + 1rem,   68px);
-  --size-h1         : clamp(28px, 4vw   + 1rem,   48px);
-  --size-h2         : clamp(24px, 3vw   + 0.8rem, 36px);
-  --size-h3         : clamp(20px, 2vw   + 0.6rem, 28px);
-  --size-h4         : clamp(18px, 1.5vw + 0.5rem, 24px);
+  --size-site-title   : clamp(48px, 4vw   + 1rem,   68px);
+  --size-h1           : clamp(28px, 4vw   + 1rem,   48px);
+  --size-h2           : clamp(24px, 3vw   + 0.8rem, 36px);
+  --size-h3           : clamp(20px, 2vw   + 0.6rem, 28px);
+  --size-h4           : clamp(18px, 1.5vw + 0.5rem, 24px);
 
-  --size-code       : clamp(14px, 1vw   + 0.3rem, 18px);
+  --size-code         : clamp(14px, 1vw   + 0.3rem, 18px);
 
-  --size-toc-top    : clamp(12px, 1vw   + 0.4rem, 16px);
-  --size-toc-gen    : clamp(10px, 1vw   + 0.2rem, 12px);
+  --size-toc-top      : clamp(12px, 1vw   + 0.4rem, 16px);
+  --size-toc-gen      : clamp(10px, 1vw   + 0.2rem, 12px);
 
-  --font-fam-header : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
-  --font-fam-normal : 'Consolas', monospace;
+  --font-fam-header   : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
+  --font-fam-normal   : 'Consolas', monospace;
 
-  --button_txt_size : 20px;
+  --button_txt_size   : 20px;
 }
 
 body
@@ -136,10 +141,6 @@ h1
   text-align    : center;
   border        : none;
   padding-top   : 0px;
-  /*
-  margin-left   : var(--margin-site-title);
-  margin-right  : var(--margin-site-title);
-  */
 }
 
 .site-subtitle
@@ -149,13 +150,7 @@ h1
   font-family     : var(--font-fam-header);
   text-align      : center;
   border          : none; padding-top: 0px;
-  /*
-  margin-left     : var(--margin-site-title);
-  margin-right    : var(--margin-site-title);
-  */
 }
-
-
 
 h2
 {
@@ -173,6 +168,11 @@ h3
   padding-top   : var(--content-padding);
   border-top    : var(--h3-border);
   font-variant  : small-caps;
+}
+
+h4
+{
+  margin-left: 0px;
 }
 
 /*--------------------------------------------------------------------*/
@@ -196,7 +196,7 @@ h3
 
 #quarto-margin-sidebar a:hover
 {
-  color         : var(--flux-color-2) !important;
+  color         : var(--flux-color-2) !important;         /* ! needed */
 }
 
 #quarto-margin-sidebar #TOC .nav-link
@@ -206,12 +206,12 @@ h3
 
 #quarto-margin-sidebar #TOC .nav-link.active
 {
-  color         : var(--flux-color-1) !important;
-  font-weight   : bold !important;
+  color         : var(--flux-color-1) !important;         /* ! needed */
+  font-weight   : bold;
   border        : none;
 }
 
-/* Keep the Quarto margin sidebar TOC fully expanded */
+/* Keep the quarto margin sidebar TOC fully expanded */
 #quarto-margin-sidebar #TOC .collapse {
   display: block;
 }
@@ -225,11 +225,12 @@ h3
   padding-top   : var(--toc-link-padding);
 }
 
-
 /*--------------------------------------------------------------------*/
 /* Don't apply top border to first h2 in main content.
 /* Each time h2 is used in quarto, it adds a new .level2 section.
 /* This code is targeting the h2 of first instance of level2 in main.
+/*
+/* Not currently active but keeping for reference.
 /*--------------------------------------------------------------------*/
 /*
 main .level2:first-of-type h2{
@@ -238,14 +239,6 @@ main .level2:first-of-type h2{
 */
 
 /*--------------------------------------------------------------------*/
-h3-mock {
-  font-size     : var(--size-h3);
-  color         : var(--flux-color-1);
-  font-family   : var(--font-fam-header);
-}
-
-h4 { margin-left: 0px;}
-
 
 /*--------------------------------------------------------------------*/
 /* PAGE TITLE
@@ -352,8 +345,8 @@ main
 
 .aa-Panel *
 {
-  color             : var(--flux-fg-norm) !important;
-  background-color  : var(--flux-bg-norm) !important;
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
 }
 
 .search-result-container:hover
@@ -362,42 +355,41 @@ main
 , .search-result-doc-section.search-item:hover *:not(.search-match)
 , .search-result-more:hover
 {
-  color             : var(--flux-bg-norm) !important;
-  background-color  : var(--flux-color-2) !important;
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
 }
 
 .search-match
 {
-  color             : var(--flux-bg-norm) !important;
-  background-color  : var(--flux-color-1) !important;
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-1) !important;     /* ! needed */
 }
 
 /* Search entry pop up */
 .aa-DetachedFormContainer
 {
-  color             : var(--flux-fg-norm) !important;
-  background-color  : var(--flux-bg-norm) !important;
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
 }
 
 /* Cancel search button */
 .aa-DetachedCancelButton
 {
-  color             : var(--flux-bg-norm) !important;
-  background-color  : var(--flux-color-2) !important;
-  font-family       : var(--font-fam-header) !important;
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
+  font-family       : var(--font-fam-header) !important;  /* ! needed */
   border            : none;
 }
 
 /* Text entry */
 input
 {
-  color             : var(--flux-fg-norm) !important;
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
 }
 
 /* Search text entry */
 .aa-Form.d-flex
 {
-  background-color  : var(--flux-bg-bold) !important;
+  background-color  : var(--flux-bg-bold);
   border            : 1px solid var(--flux-fg-bold);
 }
 /*--------------------------------------------------------------------*/
@@ -405,10 +397,10 @@ input
 /*--------------------------------------------------------------------*/
 .quarto-navbar-tools .quarto-navigation-tool
 {
-  color           : var(--flux-bg-norm) !important;
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
 }
 .aa-DetachedSearchButtonIcon svg {
-  color           : var(--flux-bg-norm) !important;
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
 }
 
 .navbar-toggler-icon{background-image: none;}
@@ -459,7 +451,7 @@ input
   font-family       : var(--font-fam-header);
   color             : var(--flux-bg-norm);
   display           : inline-block;
-  text-decoration   : none;                   /* Don't underline */
+  text-decoration   : none; /* Don't underline */
   font-size         : var(--size-h4);
   text-align        : center;
 
@@ -564,7 +556,7 @@ details {
 /* BLOG
 /*--------------------------------------------------------------------*/
 
-/* Blog entry title background*/
+/* Blog entry title background */
 .quarto-title-banner
 {
   background-color  : var(--flux-color-2);
@@ -590,8 +582,9 @@ details {
 
 .quarto-title-banner.page-columns.page-full .quarto-title.column-body
 {
-  border-bottom     : none !important;
-  height            : auto;
+  border-bottom     : none;
+
+  /* Remove extra bottom space in blog title banner */
   margin            : 0px;
 }
 
