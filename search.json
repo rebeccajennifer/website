@@ -21,6 +21,13 @@
     "text": "What I Care About\n\nEngineering Movement Education Creativity"
   },
   {
+    "objectID": "index.html#about-this-site",
+    "href": "index.html#about-this-site",
+    "title": "Rebecca Jennifer Rashkin",
+    "section": "About This Site",
+    "text": "About This Site\nThis site was built with Quarto, a Markdown-based framework for websites and presentations. I ❤️ Markdown; it has just enough formatting to effectively document resources and build information in a sustainable way.\nIn my professional circles, I’m known as “the wiki girl” because I deeply value and consistently produce clean documentation. I’m always updating our team wiki; every time I learn a new process, I document it in case I (or someone else) ever needs to do it again. I believe the presentation of information is just as important as the information itself.\nThis site is a practical demonstration of my passion for sharing knowledge. It’s a portfolio and a collection of resources, but if I’m being honest, it’s mostly just a set of notes for my future self that I hope others find useful too 🙂"
+  },
+  {
     "objectID": "education/comp-org/worksheet-answers.html",
     "href": "education/comp-org/worksheet-answers.html",
     "title": "Spoiler Alert!",
@@ -46,7 +53,7 @@
     "href": "reference/color-theme__reference/ansi-color-explained.html#ansi-16-color-codes-standard-colors",
     "title": "ANSI Color Codes Explained",
     "section": "ANSI 16 Color Codes (Standard Colors)",
-    "text": "ANSI 16 Color Codes (Standard Colors)\nThis is the original set of terminal colors defined by the ANSI standard.\nANSI color codes use a consistent pattern: the least significant digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / ‘bright’.\nFor example, the color 41 corresponds with a foreground as bright red; i.e.:\n\n1 = red\n4 = bright foreground\n\nDescriptions of prefixes are defined below.\n\nANSI 16 Prefix\nThis is a list of the prefixes used in ANSI 16 color codes.\n\n\n\nPrefix\nApplication\n\n\n\n\n3\nForeground, normal\n\n\n4\nBackground, normal\n\n\n9\nForeground, bold\n\n\n10\nBackground, bold\n\n\n\n\n\nANSI 16 Color Codes\nHere is a list of the ANSI 16 color codes and their meanings.\n\n\n\nName\nBase Index\nFG Normal\nBG Normal\nFG Bold\nBG Bold\n\n\n\n\nBlack\n0\n30\n40\n90\n100\n\n\nRed\n1\n31\n41\n91\n101\n\n\nGreen\n2\n32\n42\n92\n102\n\n\nYellow\n3\n33\n43\n93\n103\n\n\nBlue\n4\n34\n44\n94\n104\n\n\nMagenta\n5\n35\n45\n95\n105\n\n\nCyan\n6\n36\n46\n96\n106\n\n\nWhite\n7\n37\n47\n97\n107"
+    "text": "ANSI 16 Color Codes (Standard Colors)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis is the original set of terminal colors defined by the ANSI standard.\nANSI color codes use a consistent pattern: the least significant digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / ‘bright’.\nFor example, the color 41 corresponds with a foreground as bright red; i.e.:\n\n1 = red\n4 = bright foreground\n\nDescriptions of prefixes are defined below.\n\nANSI 16 Prefix\nThis is a list of the prefixes used in ANSI 16 color codes.\n\n\n\nPrefix\nApplication\n\n\n\n\n3\nForeground, normal\n\n\n4\nBackground, normal\n\n\n9\nForeground, bold\n\n\n10\nBackground, bold\n\n\n\n\n\nANSI 16 Color Codes\nHere is a list of the ANSI 16 color codes and their meanings.\n\n\n\nName\nBase Index\nFG Normal\nBG Normal\nFG Bold\nBG Bold\n\n\n\n\nBlack\n0\n30\n40\n90\n100\n\n\nRed\n1\n31\n41\n91\n101\n\n\nGreen\n2\n32\n42\n92\n102\n\n\nYellow\n3\n33\n43\n93\n103\n\n\nBlue\n4\n34\n44\n94\n104\n\n\nMagenta\n5\n35\n45\n95\n105\n\n\nCyan\n6\n36\n46\n96\n106\n\n\nWhite\n7\n37\n47\n97\n107"
   },
   {
     "objectID": "reference/color-theme__reference/ansi-color-explained.html#ansi-256-color-codes",
