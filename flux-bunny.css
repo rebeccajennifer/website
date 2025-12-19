@@ -516,8 +516,8 @@ a:visited { color        : var(--flux-color-1); }
 /* Inline Code Blocks */
 code
 {
-  color             : var(--flux-color-3);
-  background-color  : var(--flux-bg-bold);
+  color             : var(--flux-fg-norm) !important;
+  background-color  : var(--flux-bg-bold) !important;
 }
 
 div.sourceCode code, pre
