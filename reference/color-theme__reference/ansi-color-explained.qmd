@@ -45,7 +45,14 @@ ANSI color codes, as used in terminals, can be categorized into three main types
 
 This is the original set of terminal colors defined by the ANSI standard.
 
-ANSI color codes use a consistent pattern: the final digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / 'bright'.
+ANSI color codes use a consistent pattern: the least significant digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / 'bright'.
+
+For example, the color `41` corresponds with a foreground as bright red; i.e.:
+
+- 1 = red
+- 4 = bright foreground
+
+Descriptions of prefixes are defined below.
 
 ### ANSI 16 Prefix
 
@@ -77,21 +84,84 @@ White   | `7` | `37` | `47` | `97` | `107`
 
 ---
 
-## ANSI 256-Color Codes (Extended Colors)
+## ANSI 256 Color Codes
 
-This adds more colors for modern terminals and breaks down into:
+Modern terminals have the ability to display 256 colors that are broken up as described:
 
-1. 16 Base Colors (0–15):
-   - The original 16 colors, now accessible as part of the 256-color space.
-   - These map to the same values as the 16-color codes.
-   - These colors are often set by your terminal environment.
 
-2. 216 Color Cube (16–231):
-   - A 6x6x6 RGB cube with varying intensities of red, green, and blue.
-   - Example: `16` is black (`R=0, G=0, B=0`), `231` is white (`R=255, G=255, B=255`).
+### 16 Base Colors (Color Codes 0-15)
 
-3. Grayscale (232–255):
-   - 24 shades of gray, from near-black (232) to near-white (255).
+{{< include ../../assets/ui-elements/ansi256-000-016.html >}}
+
+- These map to the same values as the 16-color codes.
+- These colors are often set by your terminal environment.
+
+
+### ANSI 256 Color Cube (Color Codes 16-231)
+
+{{< include ../../assets/ui-elements/ansi256-016-231.html >}}
+The ANSI 256 color cube consists of 216 colors arranged as a 6×6×6 RGB grid. Each color is formed by selecting one of six discrete intensity levels for the red, green, and blue channels: 00, 5F, 87, AF, D7, and FF. These colors occupy indices 16-231 of the ANSI 256 palette and provide a uniformly sampled subset of the RGB color space.
+
+#### RGB to ANSI 256 Index Conversion
+
+[This table](./ansi256-colors.qmd) lists all ANSI 256 color codes and their corresponding RGB values. You can also manually calculate the color index from an RGB value, as described below.
+
+##### RGB -> ANSI 256 Python Function
+
+I’ve written a Python module that performs the conversion from RGB to an ANSI 256 index, which you can find
+[here](https://github.com/rebeccajennifer/color-scheme-exporter/blob/f2e7f5b845b25bad660d66eac306114ae063ba16/classes/rgb_color.py#L193-L246).
+
+##### Base Colors
+
+The 16 base colors are defined by your environment, so there is no direct conversion from RGB to ANSI 256 for indices 1-16.
+
+##### Color Cube
+
+Valid RGB component values used by the 6x6x6 color cube (ANSI 256 indices 16–231):
+
+Decimal Value | Hex Value
+-|-
+`0`   | `0x00`
+`95`  | `0x5f`
+`135` | `0x87`
+`175` | `0xaf`
+`215` | `0xd7`
+`255` | `0xff`
+
+To convert the RGB values to the ANSI index, use the following calculation:
+
+```python
+#_______________________________________________
+# Round each RGB component to the nearest
+# valid value from the table above. The variable
+# definitions used in the calculation are
+# described as follows:
+#
+# red_near = the rounded red value
+# grn_near = the rounded green value
+# blu_near = the rounded blue value
+#_______________________________________________
+
+r = floor((red_near / 255.0) * 5)
+g = floor((grn_near / 255.0) * 5)
+b = floor((blu_near / 255.0) * 5)
+
+# Compute ANSI 256 color value
+ansi_index = 16 + (r * 36) + (g * 6) + b
+```
+
+### Grayscale (Color Codes 232-255)
+
+{{< include ../../assets/ui-elements/ansi256-232-255.html >}}
+
+This section consists of grayscale colors and occupies indices 232 (near black) through 255 (near white).
+
+#### RGB to ANSI 256 Index Conversion
+
+For shades of grey, each of the RGB components have the same value.
+
+If each RGB component is closest to one of the color cube levels (00, 5F, 87, AF, D7, or FF), use the equation described in the [Color Cube section](#color-cube).
+
 
 ---
 
