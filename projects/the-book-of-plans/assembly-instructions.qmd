@@ -46,7 +46,8 @@ subtitle: >
     {
       display           : inline;
       font-family       : var(--font-fam-normal);
-      background-color  : transparent;
+      background-color  : transparent !important;
+      color             : var(--flux-bg-norm) !important;
      }
 </style>
 
