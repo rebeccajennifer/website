@@ -212,6 +212,11 @@ h5
   font-size     : var(--size-toc-gen);
 }
 
+#quarto-margin-sidebar #TOC .nav-link
+{
+  border        : none;
+}
+
 #quarto-margin-sidebar #TOC .nav-link.active
 {
   color         : var(--flux-color-1) !important;         /* ! needed */

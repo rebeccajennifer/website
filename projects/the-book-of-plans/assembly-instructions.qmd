@@ -49,6 +49,11 @@ subtitle: >
       background-color  : transparent !important;
       color             : var(--flux-bg-norm) !important;
      }
+
+    a.flux-button code:hover
+    {
+      color             : var(--flux-fg-norm) !important;
+    }
 </style>
 
 The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below.
