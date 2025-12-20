@@ -262,7 +262,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <!--DESCRIPTION
 |   Reference page for creating a VS Code color scheme.
 |____________________________________________________________________-->
-<p>For a complete list of VS Code color theme properties, see <a href="https://code.visualstudio.com/api/references/theme-color">this page</a></p>
+<p><img src="./vscode-flux-dark-screenshot.png" class="img-fluid"></p>
+<p>See <a href="https://code.visualstudio.com/api/references/theme-color">this page</a> for a complete list of VS Code color theme properties.</p>
+<p>See <a href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes">this link</a> for a copy of my personally designed dark and light themes.</p>
 <section id="custom-theme-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="custom-theme-tutorial">Custom Theme Tutorial</h2>
 <section id="file-location" class="level3">
@@ -276,7 +278,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The touch command creates a blank file</span></span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> ~/.vscode/extensions/my-color-themes/package.json</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Edit <code>package.json</code> to include this minimal information.</p>
-<p>In this example, we are assuming there to be two theme files, <code>my-theme-1.json</code> and <code>my-theme-2.json</code>. The <code>"label"</code> property will be displayed in the color theme drop down menu in VS Code.</p>
+<p>In this example, we are assuming there to be two theme files, <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>. The <code>"label"</code> property will be displayed in the color theme drop down menu in VS Code.</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span> <span class="dt">"name"</span>          <span class="fu">:</span> <span class="st">"my-theme-pack"</span></span>
 <span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"displayName"</span>   <span class="fu">:</span> <span class="st">"My Theme Pack"</span></span>
 <span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"publisher"</span>     <span class="fu">:</span> <span class="st">"Your Name"</span></span>
@@ -298,6 +300,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>In <code>~/.vscode/extensions/my-color-themes</code> include the files for <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>.</p></li>
 </ol>
+<p><strong>Note:</strong> For the <code>uiTheme</code> property in <code>package.json</code>, use <code>vs-dark</code> for a dark theme and <code>vs</code> for a light theme. This ensures that any undefined properties inherit the correct default colors. In the <code>My Dark Theme</code> example, <code>vs</code> was intentionally selected instead of <code>vs-dark</code>; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.</p>
+<p><img src="./vscode-wrong-uitheme-example.png" class="img-fluid"></p>
 </section>
 <section id="minimal-color-theme-file" class="level3">
 <h3 class="anchored" data-anchor-id="minimal-color-theme-file">Minimal Color Theme File</h3>

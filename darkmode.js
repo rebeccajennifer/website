@@ -30,8 +30,8 @@ document.addEventListener("DOMContentLoaded", () => {
   const moon = document.querySelector('nav .bi-moon, nav .bi-sun');
 
   // Helper to swap icons
-  const updateIcon = (isDark) => {
-    if (isDark) {
+  const updateIcon = (is_dark) => {
+    if (is_dark) {
       moon.classList.replace('bi-moon', 'bi-sun');
     } else {
       moon.classList.replace('bi-sun', 'bi-moon');
