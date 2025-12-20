@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Color Scheme Reference – Rebecca Jennifer Rashkin</title>
+<title>VS Code Color Theme – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -182,8 +217,8 @@ ul.task-list li input[type="checkbox"] {
 
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Color Scheme Reference</h1>
-<p class="subtitle lead">Bring joy into your environment.</p>
+<h1 class="title">VS Code Color Theme</h1>
+<p class="subtitle lead">How to create a VS Code color theme file.</p>
 </div>
 
 
@@ -225,327 +260,101 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Reference page for color scheme related information.
+|   Reference page for creating a VS Code color scheme.
 |____________________________________________________________________-->
-<p>Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.</p>
-<p>This set of pages is a collection of resources I’ve collected in my efforts to unify color schemes across multiple terminal and coding environments.</p>
-
-
-<style>
-
-table
-{
-  width: 100%
-}
-
-.color-block{
-  height:       16px;
-}
-</style>
-
-
-<table>
-<tbody><tr>
-<td class="color-block" ,="" style="background-color:#000000">  </td>
-<td class="color-block" ,="" style="background-color:#800000">  </td>
-<td class="color-block" ,="" style="background-color:#008000">  </td>
-<td class="color-block" ,="" style="background-color:#808000">  </td>
-<td class="color-block" ,="" style="background-color:#000080">  </td>
-<td class="color-block" ,="" style="background-color:#800080">  </td>
-<td class="color-block" ,="" style="background-color:#008080">  </td>
-<td class="color-block" ,="" style="background-color:#c0c0c0">  </td>
-<td class="color-block" ,="" style="background-color:#808080">  </td>
-<td class="color-block" ,="" style="background-color:#ff0000">  </td>
-<td class="color-block" ,="" style="background-color:#00ff00">  </td>
-<td class="color-block" ,="" style="background-color:#ffff00">  </td>
-<td class="color-block" ,="" style="background-color:#0000ff">  </td>
-<td class="color-block" ,="" style="background-color:#ff00ff">  </td>
-<td class="color-block" ,="" style="background-color:#00ffff">  </td>
-<td class="color-block" ,="" style="background-color:#ffffff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#000000">  </td>
-<td class="color-block" ,="" style="background-color:#00005f">  </td>
-<td class="color-block" ,="" style="background-color:#000087">  </td>
-<td class="color-block" ,="" style="background-color:#0000af">  </td>
-<td class="color-block" ,="" style="background-color:#0000d7">  </td>
-<td class="color-block" ,="" style="background-color:#0000ff">  </td>
-<td class="color-block" ,="" style="background-color:#005f00">  </td>
-<td class="color-block" ,="" style="background-color:#005f5f">  </td>
-<td class="color-block" ,="" style="background-color:#005f87">  </td>
-<td class="color-block" ,="" style="background-color:#005faf">  </td>
-<td class="color-block" ,="" style="background-color:#005fd7">  </td>
-<td class="color-block" ,="" style="background-color:#005fff">  </td>
-<td class="color-block" ,="" style="background-color:#008700">  </td>
-<td class="color-block" ,="" style="background-color:#00875f">  </td>
-<td class="color-block" ,="" style="background-color:#008787">  </td>
-<td class="color-block" ,="" style="background-color:#0087af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#0087d7">  </td>
-<td class="color-block" ,="" style="background-color:#0087ff">  </td>
-<td class="color-block" ,="" style="background-color:#00af00">  </td>
-<td class="color-block" ,="" style="background-color:#00af5f">  </td>
-<td class="color-block" ,="" style="background-color:#00af87">  </td>
-<td class="color-block" ,="" style="background-color:#00afaf">  </td>
-<td class="color-block" ,="" style="background-color:#00afd7">  </td>
-<td class="color-block" ,="" style="background-color:#00afff">  </td>
-<td class="color-block" ,="" style="background-color:#00d700">  </td>
-<td class="color-block" ,="" style="background-color:#00d75f">  </td>
-<td class="color-block" ,="" style="background-color:#00d787">  </td>
-<td class="color-block" ,="" style="background-color:#00d7af">  </td>
-<td class="color-block" ,="" style="background-color:#00d7d7">  </td>
-<td class="color-block" ,="" style="background-color:#00d7ff">  </td>
-<td class="color-block" ,="" style="background-color:#00ff00">  </td>
-<td class="color-block" ,="" style="background-color:#00ff5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#00ff87">  </td>
-<td class="color-block" ,="" style="background-color:#00ffaf">  </td>
-<td class="color-block" ,="" style="background-color:#00ffd7">  </td>
-<td class="color-block" ,="" style="background-color:#00ffff">  </td>
-<td class="color-block" ,="" style="background-color:#5f0000">  </td>
-<td class="color-block" ,="" style="background-color:#5f005f">  </td>
-<td class="color-block" ,="" style="background-color:#5f0087">  </td>
-<td class="color-block" ,="" style="background-color:#5f00af">  </td>
-<td class="color-block" ,="" style="background-color:#5f00d7">  </td>
-<td class="color-block" ,="" style="background-color:#5f00ff">  </td>
-<td class="color-block" ,="" style="background-color:#5f5f00">  </td>
-<td class="color-block" ,="" style="background-color:#5f5f5f">  </td>
-<td class="color-block" ,="" style="background-color:#5f5f87">  </td>
-<td class="color-block" ,="" style="background-color:#5f5faf">  </td>
-<td class="color-block" ,="" style="background-color:#5f5fd7">  </td>
-<td class="color-block" ,="" style="background-color:#5f5fff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#5f8700">  </td>
-<td class="color-block" ,="" style="background-color:#5f875f">  </td>
-<td class="color-block" ,="" style="background-color:#5f8787">  </td>
-<td class="color-block" ,="" style="background-color:#5f87af">  </td>
-<td class="color-block" ,="" style="background-color:#5f87d7">  </td>
-<td class="color-block" ,="" style="background-color:#5f87ff">  </td>
-<td class="color-block" ,="" style="background-color:#5faf00">  </td>
-<td class="color-block" ,="" style="background-color:#5faf5f">  </td>
-<td class="color-block" ,="" style="background-color:#5faf87">  </td>
-<td class="color-block" ,="" style="background-color:#5fafaf">  </td>
-<td class="color-block" ,="" style="background-color:#5fafd7">  </td>
-<td class="color-block" ,="" style="background-color:#5fafff">  </td>
-<td class="color-block" ,="" style="background-color:#5fd700">  </td>
-<td class="color-block" ,="" style="background-color:#5fd75f">  </td>
-<td class="color-block" ,="" style="background-color:#5fd787">  </td>
-<td class="color-block" ,="" style="background-color:#5fd7af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#5fd7d7">  </td>
-<td class="color-block" ,="" style="background-color:#5fd7ff">  </td>
-<td class="color-block" ,="" style="background-color:#5fff00">  </td>
-<td class="color-block" ,="" style="background-color:#5fff5f">  </td>
-<td class="color-block" ,="" style="background-color:#5fff87">  </td>
-<td class="color-block" ,="" style="background-color:#5fffaf">  </td>
-<td class="color-block" ,="" style="background-color:#5fffd7">  </td>
-<td class="color-block" ,="" style="background-color:#5fffff">  </td>
-<td class="color-block" ,="" style="background-color:#870000">  </td>
-<td class="color-block" ,="" style="background-color:#87005f">  </td>
-<td class="color-block" ,="" style="background-color:#870087">  </td>
-<td class="color-block" ,="" style="background-color:#8700af">  </td>
-<td class="color-block" ,="" style="background-color:#8700d7">  </td>
-<td class="color-block" ,="" style="background-color:#8700ff">  </td>
-<td class="color-block" ,="" style="background-color:#875f00">  </td>
-<td class="color-block" ,="" style="background-color:#875f5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#875f87">  </td>
-<td class="color-block" ,="" style="background-color:#875faf">  </td>
-<td class="color-block" ,="" style="background-color:#875fd7">  </td>
-<td class="color-block" ,="" style="background-color:#875fff">  </td>
-<td class="color-block" ,="" style="background-color:#878700">  </td>
-<td class="color-block" ,="" style="background-color:#87875f">  </td>
-<td class="color-block" ,="" style="background-color:#878787">  </td>
-<td class="color-block" ,="" style="background-color:#8787af">  </td>
-<td class="color-block" ,="" style="background-color:#8787d7">  </td>
-<td class="color-block" ,="" style="background-color:#8787ff">  </td>
-<td class="color-block" ,="" style="background-color:#87af00">  </td>
-<td class="color-block" ,="" style="background-color:#87af5f">  </td>
-<td class="color-block" ,="" style="background-color:#87af87">  </td>
-<td class="color-block" ,="" style="background-color:#87afaf">  </td>
-<td class="color-block" ,="" style="background-color:#87afd7">  </td>
-<td class="color-block" ,="" style="background-color:#87afff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#87d700">  </td>
-<td class="color-block" ,="" style="background-color:#87d75f">  </td>
-<td class="color-block" ,="" style="background-color:#87d787">  </td>
-<td class="color-block" ,="" style="background-color:#87d7af">  </td>
-<td class="color-block" ,="" style="background-color:#87d7d7">  </td>
-<td class="color-block" ,="" style="background-color:#87d7ff">  </td>
-<td class="color-block" ,="" style="background-color:#87ff00">  </td>
-<td class="color-block" ,="" style="background-color:#87ff5f">  </td>
-<td class="color-block" ,="" style="background-color:#87ff87">  </td>
-<td class="color-block" ,="" style="background-color:#87ffaf">  </td>
-<td class="color-block" ,="" style="background-color:#87ffd7">  </td>
-<td class="color-block" ,="" style="background-color:#87ffff">  </td>
-<td class="color-block" ,="" style="background-color:#af0000">  </td>
-<td class="color-block" ,="" style="background-color:#af005f">  </td>
-<td class="color-block" ,="" style="background-color:#af0087">  </td>
-<td class="color-block" ,="" style="background-color:#af00af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#af00d7">  </td>
-<td class="color-block" ,="" style="background-color:#af00ff">  </td>
-<td class="color-block" ,="" style="background-color:#af5f00">  </td>
-<td class="color-block" ,="" style="background-color:#af5f5f">  </td>
-<td class="color-block" ,="" style="background-color:#af5f87">  </td>
-<td class="color-block" ,="" style="background-color:#af5faf">  </td>
-<td class="color-block" ,="" style="background-color:#af5fd7">  </td>
-<td class="color-block" ,="" style="background-color:#af5fff">  </td>
-<td class="color-block" ,="" style="background-color:#af8700">  </td>
-<td class="color-block" ,="" style="background-color:#af875f">  </td>
-<td class="color-block" ,="" style="background-color:#af8787">  </td>
-<td class="color-block" ,="" style="background-color:#af87af">  </td>
-<td class="color-block" ,="" style="background-color:#af87d7">  </td>
-<td class="color-block" ,="" style="background-color:#af87ff">  </td>
-<td class="color-block" ,="" style="background-color:#afaf00">  </td>
-<td class="color-block" ,="" style="background-color:#afaf5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#afaf87">  </td>
-<td class="color-block" ,="" style="background-color:#afafaf">  </td>
-<td class="color-block" ,="" style="background-color:#afafd7">  </td>
-<td class="color-block" ,="" style="background-color:#afafff">  </td>
-<td class="color-block" ,="" style="background-color:#afd700">  </td>
-<td class="color-block" ,="" style="background-color:#afd75f">  </td>
-<td class="color-block" ,="" style="background-color:#afd787">  </td>
-<td class="color-block" ,="" style="background-color:#afd7af">  </td>
-<td class="color-block" ,="" style="background-color:#afd7d7">  </td>
-<td class="color-block" ,="" style="background-color:#afd7ff">  </td>
-<td class="color-block" ,="" style="background-color:#afff00">  </td>
-<td class="color-block" ,="" style="background-color:#afff5f">  </td>
-<td class="color-block" ,="" style="background-color:#afff87">  </td>
-<td class="color-block" ,="" style="background-color:#afffaf">  </td>
-<td class="color-block" ,="" style="background-color:#afffd7">  </td>
-<td class="color-block" ,="" style="background-color:#afffff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d70000">  </td>
-<td class="color-block" ,="" style="background-color:#d7005f">  </td>
-<td class="color-block" ,="" style="background-color:#d70087">  </td>
-<td class="color-block" ,="" style="background-color:#d700af">  </td>
-<td class="color-block" ,="" style="background-color:#d700d7">  </td>
-<td class="color-block" ,="" style="background-color:#d700ff">  </td>
-<td class="color-block" ,="" style="background-color:#d75f00">  </td>
-<td class="color-block" ,="" style="background-color:#d75f5f">  </td>
-<td class="color-block" ,="" style="background-color:#d75f87">  </td>
-<td class="color-block" ,="" style="background-color:#d75faf">  </td>
-<td class="color-block" ,="" style="background-color:#d75fd7">  </td>
-<td class="color-block" ,="" style="background-color:#d75fff">  </td>
-<td class="color-block" ,="" style="background-color:#d78700">  </td>
-<td class="color-block" ,="" style="background-color:#d7875f">  </td>
-<td class="color-block" ,="" style="background-color:#d78787">  </td>
-<td class="color-block" ,="" style="background-color:#d787af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d787d7">  </td>
-<td class="color-block" ,="" style="background-color:#d787ff">  </td>
-<td class="color-block" ,="" style="background-color:#d7af00">  </td>
-<td class="color-block" ,="" style="background-color:#d7af5f">  </td>
-<td class="color-block" ,="" style="background-color:#d7af87">  </td>
-<td class="color-block" ,="" style="background-color:#d7afaf">  </td>
-<td class="color-block" ,="" style="background-color:#d7afd7">  </td>
-<td class="color-block" ,="" style="background-color:#d7afff">  </td>
-<td class="color-block" ,="" style="background-color:#d7d700">  </td>
-<td class="color-block" ,="" style="background-color:#d7d75f">  </td>
-<td class="color-block" ,="" style="background-color:#d7d787">  </td>
-<td class="color-block" ,="" style="background-color:#d7d7af">  </td>
-<td class="color-block" ,="" style="background-color:#d7d7d7">  </td>
-<td class="color-block" ,="" style="background-color:#d7d7ff">  </td>
-<td class="color-block" ,="" style="background-color:#d7ff00">  </td>
-<td class="color-block" ,="" style="background-color:#d7ff5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d7ff87">  </td>
-<td class="color-block" ,="" style="background-color:#d7ffaf">  </td>
-<td class="color-block" ,="" style="background-color:#d7ffd7">  </td>
-<td class="color-block" ,="" style="background-color:#d7ffff">  </td>
-<td class="color-block" ,="" style="background-color:#ff0000">  </td>
-<td class="color-block" ,="" style="background-color:#ff005f">  </td>
-<td class="color-block" ,="" style="background-color:#ff0087">  </td>
-<td class="color-block" ,="" style="background-color:#ff00af">  </td>
-<td class="color-block" ,="" style="background-color:#ff00d7">  </td>
-<td class="color-block" ,="" style="background-color:#ff00ff">  </td>
-<td class="color-block" ,="" style="background-color:#ff5f00">  </td>
-<td class="color-block" ,="" style="background-color:#ff5f5f">  </td>
-<td class="color-block" ,="" style="background-color:#ff5f87">  </td>
-<td class="color-block" ,="" style="background-color:#ff5faf">  </td>
-<td class="color-block" ,="" style="background-color:#ff5fd7">  </td>
-<td class="color-block" ,="" style="background-color:#ff5fff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#ff8700">  </td>
-<td class="color-block" ,="" style="background-color:#ff875f">  </td>
-<td class="color-block" ,="" style="background-color:#ff8787">  </td>
-<td class="color-block" ,="" style="background-color:#ff87af">  </td>
-<td class="color-block" ,="" style="background-color:#ff87d7">  </td>
-<td class="color-block" ,="" style="background-color:#ff87ff">  </td>
-<td class="color-block" ,="" style="background-color:#ffaf00">  </td>
-<td class="color-block" ,="" style="background-color:#ffaf5f">  </td>
-<td class="color-block" ,="" style="background-color:#ffaf87">  </td>
-<td class="color-block" ,="" style="background-color:#ffafaf">  </td>
-<td class="color-block" ,="" style="background-color:#ffafd7">  </td>
-<td class="color-block" ,="" style="background-color:#ffafff">  </td>
-<td class="color-block" ,="" style="background-color:#ffd700">  </td>
-<td class="color-block" ,="" style="background-color:#ffd75f">  </td>
-<td class="color-block" ,="" style="background-color:#ffd787">  </td>
-<td class="color-block" ,="" style="background-color:#ffd7af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#ffd7d7">  </td>
-<td class="color-block" ,="" style="background-color:#ffd7ff">  </td>
-<td class="color-block" ,="" style="background-color:#ffff00">  </td>
-<td class="color-block" ,="" style="background-color:#ffff5f">  </td>
-<td class="color-block" ,="" style="background-color:#ffff87">  </td>
-<td class="color-block" ,="" style="background-color:#ffffaf">  </td>
-<td class="color-block" ,="" style="background-color:#ffffd7">  </td>
-<td class="color-block" ,="" style="background-color:#ffffff">  </td>
-<td class="color-block" ,="" style="background-color:#080808">  </td>
-<td class="color-block" ,="" style="background-color:#121212">  </td>
-<td class="color-block" ,="" style="background-color:#1c1c1c">  </td>
-<td class="color-block" ,="" style="background-color:#262626">  </td>
-<td class="color-block" ,="" style="background-color:#303030">  </td>
-<td class="color-block" ,="" style="background-color:#3a3a3a">  </td>
-<td class="color-block" ,="" style="background-color:#444444">  </td>
-<td class="color-block" ,="" style="background-color:#4e4e4e">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#585858">  </td>
-<td class="color-block" ,="" style="background-color:#626262">  </td>
-<td class="color-block" ,="" style="background-color:#6c6c6c">  </td>
-<td class="color-block" ,="" style="background-color:#767676">  </td>
-<td class="color-block" ,="" style="background-color:#808080">  </td>
-<td class="color-block" ,="" style="background-color:#8a8a8a">  </td>
-<td class="color-block" ,="" style="background-color:#949494">  </td>
-<td class="color-block" ,="" style="background-color:#9e9e9e">  </td>
-<td class="color-block" ,="" style="background-color:#a8a8a8">  </td>
-<td class="color-block" ,="" style="background-color:#b2b2b2">  </td>
-<td class="color-block" ,="" style="background-color:#bcbcbc">  </td>
-<td class="color-block" ,="" style="background-color:#c6c6c6">  </td>
-<td class="color-block" ,="" style="background-color:#d0d0d0">  </td>
-<td class="color-block" ,="" style="background-color:#dadada">  </td>
-<td class="color-block" ,="" style="background-color:#e4e4e4">  </td>
-<td class="color-block" ,="" style="background-color:#eeeeee">  </td>
-</tr>
-</tbody></table>
-
-
-<section id="general-information" class="level2">
-<h2 class="anchored" data-anchor-id="general-information">General Information</h2>
-<p><a href="../../reference/color-theme__reference/ansi256-colors.html">ANSI 256 Color Table</a></p>
-<p><a href="../../reference/color-theme__reference/ansi-color-explained.html">ANSI Codes Explained</a></p>
-<p><a href="../../reference/color-theme__reference/ls-colors.html">LS_COLORS &amp; dircolors</a></p>
+<p>For a complete list of VS Code color theme properties, see <a href="https://code.visualstudio.com/api/references/theme-color">this page</a></p>
+<section id="custom-theme-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="custom-theme-tutorial">Custom Theme Tutorial</h2>
+<section id="file-location" class="level3">
+<h3 class="anchored" data-anchor-id="file-location">File Location</h3>
+<ol type="1">
+<li><p>To install a custom theme, create a new directory in the following location (on a Linux system):</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">~/.vscode/extensions/</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>This example uses the directory named <code>my-color-themes</code>; you can name this directory whatever you would like.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> ~/.vscode/extensions/my-color-themes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>In <code>my-color-themes</code> create a file named <code>package.json</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The touch command creates a blank file</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> ~/.vscode/extensions/my-color-themes/package.json</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Edit <code>package.json</code> to include this minimal information.</p>
+<p>In this example, we are assuming there to be two theme files, <code>my-theme-1.json</code> and <code>my-theme-2.json</code>. The <code>"label"</code> property will be displayed in the color theme drop down menu in VS Code.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span> <span class="dt">"name"</span>          <span class="fu">:</span> <span class="st">"my-theme-pack"</span></span>
+<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"displayName"</span>   <span class="fu">:</span> <span class="st">"My Theme Pack"</span></span>
+<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"publisher"</span>     <span class="fu">:</span> <span class="st">"Your Name"</span></span>
+<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"version"</span>       <span class="fu">:</span> <span class="st">"0.0.1"</span></span>
+<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"engines"</span>       <span class="fu">:</span> <span class="fu">{</span> <span class="dt">"vscode"</span><span class="fu">:</span> <span class="st">"*"</span> <span class="fu">}</span></span>
+<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"contributes"</span>   <span class="fu">:</span></span>
+<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">{</span> <span class="dt">"themes"</span>      <span class="fu">:</span></span>
+<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="ot">[</span> <span class="fu">{</span> <span class="dt">"label"</span>   <span class="fu">:</span> <span class="st">"My Dark theme"</span></span>
+<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"uiTheme"</span> <span class="fu">:</span> <span class="st">"vs-dark"</span></span>
+<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"path"</span>    <span class="fu">:</span> <span class="st">"./my-dark-theme.json"</span></span>
+<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">}</span></span>
+<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="ot">,</span> <span class="fu">{</span> <span class="dt">"label"</span>   <span class="fu">:</span> <span class="st">"My Light Theme"</span></span>
+<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"uiTheme"</span> <span class="fu">:</span> <span class="st">"vs"</span></span>
+<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"path"</span>    <span class="fu">:</span> <span class="st">"./my-light-theme.json"</span></span>
+<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">}</span></span>
+<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
+<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span></span>
+<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>In <code>~/.vscode/extensions/my-color-themes</code> include the files for <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>.</p></li>
+</ol>
 </section>
-<section id="implement-terminal-color-schemes" class="level2">
-<h2 class="anchored" data-anchor-id="implement-terminal-color-schemes">Implement Terminal Color Schemes</h2>
-<p><a href="../../reference/color-theme__reference/gnome-terminal-color.html">GNOME Color Profile</a></p>
-<p><a href="../../reference/color-theme__reference/vscode-color.html">VS Code Color Theme</a></p>
+<section id="minimal-color-theme-file" class="level3">
+<h3 class="anchored" data-anchor-id="minimal-color-theme-file">Minimal Color Theme File</h3>
+<p>This text is included in the minimal color theme file <code>my-dark-theme.json</code>.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"$schema"</span>     <span class="fu">:</span> <span class="st">"vscode://schemas/color-theme"</span></span>
+<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"colors"</span><span class="fu">:</span></span>
+<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">{</span> <span class="dt">"editor.background"</span>                 <span class="fu">:</span> <span class="st">"#1c1c1c"</span></span>
+<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">,</span> <span class="dt">"editor.foreground"</span>                 <span class="fu">:</span> <span class="st">"#c6c6c6"</span></span>
+<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span></span>
+<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"tokenColors"</span><span class="fu">:</span></span>
+<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="ot">[</span> <span class="fu">{</span> <span class="dt">"scope"</span><span class="fu">:</span> <span class="st">"comment"</span></span>
+<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">,</span> <span class="dt">"settings"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"foreground"</span><span class="fu">:</span> <span class="st">"#d7af5f"</span> <span class="fu">}</span></span>
+<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="fu">{</span> <span class="dt">"scope"</span><span class="fu">:</span> <span class="st">"string"</span></span>
+<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">,</span> <span class="dt">"settings"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"foreground"</span><span class="fu">:</span> <span class="st">"#af5faf"</span> <span class="fu">}</span></span>
+<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
+<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="er">//</span> <span class="er">These</span> <span class="er">properties</span> <span class="er">override</span> <span class="er">tokenColors</span></span>
+<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"semanticTokenColors"</span><span class="fu">:</span></span>
+<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">{</span> <span class="dt">"variable"</span>      <span class="fu">:</span> <span class="st">"#00afd7"</span></span>
+<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span></span>
+<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="load-custom-theme" class="level3">
+<h3 class="anchored" data-anchor-id="load-custom-theme">Load Custom Theme</h3>
+<section id="load-from-vs-code" class="level4">
+<h4 class="anchored" data-anchor-id="load-from-vs-code">Load From VS Code</h4>
+<p>To load the theme, from the search bar type <code>&gt;Color Theme</code> and select <code>Preferences: Color Theme</code>. You can also pull up this search bar with the shortcut <code>Ctrl+Shift+p</code>.</p>
+<p><img src="./vscode-select-pref-color-theme.png" class="img-fluid"></p>
+<p>The theme <code>My Dark Theme</code> should now display in the drop down options.</p>
+<p><img src="./vscode-color-theme-selection.png" class="img-fluid"></p>
+<p>You should now see your defined colors in the editor window.</p>
+<p><img src="./vscode-miminal-theme-example.png" class="img-fluid"></p>
+</section>
+<section id="add-to-settings.json" class="level4">
+<h4 class="anchored" data-anchor-id="add-to-settings.json">Add to <code>settings.json</code></h4>
+<p>You can also add the color theme to your <code>settings.json</code> file:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
+<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"workbench.colorTheme"</span><span class="fu">:</span> <span class="st">"My Dark Theme"</span></span>
+<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+</section>
+</section>
+<section id="existing-theme" class="level2">
+<h2 class="anchored" data-anchor-id="existing-theme">Existing Theme</h2>
+<p>You may want to start from an existing theme file. You can use the dark theme I have created <a href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/flux-bunny-color-schemes/flux-bunny-dark.json">here</a>. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="autoformat-.json-in-vim" class="level2">
+<h2 class="anchored" data-anchor-id="autoformat-.json-in-vim">Autoformat .json in Vim</h2>
+<p>If the the json file is not formatted, you can use the following Vim command to autoformat the json file:</p>
+<pre class="vim"><code>:%!python3 -m json.tool</code></pre>
 
 
 </section>
