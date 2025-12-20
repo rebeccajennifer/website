@@ -67,7 +67,7 @@
   /*------------------------------------------------------------------*/
   --content-padding   : 20px;
   --toc-link-padding  :  8px;
-  --pg-padding        : 40px;
+  --pg-padding        : 20px;
 
   --flux_button_txt   : var(--flux-bg-norm);
 

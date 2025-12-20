@@ -31,6 +31,8 @@ title: Color Scheme Reference
 subtitle: Bring joy into your environment.
 ---
 
+{{< include ../../assets/ui-elements/flux-bunny-dark-colors.html >}}
+
 Color brings me joy, and integrating color into my development
 environment brings an extra level of satisfaction to coding.
 
@@ -38,7 +40,6 @@ This set of pages is a collection of resources I've collected in my
 efforts to unify color schemes across multiple terminal and coding
 environments.
 
-{{< include ../../assets/ui-elements/ansi256-color-graphic.html >}}
 
 ## General Information
 
@@ -51,3 +52,5 @@ environments.
 ## Implement Terminal Color Schemes
 
 [GNOME Color Profile](./gnome-terminal-color.qmd)
+
+[VS Code Color Theme](./vscode-color.qmd)
