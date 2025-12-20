@@ -44,4 +44,7 @@ environments.
 ## General Information
 
 [ANSI 256 Color Table](./ansi256-colors.qmd)
+
 [ANSI Codes Explained](./ansi-color-explained.qmd)
+
+[LS_COLORS & dircolors](./ls-colors.qmd)
