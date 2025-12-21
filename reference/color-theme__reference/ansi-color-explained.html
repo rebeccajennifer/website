@@ -907,11 +907,59 @@ table
 </tbody></table>
 
 
-<p>This section consists of grayscale colors and occupies indices 232 (near black) through 255 (near white).</p>
+<p>This section covers the grayscale ramp, occupying indices 232 (near black) through 255 (near white). In the RGB model, gray is produced when the red, green, and blue components are equal (R=G=B). The table below lists the specific values used for these components within the ANSI 256-color grayscale range.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>ANSI Index</th>
+<th>Hex (R=G=B)</th>
+<th>Decimal (R=G=B)</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>232</code></td>
+<td><code>#080808</code></td>
+<td><code>8</code></td>
+</tr>
+<tr class="even">
+<td><code>233</code></td>
+<td><code>#121212</code></td>
+<td><code>18</code></td>
+</tr>
+<tr class="odd">
+<td><code>234</code></td>
+<td><code>#1c1c1c</code></td>
+<td><code>28</code></td>
+</tr>
+<tr class="even">
+<td>…</td>
+<td>…</td>
+<td>…</td>
+</tr>
+<tr class="odd">
+<td><code>254</code></td>
+<td><code>#e4e4e4</code></td>
+<td><code>228</code></td>
+</tr>
+<tr class="even">
+<td><code>255</code></td>
+<td><code>#eeeeee</code></td>
+<td><code>238</code></td>
+</tr>
+</tbody>
+</table>
 <section id="rgb-to-ansi-256-index-conversion-1" class="level4">
 <h4 class="anchored" data-anchor-id="rgb-to-ansi-256-index-conversion-1">RGB to ANSI 256 Index Conversion</h4>
-<p>For shades of grey, each of the RGB components have the same value.</p>
+<p>For shades of gray, each of the RGB components have the same value.</p>
 <p>If each RGB component is closest to one of the color cube levels (00, 5F, 87, AF, D7, or FF), use the equation described in the <a href="#color-cube">Color Cube section</a>.</p>
+<p>Otherwise, use the following equation:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode python code-with-copy"><code class="sourceCode python"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">#_______________________________________________</span></span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="co"># grey_near is the RGB component value (0-255)</span></span>
+<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a><span class="co"># rounded to the nearest valid step in the ANSI</span></span>
+<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a><span class="co"># grayscale table (e.g., 8, 18, 28...).</span></span>
+<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a><span class="co">#_______________________________________________</span></span>
+<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>ansi_index <span class="op">=</span> <span class="dv">232</span> <span class="op">+</span> (floor((grey_near <span class="op">-</span> <span class="dv">8</span>) <span class="op">/</span> <span class="dv">10</span>))</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <hr>
 </section>
 </section>
@@ -924,7 +972,7 @@ table
 <li><strong>Background Format</strong>: <code>\e[48;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m</code></li>
 </ul>
 <p>Example:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-e</span> <span class="st">"\e[38;2;255;0;0mThis is bright red text\e[0m"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="at">-e</span> <span class="st">"\e[38;2;255;0;0mThis is bright red text\e[0m"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <ul>
 <li><code>38</code> for foreground, 48 for background.</li>
 <li><code>&lt;R&gt;</code>, <code>&lt;G&gt;</code>, <code>&lt;B&gt;</code> represent red, green, and blue values (0–255).</li>
