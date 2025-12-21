@@ -155,13 +155,34 @@ ansi_index = 16 + (r * 36) + (g * 6) + b
 
 {{< include ../../assets/ui-elements/ansi256-232-255.html >}}
 
-This section consists of grayscale colors and occupies indices 232 (near black) through 255 (near white).
+This section covers the grayscale ramp, occupying indices 232 (near black) through 255 (near white). In the RGB model, gray is produced when the red, green, and blue components are equal (R=G=B). The table below lists the specific values used for these components within the ANSI 256-color grayscale range.
+
+ANSI Index | Hex (R=G=B) | Decimal (R=G=B)
+-|-|-
+`232` | `#080808` | `8`
+`233` | `#121212` | `18`
+`234` | `#1c1c1c` | `28`
+...   | ...       | ...
+`254` | `#e4e4e4` | `228`
+`255` | `#eeeeee` | `238`
+
 
 #### RGB to ANSI 256 Index Conversion
 
-For shades of grey, each of the RGB components have the same value.
+For shades of gray, each of the RGB components have the same value.
 
 If each RGB component is closest to one of the color cube levels (00, 5F, 87, AF, D7, or FF), use the equation described in the [Color Cube section](#color-cube).
+
+Otherwise, use the following equation:
+
+```python
+#_______________________________________________
+# grey_near is the RGB component value (0-255)
+# rounded to the nearest valid step in the ANSI
+# grayscale table (e.g., 8, 18, 28...).
+#_______________________________________________
+ansi_index = 232 + (floor((grey_near - 8) / 10))
+```
 
 
 ---
