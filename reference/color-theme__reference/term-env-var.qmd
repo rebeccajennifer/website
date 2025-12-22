@@ -40,13 +40,22 @@ The environment variable `TERM` specifies the terminal type and the set of featu
 
 This page shows examples of how colors are printed on the command line and within a Vim color scheme for different values of the `TERM` environment variable, both inside and outside of `tmux`.
 
+## TL;DR
+
+To ensure full ANSI 256 color support, set `TERM` as follows:
+
+Context | `TERM` Value
+-|-
+Before launching `tmux` | `xterm-256color`
+Inside `tmux`           | `tmux-256color`
+
 ## Common Values of `TERM`
 
 The table below summarizes common `TERM` values and how each affects color rendering.
 
 TERM Value        | Color Support Description
 -|-
-`screen`          | Supports only the base 16 colors as defined by the terminal program.
+`screen`          | Supports only the base 8 colors as defined by the terminal program.
 `xterm-256color`  | Supports the full ANSI 256 color set.
 `tmux-256color`   | Supports the full ANSI 256 color set for applications running inside `tmux`.
 

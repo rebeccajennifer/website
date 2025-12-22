@@ -31,7 +31,7 @@ title: VS Code Color Theme
 subtitle: How to create a VS Code color theme file.
 ---
 
-![](./vscode-flux-dark-screenshot.png)
+![](images__color-theme-reference/vscode-flux-dark-screenshot.png)
 
 See [this page](https://code.visualstudio.com/api/references/theme-color) for a complete list of VS Code color theme properties.
 
@@ -90,7 +90,7 @@ See [this link](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/
 
 __Note:__ For the `uiTheme` property in `package.json`, use `vs-dark` for a dark theme and `vs` for a light theme. This ensures that any undefined properties inherit the correct default colors. In the `My Dark Theme` example, `vs` was intentionally selected instead of `vs-dark`; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.
 
-![](./vscode-wrong-uitheme-example.png)
+![](images__color-theme-reference/vscode-wrong-uitheme-example.png)
 
 ### Minimal Color Theme File
 
@@ -127,15 +127,15 @@ This text is included in the minimal color theme file `my-dark-theme.json`.
 
 To load the theme, from the search bar type `>Color Theme` and select `Preferences: Color Theme`. You can also pull up this search bar with the shortcut `Ctrl+Shift+p`.
 
-![](./vscode-select-pref-color-theme.png)
+![](images__color-theme-reference/vscode-select-pref-color-theme.png)
 
 The theme `My Dark Theme` should now display in the drop down options.
 
-![](./vscode-color-theme-selection.png)
+![](images__color-theme-reference/vscode-color-theme-selection.png)
 
 You should now see your defined colors in the editor window.
 
-![](./vscode-miminal-theme-example.png)
+![](images__color-theme-reference/vscode-miminal-theme-example.png)
 
 #### Add to `settings.json`
 

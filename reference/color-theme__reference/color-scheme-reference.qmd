@@ -49,8 +49,10 @@ environments.
 
 [LS_COLORS & dircolors](./ls-colors.qmd)
 
+[TERM Environment Variable](./term-env-var.qmd)
+
 ## Implement Terminal Color Schemes
 
 [GNOME Color Profile](./gnome-terminal-color.qmd)
 
-[VS Code Color Theme](./vscode-color.qmd)
+[VS Code Color Theme](images__color-theme-reference/vscode-color.qmd)
