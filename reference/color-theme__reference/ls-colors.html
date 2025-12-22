@@ -300,8 +300,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="tldr">TL;DR</h3>
 <ol type="1">
 <li><p>Save a <code>.dircolors</code> file with your preferred coloring per file type.</p></li>
-<li><p>Insert the following command in your <code>.bashrc</code> or <code>.bash_profile</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="kw">`</span><span class="fu">dircolors</span> <span class="at">-b</span> path/to/your/.dircolors/file<span class="kw">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Insert the following commands in your <code>.bashrc</code> or <code>.bash_profile</code>:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="kw">`</span><span class="fu">dircolors</span> <span class="at">-b</span> path/to/your/.dircolors/file<span class="kw">`</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">alias</span> ls=<span class="st">'ls --color=auto'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 </section>
 <section id="sample-.dircolors-file" class="level3">
