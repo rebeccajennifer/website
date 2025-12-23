@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Rebecca Jennifer Rashkin">
-<meta name="dcterms.date" content="2024-06-23">
-<meta name="description" content="My slow burn realization that I won’t be able to use a multiplexer as an IO expander for RGB output.">
 
-<title>Another Futile Effort – Rebecca Jennifer Rashkin</title>
+<title>Color Scheme Exporter – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -61,25 +58,25 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </style>
 
 
-<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../../">
-<link href="../../../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
-<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,19 +106,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../../../flux-bunny.css">
+<link rel="stylesheet" href="../../flux-bunny.css">
 </head>
 
-<body class="nav-fixed fullcontent quarto-light">
+<body class="nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../../../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rebecca Jennifer Rashkin</span>
     </a>
   </div>
@@ -137,11 +134,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-colorclock">    
         <li>
-    <a class="dropdown-item" href="../../../../projects/color-clock/about-color-clock.html">
+    <a class="dropdown-item" href="../../projects/color-clock/about-color-clock.html">
  <span class="dropdown-text">About ColorClock</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../projects/color-clock/color-clock-evolution.html">
+    <a class="dropdown-item" href="../../projects/color-clock/color-clock-evolution.html">
  <span class="dropdown-text">The Evolution of ColorClock</span></a>
   </li>  
     </ul>
@@ -152,21 +149,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-the-book-of-plans">    
         <li>
-    <a class="dropdown-item" href="../../../../projects/the-book-of-plans/the-book-of-plans.html">
+    <a class="dropdown-item" href="../../projects/the-book-of-plans/the-book-of-plans.html">
  <span class="dropdown-text">About The Book of Plans</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../projects/the-book-of-plans/how-to-use.html">
+    <a class="dropdown-item" href="../../projects/the-book-of-plans/how-to-use.html">
  <span class="dropdown-text">How to Use The Book of Plans</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../projects/the-book-of-plans/assembly-instructions.html">
+    <a class="dropdown-item" href="../../projects/the-book-of-plans/assembly-instructions.html">
  <span class="dropdown-text">Planner Assembly Instructions</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../../projects/color-scheme-exporter/color-scheme-exporter.html"> 
+    <a class="nav-link active" href="../../projects/color-scheme-exporter/color-scheme-exporter.html" aria-current="page"> 
 <span class="menu-text">Color Scheme Exporter</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -175,15 +172,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../../../../education/how-to-learn.html">
+    <a class="dropdown-item" href="../../education/how-to-learn.html">
  <span class="dropdown-text">How to Learn</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../education/comp-org/comp-org.html">
+    <a class="dropdown-item" href="../../education/comp-org/comp-org.html">
  <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../education/comp-org/worksheet-answers.html">
+    <a class="dropdown-item" href="../../education/comp-org/worksheet-answers.html">
  <span class="dropdown-text">How to View Worksheet Answers</span></a>
   </li>  
     </ul>
@@ -194,13 +191,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-reference">    
         <li>
-    <a class="dropdown-item" href="../../../../reference/color-theme__reference/color-scheme-reference.html">
+    <a class="dropdown-item" href="../../reference/color-theme__reference/color-scheme-reference.html">
  <span class="dropdown-text">Color</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../../contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -215,170 +212,135 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body">
-      <h1 class="title">Another Futile Effort</h1>
-                  <div>
-        <div class="description">
-          <p>My slow burn realization that I won’t be able to use a multiplexer as an IO expander for RGB output.</p>
-        </div>
-      </div>
-                          <div class="quarto-categories">
-                <div class="quarto-category">color-clock</div>
-              </div>
-                  </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p><a href="https://rebeccajennifer.github.io/website">Rebecca Jennifer Rashkin</a> </p>
-            </div>
-    </div>
-      
-      <div>
-      <div class="quarto-title-meta-heading">Published</div>
-      <div class="quarto-title-meta-contents">
-        <p class="date">June 23, 2024</p>
-      </div>
-    </div>
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
 <!-- margin-sidebar -->
-    
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link active" data-scroll-target="#how-it-works">How It Works</a></li>
+  <li><a href="#how-to-use-output" id="toc-how-to-use-output" class="nav-link" data-scroll-target="#how-to-use-output">How To Use Output</a>
+  <ul class="collapse">
+  <li><a href="#gnome" id="toc-gnome" class="nav-link" data-scroll-target="#gnome">GNOME</a></li>
+  <li><a href="#mintty-cygwin" id="toc-mintty-cygwin" class="nav-link" data-scroll-target="#mintty-cygwin">Mintty / Cygwin</a></li>
+  <li><a href="#vs-code-terminal" id="toc-vs-code-terminal" class="nav-link" data-scroll-target="#vs-code-terminal">VS Code Terminal</a></li>
+  </ul></li>
+  </ul>
+</nav>
+    </div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Color Scheme Exporter</h1>
+<p class="subtitle lead">Synchronize your development aesthetic.</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    
+  
+    
+  </div>
+  
 
 
-<p>It looks like using a multiplexer as a PWM expander is not going to work. As previously discussed, in order to wire up three RGB LED strips to change colors at different frequencies, there is need for 12 analog output pins, one each for red, green and blue on each of the RGB LED strips. For the Arduino that we have selected, this will completely max out the number of analog output pins I have.</p>
-<p>A couple months ago I tried to use a constant current I/O expander to write to PWM pins, but my tests did not yield favorable results. I did some googling and found that some developers will use a multiplexer as a way to increase the number of I/O pins to write to (or read from). I found the CD74HC4067 part, which is a 16-1 mux (with 4 control signals) which would provide ample outputs for the number of analog signals required by ColorClock.</p>
-<section id="mux-for-pwm-output-maybe" class="level2">
-<h2 class="anchored" data-anchor-id="mux-for-pwm-output-maybe">Mux for PWM Output? Maybe?</h2>
-<section id="back-to-computer-engineering-101" class="level3">
-<h3 class="anchored" data-anchor-id="back-to-computer-engineering-101">Back to Computer Engineering 101</h3>
-<p>To review some digital logic, a multiplexer is basically a switch that can select from many inputs. When I used to teach, I compared it to a vending machine. There are many inputs (e.g.&nbsp;chips, granola, gum, candy) and one output (your selection). We type in a code on the keypad to select what kind of snack we want.</p>
-<figure class="figure">
-<p><img src="./mux-vending-machine__2024-06-23.png" class="img-fluid figure-img"></p>
-<figcaption>
-The snacks are the selection of inputs and the dispensing slot is the output. The keypad acts as the set of control signals used to select which input should be connected to the output.
-<figcaption>
-</figcaption>
-</figcaption></figure></section>
-<section id="wishful-thinking" class="level3">
-<h3 class="anchored" data-anchor-id="wishful-thinking">Wishful Thinking 🥺</h3>
-<p>We can flip this diagram 180 and instead of having many inputs to one output, we can have one input to many outputs. If we change the selection fast enough, we can write to all of the outputs (allegedly) virtually simultaneously.</p>
-<figure class="figure">
-<img src="./mux-rgb__2024-06-23.png" class="img-fluid figure-img">
-<figcaption>
-The idea here is to have one common signal pin (with the PWM value) that can write to one of many outputs (RGB LED terminals). You can switch the control lines to change the output, i.e.&nbsp;channel, of the mux and do an analogWrite for each channel.
-</figcaption>
-</figure>
-<p>So we can write the PWM value for a red pin, change the channel, write to the green pin, change the channel, write to the blue output, etc. My thought was because our eye’s persistence of vision, we wouldn’t be able to detect any flickering.</p>
-<p>Buuuuuuut… that wasn’t the case 😑 My tests showed significant flicker (even only writing to two channels) and the colors just didn’t display properly. The videos below show the results of my tests.</p>
-</section>
-</section>
-<section id="test-results" class="level2">
-<h2 class="anchored" data-anchor-id="test-results">Test Results</h2>
-<p>In all of the tests described below, I am trying to display magenta on my RGB LED:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Common pin that all values are written to</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    pinMode<span class="op">(</span>common_pin<span class="op">,</span> OUTPUT<span class="op">);</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Display the color magenta,</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">// i.e. max values for red and blue, no green</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    color <span class="op">=</span> RgbColor<span class="op">(</span><span class="bn">0xFF00FF</span><span class="op">);</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p><a href="https://www.youtube.com/shorts/O1nh9n2yPmc?feature=share">This video</a> is a compilation of all tests described below. Because the video is less than a minute I wasn’t able to embed it into the site.</p>
-<section id="test-1-perform-analogwrite-and-channel-select-sequentially" class="level3">
-<h3 class="anchored" data-anchor-id="test-1-perform-analogwrite-and-channel-select-sequentially">Test 1: Perform analogWrite and Channel Select Sequentially</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// NOTES:</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// 1) `Rgb::RED`, `Rgb::GRN`, `Rgb::BLU`</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">//    are values from an enumeration</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">// 2) muxxy is the multiplexer object</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>BLU<span class="op">]);</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">2</span><span class="op">);</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>The light should be displaying a magenta color, i.e.&nbsp;equal voltage on the red and blue pins, and no voltage on the green pin. Instead, the light looks white, which equates to equal voltage on each of the red, green and blue pins.</p>
-</section>
-<section id="test-2-set-channel-before-analogwrite" class="level3">
-<h3 class="anchored" data-anchor-id="test-2-set-channel-before-analogwrite">Test 2: Set Channel Before analogWrite</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">2</span><span class="op">);</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>BLU<span class="op">]);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>There is no significant different between selecting the channel before the analog write.</p>
-</section>
-<section id="test-3-only-write-to-red-channel" class="level3">
-<h3 class="anchored" data-anchor-id="test-3-only-write-to-red-channel">Test 3: Only Write to Red Channel</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Only writing to one channel displays the color properly. This test was performed just to ensure it was actually writing the value.</p>
-</section>
-<section id="test-4-only-write-to-red-and-green-channels" class="level3">
-<h3 class="anchored" data-anchor-id="test-4-only-write-to-red-and-green-channels">Test 4: Only Write to Red and Green Channels</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    Debug<span class="op">::</span>print_labeled_int<span class="op">(</span><span class="st">"green val: "</span><span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>There is no green in magenta, so this test should only display red on the LED. Instead, we are seeing green flickering, and not any red at all. I also output a serial print for the value of green to ensure that green was indeed set to zero, and this was true.</p>
-</section>
-<section id="test-5-reset-output-to-0" class="level3">
-<h3 class="anchored" data-anchor-id="test-5-reset-output-to-0">Test 5: Reset Output to 0</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> <span class="dv">0</span><span class="op">);</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> <span class="dv">0</span><span class="op">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Resetting the output pin to zero before switching channels just makes it look more choppy. Green is still displayed, though it shouldn’t be.</p>
-</section>
-</section>
-<section id="we-cant-have-everything" class="level2">
-<h2 class="anchored" data-anchor-id="we-cant-have-everything">We Can’t Have Everything</h2>
-<p>So… I’m sticking to the PWM (analog) out pins from the Arduino for now. I also wanted to have a variable output for the light-up arcade buttons on the participant control panel so the brightness of the buttons would change as a result of participant interaction. I won’t be able to do this because I have no free analog output pins 😒</p>
-<p>In addition to the outputs for the light display, I also need digital input pins from the participant and programmer control panels (the programmer control panel will be hidden from the audience and is used for time set control). So I will proceed to test the previous I/O expander I used (Adafruit AW9523) for digital input and hope it works for this purpose.</p>
-</section>
-<section id="hindsight-is-2020" class="level2">
-<h2 class="anchored" data-anchor-id="hindsight-is-2020">Hindsight is 20/20</h2>
-<p>In retrospect, I really should have just selected individually addressable LED strips for the light display. This would have eliminated all need for analog output because I would have been able to control the lights with a simple I2C line. But the code was already written assuming PWM outputs, and I didn’t want to write another interfacing layer. But with all the extra code I’ve had to write to test these additional modules, an interface layer to I2C would have been trivial.</p>
-<p>But… we’re here now. Initially, I was only anticipating one LED strip, a color clock that would cycle over 24 hours, so I would have only needed three PWM pins for the light display. But scope creep happened (for good reason - this design is way more interesting) and now we have four LED strips, all cycling through the spectrum at different frequencies.</p>
-</section>
-<section id="theres-one-win" class="level2">
-<h2 class="anchored" data-anchor-id="theres-one-win">There’s One Win…</h2>
-<p>In other good news, I wrote the code to modify colors based on participant input, so yay!</p>
-<p>Alright… now I’m back to testing the original I/O expander, this time to take digital input 😵‍💫</p>
+</header>
 
 
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   About Color Scheme Exporter.
+|____________________________________________________________________-->
+<p><img src="./color-scheme-exporter-screenshot.png" class="plain img-fluid"></p>
+<p><strong>Color Scheme Exporter</strong> is a utility designed to synchronize your visual experience across various terminal and development environments. By defining a standard ANSI 16-color palette in a single JSON source, users can instantly generate color configuration files for various terminal emulators, including GNOME Terminal and Cygwin.</p>
+<p>As a software engineer, I frequently find myself developing in numerous terminal environments and want to maintain a unified color experience. I built this tool to eliminate the manual effort of redundant configuration and ensure visual consistency no matter which terminal I’m using.</p>
+<p><a class="flux-button _2" href="https://github.com/rebeccajennifer/color-scheme-exporter">Source Code</a></p>
+<hr>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How It Works</h2>
+<ol type="1">
+<li><p>Define your color scheme using a simple JSON configuration. Map your preferred RGB hex values to the background, foreground, and ANSI palette as shown below, omitting the comments:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span> <span class="dt">"intense-bold"</span>              <span class="fu">:</span> <span class="st">"false"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color"</span>          <span class="fu">:</span> <span class="st">"0x262626"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color-intense"</span>  <span class="fu">:</span> <span class="st">"0x303030"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color"</span>          <span class="fu">:</span> <span class="st">"0xc6c6c6"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color-intense"</span>  <span class="fu">:</span> <span class="st">"0xafafaf"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"cursor-color"</span>              <span class="fu">:</span> <span class="st">"0xff875f"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"palette"</span>                   <span class="fu">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="ot">[</span> <span class="st">"0x1c1c1c"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">0</span><span class="er">:</span> <span class="er">Black</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd787af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">1</span><span class="er">:</span> <span class="er">Red</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xafd787"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">2</span><span class="er">:</span> <span class="er">Green</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffaf87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">3</span><span class="er">:</span> <span class="er">Yellow</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87afd7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">4</span><span class="er">:</span> <span class="er">Blue</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf87d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">5</span><span class="er">:</span> <span class="er">Magenta</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87d7af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">6</span><span class="er">:</span> <span class="er">Cyan</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd7d7d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">7</span><span class="er">:</span> <span class="er">White</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x121212"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">8</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">black</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd75f87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">9</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">red</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87af5f"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">10</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">green</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffd787"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">11</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">yellow</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x00afd7"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">12</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">blue</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf5faf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">13</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">magenta</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x5fafaf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">14</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">cyan</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd0d0d0"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">15</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">white</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Run the script using the required arguments. To view the most up-to-date options and usage instructions, use the help flag:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="at">--help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Example command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="dt">\</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>-f input-file.json              <span class="dt">\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>-n my-color-scheme              <span class="dt">\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>-o ~/.themes                    <span class="dt">\</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>-s gnome</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+</ol>
+</section>
+<section id="how-to-use-output" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-output">How To Use Output</h2>
+<p>This section describes how to use the output file(s) produced by this utility.</p>
+<section id="gnome" class="level3">
+<h3 class="anchored" data-anchor-id="gnome">GNOME</h3>
+<p>Follow instructions <a href="../../reference/color-theme__reference/gnome-terminal-color.html">here</a> for how to invoke a GNOME color scheme.</p>
+</section>
+<section id="mintty-cygwin" class="level3">
+<h3 class="anchored" data-anchor-id="mintty-cygwin">Mintty / Cygwin</h3>
+<p>Save the output file as <code>.minttyrc</code> and save in your home directory.</p>
+</section>
+<section id="vs-code-terminal" class="level3">
+<h3 class="anchored" data-anchor-id="vs-code-terminal">VS Code Terminal</h3>
+<p>Copy the output and save to your <code>settings.json</code> file.</p>
+
+
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -410,7 +372,7 @@ The idea here is to have one common signal pin (with the PWM value) that can wri
 |   Footer containing javascript that should be included on each page.
 |____________________________________________________________________-->
 
-<script src="../../../../darkmode.js"></script>
+<script src="../../darkmode.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

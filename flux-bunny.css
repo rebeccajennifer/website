@@ -613,6 +613,12 @@ img
   border            : 1px solid var(--flux-bg-bold);
 }
 
+img.plain
+{
+  background-color  : transparent;
+  border            : none;
+}
+
 /* Blog description on page under title */
 .quarto-title .description p
 {
