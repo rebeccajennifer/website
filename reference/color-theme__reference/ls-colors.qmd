@@ -50,9 +50,10 @@ This section explains how to set file type colors using the `dircolors` command.
 ### TL;DR
 
 1. Save a `.dircolors` file with your preferred coloring per file type.
-2. Insert the following command in your `.bashrc` or `.bash_profile`:
+2. Insert the following commands in your `.bashrc` or `.bash_profile`:
    ```bash
    eval `dircolors -b path/to/your/.dircolors/file`
+   alias ls='ls --color=auto'
    ```
 
 ### Sample `.dircolors` File
