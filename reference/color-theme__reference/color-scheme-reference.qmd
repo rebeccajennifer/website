@@ -36,7 +36,7 @@ subtitle: Bring joy into your environment.
 Color brings me joy, and integrating color into my development
 environment brings an extra level of satisfaction to coding.
 
-This set of pages is a collection of resources I've collected in my
+This set of pages is a collection of resources I've created in my
 efforts to unify color schemes across multiple terminal and coding
 environments.
 
@@ -55,4 +55,6 @@ environments.
 
 [GNOME Color Profile](./gnome-terminal-color.qmd)
 
-[VS Code Color Theme](images__color-theme-reference/vscode-color.qmd)
+[VS Code Color Theme](./vscode-color.qmd)
+
+[Vim Color Scheme](./vim-color.qmd)
