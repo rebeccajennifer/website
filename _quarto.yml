@@ -40,24 +40,26 @@ website:
   favicon: assets/icons/rabbit-face.png
   navbar:
     right:
-      - text: "ColorClock"
-        menu:
-          - text: "About ColorClock"
-            href: projects/color-clock/about-color-clock.qmd
-          - text: "The Evolution of ColorClock"
-            href: projects/color-clock/color-clock-evolution.qmd
+      - text: "Projects"
+        href: projects/projects.qmd
+      #- text: "ColorClock"
+      #  menu:
+      #    - text: "About ColorClock"
+      #      href: projects/color-clock/about-color-clock.qmd
+      #    - text: "The Evolution of ColorClock"
+      #      href: projects/color-clock/color-clock-evolution.qmd
 
-      - text: "The Book of Plans"
-        menu:
-          - text: "About The Book of Plans"
-            href: projects/the-book-of-plans/the-book-of-plans.qmd
-          - text: "How to Use The Book of Plans"
-            href: projects/the-book-of-plans/how-to-use.qmd
-          - text: "Planner Assembly Instructions"
-            href: projects/the-book-of-plans/assembly-instructions.qmd
+      #- text: "The Book of Plans"
+      #  menu:
+      #    - text: "About The Book of Plans"
+      #      href: projects/the-book-of-plans/the-book-of-plans.qmd
+      #    - text: "How to Use The Book of Plans"
+      #      href: projects/the-book-of-plans/how-to-use.qmd
+      #    - text: "Planner Assembly Instructions"
+      #      href: projects/the-book-of-plans/assembly-instructions.qmd
 
-      - text: "Color Scheme Exporter"
-        href: projects/color-scheme-exporter/color-scheme-exporter.qmd
+      #- text: "Color Scheme Exporter"
+      #  href: projects/color-scheme-exporter/color-scheme-exporter.qmd
 
       - text: "Teaching"
         menu:
@@ -98,15 +100,15 @@ website:
       - icon: instagram
         href: https://www.instagram.com/anonymous_rabbit/
 
-  sidebar:
-    - id: comp-org
-      contents: education/comp-org/
+  #sidebar:
+  #  - id: comp-org
+  #    contents: education/comp-org/
 
-    - id: projects
-      contents: projects/
+  #  - id: projects
+  #    contents: projects/
 
-    - id: reference
-      contents: reference/
+  #  - id: reference
+  #    contents: reference/
 
 
 format:

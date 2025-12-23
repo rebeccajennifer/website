@@ -55,13 +55,6 @@ subtitle: My name is Rebecca.
   padding-top     : var(--content-padding)
 }
 
-/* Hide the dark image by default */
-.dark-only            { display: none; }
-
-/* When dark-mode class is active, swap them */
-.dark-mode .lite-only { display: none;  }
-.dark-mode .dark-only { display: block; }
-
 .site-title-banner
 {
   width           : 100%;

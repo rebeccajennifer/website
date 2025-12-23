@@ -34,7 +34,7 @@ subtitle: Beyond the professional scope
 
 <style>
 h2  { margin-top: 0; }
-img { align-items: center; }
+h2 a{color: inherit; text-decoration: inherit; font-weight: inherit;}
 </style>
 
 The projects I build are an expression of my values and a source of fulfillment. Explore some of the work I’ve been building in my personal time.
@@ -47,7 +47,7 @@ The projects I build are an expression of my values and a source of fulfillment.
 ::: {.grid}
 
 ::: {.g-col-12 .g-col-md-4}
-![](./color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0__color-clock.jpg){.img-fluid .plain}
+[![](./color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0__color-clock.jpg){.img-fluid .plain}](/projects/color-clock/about-color-clock.qmd)
 :::
 
 ::: {.g-col-12 .g-col-md-8}
@@ -59,7 +59,7 @@ Tell time with color. An immersive art installation that transforms time passage
 
 
 ::: {.g-col-12 .g-col-md-4}
-![](./the-book-of-plans/images__the-book-of-plans/mini-binder-holes.png){.img-fluid .plain}
+[![](./the-book-of-plans/images__the-book-of-plans/mini-binder-holes.png){.img-fluid .plain}](/projects/the-book-of-plans/the-book-of-plans.qmd)
 :::
 
 ::: {.g-col-12 .g-col-md-8}
@@ -70,7 +70,7 @@ A paper-based system for personal growth, providing the structure needed to alig
 :::
 
 ::: {.g-col-12 .g-col-md-4}
-![](./color-scheme-exporter/color-scheme-exporter-screenshot.png)
+[![](./color-scheme-exporter/color-scheme-exporter-screenshot.png)](/projects/color-scheme-exporter/color-scheme-exporter.qmd)
 :::
 ::: {.g-col-12 .g-col-md-8}
 ## [Color Scheme Exporter](./color-scheme-exporter/color-scheme-exporter.qmd)
@@ -80,12 +80,13 @@ A utility for generating consistent color schemes across various terminal emulat
 :::
 
 ::: {.g-col-12 .g-col-md-4}
-![](../assets/photos-general-assets/flux-grass-line-art.svg){.img-fluid .lite-only .plain}
-![](../assets/photos-general-assets/flux-grass-line-art-white.svg){.img-fluid .dark-only .plain}
+[![](../assets/photos-general-assets/flux-grass-line-art.svg){.img-fluid .lite-only .plain}](/index.qmd)
+[![](../assets/photos-general-assets/flux-grass-line-art-white.svg){.img-fluid .dark-only .plain}](/index.qmd)
 :::
 ::: {.g-col-12 .g-col-md-8}
 ## [rebeccajennifer.com](/index.qmd)
 A digital home for my projects and resources—an open notebook for my technical work and a collection of notes for my future self that I hope others find useful, too.
+
 **Developed with the Quarto publishing framework.**
 :::
 

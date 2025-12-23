@@ -606,6 +606,10 @@ details {
   padding: 0px;
 }
 
+/*--------------------------------------------------------------------*/
+/* IMAGES
+/*--------------------------------------------------------------------*/
+
 /* Ensures all images are visible, even in dark mode */
 img
 {
@@ -618,6 +622,15 @@ img.plain
   background-color  : transparent;
   border            : none;
 }
+
+/* Hide the dark image by default */
+.dark-only            { display: none; }
+
+/* When dark-mode class is active, swap them */
+.dark-mode .lite-only { display: none;  }
+.dark-mode .dark-only { display: block; }
+
+/*--------------------------------------------------------------------*/
 
 /* Blog description on page under title */
 .quarto-title .description p
