@@ -41,7 +41,7 @@
   --flux-bg-norm      : #262626;
   --flux-bg-bold      : #303030;
   --flux-fg-norm      : #eeeeee;
-  --flux-fg-bold      : #afafaf;
+  --flux-fg-lite      : #afafaf;
 }
 
 :root
@@ -57,7 +57,7 @@
   --flux-bg-norm      : #eeeeee;
   --flux-bg-bold      : #d7d7d7;
   --flux-fg-norm      : #262626;
-  --flux-fg-bold      : #5f5f5f;
+  --flux-fg-lite      : #5f5f5f;
   /*------------------------------------------------------------------*/
 
   --flux-wht---7      : #eeeeee;
@@ -146,7 +146,7 @@ h1
 .site-subtitle
 {
   font-size       : var(--size-h4);
-  color           : var(--flux-fg-bold);
+  color           : var(--flux-fg-lite);
   font-family     : var(--font-fam-header);
   text-align      : center;
   border          : none;
@@ -165,7 +165,7 @@ h2
 h3
 {
   font-size     : var(--size-h3);
-  color         : var(--flux-fg-bold);
+  color         : var(--flux-fg-lite);
   padding-top   : var(--content-padding);
   border-top    : var(--h3-border);
   font-variant  : small-caps;
@@ -190,7 +190,7 @@ h5
 #toc-title
 {
   font-family   : var(--font-fam-header);
-  color         : var(--flux-fg-bold);
+  color         : var(--flux-fg-lite);
   font-variant  : small-caps;
   border-top    : none;
   font-size     : var(--size-h4);
@@ -200,7 +200,7 @@ h5
 {
   border-left   : var(--h3-border);
   padding-left  : var(--content-padding);
-  color         : var(--flux-fg-bold);
+  color         : var(--flux-fg-lite);
 }
 
 #quarto-margin-sidebar a:hover
@@ -265,19 +265,19 @@ h5
 #quarto-sidebar
 {
   background-color: var(--flux-bg-norm);
-  background-color: var(--flux-color-3);
-  font-family     : var(--font-fam-normal);
+  font-family     : var(--font-fam-header);
+  border-right    : var(--h3-border);
 }
 
 #quarto-sidebar div
 {
-  color         : var(--flux-bg-norm);
+  color         : var(--flux-fg-lite);
 }
 
 #quarto-sidebar .active
 {
-  background-color: var(--flux-color-1) !important;         /* ! needed */
-  border          : none;
+  color           : var(--flux-color-1);
+  font-weight     : bold;
 }
 
 #quarto-sidebar a:visited
@@ -287,7 +287,7 @@ h5
 
 #quarto-sidebar a:hover
 {
-  background-color: var(--flux-color-2) !important;         /* ! needed */
+  color: var(--flux-color-2);
 }
 
 /*--------------------------------------------------------------------*/
@@ -311,7 +311,7 @@ main .level2:first-of-type h2{
 .quarto-title p
 {
   font-size       : var(--size-h4);
-  color           : var(--flux-fg-bold);
+  color           : var(--flux-fg-lite);
   font-family     : var(--font-fam-header);
 }
 
@@ -455,7 +455,7 @@ input
 .aa-Form.d-flex
 {
   background-color  : var(--flux-bg-bold);
-  border            : 1px solid var(--flux-fg-bold);
+  border            : 1px solid var(--flux-fg-lite);
 }
 /*--------------------------------------------------------------------*/
 /* Icon colors
@@ -557,7 +557,7 @@ input
 .flux-button:active
 {
   color             : var(--flux-bg-norm);
-  background-color  : var(--flux-fg-bold);
+  background-color  : var(--flux-fg-lite);
 }
 
 /* Hyperlinks */
@@ -590,7 +590,7 @@ div.sourceCode code, pre
 /* Header for drop down */
 details summary
 {
-  color           : var(--flux-fg-bold);
+  color           : var(--flux-fg-lite);
   cursor          : pointer;
   display         : list-item;  /* Restores triangle behavior */
   margin-top      : 0.5em;
@@ -598,7 +598,7 @@ details summary
 
 details summary:hover
 {
-  color           : var(--flux-fg-bold);
+  color           : var(--flux-fg-lite);
 }
 
 /* Style when drop down is open */
@@ -640,7 +640,7 @@ details {
 /* Navigation bar for blog entry */
 nav.quarto-page-breadcrumbs a
 {
-  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
 }
 
 ol a:hover
@@ -651,7 +651,7 @@ ol a:hover
 /* Before symbol in breadcrumb, i.e., the " > " */
 ol .breadcrumb-item::before
 {
-  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
 }
 
 .quarto-title-banner .subtitle.lead
@@ -734,7 +734,7 @@ img.plain
 figcaption
 {
   font-size         : var(--size-base);
-  color             : var(--flux-fg-bold);
+  color             : var(--flux-fg-lite);
   text-align        : left;
   margin-top        : 5px;
   font-style        : italic;
