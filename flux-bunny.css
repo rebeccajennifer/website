@@ -239,6 +239,27 @@ h5
   padding-top   : var(--toc-link-padding);
 }
 
+
+/*--------------------------------------------------------------------*/
+/* TESTING
+/*--------------------------------------------------------------------*/
+
+/* Hide the TOC title globally
+#quarto-toc-heading {
+  display: none !important;
+}
+
+/* Hide the TOC content/borders but keep the space occupied
+#TOC {
+  visibility: hidden !important;
+  border: none !important;
+}
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
 #quarto-sidebar
 {
   background-color: var(--flux-bg-norm);
@@ -615,12 +636,24 @@ details {
   color             : var(--flux-bg-norm);
 }
 
-ol .breadcrumb li
+/* Navigation bar for blog entry */
+nav.quarto-page-breadcrumbs a
 {
-  color             : var(--flux-bg-norm);
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
 }
 
-ol .breadcrumb-item li a:visited
+ol a:hover
+{
+  text-decoration: underline !important;
+}
+
+/* Before symbol in breadcrumb, i.e., the " > " */
+ol .breadcrumb-item::before
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+}
+
+.quarto-title-banner .subtitle.lead
 {
   color             : var(--flux-bg-norm) !important;
 }

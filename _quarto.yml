@@ -73,7 +73,7 @@ website:
       - text: "Reference"
         menu:
           - text: Color
-            href: reference/color-theme__reference/color-scheme-reference.qmd
+            href: reference/color-theme__reference/index.qmd
 
       - text: "Contact"
         href: contact.qmd
@@ -132,3 +132,6 @@ format:
     code-fold : true
     toc-title : "Table of Contents"
     include-after-body: assets/ui-elements/footer.html
+
+    toc: true
+    toc-depth: 0
