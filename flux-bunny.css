@@ -95,7 +95,7 @@
   --font-fam-header   : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
   --font-fam-normal   : 'Consolas', monospace;
 
-  --button_txt_size   : 20px;
+  --button-txt-size   : 20px;
 }
 
 body
@@ -534,18 +534,18 @@ input
 
 .flux-button:visited { color: var(--flux_button_txt); }
 
-.flux-button._0
+.flux-button._1
 {
   background-color  : var(--flux-color-1);
 }
 
-.flux-button._2
+.flux-button._3
 {
   background-color  : var(--flux-color-3);
   font-size         : var(--size-h3);
 }
 
-.flux-button._1
+.flux-button._2
 {
   background-color  : var(--flux-color-2);
   font-size         : var(--size-h3);
