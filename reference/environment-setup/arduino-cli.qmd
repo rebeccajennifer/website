@@ -1,0 +1,67 @@
+---
+title: Arduino Command Line Interface
+subtitle: Quick reference for Arduino CLI
+toc: true
+toc-depth: 6
+---
+
+This page serves as a quick reference for the [Arduino CLI](https://docs.arduino.cc/arduino-cli/) commands I use most frequently. I’ve compiled these here to save time on recurring lookups.
+
+## Install Cores
+
+Before you can upload a program to a specific Arduino Board, you need to install the relevant core.
+
+These two cores are used for the MKR1010 and Nano ESP32.
+
+```
+arduino-cli core install arduino:samd
+arduino-cli core install arduino:esp32
+```
+
+
+## Library Search
+
+```bash
+arduino-cli lib search <search_term>
+```
+
+Find the `Name` field of the library you want to install, e.g.
+
+```
+Name: "Adafruit AW9523"
+  Author: Adafruit
+  Maintainer: Adafruit <info@adafruit.com>
+  Sentence: Arduino library for the AW9523 GPIO expanders in the Adafruit shop
+  Paragraph: Arduino library for the AW9523 GPIO expanders in the Adafruit shop
+  Website: https://github.com/adafruit/Adafruit_AW9523
+  Category: Signal Input/Output
+  Architecture: *
+  Types: Contributed
+  Versions: [1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5]
+  Dependencies: Adafruit BusIO
+
+```
+
+In this case, the name of the library is `Adafruit AW9523`.
+
+## Library Installation
+```
+arduino-cli lib install "library name"
+```
+
+E.g.
+```
+> arduino-cli lib install "Adafruit AW9523"
+Already installed Adafruit BusIO@1.16.0
+Downloading Adafruit AW9523@1.0.5...
+Adafruit AW9523@1.0.5 downloaded
+Installing Adafruit AW9523@1.0.5...
+Installed Adafruit AW9523@1.0.5
+```
+
+**Note** The line `Already installed Adafruit BusIO@1.16.0` is because one of the dependencies for this library is already installed.
+
+Use library in code
+```cpp
+#include <Adafruit_AW9523>
+```
