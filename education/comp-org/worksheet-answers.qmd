@@ -32,7 +32,7 @@
 title: Spoiler Alert!
 subtitle:  >
   Get the worksheet answers for
-  [Computer Systems and Assembly Language](./comp-org.qmd).
+  [Computer Systems and Assembly Language](./index.qmd).
 ---
 
 <style>

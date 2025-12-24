@@ -51,7 +51,7 @@ website:
           - text: "How to Learn"
             href: education/how-to-learn.qmd
           - text: "Computer Systems and Assembly Course"
-            href: education/comp-org/comp-org.qmd
+            href: education/comp-org/index.qmd
           - text: How to View Worksheet Answers
             href: education/comp-org/worksheet-answers.qmd
 
@@ -82,19 +82,13 @@ website:
 
   sidebar:
     - id: comp-org
-      contents: education/comp-org/
+      contents: education/comp-org
 
     - id: projects
-      href: projects/index.qmd
       contents: projects/
-      contents-depth: 1
-
-    - id: color-clock-blog-sidebar
-      contents: projects/color-clock/blog__color-clock/
 
     - id: reference
       contents: reference/
-
 
 format:
   html:
