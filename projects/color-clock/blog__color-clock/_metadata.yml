@@ -35,11 +35,10 @@
 freeze: auto
 
 # Enable banner style title blocks.
-title-block-banner: true
+title-block-banner: false
+title-block-style: default
 
 # My author information.
 author:
   - name: Rebecca Jennifer Rashkin
     url: https://rebeccajennifer.github.io/website
-
-sidebar: false

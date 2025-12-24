@@ -30,7 +30,7 @@
 ---
 title: Projects
 subtitle: Beyond the professional scope
-sidebar: False
+sidebar: True
 ---
 
 <style>
@@ -99,7 +99,7 @@ A utility for generating consistent color schemes across various terminal emulat
 **Developed in Python.**
 :::
 ::: {.g-col-12 .g-col-md-4}
-[![](./color-scheme-exporter/color-scheme-exporter-screenshot-square.png)](/projects/color-scheme-exporter/color-scheme-exporter.qmd)
+[![](./color-scheme-exporter/color-scheme-exporter-screenshot-square.png)](/projects/color-scheme-exporter/index.qmd)
 :::
 :::
 

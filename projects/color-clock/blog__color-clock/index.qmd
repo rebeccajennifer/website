@@ -31,7 +31,7 @@ title: "The Evolution of ColorClock"
 subtitle: Check out the ColorClock development journey 🌈 ⏱️
 listing:
   contents: ./
-  type: grid
+  type: default
   sort: "date desc"
   categories: true
 ---

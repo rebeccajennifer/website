@@ -84,23 +84,13 @@ website:
     - id: comp-org
       contents: education/comp-org/
 
-    #- id: projects
-    #  title   : "My Projects"
-    #  href    : projects/projects.qmd
-    #  contents: projects/
-
     - id: projects
       href: projects/index.qmd
       contents: projects/
-      #contents:
-      #  - section: "Projects"
-      #    href: projects/projects.qmd
-      #    contents: projects/
+      contents-depth: 1
 
-        #- href: projects/projects.qmd
-        #  text: "Overview"
-        #- projects/color-clock/index.qmd
-        #- projects/the-book-of-plans/the-book-of-plans.qmd
+    - id: color-clock-blog-sidebar
+      contents: projects/color-clock/blog__color-clock/
 
     - id: reference
       contents: reference/
