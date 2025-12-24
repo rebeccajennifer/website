@@ -200,9 +200,6 @@ h5
 
 #quarto-margin-sidebar #TOC
 {
-  /*
-  border-left       : var(--h3-border);
-  */
   padding           : var(--content-padding);
   color             : var(--flux-fg-lite);
   background-color  : var(--flux-bg-bold);
@@ -294,6 +291,7 @@ h5
 {
   color: var(--flux-color-2);
 }
+
 
 /*--------------------------------------------------------------------*/
 /* Don't apply top border to first h2 in main content.
@@ -660,11 +658,29 @@ ol .breadcrumb-item::before
   color             : var(--flux-fg-lite) !important;     /* ! needed */
 }
 
-ol.breadcrumb
+#title-block-header ol.breadcrumb
 {
   border-bottom     : var(--h3-border);
+  vertical-align    : bottom;
+  padding-top       : 0;
   padding-bottom    : var(--content-padding);
 }
+
+/*--------------------------------------------------------------------*/
+/* Breadcrumb with narrow page
+/*--------------------------------------------------------------------*/
+.quarto-page-breadcrumbs ol.breadcrumb
+{
+  padding-bottom    : 0;
+}
+
+.quarto-secondary-nav
+{
+  font-size         : var(--size-small);
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
+  padding: none;
+}
+/*--------------------------------------------------------------------*/
 
 .quarto-title-banner .subtitle.lead
 {
