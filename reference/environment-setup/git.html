@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Visual Studio Code Setup – Rebecca Jennifer Rashkin</title>
+<title>Git Reference – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -139,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/vs-code.html">Visual Studio Code Setup</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/git.html">Git Reference</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -181,13 +216,13 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/git.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/git.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Git Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/vs-code.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/environment-setup/vs-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code Setup</span></a>
   </div>
 </li>
@@ -258,23 +293,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#settings" id="toc-settings" class="nav-link active" data-scroll-target="#settings">Settings</a>
+  <li><a href="#configuration" id="toc-configuration" class="nav-link active" data-scroll-target="#configuration">Configuration</a>
   <ul>
-  <li><a href="#settings-override" id="toc-settings-override" class="nav-link" data-scroll-target="#settings-override">Settings Override</a></li>
+  <li><a href="#command-line-entry" id="toc-command-line-entry" class="nav-link" data-scroll-target="#command-line-entry">Command Line Entry</a></li>
+  <li><a href="#gitconfig-file" id="toc-gitconfig-file" class="nav-link" data-scroll-target="#gitconfig-file"><code>.gitconfig</code> file</a></li>
   </ul></li>
-  <li><a href="#extensions" id="toc-extensions" class="nav-link" data-scroll-target="#extensions">Extensions</a></li>
-  <li><a href="#vim" id="toc-vim" class="nav-link" data-scroll-target="#vim">Vim</a></li>
-  <li><a href="#code-runner-configuration" id="toc-code-runner-configuration" class="nav-link" data-scroll-target="#code-runner-configuration">Code Runner Configuration</a></li>
+  <li><a href="#submodules" id="toc-submodules" class="nav-link" data-scroll-target="#submodules">Submodules</a>
+  <ul>
+  <li><a href="#add-submodule" id="toc-add-submodule" class="nav-link" data-scroll-target="#add-submodule">Add Submodule</a></li>
+  <li><a href="#initialization" id="toc-initialization" class="nav-link" data-scroll-target="#initialization">Initialization</a></li>
+  <li><a href="#update-submodule" id="toc-update-submodule" class="nav-link" data-scroll-target="#update-submodule">Update Submodule</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/vs-code.html">Visual Studio Code Setup</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/git.html">Git Reference</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Visual Studio Code Setup</h1>
-<p class="subtitle lead">My preferred setup for VS Code</p>
+<h1 class="title">Git Reference</h1>
+<p class="subtitle lead">Quick reference for Git</p>
 </div>
 
 
@@ -316,66 +355,54 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   VS Code setup
+|   Git reference
 |____________________________________________________________________-->
-<p>Follow this checklist to replicate my VS Code environment. While optimized for my workflow, it serves as a helpful reference for any new setup.</p>
-<section id="settings" class="level2">
-<h2 class="anchored" data-anchor-id="settings">Settings</h2>
-<p>The <code>settings.json</code> file contains settings for VS Code and usually lives in the following locations:</p>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>OS</th>
-<th>Path</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Unix</td>
-<td><code>/home/&lt;user-name&gt;/.config/Code/User/settings.json</code></td>
-</tr>
-<tr class="even">
-<td>Windows</td>
-<td><code>C:\\Users\&lt;user-name&gt;\\AppData\\Roaming\\Code\\User\\settings.json</code></td>
-</tr>
-</tbody>
-</table>
-<p>Access my <code>settings.json</code> and custom color theme below. If you need help with color theme installation, see <a href="../../reference/color-theme__reference/vscode-color.html">this page</a>.</p>
-<p><a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/settings.json">settings.json</a> <a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes">Original Color Scheme</a></p>
-<section id="settings-override" class="level3">
-<h3 class="anchored" data-anchor-id="settings-override">Settings Override</h3>
-<p>The <code>settings.json</code> file located at the user level will take precedence. To override or add to the settings at the workspace or directory level, create a new directory called <code>.vscode</code> and add another <code>settings.json</code> file here.</p>
+<p>This page describes common Git commands that I have encountered in my personal coding projects. It it written as a reference, but by no means a comprehensive reference.</p>
+<section id="configuration" class="level2">
+<h2 class="anchored" data-anchor-id="configuration">Configuration</h2>
+<p>You can edit a git configuration either from the command line or edit a <code>.gitconfig</code> that lives in your home directory.</p>
+<section id="command-line-entry" class="level3">
+<h3 class="anchored" data-anchor-id="command-line-entry">Command Line Entry</h3>
+<p>To edit a parameter from the command line that will edit your git config file, run a command in the following format:</p>
+<pre><code>git config --global &lt;section&gt;.&lt;key&gt; &lt;value&gt;</code></pre>
+<p>For instance, if you would like to edit the user name for all commits made from an account, run the command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> user.name <span class="st">"Your Name"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Similarly, if you would like to change the default name to <code>main</code> (instead of the usual default <code>master</code>) run the following command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> config <span class="at">--global</span> init.defaultBranch main</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
+<section id="gitconfig-file" class="level3">
+<h3 class="anchored" data-anchor-id="gitconfig-file"><code>.gitconfig</code> file</h3>
+<p>The <code>.gitconfig</code> file lives in your home directory, or is created upon the first run of a <code>git config</code> command. It takes the format”</p>
+<pre><code>[section0]
+    key = value
+
+[section1]
+    key = value</code></pre>
 </section>
 </section>
-<section id="extensions" class="level2">
-<h2 class="anchored" data-anchor-id="extensions">Extensions</h2>
-<p>Install the following extensions:</p>
-<ul>
-<li>C/C++ by Microsoft</li>
-<li>Python by Microsoft</li>
-<li>Python Debugger by Microsoft</li>
-<li>Code Runner by Jun Han</li>
-<li>Vim by vscodevim</li>
-<li>CMake by twxs</li>
-<li>CMake Tools by Microsoft</li>
-</ul>
+<section id="submodules" class="level2">
+<h2 class="anchored" data-anchor-id="submodules">Submodules</h2>
+<section id="add-submodule" class="level3">
+<h3 class="anchored" data-anchor-id="add-submodule">Add Submodule</h3>
+<p>To add a submodule, first add the repository in the web interface of your Git remote host, e.g.&nbsp;GitHub or Azure DevOps.</p>
+<p>In the repository that you would like to use to contain the submodule, use the following command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule add <span class="op">&lt;</span>submodule address<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>E.g.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule add git@github.com:rebeccajr/test-submodule.git</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="vim" class="level2">
-<h2 class="anchored" data-anchor-id="vim">Vim</h2>
-<p>Point Vim extension to local <code>.vimrc</code> file.</p>
+<section id="initialization" class="level3">
+<h3 class="anchored" data-anchor-id="initialization">Initialization</h3>
+<p>When first adding a submodule, or when cloning a repository with submodules you must run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule update <span class="at">--init</span> <span class="at">--recursive</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p><strong>Note</strong> The <code>--recursive</code> flag is only necessary if there are nested submodules, however it won’t hurt anything if there aren’t nested submodules.</p>
 </section>
-<section id="code-runner-configuration" class="level2">
-<h2 class="anchored" data-anchor-id="code-runner-configuration">Code Runner Configuration</h2>
-<ul>
-<li>Enable <code>Clear Previous Output</code></li>
-<li>Disable <code>Show Execution Message</code></li>
-</ul>
+<section id="update-submodule" class="level3">
+<h3 class="anchored" data-anchor-id="update-submodule">Update Submodule</h3>
+<p>After the initialization of a submodule, to simply update that submodule, i.e.&nbsp;pull down any new commits, run:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule update <span class="at">--recursive</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
