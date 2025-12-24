@@ -251,6 +251,66 @@
     ]
   },
   {
+    "objectID": "reference/environment-setup/vs-code.html",
+    "href": "reference/environment-setup/vs-code.html",
+    "title": "Visual Studio Code Setup",
+    "section": "",
+    "text": "Follow this checklist to replicate my VS Code environment. While optimized for my workflow, it serves as a helpful reference for any new setup.",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Visual Studio Code Setup"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup/vs-code.html#settings",
+    "href": "reference/environment-setup/vs-code.html#settings",
+    "title": "Visual Studio Code Setup",
+    "section": "Settings",
+    "text": "Settings\nThe settings.json file contains settings for VS Code and usually lives in the following locations:\n\n\n\n\n\n\n\nOS\nPath\n\n\n\n\nUnix\n/home/&lt;user-name&gt;/.config/Code/User/settings.json\n\n\nWindows\nC:\\\\Users\\&lt;user-name&gt;\\\\AppData\\\\Roaming\\\\Code\\\\User\\\\settings.json\n\n\n\nAccess my settings.json and custom color theme below. If you need help with color theme installation, see this page.\nsettings.json Original Color Scheme\n\nSettings Override\nThe settings.json file located at the user level will take precedence. To override or add to the settings at the workspace or directory level, create a new directory called .vscode and add another settings.json file here.",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Visual Studio Code Setup"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup/vs-code.html#extensions",
+    "href": "reference/environment-setup/vs-code.html#extensions",
+    "title": "Visual Studio Code Setup",
+    "section": "Extensions",
+    "text": "Extensions\nInstall the following extensions:\n\nC/C++ by Microsoft\nPython by Microsoft\nPython Debugger by Microsoft\nCode Runner by Jun Han\nVim by vscodevim\nCMake by twxs\nCMake Tools by Microsoft",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Visual Studio Code Setup"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup/vs-code.html#vim",
+    "href": "reference/environment-setup/vs-code.html#vim",
+    "title": "Visual Studio Code Setup",
+    "section": "Vim",
+    "text": "Vim\nPoint Vim extension to local .vimrc file.",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Visual Studio Code Setup"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup/vs-code.html#code-runner-configuration",
+    "href": "reference/environment-setup/vs-code.html#code-runner-configuration",
+    "title": "Visual Studio Code Setup",
+    "section": "Code Runner Configuration",
+    "text": "Code Runner Configuration\n\nEnable Clear Previous Output\nDisable Show Execution Message",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Visual Studio Code Setup"
+    ]
+  },
+  {
     "objectID": "projects/index.html",
     "href": "projects/index.html",
     "title": "Projects",
@@ -1762,6 +1822,54 @@
     "title": "Contact Me",
     "section": "",
     "text": "Loading…"
+  },
+  {
+    "objectID": "reference/environment-setup/arduino-cli.html",
+    "href": "reference/environment-setup/arduino-cli.html",
+    "title": "Arduino Command Line Interface",
+    "section": "",
+    "text": "This page serves as a quick reference for the Arduino CLI commands I use most frequently. I’ve compiled these here to save time on recurring lookups.",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Arduino Command Line Interface"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup/arduino-cli.html#install-cores",
+    "href": "reference/environment-setup/arduino-cli.html#install-cores",
+    "title": "Arduino Command Line Interface",
+    "section": "Install Cores",
+    "text": "Install Cores\nBefore you can upload a program to a specific Arduino Board, you need to install the relevant core.\nThese two cores are used for the MKR1010 and Nano ESP32.\narduino-cli core install arduino:samd\narduino-cli core install arduino:esp32",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Arduino Command Line Interface"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup/arduino-cli.html#library-search",
+    "href": "reference/environment-setup/arduino-cli.html#library-search",
+    "title": "Arduino Command Line Interface",
+    "section": "Library Search",
+    "text": "Library Search\narduino-cli lib search &lt;search_term&gt;\nFind the Name field of the library you want to install, e.g.\nName: \"Adafruit AW9523\"\n  Author: Adafruit\n  Maintainer: Adafruit &lt;info@adafruit.com&gt;\n  Sentence: Arduino library for the AW9523 GPIO expanders in the Adafruit shop\n  Paragraph: Arduino library for the AW9523 GPIO expanders in the Adafruit shop\n  Website: https://github.com/adafruit/Adafruit_AW9523\n  Category: Signal Input/Output\n  Architecture: *\n  Types: Contributed\n  Versions: [1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5]\n  Dependencies: Adafruit BusIO\n\nIn this case, the name of the library is Adafruit AW9523.",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Arduino Command Line Interface"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup/arduino-cli.html#library-installation",
+    "href": "reference/environment-setup/arduino-cli.html#library-installation",
+    "title": "Arduino Command Line Interface",
+    "section": "Library Installation",
+    "text": "Library Installation\narduino-cli lib install \"library name\"\nE.g.\n&gt; arduino-cli lib install \"Adafruit AW9523\"\nAlready installed Adafruit BusIO@1.16.0\nDownloading Adafruit AW9523@1.0.5...\nAdafruit AW9523@1.0.5 downloaded\nInstalling Adafruit AW9523@1.0.5...\nInstalled Adafruit AW9523@1.0.5\nNote The line Already installed Adafruit BusIO@1.16.0 is because one of the dependencies for this library is already installed.\nUse library in code\n#include &lt;Adafruit_AW9523&gt;",
+    "crumbs": [
+      "Reference",
+      "New Environment Setup",
+      "Arduino Command Line Interface"
+    ]
   },
   {
     "objectID": "reference/color-theme__reference/ls-colors.html",
