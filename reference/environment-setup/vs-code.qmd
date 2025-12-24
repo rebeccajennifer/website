@@ -1,0 +1,77 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   VS Code setup
+|____________________________________________________________________-->
+
+---
+title: Visual Studio Code Setup
+subtitle: My preferred setup for VS Code
+toc: true
+toc-depth: 6
+---
+
+Follow this checklist to replicate my VS Code environment. While optimized for my workflow, it serves as a helpful reference for any new setup.
+
+## Settings
+
+The `settings.json` file contains settings for VS Code and usually lives in the following locations:
+
+OS      | Path
+-|-
+Unix    | `/home/<user-name>/.config/Code/User/settings.json`
+Windows | `C:\\Users\<user-name>\\AppData\\Roaming\\Code\\User\\settings.json`
+
+Access my `settings.json` and custom color theme below. If you need help with color theme installation, see  [this page](/reference/color-theme__reference/vscode-color.qmd).
+
+<a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/settings.json">settings.json</a>
+<a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes">Original Color Scheme</a>
+
+### Settings Override
+
+The `settings.json` file located at the user level will take precedence.
+To override or add to the settings at the workspace or directory level,
+create a new directory called `.vscode` and add another `settings.json`
+file here.
+
+## Extensions
+
+Install the following extensions:
+
+- C/C++ by Microsoft
+- Python by Microsoft
+- Python Debugger by Microsoft
+- Code Runner by Jun Han
+- Vim by vscodevim
+- CMake by twxs
+- CMake Tools by Microsoft
+
+## Vim
+
+Point Vim extension to local `.vimrc` file.
+
+## Code Runner Configuration
+- Enable `Clear Previous Output`
+- Disable `Show Execution Message`
