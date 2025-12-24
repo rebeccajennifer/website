@@ -82,10 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-title','listing-author','listing-date','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      page: 18,
-    pagination: { item: "<li class='page-item'><a class='page page-link' href='#'></a></li>" },
-      searchColumns: ["listing-title","listing-author","listing-date","listing-image","listing-description","listing-categories"],
+      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -136,10 +135,10 @@ window.Quarto = {
 <link rel="stylesheet" href="../../../flux-bunny.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top quarto-banner">
+  <header id="quarto-header" class="headroom fixed-top">
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -156,7 +155,7 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../../../projects/index.html"> 
+    <a class="nav-link active" href="../../../projects/index.html" aria-current="page"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
@@ -173,7 +172,7 @@ window.Quarto = {
  <span class="dropdown-text">How to Learn</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../education/comp-org/comp-org.html">
+    <a class="dropdown-item" href="../../../education/comp-org/index.html">
  <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
         <li>
@@ -196,42 +195,238 @@ window.Quarto = {
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../projects/color-clock/index.html">ColorClock</a></li><li class="breadcrumb-item"><a href="../../../projects/color-clock/blog__color-clock/index.html">The Evolution of ColorClock</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
-<header id="title-block-header" class="quarto-title-block default page-columns page-full">
-  <div class="quarto-title-banner page-columns page-full">
-    <div class="quarto-title column-body"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../projects/color-clock/index.html">ColorClock</a></li><li class="breadcrumb-item"><a href="../../../projects/color-clock/blog__color-clock/index.html">The Evolution of ColorClock</a></li></ol></nav>
-      <h1 class="title">The Evolution of ColorClock</h1>
-            <p class="subtitle lead">Check out the ColorClock development journey 🌈 ⏱️</p>
-                      </div>
-  </div>
-    
-  
-  <div class="quarto-title-meta">
-
-      <div>
-      <div class="quarto-title-meta-heading">Author</div>
-      <div class="quarto-title-meta-contents">
-               <p><a href="https://rebeccajennifer.github.io/website">Rebecca Jennifer Rashkin</a> </p>
-            </div>
-    </div>
-      
-    
-      
-    </div>
-    
-  
-  </header><div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../projects/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Projects</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-scheme-exporter/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Color Scheme Exporter</span></a>
+  </div>
+</li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../projects/the-book-of-plans/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Book of Plans</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/the-book-of-plans/assembly-instructions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Assemble The Book of Plans</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/the-book-of-plans/how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use The Book of Plans</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../projects/color-clock/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ColorClock</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../../projects/color-clock/blog__color-clock/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">The Evolution of ColorClock</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Back In Development</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">We Did It</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">It’s Alive!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Mind Your Parens</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">The Optimal Solution</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Another Futile Effort</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Smooth Operation</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Persistence Makes Progress</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Goodbye Windows</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Build Flags? Please?</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Throw Some Shade</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Navigating Vision vs Feasibility</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">An Iterative Approach</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ColorClock Design is Shaping Up</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">A Tale of the Lost Serial Ports, and the Linux Environment that Could Have Been</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Test Early. Test Often. Refactor if Necessary.</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arduino CLI Induced Flow</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Getting Started? Just Show Up</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Top Level Block Diagram</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
+</nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
     <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(19)</span></div><div class="category" data-category="Y29sb3ItY2xvY2s=">color-clock <span class="quarto-category-count">(19)</span></div><div class="category" data-category="dGVzdGluZw==">testing <span class="quarto-category-count">(1)</span></div></div></div>
 <!-- main -->
-<main class="content quarto-banner-title-block" id="quarto-document-content">
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../projects/color-clock/index.html">ColorClock</a></li><li class="breadcrumb-item"><a href="../../../projects/color-clock/blog__color-clock/index.html">The Evolution of ColorClock</a></li></ol></nav>
+<div class="quarto-title">
+<h1 class="title">The Evolution of ColorClock</h1>
+<p class="subtitle lead">Check out the ColorClock development journey 🌈 ⏱️</p>
+</div>
 
 
 
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p><a href="https://rebeccajennifer.github.io/website">Rebecca Jennifer Rashkin</a> </p>
+          </div>
+  </div>
+    
+  
+    
+  </div>
+  
+
+
+</header>
 
 
 <!--___________________________________________________________________|
@@ -266,18 +461,18 @@ window.Quarto = {
 
 
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-categories="Y29sb3ItY2xvY2slMkN0ZXN0aW5n" data-listing-date-sort="1738998000000" data-listing-file-modified-sort="1765643328889" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1044">
-<a href="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/ascii-bunny.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Back In Development
-</h5>
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-categories="Y29sb3ItY2xvY2slMkN0ZXN0aW5n" data-listing-date-sort="1738998000000" data-listing-file-modified-sort="1766603619323" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1044">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/ascii-bunny.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="no-external">Back In Development</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
@@ -285,547 +480,563 @@ Back In Development
 <div class="listing-category" onclick="window.quartoListingCategory('dGVzdGluZw=='); return false;">testing</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="no-external">
 <p>Leveling up ColorClock with testing, tooling, and better software design.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="no-external">
 <div class="listing-date">
 Feb 8, 2025
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1725433200000" data-listing-file-modified-sort="1766542950551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1334">
-<a href="../../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-We Did It
-</h5>
+<div class="quarto-post image-right" data-index="1" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1725433200000" data-listing-file-modified-sort="1766603590876" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="7" data-listing-word-count-sort="1334">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="no-external">We Did It</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="no-external">
 <p>Ten years in the making and ColorClock was deployed at Burning Man 2024 🥳 It worked the whole week and I didn’t even need to break open the backup electronics box 😅</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="no-external">
 <div class="listing-date">
 Sep 4, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723878000000" data-listing-file-modified-sort="1766542950551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="470">
-<a href="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/final-light-display.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-It’s Alive!
-</h5>
+<div class="quarto-post image-right" data-index="2" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723878000000" data-listing-file-modified-sort="1766603578844" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="470">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/final-light-display.jpeg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="no-external">It’s Alive!</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="no-external">
 <p>Our scheduled live demo pushed us to finish the project just in time. The event was a success and I even got to play teacher again 👩‍🏫</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="no-external">
 <div class="listing-date">
 Aug 17, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1765643328888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
-<a href="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/directives.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Mind Your Parens
-</h5>
+<div class="quarto-post image-right" data-index="3" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1723791600000" data-listing-file-modified-sort="1766603569768" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="355">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/directives.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="no-external">Mind Your Parens</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="no-external">
 <p>My lesson on why you should always use parenthesis in preprocessor directives.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="no-external">
 <div class="listing-date">
 Aug 16, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1720854000000" data-listing-file-modified-sort="1765643328888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="693">
-<a href="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/breadboard-full__2024-07-13.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-The Optimal Solution
-</h5>
+<div class="quarto-post image-right" data-index="4" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1720854000000" data-listing-file-modified-sort="1766603530371" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="4" data-listing-word-count-sort="693">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/breadboard-full__2024-07-13.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="no-external">The Optimal Solution</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="no-external">
 <p>This week I contemplated the optimal solution for the circuit board layout.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="no-external">
 <div class="listing-date">
 Jul 13, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1719126000000" data-listing-file-modified-sort="1765643328888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1176">
-<a href="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/mux-rgb__2024-06-23.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Another Futile Effort
-</h5>
+<div class="quarto-post image-right" data-index="5" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1719126000000" data-listing-file-modified-sort="1766603502102" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1176">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/mux-rgb__2024-06-23.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html" class="no-external">Another Futile Effort</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html" class="no-external">
 <p>My slow burn realization that I won’t be able to use a multiplexer as an IO expander for RGB output.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html" class="no-external">
 <div class="listing-date">
 Jun 23, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1718434800000" data-listing-file-modified-sort="1765643328888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
-<a href="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/level-shifter-wiring__2024-06-06.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Smooth Operation
-</h5>
+<div class="quarto-post image-right" data-index="6" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1718434800000" data-listing-file-modified-sort="1766603490486" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1077">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/level-shifter-wiring__2024-06-06.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html" class="no-external">Smooth Operation</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html" class="no-external">
 <p>My experiments with an IO expander, level shifter, and a lesson learned.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html" class="no-external">
 <div class="listing-date">
 Jun 15, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1716879600000" data-listing-file-modified-sort="1765643328888" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1151">
-<a href="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/bo-router-plunge-base.JPEG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Persistence Makes Progress
-</h5>
+<div class="quarto-post image-right" data-index="7" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1716879600000" data-listing-file-modified-sort="1766603476627" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1151">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/bo-router-plunge-base.JPEG" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html" class="no-external">Persistence Makes Progress</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html" class="no-external">
 Behold! The first design of the of the fully populated solderless breadboard!
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html" class="no-external">
 <div class="listing-date">
 May 28, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="8" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1715497200000" data-listing-file-modified-sort="1766542950437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="901">
-<a href="../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Goodbye Windows
-</h5>
+<div class="quarto-post image-right" data-index="8" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1715497200000" data-listing-file-modified-sort="1766603463410" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="901">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html" class="no-external">Goodbye Windows</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html" class="no-external">
 <p>A mystery solved, a Linux partition, and we’re officially listed!</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html" class="no-external">
 <div class="listing-date">
 May 12, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="9" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1712905200000" data-listing-file-modified-sort="1765643328887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1020">
-<a href="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/flux-carpet.jpeg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Build Flags? Please?
-</h5>
+<div class="quarto-post image-right" data-index="9" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1712905200000" data-listing-file-modified-sort="1766603453577" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="6" data-listing-word-count-sort="1020">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/flux-carpet.jpeg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html" class="no-external">Build Flags? Please?</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html" class="no-external">
 <p>Every software hurdle feels like an epic journey. My latest challenge was learning how to set build flags.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html" class="no-external">
 <div class="listing-date">
 Apr 12, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="10" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1710918000000" data-listing-file-modified-sort="1766542950437" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="224">
-<a href="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/structure-v1-photo__2024-03-02.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Throw Some Shade
-</h5>
+<div class="quarto-post image-right" data-index="10" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1710918000000" data-listing-file-modified-sort="1766603442073" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="224">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/structure-v1-photo__2024-03-02.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html" class="no-external">Throw Some Shade</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html" class="no-external">
 <p>We decided to extend the shade portion of the structure to give the participant more space.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html" class="no-external">
 <div class="listing-date">
 Mar 20, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="11" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1708671600000" data-listing-file-modified-sort="1766542950441" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="891">
-<a href="../../../projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/diagrams__color-clock/light-display_2024-02-23.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Navigating Vision vs Feasibility
-</h5>
+<div class="quarto-post image-right" data-index="11" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1708671600000" data-listing-file-modified-sort="1766603429459" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="5" data-listing-word-count-sort="891">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/diagrams__color-clock/light-display_2024-02-23.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html" class="no-external">Navigating Vision vs Feasibility</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html" class="no-external">
 <p>Finding the balance between artistic vision and feasibility of execution for the user interface.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html" class="no-external">
 <div class="listing-date">
 Feb 23, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="12" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1706943600000" data-listing-file-modified-sort="1765643328887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="143">
-<a href="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/color-clock-block_2024-02-03.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-An Iterative Approach
-</h5>
+<div class="quarto-post image-right" data-index="12" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1706943600000" data-listing-file-modified-sort="1766603408502" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="143">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/color-clock-block_2024-02-03.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html" class="no-external">An Iterative Approach</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html" class="no-external">
 <p>My multi-stage approach to development.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html" class="no-external">
 <div class="listing-date">
 Feb 3, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="13" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1706425200000" data-listing-file-modified-sort="1766542950551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
-<a href="../../../projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/diagrams__color-clock/overall-v00.jpg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-ColorClock Design is Shaping Up
-</h5>
+<div class="quarto-post image-right" data-index="13" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1706425200000" data-listing-file-modified-sort="1766603371691" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="512">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/assets__color-clock/diagrams__color-clock/overall-v00.jpg" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html" class="no-external">ColorClock Design is Shaping Up</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html" class="no-external">
 <p>After a weekend of rapid fire brainstorming discussions, we have decided on an overall physical design of the project.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html" class="no-external">
 <div class="listing-date">
 Jan 28, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="14" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1704870000000" data-listing-file-modified-sort="1765643328887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="463">
-<a href="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/vs-code-screenshot.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-A Tale of the Lost Serial Ports, and the Linux Environment that Could Have Been
-</h5>
+<div class="quarto-post image-right" data-index="14" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1704870000000" data-listing-file-modified-sort="1766603360627" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="463">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/vs-code-screenshot.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html" class="no-external">A Tale of the Lost Serial Ports, and the Linux Environment that Could Have Been</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html" class="no-external">
 <p>Windows Subsystem for Linux 2 cannot interface with my computer’s serial ports and it makes me very sad 😭</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html" class="no-external">
 <div class="listing-date">
 Jan 10, 2024
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="15" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1659769200000" data-listing-file-modified-sort="1766542950551" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="491">
-<a href="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/processing-prototype-screenshot__2020-09-12.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Test Early. Test Often. Refactor if Necessary.
-</h5>
+<div class="quarto-post image-right" data-index="15" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1659769200000" data-listing-file-modified-sort="1766603298306" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="3" data-listing-word-count-sort="491">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/processing-prototype-screenshot__2020-09-12.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html" class="no-external">Test Early. Test Often. Refactor if Necessary.</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html" class="no-external">
 <p>I’m learning the importance of incremental development.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html" class="no-external">
 <div class="listing-date">
 Aug 6, 2022
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="16" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1653894000000" data-listing-file-modified-sort="1765643328887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="310">
-<a href="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/color-clock-progress-timer__2022-05-29.JPEG" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Arduino CLI Induced Flow
-</h5>
+<div class="quarto-post image-right" data-index="16" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1653894000000" data-listing-file-modified-sort="1766603324814" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="310">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/color-clock-progress-timer__2022-05-29.JPEG" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html" class="no-external">Arduino CLI Induced Flow</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html" class="no-external">
 <p>Once upon a time I was intimidated by the command line. Today, I get annoyed when I can’t use Vim.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html" class="no-external">
 <div class="listing-date">
 May 30, 2022
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="17" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1652598000000" data-listing-file-modified-sort="1765643328887" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
-<a href="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/color-clock-circuit__2022-05-24.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Getting Started? Just Show Up
-</h5>
+<div class="quarto-post image-right" data-index="17" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1652598000000" data-listing-file-modified-sort="1766603250457" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="123">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/color-clock-circuit__2022-05-24.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html" class="no-external">Getting Started? Just Show Up</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html" class="no-external">
 <p>When starting out, avoid getting caught up in the details of implementation, and instead invest your energy in preparing to show up.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html" class="no-external">
 <div class="listing-date">
 May 15, 2022
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
+</div>
+</a>
 </div>
 </div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="18" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1651474800000" data-listing-file-modified-sort="1766541921088" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235">
-<a href="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" data-src="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/color-clock-block__2022-04.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Top Level Block Diagram
-</h5>
+<div class="quarto-post image-right" data-index="18" data-categories="Y29sb3ItY2xvY2s=" data-listing-date-sort="1651474800000" data-listing-file-modified-sort="1766603238948" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="2" data-listing-word-count-sort="235">
+<div class="thumbnail"><a href="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html" class="no-external">
+
+<img loading="lazy" src="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/color-clock-block__2022-04.png" class="thumbnail-image">
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html" class="no-external">Top Level Block Diagram</a>
+</h3>
 <div class="listing-categories">
 
 <div class="listing-category" onclick="window.quartoListingCategory('Y29sb3ItY2xvY2s='); return false;">color-clock</div>
 
 </div>
-<div class="card-text listing-description delink">
+<div class="delink listing-description"><a href="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html" class="no-external">
 <p>An illustration of my top level design using a Raspberry Pi.</p>
+</a></div>
 </div>
-<div class="card-attribution card-text-small justify">
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
+<div class="metadata">
+<a href="../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html" class="no-external">
 <div class="listing-date">
 May 2, 2022
 </div>
+<div class="listing-author">
+Rebecca Jennifer Rashkin
 </div>
+</a>
 </div>
-</div></a>
 </div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
-<nav id="listing-pagination" class="listing-pagination" aria-label="Page Navigation">
-  <ul class="pagination"></ul>
-</nav>
 </div></main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|

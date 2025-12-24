@@ -239,7 +239,6 @@ h5
   padding-top   : var(--toc-link-padding);
 }
 
-
 /*--------------------------------------------------------------------*/
 /* TESTING
 /*--------------------------------------------------------------------*/
@@ -260,6 +259,9 @@ h5
 /*--------------------------------------------------------------------*/
 /*--------------------------------------------------------------------*/
 
+/*--------------------------------------------------------------------*/
+/* PAGE NAVIGATION SIDEBAR
+/*--------------------------------------------------------------------*/
 #quarto-sidebar
 {
   background-color: var(--flux-bg-norm);
@@ -274,9 +276,8 @@ h5
 
 #quarto-sidebar .active
 {
-  color         : var(--flux-bg-bold) !important;         /* ! needed */
-  font-weight   : bold;
-  border        : none;
+  background-color: var(--flux-color-1) !important;         /* ! needed */
+  border          : none;
 }
 
 #quarto-sidebar a:visited
@@ -286,7 +287,7 @@ h5
 
 #quarto-sidebar a:hover
 {
-  text-decoration: underline;
+  background-color: var(--flux-color-2) !important;         /* ! needed */
 }
 
 /*--------------------------------------------------------------------*/
@@ -671,13 +672,32 @@ ol .breadcrumb-item::before
   border-bottom     : none;
 
   /* Remove extra bottom space in blog title banner */
-  margin            : 0px;
+  margin            : 0;
 }
 
 .quarto-title.column-body
 {
   padding: 0px;
 }
+
+/*
+.quarto-title-meta
+{
+  display: none !important;
+}
+
+#title-block-header
+{
+  margin-bottom: 0;
+}
+
+#quarto-sidebar
+{
+  top: 0;
+  margin-top: 0;
+  position: sticky;
+}
+*/
 
 /*--------------------------------------------------------------------*/
 /* IMAGES
