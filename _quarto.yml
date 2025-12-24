@@ -42,24 +42,9 @@ website:
     right:
       - text: "Projects"
         href: projects/index.qmd
-      #- text: "ColorClock"
-      #  menu:
-      #    - text: "About ColorClock"
-      #      href: projects/color-clock/index.qmd
-      #    - text: "The Evolution of ColorClock"
-      #      href: projects/color-clock/color-clock-evolution.qmd
 
-      #- text: "The Book of Plans"
-      #  menu:
-      #    - text: "About The Book of Plans"
-      #      href: projects/the-book-of-plans/the-book-of-plans.qmd
-      #    - text: "How to Use The Book of Plans"
-      #      href: projects/the-book-of-plans/how-to-use.qmd
-      #    - text: "Planner Assembly Instructions"
-      #      href: projects/the-book-of-plans/assembly-instructions.qmd
-
-      #- text: "Color Scheme Exporter"
-      #  href: projects/color-scheme-exporter/color-scheme-exporter.qmd
+      - text: "Reference"
+        href: reference/color-theme__reference/index.qmd
 
       - text: "Teaching"
         menu:
@@ -69,11 +54,6 @@ website:
             href: education/comp-org/comp-org.qmd
           - text: How to View Worksheet Answers
             href: education/comp-org/worksheet-answers.qmd
-
-      - text: "Reference"
-        menu:
-          - text: Color
-            href: reference/color-theme__reference/index.qmd
 
       - text: "Contact"
         href: contact.qmd

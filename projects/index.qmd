@@ -86,7 +86,7 @@ A paper-based system for personal growth, providing the structure needed to alig
 **Developed in Python using the svgwrite library.**
 :::
 ::: {.g-col-12 .g-col-md-4}
-[![](./the-book-of-plans/images__the-book-of-plans/mini-binder-holes.png)](...)
+[![](./the-book-of-plans/images__the-book-of-plans/daily-log-thumb-square.png)](./the-book-of-plans/index.qmd)
 :::
 :::
 
