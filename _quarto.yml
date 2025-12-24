@@ -92,10 +92,11 @@ website:
 
 format:
   html:
-    css       : flux-bunny.css
-    code-fold : true
-    toc-title : "Table of Contents"
+    css               : flux-bunny.css
+    code-fold         : true
+    toc-title         : "Table of Contents"
     include-after-body: assets/ui-elements/footer.html
 
+    # Always allow space for TOC so pages that have TOC don't shift
     toc: true
     toc-depth: 0

@@ -79,6 +79,7 @@
 
   --margin-site-title : clamp(28px, 4vw   + 1rem,   60px);
   --size-base         : clamp(16px, 1vw   + 0.5rem, 20px);
+  --size-small        : clamp(12px, .5vw   + 0.5rem, 16px);
 
   --size-site-title   : clamp(48px, 4vw   + 1rem,   68px);
   --size-h1           : clamp(28px, 4vw   + 1rem,   48px);
@@ -129,6 +130,7 @@ h1
   font-size     : var(--size-h1);
   color         : var(--flux-color-2);
   font-variant  : small-caps;
+  padding-top   : var(--content-padding)
 }
 
 .flux-site-title
@@ -198,9 +200,9 @@ h5
 
 #quarto-margin-sidebar #TOC
 {
-  border-left   : var(--h3-border);
-  padding-left  : var(--content-padding);
-  color         : var(--flux-fg-lite);
+  padding           : var(--content-padding);
+  color             : var(--flux-fg-lite);
+  background-color  : var(--flux-bg-bold);
 }
 
 #quarto-margin-sidebar a:hover
@@ -276,7 +278,7 @@ h5
 
 #quarto-sidebar .active
 {
-  color           : var(--flux-color-1);
+  color           : var(--flux-color-1) !important;       /* ! needed */
   font-weight     : bold;
 }
 
@@ -289,6 +291,7 @@ h5
 {
   color: var(--flux-color-2);
 }
+
 
 /*--------------------------------------------------------------------*/
 /* Don't apply top border to first h2 in main content.
@@ -640,7 +643,8 @@ details {
 /* Navigation bar for blog entry */
 nav.quarto-page-breadcrumbs a
 {
-  color             : var(--flux-fg-norm) !important;     /* ! needed */
+  color             : var(--flux-fg-lite) !important;     /* ! needed */
+  font-size         : var(--size-small);
 }
 
 ol a:hover
@@ -651,8 +655,32 @@ ol a:hover
 /* Before symbol in breadcrumb, i.e., the " > " */
 ol .breadcrumb-item::before
 {
-  color             : var(--flux-fg-norm) !important;     /* ! needed */
+  color             : var(--flux-fg-lite) !important;     /* ! needed */
 }
+
+#title-block-header ol.breadcrumb
+{
+  border-bottom     : var(--h3-border);
+  vertical-align    : bottom;
+  padding-top       : 0;
+  padding-bottom    : var(--content-padding);
+}
+
+/*--------------------------------------------------------------------*/
+/* Breadcrumb with narrow page
+/*--------------------------------------------------------------------*/
+.quarto-page-breadcrumbs ol.breadcrumb
+{
+  padding-bottom    : 0;
+}
+
+.quarto-secondary-nav
+{
+  font-size         : var(--size-small);
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
+  padding: none;
+}
+/*--------------------------------------------------------------------*/
 
 .quarto-title-banner .subtitle.lead
 {
