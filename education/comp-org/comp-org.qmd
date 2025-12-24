@@ -31,6 +31,7 @@ title: Computer Systems and Assembly Language
 subtitle: >
   Discover the magic of ones and zeros.
 toc: true
+toc-depth: 6
 ---
 
 <style>

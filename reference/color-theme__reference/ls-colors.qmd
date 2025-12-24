@@ -30,6 +30,7 @@
 title: LS_COLORS & dircolors
 subtitle: Customize file type highlights for the ls command.
 toc: true
+toc-depth: 6
 ---
 
 The shell environment variable `LS_COLORS` is used to define the colors displayed when listing file types with the `ls` command. It is configured via the `dircolors` command, which typically runs during your shell's startup.

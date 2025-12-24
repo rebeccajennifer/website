@@ -30,6 +30,7 @@
 title: TERM Environment Variable
 subtitle: How $TERM affects colors.
 toc: true
+toc-depth: 6
 ---
 
 <style>
