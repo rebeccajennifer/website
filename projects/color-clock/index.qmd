@@ -55,9 +55,9 @@ practical lean-to structure with a bench.
 <table style="width: 100%"><tr>
 <td><a
   href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"
-  class="flux-button _1">Source Code</a></td>
+  class="flux-button _2">Source Code</a></td>
 <td><a
   href="blog__color-clock/index.html"
-  class="flux-button _1">Blog</a>
+  class="flux-button _2">Blog</a>
 </td>
 </tr></table>

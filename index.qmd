@@ -143,10 +143,10 @@ main
 ## What I Care About
 
 <div style="text-align: center;">
-  <a class="flux-button _2" href="/education/comp-org/comp-org.html">Engineering</a>
-  <a class="flux-button _2" href="https://flyingrabbitmovement.com">Movement</a>
-  <a class="flux-button _2" href="projects/color-clock/about-color-clock.html">Creativity</a>
-  <a class="flux-button _2" href="projects/the-book-of-plans/the-book-of-plans.html">Growth</a>
+  <a class="flux-button _3" href="/education/comp-org/comp-org.html">Engineering</a>
+  <a class="flux-button _3" href="https://flyingrabbitmovement.com">Movement</a>
+  <a class="flux-button _3" href="projects/color-clock/about-color-clock.html">Creativity</a>
+  <a class="flux-button _3" href="projects/the-book-of-plans/the-book-of-plans.html">Growth</a>
 </div>
 
 ## About This Site

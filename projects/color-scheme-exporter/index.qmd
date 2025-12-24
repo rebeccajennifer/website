@@ -40,7 +40,7 @@ __Color Scheme Exporter__ is a utility designed to synchronize your visual exper
 As a software engineer, I frequently find myself developing in numerous terminal environments and want to maintain a unified color experience. I built this tool to eliminate the manual effort of redundant configuration and ensure visual consistency no matter which terminal I’m using.
 
 
-<a class="flux-button _2" href="https://github.com/rebeccajennifer/color-scheme-exporter">Source Code</a>
+<a class="flux-button _3" href="https://github.com/rebeccajennifer/color-scheme-exporter">Source Code</a>
 
 ---
 
