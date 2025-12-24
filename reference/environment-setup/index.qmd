@@ -61,6 +61,7 @@ apt install git
 apt install zsh
 apt install curl
 apt install tmux
+apt install python3-pip
 apt install graphviz # Make block diagrams using a scripting language
 ```
 

@@ -1,0 +1,107 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Git reference
+|____________________________________________________________________-->
+
+---
+title: Git Reference
+subtitle: Quick reference for Git
+toc: true
+toc-depth: 6
+---
+
+This page describes common Git commands that I have encountered in my personal coding projects. It it written as a reference, but by no means a comprehensive reference.
+
+## Configuration
+
+You can edit a git configuration either from the command line or edit a `.gitconfig` that lives in your home directory.
+
+### Command Line Entry
+
+To edit a parameter from the command line that will edit your git config file, run a command in the following format:
+```
+git config --global <section>.<key> <value>
+```
+
+For instance, if you would like to edit the user name for all commits made from an account, run the command:
+
+```bash
+git config --global user.name "Your Name"
+```
+
+Similarly, if you would like to change the default name to `main` (instead of the usual default `master`) run the following command:
+
+```bash
+git config --global init.defaultBranch main
+```
+
+### `.gitconfig` file
+
+The `.gitconfig` file lives in your home directory, or is created upon the first run of a `git config` command. It takes the format"
+```
+[section0]
+    key = value
+
+[section1]
+    key = value
+```
+
+## Submodules
+
+### Add Submodule
+
+To add a submodule, first add the repository in the web interface of your Git remote host, e.g. GitHub or Azure DevOps.
+
+In the repository that you would like to use to contain the submodule, use the following command:
+
+```bash
+git submodule add <submodule address>
+```
+
+E.g.
+```bash
+git submodule add git@github.com:rebeccajr/test-submodule.git
+```
+
+### Initialization
+
+When first adding a submodule, or when cloning a repository with submodules you must run:
+
+```bash
+git submodule update --init --recursive
+```
+
+**Note** The `--recursive` flag is only necessary if there are nested submodules, however it won't hurt anything if there aren't nested submodules.
+
+### Update Submodule
+
+After the initialization of a submodule, to simply update that submodule, i.e. pull down any new commits, run:
+
+```bash
+git submodule update --recursive
+```
+
+
