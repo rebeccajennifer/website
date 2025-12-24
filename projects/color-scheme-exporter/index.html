@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>How to Use The Book of Plans – Rebecca Jennifer Rashkin</title>
+<title>Color Scheme Exporter – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,6 +19,41 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
+}
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -139,7 +174,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../projects/the-book-of-plans/index.html">The Book of Plans</a></li><li class="breadcrumb-item"><a href="../../projects/the-book-of-plans/how-to-use.html">How to Use The Book of Plans</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../projects/color-scheme-exporter/index.html">Color Scheme Exporter</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -166,7 +201,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../projects/color-scheme-exporter/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../projects/color-scheme-exporter/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Color Scheme Exporter</span></a>
   </div>
 </li>
@@ -174,11 +209,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../projects/the-book-of-plans/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Book of Plans</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../projects/the-book-of-plans/assembly-instructions.html" class="sidebar-item-text sidebar-link">
@@ -187,7 +222,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../projects/the-book-of-plans/how-to-use.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../projects/the-book-of-plans/how-to-use.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">How to Use The Book of Plans</span></a>
   </div>
 </li>
@@ -341,23 +376,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#sections" id="toc-sections" class="nav-link active" data-scroll-target="#sections">Sections</a>
+  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link active" data-scroll-target="#how-it-works">How It Works</a></li>
+  <li><a href="#how-to-use-output" id="toc-how-to-use-output" class="nav-link" data-scroll-target="#how-to-use-output">How To Use Output</a>
   <ul>
-  <li><a href="#core-sections" id="toc-core-sections" class="nav-link" data-scroll-target="#core-sections">Core Sections</a></li>
-  <li><a href="#optional-sections" id="toc-optional-sections" class="nav-link" data-scroll-target="#optional-sections">Optional Sections</a></li>
-  </ul></li>
-  <li><a href="#vision" id="toc-vision" class="nav-link" data-scroll-target="#vision">Vision</a></li>
-  <li><a href="#goals" id="toc-goals" class="nav-link" data-scroll-target="#goals">Goals</a></li>
-  <li><a href="#calendar" id="toc-calendar" class="nav-link" data-scroll-target="#calendar">Calendar</a></li>
-  <li><a href="#weekly-and-daily-logs" id="toc-weekly-and-daily-logs" class="nav-link" data-scroll-target="#weekly-and-daily-logs">Weekly and Daily Logs</a>
-  <ul>
-  <li><a href="#weekly-log" id="toc-weekly-log" class="nav-link" data-scroll-target="#weekly-log">Weekly Log</a></li>
-  <li><a href="#daily-log" id="toc-daily-log" class="nav-link" data-scroll-target="#daily-log">Daily Log</a></li>
-  </ul></li>
-  <li><a href="#optional-pages" id="toc-optional-pages" class="nav-link" data-scroll-target="#optional-pages">Optional Pages</a>
-  <ul>
-  <li><a href="#nightly-log" id="toc-nightly-log" class="nav-link" data-scroll-target="#nightly-log">Nightly Log</a></li>
-  <li><a href="#ace-exercises" id="toc-ace-exercises" class="nav-link" data-scroll-target="#ace-exercises">ACE Exercises</a></li>
+  <li><a href="#gnome" id="toc-gnome" class="nav-link" data-scroll-target="#gnome">GNOME</a></li>
+  <li><a href="#mintty-cygwin" id="toc-mintty-cygwin" class="nav-link" data-scroll-target="#mintty-cygwin">Mintty / Cygwin</a></li>
+  <li><a href="#vs-code-terminal" id="toc-vs-code-terminal" class="nav-link" data-scroll-target="#vs-code-terminal">VS Code Terminal</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -365,10 +389,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../projects/the-book-of-plans/index.html">The Book of Plans</a></li><li class="breadcrumb-item"><a href="../../projects/the-book-of-plans/how-to-use.html">How to Use The Book of Plans</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../projects/color-scheme-exporter/index.html">Color Scheme Exporter</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">How to Use The Book of Plans</h1>
-<p class="subtitle lead">How to fill out planner pages.</p>
+<h1 class="title">Color Scheme Exporter</h1>
+<p class="subtitle lead">Synchronize your development aesthetic.</p>
 </div>
 
 
@@ -410,111 +434,66 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   How to use The Book of Plans.
+|   About Color Scheme Exporter.
 |____________________________________________________________________-->
-<p>This page describes each of the types of pages in <em>The Book of Plans</em> and instructions on how to fill them out.</p>
-<section id="sections" class="level2">
-<h2 class="anchored" data-anchor-id="sections">Sections</h2>
-<p>This planner has four main sections and optional add-ons to help you practically move toward your ideal self. A full preview of the planner can be found <a href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/layouts/preview/pdf">here</a>. Note that this preview is not formatted for printing. For printing and assembly instructions, see <a href="../../projects/the-book-of-plans/assembly-instructions.html">this page</a>.</p>
-<section id="core-sections" class="level4">
-<h4 class="anchored" data-anchor-id="core-sections">Core Sections</h4>
+<p><img src="./color-scheme-exporter-screenshot.png" class="plain img-fluid"></p>
+<p><strong>Color Scheme Exporter</strong> is a utility designed to synchronize your visual experience across various terminal and development environments. By defining a standard ANSI 16-color palette in a single JSON source, users can instantly generate color configuration files for various terminal emulators, including GNOME Terminal and Cygwin.</p>
+<p>As a software engineer, I frequently find myself developing in numerous terminal environments and want to maintain a unified color experience. I built this tool to eliminate the manual effort of redundant configuration and ensure visual consistency no matter which terminal I’m using.</p>
+<p><a class="flux-button _2" href="https://github.com/rebeccajennifer/color-scheme-exporter">Source Code</a></p>
+<hr>
+<section id="how-it-works" class="level2">
+<h2 class="anchored" data-anchor-id="how-it-works">How It Works</h2>
 <ol type="1">
-<li>Vision</li>
-<li>Goals</li>
-<li>Calendar</li>
-<li>Daily and weekly logs</li>
+<li><p>Define your color scheme using a simple JSON configuration. Map your preferred RGB hex values to the background, foreground, and ANSI palette as shown below, omitting the comments:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span> <span class="dt">"intense-bold"</span>              <span class="fu">:</span> <span class="st">"false"</span></span>
+<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color"</span>          <span class="fu">:</span> <span class="st">"0x262626"</span></span>
+<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color-intense"</span>  <span class="fu">:</span> <span class="st">"0x303030"</span></span>
+<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color"</span>          <span class="fu">:</span> <span class="st">"0xc6c6c6"</span></span>
+<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color-intense"</span>  <span class="fu">:</span> <span class="st">"0xafafaf"</span></span>
+<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"cursor-color"</span>              <span class="fu">:</span> <span class="st">"0xff875f"</span></span>
+<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"palette"</span>                   <span class="fu">:</span></span>
+<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="ot">[</span> <span class="st">"0x1c1c1c"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">0</span><span class="er">:</span> <span class="er">Black</span></span>
+<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd787af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">1</span><span class="er">:</span> <span class="er">Red</span></span>
+<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xafd787"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">2</span><span class="er">:</span> <span class="er">Green</span></span>
+<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffaf87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">3</span><span class="er">:</span> <span class="er">Yellow</span></span>
+<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87afd7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">4</span><span class="er">:</span> <span class="er">Blue</span></span>
+<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf87d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">5</span><span class="er">:</span> <span class="er">Magenta</span></span>
+<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87d7af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">6</span><span class="er">:</span> <span class="er">Cyan</span></span>
+<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd7d7d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">7</span><span class="er">:</span> <span class="er">White</span></span>
+<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x121212"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">8</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">black</span></span>
+<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd75f87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">9</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">red</span></span>
+<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87af5f"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">10</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">green</span></span>
+<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffd787"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">11</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">yellow</span></span>
+<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x00afd7"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">12</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">blue</span></span>
+<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf5faf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">13</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">magenta</span></span>
+<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x5fafaf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">14</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">cyan</span></span>
+<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd0d0d0"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">15</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">white</span></span>
+<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
+<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Run the script using the required arguments. To view the most up-to-date options and usage instructions, use the help flag:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="at">--help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>Example command:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="dt">\</span></span>
+<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>-f input-file.json              <span class="dt">\</span></span>
+<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>-n my-color-scheme              <span class="dt">\</span></span>
+<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>-o ~/.themes                    <span class="dt">\</span></span>
+<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>-s gnome</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 </section>
-<section id="optional-sections" class="level4">
-<h4 class="anchored" data-anchor-id="optional-sections">Optional Sections</h4>
-<ol type="1">
-<li>Nightly log</li>
-<li>ACE exercise pages</li>
-</ol>
+<section id="how-to-use-output" class="level2">
+<h2 class="anchored" data-anchor-id="how-to-use-output">How To Use Output</h2>
+<p>This section describes how to use the output file(s) produced by this utility.</p>
+<section id="gnome" class="level3">
+<h3 class="anchored" data-anchor-id="gnome">GNOME</h3>
+<p>Follow instructions <a href="../../reference/color-theme__reference/gnome-terminal-color.html">here</a> for how to invoke a GNOME color scheme.</p>
 </section>
+<section id="mintty-cygwin" class="level3">
+<h3 class="anchored" data-anchor-id="mintty-cygwin">Mintty / Cygwin</h3>
+<p>Save the output file as <code>.minttyrc</code> and save in your home directory.</p>
 </section>
-<section id="vision" class="level2">
-<h2 class="anchored" data-anchor-id="vision">Vision</h2>
-<p>This section includes prompts and free-write space to help you shape your vision over different time frames, along with a commitment to support your accountability.</p>
-<p>Take your time. You might want to complete this section over several days of contemplation. These exercises help you surface what matters most and align your goals with those priorities.</p>
-<figure class="figure">
-<img src="images__the-book-of-plans/year-vision.png" class="img-fluid figure-img">
-<figcaption>
-For this prompt, imagine what your ideal life could be in one year if you stick to your commitments.
-</figcaption>
-</figure>
-</section>
-<section id="goals" class="level2">
-<h2 class="anchored" data-anchor-id="goals">Goals</h2>
-<p>After completing your responses to your vision, set up to four bold yet realistic goals for the quarter. How can you break down that goal into smaller targets? What are tangible outcomes of reaching the goal? What obstacles to follow through can you anticipate? How often can you commit to working on that goal? How will you celebrate?</p>
-<figure class="figure">
-<img src="images__the-book-of-plans/goal.png" class="img-fluid figure-img">
-<figcaption>
-Think about steps you can take over the three months that will help you stay on track to reach your goal.
-</figcaption>
-</figure>
-</section>
-<section id="calendar" class="level2">
-<h2 class="anchored" data-anchor-id="calendar">Calendar</h2>
-<p>Use the calendar section however it best supports you, whether for goal targets or noting important dates.</p>
-<figure class="figure">
-<img src="images__the-book-of-plans/calendar.png" class="img-fluid figure-img">
-<figcaption>
-The last page of the calendar section gives space to track dates that aren’t in the time frame of this quarter, or other important dates you don’t want to forget.
-</figcaption>
-</figure>
-</section>
-<section id="weekly-and-daily-logs" class="level2">
-<h2 class="anchored" data-anchor-id="weekly-and-daily-logs">Weekly and Daily Logs</h2>
-<p>The weekly and daily logs are the core of the planner. Reflect weekly, plan ahead with your goals in mind, and use each day to restate your values, set priorities, and check in with your emotional state.</p>
-<section id="weekly-log" class="level3">
-<h3 class="anchored" data-anchor-id="weekly-log">Weekly Log</h3>
-<figure class="figure">
-<img src="images__the-book-of-plans/week-reflection-plan.png" class="img-fluid figure-img">
-<figcaption>
-In the top-right corner, record the date of the week’s first day.
-</figcaption>
-</figure>
-<hr>
-</section>
-<section id="daily-log" class="level3">
-<h3 class="anchored" data-anchor-id="daily-log">Daily Log</h3>
-<figure class="figure">
-<img src="images__the-book-of-plans/daily-log.png" class="img-fluid figure-img">
-<figcaption>
-The right side of the page allows space for reflection or notes.
-</figcaption>
-</figure>
-</section>
-</section>
-<section id="optional-pages" class="level2">
-<h2 class="anchored" data-anchor-id="optional-pages">Optional Pages</h2>
-<section id="nightly-log" class="level3">
-<h3 class="anchored" data-anchor-id="nightly-log">Nightly Log</h3>
-<p>In this optional section, use the space to write a few sentences about what you did that day, how you felt, or anything else you want to track on a daily basis. I personally keep these pages in a separate notebook that stays on my bedside table.</p>
-<figure class="figure">
-<img src="images__the-book-of-plans/nighty-reflection.png" class="img-fluid figure-img">
-<figcaption>
-A few brief notes are enough; it doesn’t need to be detailed.
-</figcaption>
-</figure>
-</section>
-<section id="ace-exercises" class="level3">
-<h3 class="anchored" data-anchor-id="ace-exercises">ACE Exercises</h3>
-<p>Thoughts and emotions can sometimes interfere with daily life and pull us away from our goals. ACE stands for Accept, Connect, and Re-Engage. It is a simple exercise that helps reduce the intensity of uncomfortable emotions and the dysregulation they can cause. This model is inspired by the work of Russ Harris and Anna Runkle. Use these pages whenever you feel your nervous system is becoming dysregulated.</p>
-<figure class="figure">
-<img src="images__the-book-of-plans/ace-reference.png" class="img-fluid figure-img">
-<figcaption>
-This printout gives an overview of the ACE method and how to use the worksheet.
-</figcaption>
-</figure>
-<hr>
-<figure class="figure">
-<img src="images__the-book-of-plans/ace-worksheet.png" class="img-fluid figure-img">
-<figcaption>
-One exercise for nervous system regulation is <strong>5-4-3-2-1 Sense Awareness</strong> that can help us become grounded in the present.
-</figcaption>
-</figure>
+<section id="vs-code-terminal" class="level3">
+<h3 class="anchored" data-anchor-id="vs-code-terminal">VS Code Terminal</h3>
+<p>Copy the output and save to your <code>settings.json</code> file.</p>
 
 
 </section>

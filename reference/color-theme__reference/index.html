@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Color Scheme Exporter – Rebecca Jennifer Rashkin</title>
+<title>Color Scheme Reference – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -109,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link rel="stylesheet" href="../../flux-bunny.css">
 </head>
 
-<body class="nav-fixed quarto-light">
+<body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
   <header id="quarto-header" class="headroom fixed-top">
@@ -128,43 +93,13 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </button>
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-colorclock" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">ColorClock</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-colorclock">    
-        <li>
-    <a class="dropdown-item" href="../../projects/color-clock/about-color-clock.html">
- <span class="dropdown-text">About ColorClock</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/color-clock/color-clock-evolution.html">
- <span class="dropdown-text">The Evolution of ColorClock</span></a>
-  </li>  
-    </ul>
-  </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-the-book-of-plans" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">The Book of Plans</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-the-book-of-plans">    
-        <li>
-    <a class="dropdown-item" href="../../projects/the-book-of-plans/the-book-of-plans.html">
- <span class="dropdown-text">About The Book of Plans</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/the-book-of-plans/how-to-use.html">
- <span class="dropdown-text">How to Use The Book of Plans</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../projects/the-book-of-plans/assembly-instructions.html">
- <span class="dropdown-text">Planner Assembly Instructions</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
-    <a class="nav-link active" href="../../projects/color-scheme-exporter/color-scheme-exporter.html" aria-current="page"> 
-<span class="menu-text">Color Scheme Exporter</span></a>
+    <a class="nav-link" href="../../projects/index.html"> 
+<span class="menu-text">Projects</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link active" href="../../reference/color-theme__reference/index.html" aria-current="page"> 
+<span class="menu-text">Reference</span></a>
   </li>  
   <li class="nav-item dropdown ">
     <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
@@ -185,17 +120,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </li>  
     </ul>
   </li>
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-reference" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Reference</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-reference">    
-        <li>
-    <a class="dropdown-item" href="../../reference/color-theme__reference/color-scheme-reference.html">
- <span class="dropdown-text">Color</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
@@ -210,33 +134,106 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </div>
       </div> <!-- /container-fluid -->
     </nav>
+  <nav class="quarto-secondary-nav">
+    <div class="container-fluid d-flex">
+      <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+        <i class="bi bi-layout-text-sidebar-reverse"></i>
+      </button>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
+        <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
+        </a>
+    </div>
+  </nav>
 </header>
 <!-- content -->
 <div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
 <!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of Contents</h2>
-   
-  <ul>
-  <li><a href="#how-it-works" id="toc-how-it-works" class="nav-link active" data-scroll-target="#how-it-works">How It Works</a></li>
-  <li><a href="#how-to-use-output" id="toc-how-to-use-output" class="nav-link" data-scroll-target="#how-to-use-output">How To Use Output</a>
-  <ul class="collapse">
-  <li><a href="#gnome" id="toc-gnome" class="nav-link" data-scroll-target="#gnome">GNOME</a></li>
-  <li><a href="#mintty-cygwin" id="toc-mintty-cygwin" class="nav-link" data-scroll-target="#mintty-cygwin">Mintty / Cygwin</a></li>
-  <li><a href="#vs-code-terminal" id="toc-vs-code-terminal" class="nav-link" data-scroll-target="#vs-code-terminal">VS Code Terminal</a></li>
-  </ul></li>
-  </ul>
+  <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
+    <div class="pt-lg-2 mt-2 text-left sidebar-header">
+      <a href="../../index.html" class="sidebar-logo-link">
+      </a>
+      </div>
+    <div class="sidebar-menu-container"> 
+    <ul class="list-unstyled mt-1">
+        <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true">
+ <span class="menu-text">Reference</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Color Scheme Reference</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANSI Color Codes Explained</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANSI 256 Color Table</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GNOME Color Profile</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TERM Environment Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vim Color Scheme</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VS Code Color Theme</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+      </ul>
+  </li>
+    </ul>
+    </div>
 </nav>
+<div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Color Scheme Exporter</h1>
-<p class="subtitle lead">Synchronize your development aesthetic.</p>
+<h1 class="title">Color Scheme Reference</h1>
+<p class="subtitle lead">Bring joy into your environment.</p>
 </div>
 
 
@@ -278,69 +275,63 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   About Color Scheme Exporter.
+|   Reference page for color scheme related information.
 |____________________________________________________________________-->
-<p><img src="./color-scheme-exporter-screenshot.png" class="plain img-fluid"></p>
-<p><strong>Color Scheme Exporter</strong> is a utility designed to synchronize your visual experience across various terminal and development environments. By defining a standard ANSI 16-color palette in a single JSON source, users can instantly generate color configuration files for various terminal emulators, including GNOME Terminal and Cygwin.</p>
-<p>As a software engineer, I frequently find myself developing in numerous terminal environments and want to maintain a unified color experience. I built this tool to eliminate the manual effort of redundant configuration and ensure visual consistency no matter which terminal I’m using.</p>
-<p><a class="flux-button _2" href="https://github.com/rebeccajennifer/color-scheme-exporter">Source Code</a></p>
-<hr>
-<section id="how-it-works" class="level2">
-<h2 class="anchored" data-anchor-id="how-it-works">How It Works</h2>
-<ol type="1">
-<li><p>Define your color scheme using a simple JSON configuration. Map your preferred RGB hex values to the background, foreground, and ANSI palette as shown below, omitting the comments:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span> <span class="dt">"intense-bold"</span>              <span class="fu">:</span> <span class="st">"false"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color"</span>          <span class="fu">:</span> <span class="st">"0x262626"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color-intense"</span>  <span class="fu">:</span> <span class="st">"0x303030"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color"</span>          <span class="fu">:</span> <span class="st">"0xc6c6c6"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color-intense"</span>  <span class="fu">:</span> <span class="st">"0xafafaf"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"cursor-color"</span>              <span class="fu">:</span> <span class="st">"0xff875f"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"palette"</span>                   <span class="fu">:</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="ot">[</span> <span class="st">"0x1c1c1c"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">0</span><span class="er">:</span> <span class="er">Black</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd787af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">1</span><span class="er">:</span> <span class="er">Red</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xafd787"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">2</span><span class="er">:</span> <span class="er">Green</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffaf87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">3</span><span class="er">:</span> <span class="er">Yellow</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87afd7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">4</span><span class="er">:</span> <span class="er">Blue</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf87d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">5</span><span class="er">:</span> <span class="er">Magenta</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87d7af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">6</span><span class="er">:</span> <span class="er">Cyan</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd7d7d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">7</span><span class="er">:</span> <span class="er">White</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x121212"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">8</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">black</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd75f87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">9</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">red</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87af5f"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">10</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">green</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffd787"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">11</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">yellow</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x00afd7"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">12</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">blue</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf5faf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">13</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">magenta</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x5fafaf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">14</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">cyan</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd0d0d0"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">15</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">white</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-<li><p>Run the script using the required arguments. To view the most up-to-date options and usage instructions, use the help flag:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="at">--help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Example command:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="dt">\</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>-f input-file.json              <span class="dt">\</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>-n my-color-scheme              <span class="dt">\</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>-o ~/.themes                    <span class="dt">\</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>-s gnome</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
-</ol>
-</section>
-<section id="how-to-use-output" class="level2">
-<h2 class="anchored" data-anchor-id="how-to-use-output">How To Use Output</h2>
-<p>This section describes how to use the output file(s) produced by this utility.</p>
-<section id="gnome" class="level3">
-<h3 class="anchored" data-anchor-id="gnome">GNOME</h3>
-<p>Follow instructions <a href="../../reference/color-theme__reference/gnome-terminal-color.html">here</a> for how to invoke a GNOME color scheme.</p>
-</section>
-<section id="mintty-cygwin" class="level3">
-<h3 class="anchored" data-anchor-id="mintty-cygwin">Mintty / Cygwin</h3>
-<p>Save the output file as <code>.minttyrc</code> and save in your home directory.</p>
-</section>
-<section id="vs-code-terminal" class="level3">
-<h3 class="anchored" data-anchor-id="vs-code-terminal">VS Code Terminal</h3>
-<p>Copy the output and save to your <code>settings.json</code> file.</p>
 
 
+<style>
+
+table
+{
+  width: 100%
+}
+
+.color-block{
+  height:       16px;
+}
+</style>
+
+
+<table>
+<tbody><tr>
+<td class="color-block" ,="" style="background-color:#1c1c1c">  </td>
+<td class="color-block" ,="" style="background-color:#d787af">  </td>
+<td class="color-block" ,="" style="background-color:#afd787">  </td>
+<td class="color-block" ,="" style="background-color:#ffaf87">  </td>
+<td class="color-block" ,="" style="background-color:#87afd7">  </td>
+<td class="color-block" ,="" style="background-color:#af87d7">  </td>
+<td class="color-block" ,="" style="background-color:#87d7af">  </td>
+<td class="color-block" ,="" style="background-color:#c6c6c6">  </td>
+</tr>
+<tr>
+<td class="color-block" ,="" style="background-color:#303030">  </td>
+<td class="color-block" ,="" style="background-color:#d75f87">  </td>
+<td class="color-block" ,="" style="background-color:#87d75f">  </td>
+<td class="color-block" ,="" style="background-color:#ff875f">  </td>
+<td class="color-block" ,="" style="background-color:#00afd7">  </td>
+<td class="color-block" ,="" style="background-color:#875fd7">  </td>
+<td class="color-block" ,="" style="background-color:#00afaf">  </td>
+<td class="color-block" ,="" style="background-color:#d7d7d7">  </td>
+</tr>
+</tbody></table>
+
+
+<p>Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.</p>
+<p>This set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.</p>
+<section id="general-information" class="level2">
+<h2 class="anchored" data-anchor-id="general-information">General Information</h2>
+<p><a href="../../reference/color-theme__reference/ansi256-colors.html">ANSI 256 Color Table</a></p>
+<p><a href="../../reference/color-theme__reference/ansi-color-explained.html">ANSI Codes Explained</a></p>
+<p><a href="../../reference/color-theme__reference/ls-colors.html">LS_COLORS &amp; dircolors</a></p>
+<p><a href="../../reference/color-theme__reference/term-env-var.html">TERM Environment Variable</a></p>
 </section>
+<section id="implement-terminal-color-schemes" class="level2">
+<h2 class="anchored" data-anchor-id="implement-terminal-color-schemes">Implement Terminal Color Schemes</h2>
+<p><a href="../../reference/color-theme__reference/gnome-terminal-color.html">GNOME Color Profile</a></p>
+<p><a href="../../reference/color-theme__reference/vscode-color.html">VS Code Color Theme</a></p>
+<p><a href="../../reference/color-theme__reference/vim-color.html">Vim Color Scheme</a></p>
+
+
 </section>
 
 </main> <!-- /main -->

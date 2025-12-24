@@ -149,7 +149,8 @@ h1
   color           : var(--flux-fg-bold);
   font-family     : var(--font-fam-header);
   text-align      : center;
-  border          : none; padding-top: 0px;
+  border          : none;
+  padding-top: 0px;
 }
 
 h2
@@ -236,6 +237,56 @@ h5
   font-family   : var(--font-fam-normal);
   font-size     : var(--size-toc-top);
   padding-top   : var(--toc-link-padding);
+}
+
+
+/*--------------------------------------------------------------------*/
+/* TESTING
+/*--------------------------------------------------------------------*/
+
+/* Hide the TOC title globally
+#quarto-toc-heading {
+  display: none !important;
+}
+
+/* Hide the TOC content/borders but keep the space occupied
+#TOC {
+  visibility: hidden !important;
+  border: none !important;
+}
+
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+/*--------------------------------------------------------------------*/
+
+#quarto-sidebar
+{
+  background-color: var(--flux-bg-norm);
+  background-color: var(--flux-color-3);
+  font-family     : var(--font-fam-normal);
+}
+
+#quarto-sidebar div
+{
+  color         : var(--flux-bg-norm);
+}
+
+#quarto-sidebar .active
+{
+  color         : var(--flux-bg-bold) !important;         /* ! needed */
+  font-weight   : bold;
+  border        : none;
+}
+
+#quarto-sidebar a:visited
+{
+  color         : inherit;
+}
+
+#quarto-sidebar a:hover
+{
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------------*/
@@ -585,6 +636,28 @@ details {
   color             : var(--flux-bg-norm);
 }
 
+/* Navigation bar for blog entry */
+nav.quarto-page-breadcrumbs a
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+}
+
+ol a:hover
+{
+  text-decoration: underline !important;
+}
+
+/* Before symbol in breadcrumb, i.e., the " > " */
+ol .breadcrumb-item::before
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+}
+
+.quarto-title-banner .subtitle.lead
+{
+  color             : var(--flux-bg-norm) !important;
+}
+
 /* Blog entry preview */
 .quarto-grid-item.card
 {
@@ -606,6 +679,10 @@ details {
   padding: 0px;
 }
 
+/*--------------------------------------------------------------------*/
+/* IMAGES
+/*--------------------------------------------------------------------*/
+
 /* Ensures all images are visible, even in dark mode */
 img
 {
@@ -618,6 +695,15 @@ img.plain
   background-color  : transparent;
   border            : none;
 }
+
+/* Hide the dark image by default */
+.dark-only            { display: none; }
+
+/* When dark-mode class is active, swap them */
+.dark-mode .lite-only { display: none;  }
+.dark-mode .dark-only { display: block; }
+
+/*--------------------------------------------------------------------*/
 
 /* Blog description on page under title */
 .quarto-title .description p
