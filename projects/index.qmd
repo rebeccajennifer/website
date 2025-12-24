@@ -30,12 +30,13 @@
 ---
 title: Projects
 subtitle: Beyond the professional scope
+sidebar: False
 ---
 
 <style>
 h2    { margin-top: 0; }
 h2 a  { color: inherit; text-decoration: inherit; font-weight: inherit;}
-img   { margin-top: 1em;;}
+img   { margin-top: 1em;}
 
 /* On desktop only */
 @media (min-width: 768px)
@@ -67,19 +68,19 @@ The projects I build are an expression of my values and a source of fulfillment.
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
-## [ColorClock](/projects/color-clock/about-color-clock.qmd)
+## [ColorClock](/projects/color-clock/index.qmd)
 Tell time with color. An immersive art installation that transforms time passage into a light spectrum. A decade-long journey from initial concept to final deployment.
 
 **Developed in C++ using the Arduino Command Line Interface.**
 :::
 ::: {.g-col-12 .g-col-md-4}
-[![](./color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0-square__color-clock.jpg){.img-fluid .plain}](/projects/color-clock/about-color-clock.qmd)
+[![](./color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0-square__color-clock.jpg){.img-fluid .plain}](/projects/color-clock/index.qmd)
 :::
 :::
 
 ::: {.grid .project-grid-flipped}
 ::: {.g-col-12 .g-col-md-8}
-## [The Book of Plans](./the-book-of-plans/the-book-of-plans.qmd)
+## [The Book of Plans](./the-book-of-plans/index.qmd)
 A paper-based system for personal growth, providing the structure needed to align your daily actions with your long-term identity.
 
 **Developed in Python using the svgwrite library.**
@@ -92,7 +93,7 @@ A paper-based system for personal growth, providing the structure needed to alig
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
-## [Color Scheme Exporter](./color-scheme-exporter/color-scheme-exporter.qmd)
+## [Color Scheme Exporter](./color-scheme-exporter/index.qmd)
 A utility for generating consistent color schemes across various terminal emulators, designed to bring a unified aesthetic and creative joy to your development environment.
 
 **Developed in Python.**

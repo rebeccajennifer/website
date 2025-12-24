@@ -41,3 +41,5 @@ title-block-banner: true
 author:
   - name: Rebecca Jennifer Rashkin
     url: https://rebeccajennifer.github.io/website
+
+sidebar: false

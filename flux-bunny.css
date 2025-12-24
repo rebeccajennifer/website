@@ -149,7 +149,8 @@ h1
   color           : var(--flux-fg-bold);
   font-family     : var(--font-fam-header);
   text-align      : center;
-  border          : none; padding-top: 0px;
+  border          : none;
+  padding-top: 0px;
 }
 
 h2
@@ -236,6 +237,35 @@ h5
   font-family   : var(--font-fam-normal);
   font-size     : var(--size-toc-top);
   padding-top   : var(--toc-link-padding);
+}
+
+#quarto-sidebar
+{
+  background-color: var(--flux-bg-norm);
+  background-color: var(--flux-color-3);
+  font-family     : var(--font-fam-normal);
+}
+
+#quarto-sidebar div
+{
+  color         : var(--flux-bg-norm);
+}
+
+#quarto-sidebar .active
+{
+  color         : var(--flux-bg-bold) !important;         /* ! needed */
+  font-weight   : bold;
+  border        : none;
+}
+
+#quarto-sidebar a:visited
+{
+  color         : inherit;
+}
+
+#quarto-sidebar a:hover
+{
+  text-decoration: underline;
 }
 
 /*--------------------------------------------------------------------*/
@@ -583,6 +613,16 @@ details {
 .quarto-title-banner.page-columns.page-full h1.title
 {
   color             : var(--flux-bg-norm);
+}
+
+ol .breadcrumb li
+{
+  color             : var(--flux-bg-norm);
+}
+
+ol .breadcrumb-item li a:visited
+{
+  color             : var(--flux-bg-norm) !important;
 }
 
 /* Blog entry preview */

@@ -41,11 +41,11 @@ website:
   navbar:
     right:
       - text: "Projects"
-        href: projects/projects.qmd
+        href: projects/index.qmd
       #- text: "ColorClock"
       #  menu:
       #    - text: "About ColorClock"
-      #      href: projects/color-clock/about-color-clock.qmd
+      #      href: projects/color-clock/index.qmd
       #    - text: "The Evolution of ColorClock"
       #      href: projects/color-clock/color-clock-evolution.qmd
 
@@ -100,15 +100,30 @@ website:
       - icon: instagram
         href: https://www.instagram.com/anonymous_rabbit/
 
-  #sidebar:
-  #  - id: comp-org
-  #    contents: education/comp-org/
+  sidebar:
+    - id: comp-org
+      contents: education/comp-org/
 
-  #  - id: projects
-  #    contents: projects/
+    #- id: projects
+    #  title   : "My Projects"
+    #  href    : projects/projects.qmd
+    #  contents: projects/
 
-  #  - id: reference
-  #    contents: reference/
+    - id: projects
+      href: projects/index.qmd
+      contents: projects/
+      #contents:
+      #  - section: "Projects"
+      #    href: projects/projects.qmd
+      #    contents: projects/
+
+        #- href: projects/projects.qmd
+        #  text: "Overview"
+        #- projects/color-clock/index.qmd
+        #- projects/the-book-of-plans/the-book-of-plans.qmd
+
+    - id: reference
+      contents: reference/
 
 
 format:
