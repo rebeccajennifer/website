@@ -10,6 +10,7 @@ date        : 2024-09-04
 categories  : [color-clock]
 image       : ../../assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-1-cropped__color-clock.jpg
 draft       : false
+order       : -17
 ---
 
 

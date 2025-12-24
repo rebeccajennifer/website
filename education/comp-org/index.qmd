@@ -31,6 +31,7 @@ title: Computer Systems and Assembly Language
 subtitle: >
   Discover the magic of ones and zeros.
 toc: true
+toc-depth: 6
 ---
 
 <style>
@@ -185,7 +186,7 @@ rows: list =\
     }
 
   , { 'heading'   : 'Notes  5: Signed Integer Representation'
-    , 'desc'      : 'signed numbers, sign magnitude, two’s complement, bias / excess notation, floating point, fixed point'
+    , 'desc'      : 'signed numbers, sign magnitude, two’s complement, bias / excess notation'
     , 'worksheet' : 'https://docs.google.com/document/d/143qds1MCfpPgRptP9A1u9eGqQYaqzC764fSWuxQicZ0/edit?usp=sharing'
     , 'pdf'       : 'comp-org-assets/pdf/worksheets__comp-org/notes05_data_rep_ints_comp_org.pdf'
     , 'supplement':
@@ -327,7 +328,7 @@ display(HTML("".join(html_parts)))
 ### Spoiler Alert!
 
 How do I see the answers?
-<p><a  class="flux-button _0" href="worksheet-answers">Here You Go!</a></p>
+<p><a  class="flux-button _0" href="worksheet-answers.qmd">Here You Go!</a></p>
 
 ## Extra Credit
 

@@ -6,6 +6,7 @@ date        : 2022-05-15
 image       : ./color-clock-circuit__2022-05-24.png
 categories  : [color-clock]
 draft       : false
+order       : -1
 ---
 
 Imagine you are getting ready to do the thing. Ask yourself:

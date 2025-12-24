@@ -6,6 +6,7 @@ date        : 2024-05-12
 image       : ../../assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png
 categories  : [color-clock]
 draft       : false
+order       : -10
 ---
 
 

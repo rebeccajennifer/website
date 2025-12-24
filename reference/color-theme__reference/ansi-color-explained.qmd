@@ -1,0 +1,204 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for information about ANSI colors.
+|____________________________________________________________________-->
+
+---
+title: ANSI Color Codes Explained
+subtitle: ANSI 256? ANSI 16? 24-Bit Color?
+toc: true
+toc-depth: 6
+---
+
+ANSI color codes, as used in terminals, can be categorized into three main types:
+
+1. 16 colors
+2. 256 colors
+3. 24-bit true colors
+
+
+
+## ANSI 16 Color Codes (Standard Colors)
+
+{{< include ../../assets/ui-elements/ansi256-000-016.html >}}
+
+This is the original set of terminal colors defined by the ANSI standard.
+
+ANSI color codes use a consistent pattern: the least significant digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / 'bright'.
+
+For example, the color `41` corresponds with a foreground as bright red; i.e.:
+
+- 1 = red
+- 4 = bright foreground
+
+Descriptions of prefixes are defined below.
+
+### ANSI 16 Prefix
+
+This is a list of the prefixes used in ANSI 16 color codes.
+
+Prefix | Application
+-|-
+`3` | Foreground, normal
+`4` | Background, normal
+`9` | Foreground, bold
+`10`| Background, bold
+
+
+### ANSI 16 Color Codes
+
+Here is a list of the ANSI 16 color codes and their meanings.
+
+Name | Base Index | FG Normal | BG Normal | FG Bold | BG Bold
+-|-|-|-|-|-
+Black   | `0` | `30` | `40` | `90` | `100`
+Red     | `1` | `31` | `41` | `91` | `101`
+Green   | `2` | `32` | `42` | `92` | `102`
+Yellow  | `3` | `33` | `43` | `93` | `103`
+Blue    | `4` | `34` | `44` | `94` | `104`
+Magenta | `5` | `35` | `45` | `95` | `105`
+Cyan    | `6` | `36` | `46` | `96` | `106`
+White   | `7` | `37` | `47` | `97` | `107`
+
+
+---
+
+## ANSI 256 Color Codes
+
+Modern terminals have the ability to display 256 colors that are broken up as described:
+
+
+### 16 Base Colors (Color Codes 0-15)
+
+{{< include ../../assets/ui-elements/ansi256-000-016.html >}}
+
+- These map to the same values as the 16-color codes.
+- These colors are often set by your terminal environment.
+
+
+### ANSI 256 Color Cube (Color Codes 16-231)
+
+{{< include ../../assets/ui-elements/ansi256-016-231.html >}}
+The ANSI 256 color cube consists of 216 colors arranged as a 6×6×6 RGB grid. Each color is formed by selecting one of six discrete intensity levels for the red, green, and blue channels: 00, 5F, 87, AF, D7, and FF. These colors occupy indices 16-231 of the ANSI 256 palette and provide a uniformly sampled subset of the RGB color space.
+
+#### RGB to ANSI 256 Index Conversion
+
+[This table](./ansi256-colors.qmd) lists all ANSI 256 color codes and their corresponding RGB values. You can also manually calculate the color index from an RGB value, as described below.
+
+##### RGB -> ANSI 256 Python Function
+
+I’ve written a Python module that performs the conversion from RGB to an ANSI 256 index, which you can find
+[here](https://github.com/rebeccajennifer/color-scheme-exporter/blob/f2e7f5b845b25bad660d66eac306114ae063ba16/classes/rgb_color.py#L193-L246).
+
+##### Base Colors
+
+The 16 base colors are defined by your environment, so there is no direct conversion from RGB to ANSI 256 for indices 1-16.
+
+##### Color Cube
+
+Valid RGB component values used by the 6x6x6 color cube (ANSI 256 indices 16–231):
+
+Decimal Value | Hex Value
+-|-
+`0`   | `0x00`
+`95`  | `0x5f`
+`135` | `0x87`
+`175` | `0xaf`
+`215` | `0xd7`
+`255` | `0xff`
+
+To convert the RGB values to the ANSI index, use the following calculation:
+
+```python
+#_______________________________________________
+# Round each RGB component to the nearest
+# valid value from the table above. The variable
+# definitions used in the calculation are
+# described as follows:
+#
+# red_near = the rounded red value
+# grn_near = the rounded green value
+# blu_near = the rounded blue value
+#_______________________________________________
+
+r = floor((red_near / 255.0) * 5)
+g = floor((grn_near / 255.0) * 5)
+b = floor((blu_near / 255.0) * 5)
+
+# Compute ANSI 256 color value
+ansi_index = 16 + (r * 36) + (g * 6) + b
+```
+
+### Grayscale (Color Codes 232-255)
+
+{{< include ../../assets/ui-elements/ansi256-232-255.html >}}
+
+This section covers the grayscale ramp, occupying indices 232 (near black) through 255 (near white). In the RGB model, gray is produced when the red, green, and blue components are equal (R=G=B). The table below lists the specific values used for these components within the ANSI 256-color grayscale range.
+
+ANSI Index | Hex (R=G=B) | Decimal (R=G=B)
+-|-|-
+`232` | `#080808` | `8`
+`233` | `#121212` | `18`
+`234` | `#1c1c1c` | `28`
+...   | ...       | ...
+`254` | `#e4e4e4` | `228`
+`255` | `#eeeeee` | `238`
+
+
+#### RGB to ANSI 256 Index Conversion
+
+For shades of gray, each of the RGB components have the same value.
+
+If each RGB component is closest to one of the color cube levels (00, 5F, 87, AF, D7, or FF), use the equation described in the [Color Cube section](#color-cube).
+
+Otherwise, use the following equation:
+
+```python
+#_______________________________________________
+# grey_near is the RGB component value (0-255)
+# rounded to the nearest valid step in the ANSI
+# grayscale table (e.g., 8, 18, 28...).
+#_______________________________________________
+ansi_index = 232 + (floor((grey_near - 8) / 10))
+```
+
+
+---
+
+## 24-bit True Color (16 Million Colors)
+
+Supported by most modern terminals, 24-bit true color allows you to specify exact RGB values.
+
+- **Foreground Format**: `\e[38;2;<R>;<G>;<B>m`
+- **Background Format**: `\e[48;2;<R>;<G>;<B>m`
+
+Example:
+```bash
+echo -e "\e[38;2;255;0;0mThis is bright red text\e[0m"
+```
+
+- `38` for foreground, 48 for background.
+- `<R>`, `<G>`, `<B>` represent red, green, and blue values (0–255).

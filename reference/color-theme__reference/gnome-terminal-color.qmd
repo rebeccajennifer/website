@@ -1,0 +1,100 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for creating a Gnome Terminal color scheme.
+|____________________________________________________________________-->
+
+---
+title: GNOME Color Profile
+subtitle: How to create a GNOME color theme file.
+---
+
+This page describes how to create a color scheme for GNOME terminal in Ubuntu.
+
+## Identify Profile ID
+
+From BASH, run the following:
+
+```bash
+dconf list /org/gnome/terminal/legacy/profiles:/
+```
+
+Output:
+
+```bash
+:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/
+```
+
+
+In this example, `b1dcc9dd-5262-4d8d-a863-c897e6d979b9` is the profile id.
+
+## Load `.dconf` File
+
+Run a command in the following format:
+
+```bash
+dconf load /org/gnome/terminal/legacy/profiles:/:<profile-id>/ < file/path.dconf
+```
+
+Example command:
+
+```bash
+dconf load /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ < .themes/flux-bunny-dark.dconf
+```
+
+## Sample `dconf`
+
+```text
+[/]
+background-color='rgb(38, 38, 38)'
+foreground-color='rgb(198, 198, 198)'
+palette=['rgb(28, 28, 28)','rgb(215, 135, 175)','rgb(175, 215, 135)','rgb(255, 175, 135)','rgb(135, 175, 215)','rgb(175, 135, 215)','rgb(135, 215, 175)','rgb(215, 215, 215)','rgb(18, 18, 18)','rgb(215, 95, 135)','rgb(135, 175, 95)','rgb(255, 215, 135)','rgb(0, 175, 215)','rgb(175, 135, 175)','rgb(95, 175, 175)','rgb(208, 208, 208)']
+```
+
+__Note:__ You cannot reformat the `palette` variable to be defined on multiple lines.
+
+The order of the color entries in the `palette` are arranged by ANSI index as listed below.
+
+```
+#_________________________________
+# COLOR           ANSI COLOR INDEX
+#_________________________________
+# Black                 30
+# Red                   31
+# Green                 32
+# Yellow                33
+# Blue                  34
+# Magenta               35
+# Cyan                  36
+# White                 37
+# Bright Black          90
+# Bright Red            91
+# Bright Green          92
+# Bright Yellow         93
+# Bright Blue           94
+# Bright Magenta        95
+# Bright Cyan           96
+# Bright White          97
+```

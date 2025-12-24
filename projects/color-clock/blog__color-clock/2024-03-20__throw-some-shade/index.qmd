@@ -7,6 +7,7 @@ date        : 2024-03-20
 image       : ./structure-v1-photo__2024-03-02.jpg
 categories  : [color-clock]
 draft       : false
+order       : -8
 ---
 
 
@@ -15,7 +16,7 @@ draft       : false
 In the previous construction design we had a simple lean-to structure where the participant would be sitting under the diagonally positioned shade panel. We mocked it up in the garage and noticed that the participant would be a little too cozy with the light display. We decided to create an extension with a roof-top to enable a greater appreciation for the piece.
 
 <figure>
-![](./structure-v1-photo_2024-03-02.jpg)
+![](./structure-v1-photo__2024-03-02.jpg)
 <figcaption>
 The participant is sitting quite close to the light display in the original structural design.
 </figcaption>

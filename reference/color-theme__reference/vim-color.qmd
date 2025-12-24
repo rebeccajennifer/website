@@ -1,0 +1,110 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for vim color scheme related information.
+|____________________________________________________________________-->
+
+---
+title: Vim Color Scheme
+subtitle: Syntax highlighting in Vim.
+---
+
+This page includes information about color schemes in Vim. Vim color schemes use the extension `.vim`.
+
+## Color Scheme Paths
+
+### Linux
+
+Installed color schemes live here:
+
+```bash
+# XX here indicates the vim version, e.g. vim80, vim91
+/usr/share/vim/vimXX/colors
+```
+
+User created themes go here:
+
+```bash
+~/.vim/colors/
+```
+
+### Windows
+
+User created themes for gVim go here:
+
+```text
+# Create this directory if it does not exist
+C:\Users\<username>\vimfiles\colors
+```
+
+## Flux Dark (Original Theme)
+
+The Vim color scheme I designed can be found [here](https://github.com/rebeccajennifer/setup-files/tree/main/vim). The theme is organized into three modular files; to install it, copy the following into your local colors directory (typically `~/.vim/colors/`):
+
+* `flux-base.vim`
+* `flux-colors-dark.vim`
+* `flux-dark.vim`
+
+## Highlight Syntax Options
+
+For more information on Vim syntax highlighting, visit [this page](https://vimhelp.org/syntax.txt.html#:highlight).
+
+### Common Highlight Groups
+
+#### UI Elements
+Highlight Group | Description
+-|-
+`Normal`        | Default text color
+`Cursor`        | The cursor itself
+`CursorLine`    | The current line background
+`StatusLine`    | Active status line
+`StatusLineNC`  | Inactive status line
+`VertSplit`     | Vertical split line
+`Visual`        | Text selected in visual mode
+`LineNr`        | Line numbers in the gutter
+`Folded`        | Folded text color
+
+#### Syntax Elements
+
+Highlight Group | Description
+-|-
+`Comment`       | Comments (`//`, `#`, etc.)
+`Constant`      | Constants (like numbers, strings)
+`Identifier`    | Variable names
+`Statement`     | Control flow keywords (`if`, `for`, `return`)
+`PreProc`       | Preprocessor directives (`#include`, `import`)
+`Type`          | Type names (`int`, `float`, `char`)
+`Special`       | Special symbols or escape sequences
+
+### Special Effects
+
+Highlight Group | Description
+-|-
+`Error`         | Error messages
+`Todo`          | `TODO` comments
+`Search`        | Matches from `/search`
+`IncSearch`     | Incremental search matches
+`MatchParen`    | Matching parentheses
+

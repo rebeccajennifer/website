@@ -29,6 +29,7 @@
 ---
 title: How to Use The Book of Plans
 toc: true
+toc-depth: 6
 subtitle: How to fill out planner pages.
 ---
 

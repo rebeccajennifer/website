@@ -27,23 +27,33 @@
 //______________________________________________________________________
 
 document.addEventListener("DOMContentLoaded", () => {
-  // --- Restore saved state (minimal) ---
+  const moon = document.querySelector('nav .bi-moon, nav .bi-sun');
+
+  // Helper to swap icons
+  const updateIcon = (is_dark) => {
+    if (is_dark) {
+      moon.classList.replace('bi-moon', 'bi-sun');
+    } else {
+      moon.classList.replace('bi-sun', 'bi-moon');
+    }
+  };
+
+  // 1. Restore saved state
   if (localStorage.getItem("dark-mode") === "true") {
     document.documentElement.classList.add("dark-mode");
+    if (moon) updateIcon(true);
   }
-
-  // --- Your existing working handler (only tiny change: save state) ---
-  const moon = document.querySelector('nav .bi-moon');
-  console.log("moon element:", moon);
 
   if (!moon) return;
 
+  // 2. Click Handler
   moon.addEventListener("click", () => {
-    console.log("Moon clicked!");
-    // toggle the class exactly as you had it
-    const isDarkNow = document.documentElement.classList.toggle("dark-mode");
+    const is_dark_now = document.documentElement.classList.toggle("dark-mode");
 
-    // persist minimal: store boolean as string
-    localStorage.setItem("dark-mode", isDarkNow ? "true" : "false");
+    // Swap the icon class
+    updateIcon(is_dark_now);
+
+    // Save state
+    localStorage.setItem("dark-mode", is_dark_now ? "true" : "false");
   });
 });

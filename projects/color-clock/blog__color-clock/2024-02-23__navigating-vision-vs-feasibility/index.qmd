@@ -6,6 +6,7 @@ date        : 2024-02-23
 image       : ../../assets__color-clock/diagrams__color-clock/light-display_2024-02-23.png
 categories  : [color-clock]
 draft       : false
+order       : -7
 ---
 
 <!-- Center all images on this page -->
