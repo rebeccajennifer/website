@@ -7,6 +7,7 @@ date        : 2024-03-20
 image       : ./structure-v1-photo__2024-03-02.jpg
 categories  : [color-clock]
 draft       : false
+order       : -8
 ---
 
 
