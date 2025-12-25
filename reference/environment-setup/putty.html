@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Arduino Command Line Interface – Rebecca Jennifer Rashkin</title>
+<title>PuTTY Configuration – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -174,7 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/arduino-cli.html">Arduino Command Line Interface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/putty.html">PuTTY Configuration</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -210,7 +175,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino Command Line Interface</span></a>
   </div>
 </li>
@@ -228,7 +193,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/putty.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/putty.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">PuTTY Configuration</span></a>
   </div>
 </li>
@@ -305,19 +270,34 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#install-cores" id="toc-install-cores" class="nav-link active" data-scroll-target="#install-cores">Install Cores</a></li>
-  <li><a href="#library-search" id="toc-library-search" class="nav-link" data-scroll-target="#library-search">Library Search</a></li>
-  <li><a href="#library-installation" id="toc-library-installation" class="nav-link" data-scroll-target="#library-installation">Library Installation</a></li>
+  <li><a href="#access-saved-session-configurations" id="toc-access-saved-session-configurations" class="nav-link active" data-scroll-target="#access-saved-session-configurations">Access Saved Session Configurations</a></li>
+  <li><a href="#export-configuration" id="toc-export-configuration" class="nav-link" data-scroll-target="#export-configuration">Export Configuration</a></li>
+  <li><a href="#import-configuration" id="toc-import-configuration" class="nav-link" data-scroll-target="#import-configuration">Import Configuration</a></li>
+  <li><a href="#color-theme" id="toc-color-theme" class="nav-link" data-scroll-target="#color-theme">Color Theme</a>
+  <ul>
+  <li><a href="#color-labels" id="toc-color-labels" class="nav-link" data-scroll-target="#color-labels">Color Labels</a></li>
+  <li><a href="#sample-color-theme-section" id="toc-sample-color-theme-section" class="nav-link" data-scroll-target="#sample-color-theme-section">Sample Color Theme Section</a></li>
+  <li><a href="#all-configuration-settings" id="toc-all-configuration-settings" class="nav-link" data-scroll-target="#all-configuration-settings">All Configuration Settings</a>
+  <ul>
+  <li><a href="#session" id="toc-session" class="nav-link" data-scroll-target="#session">Session</a></li>
+  <li><a href="#terminal" id="toc-terminal" class="nav-link" data-scroll-target="#terminal">Terminal</a></li>
+  <li><a href="#window" id="toc-window" class="nav-link" data-scroll-target="#window">Window</a></li>
+  <li><a href="#connection" id="toc-connection" class="nav-link" data-scroll-target="#connection">Connection</a>
+  <ul>
+  <li><a href="#auth" id="toc-auth" class="nav-link" data-scroll-target="#auth">Auth</a></li>
+  <li><a href="#bugs" id="toc-bugs" class="nav-link" data-scroll-target="#bugs">Bugs</a></li>
+  </ul></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/arduino-cli.html">Arduino Command Line Interface</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/putty.html">PuTTY Configuration</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Arduino Command Line Interface</h1>
-<p class="subtitle lead">Quick reference for Arduino CLI</p>
+<h1 class="title">PuTTY Configuration</h1>
 </div>
 
 
@@ -359,49 +339,201 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Arduino CLI reference.
+|   Reference page for PuTTY configuration
 |____________________________________________________________________-->
-<p>This page serves as a quick reference for the <a href="https://docs.arduino.cc/arduino-cli/">Arduino CLI</a> commands I use most frequently. I’ve compiled these here to save time on recurring lookups.</p>
-<section id="install-cores" class="level2">
-<h2 class="anchored" data-anchor-id="install-cores">Install Cores</h2>
-<p>Before you can upload a program to a specific Arduino Board, you need to install the relevant core.</p>
-<p>These two cores are used for the MKR1010 and Nano ESP32.</p>
-<pre><code>arduino-cli core install arduino:samd
-arduino-cli core install arduino:esp32</code></pre>
+<p>This page describes how to access a configuration file for a saved PuTTY session. Each saved session is saved in a <code>*.reg</code> file and can be imported or exported through the Windows <code>Registry Editor</code>.</p>
+<section id="access-saved-session-configurations" class="level2">
+<h2 class="anchored" data-anchor-id="access-saved-session-configurations">Access Saved Session Configurations</h2>
+<ol type="1">
+<li><p><code>Windows key</code> + <code>r</code>, type <code>regedit</code>. Click <code>OK</code>.</p>
+<p><img src="./images__env-setup/putty-00.png" class="img-fluid"></p></li>
+<li><p>On the left sidebar, navigate to <code>HKEY_CURRENT_USER/SOFTWARE/SimonTatham/PuTTY/Sessions/&lt;saved-session-name&gt;</code>. By default, there should be a saved session called <code>Default%20Settings</code>.</p>
+<p><strong>Note:</strong> <code>%20</code> corresponds with the ASCII code for space, so <code>Default%20Settings</code> translates to <code>Default Settings</code></p>
+<p><img src="./images__env-setup/putty-01.png" class="img-fluid"></p></li>
+</ol>
 </section>
-<section id="library-search" class="level2">
-<h2 class="anchored" data-anchor-id="library-search">Library Search</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">arduino-cli</span> lib search <span class="op">&lt;</span>search_term<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Find the <code>Name</code> field of the library you want to install, e.g.</p>
-<pre><code>Name: "Adafruit AW9523"
-  Author: Adafruit
-  Maintainer: Adafruit &lt;info@adafruit.com&gt;
-  Sentence: Arduino library for the AW9523 GPIO expanders in the Adafruit shop
-  Paragraph: Arduino library for the AW9523 GPIO expanders in the Adafruit shop
-  Website: https://github.com/adafruit/Adafruit_AW9523
-  Category: Signal Input/Output
-  Architecture: *
-  Types: Contributed
-  Versions: [1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5]
-  Dependencies: Adafruit BusIO
-</code></pre>
-<p>In this case, the name of the library is <code>Adafruit AW9523</code>.</p>
+<section id="export-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="export-configuration">Export Configuration</h2>
+<ol type="1">
+<li><p>From the Registry Editor, <a href="#access-saved-session-configurations">access the saved configuration</a> you would like to export.</p></li>
+<li><p>Right-click on the directory corresponding with the saved session to export. Select <code>Export</code>.</p>
+<p><img src="./images__env-setup/putty-02.png" class="img-fluid"></p></li>
+<li><p>Name the file and save the configuration in your preferred location.</p>
+<p><img src="./images__env-setup/putty-03.png" class="img-fluid"></p></li>
+</ol>
 </section>
-<section id="library-installation" class="level2">
-<h2 class="anchored" data-anchor-id="library-installation">Library Installation</h2>
-<pre><code>arduino-cli lib install "library name"</code></pre>
-<p>E.g.</p>
-<pre><code>&gt; arduino-cli lib install "Adafruit AW9523"
-Already installed Adafruit BusIO@1.16.0
-Downloading Adafruit AW9523@1.0.5...
-Adafruit AW9523@1.0.5 downloaded
-Installing Adafruit AW9523@1.0.5...
-Installed Adafruit AW9523@1.0.5</code></pre>
-<p><strong>Note</strong> The line <code>Already installed Adafruit BusIO@1.16.0</code> is because one of the dependencies for this library is already installed.</p>
-<p>Use library in code</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Adafruit_AW9523&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="import-configuration" class="level2">
+<h2 class="anchored" data-anchor-id="import-configuration">Import Configuration</h2>
+<ol type="1">
+<li><p>From the Registry Editor, go to <code>File &gt; Import</code>.</p>
+<p><img src="./images__env-setup/putty-04.png" class="img-fluid"></p></li>
+<li><p>Navigate to the saved configuration <code>.reg</code> file. Click <code>Open</code>.</p>
+<p><img src="./images__env-setup/putty-05.png" class="img-fluid"></p></li>
+<li><p>There will be a dialog box confirming that settings were imported. Click <code>OK</code>.</p>
+<p><img src="./images__env-setup/putty-06.png" class="img-fluid"></p></li>
+</ol>
+</section>
+<section id="color-theme" class="level2">
+<h2 class="anchored" data-anchor-id="color-theme">Color Theme</h2>
+<p>In the <code>.reg</code> file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:</p>
+<p><code>"Colour#"="#,#,#"</code>.</p>
+<section id="color-labels" class="level3">
+<h3 class="anchored" data-anchor-id="color-labels">Color Labels</h3>
+<p>Note that <code>#</code> of <code>Colour#</code> does <em>not</em> correspond with normal ANSI colors, i.e.&nbsp;0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Label</th>
+<th>Color</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>Colour0</code></td>
+<td>Foreground</td>
+</tr>
+<tr class="even">
+<td><code>Colour1</code></td>
+<td>Bright Foreground</td>
+</tr>
+<tr class="odd">
+<td><code>Colour2</code></td>
+<td>Background</td>
+</tr>
+<tr class="even">
+<td><code>Colour3</code></td>
+<td>Bright Background</td>
+</tr>
+<tr class="odd">
+<td><code>Colour4</code></td>
+<td>Cursor Foreground</td>
+</tr>
+<tr class="even">
+<td><code>Colour5</code></td>
+<td>Cursor Background</td>
+</tr>
+<tr class="odd">
+<td><code>Colour6</code></td>
+<td>Black</td>
+</tr>
+<tr class="even">
+<td><code>Colour7</code></td>
+<td>Bright Black</td>
+</tr>
+<tr class="odd">
+<td><code>Colour8</code></td>
+<td>Red</td>
+</tr>
+<tr class="even">
+<td><code>Colour9</code></td>
+<td>Bright Red</td>
+</tr>
+<tr class="odd">
+<td><code>Colour10</code></td>
+<td>Green</td>
+</tr>
+<tr class="even">
+<td><code>Colour11</code></td>
+<td>Bright Green</td>
+</tr>
+<tr class="odd">
+<td><code>Colour12</code></td>
+<td>Yellow</td>
+</tr>
+<tr class="even">
+<td><code>Colour13</code></td>
+<td>Bright Yellow</td>
+</tr>
+<tr class="odd">
+<td><code>Colour14</code></td>
+<td>Blue</td>
+</tr>
+<tr class="even">
+<td><code>Colour15</code></td>
+<td>Bright Blue</td>
+</tr>
+<tr class="odd">
+<td><code>Colour16</code></td>
+<td>Magenta</td>
+</tr>
+<tr class="even">
+<td><code>Colour17</code></td>
+<td>Bright Magenta</td>
+</tr>
+<tr class="odd">
+<td><code>Colour18</code></td>
+<td>Cyan</td>
+</tr>
+<tr class="even">
+<td><code>Colour19</code></td>
+<td>Bright Cyan</td>
+</tr>
+<tr class="odd">
+<td><code>Colour20</code></td>
+<td>White</td>
+</tr>
+<tr class="even">
+<td><code>Colour21</code></td>
+<td>Bright White</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="sample-color-theme-section" class="level3">
+<h3 class="anchored" data-anchor-id="sample-color-theme-section">Sample Color Theme Section</h3>
+<pre><code>"Colour0" ="187, 187, 187"
+"Colour1" ="255, 255, 255"
+"Colour2" =" 28,  28,  28"
+"Colour3" =" 95,  95,  95"
+"Colour4" =" 12,  12,  12"
+"Colour5" ="255, 135,  95"
+"Colour6" =" 18,  18,  18"
+"Colour7" =" 48,  48,  48"
+"Colour8" ="215,  95, 135"
+"Colour9" ="255,  95, 135"
+"Colour10"="135, 215,  95"
+"Colour11"="135, 255,  95"
+"Colour12"="255, 135,  95"
+"Colour13"="215, 215,  95"
+"Colour14"=" 95, 135, 215"
+"Colour15"=" 95, 135, 255"
+"Colour16"="175,  95, 215"
+"Colour17"="175,  95, 255"
+"Colour18"=" 95, 175, 215"
+"Colour19"=" 95, 175, 255"
+"Colour20"="215, 215, 215"
+"Colour21"="255, 255, 255"</code></pre>
+</section>
+<section id="all-configuration-settings" class="level3">
+<h3 class="anchored" data-anchor-id="all-configuration-settings">All Configuration Settings</h3>
+<p>This section contains screenshots of all the configuration settings of a PuTTY window.</p>
+<section id="session" class="level4">
+<h4 class="anchored" data-anchor-id="session">Session</h4>
+<p><img src="./images__env-setup/putty-config-0-session-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-0-session-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-0-session-2.png" class="img-fluid"></p>
+</section>
+<section id="terminal" class="level4">
+<h4 class="anchored" data-anchor-id="terminal">Terminal</h4>
+<p><img src="./images__env-setup/putty-config-1-terminal-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-3.png" class="img-fluid"></p>
+</section>
+<section id="window" class="level4">
+<h4 class="anchored" data-anchor-id="window">Window</h4>
+<p><img src="./images__env-setup/putty-config-2-window-00.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-01.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-02.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-03.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-04.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-05.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-06.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-07.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-08.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-09.png" class="img-fluid"></p>
+</section>
+<section id="connection" class="level4">
+<h4 class="anchored" data-anchor-id="connection">Connection</h4>
+<p><img src="./images__env-setup/putty-config-3-connection-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-6.png" class="img-fluid"></p>
+<section id="auth" class="level5">
+<h5 class="anchored" data-anchor-id="auth">Auth</h5>
+<p><img src="./images__env-setup/putty-config-4-auth-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-5.png" class="img-fluid"></p>
+</section>
+<section id="bugs" class="level5">
+<h5 class="anchored" data-anchor-id="bugs">Bugs</h5>
+<p><img src="./images__env-setup/putty-config-5-bugs-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-6.png" class="img-fluid"></p>
 
 
+</section>
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->

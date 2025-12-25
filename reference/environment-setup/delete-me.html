@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Arduino Command Line Interface – Rebecca Jennifer Rashkin</title>
+<title>delete-me – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -19,41 +19,6 @@ ul.task-list li input[type="checkbox"] {
   width: 0.8em;
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
-}
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
 }
 </style>
 
@@ -174,7 +139,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/arduino-cli.html">Arduino Command Line Interface</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/delete-me.html">Session</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -210,7 +175,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino Command Line Interface</span></a>
   </div>
 </li>
@@ -218,6 +183,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <div class="sidebar-item-container"> 
   <a href="../../reference/environment-setup/default-shell.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Default Shell</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/environment-setup/delete-me.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Session</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -300,108 +271,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of Contents</h2>
-   
-  <ul>
-  <li><a href="#install-cores" id="toc-install-cores" class="nav-link active" data-scroll-target="#install-cores">Install Cores</a></li>
-  <li><a href="#library-search" id="toc-library-search" class="nav-link" data-scroll-target="#library-search">Library Search</a></li>
-  <li><a href="#library-installation" id="toc-library-installation" class="nav-link" data-scroll-target="#library-installation">Library Installation</a></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/arduino-cli.html">Arduino Command Line Interface</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Arduino Command Line Interface</h1>
-<p class="subtitle lead">Quick reference for Arduino CLI</p>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/delete-me.html">Session</a></li></ol></nav></header>
 
 
 
-<div class="quarto-title-meta">
 
-    
-  
-    
-  </div>
-  
-
-
-</header>
-
-
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<!--DESCRIPTION
-|   Arduino CLI reference.
-|____________________________________________________________________-->
-<p>This page serves as a quick reference for the <a href="https://docs.arduino.cc/arduino-cli/">Arduino CLI</a> commands I use most frequently. I’ve compiled these here to save time on recurring lookups.</p>
-<section id="install-cores" class="level2">
-<h2 class="anchored" data-anchor-id="install-cores">Install Cores</h2>
-<p>Before you can upload a program to a specific Arduino Board, you need to install the relevant core.</p>
-<p>These two cores are used for the MKR1010 and Nano ESP32.</p>
-<pre><code>arduino-cli core install arduino:samd
-arduino-cli core install arduino:esp32</code></pre>
+<section id="session" class="level4">
+<h4 class="anchored" data-anchor-id="session">Session</h4>
+<p><a href="https://github.com/user-attachments/assets/b5320b88-7286-426e-854a-0ef39c161685">image</a></p>
+<p><a href="https://github.com/user-attachments/assets/cbbd6240-3612-43cb-bc6d-efb35c2bf1c8">image</a></p>
+<p><a href="https://github.com/user-attachments/assets/3db4e15a-9958-4b82-a834-a60f2d23190a">image</a></p>
 </section>
-<section id="library-search" class="level2">
-<h2 class="anchored" data-anchor-id="library-search">Library Search</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">arduino-cli</span> lib search <span class="op">&lt;</span>search_term<span class="op">&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Find the <code>Name</code> field of the library you want to install, e.g.</p>
-<pre><code>Name: "Adafruit AW9523"
-  Author: Adafruit
-  Maintainer: Adafruit &lt;info@adafruit.com&gt;
-  Sentence: Arduino library for the AW9523 GPIO expanders in the Adafruit shop
-  Paragraph: Arduino library for the AW9523 GPIO expanders in the Adafruit shop
-  Website: https://github.com/adafruit/Adafruit_AW9523
-  Category: Signal Input/Output
-  Architecture: *
-  Types: Contributed
-  Versions: [1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5]
-  Dependencies: Adafruit BusIO
-</code></pre>
-<p>In this case, the name of the library is <code>Adafruit AW9523</code>.</p>
+<section id="terminal" class="level4">
+<h4 class="anchored" data-anchor-id="terminal">Terminal</h4>
+<p><a href="https://github.com/user-attachments/assets/73bbd3c3-c75d-4e2e-8fe9-4f9e0108f84b">image</a> <a href="https://github.com/user-attachments/assets/26a5775a-7fed-480b-bdb4-a381745d4094">image</a> <a href="https://github.com/user-attachments/assets/4867ccb0-9331-408c-b4dc-eb4c46d083a1">image</a> <a href="https://github.com/user-attachments/assets/388ce05c-3c64-480e-b9e4-3ffc8dd00726">image</a></p>
 </section>
-<section id="library-installation" class="level2">
-<h2 class="anchored" data-anchor-id="library-installation">Library Installation</h2>
-<pre><code>arduino-cli lib install "library name"</code></pre>
-<p>E.g.</p>
-<pre><code>&gt; arduino-cli lib install "Adafruit AW9523"
-Already installed Adafruit BusIO@1.16.0
-Downloading Adafruit AW9523@1.0.5...
-Adafruit AW9523@1.0.5 downloaded
-Installing Adafruit AW9523@1.0.5...
-Installed Adafruit AW9523@1.0.5</code></pre>
-<p><strong>Note</strong> The line <code>Already installed Adafruit BusIO@1.16.0</code> is because one of the dependencies for this library is already installed.</p>
-<p>Use library in code</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;Adafruit_AW9523&gt;</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="window" class="level4">
+<h4 class="anchored" data-anchor-id="window">Window</h4>
+<p><a href="https://github.com/user-attachments/assets/b9ba96f3-f4b1-450c-81d8-cfb213889e33">image</a> <a href="https://github.com/user-attachments/assets/4ca25aa8-2a01-43cf-af5a-aa5acd67cab6">image</a> <a href="https://github.com/user-attachments/assets/2a33e769-f9be-43c8-8ee2-1571ceb1752b">image</a> <a href="https://github.com/user-attachments/assets/06506234-0568-4a09-a2ce-0585df4d0cff">image</a> <a href="https://github.com/user-attachments/assets/7dc02dc4-795e-462a-96b2-0bf491c74772">image</a> <a href="https://github.com/user-attachments/assets/e50f175e-cb2f-48c0-9e70-9b9f4e23bace">image</a> <a href="https://github.com/user-attachments/assets/df698673-49a4-4798-b347-407565aefbef">image</a> <a href="https://github.com/user-attachments/assets/534e3219-943c-4a61-b63e-0007279b99c8">image</a> <a href="https://github.com/user-attachments/assets/df6eea31-e2e6-4a46-9222-1c6df015eb27">image</a> <a href="https://github.com/user-attachments/assets/a06047fc-441c-434b-9a7e-b3500d0b8387">image</a></p>
+</section>
+<section id="connection" class="level4">
+<h4 class="anchored" data-anchor-id="connection">Connection</h4>
+<p><a href="https://github.com/user-attachments/assets/9acbadec-3bae-483c-9806-ff899fc9d24f">image</a> <a href="https://github.com/user-attachments/assets/8694d3a6-c9a4-40b8-b625-ff2d25c1645b">image</a> <a href="https://github.com/user-attachments/assets/b645b0e8-408c-4ae4-92f1-868f2aaac67a">image</a> <a href="https://github.com/user-attachments/assets/983856fb-0d8d-4941-aa2c-637af5346dba">image</a> <a href="https://github.com/user-attachments/assets/4294845b-d7b2-4490-9967-7fc2d4b8fe8e">image</a> <a href="https://github.com/user-attachments/assets/c39fdc21-34fe-43e7-ae8d-e0eba3259904">image</a> <a href="https://github.com/user-attachments/assets/6449c8bc-94cf-41ac-8a71-125b4e8c2fd2">image</a></p>
+<section id="auth" class="level5">
+<h5 class="anchored" data-anchor-id="auth">Auth</h5>
+<p><a href="https://github.com/user-attachments/assets/3131ce3c-b75c-4c74-85d4-707291aa1663">image</a> <a href="https://github.com/user-attachments/assets/a71149e6-43f6-40a5-97ee-bd09ebcce502">image</a> <a href="https://github.com/user-attachments/assets/e9ff4cf2-ab20-48e9-8bb1-37f2f78937c8">image</a></p>
+<p><a href="https://github.com/user-attachments/assets/ec5785ed-fd48-4cd3-8d06-b00083724880">image</a> <a href="https://github.com/user-attachments/assets/5ed39a89-b82f-42ba-bf52-00a6de15e44f">image</a> <a href="https://github.com/user-attachments/assets/d1cc17f8-cf4c-4099-be03-4c002a37132e">image</a></p>
+</section>
+<section id="bugs" class="level5">
+<h5 class="anchored" data-anchor-id="bugs">Bugs</h5>
+<p><a href="https://github.com/user-attachments/assets/7799732a-ca7b-4de1-b9af-3b148b47c405">image</a> <a href="https://github.com/user-attachments/assets/c0334908-ce14-40a6-b86d-62bb7f0a2629">image</a> <a href="https://github.com/user-attachments/assets/b428f007-3685-4a18-b5c6-5adb784e83bb">image</a> <a href="https://github.com/user-attachments/assets/b283b949-da7d-4880-a3f7-10059d24fa6d">image</a> <a href="https://github.com/user-attachments/assets/54b8630f-c595-4d89-b193-aef2ab9df99f">image</a> <a href="https://github.com/user-attachments/assets/03c2f6aa-5659-4d1e-85a7-1ed930049647">image</a> <a href="https://github.com/user-attachments/assets/d4fa7e62-753c-4db2-bc19-1f52b4439092">image</a></p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
@@ -507,7 +413,7 @@ Installed Adafruit AW9523@1.0.5</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rebeccajennifer\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
