@@ -1,0 +1,107 @@
+
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for PuTTY color configuration.
+|____________________________________________________________________-->
+
+---
+title: PuTTY Color Configuration
+subtitle: Defining custom color schemes in the PuTTY configuration.
+toc: true
+toc-depth: 6
+---
+
+Learn how to customize your terminal's appearance by modifying the PuTTY configuration color values.
+
+## Export Default Configuration File
+
+Follow [these instructions](../environment-setup/putty.html#access-saved-session-configurations) to export your PuTTY configuration file.
+
+## Color Labels
+
+In the `.reg` file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:
+
+`"Colour#"="#,#,#"`.
+
+Note that `#` of `Colour#` does *not* correspond with normal ANSI colors, i.e. 0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.
+
+Label | Color
+-|-
+`Colour0`  | Foreground
+`Colour1`  | Bright Foreground
+`Colour2`  | Background
+`Colour3`  | Bright Background
+`Colour4`  | Cursor Foreground
+`Colour5`  | Cursor Background
+`Colour6`  | Black
+`Colour7`  | Bright Black
+`Colour8`  | Red
+`Colour9`  | Bright Red
+`Colour10` | Green
+`Colour11` | Bright Green
+`Colour12` | Yellow
+`Colour13` | Bright Yellow
+`Colour14` | Blue
+`Colour15` | Bright Blue
+`Colour16` | Magenta
+`Colour17` | Bright Magenta
+`Colour18` | Cyan
+`Colour19` | Bright Cyan
+`Colour20` | White
+`Colour21` | Bright White
+
+### Sample Color Theme Section
+
+__Note:__ Whitespace is permitted in the configuration file.
+
+```
+"Colour0" ="187, 187, 187"
+"Colour1" ="255, 255, 255"
+"Colour2" =" 28,  28,  28"
+"Colour3" =" 95,  95,  95"
+"Colour4" =" 12,  12,  12"
+"Colour5" ="255, 135,  95"
+"Colour6" =" 18,  18,  18"
+"Colour7" =" 48,  48,  48"
+"Colour8" ="215,  95, 135"
+"Colour9" ="255,  95, 135"
+"Colour10"="135, 215,  95"
+"Colour11"="135, 255,  95"
+"Colour12"="255, 135,  95"
+"Colour13"="215, 215,  95"
+"Colour14"=" 95, 135, 215"
+"Colour15"=" 95, 135, 255"
+"Colour16"="175,  95, 215"
+"Colour17"="175,  95, 255"
+"Colour18"=" 95, 175, 215"
+"Colour19"=" 95, 175, 255"
+"Colour20"="215, 215, 215"
+"Colour21"="255, 255, 255"
+```
+
+## Import Configuration File
+
+Follow [these instructions](../environment-setup/putty.html#import-configuration) to import your modified PuTTY configuration file.

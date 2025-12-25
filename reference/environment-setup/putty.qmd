@@ -73,78 +73,21 @@ This page describes how to access a configuration file for a saved PuTTY session
 
    ![](./images__env-setup/putty-06.png)
 
-## Color Theme
+## Color Settings
 
-In the `.reg` file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:
+Follow [these instructions](../environment-setup/putty.html#import-configuration) to customize your PuTTY terminal color scheme.
 
-`"Colour#"="#,#,#"`.
-
-### Color Labels
-
-Note that `#` of `Colour#` does *not* correspond with normal ANSI colors, i.e. 0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.
-
-Label | Color
--|-
-`Colour0`  | Foreground
-`Colour1`  | Bright Foreground
-`Colour2`  | Background
-`Colour3`  | Bright Background
-`Colour4`  | Cursor Foreground
-`Colour5`  | Cursor Background
-`Colour6`  | Black
-`Colour7`  | Bright Black
-`Colour8`  | Red
-`Colour9`  | Bright Red
-`Colour10` | Green
-`Colour11` | Bright Green
-`Colour12` | Yellow
-`Colour13` | Bright Yellow
-`Colour14` | Blue
-`Colour15` | Bright Blue
-`Colour16` | Magenta
-`Colour17` | Bright Magenta
-`Colour18` | Cyan
-`Colour19` | Bright Cyan
-`Colour20` | White
-`Colour21` | Bright White
-
-### Sample Color Theme Section
-```
-"Colour0" ="187, 187, 187"
-"Colour1" ="255, 255, 255"
-"Colour2" =" 28,  28,  28"
-"Colour3" =" 95,  95,  95"
-"Colour4" =" 12,  12,  12"
-"Colour5" ="255, 135,  95"
-"Colour6" =" 18,  18,  18"
-"Colour7" =" 48,  48,  48"
-"Colour8" ="215,  95, 135"
-"Colour9" ="255,  95, 135"
-"Colour10"="135, 215,  95"
-"Colour11"="135, 255,  95"
-"Colour12"="255, 135,  95"
-"Colour13"="215, 215,  95"
-"Colour14"=" 95, 135, 215"
-"Colour15"=" 95, 135, 255"
-"Colour16"="175,  95, 215"
-"Colour17"="175,  95, 255"
-"Colour18"=" 95, 175, 215"
-"Colour19"=" 95, 175, 255"
-"Colour20"="215, 215, 215"
-"Colour21"="255, 255, 255"
-```
-
-### All Configuration Settings
+## All Configuration Settings
 
 This section contains screenshots of all the configuration settings of a PuTTY window.
 
-#### Session
+### Session
 
 ![](./images__env-setup/putty-config-0-session-0.png)
 ![](./images__env-setup/putty-config-0-session-1.png)
 ![](./images__env-setup/putty-config-0-session-2.png)
 
-#### Terminal
+### Terminal
 
 ![](./images__env-setup/putty-config-1-terminal-0.png)
 ![](./images__env-setup/putty-config-1-terminal-1.png)
@@ -152,7 +95,7 @@ This section contains screenshots of all the configuration settings of a PuTTY w
 ![](./images__env-setup/putty-config-1-terminal-3.png)
 
 
-#### Window
+### Window
 
 ![](./images__env-setup/putty-config-2-window-00.png)
 ![](./images__env-setup/putty-config-2-window-01.png)
@@ -165,7 +108,7 @@ This section contains screenshots of all the configuration settings of a PuTTY w
 ![](./images__env-setup/putty-config-2-window-08.png)
 ![](./images__env-setup/putty-config-2-window-09.png)
 
-#### Connection
+### Connection
 
 ![](./images__env-setup/putty-config-3-connection-0.png)
 ![](./images__env-setup/putty-config-3-connection-1.png)
@@ -175,7 +118,7 @@ This section contains screenshots of all the configuration settings of a PuTTY w
 ![](./images__env-setup/putty-config-3-connection-5.png)
 ![](./images__env-setup/putty-config-3-connection-6.png)
 
-##### Auth
+#### Auth
 
 ![](./images__env-setup/putty-config-4-auth-0.png)
 ![](./images__env-setup/putty-config-4-auth-1.png)
@@ -184,7 +127,7 @@ This section contains screenshots of all the configuration settings of a PuTTY w
 ![](./images__env-setup/putty-config-4-auth-4.png)
 ![](./images__env-setup/putty-config-4-auth-5.png)
 
-##### Bugs
+#### Bugs
 
 ![](./images__env-setup/putty-config-5-bugs-0.png)
 ![](./images__env-setup/putty-config-5-bugs-1.png)
