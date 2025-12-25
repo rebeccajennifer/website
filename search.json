@@ -2111,28 +2111,6 @@
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/index.html#general-information",
-    "href": "reference/color-theme__reference/index.html#general-information",
-    "title": "Color Scheme Reference",
-    "section": "General Information",
-    "text": "General Information\nANSI 256 Color Table\nANSI Codes Explained\nLS_COLORS & dircolors\nTERM Environment Variable",
-    "crumbs": [
-      "Reference",
-      "Color Scheme Reference"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/index.html#implement-terminal-color-schemes",
-    "href": "reference/color-theme__reference/index.html#implement-terminal-color-schemes",
-    "title": "Color Scheme Reference",
-    "section": "Implement Terminal Color Schemes",
-    "text": "Implement Terminal Color Schemes\nGNOME Color Profile\nVS Code Color Theme\nVim Color Scheme",
-    "crumbs": [
-      "Reference",
-      "Color Scheme Reference"
-    ]
-  },
-  {
     "objectID": "education/how-to-learn.html",
     "href": "education/how-to-learn.html",
     "title": "How To Learn",
