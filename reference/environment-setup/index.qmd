@@ -31,7 +31,7 @@ title: New Environment Setup
 subtitle: My approach to setting up a new development environment
 toc: true
 toc-depth: 6
-
+order: 1
 ---
 
 To ensure consistency when setting up new development environments, I’ve compiled this checklist of essential steps.

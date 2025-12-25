@@ -1,3 +1,11 @@
+---
+title: Color Scheme Reference
+subtitle: Bring joy into your environment.
+listing:
+  contents: ./
+  type: grid
+order: 0
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -26,16 +34,20 @@
 |   Reference page for color scheme related information.
 |____________________________________________________________________-->
 
----
-title: Color Scheme Reference
-subtitle: Bring joy into your environment.
----
-
-{{< include ../../assets/ui-elements/flux-bunny-dark-colors.html >}}
+<style>
+/* Hide table search bar */
+div.listing-actions-group    { display : none; } /* Hide filter bar */
+/*.quarto-listing-table thead  { display : none; } /* Hide header row */
+.quarto-listing-table tr, td { border  : none; } /* Hide cell borders */
+</style>
 
 Color brings me joy, and integrating color into my development
 environment brings an extra level of satisfaction to coding.
 
+{{< include ../../assets/ui-elements/flux-bunny-dark-colors.html >}}
+
 This set of pages is a collection of resources I've created in my
 efforts to unify color schemes across multiple terminal and coding
 environments.
+
+

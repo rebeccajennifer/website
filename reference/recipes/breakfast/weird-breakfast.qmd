@@ -1,4 +1,7 @@
-
+---
+title: Weird Breakfast
+subtitle: Strange but tasty!
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -27,12 +30,7 @@
 |   Egg and rice breakfast
 |____________________________________________________________________-->
 
----
-title: Weird Breakfast
-subtitle: Strange but tasty!
----
-
-This breakfast might sound alittle weird, but it is super tasty and high in protein.
+This breakfast might sound a little weird, but it's super tasty and high in protein.
 
 ## Ingredients
 

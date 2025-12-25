@@ -31,6 +31,7 @@ title: Color Scheme Exporter
 subtitle: Synchronize your development aesthetic.
 toc: true
 toc-depth: 6
+order: 2
 ---
 
 ![](./color-scheme-exporter-screenshot.png){.plain}

@@ -29,6 +29,7 @@
 ---
 title: "ColorClock"
 subtitle: A passion project.
+order: 0
 ---
 
 <style>

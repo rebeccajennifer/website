@@ -1,3 +1,10 @@
+---
+title: PuTTY Color Configuration
+subtitle: Defining custom color schemes in the PuTTY configuration.
+image: ../environment-setup/images__env-setup/putty-config-2-window-09.png
+toc: true
+toc-depth: 6
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,13 +32,6 @@
 <!--DESCRIPTION
 |   Reference page for PuTTY color configuration.
 |____________________________________________________________________-->
-
----
-title: PuTTY Color Configuration
-subtitle: Defining custom color schemes in the PuTTY configuration.
-toc: true
-toc-depth: 6
----
 
 Learn how to customize your terminal's appearance by modifying the PuTTY configuration color values.
 

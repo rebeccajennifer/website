@@ -29,6 +29,7 @@
 ---
 title: The Book of Plans
 subtitle: Enable your journey to your ideal self.
+order: 1
 ---
 
 The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.

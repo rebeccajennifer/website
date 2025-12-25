@@ -1,3 +1,8 @@
+---
+title: GNOME Color Profile
+subtitle: How to create a GNOME color theme file.
+image: ./images__color-scheme-reference/gnome-theme-screenshot.png
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,11 +30,6 @@
 <!--DESCRIPTION
 |   Reference page for creating a Gnome Terminal color scheme.
 |____________________________________________________________________-->
-
----
-title: GNOME Color Profile
-subtitle: How to create a GNOME color theme file.
----
 
 This page describes how to create a color scheme for GNOME terminal in Ubuntu.
 
