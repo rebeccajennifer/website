@@ -310,12 +310,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <li><a href="#initialization" id="toc-initialization" class="nav-link" data-scroll-target="#initialization">Initialization</a></li>
   <li><a href="#update-submodule" id="toc-update-submodule" class="nav-link" data-scroll-target="#update-submodule">Update Submodule</a></li>
   </ul></li>
-  <li><a href="#ssh-key" id="toc-ssh-key" class="nav-link" data-scroll-target="#ssh-key">SSH Key</a>
+  <li><a href="#ssh-key-setup" id="toc-ssh-key-setup" class="nav-link" data-scroll-target="#ssh-key-setup">SSH Key Setup</a>
   <ul>
-  <li><a href="#generate-an-ssh-key" id="toc-generate-an-ssh-key" class="nav-link" data-scroll-target="#generate-an-ssh-key">Generate An SSH Key</a></li>
-  </ul></li>
   <li><a href="#github" id="toc-github" class="nav-link" data-scroll-target="#github">GitHub</a></li>
   <li><a href="#azure-devops" id="toc-azure-devops" class="nav-link" data-scroll-target="#azure-devops">Azure DevOps</a></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -414,15 +413,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> submodule update <span class="at">--recursive</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 </section>
-<section id="ssh-key" class="level2">
-<h2 class="anchored" data-anchor-id="ssh-key">SSH Key</h2>
+<section id="ssh-key-setup" class="level2">
+<h2 class="anchored" data-anchor-id="ssh-key-setup">SSH Key Setup</h2>
 <p>To enable seamless authentication for Git without repeating logins, follow these steps to configure SSH keys. This guide covers setup for both GitHub and Azure DevOps.</p>
-<section id="generate-an-ssh-key" class="level3">
-<h3 class="anchored" data-anchor-id="generate-an-ssh-key">Generate An SSH Key</h3>
-</section>
-</section>
-<section id="github" class="level2">
-<h2 class="anchored" data-anchor-id="github">GitHub</h2>
+<section id="github" class="level3">
+<h3 class="anchored" data-anchor-id="github">GitHub</h3>
 <p>The following information was taken from the following source:</p>
 <p><a class="flux-button _3" href="https://docs.github.com/en/authentication/connecting-to-github-with-ssh/generating-a-new-ssh-key-and-adding-it-to-the-ssh-agent">GitHub SSH Key Setup Reource</a></p>
 <ol type="1">
@@ -467,8 +462,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p><img src="./images__env-setup/git-ssh-github-2.png" class="img-fluid"></p></li>
 </ol>
 </section>
-<section id="azure-devops" class="level2">
-<h2 class="anchored" data-anchor-id="azure-devops">Azure DevOps</h2>
+<section id="azure-devops" class="level3">
+<h3 class="anchored" data-anchor-id="azure-devops">Azure DevOps</h3>
 <p>The following information was taken from the following source:</p>
 <p><a class="flux-button _3" href="https://learn.microsoft.com/en-us/azure/virtual-machines/linux/create-ssh-keys-detailed">Azure DevOps Key Setup Reource</a></p>
 <ol type="1">
@@ -508,6 +503,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ol>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->

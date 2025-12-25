@@ -1944,35 +1944,11 @@
     ]
   },
   {
-    "objectID": "reference/environment-setup/git.html#ssh-key",
-    "href": "reference/environment-setup/git.html#ssh-key",
+    "objectID": "reference/environment-setup/git.html#ssh-key-setup",
+    "href": "reference/environment-setup/git.html#ssh-key-setup",
     "title": "Git Reference",
-    "section": "SSH Key",
-    "text": "SSH Key\nTo enable seamless authentication for Git without repeating logins, follow these steps to configure SSH keys. This guide covers setup for both GitHub and Azure DevOps.\n\nGenerate An SSH Key",
-    "crumbs": [
-      "Reference",
-      "New Environment Setup",
-      "Git Reference"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/git.html#github",
-    "href": "reference/environment-setup/git.html#github",
-    "title": "Git Reference",
-    "section": "GitHub",
-    "text": "GitHub\nThe following information was taken from the following source:\nGitHub SSH Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -t ed25519 -C \"email@address.com\"\nOutput\nGenerating public/private ed25519 key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_ed25519):\nEnter passphrase (empty for no passphrase):\nEnter same passphrase again:\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519.pub\nThe key fingerprint is:\n################################################## email@address.com\nThe key's randomart image is:\n+--[ED25519 256]--+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 59566\nRegister your private SSH key with the SSH Agent.\nssh-add ~/.ssh/id_ed25519\nOutput\nIdentity added: /home/flux/.ssh/id_ed25519 (email@address.com)\nGo to settings.\n\nGo to SSH keys.\n\nClick New SSH key button.",
-    "crumbs": [
-      "Reference",
-      "New Environment Setup",
-      "Git Reference"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/git.html#azure-devops",
-    "href": "reference/environment-setup/git.html#azure-devops",
-    "title": "Git Reference",
-    "section": "Azure DevOps",
-    "text": "Azure DevOps\nThe following information was taken from the following source:\nAzure DevOps Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -m PEM -t rsa -b 4096\nOutput\nGenerating public/private rsa key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_rsa): (hit enter)\nEnter passphrase (empty for no passphrase): (hit enter)\nEnter same passphrase again: (hit enter)\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa.pub\nThe key fingerprint is:\nSHA256:########################################### user@computer\nThe key's randomart image is:\n+---[RSA 4096]----+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 12956\nFrom Azure DevOps web interface",
+    "section": "SSH Key Setup",
+    "text": "SSH Key Setup\nTo enable seamless authentication for Git without repeating logins, follow these steps to configure SSH keys. This guide covers setup for both GitHub and Azure DevOps.\n\nGitHub\nThe following information was taken from the following source:\nGitHub SSH Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -t ed25519 -C \"email@address.com\"\nOutput\nGenerating public/private ed25519 key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_ed25519):\nEnter passphrase (empty for no passphrase):\nEnter same passphrase again:\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519.pub\nThe key fingerprint is:\n################################################## email@address.com\nThe key's randomart image is:\n+--[ED25519 256]--+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 59566\nRegister your private SSH key with the SSH Agent.\nssh-add ~/.ssh/id_ed25519\nOutput\nIdentity added: /home/flux/.ssh/id_ed25519 (email@address.com)\nGo to settings.\n\nGo to SSH keys.\n\nClick New SSH key button.\n\n\n\n\nAzure DevOps\nThe following information was taken from the following source:\nAzure DevOps Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -m PEM -t rsa -b 4096\nOutput\nGenerating public/private rsa key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_rsa): (hit enter)\nEnter passphrase (empty for no passphrase): (hit enter)\nEnter same passphrase again: (hit enter)\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa.pub\nThe key fingerprint is:\nSHA256:########################################### user@computer\nThe key's randomart image is:\n+---[RSA 4096]----+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 12956\nFrom Azure DevOps web interface",
     "crumbs": [
       "Reference",
       "New Environment Setup",
