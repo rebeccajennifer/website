@@ -240,6 +240,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PuTTY Color Configuration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TERM Environment Variable</span></a>
   </div>
@@ -273,10 +279,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#access-saved-session-configurations" id="toc-access-saved-session-configurations" class="nav-link active" data-scroll-target="#access-saved-session-configurations">Access Saved Session Configurations</a></li>
   <li><a href="#export-configuration" id="toc-export-configuration" class="nav-link" data-scroll-target="#export-configuration">Export Configuration</a></li>
   <li><a href="#import-configuration" id="toc-import-configuration" class="nav-link" data-scroll-target="#import-configuration">Import Configuration</a></li>
-  <li><a href="#color-theme" id="toc-color-theme" class="nav-link" data-scroll-target="#color-theme">Color Theme</a>
-  <ul>
-  <li><a href="#color-labels" id="toc-color-labels" class="nav-link" data-scroll-target="#color-labels">Color Labels</a></li>
-  <li><a href="#sample-color-theme-section" id="toc-sample-color-theme-section" class="nav-link" data-scroll-target="#sample-color-theme-section">Sample Color Theme Section</a></li>
+  <li><a href="#color-settings" id="toc-color-settings" class="nav-link" data-scroll-target="#color-settings">Color Settings</a></li>
   <li><a href="#all-configuration-settings" id="toc-all-configuration-settings" class="nav-link" data-scroll-target="#all-configuration-settings">All Configuration Settings</a>
   <ul>
   <li><a href="#session" id="toc-session" class="nav-link" data-scroll-target="#session">Session</a></li>
@@ -286,7 +289,6 @@ ul.task-list li input[type="checkbox"] {
   <ul>
   <li><a href="#auth" id="toc-auth" class="nav-link" data-scroll-target="#auth">Auth</a></li>
   <li><a href="#bugs" id="toc-bugs" class="nav-link" data-scroll-target="#bugs">Bugs</a></li>
-  </ul></li>
   </ul></li>
   </ul></li>
   </ul>
@@ -373,165 +375,37 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="./images__env-setup/putty-06.png" class="img-fluid"></p></li>
 </ol>
 </section>
-<section id="color-theme" class="level2">
-<h2 class="anchored" data-anchor-id="color-theme">Color Theme</h2>
-<p>In the <code>.reg</code> file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:</p>
-<p><code>"Colour#"="#,#,#"</code>.</p>
-<section id="color-labels" class="level3">
-<h3 class="anchored" data-anchor-id="color-labels">Color Labels</h3>
-<p>Note that <code>#</code> of <code>Colour#</code> does <em>not</em> correspond with normal ANSI colors, i.e.&nbsp;0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Label</th>
-<th>Color</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>Colour0</code></td>
-<td>Foreground</td>
-</tr>
-<tr class="even">
-<td><code>Colour1</code></td>
-<td>Bright Foreground</td>
-</tr>
-<tr class="odd">
-<td><code>Colour2</code></td>
-<td>Background</td>
-</tr>
-<tr class="even">
-<td><code>Colour3</code></td>
-<td>Bright Background</td>
-</tr>
-<tr class="odd">
-<td><code>Colour4</code></td>
-<td>Cursor Foreground</td>
-</tr>
-<tr class="even">
-<td><code>Colour5</code></td>
-<td>Cursor Background</td>
-</tr>
-<tr class="odd">
-<td><code>Colour6</code></td>
-<td>Black</td>
-</tr>
-<tr class="even">
-<td><code>Colour7</code></td>
-<td>Bright Black</td>
-</tr>
-<tr class="odd">
-<td><code>Colour8</code></td>
-<td>Red</td>
-</tr>
-<tr class="even">
-<td><code>Colour9</code></td>
-<td>Bright Red</td>
-</tr>
-<tr class="odd">
-<td><code>Colour10</code></td>
-<td>Green</td>
-</tr>
-<tr class="even">
-<td><code>Colour11</code></td>
-<td>Bright Green</td>
-</tr>
-<tr class="odd">
-<td><code>Colour12</code></td>
-<td>Yellow</td>
-</tr>
-<tr class="even">
-<td><code>Colour13</code></td>
-<td>Bright Yellow</td>
-</tr>
-<tr class="odd">
-<td><code>Colour14</code></td>
-<td>Blue</td>
-</tr>
-<tr class="even">
-<td><code>Colour15</code></td>
-<td>Bright Blue</td>
-</tr>
-<tr class="odd">
-<td><code>Colour16</code></td>
-<td>Magenta</td>
-</tr>
-<tr class="even">
-<td><code>Colour17</code></td>
-<td>Bright Magenta</td>
-</tr>
-<tr class="odd">
-<td><code>Colour18</code></td>
-<td>Cyan</td>
-</tr>
-<tr class="even">
-<td><code>Colour19</code></td>
-<td>Bright Cyan</td>
-</tr>
-<tr class="odd">
-<td><code>Colour20</code></td>
-<td>White</td>
-</tr>
-<tr class="even">
-<td><code>Colour21</code></td>
-<td>Bright White</td>
-</tr>
-</tbody>
-</table>
+<section id="color-settings" class="level2">
+<h2 class="anchored" data-anchor-id="color-settings">Color Settings</h2>
+<p>Follow <a href="../environment-setup/putty.html#import-configuration">these instructions</a> to customize your PuTTY terminal color scheme.</p>
 </section>
-<section id="sample-color-theme-section" class="level3">
-<h3 class="anchored" data-anchor-id="sample-color-theme-section">Sample Color Theme Section</h3>
-<pre><code>"Colour0" ="187, 187, 187"
-"Colour1" ="255, 255, 255"
-"Colour2" =" 28,  28,  28"
-"Colour3" =" 95,  95,  95"
-"Colour4" =" 12,  12,  12"
-"Colour5" ="255, 135,  95"
-"Colour6" =" 18,  18,  18"
-"Colour7" =" 48,  48,  48"
-"Colour8" ="215,  95, 135"
-"Colour9" ="255,  95, 135"
-"Colour10"="135, 215,  95"
-"Colour11"="135, 255,  95"
-"Colour12"="255, 135,  95"
-"Colour13"="215, 215,  95"
-"Colour14"=" 95, 135, 215"
-"Colour15"=" 95, 135, 255"
-"Colour16"="175,  95, 215"
-"Colour17"="175,  95, 255"
-"Colour18"=" 95, 175, 215"
-"Colour19"=" 95, 175, 255"
-"Colour20"="215, 215, 215"
-"Colour21"="255, 255, 255"</code></pre>
-</section>
-<section id="all-configuration-settings" class="level3">
-<h3 class="anchored" data-anchor-id="all-configuration-settings">All Configuration Settings</h3>
+<section id="all-configuration-settings" class="level2">
+<h2 class="anchored" data-anchor-id="all-configuration-settings">All Configuration Settings</h2>
 <p>This section contains screenshots of all the configuration settings of a PuTTY window.</p>
-<section id="session" class="level4">
-<h4 class="anchored" data-anchor-id="session">Session</h4>
+<section id="session" class="level3">
+<h3 class="anchored" data-anchor-id="session">Session</h3>
 <p><img src="./images__env-setup/putty-config-0-session-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-0-session-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-0-session-2.png" class="img-fluid"></p>
 </section>
-<section id="terminal" class="level4">
-<h4 class="anchored" data-anchor-id="terminal">Terminal</h4>
+<section id="terminal" class="level3">
+<h3 class="anchored" data-anchor-id="terminal">Terminal</h3>
 <p><img src="./images__env-setup/putty-config-1-terminal-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-3.png" class="img-fluid"></p>
 </section>
-<section id="window" class="level4">
-<h4 class="anchored" data-anchor-id="window">Window</h4>
+<section id="window" class="level3">
+<h3 class="anchored" data-anchor-id="window">Window</h3>
 <p><img src="./images__env-setup/putty-config-2-window-00.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-01.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-02.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-03.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-04.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-05.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-06.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-07.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-08.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-09.png" class="img-fluid"></p>
 </section>
-<section id="connection" class="level4">
-<h4 class="anchored" data-anchor-id="connection">Connection</h4>
+<section id="connection" class="level3">
+<h3 class="anchored" data-anchor-id="connection">Connection</h3>
 <p><img src="./images__env-setup/putty-config-3-connection-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-6.png" class="img-fluid"></p>
-<section id="auth" class="level5">
-<h5 class="anchored" data-anchor-id="auth">Auth</h5>
+<section id="auth" class="level4">
+<h4 class="anchored" data-anchor-id="auth">Auth</h4>
 <p><img src="./images__env-setup/putty-config-4-auth-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-5.png" class="img-fluid"></p>
 </section>
-<section id="bugs" class="level5">
-<h5 class="anchored" data-anchor-id="bugs">Bugs</h5>
+<section id="bugs" class="level4">
+<h4 class="anchored" data-anchor-id="bugs">Bugs</h4>
 <p><img src="./images__env-setup/putty-config-5-bugs-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-6.png" class="img-fluid"></p>
 
 
-</section>
 </section>
 </section>
 </section>
