@@ -39,8 +39,6 @@ ANSI color codes, as used in terminals, can be categorized into three main types
 2. 256 colors
 3. 24-bit true colors
 
-
-
 ## ANSI 16 Color Codes (Standard Colors)
 
 {{< include ../../assets/ui-elements/ansi256-000-016.html >}}

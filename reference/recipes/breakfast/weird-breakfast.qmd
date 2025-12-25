@@ -1,0 +1,57 @@
+
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Egg and rice breakfast
+|____________________________________________________________________-->
+
+---
+title: Weird Breakfast
+subtitle: Strange but tasty!
+---
+
+This breakfast might sound alittle weird, but it is super tasty and high in protein.
+
+## Ingredients
+
+3 oz cooked egg white
+1/2 c shelled edamame
+
+1/2 c cooked rice
+
+1/4 c plain greek yogurt
+squirt of sriracha sauce
+2 t olive oil
+salt
+
+## Protein Content
+
+25g protein
+
+### Breakdown
+
+10g - egg
+10g - edamame
+ 5g - yogurt
