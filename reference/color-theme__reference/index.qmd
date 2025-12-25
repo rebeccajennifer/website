@@ -39,22 +39,3 @@ environment brings an extra level of satisfaction to coding.
 This set of pages is a collection of resources I've created in my
 efforts to unify color schemes across multiple terminal and coding
 environments.
-
-
-## General Information
-
-[ANSI 256 Color Table](./ansi256-colors.qmd)
-
-[ANSI Codes Explained](./ansi-color-explained.qmd)
-
-[LS_COLORS & dircolors](./ls-colors.qmd)
-
-[TERM Environment Variable](./term-env-var.qmd)
-
-## Implement Terminal Color Schemes
-
-[GNOME Color Profile](./gnome-terminal-color.qmd)
-
-[VS Code Color Theme](./vscode-color.qmd)
-
-[Vim Color Scheme](./vim-color.qmd)

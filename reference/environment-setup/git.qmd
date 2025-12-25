@@ -104,14 +104,11 @@ After the initialization of a submodule, to simply update that submodule, i.e. p
 git submodule update --recursive
 ```
 
-
-## SSH Key
+## SSH Key Setup
 
 To enable seamless authentication for Git without repeating logins, follow these steps to configure SSH keys. This guide covers setup for both GitHub and Azure DevOps.
 
-### Generate An SSH Key
-
-## GitHub
+### GitHub
 
 The following information was taken from the following source:
 
@@ -195,7 +192,7 @@ The following information was taken from the following source:
    ![](./images__env-setup/git-ssh-github-2.png)
 
 
-## Azure DevOps
+### Azure DevOps
 
 The following information was taken from the following source:
 

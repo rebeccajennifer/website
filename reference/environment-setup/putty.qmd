@@ -1,0 +1,195 @@
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for PuTTY configuration
+|____________________________________________________________________-->
+
+---
+title: PuTTY Configuration
+toc: true
+toc-depth: 6
+---
+
+This page describes how to access a configuration file for a saved PuTTY session. Each saved session is saved in a `*.reg` file and can be imported or exported through the Windows `Registry Editor`.
+
+## Access Saved Session Configurations
+
+1. `Windows key` + `r`, type `regedit`. Click `OK`.
+
+   ![](./images__env-setup/putty-00.png)
+
+1. On the left sidebar, navigate to `HKEY_CURRENT_USER/SOFTWARE/SimonTatham/PuTTY/Sessions/<saved-session-name>`. By default, there should be a saved session called `Default%20Settings`.
+
+   __Note:__ `%20` corresponds with the ASCII code for space, so `Default%20Settings` translates to `Default Settings`
+
+   ![](./images__env-setup/putty-01.png)
+
+
+## Export Configuration
+
+1. From the Registry Editor, [access the saved configuration](#access-saved-session-configurations) you would like to export.
+
+1. Right-click on the directory corresponding with the saved session to export. Select `Export`.
+
+   ![](./images__env-setup/putty-02.png)
+
+1. Name the file and save the configuration in your preferred location.
+
+   ![](./images__env-setup/putty-03.png)
+
+## Import Configuration
+
+1. From the Registry Editor, go to `File > Import`.
+
+   ![](./images__env-setup/putty-04.png)
+
+1. Navigate to the saved configuration `.reg` file. Click `Open`.
+
+   ![](./images__env-setup/putty-05.png)
+
+1. There will be a dialog box confirming that settings were imported. Click `OK`.
+
+   ![](./images__env-setup/putty-06.png)
+
+## Color Theme
+
+In the `.reg` file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:
+
+`"Colour#"="#,#,#"`.
+
+### Color Labels
+
+Note that `#` of `Colour#` does *not* correspond with normal ANSI colors, i.e. 0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.
+
+Label | Color
+-|-
+`Colour0`  | Foreground
+`Colour1`  | Bright Foreground
+`Colour2`  | Background
+`Colour3`  | Bright Background
+`Colour4`  | Cursor Foreground
+`Colour5`  | Cursor Background
+`Colour6`  | Black
+`Colour7`  | Bright Black
+`Colour8`  | Red
+`Colour9`  | Bright Red
+`Colour10` | Green
+`Colour11` | Bright Green
+`Colour12` | Yellow
+`Colour13` | Bright Yellow
+`Colour14` | Blue
+`Colour15` | Bright Blue
+`Colour16` | Magenta
+`Colour17` | Bright Magenta
+`Colour18` | Cyan
+`Colour19` | Bright Cyan
+`Colour20` | White
+`Colour21` | Bright White
+
+### Sample Color Theme Section
+```
+"Colour0" ="187, 187, 187"
+"Colour1" ="255, 255, 255"
+"Colour2" =" 28,  28,  28"
+"Colour3" =" 95,  95,  95"
+"Colour4" =" 12,  12,  12"
+"Colour5" ="255, 135,  95"
+"Colour6" =" 18,  18,  18"
+"Colour7" =" 48,  48,  48"
+"Colour8" ="215,  95, 135"
+"Colour9" ="255,  95, 135"
+"Colour10"="135, 215,  95"
+"Colour11"="135, 255,  95"
+"Colour12"="255, 135,  95"
+"Colour13"="215, 215,  95"
+"Colour14"=" 95, 135, 215"
+"Colour15"=" 95, 135, 255"
+"Colour16"="175,  95, 215"
+"Colour17"="175,  95, 255"
+"Colour18"=" 95, 175, 215"
+"Colour19"=" 95, 175, 255"
+"Colour20"="215, 215, 215"
+"Colour21"="255, 255, 255"
+```
+
+### All Configuration Settings
+
+This section contains screenshots of all the configuration settings of a PuTTY window.
+
+#### Session
+
+![](./images__env-setup/putty-config-0-session-0.png)
+![](./images__env-setup/putty-config-0-session-1.png)
+![](./images__env-setup/putty-config-0-session-2.png)
+
+#### Terminal
+
+![](./images__env-setup/putty-config-1-terminal-0.png)
+![](./images__env-setup/putty-config-1-terminal-1.png)
+![](./images__env-setup/putty-config-1-terminal-2.png)
+![](./images__env-setup/putty-config-1-terminal-3.png)
+
+
+#### Window
+
+![](./images__env-setup/putty-config-2-window-00.png)
+![](./images__env-setup/putty-config-2-window-01.png)
+![](./images__env-setup/putty-config-2-window-02.png)
+![](./images__env-setup/putty-config-2-window-03.png)
+![](./images__env-setup/putty-config-2-window-04.png)
+![](./images__env-setup/putty-config-2-window-05.png)
+![](./images__env-setup/putty-config-2-window-06.png)
+![](./images__env-setup/putty-config-2-window-07.png)
+![](./images__env-setup/putty-config-2-window-08.png)
+![](./images__env-setup/putty-config-2-window-09.png)
+
+#### Connection
+
+![](./images__env-setup/putty-config-3-connection-0.png)
+![](./images__env-setup/putty-config-3-connection-1.png)
+![](./images__env-setup/putty-config-3-connection-2.png)
+![](./images__env-setup/putty-config-3-connection-3.png)
+![](./images__env-setup/putty-config-3-connection-4.png)
+![](./images__env-setup/putty-config-3-connection-5.png)
+![](./images__env-setup/putty-config-3-connection-6.png)
+
+##### Auth
+
+![](./images__env-setup/putty-config-4-auth-0.png)
+![](./images__env-setup/putty-config-4-auth-1.png)
+![](./images__env-setup/putty-config-4-auth-2.png)
+![](./images__env-setup/putty-config-4-auth-3.png)
+![](./images__env-setup/putty-config-4-auth-4.png)
+![](./images__env-setup/putty-config-4-auth-5.png)
+
+##### Bugs
+
+![](./images__env-setup/putty-config-5-bugs-0.png)
+![](./images__env-setup/putty-config-5-bugs-1.png)
+![](./images__env-setup/putty-config-5-bugs-2.png)
+![](./images__env-setup/putty-config-5-bugs-3.png)
+![](./images__env-setup/putty-config-5-bugs-4.png)
+![](./images__env-setup/putty-config-5-bugs-5.png)
+![](./images__env-setup/putty-config-5-bugs-6.png)
