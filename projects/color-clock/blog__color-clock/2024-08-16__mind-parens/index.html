@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,10 +41,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../../../flux-bunny.css">
+<link rel="stylesheet" href="../../../../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -422,21 +387,21 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>I was cleaning up my code of magic numbers and added a few <code>#define</code> statements for the frequency values. But after uploading the program to the board I didn’t understand why the the colors on the light were not changing at the correct rate. So I added a couple serial output debug prints saw that my frequency was not set properly.</p>
 <section id="code" class="level2">
 <h2 class="anchored" data-anchor-id="code">Code</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="co">// Time constants</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_MIN   </span><span class="fl">60.0</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#define MINUTES_PER_HOUR  </span><span class="fl">60.0</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_HOUR  </span>SECONDS_PER_MIN<span class="pp"> </span><span class="op">*</span><span class="pp"> </span>MINUTES_PER_HOUR</span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="co">// Cycle time for ColorClock object 0</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="co">// Should equal 0.00333____</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span>SECONDS_PER_HOUR</span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a><span class="co">//...</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>print<span class="op">(</span><span class="st">"SECONDS_PER_HOUR:     "</span><span class="op">);</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>println<span class="op">(</span>SECONDS_PER_HOUR<span class="op">);</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>print<span class="op">(</span><span class="st">"CC0_CYCLE_TIME_HOURS: "</span><span class="op">);</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>Serial<span class="op">.</span>println<span class="op">(</span>CC0_CYCLE_TIME_HOURS<span class="op">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>// Time constants
+#define SECONDS_PER_MIN   60.0
+#define MINUTES_PER_HOUR  60.0
+#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR
+
+// Cycle time for ColorClock object 0
+// Should equal 0.00333____
+#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR
+
+//...
+
+Serial.print("SECONDS_PER_HOUR:     ");
+Serial.println(SECONDS_PER_HOUR);
+Serial.print("CC0_CYCLE_TIME_HOURS: ");
+Serial.println(CC0_CYCLE_TIME_HOURS);</code></pre>
 </section>
 <section id="serial-output" class="level2">
 <h2 class="anchored" data-anchor-id="serial-output">Serial Output</h2>
@@ -444,43 +409,43 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <pre><code>CC0_CYCLE_TIME_HOURS: 12.00
 SECONDS_PER_HOUR:     3600.00</code></pre>
 <p>I figured out that it had something to do with my <code>#define</code> statement. I stared at the code for way too long before deciding to do away with the <code>SECONDS_PER_HOUR</code> constant and just hard code the values directly:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span><span class="fl">3600.00</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>#define CC0_CYCLE_TIME_HOURS 12.0 / 3600.00</code></pre>
 <p>And this worked, so whatever. I just figured that the Arduino compiler is weird and doesn’t treat preprocessor directives the same as gcc. I started writing this post to complain about the Arduino compiler, so to illustrate my point, I coded up the following simple program to compile on my desktop.</p>
 </section>
 <section id="code-1" class="level2">
 <h2 class="anchored" data-anchor-id="code-1">Code</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#include </span><span class="im">&lt;stdio.h&gt;</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_MIN   </span><span class="fl">60.0</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="pp">#define MINUTES_PER_HOUR  </span><span class="fl">60.0</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_HOUR  </span>SECONDS_PER_MIN<span class="pp"> </span><span class="op">*</span><span class="pp"> </span>MINUTES_PER_HOUR</span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span>SECONDS_PER_HOUR</span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="dt">int</span> main<span class="op">()</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">"</span><span class="sc">\n</span><span class="st">SECONDS_PER_HOUR:     </span><span class="sc">%f</span><span class="st">"</span><span class="op">,</span> SECONDS_PER_HOUR<span class="op">);</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>  printf<span class="op">(</span><span class="st">"</span><span class="sc">\n</span><span class="st">CC0_CYCLE_TIME_HOURS: </span><span class="sc">%f</span><span class="st">"</span><span class="op">,</span> CC0_CYCLE_TIME_HOURS<span class="op">);</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>  <span class="cf">return</span> <span class="dv">0</span><span class="op">;</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>#include &lt;stdio.h&gt;
+
+#define SECONDS_PER_MIN   60.0
+#define MINUTES_PER_HOUR  60.0
+#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR
+
+#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR
+
+int main()
+{
+  printf("\nSECONDS_PER_HOUR:     %f", SECONDS_PER_HOUR);
+  printf("\nCC0_CYCLE_TIME_HOURS: %f", CC0_CYCLE_TIME_HOURS);
+
+  return 0;
+}</code></pre>
 <p>But then to my surprise, the console output displayed the same value as the Arduino serial out!</p>
 </section>
 <section id="console-output" class="level2">
 <h2 class="anchored" data-anchor-id="console-output">Console Output</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>SECONDS_PER_HOUR<span class="op">:</span>     <span class="fl">3600.000000</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>CC0_CYCLE_TIME_HOURS<span class="op">:</span> <span class="fl">12.000000</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>SECONDS_PER_HOUR:     3600.000000
+CC0_CYCLE_TIME_HOURS: 12.000000</code></pre>
 <p>I stared at the code again and realized that the lack of parenthesis in the definition for <code>SECONDS_PER_HOUR</code> was the source of my problem. The <code>#define</code> macro is a simple find and replace, so what the compiler saw was:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_MIN   </span><span class="fl">60.0</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="pp">#define MINUTES_PER_HOUR  </span><span class="fl">60.0</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a><span class="co">// The compiler sees:</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a><span class="co">// #define SECONDS_PER_HOUR  60.0 * 60.0</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a><span class="pp">#define SECONDS_PER_HOUR  </span>SECONDS_PER_MIN<span class="pp"> </span><span class="op">*</span><span class="pp"> </span>MINUTES_PER_HOUR</span>
-<span id="cb6-7"><a href="#cb6-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb6-8"><a href="#cb6-8" aria-hidden="true" tabindex="-1"></a><span class="co">// The compiler sees:</span></span>
-<span id="cb6-9"><a href="#cb6-9" aria-hidden="true" tabindex="-1"></a><span class="co">// #define CC0_CYCLE_TIME_HOURS 12.0 / 60.0 * 60.0</span></span>
-<span id="cb6-10"><a href="#cb6-10" aria-hidden="true" tabindex="-1"></a><span class="pp">#define CC0_CYCLE_TIME_HOURS </span><span class="fl">12.0</span><span class="pp"> </span><span class="op">/</span><span class="pp"> </span>SECONDS_PER_HOUR</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>#define SECONDS_PER_MIN   60.0
+#define MINUTES_PER_HOUR  60.0
+
+// The compiler sees:
+// #define SECONDS_PER_HOUR  60.0 * 60.0
+#define SECONDS_PER_HOUR  SECONDS_PER_MIN * MINUTES_PER_HOUR
+
+// The compiler sees:
+// #define CC0_CYCLE_TIME_HOURS 12.0 / 60.0 * 60.0
+#define CC0_CYCLE_TIME_HOURS 12.0 / SECONDS_PER_HOUR</code></pre>
 <p>The compiler was basically seeing:</p>
 <p><code>12 / 60 * 60</code></p>
 <p>instead of</p>

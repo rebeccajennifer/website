@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,10 +41,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../../../flux-bunny.css">
+<link rel="stylesheet" href="../../../../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -449,74 +414,74 @@ The idea here is to have one common signal pin (with the PWM value) that can wri
 <section id="test-results" class="level2">
 <h2 class="anchored" data-anchor-id="test-results">Test Results</h2>
 <p>In all of the tests described below, I am trying to display magenta on my RGB LED:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> setup<span class="op">()</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Common pin that all values are written to</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a>    pinMode<span class="op">(</span>common_pin<span class="op">,</span> OUTPUT<span class="op">);</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>    <span class="co">// Display the color magenta,</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>    <span class="co">// i.e. max values for red and blue, no green</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>    color <span class="op">=</span> RgbColor<span class="op">(</span><span class="bn">0xFF00FF</span><span class="op">);</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>void setup()
+{
+    //____________________________________________
+    // Common pin that all values are written to
+    //____________________________________________
+    pinMode(common_pin, OUTPUT);
+
+    //____________________________________________
+    // Display the color magenta,
+    // i.e. max values for red and blue, no green
+    //____________________________________________
+    color = RgbColor(0xFF00FF);
+    //____________________________________________
+}</code></pre>
 <p><a href="https://www.youtube.com/shorts/O1nh9n2yPmc?feature=share">This video</a> is a compilation of all tests described below. Because the video is less than a minute I wasn’t able to embed it into the site.</p>
 <section id="test-1-perform-analogwrite-and-channel-select-sequentially" class="level3">
 <h3 class="anchored" data-anchor-id="test-1-perform-analogwrite-and-channel-select-sequentially">Test 1: Perform analogWrite and Channel Select Sequentially</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="dt">void</span> loop<span class="op">()</span></span>
-<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="op">{</span></span>
-<span id="cb2-3"><a href="#cb2-3" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb2-4"><a href="#cb2-4" aria-hidden="true" tabindex="-1"></a>    <span class="co">// NOTES:</span></span>
-<span id="cb2-5"><a href="#cb2-5" aria-hidden="true" tabindex="-1"></a>    <span class="co">// 1) `Rgb::RED`, `Rgb::GRN`, `Rgb::BLU`</span></span>
-<span id="cb2-6"><a href="#cb2-6" aria-hidden="true" tabindex="-1"></a>    <span class="co">//    are values from an enumeration</span></span>
-<span id="cb2-7"><a href="#cb2-7" aria-hidden="true" tabindex="-1"></a>    <span class="co">// 2) muxxy is the multiplexer object</span></span>
-<span id="cb2-8"><a href="#cb2-8" aria-hidden="true" tabindex="-1"></a>    <span class="co">//____________________________________________</span></span>
-<span id="cb2-9"><a href="#cb2-9" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb2-10"><a href="#cb2-10" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb2-11"><a href="#cb2-11" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb2-12"><a href="#cb2-12" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb2-13"><a href="#cb2-13" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>BLU<span class="op">]);</span></span>
-<span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">2</span><span class="op">);</span></span>
-<span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a><span class="op">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>void loop()
+{
+    //____________________________________________
+    // NOTES:
+    // 1) `Rgb::RED`, `Rgb::GRN`, `Rgb::BLU`
+    //    are values from an enumeration
+    // 2) muxxy is the multiplexer object
+    //____________________________________________
+    analogWrite(common_pin, color.rgb_[Rgb::RED]);
+    muxxy.channel(0);
+    analogWrite(common_pin, color.rgb_[Rgb::GRN]);
+    muxxy.channel(1);
+    analogWrite(common_pin, color.rgb_[Rgb::BLU]);
+    muxxy.channel(2);
+}</code></pre>
 <p>The light should be displaying a magenta color, i.e.&nbsp;equal voltage on the red and blue pins, and no voltage on the green pin. Instead, the light looks white, which equates to equal voltage on each of the red, green and blue pins.</p>
 </section>
 <section id="test-2-set-channel-before-analogwrite" class="level3">
 <h3 class="anchored" data-anchor-id="test-2-set-channel-before-analogwrite">Test 2: Set Channel Before analogWrite</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">2</span><span class="op">);</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>BLU<span class="op">]);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>muxxy.channel(0);
+    analogWrite(common_pin, color.rgb_[Rgb::RED]);
+    muxxy.channel(1);
+    analogWrite(common_pin, color.rgb_[Rgb::GRN]);
+    muxxy.channel(2);
+    analogWrite(common_pin, color.rgb_[Rgb::BLU]);</code></pre>
 <p>There is no significant different between selecting the channel before the analog write.</p>
 </section>
 <section id="test-3-only-write-to-red-channel" class="level3">
 <h3 class="anchored" data-anchor-id="test-3-only-write-to-red-channel">Test 3: Only Write to Red Channel</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>    muxxy.channel(0);
+    analogWrite(common_pin, color.rgb_[Rgb::RED]);</code></pre>
 <p>Only writing to one channel displays the color properly. This test was performed just to ensure it was actually writing the value.</p>
 </section>
 <section id="test-4-only-write-to-red-and-green-channels" class="level3">
 <h3 class="anchored" data-anchor-id="test-4-only-write-to-red-and-green-channels">Test 4: Only Write to Red and Green Channels</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>    Debug<span class="op">::</span>print_labeled_int<span class="op">(</span><span class="st">"green val: "</span><span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>    muxxy.channel(0);
+    analogWrite(common_pin, color.rgb_[Rgb::RED]);
+    muxxy.channel(1);
+    analogWrite(common_pin, color.rgb_[Rgb::GRN]);
+
+    Debug::print_labeled_int("green val: ", color.rgb_[Rgb::GRN]);</code></pre>
 <p>There is no green in magenta, so this test should only display red on the LED. Instead, we are seeing green flickering, and not any red at all. I also output a serial print for the value of green to ensure that green was indeed set to zero, and this was true.</p>
 </section>
 <section id="test-5-reset-output-to-0" class="level3">
 <h3 class="anchored" data-anchor-id="test-5-reset-output-to-0">Test 5: Reset Output to 0</h3>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">0</span><span class="op">);</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>RED<span class="op">]);</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> <span class="dv">0</span><span class="op">);</span></span>
-<span id="cb6-4"><a href="#cb6-4" aria-hidden="true" tabindex="-1"></a>    muxxy<span class="op">.</span>channel<span class="op">(</span><span class="dv">1</span><span class="op">);</span></span>
-<span id="cb6-5"><a href="#cb6-5" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> color<span class="op">.</span><span class="va">rgb_</span><span class="op">[</span>Rgb<span class="op">::</span>GRN<span class="op">]);</span></span>
-<span id="cb6-6"><a href="#cb6-6" aria-hidden="true" tabindex="-1"></a>    analogWrite<span class="op">(</span>common_pin<span class="op">,</span> <span class="dv">0</span><span class="op">);</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>    muxxy.channel(0);
+    analogWrite(common_pin, color.rgb_[Rgb::RED]);
+    analogWrite(common_pin, 0);
+    muxxy.channel(1);
+    analogWrite(common_pin, color.rgb_[Rgb::GRN]);
+    analogWrite(common_pin, 0);</code></pre>
 <p>Resetting the output pin to zero before switching channels just makes it look more choppy. Green is still displayed, though it shouldn’t be.</p>
 </section>
 </section>

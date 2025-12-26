@@ -23,41 +23,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -76,10 +41,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -109,7 +74,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../../../flux-bunny.css">
+<link rel="stylesheet" href="../../../../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -472,38 +437,38 @@ Expected: true
 <section id="build-flags" class="level2">
 <h2 class="anchored" data-anchor-id="build-flags">Build Flags</h2>
 <p>I have a file called <a href="https://github.com/rebeccajr/color-clock/blob/main/sw/arduino/color-clock-driver/flux-macros.hpp">flux_macros.hpp</a> that defines all the build flags, including preprocessor directives for enabling hardware-specific functionality. This file is included in every software module. One of its macros, <strong>DEBUG_CPP</strong>, is meant for non-hardware builds. Until now, I’ve had to manually set this flag in the macros file. To streamline the process, I wrote a simple <a href="https://github.com/rebeccajr/color-clock/blob/main/sw/test/build-test/add-debug-macros.py">Python script</a> that automatically uncomments the line.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="co">// #define DEBUG_CPP</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>// #define DEBUG_CPP</code></pre>
 <p>and converts it to:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="pp">#define DEBUG_CPP</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>#define DEBUG_CPP</code></pre>
 <p>In the <a href="https://github.com/rebeccajr/color-clock/blob/main/sw/test/build-test/Makefile">makefile</a> for the unit tests, I create a phony target that runs the Python script first before building out the unit test executable 😎</p>
 </section>
 <section id="file-headers" class="level2">
 <h2 class="anchored" data-anchor-id="file-headers">File Headers</h2>
 <p>Another improvement I made to give the code a more professional look was adding a comment header to each file. To make this process more efficient, I wrote a Python script that automatically populates the header in each file.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="co">//__________________________________________________________________</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="co">//__________________________________________________________________</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="co">//      _   __   _   _ _   _   _   _         _</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="co">// |   |_| | _  | | | V | | | | / |_/ |_| | /</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="co">// |__ | | |__| |_| |   | |_| | \ |   | | | \_</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="co">//  _  _         _ ___  _       _ ___   _                   / /</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a><span class="co">// /  | | |\ |  \   |  | / | | /   |   \                   (^^)</span></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a><span class="co">// \_ |_| | \| _/   |  | \ |_| \_  |  _/                   (____)o</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a><span class="co">//-----------------------------------------------------------------</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a><span class="co">// Copyright 2024, Rebecca Rashkin</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a><span class="co">// -------------------------------</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a><span class="co">// This code may be copied, redistributed, transformed, or built</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a><span class="co">// upon in any format for educational, non-commercial purposes.</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a><span class="co">// Please give me appropriate credit should you choose to use this</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="co">// resource. Thank you :)</span></span>
-<span id="cb4-20"><a href="#cb4-20" aria-hidden="true" tabindex="-1"></a><span class="co">//-----------------------------------------------------------------</span></span>
-<span id="cb4-21"><a href="#cb4-21" aria-hidden="true" tabindex="-1"></a><span class="co">//</span></span>
-<span id="cb4-22"><a href="#cb4-22" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span>
-<span id="cb4-23"><a href="#cb4-23" aria-hidden="true" tabindex="-1"></a><span class="co">// //\^.^/\\   //\^.^/\\   //\^.^/\\   //\^.^/\\   //\^.^/\\   //\^</span></span>
-<span id="cb4-24"><a href="#cb4-24" aria-hidden="true" tabindex="-1"></a><span class="co">//_________________________________________________________________</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="cpp"><code>//__________________________________________________________________
+//__________________________________________________________________
+//      _   __   _   _ _   _   _   _         _
+// |   |_| | _  | | | V | | | | / |_/ |_| | /
+// |__ | | |__| |_| |   | |_| | \ |   | | | \_
+//  _  _         _ ___  _       _ ___   _                   / /
+// /  | | |\ |  \   |  | / | | /   |   \                   (^^)
+// \_ |_| | \| _/   |  | \ |_| \_  |  _/                   (____)o
+//_________________________________________________________________
+//_________________________________________________________________
+//
+//-----------------------------------------------------------------
+// Copyright 2024, Rebecca Rashkin
+// -------------------------------
+// This code may be copied, redistributed, transformed, or built
+// upon in any format for educational, non-commercial purposes.
+//
+// Please give me appropriate credit should you choose to use this
+// resource. Thank you :)
+//-----------------------------------------------------------------
+//
+//_________________________________________________________________
+// //\^.^/\\   //\^.^/\\   //\^.^/\\   //\^.^/\\   //\^.^/\\   //\^
+//_________________________________________________________________</code></pre>
 <p><em>We named our artist collective (currently me, Bo, and our friend Cody) ‘Lagomorphic Constructs.’ Lagomorpha is the taxonomic order that includes rabbits—and I love rabbits. So, naturally, I went with ‘Lagomorphic Constructs’ 🐰</em></p>
 </section>
 <section id="home-display" class="level2">

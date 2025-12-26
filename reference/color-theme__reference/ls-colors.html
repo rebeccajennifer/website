@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -73,10 +38,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../flux-bunny.css">
+<link rel="stylesheet" href="../../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -396,8 +361,8 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><p>Save a <code>.dircolors</code> file with your preferred coloring per file type.</p></li>
 <li><p>Insert the following commands in your <code>.bashrc</code> or <code>.bash_profile</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="kw">`</span><span class="fu">dircolors</span> <span class="at">-b</span> path/to/your/.dircolors/file<span class="kw">`</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="bu">alias</span> ls=<span class="st">'ls --color=auto'</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>eval `dircolors -b path/to/your/.dircolors/file`
+alias ls='ls --color=auto'</code></pre></li>
 </ol>
 </section>
 <section id="sample-.dircolors-file" class="level3">
@@ -407,28 +372,28 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="default-dircolors" class="level3">
 <h3 class="anchored" data-anchor-id="default-dircolors">Default <code>dircolors</code></h3>
 <p>You can see the default file type colors by executing the following command.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dircolors</span> <span class="at">-p</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code>dircolors -p</code></pre>
 <p>Summarized output:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Configuration file for dircolors, a utility to help you set the</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="co"># LS_COLORS environment variable used by GNU ls with the --color option.</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a><span class="co">#.cmd 01;32 # executables (bright green)</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a><span class="co">#.exe 01;32</span></span>
-<span id="cb3-6"><a href="#cb3-6" aria-hidden="true" tabindex="-1"></a><span class="co">#.com 01;32</span></span>
-<span id="cb3-7"><a href="#cb3-7" aria-hidden="true" tabindex="-1"></a><span class="co">#.btm 01;32</span></span>
-<span id="cb3-8"><a href="#cb3-8" aria-hidden="true" tabindex="-1"></a><span class="co">#.bat 01;32</span></span>
-<span id="cb3-9"><a href="#cb3-9" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code># Configuration file for dircolors, a utility to help you set the
+# LS_COLORS environment variable used by GNU ls with the --color option.
+...
+#.cmd 01;32 # executables (bright green)
+#.exe 01;32
+#.com 01;32
+#.btm 01;32
+#.bat 01;32
+...</code></pre>
 </section>
 <section id="change-ls_colors-using-dircolors" class="level3">
 <h3 class="anchored" data-anchor-id="change-ls_colors-using-dircolors">Change <code>LS_COLORS</code> Using <code>dircolors</code></h3>
 <ol type="1">
 <li><p>Save the output of <code>dircolors -p</code> to a file. In this example we are naming the file <code>.dircolors-mod</code>, but you can name your file whatever you’d like.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">dircolors</span> <span class="at">-p</span> <span class="op">&gt;</span> ~/.dircolors-mod</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>dircolors -p &gt; ~/.dircolors-mod</code></pre></li>
 <li><p>Edit <code>.dircolors-mod</code> using a preferred text editor.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">gedit</span> ~/.dircolors-mod</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>gedit ~/.dircolors-mod</code></pre></li>
 <li><p>Execute</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="co"># This syntax works using bash and zsh</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="kw">`</span><span class="fu">dircolors</span> <span class="at">-b</span> ~/.dircolors-mod<span class="kw">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code># This syntax works using bash and zsh
+eval `dircolors -b ~/.dircolors-mod`</code></pre></li>
 </ol>
 </section>
 <section id="test-dircolors-output" class="level3">
@@ -436,19 +401,19 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <p>Any modifications made to <code>.dircolors-mod</code> will be reflected in <code>LS_COLORS</code>. To test:</p>
 <ol type="1">
 <li><p>Add the following text to the end of <code>.dircolors-mod</code></p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">.randomfiletype</span> 01<span class="kw">;</span><span class="ex">35</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>.randomfiletype 01;35</code></pre></li>
 <li><p>Execute</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="bu">eval</span> <span class="kw">`</span><span class="fu">dircolors</span> <span class="at">-b</span> ~/.dircolors-mod<span class="kw">`</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>eval `dircolors -b ~/.dircolors-mod`</code></pre></li>
 <li><p>Print <code>LS_COLORS</code> to the screen.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="bu">echo</span> <span class="va">$LS_COLORS</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code>echo $LS_COLORS</code></pre>
 <p>Summarized sample output:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="va">s</span><span class="op">=</span>0:di=01<span class="kw">;</span><span class="ex">34:ln=01</span><span class="kw">;</span><span class="ex">36:mh=00:pi=40</span><span class="kw">;</span><span class="ex">33</span></span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">...</span></span>
-<span id="cb10-3"><a href="#cb10-3" aria-hidden="true" tabindex="-1"></a><span class="ex">*.randomfiletype=01</span><span class="kw">;</span><span class="ex">35:</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>s=0:di=01;34:ln=01;36:mh=00:pi=40;33
+...
+*.randomfiletype=01;35:</code></pre></li>
 <li><p>Notice that the value <code>*.randomfiletype=01;35</code> is now shown at the end of the <code>LS_COLORS</code> printout.</p></li>
 <li><p>Save a file with the name <code>.randomfiletype</code> and run the command</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="co"># Use the -la to display hidden files</span></span>
-<span id="cb11-2"><a href="#cb11-2" aria-hidden="true" tabindex="-1"></a><span class="fu">ls</span> <span class="at">-la</span> <span class="at">--color</span><span class="op">=</span>auto</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code># Use the -la to display hidden files
+ls -la --color=auto</code></pre>
 <p>The file named <code>.randomfiletype</code> should be displayed in the color magenta, or whatever you have ANSI color 5 set to. See <a href="../../reference/color-theme__reference/ansi-color-explained.html">this page</a> for more information about ANSI color codes.</p>
 <p><img src="images__color-scheme-reference/dircolors-sample.png" class="img-fluid"></p></li>
 </ol>
@@ -457,11 +422,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="set-ls_colors-directly" class="level2">
 <h2 class="anchored" data-anchor-id="set-ls_colors-directly">Set <code>LS_COLORS</code> Directly</h2>
 <p>Set the environment variable <code>LS_COLORS</code> using the following format:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="bu">export</span> <span class="va">LS_COLORS</span><span class="op">=</span><span class="st">"*.ext0=&lt;attr&gt;;&lt;color&gt;:*.ext1=&lt;attr&gt;;&lt;color&gt;"</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code>export LS_COLORS="*.ext0=&lt;attr&gt;;&lt;color&gt;:*.ext1=&lt;attr&gt;;&lt;color&gt;"</code></pre>
 <p>Where</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>attr<span class="op">&gt;</span>    : <span class="ex">Attribute</span> code, listed below</span>
-<span id="cb13-2"><a href="#cb13-2" aria-hidden="true" tabindex="-1"></a><span class="op">&lt;</span>color<span class="op">&gt;</span>   : <span class="ex">Color</span> code, listed below</span>
-<span id="cb13-3"><a href="#cb13-3" aria-hidden="true" tabindex="-1"></a><span class="ex">ext0,</span> ext1: File extensions</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code>&lt;attr&gt;    : Attribute code, listed below
+&lt;color&gt;   : Color code, listed below
+ext0, ext1: File extensions</code></pre>
 <p>Note that the color codes correspond with the ANSI 16 color codes as described <a href="../../reference/color-theme__reference/ansi-color-explained.html#ansi-16-color-codes">here</a>.</p>
 <section id="add-to-.bashrc-or-.bash_profile" class="level3">
 <h3 class="anchored" data-anchor-id="add-to-.bashrc-or-.bash_profile">Add to <code>.bashrc</code> or <code>.bash_profile</code></h3>

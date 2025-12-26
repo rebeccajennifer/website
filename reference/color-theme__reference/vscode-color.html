@@ -21,41 +21,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -74,10 +39,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -107,7 +72,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../flux-bunny.css">
+<link rel="stylesheet" href="../../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -374,33 +339,33 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h3 class="anchored" data-anchor-id="file-location">File Location</h3>
 <ol type="1">
 <li><p>To install a custom theme, create a new directory in the following location (on a Linux system):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">~/.vscode/extensions/</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>~/.vscode/extensions/</code></pre></li>
 <li><p>This example uses the directory named <code>my-color-themes</code>; you can name this directory whatever you would like.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">mkdir</span> ~/.vscode/extensions/my-color-themes</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>mkdir ~/.vscode/extensions/my-color-themes</code></pre></li>
 <li><p>In <code>my-color-themes</code> create a file named <code>package.json</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="co"># The touch command creates a blank file</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="fu">touch</span> ~/.vscode/extensions/my-color-themes/package.json</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code># The touch command creates a blank file
+touch ~/.vscode/extensions/my-color-themes/package.json</code></pre></li>
 <li><p>Edit <code>package.json</code> to include this minimal information.</p>
 <p>In this example, we are assuming there to be two theme files, <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>. The <code>"label"</code> property will be displayed in the color theme drop down menu in VS Code.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span> <span class="dt">"name"</span>          <span class="fu">:</span> <span class="st">"my-theme-pack"</span></span>
-<span id="cb4-2"><a href="#cb4-2" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"displayName"</span>   <span class="fu">:</span> <span class="st">"My Theme Pack"</span></span>
-<span id="cb4-3"><a href="#cb4-3" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"publisher"</span>     <span class="fu">:</span> <span class="st">"Your Name"</span></span>
-<span id="cb4-4"><a href="#cb4-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"version"</span>       <span class="fu">:</span> <span class="st">"0.0.1"</span></span>
-<span id="cb4-5"><a href="#cb4-5" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"engines"</span>       <span class="fu">:</span> <span class="fu">{</span> <span class="dt">"vscode"</span><span class="fu">:</span> <span class="st">"*"</span> <span class="fu">}</span></span>
-<span id="cb4-6"><a href="#cb4-6" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"contributes"</span>   <span class="fu">:</span></span>
-<span id="cb4-7"><a href="#cb4-7" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb4-8"><a href="#cb4-8" aria-hidden="true" tabindex="-1"></a>  <span class="fu">{</span> <span class="dt">"themes"</span>      <span class="fu">:</span></span>
-<span id="cb4-9"><a href="#cb4-9" aria-hidden="true" tabindex="-1"></a>    <span class="ot">[</span> <span class="fu">{</span> <span class="dt">"label"</span>   <span class="fu">:</span> <span class="st">"My Dark theme"</span></span>
-<span id="cb4-10"><a href="#cb4-10" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"uiTheme"</span> <span class="fu">:</span> <span class="st">"vs-dark"</span></span>
-<span id="cb4-11"><a href="#cb4-11" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"path"</span>    <span class="fu">:</span> <span class="st">"./my-dark-theme.json"</span></span>
-<span id="cb4-12"><a href="#cb4-12" aria-hidden="true" tabindex="-1"></a>      <span class="fu">}</span></span>
-<span id="cb4-13"><a href="#cb4-13" aria-hidden="true" tabindex="-1"></a>    <span class="ot">,</span> <span class="fu">{</span> <span class="dt">"label"</span>   <span class="fu">:</span> <span class="st">"My Light Theme"</span></span>
-<span id="cb4-14"><a href="#cb4-14" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"uiTheme"</span> <span class="fu">:</span> <span class="st">"vs"</span></span>
-<span id="cb4-15"><a href="#cb4-15" aria-hidden="true" tabindex="-1"></a>      <span class="fu">,</span> <span class="dt">"path"</span>    <span class="fu">:</span> <span class="st">"./my-light-theme.json"</span></span>
-<span id="cb4-16"><a href="#cb4-16" aria-hidden="true" tabindex="-1"></a>      <span class="fu">}</span></span>
-<span id="cb4-17"><a href="#cb4-17" aria-hidden="true" tabindex="-1"></a>    <span class="ot">]</span></span>
-<span id="cb4-18"><a href="#cb4-18" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span></span>
-<span id="cb4-19"><a href="#cb4-19" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="json"><code>{ "name"          : "my-theme-pack"
+, "displayName"   : "My Theme Pack"
+, "publisher"     : "Your Name"
+, "version"       : "0.0.1"
+, "engines"       : { "vscode": "*" }
+, "contributes"   :
+
+  { "themes"      :
+    [ { "label"   : "My Dark theme"
+      , "uiTheme" : "vs-dark"
+      , "path"    : "./my-dark-theme.json"
+      }
+    , { "label"   : "My Light Theme"
+      , "uiTheme" : "vs"
+      , "path"    : "./my-light-theme.json"
+      }
+    ]
+  }
+}</code></pre></li>
 <li><p>In <code>~/.vscode/extensions/my-color-themes</code> include the files for <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>.</p></li>
 </ol>
 <p><strong>Note:</strong> For the <code>uiTheme</code> property in <code>package.json</code>, use <code>vs-dark</code> for a dark theme and <code>vs</code> for a light theme. This ensures that any undefined properties inherit the correct default colors. In the <code>My Dark Theme</code> example, <code>vs</code> was intentionally selected instead of <code>vs-dark</code>; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.</p>
@@ -409,29 +374,29 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="minimal-color-theme-file" class="level3">
 <h3 class="anchored" data-anchor-id="minimal-color-theme-file">Minimal Color Theme File</h3>
 <p>This text is included in the minimal color theme file <code>my-dark-theme.json</code>.</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb5-2"><a href="#cb5-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"$schema"</span>     <span class="fu">:</span> <span class="st">"vscode://schemas/color-theme"</span></span>
-<span id="cb5-3"><a href="#cb5-3" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-4"><a href="#cb5-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"colors"</span><span class="fu">:</span></span>
-<span id="cb5-5"><a href="#cb5-5" aria-hidden="true" tabindex="-1"></a>  <span class="fu">{</span> <span class="dt">"editor.background"</span>                 <span class="fu">:</span> <span class="st">"#1c1c1c"</span></span>
-<span id="cb5-6"><a href="#cb5-6" aria-hidden="true" tabindex="-1"></a>  <span class="fu">,</span> <span class="dt">"editor.foreground"</span>                 <span class="fu">:</span> <span class="st">"#c6c6c6"</span></span>
-<span id="cb5-7"><a href="#cb5-7" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span></span>
-<span id="cb5-8"><a href="#cb5-8" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-9"><a href="#cb5-9" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"tokenColors"</span><span class="fu">:</span></span>
-<span id="cb5-10"><a href="#cb5-10" aria-hidden="true" tabindex="-1"></a>  <span class="ot">[</span> <span class="fu">{</span> <span class="dt">"scope"</span><span class="fu">:</span> <span class="st">"comment"</span></span>
-<span id="cb5-11"><a href="#cb5-11" aria-hidden="true" tabindex="-1"></a>    <span class="fu">,</span> <span class="dt">"settings"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"foreground"</span><span class="fu">:</span> <span class="st">"#d7af5f"</span> <span class="fu">}</span></span>
-<span id="cb5-12"><a href="#cb5-12" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb5-13"><a href="#cb5-13" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-14"><a href="#cb5-14" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="fu">{</span> <span class="dt">"scope"</span><span class="fu">:</span> <span class="st">"string"</span></span>
-<span id="cb5-15"><a href="#cb5-15" aria-hidden="true" tabindex="-1"></a>    <span class="fu">,</span> <span class="dt">"settings"</span><span class="fu">:</span> <span class="fu">{</span> <span class="dt">"foreground"</span><span class="fu">:</span> <span class="st">"#af5faf"</span> <span class="fu">}</span></span>
-<span id="cb5-16"><a href="#cb5-16" aria-hidden="true" tabindex="-1"></a>    <span class="fu">}</span></span>
-<span id="cb5-17"><a href="#cb5-17" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb5-18"><a href="#cb5-18" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb5-19"><a href="#cb5-19" aria-hidden="true" tabindex="-1"></a>  <span class="er">//</span> <span class="er">These</span> <span class="er">properties</span> <span class="er">override</span> <span class="er">tokenColors</span></span>
-<span id="cb5-20"><a href="#cb5-20" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"semanticTokenColors"</span><span class="fu">:</span></span>
-<span id="cb5-21"><a href="#cb5-21" aria-hidden="true" tabindex="-1"></a>  <span class="fu">{</span> <span class="dt">"variable"</span>      <span class="fu">:</span> <span class="st">"#00afd7"</span></span>
-<span id="cb5-22"><a href="#cb5-22" aria-hidden="true" tabindex="-1"></a>  <span class="fu">}</span></span>
-<span id="cb5-23"><a href="#cb5-23" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="json"><code>{
+  "$schema"     : "vscode://schemas/color-theme"
+
+, "colors":
+  { "editor.background"                 : "#1c1c1c"
+  , "editor.foreground"                 : "#c6c6c6"
+  }
+
+, "tokenColors":
+  [ { "scope": "comment"
+    , "settings": { "foreground": "#d7af5f" }
+    }
+
+  , { "scope": "string"
+    , "settings": { "foreground": "#af5faf" }
+    }
+  ]
+
+  // These properties override tokenColors
+, "semanticTokenColors":
+  { "variable"      : "#00afd7"
+  }
+}</code></pre>
 </section>
 <section id="load-custom-theme" class="level3">
 <h3 class="anchored" data-anchor-id="load-custom-theme">Load Custom Theme</h3>
@@ -447,16 +412,16 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <section id="add-to-settings.json" class="level4">
 <h4 class="anchored" data-anchor-id="add-to-settings.json">Add to <code>settings.json</code></h4>
 <p>You can also add the color theme to your <code>settings.json</code> file:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span></span>
-<span id="cb6-2"><a href="#cb6-2" aria-hidden="true" tabindex="-1"></a>  <span class="dt">"workbench.colorTheme"</span><span class="fu">:</span> <span class="st">"My Dark Theme"</span></span>
-<span id="cb6-3"><a href="#cb6-3" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="json"><code>{
+  "workbench.colorTheme": "My Dark Theme"
+}</code></pre>
 </section>
 </section>
 </section>
 <section id="existing-theme" class="level2">
 <h2 class="anchored" data-anchor-id="existing-theme">Existing Theme</h2>
 <p>You may want to start from an existing theme file. You can use the dark theme I have created <a href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/flux-bunny-color-schemes/flux-bunny-dark.json">here</a>. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code>/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes</code></pre>
 </section>
 <section id="autoformat-.json-in-vim" class="level2">
 <h2 class="anchored" data-anchor-id="autoformat-.json-in-vim">Autoformat .json in Vim</h2>

@@ -20,41 +20,6 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
-/* CSS for syntax highlighting */
-html { -webkit-text-size-adjust: 100%; }
-pre > code.sourceCode { white-space: pre; position: relative; }
-pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
-pre > code.sourceCode > span:empty { height: 1.2em; }
-.sourceCode { overflow: visible; }
-code.sourceCode > span { color: inherit; text-decoration: inherit; }
-div.sourceCode { margin: 1em 0; }
-pre.sourceCode { margin: 0; }
-@media screen {
-div.sourceCode { overflow: auto; }
-}
-@media print {
-pre > code.sourceCode { white-space: pre-wrap; }
-pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
-}
-pre.numberSource code
-  { counter-reset: source-line 0; }
-pre.numberSource code > span
-  { position: relative; left: -4em; counter-increment: source-line; }
-pre.numberSource code > span > a:first-child::before
-  { content: counter(source-line);
-    position: relative; left: -1em; text-align: right; vertical-align: baseline;
-    border: none; display: inline-block;
-    -webkit-touch-callout: none; -webkit-user-select: none;
-    -khtml-user-select: none; -moz-user-select: none;
-    -ms-user-select: none; user-select: none;
-    padding: 0 4px; width: 4em;
-  }
-pre.numberSource { margin-left: 3em;  padding-left: 4px; }
-div.sourceCode
-  {   }
-@media screen {
-pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
-}
 </style>
 
 
@@ -73,10 +38,10 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
 <script src="../../site_libs/quarto-html/anchor.min.js"></script>
 <link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-7b89279ff1a6dce999919e0e67d4d9ec.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../site_libs/bootstrap/bootstrap-f30896783fc94eb3e7e1e9cbfaa7cbc1.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -106,7 +71,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 }</script>
 
 
-<link rel="stylesheet" href="../../flux-bunny.css">
+<link rel="stylesheet" href="../../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -445,39 +410,39 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="how-it-works">How It Works</h2>
 <ol type="1">
 <li><p>Define your color scheme using a simple JSON configuration. Map your preferred RGB hex values to the background, foreground, and ANSI palette as shown below, omitting the comments:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode json code-with-copy"><code class="sourceCode json"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="fu">{</span> <span class="dt">"intense-bold"</span>              <span class="fu">:</span> <span class="st">"false"</span></span>
-<span id="cb1-2"><a href="#cb1-2" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color"</span>          <span class="fu">:</span> <span class="st">"0x262626"</span></span>
-<span id="cb1-3"><a href="#cb1-3" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"background-color-intense"</span>  <span class="fu">:</span> <span class="st">"0x303030"</span></span>
-<span id="cb1-4"><a href="#cb1-4" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color"</span>          <span class="fu">:</span> <span class="st">"0xc6c6c6"</span></span>
-<span id="cb1-5"><a href="#cb1-5" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"foreground-color-intense"</span>  <span class="fu">:</span> <span class="st">"0xafafaf"</span></span>
-<span id="cb1-6"><a href="#cb1-6" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"cursor-color"</span>              <span class="fu">:</span> <span class="st">"0xff875f"</span></span>
-<span id="cb1-7"><a href="#cb1-7" aria-hidden="true" tabindex="-1"></a><span class="fu">,</span> <span class="dt">"palette"</span>                   <span class="fu">:</span></span>
-<span id="cb1-8"><a href="#cb1-8" aria-hidden="true" tabindex="-1"></a>  <span class="ot">[</span> <span class="st">"0x1c1c1c"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">0</span><span class="er">:</span> <span class="er">Black</span></span>
-<span id="cb1-9"><a href="#cb1-9" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd787af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">1</span><span class="er">:</span> <span class="er">Red</span></span>
-<span id="cb1-10"><a href="#cb1-10" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xafd787"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">2</span><span class="er">:</span> <span class="er">Green</span></span>
-<span id="cb1-11"><a href="#cb1-11" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffaf87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">3</span><span class="er">:</span> <span class="er">Yellow</span></span>
-<span id="cb1-12"><a href="#cb1-12" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87afd7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">4</span><span class="er">:</span> <span class="er">Blue</span></span>
-<span id="cb1-13"><a href="#cb1-13" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf87d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">5</span><span class="er">:</span> <span class="er">Magenta</span></span>
-<span id="cb1-14"><a href="#cb1-14" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87d7af"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">6</span><span class="er">:</span> <span class="er">Cyan</span></span>
-<span id="cb1-15"><a href="#cb1-15" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd7d7d7"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">7</span><span class="er">:</span> <span class="er">White</span></span>
-<span id="cb1-16"><a href="#cb1-16" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x121212"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">8</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">black</span></span>
-<span id="cb1-17"><a href="#cb1-17" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd75f87"</span> <span class="er">//</span> <span class="er">Color</span>  <span class="dv">9</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">red</span></span>
-<span id="cb1-18"><a href="#cb1-18" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x87af5f"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">10</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">green</span></span>
-<span id="cb1-19"><a href="#cb1-19" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xffd787"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">11</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">yellow</span></span>
-<span id="cb1-20"><a href="#cb1-20" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x00afd7"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">12</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">blue</span></span>
-<span id="cb1-21"><a href="#cb1-21" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xaf5faf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">13</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">magenta</span></span>
-<span id="cb1-22"><a href="#cb1-22" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0x5fafaf"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">14</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">cyan</span></span>
-<span id="cb1-23"><a href="#cb1-23" aria-hidden="true" tabindex="-1"></a>  <span class="ot">,</span> <span class="st">"0xd0d0d0"</span> <span class="er">//</span> <span class="er">Color</span> <span class="dv">15</span><span class="er">:</span> <span class="er">Bright</span> <span class="er">white</span></span>
-<span id="cb1-24"><a href="#cb1-24" aria-hidden="true" tabindex="-1"></a>  <span class="ot">]</span></span>
-<span id="cb1-25"><a href="#cb1-25" aria-hidden="true" tabindex="-1"></a><span class="fu">}</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="json"><code>{ "intense-bold"              : "false"
+, "background-color"          : "0x262626"
+, "background-color-intense"  : "0x303030"
+, "foreground-color"          : "0xc6c6c6"
+, "foreground-color-intense"  : "0xafafaf"
+, "cursor-color"              : "0xff875f"
+, "palette"                   :
+  [ "0x1c1c1c" // Color  0: Black
+  , "0xd787af" // Color  1: Red
+  , "0xafd787" // Color  2: Green
+  , "0xffaf87" // Color  3: Yellow
+  , "0x87afd7" // Color  4: Blue
+  , "0xaf87d7" // Color  5: Magenta
+  , "0x87d7af" // Color  6: Cyan
+  , "0xd7d7d7" // Color  7: White
+  , "0x121212" // Color  8: Bright black
+  , "0xd75f87" // Color  9: Bright red
+  , "0x87af5f" // Color 10: Bright green
+  , "0xffd787" // Color 11: Bright yellow
+  , "0x00afd7" // Color 12: Bright blue
+  , "0xaf5faf" // Color 13: Bright magenta
+  , "0x5fafaf" // Color 14: Bright cyan
+  , "0xd0d0d0" // Color 15: Bright white
+  ]
+}</code></pre></li>
 <li><p>Run the script using the required arguments. To view the most up-to-date options and usage instructions, use the help flag:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="at">--help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<pre class="bash"><code>python color_scheme_exporter.py --help</code></pre>
 <p>Example command:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">python</span> color_scheme_exporter.py <span class="dt">\</span></span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>-f input-file.json              <span class="dt">\</span></span>
-<span id="cb3-3"><a href="#cb3-3" aria-hidden="true" tabindex="-1"></a>-n my-color-scheme              <span class="dt">\</span></span>
-<span id="cb3-4"><a href="#cb3-4" aria-hidden="true" tabindex="-1"></a>-o ~/.themes                    <span class="dt">\</span></span>
-<span id="cb3-5"><a href="#cb3-5" aria-hidden="true" tabindex="-1"></a>-s gnome</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<pre class="bash"><code>python color_scheme_exporter.py \
+-f input-file.json              \
+-n my-color-scheme              \
+-o ~/.themes                    \
+-s gnome</code></pre></li>
 </ol>
 </section>
 <section id="how-to-use-output" class="level2">
