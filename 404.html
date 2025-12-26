@@ -69,18 +69,6 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
-  (function() {
-    var newDomain = "https://rebeccajennifer.com";
-    var currentHost = window.location.hostname;
-
-    // Only redirect if we are NOT already on the new domain
-    if (currentHost !== "rebeccajennifer.com") {
-      var newUrl = newDomain + window.location.pathname + window.location.search;
-      window.location.replace(newUrl);
-    }
-  })();
-</script>
 
 
 <link rel="stylesheet" href="/flux-bunny-style.css">
@@ -176,12 +164,29 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<div class="grid">
+<style>
+.grid { align-items: center; }
+@media (min-width: 768px)
+{
+  /* Some rows are flipped for desktop*/
+  .project-grid-flipped
+  {
+    display         : flex;
+    flex-direction  : row-reverse; /* This flips the horizontal order */
+  }
+
+  .grid img, .project-grid-flipped img {
+  width         : 100%;
+  aspect-ratio  : 1 / 1;
+  object-fit    : cover;
+}
+</style>
+<div class="grid project-grid-flipped">
+<div class="g-col-12 g-col-md-8">
+<p>You might have been given or clicked on an outdated link 😳 Let me take you back <a href="/./index.html">home</a>.</p>
+</div>
 <div class="g-col-12 g-col-md-4">
 <p><a href="/./index.html"><img src="/../assets/photos-general-assets/flux-grass-line-art-black-square.svg" class="img-fluid lite-only plain"></a> <a href="/./index.html"><img src="/../assets/photos-general-assets/flux-grass-line-art-white-square.svg" class="img-fluid dark-only plain"></a></p>
-</div>
-<div class="g-col-12 g-col-md-8">
-<p>You might have been given or clicked on an outdated link (Oops!) Let me take you back <a href="/./index.html">home</a>.</p>
 </div>
 </div>
 
