@@ -44,7 +44,7 @@ website:
         href: projects/index.qmd
 
       - text: "Reference"
-        href: reference/color-theme__reference/index.qmd
+        href: reference/index.qmd
 
       - text: "Teaching"
         menu:

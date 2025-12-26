@@ -1,3 +1,11 @@
+---
+title: New Environment Setup
+subtitle: My approach to setting up a new development environment
+image: ./images__env-setup/vs-code-settings-screenshot-thumb.png
+toc: true
+toc-depth: 6
+order: 0
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,14 +33,6 @@
 <!--DESCRIPTION
 |   My new environment setup.
 |____________________________________________________________________-->
-
----
-title: New Environment Setup
-subtitle: My approach to setting up a new development environment
-toc: true
-toc-depth: 6
-order: 1
----
 
 To ensure consistency when setting up new development environments, I’ve compiled this checklist of essential steps.
 

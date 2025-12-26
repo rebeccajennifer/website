@@ -1,11 +1,10 @@
 ---
-title: Color Scheme Reference
-subtitle: Bring joy into your environment.
-image: ./images__color-scheme-reference/ansi016-color-square-flux-bunny-scheme.png
+title: The Reference Library
+subtitle: Notes to my future self
 listing:
-  contents: ./
+  contents: ./*/index.qmd
   type: grid
-order: 1
+order: 0
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
@@ -32,23 +31,7 @@ order: 1
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Reference page for color scheme related information.
+|   List of references
 |____________________________________________________________________-->
 
-<style>
-/* Hide table search bar */
-div.listing-actions-group    { display : none; } /* Hide filter bar */
-/*.quarto-listing-table thead  { display : none; } /* Hide header row */
-.quarto-listing-table tr, td { border  : none; } /* Hide cell borders */
-</style>
-
-Color brings me joy, and integrating color into my development
-environment brings an extra level of satisfaction to coding.
-
-{{< include ../../assets/ui-elements/flux-bunny-dark-colors.html >}}
-
-This set of pages is a collection of resources I've created in my
-efforts to unify color schemes across multiple terminal and coding
-environments.
-
-
+This set of pages includes research-based references I have developed for unifying development environments, streamlining setup, and documenting various software tools.
