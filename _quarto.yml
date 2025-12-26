@@ -92,7 +92,7 @@ website:
 
 format:
   html:
-    css               : flux-bunny.css
+    css               : flux-bunny-style.css
     code-fold         : true
     toc-title         : "Table of Contents"
     include-after-body: assets/ui-elements/footer.html
