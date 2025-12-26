@@ -474,7 +474,7 @@
     "href": "projects/index.html",
     "title": "Projects",
     "section": "",
-    "text": "The projects I build are an expression of my values and a source of fulfillment. Explore some of the work I’ve been building in my personal time.",
+    "text": "This is inline code.\nThe projects I build are an expression of my values and a source of fulfillment. Explore some of the work I’ve been building in my personal time.",
     "crumbs": [
       "Projects"
     ]
