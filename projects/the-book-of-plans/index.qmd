@@ -1,3 +1,8 @@
+---
+title: The Book of Plans
+subtitle: Enable your journey to your ideal self.
+order: 1
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,12 +30,6 @@
 <!--DESCRIPTION
 |   Site page for The Book of Plans.
 |____________________________________________________________________-->
-
----
-title: The Book of Plans
-subtitle: Enable your journey to your ideal self.
-order: 1
----
 
 The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.
 
