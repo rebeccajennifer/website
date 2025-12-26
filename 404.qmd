@@ -3,7 +3,11 @@ title: "I Might Have Led You Astray..."
 ---
 
 <style>
-.grid { align-items: center; }
+.grid {
+  align-items: center;
+  font-size: var(--size-h4);
+  }
+
 @media (min-width: 768px)
 {
   /* Some rows are flipped for desktop*/
@@ -21,10 +25,10 @@ title: "I Might Have Led You Astray..."
 </style>
 
 ::: {.grid .project-grid-flipped}
-::: {.g-col-12 .g-col-md-8}
-You might have been given or clicked on an outdated link 😳 Let me take you back [home](/index.qmd).
+::: {.g-col-12 .g-col-md-6}
+It looks like you've fallen down a rabbit hole. Let's hop back [home](/index.qmd).
 :::
-::: {.g-col-12 .g-col-md-4}
+::: {.g-col-12 .g-col-md-6}
 [![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only .plain}](/index.qmd)
 [![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only .plain}](/index.qmd)
 :::
