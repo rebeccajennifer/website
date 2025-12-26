@@ -1,0 +1,14 @@
+---
+title: "Redirecting..."
+format:
+  html:
+    include-in-header:
+      text: |
+        <meta http-equiv="refresh" content="0;URL='https://rebeccajennifer.com/'">
+        <script>
+          var path = window.location.pathname;
+          window.location.replace("https://rebeccajennifer.com" + path);
+        </script>
+---
+
+If you are not redirected automatically, [click here to go to rebeccajennifer.com](https://rebeccajennifer.com).
