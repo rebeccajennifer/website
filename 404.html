@@ -69,10 +69,17 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<meta http-equiv="refresh" content="0;URL='https://rebeccajennifer.com/'">
 <script>
-  var path = window.location.pathname;
-  window.location.replace("https://rebeccajennifer.com" + path);
+  (function() {
+    var newDomain = "https://rebeccajennifer.com";
+    var currentHost = window.location.hostname;
+
+    // Only redirect if we are NOT already on the new domain
+    if (currentHost !== "rebeccajennifer.com") {
+      var newUrl = newDomain + window.location.pathname + window.location.search;
+      window.location.replace(newUrl);
+    }
+  })();
 </script>
 
 
@@ -169,7 +176,7 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<p>If you are not redirected automatically, <a href="https://rebeccajennifer.com">click here to go to rebeccajennifer.com</a>.</p>
+<p>Redirecting you to <strong>rebeccajennifer.com</strong>… If you aren’t redirected in a few seconds, <a href="https://rebeccajennifer.com">click here</a>.</p>
 
 
 
