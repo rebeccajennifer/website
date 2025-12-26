@@ -584,6 +584,7 @@ div.sourceCode code, pre
 {
   background-color  : var(--flux-bg-bold);
   border-radius     : 0px;
+  border            : none;
 }
 
 /*--------------------------------------------------------------------*/
