@@ -1,5 +1,25 @@
 [
   {
+    "listing": "/reference/index.html",
+    "items": [
+      "/reference/environment-setup/index.html",
+      "/reference/color-theme__reference/index.html"
+    ]
+  },
+  {
+    "listing": "/reference/color-theme__reference/index.html",
+    "items": [
+      "/reference/color-theme__reference/ansi-color-explained.html",
+      "/reference/color-theme__reference/ansi256-colors.html",
+      "/reference/color-theme__reference/term-env-var.html",
+      "/reference/color-theme__reference/ls-colors.html",
+      "/reference/color-theme__reference/vscode-color.html",
+      "/reference/color-theme__reference/gnome-terminal-color.html",
+      "/reference/color-theme__reference/putty-color.html",
+      "/reference/color-theme__reference/vim-color.html"
+    ]
+  },
+  {
     "listing": "/projects/color-clock/blog__color-clock/index.html",
     "items": [
       "/projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
@@ -21,19 +41,6 @@
       "/projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html",
       "/projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html",
       "/projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html"
-    ]
-  },
-  {
-    "listing": "/reference/color-theme__reference/index.html",
-    "items": [
-      "/reference/color-theme__reference/ansi-color-explained.html",
-      "/reference/color-theme__reference/ansi256-colors.html",
-      "/reference/color-theme__reference/term-env-var.html",
-      "/reference/color-theme__reference/ls-colors.html",
-      "/reference/color-theme__reference/vscode-color.html",
-      "/reference/color-theme__reference/gnome-terminal-color.html",
-      "/reference/color-theme__reference/putty-color.html",
-      "/reference/color-theme__reference/vim-color.html"
     ]
   }
 ]

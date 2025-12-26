@@ -6,11 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="author" content="Rebecca Jennifer Rashkin">
-<meta name="dcterms.date" content="2024-05-12">
-<meta name="description" content="A mystery solved, a Linux partition, and we’re officially listed!">
 
-<title>Goodbye Windows – Rebecca Jennifer Rashkin</title>
+<title>The Reference Library – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -26,25 +23,27 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../../../../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../../../../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../../../../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../../../../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../../../../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../../../../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../../../../">
-<link href="../../../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
-<script src="../../../../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../../../../site_libs/quarto-html/popper.min.js"></script>
-<script src="../../../../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../../../../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../../../../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../../../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../../../../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../../../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../../../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<link href="../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../site_libs/quarto-listing/list.min.js"></script>
+<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
+<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -72,9 +71,67 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
 
-<link rel="stylesheet" href="../../../../flux-bunny-style.css">
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
+
+<link rel="stylesheet" href="../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -84,9 +141,9 @@ ul.task-list li input[type="checkbox"] {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../../../../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../../../../index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Rebecca Jennifer Rashkin</span>
     </a>
   </div>
@@ -97,11 +154,11 @@ ul.task-list li input[type="checkbox"] {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="../../../../projects/index.html" aria-current="page"> 
+    <a class="nav-link" href="../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="../../../../reference/index.html"> 
+    <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
 <span class="menu-text">Reference</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -110,21 +167,21 @@ ul.task-list li input[type="checkbox"] {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../../../../education/how-to-learn.html">
+    <a class="dropdown-item" href="../education/how-to-learn.html">
  <span class="dropdown-text">How to Learn</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../education/comp-org/index.html">
+    <a class="dropdown-item" href="../education/comp-org/index.html">
  <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../../../../education/comp-org/worksheet-answers.html">
+    <a class="dropdown-item" href="../education/comp-org/worksheet-answers.html">
  <span class="dropdown-text">How to View Worksheet Answers</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../../../../contact.html"> 
+    <a class="nav-link" href="../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -142,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../../projects/color-clock/index.html">ColorClock</a></li><li class="breadcrumb-item"><a href="../../../../projects/color-clock/blog__color-clock/index.html">The Evolution of ColorClock</a></li><li class="breadcrumb-item"><a href="../../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html">Goodbye Windows</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/index.html">The Reference Library</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -153,15 +210,15 @@ ul.task-list li input[type="checkbox"] {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../../../../index.html" class="sidebar-logo-link">
+      <a href="../index.html" class="sidebar-logo-link">
       </a>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../../projects/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Projects</span></a>
+            <a href="../reference/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">The Reference Library</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
@@ -169,169 +226,104 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../../projects/color-clock/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ColorClock</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <a href="../reference/environment-setup/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">New Environment Setup</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../../../projects/color-clock/blog__color-clock/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Evolution of ColorClock</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth3 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Back In Development</span></a>
+  <a href="../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Arduino Command Line Interface</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">We Did It</span></a>
+  <a href="../reference/environment-setup/default-shell.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Default Shell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">It’s Alive!</span></a>
+  <a href="../reference/environment-setup/git.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Git Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Mind Your Parens</span></a>
+  <a href="../reference/environment-setup/putty.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PuTTY Configuration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Optimal Solution</span></a>
+  <a href="../reference/environment-setup/vs-code.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visual Studio Code Setup</span></a>
   </div>
 </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Another Futile Effort</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Smooth Operation</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Persistence Makes Progress</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Goodbye Windows</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Build Flags? Please?</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Throw Some Shade</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Navigating Vision vs Feasibility</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">An Iterative Approach</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ColorClock Design is Shaping Up</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">A Tale of the Lost Serial Ports, and the Linux Environment that Could Have Been</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Test Early. Test Often. Refactor if Necessary.</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Arduino CLI Induced Flow</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Getting Started? Just Show Up</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Top Level Block Diagram</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../../../projects/the-book-of-plans/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Book of Plans</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a href="../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Color Scheme Reference</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects/the-book-of-plans/assembly-instructions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to Assemble The Book of Plans</span></a>
+  <a href="../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANSI Color Codes Explained</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../../../projects/the-book-of-plans/how-to-use.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to Use The Book of Plans</span></a>
+  <a href="../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANSI 256 Color Table</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TERM Environment Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VS Code Color Theme</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GNOME Color Profile</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PuTTY Color Configuration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vim Color Scheme</span></a>
   </div>
 </li>
       </ul>
   </li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../../projects/color-scheme-exporter/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Color Scheme Exporter</span></a>
-  </div>
-</li>
       </ul>
   </li>
     </ul>
@@ -345,36 +337,17 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../../../projects/index.html">Projects</a></li><li class="breadcrumb-item"><a href="../../../../projects/color-clock/index.html">ColorClock</a></li><li class="breadcrumb-item"><a href="../../../../projects/color-clock/blog__color-clock/index.html">The Evolution of ColorClock</a></li><li class="breadcrumb-item"><a href="../../../../projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html">Goodbye Windows</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Goodbye Windows</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">color-clock</div>
-  </div>
-  </div>
-
-<div>
-  <div class="description">
-    <p>A mystery solved, a Linux partition, and we’re officially listed!</p>
-  </div>
+<h1 class="title">The Reference Library</h1>
+<p class="subtitle lead">Notes to my future self</p>
 </div>
+
 
 
 <div class="quarto-title-meta">
 
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p><a href="https://rebeccajennifer.github.io/website">Rebecca Jennifer Rashkin</a> </p>
-          </div>
-  </div>
     
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">May 12, 2024</p>
-    </div>
-  </div>
   
     
   </div>
@@ -384,68 +357,85 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="the-mystery-of-the-missing-package" class="level2">
-<h2 class="anchored" data-anchor-id="the-mystery-of-the-missing-package">The Mystery of the Missing Package</h2>
-<p>A couple weeks ago I was tearing my house apart to find a package from Adafruit that I remember arriving a couple months prior. I’m not one to put something in a random place (except for my phone, an ongoing challenge I’m actively addressing!), so it turned into a whole week of organizing and repeatedly checking all the logical places it could be. I felt like I was going crazy.</p>
-<p>I finally decided to find the email delivery confirmation but it was non existent in my inbox. And then I went to the Adafruit website and found a shopping cart containing all the items I was expecting in my package 😑 Looking at my shopping cart of unpurchased items, the real memory of what happened came flooding back… I was shopping for an encoder but couldn’t commit and probably went to bed with intentions of finishing my shopping the next day but life got in the way. Studying my shopping cart, I discovered that one of the items I had planned to purchase was no longer in stock 😫</p>
-<section id="lesons-learned" class="level3">
-<h3 class="anchored" data-anchor-id="lesons-learned">Lesons Learned</h3>
-<ol type="1">
-<li>When having trouble finding a mailed package, first check if the items were ever ordered.</li>
-<li>Don’t put off ordering a shopping cart full of items in hopes of finding that last perfect addition.</li>
-</ol>
-</section>
-</section>
-<section id="a-new-arduino" class="level2">
-<h2 class="anchored" data-anchor-id="a-new-arduino">A New Arduino</h2>
-<p>One of the other items I had ordered that week was a new, smaller Arduino board. I have been using this old board I acquired from my brother years earlier that he was never able to connect to (it turns out he was using a power cable instead of a data cable to program 😅). For the final ColorClock installation, I want to make two identical circuit boards so I have a backup in case there are any problems during the week the project is being displayed.</p>
-<p>I ordered an Arduino Nano ESP32 where nearly all of the pins are configurable to have PWM, a way to fake out an analog output with a digital signal. PWM output is what I need to have variable output voltage so I can send different outputs to the RGB LED pins creating different colors.</p>
-</section>
-<section id="nothing-good-is-ever-easy" class="level2">
-<h2 class="anchored" data-anchor-id="nothing-good-is-ever-easy">Nothing Good is Ever Easy</h2>
-<p>So, I had this new Arduino and I just wanted to do a simple test so that I know I can talk to it. In my last post I shared my frustration with figuring out how to set build variables so I went back to developing on my beloved decade-old MacBook Pro. But after I figured out how to set build variables I migrated back to my new fancy Windows machine and applied the same changes to the boards.txt deep in the file system in the Arudino hardware folder. At that point I continued development on Windows.</p>
-<p>Ok, back to the new Arduino board… I installed the drivers to talk to this board but I kept getting errors when trying to program it:</p>
-<pre class="text"><code>dfu-util: Cannot open DFU device 2341:0070 found on devnum 10 (LIBUSB_ERROR_ACCESS)
-dfu-util: No DFU capable USB device available
-Failed uploading: uploading error: exit status 74</code></pre>
-<p>I discovered that this was a known problem with this board and found in the Arduino forums that there is a <a href="https://arduino.github.io/arduino-cli/0.35/platform-specification/#post-install-script"><code>post_install.sh</code></a> script I need to run for the computer to see the Arduino. But this was a Bash script, and I was developing on Windows. I tried running the command in Git Bash, but I needed to use sudo and Git Bash didn’t have sudo then I tried to run it in PowerShell just for fun.</p>
-<section id="a-side-note" class="level3">
-<h3 class="anchored" data-anchor-id="a-side-note">A Side Note</h3>
-<p>Skipping ahead to the present, as I’m cleaning up this post and adding links, I have discovered that there is indeed a <code>post_install.bat</code> script that I probably could have run on Windows, but we’re here now.</p>
-</section>
-</section>
-<section id="a-solution-to-my-development-woes" class="level2">
-<h2 class="anchored" data-anchor-id="a-solution-to-my-development-woes">A Solution to My Development Woes</h2>
-<p>The time had come to create a Linux partition. I was experiencing the same level of fear I had about <a href="https://docs.arduino.cc/arduino-cli/"><code>arduino-cli</code></a>, the command line tool for building and uploading Arduino code. Creating a Linux partition seemed scary because I had never done it before. But dammit I am a software engineer and I can do hard things!</p>
-<p>My supportive partner assured me that setting up a Linux partition was not complicated. All I needed to do was download the Linux installer, put it on a USB drive, make it bootable, then boot into that USB drive. deep breath I can do this.</p>
-<section id="steps-for-creating-a-linux-partition" class="level3">
-<h3 class="anchored" data-anchor-id="steps-for-creating-a-linux-partition">Steps For Creating A Linux Partition</h3>
-<p>Creating a bootable USB was surprisingly painless. There are tons of instructions on the internet. The basic steps were:</p>
-<ol type="1">
-<li>Download the Linux installer image.</li>
-<li>Make the USB stick bootable.</li>
-<li>Restart the computer and enter the BIOS.</li>
-<li>Select the USB from the boot menu.</li>
-<li>Follow on-screen instructions.</li>
-</ol>
-<p>So I did it! I am actually writing this from my Ubuntu partition right now!</p>
-<p>Like any new computer, there’s the initial setup process, which, in my case, was missing even basic tools like Vim. But I’m no stranger to starting over.</p>
-</section>
-</section>
-<section id="back-to-the-new-arduino" class="level2">
-<h2 class="anchored" data-anchor-id="back-to-the-new-arduino">Back to the New Arduino</h2>
-<p>The catalyst for the Linux partition was so that I could run a script that would allow my computer to see the Arudino Nano ESP32. I did all the things (installed arduino-cli, ran the post_install.sh script) and it’s all working!</p>
-<p>My next challenge is to test my new RTC module, test the I/O expander 🥺 (also scary) and start laying out the ‘final’ V1 version of the circuit board.</p>
-</section>
-<section id="were-famous" class="level2">
-<h2 class="anchored" data-anchor-id="were-famous">We’re Famous!</h2>
-<p>ColorClock is officially listed as 2024 Playa Art!! (go on, click the picture 😀)</p>
-<p><a href="https://burningman.org/about/history/brc-history/event-archives/2024-event-archive/2024-art-installations/?yyyy&amp;aq=colorclock&amp;support_project=0"><img src="../../assets__color-clock/diagrams__color-clock/overall-v02__2024-03-06.png" class="img-fluid"></a></p>
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   List of references
+|____________________________________________________________________-->
+<p>This set of pages includes research-based references I have developed for unifying development environments, streamlining setup, and documenting various software tools.</p>
 
 
-</section>
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1766783785276" data-listing-reading-time-sort="6" data-listing-word-count-sort="1090">
+<a href="../reference/environment-setup/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../reference/environment-setup/images__env-setup/vs-code-settings-screenshot-thumb.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+New Environment Setup
+</h5>
+<div class="card-text listing-description delink">
+To ensure consistency when setting up new development environments, I’ve compiled this checklist of essential steps.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1766783613356" data-listing-reading-time-sort="5" data-listing-word-count-sort="804">
+<a href="../reference/color-theme__reference/index.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../reference/color-theme__reference/images__color-scheme-reference/ansi016-color-square-flux-bunny-scheme.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Color Scheme Reference
+</h5>
+<div class="card-text listing-description delink">
+Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -474,7 +464,7 @@ Failed uploading: uploading error: exit status 74</code></pre>
 |   Footer containing javascript that should be included on each page.
 |____________________________________________________________________-->
 
-<script src="../../../../darkmode.js"></script>
+<script src="../darkmode.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";
