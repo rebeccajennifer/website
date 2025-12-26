@@ -576,14 +576,16 @@ a:visited { color        : var(--flux-color-1); }
 /* Inline Code Blocks */
 code
 {
-  color             : var(--flux-fg-norm) !important;
-  background-color  : var(--flux-bg-bold) !important;
+  color             : var(--flux-fg-norm);
 }
 
-div.sourceCode code, pre
+.sourceCode, code, .code-with-copy
 {
-  background-color  : var(--flux-bg-bold);
-  border-radius     : 0px;
+  border-radius     : 0 !important;                       /* ! needed */
+  border            : none !important;                    /* ! needed */
+  background-color  : var(--flux-bg-bold)!important;      /* ! needed */
+  /*
+  */
 }
 
 /*--------------------------------------------------------------------*/
