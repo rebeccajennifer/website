@@ -36,7 +36,8 @@ sidebar: True
 <style>
 h2    { margin-top: 0; }
 h2 a  { color: inherit; text-decoration: inherit; font-weight: inherit;}
-img   { margin-top: 1em;}
+img   { margin-top: 1em; }
+.grid { align-items: center; }
 
 /* On desktop only */
 @media (min-width: 768px)
@@ -46,7 +47,7 @@ img   { margin-top: 1em;}
     margin-top: 2rem;
   }
 
-  /*Some rows are flipped for desktop*/
+  /* Some rows are flipped for desktop*/
   .project-grid-flipped
   {
     display         : flex;
@@ -97,7 +98,6 @@ A paper-based system for personal growth, providing the structure needed to alig
 [![](./the-book-of-plans/images__the-book-of-plans/daily-log-thumb-square.png)](./the-book-of-plans/index.qmd)
 :::
 :::
-
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
