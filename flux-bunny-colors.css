@@ -84,48 +84,49 @@
   /*------------------------------------------------------------------*/
   /* Quarto syntax highlighting colors
   /*------------------------------------------------------------------*/
-  --quarto-hl-ot-color          : #003B4F;
-  --quarto-hl-at-color          : #657422;
-  --quarto-hl-ss-color          : #20794D;
-  --quarto-hl-an-color          : #5E5E5E;
-  --quarto-hl-fu-color          : #4758AB;
-  --quarto-hl-st-color          : #20794D;
-  --quarto-hl-cf-color          : #003B4F;
-  --quarto-hl-op-color          : #5E5E5E;
-  --quarto-hl-er-color          : #AD0000;
-  --quarto-hl-bn-color          : #AD0000;
-  --quarto-hl-al-color          : #AD0000;
-  --quarto-hl-va-color          : #111111;
+  --quarto-hl-ot-color          : var(--norm--blu-04);
+  --quarto-hl-at-color          : var(--norm--yel-02);
+  --quarto-hl-ss-color          : var(--norm--grn-02)
+  --quarto-hl-an-color          : var(--bold--blk-08);
+  --quarto-hl-fu-color          : var(--norm--mag-05);
+  --quarto-hl-st-color          : var(--norm--grn-02);
+  --quarto-hl-cf-color          : var(--norm--blu-04);
+  --quarto-hl-op-color          : var(--bold--blk-08);
+  --quarto-hl-er-color          : var(--norm--red-01);
+  --quarto-hl-bn-color          : var(--norm--red-01);
+  --quarto-hl-al-color          : var(--norm--red-01);
+  --quarto-hl-va-color          : var(--norm--blk-00);
   --quarto-hl-bu-color          : inherit;
   --quarto-hl-ex-color          : inherit;
-  --quarto-hl-pp-color          : #AD0000;
-  --quarto-hl-in-color          : #5E5E5E;
-  --quarto-hl-vs-color          : #20794D;
-  --quarto-hl-wa-color          : #5E5E5E;
-  --quarto-hl-do-color          : #5E5E5E;
-  --quarto-hl-im-color          : #00769E;
-  --quarto-hl-ch-color          : #20794D;
-  --quarto-hl-dt-color          : #AD0000;
-  --quarto-hl-fl-color          : #AD0000;
-  --quarto-hl-co-color          : #5E5E5E;
-  --quarto-hl-cv-color          : #5E5E5E;
-  --quarto-hl-cn-color          : #8f5902;
-  --quarto-hl-sc-color          : #5E5E5E;
-  --quarto-hl-dv-color          : #AD0000;
-  --quarto-hl-kw-color          : #003B4F;
+  --quarto-hl-pp-color          : var(--norm--red-01);
+  --quarto-hl-in-color          : var(--bold--blk-08);
+  --quarto-hl-vs-color          : var(--norm--grn-02);
+  --quarto-hl-wa-color          : var(--bold--blk-08);
+  --quarto-hl-do-color          : var(--bold--blk-08);
+  --quarto-hl-im-color          : var(--bold--blu-12);
+  --quarto-hl-ch-color          : var(--norm--grn-02);
+  --quarto-hl-dt-color          : var(--norm--red-01);
+  --quarto-hl-fl-color          : var(--norm--red-01);
+  --quarto-hl-co-color          : var(--bold--blk-08);
+  --quarto-hl-cv-color          : var(--bold--blk-08);
+  --quarto-hl-cn-color          : var(--bold--yel-11);
+  --quarto-hl-sc-color          : var(--bold--blk-08);
+  --quarto-hl-dv-color          : var(--norm--red-01);
+  --quarto-hl-kw-color          : var(--norm--blu-04);
 
-  --bs-blue                     : #0d6efd;
-  --bs-indigo                   : #6610f2;
-  --bs-purple                   : #6f42c1;
-  --bs-pink                     : #d63384;
-  --bs-red                      : #dc3545;
-  --bs-orange                   : #fd7e14;
-  --bs-yellow                   : #ffc107;
-  --bs-green                    : #198754;
-  --bs-teal                     : #20c997;
-  --bs-cyan                     : #0dcaf0;
-  --bs-black                    : #000;
-  --bs-white                    : #ffffff;
+
+  --bs-blue                     : var(--bold--blu-12);
+  --bs-indigo                   : var(--bold--mag-13)
+  --bs-purple                   : var(--norm--mag-05);
+  --bs-pink                     : var(--norm--red-01);
+  --bs-red                      : var(--norm--invald);
+  --bs-orange                   : var(--norm--yel-03);
+  --bs-yellow                   : var(--bold--yel-11)
+  --bs-green                    : var(--norm--grn-02);
+  --bs-teal                     : var(--norm--cya-06);
+  --bs-cyan                     : var(--norm--blu-04)
+  --bs-black                    : var(--norm--blk-00);
+  --bs-white                    : var(--norm--wht-07);
   --bs-gray                     : #6c757d;
   --bs-gray-dark                : #343a40;
   --bs-gray-100                 : #f8f9fa;
@@ -138,12 +139,12 @@
   --bs-gray-800                 : #343a40;
   --bs-gray-900                 : #212529;
   --bs-default                  : #dee2e6;
-  --bs-primary                  : #0d6efd;
+  --bs-primary                  : #var(--bold--blu-12);
   --bs-secondary                : #6c757d;
-  --bs-success                  : #198754;
-  --bs-info                     : #0dcaf0;
-  --bs-warning                  : #ffc107;
-  --bs-danger                   : #dc3545;
+  --bs-success                  : var(--norm--grn-02);
+  --bs-info                     : var(--norm--blu-04)
+  --bs-warning                  : var(--norm--yel-03);
+  --bs-danger                   : var(--norm--invald);
   --bs-light                    : #f8f9fa;
   --bs-dark                     : #212529;
   --bs-default-rgb              : 222, 226, 230;
@@ -155,12 +156,12 @@
   --bs-danger-rgb               : 220, 53, 69;
   --bs-light-rgb                : 248, 249, 250;
   --bs-dark-rgb                 : 33, 37, 41;
-  --bs-primary-text-emphasis    : rgb(5.2, 44, 101.2);
+  --bs-primary-text-emphasis    : var(--norm--blu-04);
   --bs-secondary-text-emphasis  : rgb(43.2, 46.8, 50);
   --bs-success-text-emphasis    : rgb(10, 54, 33.6);
-  --bs-info-text-emphasis       : rgb(5.2, 80.8, 96);
+  --bs-info-text-emphasis       : var(--bold--cya-14)
   --bs-warning-text-emphasis    : rgb(102, 77.2, 2.8);
-  --bs-danger-text-emphasis     : rgb(88, 21.2, 27.6);
+  --bs-danger-text-emphasis     : var(--norm--invald);
   --bs-light-text-emphasis      : #495057;
   --bs-dark-text-emphasis       : #495057;
   --bs-primary-bg-subtle        : rgb(206.6, 226, 254.6);
@@ -179,7 +180,7 @@
   --bs-danger-border-subtle     : rgb(241, 174.2, 180.6);
   --bs-light-border-subtle      : #e9ecef;
   --bs-dark-border-subtle       : #adb5bd;
-  --bs-white-rgb                : 255, 255, 255;
+  --bs-white-rgb                : var(--norm--wht-07);
   --bs-black-rgb                : 0, 0, 0;
   --bs-font-sans-serif          : system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", "Noto Sans", "Liberation Sans", Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol", "Noto Color Emoji";
   --bs-font-monospace           : SFMono-Regular, Menlo, Monaco, Consolas, "Liberation Mono", "Courier New", monospace;
@@ -192,24 +193,24 @@
   --bs-body-color               : #212529;
   --bs-body-color-rgb           : 33, 37, 41;
   --bs-body-bg                  : #ffffff;
-  --bs-body-bg-rgb              : 255, 255, 255;
-  --bs-emphasis-color           : #000;
+  --bs-body-bg-rgb              : var(--norm--wht-07);
+  --bs-emphasis-color           : var(--norm--blk-00);
   --bs-emphasis-color-rgb       : 0, 0, 0;
   --bs-secondary-color          : rgba(33, 37, 41, 0.75);
   --bs-secondary-color-rgb      : 33, 37, 41;
   --bs-secondary-bg             : #e9ecef;
   --bs-secondary-bg-rgb         : 233, 236, 239;
-  --bs-tertiary-color           : rgba(33, 37, 41, 0.5);
+  --bs-tertiary-color           : var(--norm--blk-00);
   --bs-tertiary-color-rgb       : 33, 37, 41;
   --bs-tertiary-bg              : #f8f9fa;
   --bs-tertiary-bg-rgb          : 248, 249, 250;
   --bs-heading-color            : inherit;
-  --bs-link-color               : #0d6efd;
+  --bs-link-color               : var(--bold--blu-12);
   --bs-link-color-rgb           : 13, 110, 253;
   --bs-link-decoration          : underline;
-  --bs-link-hover-color         : rgb(10.4, 88, 202.4);
+  --bs-link-hover-color         : var(--bold--blu-12);
   --bs-link-hover-color-rgb     : 10, 88, 202;
-  --bs-code-color               : #7d12ba;
+  --bs-code-color               : var(--norm---mag5);
   --bs-highlight-bg             : rgb(255, 242.6, 205.4);
   --bs-border-width             : 1px;
   --bs-border-style             : solid;
@@ -229,9 +230,8 @@
   --bs-focus-ring-width         : 0.25rem;
   --bs-focus-ring-opacity       : 0.25;
   --bs-focus-ring-color         : rgba(13, 110, 253, 0.25);
-  --bs-form-valid-color         : #198754;
-  --bs-form-valid-border-color  : #198754;
-  --bs-form-invalid-color       : #dc3545;
-  --bs-form-invalid-border-color: #dc3545;
-
+  --bs-form-valid-color         : var(--norm--grn-02);
+  --bs-form-valid-border-color  : var(--norm--grn-02);
+  --bs-form-invalid-color       : var(--norm--invald);
+  --bs-form-invalid-border-color: var(--norm--invald);
 }
