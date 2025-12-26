@@ -527,7 +527,7 @@ a:visited { color        : var(--flux-color-1); }
 /* Inline Code Blocks */
 code
 {
-  color             : var(--flux-fg-norm);
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
 }
 
 .sourceCode, code, .code-with-copy
@@ -535,8 +535,6 @@ code
   border-radius     : 0 !important;                       /* ! needed */
   border            : none !important;                    /* ! needed */
   background-color  : var(--flux-bg-bold)!important;      /* ! needed */
-  /*
-  */
 }
 
 /*--------------------------------------------------------------------*/

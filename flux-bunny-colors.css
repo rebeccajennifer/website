@@ -85,8 +85,8 @@
   /* Quarto Syntax Highlight
   /*------------------------------------------------------------------*/
   --quarto-hl-ot-color          : var(--norm--blu-04);
-  --quarto-hl-at-color          : var(--norm--yel-02);
-  --quarto-hl-ss-color          : var(--norm--grn-02)
+  --quarto-hl-at-color          : var(--norm--yel-03);
+  --quarto-hl-ss-color          : var(--norm--grn-02);
   --quarto-hl-an-color          : var(--bold--blk-08);
   --quarto-hl-fu-color          : var(--norm--mag-05);
   --quarto-hl-st-color          : var(--norm--grn-02);
@@ -119,15 +119,15 @@
   /* Bootstrap Colors
   /*------------------------------------------------------------------*/
   --bs-blue                     : var(--bold--blu-12);
-  --bs-indigo                   : var(--bold--mag-13)
+  --bs-indigo                   : var(--bold--mag-13);
   --bs-purple                   : var(--norm--mag-05);
   --bs-pink                     : var(--bold--red-09);
   --bs-red                      : var(--norm--red-01);
   --bs-orange                   : var(--norm--yel-03);
-  --bs-yellow                   : var(--bold--yel-11)
+  --bs-yellow                   : var(--bold--yel-11);
   --bs-green                    : var(--norm--grn-02);
   --bs-teal                     : var(--bold--cya-14);
-  --bs-cyan                     : var(--norm--cya-06)
+  --bs-cyan                     : var(--norm--cya-06);
   --bs-black                    : var(--norm--blk-00);
   --bs-white                    : var(--norm--wht-07);
   --bs-gray                     : #6c757d;
@@ -145,7 +145,7 @@
   --bs-primary                  : #var(--bold--blu-12);
   --bs-secondary                : #6c757d;
   --bs-success                  : var(--norm--grn-02);
-  --bs-info                     : var(--norm--blu-04)
+  --bs-info                     : var(--norm--blu-04);
   --bs-warning                  : var(--norm--yel-03);
   --bs-danger                   : var(--norm--invald);
   --bs-light                    : #f8f9fa;
@@ -162,7 +162,7 @@
   --bs-primary-text-emphasis    : var(--norm--blu-04);
   --bs-secondary-text-emphasis  : rgb(43.2, 46.8, 50);
   --bs-success-text-emphasis    : rgb(10, 54, 33.6);
-  --bs-info-text-emphasis       : var(--bold--cya-14)
+  --bs-info-text-emphasis       : var(--bold--cya-14);
   --bs-warning-text-emphasis    : rgb(102, 77.2, 2.8);
   --bs-danger-text-emphasis     : var(--norm--invald);
   --bs-light-text-emphasis      : #495057;
@@ -213,7 +213,8 @@
   --bs-link-decoration          : underline;
   --bs-link-hover-color         : var(--bold--blu-12);
   --bs-link-hover-color-rgb     : 10, 88, 202;
-  --bs-code-color               : var(--norm---mag5);
+  --bs-code-color               : var(--norm--mag-05);
+  --bs-code-color               : red;
   --bs-highlight-bg             : rgb(255, 242.6, 205.4);
   --bs-border-width             : 1px;
   --bs-border-style             : solid;
