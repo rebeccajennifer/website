@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,7 +71,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../flux-bunny.css">
 </head>
@@ -139,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -166,13 +226,72 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/environment-setup/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">New Environment Setup</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <a href="../../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Color Scheme Reference</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANSI Color Codes Explained</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">ANSI 256 Color Table</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TERM Environment Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VS Code Color Theme</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">GNOME Color Profile</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">PuTTY Color Configuration</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Vim Color Scheme</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reference/environment-setup/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">New Environment Setup</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
@@ -205,156 +324,6 @@ ul.task-list li input[type="checkbox"] {
 </li>
       </ul>
   </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../reference/recipes/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Cottontail Comestibles</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false">
- <span class="menu-text">Baked Goods</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-4" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/recipes/baked-goods/full-time-work-schedule-sourdough.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Full-Time Work Schedule Sourdough</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false">
- <span class="menu-text">Breakfast</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/recipes/breakfast/weird-breakfast.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Weird Breakfast</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false">
- <span class="menu-text">Dinner</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/recipes/dinner/red-curry.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Vegetable Red Curry</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/recipes/dinner/taco-meat.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Easy Taco Meat</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a class="sidebar-item-text sidebar-link text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false">
- <span class="menu-text">Other Comestibles</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-7" role="navigation" aria-expanded="false" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-7" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/recipes/other-comestibles/meat-brine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">The Everything Brine</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/recipes/other-comestibles/pickle-brine.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Basic Pickle Brine</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
-      </ul>
-  </li>
-          <li class="sidebar-item sidebar-item-section">
-      <div class="sidebar-item-container"> 
-            <a href="../../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Color Scheme Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="true" aria-label="Toggle section">
-            <i class="bi bi-chevron-right ms-2"></i>
-          </a> 
-      </div>
-      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 show">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ANSI Color Codes Explained</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">ANSI 256 Color Table</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">GNOME Color Profile</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">PuTTY Color Configuration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TERM Environment Variable</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">Vim Color Scheme</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">VS Code Color Theme</span></a>
-  </div>
-</li>
-      </ul>
-  </li>
       </ul>
   </li>
     </ul>
@@ -368,7 +337,7 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
 <div class="quarto-title">
 <h1 class="title">Color Scheme Reference</h1>
 <p class="subtitle lead">Bring joy into your environment.</p>
@@ -415,6 +384,13 @@ ul.task-list li input[type="checkbox"] {
 <!--DESCRIPTION
 |   Reference page for color scheme related information.
 |____________________________________________________________________-->
+<style>
+/* Hide table search bar */
+div.listing-actions-group    { display : none; } /* Hide filter bar */
+/*.quarto-listing-table thead  { display : none; } /* Hide header row */
+.quarto-listing-table tr, td { border  : none; } /* Hide cell borders */
+</style>
+<p>Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.</p>
 
 
 <style>
@@ -454,12 +430,178 @@ table
 </tbody></table>
 
 
-<p>Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.</p>
 <p>This set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.</p>
 
 
 
-</main> <!-- /main -->
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1766695387245" data-listing-reading-time-sort="8" data-listing-word-count-sort="1510">
+<a href="../../reference/color-theme__reference/ansi-color-explained.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-theme__reference/images__color-scheme-reference/ansi016-color-square.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ANSI Color Codes Explained
+</h5>
+<div class="card-text listing-description delink">
+ANSI color codes, as used in terminals, can be categorized into three main types:
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1766695387243" data-listing-reading-time-sort="4" data-listing-word-count-sort="739">
+<a href="../../reference/color-theme__reference/ansi256-colors.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-theme__reference/images__color-scheme-reference/ansi256-color-cube.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ANSI 256 Color Table
+</h5>
+<div class="card-text listing-description delink">
+Refer to the table below to quickly identify color codes for terminal customization and scripting.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1766695387244" data-listing-reading-time-sort="7" data-listing-word-count-sort="1316">
+<a href="../../reference/color-theme__reference/term-env-var.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images__color-scheme-reference/term__ansi-color-print__zsh-screen.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+TERM Environment Variable
+</h5>
+<div class="card-text listing-description delink">
+The environment variable <code>TERM</code> specifies the terminal type and the set of features, such as color support, that applications can rely on when rendering output.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1766695387245" data-listing-reading-time-sort="7" data-listing-word-count-sort="1339">
+<a href="../../reference/color-theme__reference/ls-colors.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images__color-scheme-reference/dircolors-sample-header.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+LS_COLORS &amp; dircolors
+</h5>
+<div class="card-text listing-description delink">
+The shell environment variable <code>LS_COLORS</code> is used to define the colors displayed when listing file types with the <code>ls</code> command. It is configured via the <code>dircolors</code> command…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1766695387245" data-listing-reading-time-sort="8" data-listing-word-count-sort="1410">
+<a href="../../reference/color-theme__reference/vscode-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images__color-scheme-reference/vscode-flux-dark-screenshot.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+VS Code Color Theme
+</h5>
+<div class="card-text listing-description delink">
+<p>A detailed example on how to create and load a VS Code color theme file</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1766695387245" data-listing-reading-time-sort="6" data-listing-word-count-sort="1088">
+<a href="../../reference/color-theme__reference/gnome-terminal-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-theme__reference/images__color-scheme-reference/gnome-theme-screenshot.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+GNOME Color Profile
+</h5>
+<div class="card-text listing-description delink">
+This page describes how to create a color scheme for GNOME terminal in Ubuntu.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1766694658792" data-listing-reading-time-sort="5" data-listing-word-count-sort="971">
+<a href="../../reference/color-theme__reference/putty-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/environment-setup/images__env-setup/putty-config-2-window-09.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+PuTTY Color Configuration
+</h5>
+<div class="card-text listing-description delink">
+Learn how to customize your terminal’s appearance by modifying the PuTTY configuration color values.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1766695387243" data-listing-reading-time-sort="6" data-listing-word-count-sort="1047">
+<a href="../../reference/color-theme__reference/vim-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-theme__reference/images__color-scheme-reference/vim-color-screenshot.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Vim Color Scheme
+</h5>
+<div class="card-text listing-description delink">
+This page includes information about color schemes in Vim. Vim color schemes use the extension <code>.vim</code>.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |

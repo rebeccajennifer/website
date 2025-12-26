@@ -313,6 +313,12 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">TERM Environment Variable</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI 256 Color Table</span></a>
   </div>
@@ -333,12 +339,6 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Color Configuration</span></a>
-  </div>
-</li>
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">TERM Environment Variable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -415,7 +415,7 @@ ul.task-list li input[type="checkbox"] {
 <!--DESCRIPTION
 |   Egg and rice breakfast
 |____________________________________________________________________-->
-<p>This breakfast might sound alittle weird, but it is super tasty and high in protein.</p>
+<p>This breakfast might sound a little weird, but it’s super tasty and high in protein.</p>
 <section id="ingredients" class="level2">
 <h2 class="anchored" data-anchor-id="ingredients">Ingredients</h2>
 <p>3 oz cooked egg white 1/2 c shelled edamame</p>
@@ -536,7 +536,7 @@ ul.task-list li input[type="checkbox"] {
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rebeccajennifer\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }
