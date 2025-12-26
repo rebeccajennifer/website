@@ -1,14 +1,31 @@
 ---
-title: "Redirecting..."
-format:
-  html:
-    include-in-header:
-      text: |
-        <meta http-equiv="refresh" content="0;URL='https://rebeccajennifer.com/'">
-        <script>
-          var path = window.location.pathname;
-          window.location.replace("https://rebeccajennifer.com" + path);
-        </script>
+title: "I Might Have Led You Astray..."
 ---
 
-If you are not redirected automatically, [click here to go to rebeccajennifer.com](https://rebeccajennifer.com).
+<style>
+.grid { align-items: center; }
+@media (min-width: 768px)
+{
+  /* Some rows are flipped for desktop*/
+  .project-grid-flipped
+  {
+    display         : flex;
+    flex-direction  : row-reverse; /* This flips the horizontal order */
+  }
+
+  .grid img, .project-grid-flipped img {
+  width         : 100%;
+  aspect-ratio  : 1 / 1;
+  object-fit    : cover;
+}
+</style>
+
+::: {.grid .project-grid-flipped}
+::: {.g-col-12 .g-col-md-8}
+You might have been given or clicked on an outdated link 😳 Let me take you back [home](/index.qmd).
+:::
+::: {.g-col-12 .g-col-md-4}
+[![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only .plain}](/index.qmd)
+[![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only .plain}](/index.qmd)
+:::
+:::

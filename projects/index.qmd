@@ -125,5 +125,4 @@ A digital home for my projects and resources. An open notebook for my technical 
 [![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only .plain}](/index.qmd)
 [![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only .plain}](/index.qmd)
 :::
-
 :::
