@@ -26,42 +26,13 @@
 /*  CSS Stylesheet for website.
 /*____________________________________________________________________*/
 
+@import "flux-bunny-colors.css";
+
 /*--------------------------------------------------------------------*/
 /* CONSTANTS
 /*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
-/* Dark theme - colors become active when moon icon selected
-/*--------------------------------------------------------------------*/
-:root.dark-mode
-{
-  --flux-color-1      : #af87af;
-  --flux-color-2      : #5fafaf;
-  --flux-color-3      : #0087af;
-
-  --flux-bg-norm      : #262626;
-  --flux-bg-bold      : #303030;
-  --flux-fg-norm      : #eeeeee;
-  --flux-fg-lite      : #afafaf;
-}
-
 :root
 {
-
-  /*------------------------------------------------------------------*/
-  /* Light theme, default
-  /*------------------------------------------------------------------*/
-  --flux-color-1      : #874787;
-  --flux-color-2      : #478787;
-  --flux-color-3      : #475f87;
-
-  --flux-bg-norm      : #eeeeee;
-  --flux-bg-bold      : #d7d7d7;
-  --flux-fg-norm      : #262626;
-  --flux-fg-lite      : #5f5f5f;
-  /*------------------------------------------------------------------*/
-
-  --flux-wht---7      : #eeeeee;
-
   /*------------------------------------------------------------------*/
   /* Dimensions
   /*------------------------------------------------------------------*/
@@ -240,26 +211,6 @@ h5
   font-size     : var(--size-toc-top);
   padding-top   : var(--toc-link-padding);
 }
-
-/*--------------------------------------------------------------------*/
-/* TESTING
-/*--------------------------------------------------------------------*/
-
-/* Hide the TOC title globally
-#quarto-toc-heading {
-  display: none !important;
-}
-
-/* Hide the TOC content/borders but keep the space occupied
-#TOC {
-  visibility: hidden !important;
-  border: none !important;
-}
-
-/*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
 
 /*--------------------------------------------------------------------*/
 /* PAGE NAVIGATION SIDEBAR
@@ -490,7 +441,7 @@ input
 .dropdown-menu
 {
   font-family       : var(--font-fam-normal);
-  background-color  : #0087af;
+  background-color  : var(--flux-color-2);
 }
 
 .dropdown-item:hover
@@ -709,25 +660,6 @@ ol .breadcrumb-item::before
 {
   padding: 0px;
 }
-
-/*
-.quarto-title-meta
-{
-  display: none !important;
-}
-
-#title-block-header
-{
-  margin-bottom: 0;
-}
-
-#quarto-sidebar
-{
-  top: 0;
-  margin-top: 0;
-  position: sticky;
-}
-*/
 
 /*--------------------------------------------------------------------*/
 /* IMAGES
