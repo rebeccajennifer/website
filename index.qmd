@@ -37,6 +37,7 @@ subtitle: My name is Rebecca.
 <style>
 .flux-button
 {
+  font-size: var(--size-h4) !important;
   width           : 23%;
 }
 
@@ -83,24 +84,17 @@ subtitle: My name is Rebecca.
   .site-title-img
   {
     width           : 100%;
-    padding-bottom  : var(--pg-padding);
-    padding-top     : var(--pg-padding);
   }
   .site-title-container
   {
-    padding         : var(--pg-padding);
     margin-bottom   : var(--pg-padding);
     width           : 100%;
   }
 }
-/*--------------------------------------------------------------------*/
-
 
 /*--------------------------------------------------------------------*/
-/* Make site title grid flush with top of page
+/* Reduce space between top of header and nav bar
 /*--------------------------------------------------------------------*/
-#title-block-header { margin  : 0px; }
-#quarto-content>*   { padding : 0px; }
 .content            { margin  : 0px; }
 /*--------------------------------------------------------------------*/
 
@@ -108,8 +102,6 @@ main
 {
   border-bottom: none;
 }
-
-/*src="assets/photos-general-assets/flux-grass-zoom-16x10.jpg"*/
 
 </style>
 
@@ -134,11 +126,10 @@ main
 </div>
 
 </div>
-::: {.full-bleed}
-:::
 
 ## Who I Am
-  I’m a software engineer who values clean code, workflow efficiency, and clear documentation. I’m also an educator and enjoy sharing my knowledge of computer engineering and movement, two areas that bring me joy. I find satisfaction in lifting others up and leaving every space I occupy better than I found it. My favorite things are coding, handstands, and rabbits 🐰
+
+I’m a software engineer who values clean code, workflow efficiency, and clear documentation. I’m also an educator and enjoy sharing my knowledge of computer engineering and movement, two areas that bring me joy. I find satisfaction in lifting others up and leaving every space I occupy better than I found it. My favorite things are coding, handstands, and rabbits 🐰
 
 ## What I Care About
 
