@@ -8,6 +8,15 @@
     ]
   },
   {
+    "listing": "/education/comp-org/index.html",
+    "items": [
+      "/education/comp-org/sample-exams__comp-org.html",
+      "/education/comp-org/links__comp-org.html",
+      "/education/comp-org/worksheet-answers__comp-org.html",
+      "/education/comp-org/how-to-learn.html"
+    ]
+  },
+  {
     "listing": "/reference/index.html",
     "items": [
       "/reference/environment-setup__reference/index.html",

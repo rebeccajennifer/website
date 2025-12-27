@@ -35,25 +35,71 @@
     "text": "Dive Deeper"
   },
   {
-    "objectID": "education/comp-org/worksheet-answers.html",
-    "href": "education/comp-org/worksheet-answers.html",
-    "title": "Spoiler Alert!",
+    "objectID": "education/comp-org/index.html",
+    "href": "education/comp-org/index.html",
+    "title": "Computer Systems and Assembly Language",
     "section": "",
-    "text": "The Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.",
+    "text": "From 2018 to 2019, I had the joy of teaching Computer Systems and Assembly Language at the University of California, Santa Cruz. In this “computer engineering 101” course, I restructured the course materials and taught foundational concepts including binary, digital logic design, memory alignment, and assembly language.\nThis page contains the course material from that class to serve as a reference for anyone interested, and as an example of my work in education, documentation, and curriculum design.",
     "crumbs": [
-      "Computer Systems and Assembly Language",
-      "Spoiler Alert!"
+      "Teaching",
+      "Computer Systems and Assembly Language"
     ]
   },
   {
-    "objectID": "education/comp-org/worksheet-answers.html#display-worksheet-answers",
-    "href": "education/comp-org/worksheet-answers.html#display-worksheet-answers",
-    "title": "Spoiler Alert!",
-    "section": "Display Worksheet Answers",
-    "text": "Display Worksheet Answers\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!",
+    "objectID": "education/comp-org/index.html#worksheets",
+    "href": "education/comp-org/index.html#worksheets",
+    "title": "Computer Systems and Assembly Language",
+    "section": "Worksheets",
+    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allow students to handwrite notes and maintain better engagement in class, rather than losing focus by copying slides. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\n\nNotes  0: Intro To Computing Systems\n  history of computing, computing levels of abstraction\n  \n    Google Doc \n          PDF        \n  \n  Supplements Who invented the computer?\n  \n\n\nNotes  1: Integer Numbering Systems\n  unary, grouping, positional, decimal, octal, hexadecimal, binary\n  \n    Google Doc \n          PDF        \n  \n  Supplements Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\nNotes 2a: Combinational Logic 1\n  MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n  \n    Google Doc \n          PDF        \n  \n  Supplements CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\nNotes 2b: Combinational Logic 2\n  digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n  \n    Google Doc \n          PDF        \n  \n  Supplements Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\nNotes 2c: Combinational Logic 3\n  multiplexers, decoders, half adder, full adder, ripple-carry adder, ALU\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes  3: Boolean Algebra\n  Boolean identities, De Morgan's Law\n  \n    Google Doc \n          PDF        \n  \n  Supplements Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\nNotes  4: Sequential Logic\n  SR latch, active high, active low, D latch, D flip-flop\n  \n    Google Doc \n          PDF        \n  \n  Supplements Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\nNotes  5: Signed Integer Representation\n  signed numbers, sign magnitude, two’s complement, bias / excess notation\n  \n    Google Doc \n          PDF        \n  \n  Supplements Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  carry out, overflow, bitwise, reduction, shifts, rotate\n  \n    Google Doc \n          PDF        \n  \n  Supplements Two's Complement Representation and Overflow: EngMicroLectures\n  \n\n\nNotes  7: Fractional Representation\n  fixed point, IEEE 754 single precision floating point\n  \n    Google Doc \n          PDF        \n  \n  Supplements Binary Fractions: Electronics Tutorials\n  \n\n\nNotes  8: Text Representation\n  ASCII, UTF-8\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes  9: von Neumann Model\n  von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes 10: MIPS Instruction Set Architecture\n  general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS Reference Table: Rebecca Rashkin MIPS Instruction Format: Rebecca Rashkin Printable ASCII Characters: Rebecca Rashkin\n  \n\n\nNotes 11: MARS: MIPS Assembler and Runtime Simulator\n  memory display, syscalls\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS Tutorial 1 Intro and Mars: Amell Peralta\n  \n\n\nNotes 12: MIPS Addressing Modes\n  register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes 13: Stacks and Subroutines\n  stack, jump instructions, return address, subroutines\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)\n  \n\n\nNotes 14: MIPS Data Path\n  mips data path, r-type, i-type, j-type, pc, register file, alu, control unit\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS32 Data Path: Rebecca Rashkin\n  \n\n\n\n\nSpoiler Alert!\nHow do I see the answers?\n\nHere You Go!",
     "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/index.html#extra-credit",
+    "href": "education/comp-org/index.html#extra-credit",
+    "title": "Computer Systems and Assembly Language",
+    "section": "Extra Credit",
+    "text": "Extra Credit\n\n\n\n\nComputer Archeology\n  Write 250 words about the background, functionality, and social implications of an artifact from computer history. Create 1 - 3 slides on that artifact and present it to the class.\n  \n    Google Doc\n     PDF       \n  \n\n\n\nGet Your Ham Radio License\n  Get your ham radio license and attend 4 ucsc amateur radio club events.\n  \n    Google Doc\n     PDF       \n  \n\n\n\nSkill Progression\n  Learn a new skill, or progress in a skill you have already worked on. Show documentation of your skill progression and journal about it four times throughout the quarter. Examples: juggling, drawing, singing, dancing, playing a musical instrument, movement.\n  \n    Google Doc\n     PDF       \n  \n\n\n\nMalleable Intelligence Essay\n  Read the chapter “Intelligence as a Malleable Construct” from the Handbook of Intelligence and write a 500+ word essay. This assignment will have 3 parts: summary, reflection, and recommendations.\n  \n    Google Doc\n     PDF",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/index.html#more-resources",
+    "href": "education/comp-org/index.html#more-resources",
+    "title": "Computer Systems and Assembly Language",
+    "section": "More Resources",
+    "text": "More Resources",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/sample-exams__comp-org.html",
+    "href": "education/comp-org/sample-exams__comp-org.html",
+    "title": "Sample Exams",
+    "section": "",
+    "text": "Fall 2019\nSummer 2019\nSpring 2019\nWinter 2019\nFall 2018\nSummer 2018\n\n\n\nFall 2019\nSummer 2019\nSpring 2019\nWinter 2019\nFall 2018\nSummer 2018",
+    "crumbs": [
+      "Teaching",
       "Computer Systems and Assembly Language",
-      "Spoiler Alert!"
+      "Sample Exams"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/sample-exams__comp-org.html#sample-exams",
+    "href": "education/comp-org/sample-exams__comp-org.html#sample-exams",
+    "title": "Sample Exams",
+    "section": "",
+    "text": "Fall 2019\nSummer 2019\nSpring 2019\nWinter 2019\nFall 2018\nSummer 2018\n\n\n\nFall 2019\nSummer 2019\nSpring 2019\nWinter 2019\nFall 2018\nSummer 2018",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Sample Exams"
     ]
   },
   {
@@ -2332,88 +2378,183 @@
     ]
   },
   {
-    "objectID": "education/how-to-learn.html",
-    "href": "education/how-to-learn.html",
-    "title": "How To Learn",
+    "objectID": "education/comp-org/links__comp-org.html",
+    "href": "education/comp-org/links__comp-org.html",
+    "title": "Helpful Links",
     "section": "",
-    "text": "Learning something new can feel impossible at times. This page offers a clear set of steps to help you start learning something new or move forward in a skill you’re already developing."
+    "text": "Syllabus\nDocumentation standards\nCourse reference playlist",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
   },
   {
-    "objectID": "education/how-to-learn.html#show-up",
-    "href": "education/how-to-learn.html#show-up",
-    "title": "How To Learn",
+    "objectID": "education/comp-org/links__comp-org.html#course-related",
+    "href": "education/comp-org/links__comp-org.html#course-related",
+    "title": "Helpful Links",
+    "section": "",
+    "text": "Syllabus\nDocumentation standards\nCourse reference playlist",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/links__comp-org.html#reference-tables",
+    "href": "education/comp-org/links__comp-org.html#reference-tables",
+    "title": "Helpful Links",
+    "section": "Reference Tables",
+    "text": "Reference Tables\nMIPS Instructions\nMIPS Instruction Format\nPrintable ASCII Characters",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/links__comp-org.html#git",
+    "href": "education/comp-org/links__comp-org.html#git",
+    "title": "Helpful Links",
+    "section": "Git",
+    "text": "Git\nVideo references\nGit documentation\n\nTutorials\nGit Immersion\nLearn Git Branching",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/links__comp-org.html#command-line-interface",
+    "href": "education/comp-org/links__comp-org.html#command-line-interface",
+    "title": "Helpful Links",
+    "section": "Command Line Interface",
+    "text": "Command Line Interface\n\nVideos\nBASH Basics\nTerminal Basics for Beginners\n\n\nCommand Line Text Editor References\nVim\nVim Adventures\nEmacs",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/links__comp-org.html#lab-applications",
+    "href": "education/comp-org/links__comp-org.html#lab-applications",
+    "title": "Helpful Links",
+    "section": "Lab Applications",
+    "text": "Lab Applications\n\nMARS: MIPS Assembler and Runtime Simulator\nMARS homepage\nVideo tutorials\n\n\nMultimedia Logic\nMultimedia Logic homepage\nMac installation tutorial",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/links__comp-org.html#video-playlists",
+    "href": "education/comp-org/links__comp-org.html#video-playlists",
+    "title": "Helpful Links",
+    "section": "Video Playlists",
+    "text": "Video Playlists\nCourse reference playlist\nDigital Logic and Computer Organization: EngMicroLectures\nComputer Organisation & Architecture: Semesters Simplified\nMIPS Instruction Set Architecture 1: David Black-Schaffer\nMIPS Instruction Set Architecture 2: David Black-Schaffer",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/links__comp-org.html#fun-stuff",
+    "href": "education/comp-org/links__comp-org.html#fun-stuff",
+    "title": "Helpful Links",
+    "section": "Fun Stuff",
+    "text": "Fun Stuff\nTIS-100: assembly language video game\nSkills based training\nAmerican Amateur Radio League (ARRL)\nPerceptual Noise Generator",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Helpful Links"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/worksheet-answers__comp-org.html",
+    "href": "education/comp-org/worksheet-answers__comp-org.html",
+    "title": "Spoiler Alert!",
+    "section": "",
+    "text": "The Computer Systems and Assembly Language worksheet answers are hidden in the Google Doc style Heading 4. Follow these instructions to view the hidden text.",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Spoiler Alert!"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/worksheet-answers__comp-org.html#display-worksheet-answers",
+    "href": "education/comp-org/worksheet-answers__comp-org.html#display-worksheet-answers",
+    "title": "Spoiler Alert!",
+    "section": "Display Worksheet Answers",
+    "text": "Display Worksheet Answers\n\nMake a copy of the worksheet and save to your Google Drive. \nSelect some answer text. \nChange the text color.  \nWhile the text is selected, change the color for Heading 4 by selecting Update 'Heading 4' to match. \nNow the answers are visible!",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "Spoiler Alert!"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/how-to-learn.html",
+    "href": "education/comp-org/how-to-learn.html",
+    "title": "How To Learn Anything",
+    "section": "",
+    "text": "Learning something new can feel impossible at times. This page offers a clear set of steps to help you start learning something new or move forward in a skill you’re already developing.",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "How To Learn Anything"
+    ]
+  },
+  {
+    "objectID": "education/comp-org/how-to-learn.html#show-up",
+    "href": "education/comp-org/how-to-learn.html#show-up",
+    "title": "How To Learn Anything",
     "section": "Show Up",
-    "text": "Show Up\nA large part of making progress is just showing up – even if you don’t feel like it.\n\nBe Prepared\nSet yourself up for success by preparing yourself appropriately. For lecture, make sure to bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\n\n\nBe Present\nEliminate distractions by stashing your electronics."
+    "text": "Show Up\nA large part of making progress is just showing up – even if you don’t feel like it.\n\nBe Prepared\nSet yourself up for success by preparing yourself appropriately. For lecture, make sure to bring:\n\nPaper\nA writing utensil\nA notebook\nColored pens or highlighters\n\n\n\nBe Present\nFor class, eliminate distractions by stashing your electronics.",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "How To Learn Anything"
+    ]
   },
   {
-    "objectID": "education/how-to-learn.html#do-the-things",
-    "href": "education/how-to-learn.html#do-the-things",
-    "title": "How To Learn",
+    "objectID": "education/comp-org/how-to-learn.html#do-the-things",
+    "href": "education/comp-org/how-to-learn.html#do-the-things",
+    "title": "How To Learn Anything",
     "section": "Do The Things",
-    "text": "Do The Things\ni.e. practice with intention.\n\nMy Number #1 Tip\nStudy with peers. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered. Talk to others.\n\n\nReview Your Notes Every Day\nReview all your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture. Spending time to strengthen your knowledge foundation will serve you in completing the assignments.\n\n\nStart Assignments Early\nYou will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting assignments early enables you to catch these issues early on so you are not panicked at the 11th hour.\n\n\nMake Up Your Own Examples\nRewrite the homework with different numbers. Solve this new version of the homework.\n\n\nStill Stuck?\nIf you feel that you’ve been “doing the things” and are not improving, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others and form a new plan."
+    "text": "Do The Things\ni.e. practice with intention.\n\nMy Number #1 Tip\nStudy with peers. How do you find a study group? Go to office hours and supplementary tutoring sessions if they are offered. Talk to others.\n\n\nReview Your Notes Every Day\nReview all your notes after every class starting from the beginning of the quarter. Redo all of the examples, and complete any examples not covered in lecture. Spending time to strengthen your knowledge foundation will serve you in completing the assignments.\n\n\nStart Assignments Early\nYou will inevitably run into bugs that you have to fix. This often takes way longer than you might think to resolve. Starting assignments early enables you to catch these issues early on so you are not panicked at the 11th hour.\n\n\nMake Up Your Own Examples\nRewrite the homework with different numbers. Solve this new version of the homework.\n\n\nStill Stuck?\nIf you feel that you’ve been “doing the things” and are not improving, reflect upon the approach you are taking. Are you hitting roadblocks in your process? Talk to others and form a new plan.",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "How To Learn Anything"
+    ]
   },
   {
-    "objectID": "education/how-to-learn.html#be-consistent",
-    "href": "education/how-to-learn.html#be-consistent",
-    "title": "How To Learn",
+    "objectID": "education/comp-org/how-to-learn.html#be-consistent",
+    "href": "education/comp-org/how-to-learn.html#be-consistent",
+    "title": "How To Learn Anything",
     "section": "Be Consistent",
-    "text": "Be Consistent\nThe key to progression in any context is repetition and consistency.\n\nBuild Habits\nIn order to progress, one needs to incorporate practice into their weekly schedule. Work on building habits for:\n\nPreparation\nShowing up\nPractice\n\nI highly suggest reading (or listening to) Atomic Habits by James Clear.\n\n\nAnticipate Obstacles\nReflect on the days where you feel that you fell short. Recognize what got in the way and come up with ways to avoid the obstacles."
+    "text": "Be Consistent\nThe key to progression in any context is repetition and consistency.\n\nBuild Habits\nIn order to progress, one needs to incorporate practice into their weekly schedule. Work on building habits for:\n\nPreparation\nShowing up\nPractice\n\nI highly suggest reading (or listening to) Atomic Habits by James Clear.\n\n\nAnticipate Obstacles\nReflect on the days where you feel that you fell short. Recognize what got in the way and come up with ways to avoid the obstacles.",
+    "crumbs": [
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "How To Learn Anything"
+    ]
   },
   {
-    "objectID": "education/how-to-learn.html#trust-the-process",
-    "href": "education/how-to-learn.html#trust-the-process",
-    "title": "How To Learn",
+    "objectID": "education/comp-org/how-to-learn.html#trust-the-process",
+    "href": "education/comp-org/how-to-learn.html#trust-the-process",
+    "title": "How To Learn Anything",
     "section": "Trust the Process",
-    "text": "Trust the Process\nIt takes time to learn. Be kind to yourself and keep going. Prepare, show up, do the things. And read Atomic Habits 😉\n\n“We can determine how to be the masters of our habits so that our habits can be useful servants to us.”\n- John Templeton"
-  },
-  {
-    "objectID": "education/comp-org/index.html",
-    "href": "education/comp-org/index.html",
-    "title": "Computer Systems and Assembly Language",
-    "section": "",
-    "text": "From 2018 to 2019, I had the joy of teaching Computer Systems and Assembly Language at the University of California, Santa Cruz. In this “computer engineering 101” course, I restructured the course materials and taught foundational concepts including binary, digital logic design, memory alignment, and assembly language.\nThis page contains the course material from that class to serve as a reference for anyone interested, and as an example of my work in education, documentation, and curriculum design.",
+    "text": "Trust the Process\nIt takes time to learn. Be kind to yourself and keep going. Prepare, show up, do the things. And read Atomic Habits 😉\n\n“We can determine how to be the masters of our habits so that our habits can be useful servants to us.”\n- John Templeton",
     "crumbs": [
-      "Computer Systems and Assembly Language"
-    ]
-  },
-  {
-    "objectID": "education/comp-org/index.html#worksheets",
-    "href": "education/comp-org/index.html#worksheets",
-    "title": "Computer Systems and Assembly Language",
-    "section": "Worksheets",
-    "text": "Worksheets\nI teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.\nThese worksheets allow students to handwrite notes and maintain better engagement in class, rather than losing focus by copying slides. I include examples for students to work out both during lecture with their classmates, and outside of class.\n\n\n\nNotes  0: Intro To Computing Systems\n  history of computing, computing levels of abstraction\n  \n    Google Doc \n          PDF        \n  \n  Supplements Who invented the computer?\n  \n\n\nNotes  1: Integer Numbering Systems\n  unary, grouping, positional, decimal, octal, hexadecimal, binary\n  \n    Google Doc \n          PDF        \n  \n  Supplements Number Systems and Bases: Better Explained Introduction to number systems and binary: Khan Academy The Number Base Calculator: Cleave Books\n  \n\n\nNotes 2a: Combinational Logic 1\n  MOSFET transistors, PMOS, NMOS, logic gates, inverter, and, or, nand, nor, xor, xnor, Venn diagrams\n  \n    Google Doc \n          PDF        \n  \n  Supplements CMOS Transistors: Peter Mathys (watch 13:05 - 17:00)\n  \n\n\nNotes 2b: Combinational Logic 2\n  digital circuit examples, sum of products (SOP), product of sums (POS), minterms, maxterms, programmable logic array (PLA)\n  \n    Google Doc \n          PDF        \n  \n  Supplements Minterms, Maxterms, and Cannonical Boolean Expressions: EngMicroLectures SOP and POS: Peter Mathys\n  \n\n\nNotes 2c: Combinational Logic 3\n  multiplexers, decoders, half adder, full adder, ripple-carry adder, ALU\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes  3: Boolean Algebra\n  Boolean identities, De Morgan's Law\n  \n    Google Doc \n          PDF        \n  \n  Supplements Boolean Algebra: electronics-course.com Boolean Algebra Example: Peter Mathys NAND/NOR Only Example: Peter Mathys\n  \n\n\nNotes  4: Sequential Logic\n  SR latch, active high, active low, D latch, D flip-flop\n  \n    Google Doc \n          PDF        \n  \n  Supplements Timing Diagrams: EngMicroLectures SR Latches, D Latches, and D Flip-flops: EngMicroLectures SR Latch: Ben Eater SR Latch | NOR and NAND SR Latch: Neso Academy Registers, Flip-flops, and Modular Design: EngMicroLectures\n  \n\n\nNotes  5: Signed Integer Representation\n  signed numbers, sign magnitude, two’s complement, bias / excess notation\n  \n    Google Doc \n          PDF        \n  \n  Supplements Two's Complement: Negative Numbers in Binary: Ben Eater Computer Science Concepts: Bias-K/Excess-K: Atiwong Suchato\n  \n\n\nNotes  6: Arithmetic and Logic Operations\n  carry out, overflow, bitwise, reduction, shifts, rotate\n  \n    Google Doc \n          PDF        \n  \n  Supplements Two's Complement Representation and Overflow: EngMicroLectures\n  \n\n\nNotes  7: Fractional Representation\n  fixed point, IEEE 754 single precision floating point\n  \n    Google Doc \n          PDF        \n  \n  Supplements Binary Fractions: Electronics Tutorials\n  \n\n\nNotes  8: Text Representation\n  ASCII, UTF-8\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes  9: von Neumann Model\n  von Neumann architecture, memory, address space, addressibility, processing unit, control unit, input, output, memory\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes 10: MIPS Instruction Set Architecture\n  general purpose registers, assembler directives, data directives, labels, instruction format, instruction types, operate instructions, data movement (loads and stores), control flow instructions, little endian, big endian, memory alignment, pseudo instructions, instruction encoding\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS Reference Table: Rebecca Rashkin MIPS Instruction Format: Rebecca Rashkin Printable ASCII Characters: Rebecca Rashkin\n  \n\n\nNotes 11: MARS: MIPS Assembler and Runtime Simulator\n  memory display, syscalls\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS Tutorial 1 Intro and Mars: Amell Peralta\n  \n\n\nNotes 12: MIPS Addressing Modes\n  register direct, immediate, register indirect, base + offset (displacement), PC relative, pseudo direct\n  \n    Google Doc \n          PDF        \n  \n  \n  \n\n\nNotes 13: Stacks and Subroutines\n  stack, jump instructions, return address, subroutines\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS Videos: David Black-Schaffer (Videos 2.7 - 2.12)\n  \n\n\nNotes 14: MIPS Data Path\n  mips data path, r-type, i-type, j-type, pc, register file, alu, control unit\n  \n    Google Doc \n          PDF        \n  \n  Supplements MIPS32 Data Path: Rebecca Rashkin\n  \n\n\n\n\nSpoiler Alert!\nHow do I see the answers?\n\nHere You Go!",
-    "crumbs": [
-      "Computer Systems and Assembly Language"
-    ]
-  },
-  {
-    "objectID": "education/comp-org/index.html#extra-credit",
-    "href": "education/comp-org/index.html#extra-credit",
-    "title": "Computer Systems and Assembly Language",
-    "section": "Extra Credit",
-    "text": "Extra Credit\n\n\n\n\nComputer Archeology\n  Write 250 words about the background, functionality, and social implications of an artifact from computer history. Create 1 - 3 slides on that artifact and present it to the class.\n  \n    Google Doc\n     PDF       \n  \n\n\n\nGet Your Ham Radio License\n  Get your ham radio license and attend 4 ucsc amateur radio club events.\n  \n    Google Doc\n     PDF       \n  \n\n\n\nSkill Progression\n  Learn a new skill, or progress in a skill you have already worked on. Show documentation of your skill progression and journal about it four times throughout the quarter. Examples: juggling, drawing, singing, dancing, playing a musical instrument, movement.\n  \n    Google Doc\n     PDF       \n  \n\n\n\nMalleable Intelligence Essay\n  Read the chapter “Intelligence as a Malleable Construct” from the Handbook of Intelligence and write a 500+ word essay. This assignment will have 3 parts: summary, reflection, and recommendations.\n  \n    Google Doc\n     PDF",
-    "crumbs": [
-      "Computer Systems and Assembly Language"
-    ]
-  },
-  {
-    "objectID": "education/comp-org/index.html#sample-exams",
-    "href": "education/comp-org/index.html#sample-exams",
-    "title": "Computer Systems and Assembly Language",
-    "section": "Sample Exams",
-    "text": "Sample Exams\n\nMidterms\nFall 2019 Summer 2019 Spring 2019 Winter 2019 Fall 2018 Summer 2018\n\n\nFinals\nFall 2019 Summer 2019 Spring 2019 Winter 2019 Fall 2018 Summer 2018",
-    "crumbs": [
-      "Computer Systems and Assembly Language"
-    ]
-  },
-  {
-    "objectID": "education/comp-org/index.html#resources",
-    "href": "education/comp-org/index.html#resources",
-    "title": "Computer Systems and Assembly Language",
-    "section": "Resources",
-    "text": "Resources\n\nCourse Related\nSyllabus\nDocumentation standards\nCourse reference playlist\n\n\nReference Tables\nMIPS Instructions\nMIPS Instruction Format\nPrintable ASCII Characters\n\n\nGit\nVideo references Git documentation\n\nTutorials\nGit Immersion Learn Git Branching\n\n\n\nCommand Line Interface\n\nVideos\nBASH Basics Terminal Basics for Beginners\n\n\nCommand Line Text Editor References\nVim Emacs\n\n\n\nLab Applications\n\nMARS: MIPS Assembler and Runtime Simulator\nMARS homepage\nVideo tutorials\n\n\nMultimedia Logic\nMultimedia Logic homepage\nMac installation tutorial\n\n\n\nVideo Playlists\nCourse reference playlist\nDigital Logic and Computer Organization: EngMicroLectures\nComputer Organisation & Architecture: Semesters Simplified\nMIPS Instruction Set Architecture 1: David Black-Schaffer\nMIPS Instruction Set Architecture 2: David Black-Schaffer\n\n\nFun Stuff\nTIS-100: assembly language video game\nSkills based training\nAmerican Amateur Radio League (ARRL)\nPerceptual Noise Generator",
-    "crumbs": [
-      "Computer Systems and Assembly Language"
+      "Teaching",
+      "Computer Systems and Assembly Language",
+      "How To Learn Anything"
     ]
   }
 ]

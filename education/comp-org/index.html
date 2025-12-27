@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,17 +71,74 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
+
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
 <script src="https://cdn.jsdelivr.net/npm/requirejs@2.3.6/require.min.js" integrity="sha384-c9c+LnTbwQ3aujuU7ULEPVvgLs+Fn6fJUvIGTsuu1ZcCf11fiEubah0ttpca4ntM sha384-6V1/AdqZRWk1KAlWbKBlGhN7VG4iE/yAZcO6NZPMF8od0vukrvr0tg4qY6NSrItx" crossorigin="anonymous"></script>
 
 <script type="application/javascript">define('jquery', [],function() {return window.jQuery;})</script>
 
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../flux-bunny-style.css">
-<meta property="og:title" content="Rebecca Jennifer Rashkin">
-<meta property="og:description" content="Software engineer and educator focused on clean code, clear documentation, and workflow efficiency.">
+<meta property="og:title" content="Computer Systems and Assembly Language – Rebecca Jennifer Rashkin">
+<meta property="og:description" content="Discover the magic of ones and zeros.">
 <meta property="og:image" content="https://rebeccajennifer.com/education/comp-org/assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
-<meta property="og:image:alt" content="Line art image of lop rabbit sitting in the grass.">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -109,25 +168,10 @@ ul.task-list li input[type="checkbox"] {
     <a class="nav-link" href="../../reference/index.html"> 
 <span class="menu-text">Reference</span></a>
   </li>  
-  <li class="nav-item dropdown ">
-    <a class="nav-link dropdown-toggle" href="#" id="nav-menu-teaching" role="link" data-bs-toggle="dropdown" aria-expanded="false">
- <span class="menu-text">Teaching</span>
-    </a>
-    <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
-        <li>
-    <a class="dropdown-item" href="../../education/how-to-learn.html">
- <span class="dropdown-text">How to Learn</span></a>
+  <li class="nav-item">
+    <a class="nav-link active" href="../../education/comp-org/index.html" aria-current="page"> 
+<span class="menu-text">Teaching</span></a>
   </li>  
-        <li>
-    <a class="dropdown-item" href="../../education/comp-org/index.html">
- <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
-  </li>  
-        <li>
-    <a class="dropdown-item" href="../../education/comp-org/worksheet-answers.html">
- <span class="dropdown-text">How to View Worksheet Answers</span></a>
-  </li>  
-    </ul>
-  </li>
   <li class="nav-item">
     <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
@@ -174,8 +218,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../education/comp-org/worksheet-answers.html" class="sidebar-item-text sidebar-link">
+  <a href="../../education/comp-org/sample-exams__comp-org.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Sample Exams</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../education/comp-org/links__comp-org.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Helpful Links</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../education/comp-org/worksheet-answers__comp-org.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Spoiler Alert!</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../education/comp-org/how-to-learn.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How To Learn Anything</span></a>
   </div>
 </li>
       </ul>
@@ -195,32 +257,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#spoiler-alert" id="toc-spoiler-alert" class="nav-link" data-scroll-target="#spoiler-alert">Spoiler Alert!</a></li>
   </ul></li>
   <li><a href="#extra-credit" id="toc-extra-credit" class="nav-link" data-scroll-target="#extra-credit">Extra Credit</a></li>
-  <li><a href="#sample-exams" id="toc-sample-exams" class="nav-link" data-scroll-target="#sample-exams">Sample Exams</a>
-  <ul>
-  <li><a href="#midterms" id="toc-midterms" class="nav-link" data-scroll-target="#midterms">Midterms</a></li>
-  <li><a href="#finals" id="toc-finals" class="nav-link" data-scroll-target="#finals">Finals</a></li>
-  </ul></li>
-  <li><a href="#resources" id="toc-resources" class="nav-link" data-scroll-target="#resources">Resources</a>
-  <ul>
-  <li><a href="#course-related" id="toc-course-related" class="nav-link" data-scroll-target="#course-related">Course Related</a></li>
-  <li><a href="#reference-tables" id="toc-reference-tables" class="nav-link" data-scroll-target="#reference-tables">Reference Tables</a></li>
-  <li><a href="#git" id="toc-git" class="nav-link" data-scroll-target="#git">Git</a>
-  <ul>
-  <li><a href="#tutorials" id="toc-tutorials" class="nav-link" data-scroll-target="#tutorials">Tutorials</a></li>
-  </ul></li>
-  <li><a href="#command-line-interface" id="toc-command-line-interface" class="nav-link" data-scroll-target="#command-line-interface">Command Line Interface</a>
-  <ul>
-  <li><a href="#videos" id="toc-videos" class="nav-link" data-scroll-target="#videos">Videos</a></li>
-  <li><a href="#command-line-text-editor-references" id="toc-command-line-text-editor-references" class="nav-link" data-scroll-target="#command-line-text-editor-references">Command Line Text Editor References</a></li>
-  </ul></li>
-  <li><a href="#lab-applications" id="toc-lab-applications" class="nav-link" data-scroll-target="#lab-applications">Lab Applications</a>
-  <ul>
-  <li><a href="#mars-mips-assembler-and-runtime-simulator" id="toc-mars-mips-assembler-and-runtime-simulator" class="nav-link" data-scroll-target="#mars-mips-assembler-and-runtime-simulator">MARS: MIPS Assembler and Runtime Simulator</a></li>
-  <li><a href="#multimedia-logic" id="toc-multimedia-logic" class="nav-link" data-scroll-target="#multimedia-logic">Multimedia Logic</a></li>
-  </ul></li>
-  <li><a href="#video-playlists" id="toc-video-playlists" class="nav-link" data-scroll-target="#video-playlists">Video Playlists</a></li>
-  <li><a href="#fun-stuff" id="toc-fun-stuff" class="nav-link" data-scroll-target="#fun-stuff">Fun Stuff</a></li>
-  </ul></li>
+  <li><a href="#more-resources" id="toc-more-resources" class="nav-link" data-scroll-target="#more-resources">More Resources</a></li>
   </ul>
 </nav>
     </div>
@@ -300,7 +337,7 @@ handout-title {
 <h2 class="anchored" data-anchor-id="worksheets">Worksheets</h2>
 <p>I teach Computer Systems and Assembly language using fill-in-the-blank worksheets that I’ve designed. Students who manually write out notes are more likely to retain information presented in class over students who type notes.</p>
 <p>These worksheets allow students to handwrite notes and maintain better engagement in class, rather than losing focus by copying slides. I include examples for students to work out both during lecture with their classmates, and outside of class.</p>
-<div id="610b2cc2" class="cell" data-execution_count="1">
+<div id="91822d72" class="cell" data-execution_count="1">
 <div class="cell-output cell-output-display">
 
 <details><summary class="handout-title">Notes  0: Intro To Computing Systems</summary>
@@ -478,13 +515,13 @@ handout-title {
 <h3 class="anchored" data-anchor-id="spoiler-alert">Spoiler Alert!</h3>
 How do I see the answers?
 <p>
-<a class="flux-button _1" href="../../education/comp-org/worksheet-answers.html">Here You Go!</a>
+<a class="flux-button _1" href="worksheet-answers.qmd">Here You Go!</a>
 </p>
 </section>
 </section>
 <section id="extra-credit" class="level2">
 <h2 class="anchored" data-anchor-id="extra-credit">Extra Credit</h2>
-<div id="4aa38435" class="cell" data-execution_count="2">
+<div id="e811bc48" class="cell" data-execution_count="2">
 <div class="cell-output cell-output-display">
 
 <!--details><summary class="handout-title">Computer Archeology</summary-->
@@ -525,83 +562,100 @@ How do I see the answers?
 </div>
 </div>
 </section>
-<section id="sample-exams" class="level2">
-<h2 class="anchored" data-anchor-id="sample-exams">Sample Exams</h2>
-<section id="midterms" class="level3">
-<h3 class="anchored" data-anchor-id="midterms">Midterms</h3>
-<p><a href="comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q4_fa_midterm_solution_ce12.pdf">Fall 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q3_su_midterm_ce12.pdf">Summer 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q2_sp_midterm_ce12.pdf">Spring 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/19q1_wi_midterm_ce12.pdf">Winter 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/18q4_fa_midterm_ce12.pdf">Fall 2018</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/midterms__comp-org/18q3_su_midterm_ce12.pdf">Summer 2018</a></p>
-</section>
-<section id="finals" class="level3">
-<h3 class="anchored" data-anchor-id="finals">Finals</h3>
-<p><a href="comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q4_fa_final_ce12.pdf">Fall 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q3_su_final_ce12.pdf">Summer 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q2_sp_final_ce12.pdf">Spring 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/19q1_wi_final_ce12.pdf">Winter 2019</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q4_fa_final_ce12.pdf">Fall 2018</a> <a href="comp-org-assets/pdf/sample-exams__comp-org/finals__comp-org/18q3_su_final_ce12.pdf">Summer 2018</a></p>
-</section>
-</section>
-<section id="resources" class="level2">
-<h2 class="anchored" data-anchor-id="resources">Resources</h2>
-<section id="course-related" class="level3">
-<h3 class="anchored" data-anchor-id="course-related">Course Related</h3>
-<p><a href="comp-org-assets/pdf/general__comp-org/syllabus_ce12.pdf">Syllabus</a></p>
-<p><a href="comp-org-assets/pdf/general__comp-org/documentation_standards_ce12.pdf">Documentation standards</a></p>
-<p><a href="https://www.youtube.com/playlist?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R">Course reference playlist</a></p>
-</section>
-<section id="reference-tables" class="level3">
-<h3 class="anchored" data-anchor-id="reference-tables">Reference Tables</h3>
-<p><a href="comp-org-assets/pdf/reference__comp-org/mips-instructions-reference-table.pdf">MIPS Instructions</a></p>
-<p><a href="comp-org-assets/pdf/reference__comp-org/mips-instruction-format.pdf">MIPS Instruction Format</a></p>
-<p><a href="comp-org-assets/pdf/reference__comp-org/printable-ascii-characters.pdf">Printable ASCII Characters</a></p>
-</section>
-<section id="git" class="level3">
-<h3 class="anchored" data-anchor-id="git">Git</h3>
-<p><a href="https://www.youtube.com/watch?v=SWYqp7iY_Tc&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=7">Video references</a> <a href="https://git-scm.com/docs">Git documentation</a></p>
-<section id="tutorials" class="level4">
-<h4 class="anchored" data-anchor-id="tutorials">Tutorials</h4>
-<p><a href="https://gitimmersion.com/">Git Immersion</a> <a href="https://learngitbranching.js.org/">Learn Git Branching</a></p>
-</section>
-</section>
-<section id="command-line-interface" class="level3">
-<h3 class="anchored" data-anchor-id="command-line-interface">Command Line Interface</h3>
-<section id="videos" class="level4">
-<h4 class="anchored" data-anchor-id="videos">Videos</h4>
-<p><a href="https://www.youtube.com/watch?v=x73WTEltyHU&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=5">BASH Basics</a> <a href="https://www.youtube.com/watch?v=5XgBd6rjuDQ&amp;list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&amp;index=4">Terminal Basics for Beginners</a></p>
-</section>
-<section id="command-line-text-editor-references" class="level4">
-<h4 class="anchored" data-anchor-id="command-line-text-editor-references">Command Line Text Editor References</h4>
-<p><a href="http://tnerual.eriogerg.free.fr/vimqrc.pdf">Vim</a> <a href="https://www.gnu.org/software/emacs/refcards/pdf/refcard.pdf">Emacs</a></p>
-</section>
-</section>
-<section id="lab-applications" class="level3">
-<h3 class="anchored" data-anchor-id="lab-applications">Lab Applications</h3>
-<section id="mars-mips-assembler-and-runtime-simulator" class="level4">
-<h4 class="anchored" data-anchor-id="mars-mips-assembler-and-runtime-simulator">MARS: MIPS Assembler and Runtime Simulator</h4>
-<p><a href="https://computerscience.missouristate.edu/mars-mips-simulator.htm">MARS homepage</a></p>
-<p><a href="https://www.youtube.com/watch?v=u5Foo6mmW0I&amp;list=PL5b07qlmA3P6zUdDf-o97ddfpvPFuNa5A">Video tutorials</a></p>
-</section>
-<section id="multimedia-logic" class="level4">
-<h4 class="anchored" data-anchor-id="multimedia-logic">Multimedia Logic</h4>
-<p><a href="https://www.softronix.com/logic.html">Multimedia Logic homepage</a></p>
-<p><a href="comp-org-assets/pdf/reference__comp-org/mml_mac_installation.pdf">Mac installation tutorial</a></p>
-</section>
-</section>
-<section id="video-playlists" class="level3">
-<h3 class="anchored" data-anchor-id="video-playlists">Video Playlists</h3>
-<p><a href="https://www.youtube.com/playlist?list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R">Course reference playlist</a></p>
-<p><a href="https://www.youtube.com/watch?v=Tus1Tjhnd2w&amp;list=PLA8F3EE4391DF4D0A">Digital Logic and Computer Organization: EngMicroLectures</a></p>
-<p><a href="https://www.youtube.com/watch?v=h4prlOPOpNQ&amp;list=PLgBlB7BVKQmg__8dTZOkHBSj4WDRgZ4vX&amp;index=2">Computer Organisation &amp; Architecture: Semesters Simplified</a></p>
-<p><a href="https://www.youtube.com/watch?v=PlavjNH_RRU&amp;list=PLylNWPMX1lPlmEeeMdbEFQo20eHAJL8hx">MIPS Instruction Set Architecture 1: David Black-Schaffer</a></p>
-<p><a href="https://www.youtube.com/playlist?list=PLylNWPMX1lPnipZzKdCWRj2-un5xvLLdK">MIPS Instruction Set Architecture 2: David Black-Schaffer</a></p>
-</section>
-<section id="fun-stuff" class="level3">
-<h3 class="anchored" data-anchor-id="fun-stuff">Fun Stuff</h3>
-<p><a href="https://www.zachtronics.com/tis-100/">TIS-100: assembly language video game</a></p>
-<p><a href="https://gmb.io/method/">Skills based training</a></p>
-<p><a href="https://arrl.org">American Amateur Radio League (ARRL)</a></p>
-<p><a href="https://mynoise.net/NoiseMachines/greyNoiseGenerator.php">Perceptual Noise Generator</a></p>
+<section id="more-resources" class="level2">
+<h2 class="anchored" data-anchor-id="more-resources">More Resources</h2>
+
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1766858784369" data-listing-reading-time-sort="4" data-listing-word-count-sort="743">
+<a href="../../education/comp-org/sample-exams__comp-org.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../education/comp-org/comp-org-assets/img/exam-thumb.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Sample Exams
+</h5>
+<div class="card-text listing-description delink">
+<p>Master these problems to ensure exam success.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1766859418125" data-listing-reading-time-sort="5" data-listing-word-count-sort="808">
+<a href="../../education/comp-org/links__comp-org.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../education/comp-org/comp-org-assets/img/vim-adventures.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Helpful Links
+</h5>
+<div class="card-text listing-description delink">
+<p>Fun and useful links to supplement your learning.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1766859142764" data-listing-reading-time-sort="5" data-listing-word-count-sort="862">
+<a href="../../education/comp-org/worksheet-answers__comp-org.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="comp-org-assets/img/display-wksht-answers/display-wksht-answers-step1.png" alt="Google Docs screenshot of file menu -> make a copy." style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Spoiler Alert!
+</h5>
+<div class="card-text listing-description delink">
+<p>Unlock the secret to viewing the worksheet answers.</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1766859208225" data-listing-reading-time-sort="6" data-listing-word-count-sort="1081">
+<a href="../../education/comp-org/how-to-learn.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../education/comp-org/comp-org-assets/img/glockenspiel.JPG" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+How To Learn Anything
+</h5>
+<div class="card-text listing-description delink">
+Learning something new can feel impossible at times. This page offers a clear set of steps to help you start learning something new or move forward in a skill you’re already…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
