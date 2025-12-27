@@ -38,6 +38,8 @@ project:
 website:
   title: "Rebecca Jennifer Rashkin"
   favicon: assets/icons/rabbit-face.png
+  open-graph:
+    image: assets/photos-general-assets/flux-grass-line-art-black-square.png
   navbar:
     right:
       - text: "Projects"
