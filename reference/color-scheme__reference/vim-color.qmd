@@ -1,3 +1,8 @@
+---
+title: Vim Color Scheme
+subtitle: Syntax highlighting in Vim.
+image: ./images__color-scheme-reference/vim-color-screenshot.png
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,11 +30,6 @@
 <!--DESCRIPTION
 |   Reference page for vim color scheme related information.
 |____________________________________________________________________-->
-
----
-title: Vim Color Scheme
-subtitle: Syntax highlighting in Vim.
----
 
 This page includes information about color schemes in Vim. Vim color schemes use the extension `.vim`.
 
@@ -107,4 +107,3 @@ Highlight Group | Description
 `Search`        | Matches from `/search`
 `IncSearch`     | Incremental search matches
 `MatchParen`    | Matching parentheses
-

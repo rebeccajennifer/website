@@ -1,3 +1,10 @@
+---
+title: LS_COLORS & dircolors
+subtitle: Customize file type highlights for the ls command.
+toc: true
+toc-depth: 6
+order: 3
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -26,16 +33,9 @@
 |   Reference page for LS_COLORS and dircolors
 |____________________________________________________________________-->
 
----
-title: LS_COLORS & dircolors
-subtitle: Customize file type highlights for the ls command.
-toc: true
-toc-depth: 6
----
-
 The shell environment variable `LS_COLORS` is used to define the colors displayed when listing file types with the `ls` command. It is configured via the `dircolors` command, which typically runs during your shell's startup.
 
-![](images__color-theme-reference/dircolors-sample-header.png)
+![](images__color-scheme-reference/dircolors-sample-header.png)
 
 There are two ways to modify the file type display colors, i.e. the `LS_COLORS` environment variable:
 
@@ -142,7 +142,7 @@ Any modifications made to `.dircolors-mod` will be reflected in `LS_COLORS`. To 
 
    The file named `.randomfiletype` should be displayed in the color magenta, or whatever you have ANSI color 5 set to. See [this page](./ansi-color-explained.qmd) for more information about ANSI color codes.
 
-   ![](images__color-theme-reference/dircolors-sample.png)
+   ![](images__color-scheme-reference/dircolors-sample.png)
 
 ## Set `LS_COLORS` Directly
 
@@ -211,6 +211,6 @@ Code | Color
 
 `tmux` is a terminal multiplexer that allows you to create and manage multiple panes within a single window. It's a neat way to streamline your workflow.
 
-![](./images__color-theme-reference/tmux-screenshot.png)
+![](./images__color-scheme-reference/tmux-screenshot.png)
 
 Using `tmux` can affect your environment, particularly how colors are displayed. You may need to set the `TERM` environment variable explicitly to ensure colors render correctly. See [this page](./term-env-var.qmd) for more information.

@@ -26,42 +26,13 @@
 /*  CSS Stylesheet for website.
 /*____________________________________________________________________*/
 
+@import "flux-bunny-colors.css";
+
 /*--------------------------------------------------------------------*/
 /* CONSTANTS
 /*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
-/* Dark theme - colors become active when moon icon selected
-/*--------------------------------------------------------------------*/
-:root.dark-mode
-{
-  --flux-color-1      : #af87af;
-  --flux-color-2      : #5fafaf;
-  --flux-color-3      : #0087af;
-
-  --flux-bg-norm      : #262626;
-  --flux-bg-bold      : #303030;
-  --flux-fg-norm      : #eeeeee;
-  --flux-fg-lite      : #afafaf;
-}
-
 :root
 {
-
-  /*------------------------------------------------------------------*/
-  /* Light theme, default
-  /*------------------------------------------------------------------*/
-  --flux-color-1      : #874787;
-  --flux-color-2      : #478787;
-  --flux-color-3      : #475f87;
-
-  --flux-bg-norm      : #eeeeee;
-  --flux-bg-bold      : #d7d7d7;
-  --flux-fg-norm      : #262626;
-  --flux-fg-lite      : #5f5f5f;
-  /*------------------------------------------------------------------*/
-
-  --flux-wht---7      : #eeeeee;
-
   /*------------------------------------------------------------------*/
   /* Dimensions
   /*------------------------------------------------------------------*/
@@ -95,7 +66,7 @@
   --font-fam-header   : 'DIN Neuzeit Grotesk', 'Trebuchet MS';
   --font-fam-normal   : 'Consolas', monospace;
 
-  --button_txt_size   : 20px;
+  --button-txt-size   : 20px;
 }
 
 body
@@ -148,7 +119,7 @@ h1
 .site-subtitle
 {
   font-size       : var(--size-h4);
-  color           : var(--flux-fg-lite);
+  color           : var(--flux-fg-mute);
   font-family     : var(--font-fam-header);
   text-align      : center;
   border          : none;
@@ -167,7 +138,7 @@ h2
 h3
 {
   font-size     : var(--size-h3);
-  color         : var(--flux-fg-lite);
+  color         : var(--flux-fg-mute);
   padding-top   : var(--content-padding);
   border-top    : var(--h3-border);
   font-variant  : small-caps;
@@ -192,7 +163,7 @@ h5
 #toc-title
 {
   font-family   : var(--font-fam-header);
-  color         : var(--flux-fg-lite);
+  color         : var(--flux-fg-mute);
   font-variant  : small-caps;
   border-top    : none;
   font-size     : var(--size-h4);
@@ -201,7 +172,7 @@ h5
 #quarto-margin-sidebar #TOC
 {
   padding           : var(--content-padding);
-  color             : var(--flux-fg-lite);
+  color             : var(--flux-fg-mute);
   background-color  : var(--flux-bg-bold);
 }
 
@@ -242,26 +213,6 @@ h5
 }
 
 /*--------------------------------------------------------------------*/
-/* TESTING
-/*--------------------------------------------------------------------*/
-
-/* Hide the TOC title globally
-#quarto-toc-heading {
-  display: none !important;
-}
-
-/* Hide the TOC content/borders but keep the space occupied
-#TOC {
-  visibility: hidden !important;
-  border: none !important;
-}
-
-/*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
-/*--------------------------------------------------------------------*/
-
-/*--------------------------------------------------------------------*/
 /* PAGE NAVIGATION SIDEBAR
 /*--------------------------------------------------------------------*/
 #quarto-sidebar
@@ -273,7 +224,7 @@ h5
 
 #quarto-sidebar div
 {
-  color         : var(--flux-fg-lite);
+  color         : var(--flux-fg-mute);
 }
 
 #quarto-sidebar .active
@@ -314,7 +265,7 @@ main .level2:first-of-type h2{
 .quarto-title p
 {
   font-size       : var(--size-h4);
-  color           : var(--flux-fg-lite);
+  color           : var(--flux-fg-mute);
   font-family     : var(--font-fam-header);
 }
 
@@ -458,7 +409,7 @@ input
 .aa-Form.d-flex
 {
   background-color  : var(--flux-bg-bold);
-  border            : 1px solid var(--flux-fg-lite);
+  border            : 1px solid var(--flux-fg-mute);
 }
 /*--------------------------------------------------------------------*/
 /* Icon colors
@@ -490,7 +441,7 @@ input
 .dropdown-menu
 {
   font-family       : var(--font-fam-normal);
-  background-color  : #0087af;
+  background-color  : var(--flux-color-2);
 }
 
 .dropdown-item:hover
@@ -534,18 +485,18 @@ input
 
 .flux-button:visited { color: var(--flux_button_txt); }
 
-.flux-button._0
+.flux-button._1
 {
   background-color  : var(--flux-color-1);
 }
 
-.flux-button._2
+.flux-button._3
 {
   background-color  : var(--flux-color-3);
   font-size         : var(--size-h3);
 }
 
-.flux-button._1
+.flux-button._2
 {
   background-color  : var(--flux-color-2);
   font-size         : var(--size-h3);
@@ -560,7 +511,7 @@ input
 .flux-button:active
 {
   color             : var(--flux-bg-norm);
-  background-color  : var(--flux-fg-lite);
+  background-color  : var(--flux-fg-mute);
 }
 
 /* Hyperlinks */
@@ -576,14 +527,14 @@ a:visited { color        : var(--flux-color-1); }
 /* Inline Code Blocks */
 code
 {
-  color             : var(--flux-fg-norm) !important;
-  background-color  : var(--flux-bg-bold) !important;
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
 }
 
-div.sourceCode code, pre
+.sourceCode, code, .code-with-copy
 {
-  background-color  : var(--flux-bg-bold);
-  border-radius     : 0px;
+  border-radius     : 0 !important;                       /* ! needed */
+  border            : none !important;                    /* ! needed */
+  background-color  : var(--flux-bg-bold)!important;      /* ! needed */
 }
 
 /*--------------------------------------------------------------------*/
@@ -593,7 +544,7 @@ div.sourceCode code, pre
 /* Header for drop down */
 details summary
 {
-  color           : var(--flux-fg-lite);
+  color           : var(--flux-fg-mute);
   cursor          : pointer;
   display         : list-item;  /* Restores triangle behavior */
   margin-top      : 0.5em;
@@ -601,7 +552,7 @@ details summary
 
 details summary:hover
 {
-  color           : var(--flux-fg-lite);
+  color           : var(--flux-fg-mute);
 }
 
 /* Style when drop down is open */
@@ -643,7 +594,7 @@ details {
 /* Navigation bar for blog entry */
 nav.quarto-page-breadcrumbs a
 {
-  color             : var(--flux-fg-lite) !important;     /* ! needed */
+  color             : var(--flux-fg-mute) !important;     /* ! needed */
   font-size         : var(--size-small);
 }
 
@@ -655,7 +606,7 @@ ol a:hover
 /* Before symbol in breadcrumb, i.e., the " > " */
 ol .breadcrumb-item::before
 {
-  color             : var(--flux-fg-lite) !important;     /* ! needed */
+  color             : var(--flux-fg-mute) !important;     /* ! needed */
 }
 
 #title-block-header ol.breadcrumb
@@ -708,25 +659,6 @@ ol .breadcrumb-item::before
   padding: 0px;
 }
 
-/*
-.quarto-title-meta
-{
-  display: none !important;
-}
-
-#title-block-header
-{
-  margin-bottom: 0;
-}
-
-#quarto-sidebar
-{
-  top: 0;
-  margin-top: 0;
-  position: sticky;
-}
-*/
-
 /*--------------------------------------------------------------------*/
 /* IMAGES
 /*--------------------------------------------------------------------*/
@@ -762,7 +694,7 @@ img.plain
 figcaption
 {
   font-size         : var(--size-base);
-  color             : var(--flux-fg-lite);
+  color             : var(--flux-fg-mute);
   text-align        : left;
   margin-top        : 5px;
   font-style        : italic;

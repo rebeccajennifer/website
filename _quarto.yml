@@ -38,13 +38,15 @@ project:
 website:
   title: "Rebecca Jennifer Rashkin"
   favicon: assets/icons/rabbit-face.png
+  open-graph:
+    image: assets/photos-general-assets/flux-grass-line-art-black-square.png
   navbar:
     right:
       - text: "Projects"
         href: projects/index.qmd
 
       - text: "Reference"
-        href: reference/color-theme__reference/index.qmd
+        href: reference/index.qmd
 
       - text: "Teaching"
         menu:
@@ -92,10 +94,11 @@ website:
 
 format:
   html:
-    css               : flux-bunny.css
+    css               : flux-bunny-style.css
     code-fold         : true
     toc-title         : "Table of Contents"
     include-after-body: assets/ui-elements/footer.html
+    highlight-style   : none
 
     # Always allow space for TOC so pages that have TOC don't shift
     toc: true

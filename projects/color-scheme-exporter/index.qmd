@@ -1,3 +1,10 @@
+---
+title: Color Scheme Exporter
+subtitle: Synchronize your development aesthetic.
+toc: true
+toc-depth: 6
+order: 2
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -26,13 +33,6 @@
 |   About Color Scheme Exporter.
 |____________________________________________________________________-->
 
----
-title: Color Scheme Exporter
-subtitle: Synchronize your development aesthetic.
-toc: true
-toc-depth: 6
----
-
 ![](./color-scheme-exporter-screenshot.png){.plain}
 
 __Color Scheme Exporter__ is a utility designed to synchronize your visual experience across various terminal and development environments. By defining a standard ANSI 16-color palette in a single JSON source, users can instantly generate color configuration files for various terminal emulators, including GNOME Terminal and Cygwin.
@@ -40,7 +40,7 @@ __Color Scheme Exporter__ is a utility designed to synchronize your visual exper
 As a software engineer, I frequently find myself developing in numerous terminal environments and want to maintain a unified color experience. I built this tool to eliminate the manual effort of redundant configuration and ensure visual consistency no matter which terminal I’m using.
 
 
-<a class="flux-button _2" href="https://github.com/rebeccajennifer/color-scheme-exporter">Source Code</a>
+<a class="flux-button _3" href="https://github.com/rebeccajennifer/color-scheme-exporter">Source Code</a>
 
 ---
 
@@ -98,7 +98,7 @@ This section describes how to use the output file(s) produced by this utility.
 
 ### GNOME
 
-Follow instructions [here](../../reference/color-theme__reference/gnome-terminal-color.qmd) for how to invoke a GNOME color scheme.
+Follow instructions [here](../../reference/color-scheme__reference/gnome-terminal-color.qmd) for how to invoke a GNOME color scheme.
 
 ### Mintty / Cygwin
 

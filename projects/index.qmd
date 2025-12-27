@@ -1,4 +1,9 @@
-
+---
+title: Projects
+subtitle: Beyond the professional scope
+sidebar: True
+order: 0
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -27,16 +32,12 @@
 |   This page lists my personal projects
 |____________________________________________________________________-->
 
----
-title: Projects
-subtitle: Beyond the professional scope
-sidebar: True
----
 
 <style>
 h2    { margin-top: 0; }
 h2 a  { color: inherit; text-decoration: inherit; font-weight: inherit;}
-img   { margin-top: 1em;}
+img   { margin-top: 1em; }
+.grid { align-items: center; }
 
 /* On desktop only */
 @media (min-width: 768px)
@@ -46,7 +47,7 @@ img   { margin-top: 1em;}
     margin-top: 2rem;
   }
 
-  /*Some rows are flipped for desktop*/
+  /* Some rows are flipped for desktop*/
   .project-grid-flipped
   {
     display         : flex;
@@ -59,6 +60,10 @@ img   { margin-top: 1em;}
   object-fit    : cover;
 }
 
+a.flux-button._3.source-code::after
+{
+  content       : "Source Code";
+}
 
 </style>
 
@@ -72,6 +77,8 @@ The projects I build are an expression of my values and a source of fulfillment.
 Tell time with color. An immersive art installation that transforms time passage into a light spectrum. A decade-long journey from initial concept to final deployment.
 
 **Developed in C++ using the Arduino Command Line Interface.**
+
+<a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
 [![](./color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0-square__color-clock.jpg){.img-fluid .plain}](/projects/color-clock/index.qmd)
@@ -84,12 +91,13 @@ Tell time with color. An immersive art installation that transforms time passage
 A paper-based system for personal growth, providing the structure needed to align your daily actions with your long-term identity.
 
 **Developed in Python using the svgwrite library.**
+
+<a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
 [![](./the-book-of-plans/images__the-book-of-plans/daily-log-thumb-square.png)](./the-book-of-plans/index.qmd)
 :::
 :::
-
 
 ::: {.grid}
 ::: {.g-col-12 .g-col-md-8}
@@ -97,6 +105,8 @@ A paper-based system for personal growth, providing the structure needed to alig
 A utility for generating consistent color schemes across various terminal emulators, designed to bring a unified aesthetic and creative joy to your development environment.
 
 **Developed in Python.**
+
+<a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/color-scheme-exporter"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
 [![](./color-scheme-exporter/color-scheme-exporter-screenshot-square.png)](/projects/color-scheme-exporter/index.qmd)
@@ -109,10 +119,11 @@ A utility for generating consistent color schemes across various terminal emulat
 A digital home for my projects and resources. An open notebook for my technical work and a collection of notes for my future self that I hope others find useful, too.
 
 **Developed with the Quarto publishing framework.**
+
+<a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/website"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
 [![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only .plain}](/index.qmd)
 [![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only .plain}](/index.qmd)
 :::
-
 :::

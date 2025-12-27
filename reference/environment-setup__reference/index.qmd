@@ -1,3 +1,13 @@
+---
+title: New Environment Setup
+subtitle: My approach to setting up a new development environment
+image: ./images__env-setup/vs-code-settings-screenshot-thumb.png
+order: 0
+
+listing:
+  contents: ./
+  type: grid
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -23,38 +33,13 @@
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Reference page for color scheme related information.
+|   My new environment setup.
 |____________________________________________________________________-->
 
----
-title: Color Scheme Reference
-subtitle: Bring joy into your environment.
----
+I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my workspace settings, I’ve compiled these pages as a resource for my standard applications and a guide on configuring tools like Git and Visual Studio Code.
 
-{{< include ../../assets/ui-elements/flux-bunny-dark-colors.html >}}
+This repository contains the 'dotfiles' and configuration files I use for various applications.
 
-Color brings me joy, and integrating color into my development
-environment brings an extra level of satisfaction to coding.
+<a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files">Setup Files Repository</a>
 
-This set of pages is a collection of resources I've created in my
-efforts to unify color schemes across multiple terminal and coding
-environments.
-
-
-## General Information
-
-[ANSI 256 Color Table](./ansi256-colors.qmd)
-
-[ANSI Codes Explained](./ansi-color-explained.qmd)
-
-[LS_COLORS & dircolors](./ls-colors.qmd)
-
-[TERM Environment Variable](./term-env-var.qmd)
-
-## Implement Terminal Color Schemes
-
-[GNOME Color Profile](./gnome-terminal-color.qmd)
-
-[VS Code Color Theme](./vscode-color.qmd)
-
-[Vim Color Scheme](./vim-color.qmd)
+## Reference Material

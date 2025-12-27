@@ -1,3 +1,11 @@
+---
+title: ANSI Color Codes Explained
+subtitle: ANSI 256? ANSI 16? 24-Bit Color?
+image: ./images__color-scheme-reference/ansi016-color-square.png
+toc: true
+toc-depth: 6
+order: 0
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -26,20 +34,11 @@
 |   Reference page for information about ANSI colors.
 |____________________________________________________________________-->
 
----
-title: ANSI Color Codes Explained
-subtitle: ANSI 256? ANSI 16? 24-Bit Color?
-toc: true
-toc-depth: 6
----
-
 ANSI color codes, as used in terminals, can be categorized into three main types:
 
 1. 16 colors
 2. 256 colors
 3. 24-bit true colors
-
-
 
 ## ANSI 16 Color Codes (Standard Colors)
 

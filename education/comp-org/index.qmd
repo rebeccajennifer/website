@@ -1,3 +1,11 @@
+---
+title: Computer Systems and Assembly Language
+subtitle: >
+  Discover the magic of ones and zeros.
+toc: true
+toc-depth: 6
+order: 2
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,14 +33,6 @@
 <!--DESCRIPTION
 |   Course website for Computer Systems and Assembly Language
 |____________________________________________________________________-->
-
----
-title: Computer Systems and Assembly Language
-subtitle: >
-  Discover the magic of ones and zeros.
-toc: true
-toc-depth: 6
----
 
 <style>
 .flux-button
@@ -313,8 +313,8 @@ for r in rows:
 <details><summary class="handout-title">{r['heading']}</summary>
   <p>{r['desc']}</p>
   <div>
-    <a  class="flux-button _0" href="{r['worksheet']}">Google Doc </a>
-    <a  class="flux-button _0" href="{r['pdf']}">      PDF        </a>
+    <a  class="flux-button _1" href="{r['worksheet']}">Google Doc </a>
+    <a  class="flux-button _1" href="{r['pdf']}">      PDF        </a>
   </div>
   {supplement_list}
   <br>
@@ -328,7 +328,7 @@ display(HTML("".join(html_parts)))
 ### Spoiler Alert!
 
 How do I see the answers?
-<p><a  class="flux-button _0" href="worksheet-answers.qmd">Here You Go!</a></p>
+<p><a  class="flux-button _1" href="worksheet-answers.qmd">Here You Go!</a></p>
 
 ## Extra Credit
 
@@ -378,8 +378,8 @@ for assignment in extra_credit:
 <details><summary>{assignment['name']}</summary>
   <p>{assignment['desc']}</p>
   <div>
-    <a  class="flux-button _0" href="{assignment['gdoc']}">Google Doc</a>
-    <a  class="flux-button _0" href="{assignment['pdf']}"> PDF       </a>
+    <a  class="flux-button _1" href="{assignment['gdoc']}">Google Doc</a>
+    <a  class="flux-button _1" href="{assignment['pdf']}"> PDF       </a>
   </div>
 </details>
 """)
