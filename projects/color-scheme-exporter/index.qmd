@@ -98,7 +98,7 @@ This section describes how to use the output file(s) produced by this utility.
 
 ### GNOME
 
-Follow instructions [here](../../reference/color-theme__reference/gnome-terminal-color.qmd) for how to invoke a GNOME color scheme.
+Follow instructions [here](../../reference/color-scheme__reference/gnome-terminal-color.qmd) for how to invoke a GNOME color scheme.
 
 ### Mintty / Cygwin
 

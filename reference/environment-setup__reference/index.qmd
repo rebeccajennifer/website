@@ -39,3 +39,9 @@ listing:
 |____________________________________________________________________-->
 
 I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my setup, I’ve compiled these pages as a resource for my standard applications and a guide on how to create configuration settings for tools like Git and Visual Studio Code.
+
+This repository contains the 'dotfiles' and configuration files I use for various applications.
+
+<a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files">Setup Files Repository</a>
+
+## Reference Material

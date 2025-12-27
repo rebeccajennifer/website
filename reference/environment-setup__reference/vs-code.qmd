@@ -45,7 +45,7 @@ OS      | Path
 Unix    | `/home/<user-name>/.config/Code/User/settings.json`
 Windows | `C:\\Users\<user-name>\\AppData\\Roaming\\Code\\User\\settings.json`
 
-Access my `settings.json` and custom color theme below. If you need help with color theme installation, see  [this page](/reference/color-theme__reference/vscode-color.qmd).
+Access my `settings.json` and custom color theme below. If you need help with color theme installation, see  [this page](/reference/color-scheme__reference/vscode-color.qmd).
 
 <a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/settings.json">settings.json</a>
 <a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes">Original Color Scheme</a>
