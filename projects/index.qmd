@@ -1,3 +1,9 @@
+---
+title: Projects
+subtitle: Beyond the professional scope
+sidebar: True
+order: 0
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -26,11 +32,6 @@
 |   This page lists my personal projects
 |____________________________________________________________________-->
 
----
-title: Projects
-subtitle: Beyond the professional scope
-sidebar: True
----
 
 <style>
 h2    { margin-top: 0; }

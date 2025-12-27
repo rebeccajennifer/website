@@ -1,3 +1,9 @@
+---
+title: PuTTY Configuration
+image: ./images__env-setup/putty-config-0-session-0.png
+toc: true
+toc-depth: 6
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,12 +31,6 @@
 <!--DESCRIPTION
 |   Reference page for PuTTY configuration
 |____________________________________________________________________-->
-
----
-title: PuTTY Configuration
-toc: true
-toc-depth: 6
----
 
 This page describes how to access a configuration file for a saved PuTTY session. Each saved session is saved in a `*.reg` file and can be imported or exported through the Windows `Registry Editor`.
 

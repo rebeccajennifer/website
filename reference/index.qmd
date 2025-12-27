@@ -4,7 +4,7 @@ subtitle: Notes to my future self
 listing:
   contents: ./*/index.qmd
   type: grid
-order: 0
+order: 1
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
@@ -34,4 +34,4 @@ order: 0
 |   List of references
 |____________________________________________________________________-->
 
-This set of pages includes research-based references I have developed for unifying development environments, streamlining setup, and documenting various software tools.
+This set of pages includes references I have developed for unifying development environments, streamlining setup, and documenting various software tools.

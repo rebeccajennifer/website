@@ -1,3 +1,11 @@
+---
+listing:
+  contents:
+    - ./reference/index.qmd
+    - ./projects/index.qmd
+    - ./education/comp-org/index.qmd
+  type: grid
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -143,3 +151,5 @@ I’m a software engineer who values clean code, workflow efficiency, and clear 
 ## About This Site
 
 This site is a practical demonstration of my passion for documentation and knowledge sharing. Built with the Markdown based framework [Quarto](https://quarto.org), it serves as a portfolio and a collection of resources. But really, it’s mostly a set of notes for my future self that I hope others find useful too 🙂
+
+## Dive Deeper

@@ -1,3 +1,9 @@
+---
+title: Default Shell
+subtitle: Set your default shell
+image: ./images__env-setup/vs-code-default-shell.png
+order: 3
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,11 +31,6 @@
 <!--DESCRIPTION
 |   How to set a default shell
 |____________________________________________________________________-->
-
----
-title: Default Shell
-subtitle: Set your default shell
----
 
 This page describes how to change the default shell in several applications that are typically used in development.
 

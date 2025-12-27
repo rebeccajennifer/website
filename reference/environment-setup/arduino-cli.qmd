@@ -1,3 +1,10 @@
+---
+title: Arduino Command Line Interface
+subtitle: Quick reference for Arduino CLI
+image: ./images__env-setup/arduino-logo.svg
+toc: true
+toc-depth: 6
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,13 +32,6 @@
 <!--DESCRIPTION
 |   Arduino CLI reference.
 |____________________________________________________________________-->
-
----
-title: Arduino Command Line Interface
-subtitle: Quick reference for Arduino CLI
-toc: true
-toc-depth: 6
----
 
 This page serves as a quick reference for the [Arduino CLI](https://docs.arduino.cc/arduino-cli/) commands I use most frequently. I’ve compiled these here to save time on recurring lookups.
 

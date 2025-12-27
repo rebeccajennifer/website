@@ -1,3 +1,11 @@
+---
+title: Visual Studio Code Setup
+subtitle: My preferred setup for VS Code
+image: ./images__env-setup/vs-code-settings-screenshot-thumb.png
+toc: true
+toc-depth: 6
+order: 1
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -26,14 +34,7 @@
 |   VS Code setup
 |____________________________________________________________________-->
 
----
-title: Visual Studio Code Setup
-subtitle: My preferred setup for VS Code
-toc: true
-toc-depth: 6
----
-
-Follow this checklist to replicate my VS Code environment. While optimized for my workflow, it serves as a helpful reference for any new setup.
+This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.
 
 ## Settings
 
