@@ -666,7 +666,7 @@ ol .breadcrumb-item::before
 /* Ensures all images are visible, even in dark mode */
 img
 {
-  background-color  : var(--flux-wht---7);
+  background-color  : var(--flux-fg-norm);
   border            : 1px solid var(--flux-bg-bold);
 }
 
