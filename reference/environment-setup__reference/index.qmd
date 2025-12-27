@@ -2,8 +2,6 @@
 title: New Environment Setup
 subtitle: My approach to setting up a new development environment
 image: ./images__env-setup/vs-code-settings-screenshot-thumb.png
-toc: true
-toc-depth: 6
 order: 0
 
 listing:
