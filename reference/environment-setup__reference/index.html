@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Vim Color Scheme – Rebecca Jennifer Rashkin</title>
+<title>New Environment Setup – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,7 +71,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../flux-bunny-style.css">
 </head>
@@ -139,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/vim-color.html">Vim Color Scheme</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup__reference/index.html">New Environment Setup</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -166,46 +226,46 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/environment-setup/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/environment-setup__reference/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">New Environment Setup</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/application-installation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/application-installation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Application Installation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/vs-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/vs-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code Setup</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/git.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/default-shell.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/default-shell.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Default Shell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/arduino-cli.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino Command Line Interface</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/putty.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/putty.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Configuration</span></a>
   </div>
 </li>
@@ -213,58 +273,58 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/color-scheme__reference/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Color Scheme Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI Color Codes Explained</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI 256 Color Table</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TERM Environment Variable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">VS Code Color Theme</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GNOME Color Profile</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Color Configuration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/color-scheme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Vim Color Scheme</span></a>
   </div>
 </li>
@@ -283,10 +343,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/vim-color.html">Vim Color Scheme</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup__reference/index.html">New Environment Setup</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Vim Color Scheme</h1>
-<p class="subtitle lead">Syntax highlighting in Vim.</p>
+<h1 class="title">New Environment Setup</h1>
+<p class="subtitle lead">My approach to setting up a new development environment</p>
 </div>
 
 
@@ -328,169 +388,147 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Reference page for vim color scheme related information.
+|   My new environment setup.
 |____________________________________________________________________-->
-<p>This page includes information about color schemes in Vim. Vim color schemes use the extension <code>.vim</code>.</p>
-<section id="color-scheme-paths" class="level2">
-<h2 class="anchored" data-anchor-id="color-scheme-paths">Color Scheme Paths</h2>
-<section id="linux" class="level3">
-<h3 class="anchored" data-anchor-id="linux">Linux</h3>
-<p>Installed color schemes live here:</p>
-<pre class="bash"><code># XX here indicates the vim version, e.g. vim80, vim91
-/usr/share/vim/vimXX/colors</code></pre>
-<p>User created themes go here:</p>
-<pre class="bash"><code>~/.vim/colors/</code></pre>
-</section>
-<section id="windows" class="level3">
-<h3 class="anchored" data-anchor-id="windows">Windows</h3>
-<p>User created themes for gVim go here:</p>
-<pre class="text"><code># Create this directory if it does not exist
-C:\Users\&lt;username&gt;\vimfiles\colors</code></pre>
-</section>
-</section>
-<section id="flux-dark-original-theme" class="level2">
-<h2 class="anchored" data-anchor-id="flux-dark-original-theme">Flux Dark (Original Theme)</h2>
-<p>The Vim color scheme I designed can be found <a href="https://github.com/rebeccajennifer/setup-files/tree/main/vim">here</a>. The theme is organized into three modular files; to install it, copy the following into your local colors directory (typically <code>~/.vim/colors/</code>):</p>
-<ul>
-<li><code>flux-base.vim</code></li>
-<li><code>flux-colors-dark.vim</code></li>
-<li><code>flux-dark.vim</code></li>
-</ul>
-</section>
-<section id="highlight-syntax-options" class="level2">
-<h2 class="anchored" data-anchor-id="highlight-syntax-options">Highlight Syntax Options</h2>
-<p>For more information on Vim syntax highlighting, visit <a href="https://vimhelp.org/syntax.txt.html#:highlight">this page</a>.</p>
-<section id="common-highlight-groups" class="level3">
-<h3 class="anchored" data-anchor-id="common-highlight-groups">Common Highlight Groups</h3>
-<section id="ui-elements" class="level4">
-<h4 class="anchored" data-anchor-id="ui-elements">UI Elements</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Highlight Group</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>Normal</code></td>
-<td>Default text color</td>
-</tr>
-<tr class="even">
-<td><code>Cursor</code></td>
-<td>The cursor itself</td>
-</tr>
-<tr class="odd">
-<td><code>CursorLine</code></td>
-<td>The current line background</td>
-</tr>
-<tr class="even">
-<td><code>StatusLine</code></td>
-<td>Active status line</td>
-</tr>
-<tr class="odd">
-<td><code>StatusLineNC</code></td>
-<td>Inactive status line</td>
-</tr>
-<tr class="even">
-<td><code>VertSplit</code></td>
-<td>Vertical split line</td>
-</tr>
-<tr class="odd">
-<td><code>Visual</code></td>
-<td>Text selected in visual mode</td>
-</tr>
-<tr class="even">
-<td><code>LineNr</code></td>
-<td>Line numbers in the gutter</td>
-</tr>
-<tr class="odd">
-<td><code>Folded</code></td>
-<td>Folded text color</td>
-</tr>
-</tbody>
-</table>
-</section>
-<section id="syntax-elements" class="level4">
-<h4 class="anchored" data-anchor-id="syntax-elements">Syntax Elements</h4>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Highlight Group</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>Comment</code></td>
-<td>Comments (<code>//</code>, <code>#</code>, etc.)</td>
-</tr>
-<tr class="even">
-<td><code>Constant</code></td>
-<td>Constants (like numbers, strings)</td>
-</tr>
-<tr class="odd">
-<td><code>Identifier</code></td>
-<td>Variable names</td>
-</tr>
-<tr class="even">
-<td><code>Statement</code></td>
-<td>Control flow keywords (<code>if</code>, <code>for</code>, <code>return</code>)</td>
-</tr>
-<tr class="odd">
-<td><code>PreProc</code></td>
-<td>Preprocessor directives (<code>#include</code>, <code>import</code>)</td>
-</tr>
-<tr class="even">
-<td><code>Type</code></td>
-<td>Type names (<code>int</code>, <code>float</code>, <code>char</code>)</td>
-</tr>
-<tr class="odd">
-<td><code>Special</code></td>
-<td>Special symbols or escape sequences</td>
-</tr>
-</tbody>
-</table>
-</section>
-</section>
-<section id="special-effects" class="level3">
-<h3 class="anchored" data-anchor-id="special-effects">Special Effects</h3>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Highlight Group</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>Error</code></td>
-<td>Error messages</td>
-</tr>
-<tr class="even">
-<td><code>Todo</code></td>
-<td><code>TODO</code> comments</td>
-</tr>
-<tr class="odd">
-<td><code>Search</code></td>
-<td>Matches from <code>/search</code></td>
-</tr>
-<tr class="even">
-<td><code>IncSearch</code></td>
-<td>Incremental search matches</td>
-</tr>
-<tr class="odd">
-<td><code>MatchParen</code></td>
-<td>Matching parentheses</td>
-</tr>
-</tbody>
-</table>
+<p>I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my setup, I’ve compiled these pages as a resource for my standard applications and a guide on how to create configuration settings for tools like Git and Visual Studio Code.</p>
+<p>This repository contains the ‘dotfiles’ and configuration files I use for various applications.</p>
+<p><a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files">Setup Files Repository</a></p>
+<section id="reference-material" class="level2">
+<h2 class="anchored" data-anchor-id="reference-material">Reference Material</h2>
+
 
 
 </section>
-</section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1766803834136" data-listing-reading-time-sort="6" data-listing-word-count-sort="1082">
+<a href="../../reference/environment-setup__reference/application-installation.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/environment-setup__reference/images__env-setup/penguin-emoji.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Application Installation
+</h5>
+<div class="card-text listing-description delink">
+This is my essential checklist of applications for setting up a new development environment, including links to their official install sources.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1766806175390" data-listing-reading-time-sort="5" data-listing-word-count-sort="878">
+<a href="../../reference/environment-setup__reference/vs-code.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/environment-setup__reference/images__env-setup/vs-code-settings-screenshot-thumb.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Visual Studio Code Setup
+</h5>
+<div class="card-text listing-description delink">
+This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1766802802509" data-listing-reading-time-sort="8" data-listing-word-count-sort="1598">
+<a href="../../reference/environment-setup__reference/git.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images__env-setup/git-ssh-github-0.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Git Reference
+</h5>
+<div class="card-text listing-description delink">
+This page describes common Git commands that I have encountered in my personal coding projects. It it written as a reference, but by no means a comprehensive reference.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1766804871251" data-listing-reading-time-sort="5" data-listing-word-count-sort="825">
+<a href="../../reference/environment-setup__reference/default-shell.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/environment-setup__reference/images__env-setup/vs-code-default-shell.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Default Shell
+</h5>
+<div class="card-text listing-description delink">
+This page describes how to change the default shell in several applications that are typically used in development.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1766803626225" data-listing-reading-time-sort="5" data-listing-word-count-sort="904">
+<a href="../../reference/environment-setup__reference/arduino-cli.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/environment-setup__reference/images__env-setup/arduino-logo.svg" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Arduino Command Line Interface
+</h5>
+<div class="card-text listing-description delink">
+This page serves as a quick reference for the Arduino CLI commands I use most frequently. I’ve compiled these here to save time on recurring lookups.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1766806068526" data-listing-reading-time-sort="5" data-listing-word-count-sort="918">
+<a href="../../reference/environment-setup__reference/putty.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/environment-setup__reference/images__env-setup/putty-config-0-session-0.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+PuTTY Configuration
+</h5>
+<div class="card-text listing-description delink">
+This page describes how to access a configuration file for a saved PuTTY session. Each saved session is saved in a <code>*.reg</code> file and can be imported or exported through the…<code></code>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |

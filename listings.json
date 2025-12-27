@@ -10,32 +10,8 @@
   {
     "listing": "/reference/index.html",
     "items": [
-      "/reference/environment-setup/index.html",
-      "/reference/color-theme__reference/index.html"
-    ]
-  },
-  {
-    "listing": "/reference/color-theme__reference/index.html",
-    "items": [
-      "/reference/color-theme__reference/ansi-color-explained.html",
-      "/reference/color-theme__reference/ansi256-colors.html",
-      "/reference/color-theme__reference/term-env-var.html",
-      "/reference/color-theme__reference/ls-colors.html",
-      "/reference/color-theme__reference/vscode-color.html",
-      "/reference/color-theme__reference/gnome-terminal-color.html",
-      "/reference/color-theme__reference/putty-color.html",
-      "/reference/color-theme__reference/vim-color.html"
-    ]
-  },
-  {
-    "listing": "/reference/environment-setup/index.html",
-    "items": [
-      "/reference/environment-setup/application-installation.html",
-      "/reference/environment-setup/vs-code.html",
-      "/reference/environment-setup/git.html",
-      "/reference/environment-setup/default-shell.html",
-      "/reference/environment-setup/arduino-cli.html",
-      "/reference/environment-setup/putty.html"
+      "/reference/environment-setup__reference/index.html",
+      "/reference/color-scheme__reference/index.html"
     ]
   },
   {
@@ -60,6 +36,30 @@
       "/projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html",
       "/projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html",
       "/projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html"
+    ]
+  },
+  {
+    "listing": "/reference/color-scheme__reference/index.html",
+    "items": [
+      "/reference/color-scheme__reference/ansi-color-explained.html",
+      "/reference/color-scheme__reference/ansi256-colors.html",
+      "/reference/color-scheme__reference/term-env-var.html",
+      "/reference/color-scheme__reference/ls-colors.html",
+      "/reference/color-scheme__reference/vscode-color.html",
+      "/reference/color-scheme__reference/gnome-terminal-color.html",
+      "/reference/color-scheme__reference/putty-color.html",
+      "/reference/color-scheme__reference/vim-color.html"
+    ]
+  },
+  {
+    "listing": "/reference/environment-setup__reference/index.html",
+    "items": [
+      "/reference/environment-setup__reference/application-installation.html",
+      "/reference/environment-setup__reference/vs-code.html",
+      "/reference/environment-setup__reference/git.html",
+      "/reference/environment-setup__reference/default-shell.html",
+      "/reference/environment-setup__reference/arduino-cli.html",
+      "/reference/environment-setup__reference/putty.html"
     ]
   }
 ]

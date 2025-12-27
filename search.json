@@ -68,352 +68,393 @@
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/index.html",
-    "href": "reference/color-theme__reference/index.html",
-    "title": "Color Scheme Reference",
+    "objectID": "reference/environment-setup__reference/application-installation.html",
+    "href": "reference/environment-setup__reference/application-installation.html",
+    "title": "Application Installation",
     "section": "",
-    "text": "Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI Color Codes Explained\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI 256 Color Table\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTERM Environment Variable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLS_COLORS & dircolors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVS Code Color Theme\n\n\nA detailed example on how to create and load a VS Code color theme file\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGNOME Color Profile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPuTTY Color Configuration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Color Scheme\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "This is my essential checklist of applications for setting up a new development environment, including links to their official install sources.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference"
+      "New Environment Setup",
+      "Application Installation"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/putty-color.html",
-    "href": "reference/color-theme__reference/putty-color.html",
-    "title": "PuTTY Color Configuration",
+    "objectID": "reference/environment-setup__reference/application-installation.html#ubuntu",
+    "href": "reference/environment-setup__reference/application-installation.html#ubuntu",
+    "title": "Application Installation",
+    "section": "Ubuntu",
+    "text": "Ubuntu\n\nCreate root password\npasswd\n\n\nInstall from apt\nUse sudo before all apt commands if you do not have a root password.\nsu\napt install build-essential\napt install cmake\napt install vim\napt install emacs\napt install nano\napt install gedit\napt install git\napt install zsh\napt install curl\napt install tmux\napt install python3-pip\napt install graphviz # Make block diagrams using a scripting language\n\n\nInstall from snap\nsudo snap install discord\n\n\nFrom App Center\n\nSteam\nSlack\nVisual Studio Code (“code”)\n\n\n\nInstall from .deb\n\nChrome\nFrom directory with .deb file\nsudo dpkg -i &lt;.deb file&gt;\n\n\nDrawIO\nDownload .deb from here.\nRun with\ndrawio\nIf you get this error\nFATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /opt/drawio/chrome-sandbox is owned by root and has mode 4755.\nRun this command\nsudo chmod 4755 /opt/drawio/chrome-sandbox\nSource\n\n\n\nArduino CLI\n\nInstall Arduino CLI\nSource: Arduino CLI\n\nCreate ~/local/ if it doesn’t already exist:\nmkdir ~/local\nNavigate to ~/local and run command to install arduino-cli\ncurl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh\nPre-pended $PATH environment variable with this line in ~/.bash_profile\nexport PATH=~/local/bin:$PATH\nSource .bash_profile\nsource ~/.bash_profile\nVerify arduino-cli was installed\n&gt; which arduino-cli\n/home/flux/local/bin/arduino-cli\nUpdate arduino-cli\narduino-cli upgrade\nSee the Arduino CLI wiki page for information on configuration.\n\n\n\n\nCalibre\nThis app is used to view and print .epub files.\nsudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "Application Installation"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/application-installation.html#windows",
+    "href": "reference/environment-setup__reference/application-installation.html#windows",
+    "title": "Application Installation",
+    "section": "Windows",
+    "text": "Windows\n\nTurn off alert sounds\nWindows makes an alert sound every time tab complete doesn’t work or other silly things. Turn it off in settings.\nGo to Audio - change other sound settings or\nSound -&gt; sound control panel -&gt; Sounds tab -&gt; Sound Scheme dropdown -&gt; No Sounds\nIn the window labeled Sound -&gt; tab labeled Sounds select the menu option No Sounds\n\n\n\nCygwin\nDownload cygwin, install packages\n\nlynx\nwget\ntar\ngit\nvim\ndos2unix\n\n\n\nSoftware Downloads\n\nPython\nVisual Studio Code\nChrome\nSpotify\nSlack\nSteam",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "Application Installation"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/git.html",
+    "href": "reference/environment-setup__reference/git.html",
+    "title": "Git Reference",
     "section": "",
-    "text": "Learn how to customize your terminal’s appearance by modifying the PuTTY configuration color values.",
+    "text": "This page describes common Git commands that I have encountered in my personal coding projects. It it written as a reference, but by no means a comprehensive reference.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "PuTTY Color Configuration"
+      "New Environment Setup",
+      "Git Reference"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/putty-color.html#export-default-configuration-file",
-    "href": "reference/color-theme__reference/putty-color.html#export-default-configuration-file",
-    "title": "PuTTY Color Configuration",
-    "section": "Export Default Configuration File",
-    "text": "Export Default Configuration File\nFollow these instructions to export your PuTTY configuration file.",
+    "objectID": "reference/environment-setup__reference/git.html#configuration",
+    "href": "reference/environment-setup__reference/git.html#configuration",
+    "title": "Git Reference",
+    "section": "Configuration",
+    "text": "Configuration\nYou can edit a git configuration either from the command line or edit a .gitconfig that lives in your home directory.\n\nCommand Line Entry\nTo edit a parameter from the command line that will edit your git config file, run a command in the following format:\ngit config --global &lt;section&gt;.&lt;key&gt; &lt;value&gt;\nFor instance, if you would like to edit the user name for all commits made from an account, run the command:\ngit config --global user.name \"Your Name\"\nSimilarly, if you would like to change the default name to main (instead of the usual default master) run the following command:\ngit config --global init.defaultBranch main\n\n\n.gitconfig file\nThe .gitconfig file lives in your home directory, or is created upon the first run of a git config command. It takes the format”\n[section0]\n    key = value\n\n[section1]\n    key = value",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "PuTTY Color Configuration"
+      "New Environment Setup",
+      "Git Reference"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/putty-color.html#color-labels",
-    "href": "reference/color-theme__reference/putty-color.html#color-labels",
-    "title": "PuTTY Color Configuration",
-    "section": "Color Labels",
-    "text": "Color Labels\nIn the .reg file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:\n\"Colour#\"=\"#,#,#\".\nNote that # of Colour# does not correspond with normal ANSI colors, i.e. 0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.\n\n\n\nLabel\nColor\n\n\n\n\nColour0\nForeground\n\n\nColour1\nBright Foreground\n\n\nColour2\nBackground\n\n\nColour3\nBright Background\n\n\nColour4\nCursor Foreground\n\n\nColour5\nCursor Background\n\n\nColour6\nBlack\n\n\nColour7\nBright Black\n\n\nColour8\nRed\n\n\nColour9\nBright Red\n\n\nColour10\nGreen\n\n\nColour11\nBright Green\n\n\nColour12\nYellow\n\n\nColour13\nBright Yellow\n\n\nColour14\nBlue\n\n\nColour15\nBright Blue\n\n\nColour16\nMagenta\n\n\nColour17\nBright Magenta\n\n\nColour18\nCyan\n\n\nColour19\nBright Cyan\n\n\nColour20\nWhite\n\n\nColour21\nBright White\n\n\n\n\nSample Color Theme Section\nNote: Whitespace is permitted in the configuration file.\n\"Colour0\" =\"187, 187, 187\"\n\"Colour1\" =\"255, 255, 255\"\n\"Colour2\" =\" 28,  28,  28\"\n\"Colour3\" =\" 95,  95,  95\"\n\"Colour4\" =\" 12,  12,  12\"\n\"Colour5\" =\"255, 135,  95\"\n\"Colour6\" =\" 18,  18,  18\"\n\"Colour7\" =\" 48,  48,  48\"\n\"Colour8\" =\"215,  95, 135\"\n\"Colour9\" =\"255,  95, 135\"\n\"Colour10\"=\"135, 215,  95\"\n\"Colour11\"=\"135, 255,  95\"\n\"Colour12\"=\"255, 135,  95\"\n\"Colour13\"=\"215, 215,  95\"\n\"Colour14\"=\" 95, 135, 215\"\n\"Colour15\"=\" 95, 135, 255\"\n\"Colour16\"=\"175,  95, 215\"\n\"Colour17\"=\"175,  95, 255\"\n\"Colour18\"=\" 95, 175, 215\"\n\"Colour19\"=\" 95, 175, 255\"\n\"Colour20\"=\"215, 215, 215\"\n\"Colour21\"=\"255, 255, 255\"",
+    "objectID": "reference/environment-setup__reference/git.html#submodules",
+    "href": "reference/environment-setup__reference/git.html#submodules",
+    "title": "Git Reference",
+    "section": "Submodules",
+    "text": "Submodules\n\nAdd Submodule\nTo add a submodule, first add the repository in the web interface of your Git remote host, e.g. GitHub or Azure DevOps.\nIn the repository that you would like to use to contain the submodule, use the following command:\ngit submodule add &lt;submodule address&gt;\nE.g.\ngit submodule add git@github.com:rebeccajr/test-submodule.git\n\n\nInitialization\nWhen first adding a submodule, or when cloning a repository with submodules you must run:\ngit submodule update --init --recursive\nNote The --recursive flag is only necessary if there are nested submodules, however it won’t hurt anything if there aren’t nested submodules.\n\n\nUpdate Submodule\nAfter the initialization of a submodule, to simply update that submodule, i.e. pull down any new commits, run:\ngit submodule update --recursive",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "PuTTY Color Configuration"
+      "New Environment Setup",
+      "Git Reference"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/putty-color.html#import-configuration-file",
-    "href": "reference/color-theme__reference/putty-color.html#import-configuration-file",
-    "title": "PuTTY Color Configuration",
-    "section": "Import Configuration File",
-    "text": "Import Configuration File\nFollow these instructions to import your modified PuTTY configuration file.",
+    "objectID": "reference/environment-setup__reference/git.html#ssh-key-setup",
+    "href": "reference/environment-setup__reference/git.html#ssh-key-setup",
+    "title": "Git Reference",
+    "section": "SSH Key Setup",
+    "text": "SSH Key Setup\nTo enable seamless authentication for Git without repeating logins, follow these steps to configure SSH keys. This guide covers setup for both GitHub and Azure DevOps.\n\nGitHub\nThe following information was taken from the following source:\nGitHub SSH Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -t ed25519 -C \"email@address.com\"\nOutput\nGenerating public/private ed25519 key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_ed25519):\nEnter passphrase (empty for no passphrase):\nEnter same passphrase again:\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519.pub\nThe key fingerprint is:\n################################################## email@address.com\nThe key's randomart image is:\n+--[ED25519 256]--+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 59566\nRegister your private SSH key with the SSH Agent.\nssh-add ~/.ssh/id_ed25519\nOutput\nIdentity added: /home/flux/.ssh/id_ed25519 (email@address.com)\nGo to settings.\n\nGo to SSH keys.\n\nClick New SSH key button.\n\n\n\n\nAzure DevOps\nThe following information was taken from the following source:\nAzure DevOps Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -m PEM -t rsa -b 4096\nOutput\nGenerating public/private rsa key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_rsa): (hit enter)\nEnter passphrase (empty for no passphrase): (hit enter)\nEnter same passphrase again: (hit enter)\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa.pub\nThe key fingerprint is:\nSHA256:########################################### user@computer\nThe key's randomart image is:\n+---[RSA 4096]----+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 12956\nFrom Azure DevOps web interface",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "PuTTY Color Configuration"
+      "New Environment Setup",
+      "Git Reference"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/ansi256-colors.html",
-    "href": "reference/color-theme__reference/ansi256-colors.html",
-    "title": "ANSI 256 Color Table",
+    "objectID": "reference/environment-setup__reference/default-shell.html",
+    "href": "reference/environment-setup__reference/default-shell.html",
+    "title": "Default Shell",
     "section": "",
-    "text": "Refer to the table below to quickly identify color codes for terminal customization and scripting.\n\n\n\n\n\n\n\n\nDisplay\n\n\nIndex\n\n\nHEX\n\n\nRGB\n\n\nHSL\n\n\nXterm Name\n\n\n\n  \n\n0\n\n\n#000000\n\n\nrgb(000,000,000)\n\n\nhsl(000,000%,000%)\n\n\n(SYSTEM) Black\n\n\n\n  \n\n1\n\n\n#800000\n\n\nrgb(128,000,000)\n\n\nhsl(000,100%,025%)\n\n\n(SYSTEM) Maroon\n\n\n\n  \n\n2\n\n\n#008000\n\n\nrgb(000,128,000)\n\n\nhsl(120,100%,025%)\n\n\n(SYSTEM) Green\n\n\n\n  \n\n3\n\n\n#808000\n\n\nrgb(128,128,000)\n\n\nhsl(060,100%,025%)\n\n\n(SYSTEM) Olive\n\n\n\n  \n\n4\n\n\n#000080\n\n\nrgb(000,000,128)\n\n\nhsl(240,100%,025%)\n\n\n(SYSTEM) Navy\n\n\n\n  \n\n5\n\n\n#800080\n\n\nrgb(128,000,128)\n\n\nhsl(300,100%,025%)\n\n\n(SYSTEM) Purple\n\n\n\n  \n\n6\n\n\n#008080\n\n\nrgb(000,128,128)\n\n\nhsl(180,100%,025%)\n\n\n(SYSTEM) Teal\n\n\n\n  \n\n7\n\n\n#c0c0c0\n\n\nrgb(192,192,192)\n\n\nhsl(000,000%,075%)\n\n\n(SYSTEM) Silver\n\n\n\n  \n\n8\n\n\n#808080\n\n\nrgb(128,128,128)\n\n\nhsl(000,000%,050%)\n\n\n(SYSTEM) Grey\n\n\n\n  \n\n9\n\n\n#ff0000\n\n\nrgb(255,000,000)\n\n\nhsl(000,100%,050%)\n\n\n(SYSTEM) Red\n\n\n\n  \n\n10\n\n\n#00ff00\n\n\nrgb(000,255,000)\n\n\nhsl(120,100%,050%)\n\n\n(SYSTEM) Lime\n\n\n\n  \n\n11\n\n\n#ffff00\n\n\nrgb(255,255,000)\n\n\nhsl(060,100%,050%)\n\n\n(SYSTEM) Yellow\n\n\n\n  \n\n12\n\n\n#0000ff\n\n\nrgb(000,000,255)\n\n\nhsl(240,100%,050%)\n\n\n(SYSTEM) Blue\n\n\n\n  \n\n13\n\n\n#ff00ff\n\n\nrgb(255,000,255)\n\n\nhsl(300,100%,050%)\n\n\n(SYSTEM) Fuchsia\n\n\n\n  \n\n14\n\n\n#00ffff\n\n\nrgb(000,255,255)\n\n\nhsl(180,100%,050%)\n\n\n(SYSTEM) Aqua\n\n\n\n  \n\n15\n\n\n#ffffff\n\n\nrgb(255,255,255)\n\n\nhsl(000,000%,100%)\n\n\n(SYSTEM) White\n\n\n\n  \n\n16\n\n\n#000000\n\n\nrgb(000,000,000)\n\n\nhsl(000,000%,000%)\n\n\nGrey0\n\n\n\n  \n\n17\n\n\n#00005f\n\n\nrgb(000,000,095)\n\n\nhsl(240,100%,018%)\n\n\nNavyBlue\n\n\n\n  \n\n18\n\n\n#000087\n\n\nrgb(000,000,135)\n\n\nhsl(240,100%,026%)\n\n\nDarkBlue\n\n\n\n  \n\n19\n\n\n#0000af\n\n\nrgb(000,000,175)\n\n\nhsl(240,100%,034%)\n\n\nBlue3\n\n\n\n  \n\n20\n\n\n#0000d7\n\n\nrgb(000,000,215)\n\n\nhsl(240,100%,042%)\n\n\nBlue3\n\n\n\n  \n\n21\n\n\n#0000ff\n\n\nrgb(000,000,255)\n\n\nhsl(240,100%,050%)\n\n\nBlue1\n\n\n\n  \n\n22\n\n\n#005f00\n\n\nrgb(000,095,000)\n\n\nhsl(120,100%,018%)\n\n\nDarkGreen\n\n\n\n  \n\n23\n\n\n#005f5f\n\n\nrgb(000,095,095)\n\n\nhsl(180,100%,018%)\n\n\nDeepSkyBlue4\n\n\n\n  \n\n24\n\n\n#005f87\n\n\nrgb(000,095,135)\n\n\nhsl(097,100%,026%)\n\n\nDeepSkyBlue4\n\n\n\n  \n\n25\n\n\n#005faf\n\n\nrgb(000,095,175)\n\n\nhsl(007,100%,034%)\n\n\nDeepSkyBlue4\n\n\n\n  \n\n26\n\n\n#005fd7\n\n\nrgb(000,095,215)\n\n\nhsl(013,100%,042%)\n\n\nDodgerBlue3\n\n\n\n  \n\n27\n\n\n#005fff\n\n\nrgb(000,095,255)\n\n\nhsl(017,100%,050%)\n\n\nDodgerBlue2\n\n\n\n  \n\n28\n\n\n#008700\n\n\nrgb(000,135,000)\n\n\nhsl(120,100%,026%)\n\n\nGreen4\n\n\n\n  \n\n29\n\n\n#00875f\n\n\nrgb(000,135,095)\n\n\nhsl(062,100%,026%)\n\n\nSpringGreen4\n\n\n\n  \n\n30\n\n\n#008787\n\n\nrgb(000,135,135)\n\n\nhsl(180,100%,026%)\n\n\nTurquoise4\n\n\n\n  \n\n31\n\n\n#0087af\n\n\nrgb(000,135,175)\n\n\nhsl(093,100%,034%)\n\n\nDeepSkyBlue3\n\n\n\n  \n\n32\n\n\n#0087d7\n\n\nrgb(000,135,215)\n\n\nhsl(002,100%,042%)\n\n\nDeepSkyBlue3\n\n\n\n  \n\n33\n\n\n#0087ff\n\n\nrgb(000,135,255)\n\n\nhsl(008,100%,050%)\n\n\nDodgerBlue1\n\n\n\n  \n\n34\n\n\n#00af00\n\n\nrgb(000,175,000)\n\n\nhsl(120,100%,034%)\n\n\nGreen3\n\n\n\n  \n\n35\n\n\n#00af5f\n\n\nrgb(000,175,095)\n\n\nhsl(052,100%,034%)\n\n\nSpringGreen3\n\n\n\n  \n\n36\n\n\n#00af87\n\n\nrgb(000,175,135)\n\n\nhsl(066,100%,034%)\n\n\nDarkCyan\n\n\n\n  \n\n37\n\n\n#00afaf\n\n\nrgb(000,175,175)\n\n\nhsl(180,100%,034%)\n\n\nLightSeaGreen\n\n\n\n  \n\n38\n\n\n#00afd7\n\n\nrgb(000,175,215)\n\n\nhsl(091,100%,042%)\n\n\nDeepSkyBlue2\n\n\n\n  \n\n39\n\n\n#00afff\n\n\nrgb(000,175,255)\n\n\nhsl(098,100%,050%)\n\n\nDeepSkyBlue1\n\n\n\n  \n\n40\n\n\n#00d700\n\n\nrgb(000,215,000)\n\n\nhsl(120,100%,042%)\n\n\nGreen3\n\n\n\n  \n\n41\n\n\n#00d75f\n\n\nrgb(000,215,095)\n\n\nhsl(046,100%,042%)\n\n\nSpringGreen3\n\n\n\n  \n\n42\n\n\n#00d787\n\n\nrgb(000,215,135)\n\n\nhsl(057,100%,042%)\n\n\nSpringGreen2\n\n\n\n  \n\n43\n\n\n#00d7af\n\n\nrgb(000,215,175)\n\n\nhsl(068,100%,042%)\n\n\nCyan3\n\n\n\n  \n\n44\n\n\n#00d7d7\n\n\nrgb(000,215,215)\n\n\nhsl(180,100%,042%)\n\n\nDarkTurquoise\n\n\n\n  \n\n45\n\n\n#00d7ff\n\n\nrgb(000,215,255)\n\n\nhsl(089,100%,050%)\n\n\nTurquoise2\n\n\n\n  \n\n46\n\n\n#00ff00\n\n\nrgb(000,255,000)\n\n\nhsl(120,100%,050%)\n\n\nGreen1\n\n\n\n  \n\n47\n\n\n#00ff5f\n\n\nrgb(000,255,095)\n\n\nhsl(042,100%,050%)\n\n\nSpringGreen2\n\n\n\n  \n\n48\n\n\n#00ff87\n\n\nrgb(000,255,135)\n\n\nhsl(051,100%,050%)\n\n\nSpringGreen1\n\n\n\n  \n\n49\n\n\n#00ffaf\n\n\nrgb(000,255,175)\n\n\nhsl(061,100%,050%)\n\n\nMediumSpringGree\n\n\n\n  \n\n50\n\n\n#00ffd7\n\n\nrgb(000,255,215)\n\n\nhsl(070,100%,050%)\n\n\nCyan2\n\n\n\n  \n\n51\n\n\n#00ffff\n\n\nrgb(000,255,255)\n\n\nhsl(180,100%,050%)\n\n\nCyan1\n\n\n\n  \n\n52\n\n\n#5f0000\n\n\nrgb(095,000,000)\n\n\nhsl(000,100%,018%)\n\n\nDarkRed\n\n\n\n  \n\n53\n\n\n#5f005f\n\n\nrgb(095,000,095)\n\n\nhsl(300,100%,018%)\n\n\nDeepPink4\n\n\n\n  \n\n54\n\n\n#5f0087\n\n\nrgb(095,000,135)\n\n\nhsl(082,100%,026%)\n\n\nPurple4\n\n\n\n  \n\n55\n\n\n#5f00af\n\n\nrgb(095,000,175)\n\n\nhsl(072,100%,034%)\n\n\nPurple4\n\n\n\n  \n\n56\n\n\n#5f00d7\n\n\nrgb(095,000,215)\n\n\nhsl(066,100%,042%)\n\n\nPurple3\n\n\n\n  \n\n57\n\n\n#5f00ff\n\n\nrgb(095,000,255)\n\n\nhsl(062,100%,050%)\n\n\nBlueViolet\n\n\n\n  \n\n58\n\n\n#5f5f00\n\n\nrgb(095,095,000)\n\n\nhsl(060,100%,018%)\n\n\nOrange4\n\n\n\n  \n\n59\n\n\n#5f5f5f\n\n\nrgb(095,095,095)\n\n\nhsl(000,000%,037%)\n\n\nGrey37\n\n\n\n  \n\n60\n\n\n#5f5f87\n\n\nrgb(095,095,135)\n\n\nhsl(240,017%,045%)\n\n\nMediumPurple4\n\n\n\n  \n\n61\n\n\n#5f5faf\n\n\nrgb(095,095,175)\n\n\nhsl(240,033%,052%)\n\n\nSlateBlue3\n\n\n\n  \n\n62\n\n\n#5f5fd7\n\n\nrgb(095,095,215)\n\n\nhsl(240,060%,060%)\n\n\nSlateBlue3\n\n\n\n  \n\n63\n\n\n#5f5fff\n\n\nrgb(095,095,255)\n\n\nhsl(240,100%,068%)\n\n\nRoyalBlue1\n\n\n\n  \n\n64\n\n\n#5f8700\n\n\nrgb(095,135,000)\n\n\nhsl(007,100%,026%)\n\n\nChartreuse4\n\n\n\n  \n\n65\n\n\n#5f875f\n\n\nrgb(095,135,095)\n\n\nhsl(120,017%,045%)\n\n\nDarkSeaGreen4\n\n\n\n  \n\n66\n\n\n#5f8787\n\n\nrgb(095,135,135)\n\n\nhsl(180,017%,045%)\n\n\nPaleTurquoise4\n\n\n\n  \n\n67\n\n\n#5f87af\n\n\nrgb(095,135,175)\n\n\nhsl(210,033%,052%)\n\n\nSteelBlue\n\n\n\n  \n\n68\n\n\n#5f87d7\n\n\nrgb(095,135,215)\n\n\nhsl(220,060%,060%)\n\n\nSteelBlue3\n\n\n\n  \n\n69\n\n\n#5f87ff\n\n\nrgb(095,135,255)\n\n\nhsl(225,100%,068%)\n\n\nCornflowerBlue\n\n\n\n  \n\n70\n\n\n#5faf00\n\n\nrgb(095,175,000)\n\n\nhsl(007,100%,034%)\n\n\nChartreuse3\n\n\n\n  \n\n71\n\n\n#5faf5f\n\n\nrgb(095,175,095)\n\n\nhsl(120,033%,052%)\n\n\nDarkSeaGreen4\n\n\n\n  \n\n72\n\n\n#5faf87\n\n\nrgb(095,175,135)\n\n\nhsl(150,033%,052%)\n\n\nCadetBlue\n\n\n\n  \n\n73\n\n\n#5fafaf\n\n\nrgb(095,175,175)\n\n\nhsl(180,033%,052%)\n\n\nCadetBlue\n\n\n\n  \n\n74\n\n\n#5fafd7\n\n\nrgb(095,175,215)\n\n\nhsl(200,060%,060%)\n\n\nSkyBlue3\n\n\n\n  \n\n75\n\n\n#5fafff\n\n\nrgb(095,175,255)\n\n\nhsl(210,100%,068%)\n\n\nSteelBlue1\n\n\n\n  \n\n76\n\n\n#5fd700\n\n\nrgb(095,215,000)\n\n\nhsl(003,100%,042%)\n\n\nChartreuse3\n\n\n\n  \n\n77\n\n\n#5fd75f\n\n\nrgb(095,215,095)\n\n\nhsl(120,060%,060%)\n\n\nPaleGreen3\n\n\n\n  \n\n78\n\n\n#5fd787\n\n\nrgb(095,215,135)\n\n\nhsl(140,060%,060%)\n\n\nSeaGreen3\n\n\n\n  \n\n79\n\n\n#5fd7af\n\n\nrgb(095,215,175)\n\n\nhsl(160,060%,060%)\n\n\nAquamarine3\n\n\n\n  \n\n80\n\n\n#5fd7d7\n\n\nrgb(095,215,215)\n\n\nhsl(180,060%,060%)\n\n\nMediumTurquoise\n\n\n\n  \n\n81\n\n\n#5fd7ff\n\n\nrgb(095,215,255)\n\n\nhsl(195,100%,068%)\n\n\nSteelBlue1\n\n\n\n  \n\n82\n\n\n#5fff00\n\n\nrgb(095,255,000)\n\n\nhsl(007,100%,050%)\n\n\nChartreuse2\n\n\n\n  \n\n83\n\n\n#5fff5f\n\n\nrgb(095,255,095)\n\n\nhsl(120,100%,068%)\n\n\nSeaGreen2\n\n\n\n  \n\n84\n\n\n#5fff87\n\n\nrgb(095,255,135)\n\n\nhsl(135,100%,068%)\n\n\nSeaGreen1\n\n\n\n  \n\n85\n\n\n#5fffaf\n\n\nrgb(095,255,175)\n\n\nhsl(150,100%,068%)\n\n\nSeaGreen1\n\n\n\n  \n\n86\n\n\n#5fffd7\n\n\nrgb(095,255,215)\n\n\nhsl(165,100%,068%)\n\n\nAquamarine1\n\n\n\n  \n\n87\n\n\n#5fffff\n\n\nrgb(095,255,255)\n\n\nhsl(180,100%,068%)\n\n\nDarkSlateGray2\n\n\n\n  \n\n88\n\n\n#870000\n\n\nrgb(135,000,000)\n\n\nhsl(000,100%,026%)\n\n\nDarkRed\n\n\n\n  \n\n89\n\n\n#87005f\n\n\nrgb(135,000,095)\n\n\nhsl(017,100%,026%)\n\n\nDeepPink4\n\n\n\n  \n\n90\n\n\n#870087\n\n\nrgb(135,000,135)\n\n\nhsl(300,100%,026%)\n\n\nDarkMagenta\n\n\n\n  \n\n91\n\n\n#8700af\n\n\nrgb(135,000,175)\n\n\nhsl(086,100%,034%)\n\n\nDarkMagenta\n\n\n\n  \n\n92\n\n\n#8700d7\n\n\nrgb(135,000,215)\n\n\nhsl(077,100%,042%)\n\n\nDarkViolet\n\n\n\n  \n\n93\n\n\n#8700ff\n\n\nrgb(135,000,255)\n\n\nhsl(071,100%,050%)\n\n\nPurple\n\n\n\n  \n\n94\n\n\n#875f00\n\n\nrgb(135,095,000)\n\n\nhsl(002,100%,026%)\n\n\nOrange4\n\n\n\n  \n\n95\n\n\n#875f5f\n\n\nrgb(135,095,095)\n\n\nhsl(000,017%,045%)\n\n\nLightPink4\n\n\n\n  \n\n96\n\n\n#875f87\n\n\nrgb(135,095,135)\n\n\nhsl(300,017%,045%)\n\n\nPlum4\n\n\n\n  \n\n97\n\n\n#875faf\n\n\nrgb(135,095,175)\n\n\nhsl(270,033%,052%)\n\n\nMediumPurple3\n\n\n\n  \n\n98\n\n\n#875fd7\n\n\nrgb(135,095,215)\n\n\nhsl(260,060%,060%)\n\n\nMediumPurple3\n\n\n\n  \n\n99\n\n\n#875fff\n\n\nrgb(135,095,255)\n\n\nhsl(255,100%,068%)\n\n\nSlateBlue1\n\n\n\n  \n\n100\n\n\n#878700\n\n\nrgb(135,135,000)\n\n\nhsl(060,100%,026%)\n\n\nYellow4\n\n\n\n  \n\n101\n\n\n#87875f\n\n\nrgb(135,135,095)\n\n\nhsl(060,017%,045%)\n\n\nWheat4\n\n\n\n  \n\n102\n\n\n#878787\n\n\nrgb(135,135,135)\n\n\nhsl(000,000%,052%)\n\n\nGrey53\n\n\n\n  \n\n103\n\n\n#8787af\n\n\nrgb(135,135,175)\n\n\nhsl(240,020%,060%)\n\n\nLightSlateGrey\n\n\n\n  \n\n104\n\n\n#8787d7\n\n\nrgb(135,135,215)\n\n\nhsl(240,050%,068%)\n\n\nMediumPurple\n\n\n\n  \n\n105\n\n\n#8787ff\n\n\nrgb(135,135,255)\n\n\nhsl(240,100%,076%)\n\n\nLightSlateBlue\n\n\n\n  \n\n106\n\n\n#87af00\n\n\nrgb(135,175,000)\n\n\nhsl(003,100%,034%)\n\n\nYellow4\n\n\n\n  \n\n107\n\n\n#87af5f\n\n\nrgb(135,175,095)\n\n\nhsl(090,033%,052%)\n\n\nDarkOliveGreen3\n\n\n\n  \n\n108\n\n\n#87af87\n\n\nrgb(135,175,135)\n\n\nhsl(120,020%,060%)\n\n\nDarkSeaGreen\n\n\n\n  \n\n109\n\n\n#87afaf\n\n\nrgb(135,175,175)\n\n\nhsl(180,020%,060%)\n\n\nLightSkyBlue3\n\n\n\n  \n\n110\n\n\n#87afd7\n\n\nrgb(135,175,215)\n\n\nhsl(210,050%,068%)\n\n\nLightSkyBlue3\n\n\n\n  \n\n111\n\n\n#87afff\n\n\nrgb(135,175,255)\n\n\nhsl(220,100%,076%)\n\n\nSkyBlue2\n\n\n\n  \n\n112\n\n\n#87d700\n\n\nrgb(135,215,000)\n\n\nhsl(002,100%,042%)\n\n\nChartreuse2\n\n\n\n  \n\n113\n\n\n#87d75f\n\n\nrgb(135,215,095)\n\n\nhsl(100,060%,060%)\n\n\nDarkOliveGreen3\n\n\n\n  \n\n114\n\n\n#87d787\n\n\nrgb(135,215,135)\n\n\nhsl(120,050%,068%)\n\n\nPaleGreen3\n\n\n\n  \n\n115\n\n\n#87d7af\n\n\nrgb(135,215,175)\n\n\nhsl(150,050%,068%)\n\n\nDarkSeaGreen3\n\n\n\n  \n\n116\n\n\n#87d7d7\n\n\nrgb(135,215,215)\n\n\nhsl(180,050%,068%)\n\n\nDarkSlateGray3\n\n\n\n  \n\n117\n\n\n#87d7ff\n\n\nrgb(135,215,255)\n\n\nhsl(200,100%,076%)\n\n\nSkyBlue1\n\n\n\n  \n\n118\n\n\n#87ff00\n\n\nrgb(135,255,000)\n\n\nhsl(008,100%,050%)\n\n\nChartreuse1\n\n\n\n  \n\n119\n\n\n#87ff5f\n\n\nrgb(135,255,095)\n\n\nhsl(105,100%,068%)\n\n\nLightGreen\n\n\n\n  \n\n120\n\n\n#87ff87\n\n\nrgb(135,255,135)\n\n\nhsl(120,100%,076%)\n\n\nLightGreen\n\n\n\n  \n\n121\n\n\n#87ffaf\n\n\nrgb(135,255,175)\n\n\nhsl(140,100%,076%)\n\n\nPaleGreen1\n\n\n\n  \n\n122\n\n\n#87ffd7\n\n\nrgb(135,255,215)\n\n\nhsl(160,100%,076%)\n\n\nAquamarine1\n\n\n\n  \n\n123\n\n\n#87ffff\n\n\nrgb(135,255,255)\n\n\nhsl(180,100%,076%)\n\n\nDarkSlateGray1\n\n\n\n  \n\n124\n\n\n#af0000\n\n\nrgb(175,000,000)\n\n\nhsl(000,100%,034%)\n\n\nRed3\n\n\n\n  \n\n125\n\n\n#af005f\n\n\nrgb(175,000,095)\n\n\nhsl(027,100%,034%)\n\n\nDeepPink4\n\n\n\n  \n\n126\n\n\n#af0087\n\n\nrgb(175,000,135)\n\n\nhsl(013,100%,034%)\n\n\nMediumVioletRed\n\n\n\n  \n\n127\n\n\n#af00af\n\n\nrgb(175,000,175)\n\n\nhsl(300,100%,034%)\n\n\nMagenta3\n\n\n\n  \n\n128\n\n\n#af00d7\n\n\nrgb(175,000,215)\n\n\nhsl(088,100%,042%)\n\n\nDarkViolet\n\n\n\n  \n\n129\n\n\n#af00ff\n\n\nrgb(175,000,255)\n\n\nhsl(081,100%,050%)\n\n\nPurple\n\n\n\n  \n\n130\n\n\n#af5f00\n\n\nrgb(175,095,000)\n\n\nhsl(002,100%,034%)\n\n\nDarkOrange3\n\n\n\n  \n\n131\n\n\n#af5f5f\n\n\nrgb(175,095,095)\n\n\nhsl(000,033%,052%)\n\n\nIndianRed\n\n\n\n  \n\n132\n\n\n#af5f87\n\n\nrgb(175,095,135)\n\n\nhsl(330,033%,052%)\n\n\nHotPink3\n\n\n\n  \n\n133\n\n\n#af5faf\n\n\nrgb(175,095,175)\n\n\nhsl(300,033%,052%)\n\n\nMediumOrchid3\n\n\n\n  \n\n134\n\n\n#af5fd7\n\n\nrgb(175,095,215)\n\n\nhsl(280,060%,060%)\n\n\nMediumOrchid\n\n\n\n  \n\n135\n\n\n#af5fff\n\n\nrgb(175,095,255)\n\n\nhsl(270,100%,068%)\n\n\nMediumPurple2\n\n\n\n  \n\n136\n\n\n#af8700\n\n\nrgb(175,135,000)\n\n\nhsl(006,100%,034%)\n\n\nDarkGoldenrod\n\n\n\n  \n\n137\n\n\n#af875f\n\n\nrgb(175,135,095)\n\n\nhsl(030,033%,052%)\n\n\nLightSalmon3\n\n\n\n  \n\n138\n\n\n#af8787\n\n\nrgb(175,135,135)\n\n\nhsl(000,020%,060%)\n\n\nRosyBrown\n\n\n\n  \n\n139\n\n\n#af87af\n\n\nrgb(175,135,175)\n\n\nhsl(300,020%,060%)\n\n\nGrey63\n\n\n\n  \n\n140\n\n\n#af87d7\n\n\nrgb(175,135,215)\n\n\nhsl(270,050%,068%)\n\n\nMediumPurple2\n\n\n\n  \n\n141\n\n\n#af87ff\n\n\nrgb(175,135,255)\n\n\nhsl(260,100%,076%)\n\n\nMediumPurple1\n\n\n\n  \n\n142\n\n\n#afaf00\n\n\nrgb(175,175,000)\n\n\nhsl(060,100%,034%)\n\n\nGold3\n\n\n\n  \n\n143\n\n\n#afaf5f\n\n\nrgb(175,175,095)\n\n\nhsl(060,033%,052%)\n\n\nDarkKhaki\n\n\n\n  \n\n144\n\n\n#afaf87\n\n\nrgb(175,175,135)\n\n\nhsl(060,020%,060%)\n\n\nNavajoWhite3\n\n\n\n  \n\n145\n\n\n#afafaf\n\n\nrgb(175,175,175)\n\n\nhsl(000,000%,068%)\n\n\nGrey69\n\n\n\n  \n\n146\n\n\n#afafd7\n\n\nrgb(175,175,215)\n\n\nhsl(240,033%,076%)\n\n\nLightSteelBlue3\n\n\n\n  \n\n147\n\n\n#afafff\n\n\nrgb(175,175,255)\n\n\nhsl(240,100%,084%)\n\n\nLightSteelBlue\n\n\n\n  \n\n148\n\n\n#afd700\n\n\nrgb(175,215,000)\n\n\nhsl(001,100%,042%)\n\n\nYellow3\n\n\n\n  \n\n149\n\n\n#afd75f\n\n\nrgb(175,215,095)\n\n\nhsl(080,060%,060%)\n\n\nDarkOliveGreen3\n\n\n\n  \n\n150\n\n\n#afd787\n\n\nrgb(175,215,135)\n\n\nhsl(090,050%,068%)\n\n\nDarkSeaGreen3\n\n\n\n  \n\n151\n\n\n#afd7af\n\n\nrgb(175,215,175)\n\n\nhsl(120,033%,076%)\n\n\nDarkSeaGreen2\n\n\n\n  \n\n152\n\n\n#afd7d7\n\n\nrgb(175,215,215)\n\n\nhsl(180,033%,076%)\n\n\nLightCyan3\n\n\n\n  \n\n153\n\n\n#afd7ff\n\n\nrgb(175,215,255)\n\n\nhsl(210,100%,084%)\n\n\nLightSkyBlue1\n\n\n\n  \n\n154\n\n\n#afff00\n\n\nrgb(175,255,000)\n\n\nhsl(008,100%,050%)\n\n\nGreenYellow\n\n\n\n  \n\n155\n\n\n#afff5f\n\n\nrgb(175,255,095)\n\n\nhsl(090,100%,068%)\n\n\nDarkOliveGreen2\n\n\n\n  \n\n156\n\n\n#afff87\n\n\nrgb(175,255,135)\n\n\nhsl(100,100%,076%)\n\n\nPaleGreen1\n\n\n\n  \n\n157\n\n\n#afffaf\n\n\nrgb(175,255,175)\n\n\nhsl(120,100%,084%)\n\n\nDarkSeaGreen2\n\n\n\n  \n\n158\n\n\n#afffd7\n\n\nrgb(175,255,215)\n\n\nhsl(150,100%,084%)\n\n\nDarkSeaGreen1\n\n\n\n  \n\n159\n\n\n#afffff\n\n\nrgb(175,255,255)\n\n\nhsl(180,100%,084%)\n\n\nPaleTurquoise1\n\n\n\n  \n\n160\n\n\n#d70000\n\n\nrgb(215,000,000)\n\n\nhsl(000,100%,042%)\n\n\nRed3\n\n\n\n  \n\n161\n\n\n#d7005f\n\n\nrgb(215,000,095)\n\n\nhsl(033,100%,042%)\n\n\nDeepPink3\n\n\n\n  \n\n162\n\n\n#d70087\n\n\nrgb(215,000,135)\n\n\nhsl(022,100%,042%)\n\n\nDeepPink3\n\n\n\n  \n\n163\n\n\n#d700af\n\n\nrgb(215,000,175)\n\n\nhsl(011,100%,042%)\n\n\nMagenta3\n\n\n\n  \n\n164\n\n\n#d700d7\n\n\nrgb(215,000,215)\n\n\nhsl(300,100%,042%)\n\n\nMagenta3\n\n\n\n  \n\n165\n\n\n#d700ff\n\n\nrgb(215,000,255)\n\n\nhsl(090,100%,050%)\n\n\nMagenta2\n\n\n\n  \n\n166\n\n\n#d75f00\n\n\nrgb(215,095,000)\n\n\nhsl(006,100%,042%)\n\n\nDarkOrange3\n\n\n\n  \n\n167\n\n\n#d75f5f\n\n\nrgb(215,095,095)\n\n\nhsl(000,060%,060%)\n\n\nIndianRed\n\n\n\n  \n\n168\n\n\n#d75f87\n\n\nrgb(215,095,135)\n\n\nhsl(340,060%,060%)\n\n\nHotPink3\n\n\n\n  \n\n169\n\n\n#d75faf\n\n\nrgb(215,095,175)\n\n\nhsl(320,060%,060%)\n\n\nHotPink2\n\n\n\n  \n\n170\n\n\n#d75fd7\n\n\nrgb(215,095,215)\n\n\nhsl(300,060%,060%)\n\n\nOrchid\n\n\n\n  \n\n171\n\n\n#d75fff\n\n\nrgb(215,095,255)\n\n\nhsl(285,100%,068%)\n\n\nMediumOrchid1\n\n\n\n  \n\n172\n\n\n#d78700\n\n\nrgb(215,135,000)\n\n\nhsl(007,100%,042%)\n\n\nOrange3\n\n\n\n  \n\n173\n\n\n#d7875f\n\n\nrgb(215,135,095)\n\n\nhsl(020,060%,060%)\n\n\nLightSalmon3\n\n\n\n  \n\n174\n\n\n#d78787\n\n\nrgb(215,135,135)\n\n\nhsl(000,050%,068%)\n\n\nLightPink3\n\n\n\n  \n\n175\n\n\n#d787af\n\n\nrgb(215,135,175)\n\n\nhsl(330,050%,068%)\n\n\nPink3\n\n\n\n  \n\n176\n\n\n#d787d7\n\n\nrgb(215,135,215)\n\n\nhsl(300,050%,068%)\n\n\nPlum3\n\n\n\n  \n\n177\n\n\n#d787ff\n\n\nrgb(215,135,255)\n\n\nhsl(280,100%,076%)\n\n\nViolet\n\n\n\n  \n\n178\n\n\n#d7af00\n\n\nrgb(215,175,000)\n\n\nhsl(008,100%,042%)\n\n\nGold3\n\n\n\n  \n\n179\n\n\n#d7af5f\n\n\nrgb(215,175,095)\n\n\nhsl(040,060%,060%)\n\n\nLightGoldenrod3\n\n\n\n  \n\n180\n\n\n#d7af87\n\n\nrgb(215,175,135)\n\n\nhsl(030,050%,068%)\n\n\nTan\n\n\n\n  \n\n181\n\n\n#d7afaf\n\n\nrgb(215,175,175)\n\n\nhsl(000,033%,076%)\n\n\nMistyRose3\n\n\n\n  \n\n182\n\n\n#d7afd7\n\n\nrgb(215,175,215)\n\n\nhsl(300,033%,076%)\n\n\nThistle3\n\n\n\n  \n\n183\n\n\n#d7afff\n\n\nrgb(215,175,255)\n\n\nhsl(270,100%,084%)\n\n\nPlum2\n\n\n\n  \n\n184\n\n\n#d7d700\n\n\nrgb(215,215,000)\n\n\nhsl(060,100%,042%)\n\n\nYellow3\n\n\n\n  \n\n185\n\n\n#d7d75f\n\n\nrgb(215,215,095)\n\n\nhsl(060,060%,060%)\n\n\nKhaki3\n\n\n\n  \n\n186\n\n\n#d7d787\n\n\nrgb(215,215,135)\n\n\nhsl(060,050%,068%)\n\n\nLightGoldenrod2\n\n\n\n  \n\n187\n\n\n#d7d7af\n\n\nrgb(215,215,175)\n\n\nhsl(060,033%,076%)\n\n\nLightYellow3\n\n\n\n  \n\n188\n\n\n#d7d7d7\n\n\nrgb(215,215,215)\n\n\nhsl(000,000%,084%)\n\n\nGrey84\n\n\n\n  \n\n189\n\n\n#d7d7ff\n\n\nrgb(215,215,255)\n\n\nhsl(240,100%,092%)\n\n\nLightSteelBlue1\n\n\n\n  \n\n190\n\n\n#d7ff00\n\n\nrgb(215,255,000)\n\n\nhsl(009,100%,050%)\n\n\nYellow2\n\n\n\n  \n\n191\n\n\n#d7ff5f\n\n\nrgb(215,255,095)\n\n\nhsl(075,100%,068%)\n\n\nDarkOliveGreen1\n\n\n\n  \n\n192\n\n\n#d7ff87\n\n\nrgb(215,255,135)\n\n\nhsl(080,100%,076%)\n\n\nDarkOliveGreen1\n\n\n\n  \n\n193\n\n\n#d7ffaf\n\n\nrgb(215,255,175)\n\n\nhsl(090,100%,084%)\n\n\nDarkSeaGreen1\n\n\n\n  \n\n194\n\n\n#d7ffd7\n\n\nrgb(215,255,215)\n\n\nhsl(120,100%,092%)\n\n\nHoneydew2\n\n\n\n  \n\n195\n\n\n#d7ffff\n\n\nrgb(215,255,255)\n\n\nhsl(180,100%,092%)\n\n\nLightCyan1\n\n\n\n  \n\n196\n\n\n#ff0000\n\n\nrgb(255,000,000)\n\n\nhsl(000,100%,050%)\n\n\nRed1\n\n\n\n  \n\n197\n\n\n#ff005f\n\n\nrgb(255,000,095)\n\n\nhsl(037,100%,050%)\n\n\nDeepPink2\n\n\n\n  \n\n198\n\n\n#ff0087\n\n\nrgb(255,000,135)\n\n\nhsl(028,100%,050%)\n\n\nDeepPink1\n\n\n\n  \n\n199\n\n\n#ff00af\n\n\nrgb(255,000,175)\n\n\nhsl(018,100%,050%)\n\n\nDeepPink1\n\n\n\n  \n\n200\n\n\n#ff00d7\n\n\nrgb(255,000,215)\n\n\nhsl(009,100%,050%)\n\n\nMagenta2\n\n\n\n  \n\n201\n\n\n#ff00ff\n\n\nrgb(255,000,255)\n\n\nhsl(300,100%,050%)\n\n\nMagenta1\n\n\n\n  \n\n202\n\n\n#ff5f00\n\n\nrgb(255,095,000)\n\n\nhsl(002,100%,050%)\n\n\nOrangeRed1\n\n\n\n  \n\n203\n\n\n#ff5f5f\n\n\nrgb(255,095,095)\n\n\nhsl(000,100%,068%)\n\n\nIndianRed1\n\n\n\n  \n\n204\n\n\n#ff5f87\n\n\nrgb(255,095,135)\n\n\nhsl(345,100%,068%)\n\n\nIndianRed1\n\n\n\n  \n\n205\n\n\n#ff5faf\n\n\nrgb(255,095,175)\n\n\nhsl(330,100%,068%)\n\n\nHotPink\n\n\n\n  \n\n206\n\n\n#ff5fd7\n\n\nrgb(255,095,215)\n\n\nhsl(315,100%,068%)\n\n\nHotPink\n\n\n\n  \n\n207\n\n\n#ff5fff\n\n\nrgb(255,095,255)\n\n\nhsl(300,100%,068%)\n\n\nMediumOrchid1\n\n\n\n  \n\n208\n\n\n#ff8700\n\n\nrgb(255,135,000)\n\n\nhsl(001,100%,050%)\n\n\nDarkOrange\n\n\n\n  \n\n209\n\n\n#ff875f\n\n\nrgb(255,135,095)\n\n\nhsl(015,100%,068%)\n\n\nSalmon1\n\n\n\n  \n\n210\n\n\n#ff8787\n\n\nrgb(255,135,135)\n\n\nhsl(000,100%,076%)\n\n\nLightCoral\n\n\n\n  \n\n211\n\n\n#ff87af\n\n\nrgb(255,135,175)\n\n\nhsl(340,100%,076%)\n\n\nPaleVioletRed1\n\n\n\n  \n\n212\n\n\n#ff87d7\n\n\nrgb(255,135,215)\n\n\nhsl(320,100%,076%)\n\n\nOrchid2\n\n\n\n  \n\n213\n\n\n#ff87ff\n\n\nrgb(255,135,255)\n\n\nhsl(300,100%,076%)\n\n\nOrchid1\n\n\n\n  \n\n214\n\n\n#ffaf00\n\n\nrgb(255,175,000)\n\n\nhsl(001,100%,050%)\n\n\nOrange1\n\n\n\n  \n\n215\n\n\n#ffaf5f\n\n\nrgb(255,175,095)\n\n\nhsl(030,100%,068%)\n\n\nSandyBrown\n\n\n\n  \n\n216\n\n\n#ffaf87\n\n\nrgb(255,175,135)\n\n\nhsl(020,100%,076%)\n\n\nLightSalmon1\n\n\n\n  \n\n217\n\n\n#ffafaf\n\n\nrgb(255,175,175)\n\n\nhsl(000,100%,084%)\n\n\nLightPink1\n\n\n\n  \n\n218\n\n\n#ffafd7\n\n\nrgb(255,175,215)\n\n\nhsl(330,100%,084%)\n\n\nPink1\n\n\n\n  \n\n219\n\n\n#ffafff\n\n\nrgb(255,175,255)\n\n\nhsl(300,100%,084%)\n\n\nPlum1\n\n\n\n  \n\n220\n\n\n#ffd700\n\n\nrgb(255,215,000)\n\n\nhsl(000,100%,050%)\n\n\nGold1\n\n\n\n  \n\n221\n\n\n#ffd75f\n\n\nrgb(255,215,095)\n\n\nhsl(045,100%,068%)\n\n\nLightGoldenrod2\n\n\n\n  \n\n222\n\n\n#ffd787\n\n\nrgb(255,215,135)\n\n\nhsl(040,100%,076%)\n\n\nLightGoldenrod2\n\n\n\n  \n\n223\n\n\n#ffd7af\n\n\nrgb(255,215,175)\n\n\nhsl(030,100%,084%)\n\n\nNavajoWhite1\n\n\n\n  \n\n224\n\n\n#ffd7d7\n\n\nrgb(255,215,215)\n\n\nhsl(000,100%,092%)\n\n\nMistyRose1\n\n\n\n  \n\n225\n\n\n#ffd7ff\n\n\nrgb(255,215,255)\n\n\nhsl(300,100%,092%)\n\n\nThistle1\n\n\n\n  \n\n226\n\n\n#ffff00\n\n\nrgb(255,255,000)\n\n\nhsl(060,100%,050%)\n\n\nYellow1\n\n\n\n  \n\n227\n\n\n#ffff5f\n\n\nrgb(255,255,095)\n\n\nhsl(060,100%,068%)\n\n\nLightGoldenrod1\n\n\n\n  \n\n228\n\n\n#ffff87\n\n\nrgb(255,255,135)\n\n\nhsl(060,100%,076%)\n\n\nKhaki1\n\n\n\n  \n\n229\n\n\n#ffffaf\n\n\nrgb(255,255,175)\n\n\nhsl(060,100%,084%)\n\n\nWheat1\n\n\n\n  \n\n230\n\n\n#ffffd7\n\n\nrgb(255,255,215)\n\n\nhsl(060,100%,092%)\n\n\nCornsilk1\n\n\n\n  \n\n231\n\n\n#ffffff\n\n\nrgb(255,255,255)\n\n\nhsl(000,000%,100%)\n\n\nGrey100\n\n\n\n  \n\n232\n\n\n#080808\n\n\nrgb(008,008,008)\n\n\nhsl(000,000%,003%)\n\n\nGrey3\n\n\n\n  \n\n233\n\n\n#121212\n\n\nrgb(018,018,018)\n\n\nhsl(000,000%,007%)\n\n\nGrey7\n\n\n\n  \n\n234\n\n\n#1c1c1c\n\n\nrgb(028,028,028)\n\n\nhsl(000,000%,010%)\n\n\nGrey11\n\n\n\n  \n\n235\n\n\n#262626\n\n\nrgb(038,038,038)\n\n\nhsl(000,000%,014%)\n\n\nGrey15\n\n\n\n  \n\n236\n\n\n#303030\n\n\nrgb(048,048,048)\n\n\nhsl(000,000%,018%)\n\n\nGrey19\n\n\n\n  \n\n237\n\n\n#3a3a3a\n\n\nrgb(058,058,058)\n\n\nhsl(000,000%,022%)\n\n\nGrey23\n\n\n\n  \n\n238\n\n\n#444444\n\n\nrgb(068,068,068)\n\n\nhsl(000,000%,026%)\n\n\nGrey27\n\n\n\n  \n\n239\n\n\n#4e4e4e\n\n\nrgb(078,078,078)\n\n\nhsl(000,000%,030%)\n\n\nGrey30\n\n\n\n  \n\n240\n\n\n#585858\n\n\nrgb(088,088,088)\n\n\nhsl(000,000%,034%)\n\n\nGrey35\n\n\n\n  \n\n241\n\n\n#626262\n\n\nrgb(098,098,098)\n\n\nhsl(000,000%,037%)\n\n\nGrey39\n\n\n\n  \n\n242\n\n\n#6c6c6c\n\n\nrgb(108,108,108)\n\n\nhsl(000,000%,040%)\n\n\nGrey42\n\n\n\n  \n\n243\n\n\n#767676\n\n\nrgb(118,118,118)\n\n\nhsl(000,000%,046%)\n\n\nGrey46\n\n\n\n  \n\n244\n\n\n#808080\n\n\nrgb(128,128,128)\n\n\nhsl(000,000%,050%)\n\n\nGrey50\n\n\n\n  \n\n245\n\n\n#8a8a8a\n\n\nrgb(138,138,138)\n\n\nhsl(000,000%,054%)\n\n\nGrey54\n\n\n\n  \n\n246\n\n\n#949494\n\n\nrgb(148,148,148)\n\n\nhsl(000,000%,058%)\n\n\nGrey58\n\n\n\n  \n\n247\n\n\n#9e9e9e\n\n\nrgb(158,158,158)\n\n\nhsl(000,000%,061%)\n\n\nGrey62\n\n\n\n  \n\n248\n\n\n#a8a8a8\n\n\nrgb(168,168,168)\n\n\nhsl(000,000%,065%)\n\n\nGrey66\n\n\n\n  \n\n249\n\n\n#b2b2b2\n\n\nrgb(178,178,178)\n\n\nhsl(000,000%,069%)\n\n\nGrey70\n\n\n\n  \n\n250\n\n\n#bcbcbc\n\n\nrgb(188,188,188)\n\n\nhsl(000,000%,073%)\n\n\nGrey74\n\n\n\n  \n\n251\n\n\n#c6c6c6\n\n\nrgb(198,198,198)\n\n\nhsl(000,000%,077%)\n\n\nGrey78\n\n\n\n  \n\n252\n\n\n#d0d0d0\n\n\nrgb(208,208,208)\n\n\nhsl(000,000%,081%)\n\n\nGrey82\n\n\n\n  \n\n253\n\n\n#dadada\n\n\nrgb(218,218,218)\n\n\nhsl(000,000%,085%)\n\n\nGrey85\n\n\n\n  \n\n254\n\n\n#e4e4e4\n\n\nrgb(228,228,228)\n\n\nhsl(000,000%,089%)\n\n\nGrey89\n\n\n\n  \n\n255\n\n\n#eeeeee\n\n\nrgb(238,238,238)\n\n\nhsl(000,000%,093%)\n\n\nGrey93",
+    "text": "This page describes how to change the default shell in several applications that are typically used in development.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "ANSI 256 Color Table"
+      "New Environment Setup",
+      "Default Shell"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/term-env-var.html",
-    "href": "reference/color-theme__reference/term-env-var.html",
-    "title": "TERM Environment Variable",
+    "objectID": "reference/environment-setup__reference/default-shell.html#visual-studio-code",
+    "href": "reference/environment-setup__reference/default-shell.html#visual-studio-code",
+    "title": "Default Shell",
+    "section": "Visual Studio Code",
+    "text": "Visual Studio Code\nTo set zsh as the default terminal profile in VS Code, define the shell paths and update the default profile in your settings.json:\n{\n  \"terminal.integrated.profiles.linux\": {\n    \"bash\": {\n      \"path\": \"/bin/bash\"\n    },\n    \"zsh\": {\n      \"path\": \"/usr/bin/zsh\"\n    }\n  },\n  \"terminal.integrated.defaultProfile.linux\": \"zsh\"\n}\nSee this page for more information about VS Code settings.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "Default Shell"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/default-shell.html#tmux",
+    "href": "reference/environment-setup__reference/default-shell.html#tmux",
+    "title": "Default Shell",
+    "section": "tmux",
+    "text": "tmux\nTo set zsh as your default shell within tmux, add the following to your ~/.tmux.conf:\nset-option -g default-shell /usr/bin/zsh",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "Default Shell"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/gnome-terminal-color.html",
+    "href": "reference/color-scheme__reference/gnome-terminal-color.html",
+    "title": "GNOME Color Profile",
     "section": "",
-    "text": "The environment variable TERM specifies the terminal type and the set of features, such as color support, that applications can rely on when rendering output.\nThis page shows examples of how colors are printed on the command line and within a Vim color scheme for different values of the TERM environment variable, both inside and outside of tmux.",
+    "text": "This page describes how to create a color scheme for GNOME terminal in Ubuntu.",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "TERM Environment Variable"
+      "GNOME Color Profile"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/term-env-var.html#tldr",
-    "href": "reference/color-theme__reference/term-env-var.html#tldr",
-    "title": "TERM Environment Variable",
-    "section": "TL;DR",
-    "text": "TL;DR\nTo ensure full ANSI 256 color support, set TERM as follows:\n\n\n\nContext\nTERM Value\n\n\n\n\nBefore launching tmux\nxterm-256color\n\n\nInside tmux\ntmux-256color",
+    "objectID": "reference/color-scheme__reference/gnome-terminal-color.html#identify-profile-id",
+    "href": "reference/color-scheme__reference/gnome-terminal-color.html#identify-profile-id",
+    "title": "GNOME Color Profile",
+    "section": "Identify Profile ID",
+    "text": "Identify Profile ID\nFrom BASH, run the following:\ndconf list /org/gnome/terminal/legacy/profiles:/\nOutput:\n:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/\nIn this example, b1dcc9dd-5262-4d8d-a863-c897e6d979b9 is the profile id.",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "TERM Environment Variable"
+      "GNOME Color Profile"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/term-env-var.html#common-values-of-term",
-    "href": "reference/color-theme__reference/term-env-var.html#common-values-of-term",
-    "title": "TERM Environment Variable",
-    "section": "Common Values of TERM",
-    "text": "Common Values of TERM\nThe table below summarizes common TERM values and how each affects color rendering.\n\n\n\n\n\n\n\nTERM Value\nColor Support Description\n\n\n\n\nscreen\nSupports only the base 8 colors as defined by the terminal program.\n\n\nxterm-256color\nSupports the full ANSI 256 color set.\n\n\ntmux-256color\nSupports the full ANSI 256 color set for applications running inside tmux.",
+    "objectID": "reference/color-scheme__reference/gnome-terminal-color.html#load-.dconf-file",
+    "href": "reference/color-scheme__reference/gnome-terminal-color.html#load-.dconf-file",
+    "title": "GNOME Color Profile",
+    "section": "Load .dconf File",
+    "text": "Load .dconf File\nRun a command in the following format:\ndconf load /org/gnome/terminal/legacy/profiles:/:&lt;profile-id&gt;/ &lt; file/path.dconf\nExample command:\ndconf load /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ &lt; .themes/flux-bunny-dark.dconf",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "TERM Environment Variable"
+      "GNOME Color Profile"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/term-env-var.html#without-tmux",
-    "href": "reference/color-theme__reference/term-env-var.html#without-tmux",
-    "title": "TERM Environment Variable",
-    "section": "Without tmux",
-    "text": "Without tmux\nThese examples show how color rendering differs for various values of TERM when not using tmux. They were created in a zsh environment, but the behavior is the same in bash.\n\nBase Colors Print\nThese screenshots show how the base 16 colors, as defined by the terminal program’s color settings, render when TERM is set to screen and xterm-256color, respectively.\nIn both cases, the colors render correctly.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\n\n\nVim Syntax Highlight Example\nThese screenshots show how the same code renders under different values of the TERM environment variable, using a Vim color scheme. The colors displayed are defined by the Vim color scheme, not by the terminal settings.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\nSome syntax highlighting is not displayed when using TERM=screen because the corresponding colors, as defined by the Vim color scheme, fall outside the base 8 color set. In summary:\nBase 8 colors (render correctly with TERM=screen):\nViolet  : types\nCyan    : return statement\nGreen   : numbers\nANSI 256 colors (render incorrectly, not part of the base 8):\nBlue        : #include statement\nRed         : strings\nYellow      : `%d` format specifier\nDark Green  : Comment color",
+    "objectID": "reference/color-scheme__reference/gnome-terminal-color.html#sample-dconf",
+    "href": "reference/color-scheme__reference/gnome-terminal-color.html#sample-dconf",
+    "title": "GNOME Color Profile",
+    "section": "Sample dconf",
+    "text": "Sample dconf\n[/]\nbackground-color='rgb(38, 38, 38)'\nforeground-color='rgb(198, 198, 198)'\npalette=['rgb(28, 28, 28)','rgb(215, 135, 175)','rgb(175, 215, 135)','rgb(255, 175, 135)','rgb(135, 175, 215)','rgb(175, 135, 215)','rgb(135, 215, 175)','rgb(215, 215, 215)','rgb(18, 18, 18)','rgb(215, 95, 135)','rgb(135, 175, 95)','rgb(255, 215, 135)','rgb(0, 175, 215)','rgb(175, 135, 175)','rgb(95, 175, 175)','rgb(208, 208, 208)']\nNote: You cannot reformat the palette variable to be defined on multiple lines.\nThe order of the color entries in the palette are arranged by ANSI index as listed below.\n#_________________________________\n# COLOR           ANSI COLOR INDEX\n#_________________________________\n# Black                 30\n# Red                   31\n# Green                 32\n# Yellow                33\n# Blue                  34\n# Magenta               35\n# Cyan                  36\n# White                 37\n# Bright Black          90\n# Bright Red            91\n# Bright Green          92\n# Bright Yellow         93\n# Bright Blue           94\n# Bright Magenta        95\n# Bright Cyan           96\n# Bright White          97",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "TERM Environment Variable"
+      "GNOME Color Profile"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/term-env-var.html#using-tmux",
-    "href": "reference/color-theme__reference/term-env-var.html#using-tmux",
-    "title": "TERM Environment Variable",
-    "section": "Using tmux",
-    "text": "Using tmux\nThese examples show how color rendering differs for various values of TERM when using tmux. For the columns labeled TERM=screen or TERM=xterm-256color, the TERM variable was set before launching tmux.\nThese examples were generated by starting zsh, launching tmux, and then opening a new shell inside tmux. Inside tmux, the TERM value defaulted to tmux-256color.\nShell choice does not affect color rendering; the behavior shown here is the same in bash and zsh.\n\nBase Colors Print\nThese screenshots show how the base 16 colors, as defined by the terminal program’s color settings, render when TERM is set to screen and xterm-256color, respectively.\nWhen setting TERM=screen inside tmux, colors 8-15 render the same as colors 0-7 because only the base 8 colors are advertised. When using xterm-256color, all colors 0-15 are advertised and therefore render distinctly.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\n\n\nVim Syntax Highlight Example\nThe color display behavior is different when using TERM=screen outside of tmux and tmux-256color inside tmux with syntax highlighting enabled. Syntax highlighting still applies colors that are defined outside of colors 0–7; however, when TERM=screen is used, the terminal maps those colors to the closest available base 8 color.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\nNotice that the red and blue colors defined in the Vim color scheme are brighter than the base 8 red and blue. When using TERM=screen, tmux approximates these colors by mapping them to the nearest base 8 color.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "TERM Environment Variable"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/index.html",
-    "href": "reference/environment-setup/index.html",
-    "title": "New Environment Setup",
+    "objectID": "reference/color-scheme__reference/vscode-color.html",
+    "href": "reference/color-scheme__reference/vscode-color.html",
+    "title": "VS Code Color Theme",
     "section": "",
-    "text": "I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my setup, I’ve compiled these pages as a resource for my standard applications and a guide on how to create configuration settings for tools like Git and Visual Studio Code.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nApplication Installation\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual Studio Code Setup\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGit Reference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nDefault Shell\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nArduino Command Line Interface\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPuTTY Configuration\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "See this page for a complete list of VS Code color theme properties.\nSee this link for a copy of my personally designed dark and light themes.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup"
+      "Color Scheme Reference",
+      "VS Code Color Theme"
     ]
   },
   {
-    "objectID": "reference/environment-setup/putty.html",
-    "href": "reference/environment-setup/putty.html",
-    "title": "PuTTY Configuration",
+    "objectID": "reference/color-scheme__reference/vscode-color.html#custom-theme-tutorial",
+    "href": "reference/color-scheme__reference/vscode-color.html#custom-theme-tutorial",
+    "title": "VS Code Color Theme",
+    "section": "Custom Theme Tutorial",
+    "text": "Custom Theme Tutorial\n\nFile Location\n\nTo install a custom theme, create a new directory in the following location (on a Linux system):\n~/.vscode/extensions/\nThis example uses the directory named my-color-themes; you can name this directory whatever you would like.\nmkdir ~/.vscode/extensions/my-color-themes\nIn my-color-themes create a file named package.json.\n# The touch command creates a blank file\ntouch ~/.vscode/extensions/my-color-themes/package.json\nEdit package.json to include this minimal information.\nIn this example, we are assuming there to be two theme files, my-dark-theme.json and my-light-theme.json. The \"label\" property will be displayed in the color theme drop down menu in VS Code.\n{ \"name\"          : \"my-theme-pack\"\n, \"displayName\"   : \"My Theme Pack\"\n, \"publisher\"     : \"Your Name\"\n, \"version\"       : \"0.0.1\"\n, \"engines\"       : { \"vscode\": \"*\" }\n, \"contributes\"   :\n\n  { \"themes\"      :\n    [ { \"label\"   : \"My Dark theme\"\n      , \"uiTheme\" : \"vs-dark\"\n      , \"path\"    : \"./my-dark-theme.json\"\n      }\n    , { \"label\"   : \"My Light Theme\"\n      , \"uiTheme\" : \"vs\"\n      , \"path\"    : \"./my-light-theme.json\"\n      }\n    ]\n  }\n}\nIn ~/.vscode/extensions/my-color-themes include the files for my-dark-theme.json and my-light-theme.json.\n\nNote: For the uiTheme property in package.json, use vs-dark for a dark theme and vs for a light theme. This ensures that any undefined properties inherit the correct default colors. In the My Dark Theme example, vs was intentionally selected instead of vs-dark; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.\n\n\n\nMinimal Color Theme File\nThis text is included in the minimal color theme file my-dark-theme.json.\n{\n  \"$schema\"     : \"vscode://schemas/color-theme\"\n\n, \"colors\":\n  { \"editor.background\"                 : \"#1c1c1c\"\n  , \"editor.foreground\"                 : \"#c6c6c6\"\n  }\n\n, \"tokenColors\":\n  [ { \"scope\": \"comment\"\n    , \"settings\": { \"foreground\": \"#d7af5f\" }\n    }\n\n  , { \"scope\": \"string\"\n    , \"settings\": { \"foreground\": \"#af5faf\" }\n    }\n  ]\n\n  // These properties override tokenColors\n, \"semanticTokenColors\":\n  { \"variable\"      : \"#00afd7\"\n  }\n}\n\n\nLoad Custom Theme\n\nLoad From VS Code\nTo load the theme, from the search bar type &gt;Color Theme and select Preferences: Color Theme. You can also pull up this search bar with the shortcut Ctrl+Shift+p.\n\nThe theme My Dark Theme should now display in the drop down options.\n\nYou should now see your defined colors in the editor window.\n\n\n\nAdd to settings.json\nYou can also add the color theme to your settings.json file:\n{\n  \"workbench.colorTheme\": \"My Dark Theme\"\n}",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "VS Code Color Theme"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/vscode-color.html#existing-theme",
+    "href": "reference/color-scheme__reference/vscode-color.html#existing-theme",
+    "title": "VS Code Color Theme",
+    "section": "Existing Theme",
+    "text": "Existing Theme\nYou may want to start from an existing theme file. You can use the dark theme I have created here. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:\n/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "VS Code Color Theme"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/vscode-color.html#autoformat-.json-in-vim",
+    "href": "reference/color-scheme__reference/vscode-color.html#autoformat-.json-in-vim",
+    "title": "VS Code Color Theme",
+    "section": "Autoformat .json in Vim",
+    "text": "Autoformat .json in Vim\nIf the the json file is not formatted, you can use the following Vim command to autoformat the json file:\n:%!python3 -m json.tool",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "VS Code Color Theme"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/ansi-color-explained.html",
+    "href": "reference/color-scheme__reference/ansi-color-explained.html",
+    "title": "ANSI Color Codes Explained",
     "section": "",
-    "text": "This page describes how to access a configuration file for a saved PuTTY session. Each saved session is saved in a *.reg file and can be imported or exported through the Windows Registry Editor.",
+    "text": "ANSI color codes, as used in terminals, can be categorized into three main types:",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "PuTTY Configuration"
+      "Color Scheme Reference",
+      "ANSI Color Codes Explained"
     ]
   },
   {
-    "objectID": "reference/environment-setup/putty.html#access-saved-session-configurations",
-    "href": "reference/environment-setup/putty.html#access-saved-session-configurations",
-    "title": "PuTTY Configuration",
-    "section": "Access Saved Session Configurations",
-    "text": "Access Saved Session Configurations\n\nWindows key + r, type regedit. Click OK.\n\nOn the left sidebar, navigate to HKEY_CURRENT_USER/SOFTWARE/SimonTatham/PuTTY/Sessions/&lt;saved-session-name&gt;. By default, there should be a saved session called Default%20Settings.\nNote: %20 corresponds with the ASCII code for space, so Default%20Settings translates to Default Settings",
+    "objectID": "reference/color-scheme__reference/ansi-color-explained.html#ansi-16-color-codes-standard-colors",
+    "href": "reference/color-scheme__reference/ansi-color-explained.html#ansi-16-color-codes-standard-colors",
+    "title": "ANSI Color Codes Explained",
+    "section": "ANSI 16 Color Codes (Standard Colors)",
+    "text": "ANSI 16 Color Codes (Standard Colors)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis is the original set of terminal colors defined by the ANSI standard.\nANSI color codes use a consistent pattern: the least significant digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / ‘bright’.\nFor example, the color 41 corresponds with a foreground as bright red; i.e.:\n\n1 = red\n4 = bright foreground\n\nDescriptions of prefixes are defined below.\n\nANSI 16 Prefix\nThis is a list of the prefixes used in ANSI 16 color codes.\n\n\n\nPrefix\nApplication\n\n\n\n\n3\nForeground, normal\n\n\n4\nBackground, normal\n\n\n9\nForeground, bold\n\n\n10\nBackground, bold\n\n\n\n\n\nANSI 16 Color Codes\nHere is a list of the ANSI 16 color codes and their meanings.\n\n\n\nName\nBase Index\nFG Normal\nBG Normal\nFG Bold\nBG Bold\n\n\n\n\nBlack\n0\n30\n40\n90\n100\n\n\nRed\n1\n31\n41\n91\n101\n\n\nGreen\n2\n32\n42\n92\n102\n\n\nYellow\n3\n33\n43\n93\n103\n\n\nBlue\n4\n34\n44\n94\n104\n\n\nMagenta\n5\n35\n45\n95\n105\n\n\nCyan\n6\n36\n46\n96\n106\n\n\nWhite\n7\n37\n47\n97\n107",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "PuTTY Configuration"
+      "Color Scheme Reference",
+      "ANSI Color Codes Explained"
     ]
   },
   {
-    "objectID": "reference/environment-setup/putty.html#export-configuration",
-    "href": "reference/environment-setup/putty.html#export-configuration",
-    "title": "PuTTY Configuration",
-    "section": "Export Configuration",
-    "text": "Export Configuration\n\nFrom the Registry Editor, access the saved configuration you would like to export.\nRight-click on the directory corresponding with the saved session to export. Select Export.\n\nName the file and save the configuration in your preferred location.",
+    "objectID": "reference/color-scheme__reference/ansi-color-explained.html#ansi-256-color-codes",
+    "href": "reference/color-scheme__reference/ansi-color-explained.html#ansi-256-color-codes",
+    "title": "ANSI Color Codes Explained",
+    "section": "ANSI 256 Color Codes",
+    "text": "ANSI 256 Color Codes\nModern terminals have the ability to display 256 colors that are broken up as described:\n\n16 Base Colors (Color Codes 0-15)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\n\nThese map to the same values as the 16-color codes.\nThese colors are often set by your terminal environment.\n\n\n\nANSI 256 Color Cube (Color Codes 16-231)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThe ANSI 256 color cube consists of 216 colors arranged as a 6×6×6 RGB grid. Each color is formed by selecting one of six discrete intensity levels for the red, green, and blue channels: 00, 5F, 87, AF, D7, and FF. These colors occupy indices 16-231 of the ANSI 256 palette and provide a uniformly sampled subset of the RGB color space.\n\nRGB to ANSI 256 Index Conversion\nThis table lists all ANSI 256 color codes and their corresponding RGB values. You can also manually calculate the color index from an RGB value, as described below.\n\nRGB -&gt; ANSI 256 Python Function\nI’ve written a Python module that performs the conversion from RGB to an ANSI 256 index, which you can find here.\n\n\nBase Colors\nThe 16 base colors are defined by your environment, so there is no direct conversion from RGB to ANSI 256 for indices 1-16.\n\n\nColor Cube\nValid RGB component values used by the 6x6x6 color cube (ANSI 256 indices 16–231):\n\n\n\nDecimal Value\nHex Value\n\n\n\n\n0\n0x00\n\n\n95\n0x5f\n\n\n135\n0x87\n\n\n175\n0xaf\n\n\n215\n0xd7\n\n\n255\n0xff\n\n\n\nTo convert the RGB values to the ANSI index, use the following calculation:\n#_______________________________________________\n# Round each RGB component to the nearest\n# valid value from the table above. The variable\n# definitions used in the calculation are\n# described as follows:\n#\n# red_near = the rounded red value\n# grn_near = the rounded green value\n# blu_near = the rounded blue value\n#_______________________________________________\n\nr = floor((red_near / 255.0) * 5)\ng = floor((grn_near / 255.0) * 5)\nb = floor((blu_near / 255.0) * 5)\n\n# Compute ANSI 256 color value\nansi_index = 16 + (r * 36) + (g * 6) + b\n\n\n\n\nGrayscale (Color Codes 232-255)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis section covers the grayscale ramp, occupying indices 232 (near black) through 255 (near white). In the RGB model, gray is produced when the red, green, and blue components are equal (R=G=B). The table below lists the specific values used for these components within the ANSI 256-color grayscale range.\n\n\n\nANSI Index\nHex (R=G=B)\nDecimal (R=G=B)\n\n\n\n\n232\n#080808\n8\n\n\n233\n#121212\n18\n\n\n234\n#1c1c1c\n28\n\n\n…\n…\n…\n\n\n254\n#e4e4e4\n228\n\n\n255\n#eeeeee\n238\n\n\n\n\nRGB to ANSI 256 Index Conversion\nFor shades of gray, each of the RGB components have the same value.\nIf each RGB component is closest to one of the color cube levels (00, 5F, 87, AF, D7, or FF), use the equation described in the Color Cube section.\nOtherwise, use the following equation:\n#_______________________________________________\n# grey_near is the RGB component value (0-255)\n# rounded to the nearest valid step in the ANSI\n# grayscale table (e.g., 8, 18, 28...).\n#_______________________________________________\nansi_index = 232 + (floor((grey_near - 8) / 10))",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "PuTTY Configuration"
+      "Color Scheme Reference",
+      "ANSI Color Codes Explained"
     ]
   },
   {
-    "objectID": "reference/environment-setup/putty.html#import-configuration",
-    "href": "reference/environment-setup/putty.html#import-configuration",
-    "title": "PuTTY Configuration",
-    "section": "Import Configuration",
-    "text": "Import Configuration\n\nFrom the Registry Editor, go to File &gt; Import.\n\nNavigate to the saved configuration .reg file. Click Open.\n\nThere will be a dialog box confirming that settings were imported. Click OK.",
+    "objectID": "reference/color-scheme__reference/ansi-color-explained.html#bit-true-color-16-million-colors",
+    "href": "reference/color-scheme__reference/ansi-color-explained.html#bit-true-color-16-million-colors",
+    "title": "ANSI Color Codes Explained",
+    "section": "24-bit True Color (16 Million Colors)",
+    "text": "24-bit True Color (16 Million Colors)\nSupported by most modern terminals, 24-bit true color allows you to specify exact RGB values.\n\nForeground Format: \\e[38;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m\nBackground Format: \\e[48;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m\n\nExample:\necho -e \"\\e[38;2;255;0;0mThis is bright red text\\e[0m\"\n\n38 for foreground, 48 for background.\n&lt;R&gt;, &lt;G&gt;, &lt;B&gt; represent red, green, and blue values (0–255).",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "PuTTY Configuration"
+      "Color Scheme Reference",
+      "ANSI Color Codes Explained"
     ]
   },
   {
-    "objectID": "reference/environment-setup/putty.html#color-settings",
-    "href": "reference/environment-setup/putty.html#color-settings",
-    "title": "PuTTY Configuration",
-    "section": "Color Settings",
-    "text": "Color Settings\nFollow these instructions to customize your PuTTY terminal color scheme.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "PuTTY Configuration"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/putty.html#all-configuration-settings",
-    "href": "reference/environment-setup/putty.html#all-configuration-settings",
-    "title": "PuTTY Configuration",
-    "section": "All Configuration Settings",
-    "text": "All Configuration Settings\nThis section contains screenshots of all the configuration settings of a PuTTY window.\n\nSession\n  \n\n\nTerminal\n   \n\n\nWindow\n         \n\n\nConnection\n      \n\nAuth\n     \n\n\nBugs",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "PuTTY Configuration"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/arduino-cli.html",
-    "href": "reference/environment-setup/arduino-cli.html",
-    "title": "Arduino Command Line Interface",
+    "objectID": "reference/color-scheme__reference/vim-color.html",
+    "href": "reference/color-scheme__reference/vim-color.html",
+    "title": "Vim Color Scheme",
     "section": "",
-    "text": "This page serves as a quick reference for the Arduino CLI commands I use most frequently. I’ve compiled these here to save time on recurring lookups.",
+    "text": "This page includes information about color schemes in Vim. Vim color schemes use the extension .vim.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Arduino Command Line Interface"
+      "Color Scheme Reference",
+      "Vim Color Scheme"
     ]
   },
   {
-    "objectID": "reference/environment-setup/arduino-cli.html#install-cores",
-    "href": "reference/environment-setup/arduino-cli.html#install-cores",
-    "title": "Arduino Command Line Interface",
-    "section": "Install Cores",
-    "text": "Install Cores\nBefore you can upload a program to a specific Arduino Board, you need to install the relevant core.\nThese two cores are used for the MKR1010 and Nano ESP32.\narduino-cli core install arduino:samd\narduino-cli core install arduino:esp32",
+    "objectID": "reference/color-scheme__reference/vim-color.html#color-scheme-paths",
+    "href": "reference/color-scheme__reference/vim-color.html#color-scheme-paths",
+    "title": "Vim Color Scheme",
+    "section": "Color Scheme Paths",
+    "text": "Color Scheme Paths\n\nLinux\nInstalled color schemes live here:\n# XX here indicates the vim version, e.g. vim80, vim91\n/usr/share/vim/vimXX/colors\nUser created themes go here:\n~/.vim/colors/\n\n\nWindows\nUser created themes for gVim go here:\n# Create this directory if it does not exist\nC:\\Users\\&lt;username&gt;\\vimfiles\\colors",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Arduino Command Line Interface"
+      "Color Scheme Reference",
+      "Vim Color Scheme"
     ]
   },
   {
-    "objectID": "reference/environment-setup/arduino-cli.html#library-search",
-    "href": "reference/environment-setup/arduino-cli.html#library-search",
-    "title": "Arduino Command Line Interface",
-    "section": "Library Search",
-    "text": "Library Search\narduino-cli lib search &lt;search_term&gt;\nFind the Name field of the library you want to install, e.g.\nName: \"Adafruit AW9523\"\n  Author: Adafruit\n  Maintainer: Adafruit &lt;info@adafruit.com&gt;\n  Sentence: Arduino library for the AW9523 GPIO expanders in the Adafruit shop\n  Paragraph: Arduino library for the AW9523 GPIO expanders in the Adafruit shop\n  Website: https://github.com/adafruit/Adafruit_AW9523\n  Category: Signal Input/Output\n  Architecture: *\n  Types: Contributed\n  Versions: [1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5]\n  Dependencies: Adafruit BusIO\n\nIn this case, the name of the library is Adafruit AW9523.",
+    "objectID": "reference/color-scheme__reference/vim-color.html#flux-dark-original-theme",
+    "href": "reference/color-scheme__reference/vim-color.html#flux-dark-original-theme",
+    "title": "Vim Color Scheme",
+    "section": "Flux Dark (Original Theme)",
+    "text": "Flux Dark (Original Theme)\nThe Vim color scheme I designed can be found here. The theme is organized into three modular files; to install it, copy the following into your local colors directory (typically ~/.vim/colors/):\n\nflux-base.vim\nflux-colors-dark.vim\nflux-dark.vim",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Arduino Command Line Interface"
+      "Color Scheme Reference",
+      "Vim Color Scheme"
     ]
   },
   {
-    "objectID": "reference/environment-setup/arduino-cli.html#library-installation",
-    "href": "reference/environment-setup/arduino-cli.html#library-installation",
-    "title": "Arduino Command Line Interface",
-    "section": "Library Installation",
-    "text": "Library Installation\narduino-cli lib install \"library name\"\nE.g.\n&gt; arduino-cli lib install \"Adafruit AW9523\"\nAlready installed Adafruit BusIO@1.16.0\nDownloading Adafruit AW9523@1.0.5...\nAdafruit AW9523@1.0.5 downloaded\nInstalling Adafruit AW9523@1.0.5...\nInstalled Adafruit AW9523@1.0.5\nNote The line Already installed Adafruit BusIO@1.16.0 is because one of the dependencies for this library is already installed.\nUse library in code\n#include &lt;Adafruit_AW9523&gt;",
+    "objectID": "reference/color-scheme__reference/vim-color.html#highlight-syntax-options",
+    "href": "reference/color-scheme__reference/vim-color.html#highlight-syntax-options",
+    "title": "Vim Color Scheme",
+    "section": "Highlight Syntax Options",
+    "text": "Highlight Syntax Options\nFor more information on Vim syntax highlighting, visit this page.\n\nCommon Highlight Groups\n\nUI Elements\n\n\n\nHighlight Group\nDescription\n\n\n\n\nNormal\nDefault text color\n\n\nCursor\nThe cursor itself\n\n\nCursorLine\nThe current line background\n\n\nStatusLine\nActive status line\n\n\nStatusLineNC\nInactive status line\n\n\nVertSplit\nVertical split line\n\n\nVisual\nText selected in visual mode\n\n\nLineNr\nLine numbers in the gutter\n\n\nFolded\nFolded text color\n\n\n\n\n\nSyntax Elements\n\n\n\nHighlight Group\nDescription\n\n\n\n\nComment\nComments (//, #, etc.)\n\n\nConstant\nConstants (like numbers, strings)\n\n\nIdentifier\nVariable names\n\n\nStatement\nControl flow keywords (if, for, return)\n\n\nPreProc\nPreprocessor directives (#include, import)\n\n\nType\nType names (int, float, char)\n\n\nSpecial\nSpecial symbols or escape sequences\n\n\n\n\n\n\nSpecial Effects\n\n\n\nHighlight Group\nDescription\n\n\n\n\nError\nError messages\n\n\nTodo\nTODO comments\n\n\nSearch\nMatches from /search\n\n\nIncSearch\nIncremental search matches\n\n\nMatchParen\nMatching parentheses",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Arduino Command Line Interface"
+      "Color Scheme Reference",
+      "Vim Color Scheme"
     ]
   },
   {
-    "objectID": "reference/environment-setup/vs-code.html",
-    "href": "reference/environment-setup/vs-code.html",
-    "title": "Visual Studio Code Setup",
+    "objectID": "reference/color-scheme__reference/ls-colors.html",
+    "href": "reference/color-scheme__reference/ls-colors.html",
+    "title": "LS_COLORS & dircolors",
     "section": "",
-    "text": "This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.",
+    "text": "The shell environment variable LS_COLORS is used to define the colors displayed when listing file types with the ls command. It is configured via the dircolors command, which typically runs during your shell’s startup.\nThere are two ways to modify the file type display colors, i.e. the LS_COLORS environment variable:",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
+      "Color Scheme Reference",
+      "LS_COLORS & dircolors"
     ]
   },
   {
-    "objectID": "reference/environment-setup/vs-code.html#settings",
-    "href": "reference/environment-setup/vs-code.html#settings",
-    "title": "Visual Studio Code Setup",
-    "section": "Settings",
-    "text": "Settings\nThe settings.json file contains settings for VS Code and usually lives in the following locations:\n\n\n\n\n\n\n\nOS\nPath\n\n\n\n\nUnix\n/home/&lt;user-name&gt;/.config/Code/User/settings.json\n\n\nWindows\nC:\\\\Users\\&lt;user-name&gt;\\\\AppData\\\\Roaming\\\\Code\\\\User\\\\settings.json\n\n\n\nAccess my settings.json and custom color theme below. If you need help with color theme installation, see this page.\nsettings.json Original Color Scheme\n\nSettings Override\nThe settings.json file located at the user level will take precedence. To override or add to the settings at the workspace or directory level, create a new directory called .vscode and add another settings.json file here.",
+    "objectID": "reference/color-scheme__reference/ls-colors.html#set-ls_colors-with-dircolors",
+    "href": "reference/color-scheme__reference/ls-colors.html#set-ls_colors-with-dircolors",
+    "title": "LS_COLORS & dircolors",
+    "section": "Set LS_COLORS with dircolors",
+    "text": "Set LS_COLORS with dircolors\nThis section explains how to set file type colors using the dircolors command.\n\nTL;DR\n\nSave a .dircolors file with your preferred coloring per file type.\nInsert the following commands in your .bashrc or .bash_profile:\neval `dircolors -b path/to/your/.dircolors/file`\nalias ls='ls --color=auto'\n\n\n\nSample .dircolors File\nFor reference, here is my .dircolors file.\n\n\nDefault dircolors\nYou can see the default file type colors by executing the following command.\ndircolors -p\nSummarized output:\n# Configuration file for dircolors, a utility to help you set the\n# LS_COLORS environment variable used by GNU ls with the --color option.\n...\n#.cmd 01;32 # executables (bright green)\n#.exe 01;32\n#.com 01;32\n#.btm 01;32\n#.bat 01;32\n...\n\n\nChange LS_COLORS Using dircolors\n\nSave the output of dircolors -p to a file. In this example we are naming the file .dircolors-mod, but you can name your file whatever you’d like.\ndircolors -p &gt; ~/.dircolors-mod\nEdit .dircolors-mod using a preferred text editor.\ngedit ~/.dircolors-mod\nExecute\n# This syntax works using bash and zsh\neval `dircolors -b ~/.dircolors-mod`\n\n\n\nTest dircolors Output\nAny modifications made to .dircolors-mod will be reflected in LS_COLORS. To test:\n\nAdd the following text to the end of .dircolors-mod\n.randomfiletype 01;35\nExecute\neval `dircolors -b ~/.dircolors-mod`\nPrint LS_COLORS to the screen.\necho $LS_COLORS\nSummarized sample output:\ns=0:di=01;34:ln=01;36:mh=00:pi=40;33\n...\n*.randomfiletype=01;35:\nNotice that the value *.randomfiletype=01;35 is now shown at the end of the LS_COLORS printout.\nSave a file with the name .randomfiletype and run the command\n# Use the -la to display hidden files\nls -la --color=auto\nThe file named .randomfiletype should be displayed in the color magenta, or whatever you have ANSI color 5 set to. See this page for more information about ANSI color codes.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
+      "Color Scheme Reference",
+      "LS_COLORS & dircolors"
     ]
   },
   {
-    "objectID": "reference/environment-setup/vs-code.html#extensions",
-    "href": "reference/environment-setup/vs-code.html#extensions",
-    "title": "Visual Studio Code Setup",
-    "section": "Extensions",
-    "text": "Extensions\nInstall the following extensions:\n\nC/C++ by Microsoft\nPython by Microsoft\nPython Debugger by Microsoft\nCode Runner by Jun Han\nVim by vscodevim\nCMake by twxs\nCMake Tools by Microsoft",
+    "objectID": "reference/color-scheme__reference/ls-colors.html#set-ls_colors-directly",
+    "href": "reference/color-scheme__reference/ls-colors.html#set-ls_colors-directly",
+    "title": "LS_COLORS & dircolors",
+    "section": "Set LS_COLORS Directly",
+    "text": "Set LS_COLORS Directly\nSet the environment variable LS_COLORS using the following format:\nexport LS_COLORS=\"*.ext0=&lt;attr&gt;;&lt;color&gt;:*.ext1=&lt;attr&gt;;&lt;color&gt;\"\nWhere\n&lt;attr&gt;    : Attribute code, listed below\n&lt;color&gt;   : Color code, listed below\next0, ext1: File extensions\nNote that the color codes correspond with the ANSI 16 color codes as described here.\n\nAdd to .bashrc or .bash_profile\nOnce you decide which file types to color, you can save your definition of LS_COLORS to your .bashrc or .bash_profile.\nNote: If you are running zsh as your environment, make sure you are not overwriting theses colors in your .zshrc or theme file.\n\n\nAttribute Codes\n\n\n\nCode\nAttribute\n\n\n\n\n00\nnone\n\n\n01\nbold\n\n\n04\nunderscore\n\n\n05\nblink\n\n\n07\nreverse\n\n\n08\nconcealed\n\n\n\n\n\nForeground Text Color Codes\n\n\n\nCode\nColor\n\n\n\n\n30\nblack\n\n\n31\nred\n\n\n32\ngreen\n\n\n33\nyellow\n\n\n34\nblue\n\n\n35\nmagenta\n\n\n36\ncyan\n\n\n37\nwhite\n\n\n\n\n\nBackground Color Codes\n\n\n\nCode\nColor\n\n\n\n\n40\nblack\n\n\n41\nred\n\n\n42\ngreen\n\n\n43\nyellow\n\n\n44\nblue\n\n\n45\nmagenta\n\n\n46\ncyan\n\n\n47\nwhite",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
+      "Color Scheme Reference",
+      "LS_COLORS & dircolors"
     ]
   },
   {
-    "objectID": "reference/environment-setup/vs-code.html#vim",
-    "href": "reference/environment-setup/vs-code.html#vim",
-    "title": "Visual Studio Code Setup",
-    "section": "Vim",
-    "text": "Vim\nPoint Vim extension to local .vimrc file.",
+    "objectID": "reference/color-scheme__reference/ls-colors.html#tmux-caveat",
+    "href": "reference/color-scheme__reference/ls-colors.html#tmux-caveat",
+    "title": "LS_COLORS & dircolors",
+    "section": "tmux Caveat",
+    "text": "tmux Caveat\ntmux is a terminal multiplexer that allows you to create and manage multiple panes within a single window. It’s a neat way to streamline your workflow.\n\nUsing tmux can affect your environment, particularly how colors are displayed. You may need to set the TERM environment variable explicitly to ensure colors render correctly. See this page for more information.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/vs-code.html#code-runner-configuration",
-    "href": "reference/environment-setup/vs-code.html#code-runner-configuration",
-    "title": "Visual Studio Code Setup",
-    "section": "Code Runner Configuration",
-    "text": "Code Runner Configuration\n\nEnable Clear Previous Output\nDisable Show Execution Message",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
+      "Color Scheme Reference",
+      "LS_COLORS & dircolors"
     ]
   },
   {
@@ -1930,393 +1971,364 @@
     ]
   },
   {
-    "objectID": "reference/environment-setup/default-shell.html",
-    "href": "reference/environment-setup/default-shell.html",
-    "title": "Default Shell",
+    "objectID": "reference/color-scheme__reference/term-env-var.html",
+    "href": "reference/color-scheme__reference/term-env-var.html",
+    "title": "TERM Environment Variable",
     "section": "",
-    "text": "This page describes how to change the default shell in several applications that are typically used in development.",
+    "text": "The environment variable TERM specifies the terminal type and the set of features, such as color support, that applications can rely on when rendering output.\nThis page shows examples of how colors are printed on the command line and within a Vim color scheme for different values of the TERM environment variable, both inside and outside of tmux.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Default Shell"
+      "Color Scheme Reference",
+      "TERM Environment Variable"
     ]
   },
   {
-    "objectID": "reference/environment-setup/default-shell.html#visual-studio-code",
-    "href": "reference/environment-setup/default-shell.html#visual-studio-code",
-    "title": "Default Shell",
-    "section": "Visual Studio Code",
-    "text": "Visual Studio Code\nTo set zsh as the default terminal profile in VS Code, define the shell paths and update the default profile in your settings.json:\n{\n  \"terminal.integrated.profiles.linux\": {\n    \"bash\": {\n      \"path\": \"/bin/bash\"\n    },\n    \"zsh\": {\n      \"path\": \"/usr/bin/zsh\"\n    }\n  },\n  \"terminal.integrated.defaultProfile.linux\": \"zsh\"\n}\nSee this page for more information about VS Code settings.",
+    "objectID": "reference/color-scheme__reference/term-env-var.html#tldr",
+    "href": "reference/color-scheme__reference/term-env-var.html#tldr",
+    "title": "TERM Environment Variable",
+    "section": "TL;DR",
+    "text": "TL;DR\nTo ensure full ANSI 256 color support, set TERM as follows:\n\n\n\nContext\nTERM Value\n\n\n\n\nBefore launching tmux\nxterm-256color\n\n\nInside tmux\ntmux-256color",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Default Shell"
+      "Color Scheme Reference",
+      "TERM Environment Variable"
     ]
   },
   {
-    "objectID": "reference/environment-setup/default-shell.html#tmux",
-    "href": "reference/environment-setup/default-shell.html#tmux",
-    "title": "Default Shell",
-    "section": "tmux",
-    "text": "tmux\nTo set zsh as your default shell within tmux, add the following to your ~/.tmux.conf:\nset-option -g default-shell /usr/bin/zsh",
+    "objectID": "reference/color-scheme__reference/term-env-var.html#common-values-of-term",
+    "href": "reference/color-scheme__reference/term-env-var.html#common-values-of-term",
+    "title": "TERM Environment Variable",
+    "section": "Common Values of TERM",
+    "text": "Common Values of TERM\nThe table below summarizes common TERM values and how each affects color rendering.\n\n\n\n\n\n\n\nTERM Value\nColor Support Description\n\n\n\n\nscreen\nSupports only the base 8 colors as defined by the terminal program.\n\n\nxterm-256color\nSupports the full ANSI 256 color set.\n\n\ntmux-256color\nSupports the full ANSI 256 color set for applications running inside tmux.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Default Shell"
+      "Color Scheme Reference",
+      "TERM Environment Variable"
     ]
   },
   {
-    "objectID": "reference/environment-setup/git.html",
-    "href": "reference/environment-setup/git.html",
-    "title": "Git Reference",
+    "objectID": "reference/color-scheme__reference/term-env-var.html#without-tmux",
+    "href": "reference/color-scheme__reference/term-env-var.html#without-tmux",
+    "title": "TERM Environment Variable",
+    "section": "Without tmux",
+    "text": "Without tmux\nThese examples show how color rendering differs for various values of TERM when not using tmux. They were created in a zsh environment, but the behavior is the same in bash.\n\nBase Colors Print\nThese screenshots show how the base 16 colors, as defined by the terminal program’s color settings, render when TERM is set to screen and xterm-256color, respectively.\nIn both cases, the colors render correctly.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\n\n\nVim Syntax Highlight Example\nThese screenshots show how the same code renders under different values of the TERM environment variable, using a Vim color scheme. The colors displayed are defined by the Vim color scheme, not by the terminal settings.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\nSome syntax highlighting is not displayed when using TERM=screen because the corresponding colors, as defined by the Vim color scheme, fall outside the base 8 color set. In summary:\nBase 8 colors (render correctly with TERM=screen):\nViolet  : types\nCyan    : return statement\nGreen   : numbers\nANSI 256 colors (render incorrectly, not part of the base 8):\nBlue        : #include statement\nRed         : strings\nYellow      : `%d` format specifier\nDark Green  : Comment color",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "TERM Environment Variable"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/term-env-var.html#using-tmux",
+    "href": "reference/color-scheme__reference/term-env-var.html#using-tmux",
+    "title": "TERM Environment Variable",
+    "section": "Using tmux",
+    "text": "Using tmux\nThese examples show how color rendering differs for various values of TERM when using tmux. For the columns labeled TERM=screen or TERM=xterm-256color, the TERM variable was set before launching tmux.\nThese examples were generated by starting zsh, launching tmux, and then opening a new shell inside tmux. Inside tmux, the TERM value defaulted to tmux-256color.\nShell choice does not affect color rendering; the behavior shown here is the same in bash and zsh.\n\nBase Colors Print\nThese screenshots show how the base 16 colors, as defined by the terminal program’s color settings, render when TERM is set to screen and xterm-256color, respectively.\nWhen setting TERM=screen inside tmux, colors 8-15 render the same as colors 0-7 because only the base 8 colors are advertised. When using xterm-256color, all colors 0-15 are advertised and therefore render distinctly.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\n\n\nVim Syntax Highlight Example\nThe color display behavior is different when using TERM=screen outside of tmux and tmux-256color inside tmux with syntax highlighting enabled. Syntax highlighting still applies colors that are defined outside of colors 0–7; however, when TERM=screen is used, the terminal maps those colors to the closest available base 8 color.\n\n\n\n\n\n\n\nTERM=screen\nTERM=xterm-256color\n\n\n\n\n\n\n\n\n\nNotice that the red and blue colors defined in the Vim color scheme are brighter than the base 8 red and blue. When using TERM=screen, tmux approximates these colors by mapping them to the nearest base 8 color.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "TERM Environment Variable"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/ansi256-colors.html",
+    "href": "reference/color-scheme__reference/ansi256-colors.html",
+    "title": "ANSI 256 Color Table",
     "section": "",
-    "text": "This page describes common Git commands that I have encountered in my personal coding projects. It it written as a reference, but by no means a comprehensive reference.",
+    "text": "Refer to the table below to quickly identify color codes for terminal customization and scripting.\n\n\n\n\n\n\n\n\nDisplay\n\n\nIndex\n\n\nHEX\n\n\nRGB\n\n\nHSL\n\n\nXterm Name\n\n\n\n  \n\n0\n\n\n#000000\n\n\nrgb(000,000,000)\n\n\nhsl(000,000%,000%)\n\n\n(SYSTEM) Black\n\n\n\n  \n\n1\n\n\n#800000\n\n\nrgb(128,000,000)\n\n\nhsl(000,100%,025%)\n\n\n(SYSTEM) Maroon\n\n\n\n  \n\n2\n\n\n#008000\n\n\nrgb(000,128,000)\n\n\nhsl(120,100%,025%)\n\n\n(SYSTEM) Green\n\n\n\n  \n\n3\n\n\n#808000\n\n\nrgb(128,128,000)\n\n\nhsl(060,100%,025%)\n\n\n(SYSTEM) Olive\n\n\n\n  \n\n4\n\n\n#000080\n\n\nrgb(000,000,128)\n\n\nhsl(240,100%,025%)\n\n\n(SYSTEM) Navy\n\n\n\n  \n\n5\n\n\n#800080\n\n\nrgb(128,000,128)\n\n\nhsl(300,100%,025%)\n\n\n(SYSTEM) Purple\n\n\n\n  \n\n6\n\n\n#008080\n\n\nrgb(000,128,128)\n\n\nhsl(180,100%,025%)\n\n\n(SYSTEM) Teal\n\n\n\n  \n\n7\n\n\n#c0c0c0\n\n\nrgb(192,192,192)\n\n\nhsl(000,000%,075%)\n\n\n(SYSTEM) Silver\n\n\n\n  \n\n8\n\n\n#808080\n\n\nrgb(128,128,128)\n\n\nhsl(000,000%,050%)\n\n\n(SYSTEM) Grey\n\n\n\n  \n\n9\n\n\n#ff0000\n\n\nrgb(255,000,000)\n\n\nhsl(000,100%,050%)\n\n\n(SYSTEM) Red\n\n\n\n  \n\n10\n\n\n#00ff00\n\n\nrgb(000,255,000)\n\n\nhsl(120,100%,050%)\n\n\n(SYSTEM) Lime\n\n\n\n  \n\n11\n\n\n#ffff00\n\n\nrgb(255,255,000)\n\n\nhsl(060,100%,050%)\n\n\n(SYSTEM) Yellow\n\n\n\n  \n\n12\n\n\n#0000ff\n\n\nrgb(000,000,255)\n\n\nhsl(240,100%,050%)\n\n\n(SYSTEM) Blue\n\n\n\n  \n\n13\n\n\n#ff00ff\n\n\nrgb(255,000,255)\n\n\nhsl(300,100%,050%)\n\n\n(SYSTEM) Fuchsia\n\n\n\n  \n\n14\n\n\n#00ffff\n\n\nrgb(000,255,255)\n\n\nhsl(180,100%,050%)\n\n\n(SYSTEM) Aqua\n\n\n\n  \n\n15\n\n\n#ffffff\n\n\nrgb(255,255,255)\n\n\nhsl(000,000%,100%)\n\n\n(SYSTEM) White\n\n\n\n  \n\n16\n\n\n#000000\n\n\nrgb(000,000,000)\n\n\nhsl(000,000%,000%)\n\n\nGrey0\n\n\n\n  \n\n17\n\n\n#00005f\n\n\nrgb(000,000,095)\n\n\nhsl(240,100%,018%)\n\n\nNavyBlue\n\n\n\n  \n\n18\n\n\n#000087\n\n\nrgb(000,000,135)\n\n\nhsl(240,100%,026%)\n\n\nDarkBlue\n\n\n\n  \n\n19\n\n\n#0000af\n\n\nrgb(000,000,175)\n\n\nhsl(240,100%,034%)\n\n\nBlue3\n\n\n\n  \n\n20\n\n\n#0000d7\n\n\nrgb(000,000,215)\n\n\nhsl(240,100%,042%)\n\n\nBlue3\n\n\n\n  \n\n21\n\n\n#0000ff\n\n\nrgb(000,000,255)\n\n\nhsl(240,100%,050%)\n\n\nBlue1\n\n\n\n  \n\n22\n\n\n#005f00\n\n\nrgb(000,095,000)\n\n\nhsl(120,100%,018%)\n\n\nDarkGreen\n\n\n\n  \n\n23\n\n\n#005f5f\n\n\nrgb(000,095,095)\n\n\nhsl(180,100%,018%)\n\n\nDeepSkyBlue4\n\n\n\n  \n\n24\n\n\n#005f87\n\n\nrgb(000,095,135)\n\n\nhsl(097,100%,026%)\n\n\nDeepSkyBlue4\n\n\n\n  \n\n25\n\n\n#005faf\n\n\nrgb(000,095,175)\n\n\nhsl(007,100%,034%)\n\n\nDeepSkyBlue4\n\n\n\n  \n\n26\n\n\n#005fd7\n\n\nrgb(000,095,215)\n\n\nhsl(013,100%,042%)\n\n\nDodgerBlue3\n\n\n\n  \n\n27\n\n\n#005fff\n\n\nrgb(000,095,255)\n\n\nhsl(017,100%,050%)\n\n\nDodgerBlue2\n\n\n\n  \n\n28\n\n\n#008700\n\n\nrgb(000,135,000)\n\n\nhsl(120,100%,026%)\n\n\nGreen4\n\n\n\n  \n\n29\n\n\n#00875f\n\n\nrgb(000,135,095)\n\n\nhsl(062,100%,026%)\n\n\nSpringGreen4\n\n\n\n  \n\n30\n\n\n#008787\n\n\nrgb(000,135,135)\n\n\nhsl(180,100%,026%)\n\n\nTurquoise4\n\n\n\n  \n\n31\n\n\n#0087af\n\n\nrgb(000,135,175)\n\n\nhsl(093,100%,034%)\n\n\nDeepSkyBlue3\n\n\n\n  \n\n32\n\n\n#0087d7\n\n\nrgb(000,135,215)\n\n\nhsl(002,100%,042%)\n\n\nDeepSkyBlue3\n\n\n\n  \n\n33\n\n\n#0087ff\n\n\nrgb(000,135,255)\n\n\nhsl(008,100%,050%)\n\n\nDodgerBlue1\n\n\n\n  \n\n34\n\n\n#00af00\n\n\nrgb(000,175,000)\n\n\nhsl(120,100%,034%)\n\n\nGreen3\n\n\n\n  \n\n35\n\n\n#00af5f\n\n\nrgb(000,175,095)\n\n\nhsl(052,100%,034%)\n\n\nSpringGreen3\n\n\n\n  \n\n36\n\n\n#00af87\n\n\nrgb(000,175,135)\n\n\nhsl(066,100%,034%)\n\n\nDarkCyan\n\n\n\n  \n\n37\n\n\n#00afaf\n\n\nrgb(000,175,175)\n\n\nhsl(180,100%,034%)\n\n\nLightSeaGreen\n\n\n\n  \n\n38\n\n\n#00afd7\n\n\nrgb(000,175,215)\n\n\nhsl(091,100%,042%)\n\n\nDeepSkyBlue2\n\n\n\n  \n\n39\n\n\n#00afff\n\n\nrgb(000,175,255)\n\n\nhsl(098,100%,050%)\n\n\nDeepSkyBlue1\n\n\n\n  \n\n40\n\n\n#00d700\n\n\nrgb(000,215,000)\n\n\nhsl(120,100%,042%)\n\n\nGreen3\n\n\n\n  \n\n41\n\n\n#00d75f\n\n\nrgb(000,215,095)\n\n\nhsl(046,100%,042%)\n\n\nSpringGreen3\n\n\n\n  \n\n42\n\n\n#00d787\n\n\nrgb(000,215,135)\n\n\nhsl(057,100%,042%)\n\n\nSpringGreen2\n\n\n\n  \n\n43\n\n\n#00d7af\n\n\nrgb(000,215,175)\n\n\nhsl(068,100%,042%)\n\n\nCyan3\n\n\n\n  \n\n44\n\n\n#00d7d7\n\n\nrgb(000,215,215)\n\n\nhsl(180,100%,042%)\n\n\nDarkTurquoise\n\n\n\n  \n\n45\n\n\n#00d7ff\n\n\nrgb(000,215,255)\n\n\nhsl(089,100%,050%)\n\n\nTurquoise2\n\n\n\n  \n\n46\n\n\n#00ff00\n\n\nrgb(000,255,000)\n\n\nhsl(120,100%,050%)\n\n\nGreen1\n\n\n\n  \n\n47\n\n\n#00ff5f\n\n\nrgb(000,255,095)\n\n\nhsl(042,100%,050%)\n\n\nSpringGreen2\n\n\n\n  \n\n48\n\n\n#00ff87\n\n\nrgb(000,255,135)\n\n\nhsl(051,100%,050%)\n\n\nSpringGreen1\n\n\n\n  \n\n49\n\n\n#00ffaf\n\n\nrgb(000,255,175)\n\n\nhsl(061,100%,050%)\n\n\nMediumSpringGree\n\n\n\n  \n\n50\n\n\n#00ffd7\n\n\nrgb(000,255,215)\n\n\nhsl(070,100%,050%)\n\n\nCyan2\n\n\n\n  \n\n51\n\n\n#00ffff\n\n\nrgb(000,255,255)\n\n\nhsl(180,100%,050%)\n\n\nCyan1\n\n\n\n  \n\n52\n\n\n#5f0000\n\n\nrgb(095,000,000)\n\n\nhsl(000,100%,018%)\n\n\nDarkRed\n\n\n\n  \n\n53\n\n\n#5f005f\n\n\nrgb(095,000,095)\n\n\nhsl(300,100%,018%)\n\n\nDeepPink4\n\n\n\n  \n\n54\n\n\n#5f0087\n\n\nrgb(095,000,135)\n\n\nhsl(082,100%,026%)\n\n\nPurple4\n\n\n\n  \n\n55\n\n\n#5f00af\n\n\nrgb(095,000,175)\n\n\nhsl(072,100%,034%)\n\n\nPurple4\n\n\n\n  \n\n56\n\n\n#5f00d7\n\n\nrgb(095,000,215)\n\n\nhsl(066,100%,042%)\n\n\nPurple3\n\n\n\n  \n\n57\n\n\n#5f00ff\n\n\nrgb(095,000,255)\n\n\nhsl(062,100%,050%)\n\n\nBlueViolet\n\n\n\n  \n\n58\n\n\n#5f5f00\n\n\nrgb(095,095,000)\n\n\nhsl(060,100%,018%)\n\n\nOrange4\n\n\n\n  \n\n59\n\n\n#5f5f5f\n\n\nrgb(095,095,095)\n\n\nhsl(000,000%,037%)\n\n\nGrey37\n\n\n\n  \n\n60\n\n\n#5f5f87\n\n\nrgb(095,095,135)\n\n\nhsl(240,017%,045%)\n\n\nMediumPurple4\n\n\n\n  \n\n61\n\n\n#5f5faf\n\n\nrgb(095,095,175)\n\n\nhsl(240,033%,052%)\n\n\nSlateBlue3\n\n\n\n  \n\n62\n\n\n#5f5fd7\n\n\nrgb(095,095,215)\n\n\nhsl(240,060%,060%)\n\n\nSlateBlue3\n\n\n\n  \n\n63\n\n\n#5f5fff\n\n\nrgb(095,095,255)\n\n\nhsl(240,100%,068%)\n\n\nRoyalBlue1\n\n\n\n  \n\n64\n\n\n#5f8700\n\n\nrgb(095,135,000)\n\n\nhsl(007,100%,026%)\n\n\nChartreuse4\n\n\n\n  \n\n65\n\n\n#5f875f\n\n\nrgb(095,135,095)\n\n\nhsl(120,017%,045%)\n\n\nDarkSeaGreen4\n\n\n\n  \n\n66\n\n\n#5f8787\n\n\nrgb(095,135,135)\n\n\nhsl(180,017%,045%)\n\n\nPaleTurquoise4\n\n\n\n  \n\n67\n\n\n#5f87af\n\n\nrgb(095,135,175)\n\n\nhsl(210,033%,052%)\n\n\nSteelBlue\n\n\n\n  \n\n68\n\n\n#5f87d7\n\n\nrgb(095,135,215)\n\n\nhsl(220,060%,060%)\n\n\nSteelBlue3\n\n\n\n  \n\n69\n\n\n#5f87ff\n\n\nrgb(095,135,255)\n\n\nhsl(225,100%,068%)\n\n\nCornflowerBlue\n\n\n\n  \n\n70\n\n\n#5faf00\n\n\nrgb(095,175,000)\n\n\nhsl(007,100%,034%)\n\n\nChartreuse3\n\n\n\n  \n\n71\n\n\n#5faf5f\n\n\nrgb(095,175,095)\n\n\nhsl(120,033%,052%)\n\n\nDarkSeaGreen4\n\n\n\n  \n\n72\n\n\n#5faf87\n\n\nrgb(095,175,135)\n\n\nhsl(150,033%,052%)\n\n\nCadetBlue\n\n\n\n  \n\n73\n\n\n#5fafaf\n\n\nrgb(095,175,175)\n\n\nhsl(180,033%,052%)\n\n\nCadetBlue\n\n\n\n  \n\n74\n\n\n#5fafd7\n\n\nrgb(095,175,215)\n\n\nhsl(200,060%,060%)\n\n\nSkyBlue3\n\n\n\n  \n\n75\n\n\n#5fafff\n\n\nrgb(095,175,255)\n\n\nhsl(210,100%,068%)\n\n\nSteelBlue1\n\n\n\n  \n\n76\n\n\n#5fd700\n\n\nrgb(095,215,000)\n\n\nhsl(003,100%,042%)\n\n\nChartreuse3\n\n\n\n  \n\n77\n\n\n#5fd75f\n\n\nrgb(095,215,095)\n\n\nhsl(120,060%,060%)\n\n\nPaleGreen3\n\n\n\n  \n\n78\n\n\n#5fd787\n\n\nrgb(095,215,135)\n\n\nhsl(140,060%,060%)\n\n\nSeaGreen3\n\n\n\n  \n\n79\n\n\n#5fd7af\n\n\nrgb(095,215,175)\n\n\nhsl(160,060%,060%)\n\n\nAquamarine3\n\n\n\n  \n\n80\n\n\n#5fd7d7\n\n\nrgb(095,215,215)\n\n\nhsl(180,060%,060%)\n\n\nMediumTurquoise\n\n\n\n  \n\n81\n\n\n#5fd7ff\n\n\nrgb(095,215,255)\n\n\nhsl(195,100%,068%)\n\n\nSteelBlue1\n\n\n\n  \n\n82\n\n\n#5fff00\n\n\nrgb(095,255,000)\n\n\nhsl(007,100%,050%)\n\n\nChartreuse2\n\n\n\n  \n\n83\n\n\n#5fff5f\n\n\nrgb(095,255,095)\n\n\nhsl(120,100%,068%)\n\n\nSeaGreen2\n\n\n\n  \n\n84\n\n\n#5fff87\n\n\nrgb(095,255,135)\n\n\nhsl(135,100%,068%)\n\n\nSeaGreen1\n\n\n\n  \n\n85\n\n\n#5fffaf\n\n\nrgb(095,255,175)\n\n\nhsl(150,100%,068%)\n\n\nSeaGreen1\n\n\n\n  \n\n86\n\n\n#5fffd7\n\n\nrgb(095,255,215)\n\n\nhsl(165,100%,068%)\n\n\nAquamarine1\n\n\n\n  \n\n87\n\n\n#5fffff\n\n\nrgb(095,255,255)\n\n\nhsl(180,100%,068%)\n\n\nDarkSlateGray2\n\n\n\n  \n\n88\n\n\n#870000\n\n\nrgb(135,000,000)\n\n\nhsl(000,100%,026%)\n\n\nDarkRed\n\n\n\n  \n\n89\n\n\n#87005f\n\n\nrgb(135,000,095)\n\n\nhsl(017,100%,026%)\n\n\nDeepPink4\n\n\n\n  \n\n90\n\n\n#870087\n\n\nrgb(135,000,135)\n\n\nhsl(300,100%,026%)\n\n\nDarkMagenta\n\n\n\n  \n\n91\n\n\n#8700af\n\n\nrgb(135,000,175)\n\n\nhsl(086,100%,034%)\n\n\nDarkMagenta\n\n\n\n  \n\n92\n\n\n#8700d7\n\n\nrgb(135,000,215)\n\n\nhsl(077,100%,042%)\n\n\nDarkViolet\n\n\n\n  \n\n93\n\n\n#8700ff\n\n\nrgb(135,000,255)\n\n\nhsl(071,100%,050%)\n\n\nPurple\n\n\n\n  \n\n94\n\n\n#875f00\n\n\nrgb(135,095,000)\n\n\nhsl(002,100%,026%)\n\n\nOrange4\n\n\n\n  \n\n95\n\n\n#875f5f\n\n\nrgb(135,095,095)\n\n\nhsl(000,017%,045%)\n\n\nLightPink4\n\n\n\n  \n\n96\n\n\n#875f87\n\n\nrgb(135,095,135)\n\n\nhsl(300,017%,045%)\n\n\nPlum4\n\n\n\n  \n\n97\n\n\n#875faf\n\n\nrgb(135,095,175)\n\n\nhsl(270,033%,052%)\n\n\nMediumPurple3\n\n\n\n  \n\n98\n\n\n#875fd7\n\n\nrgb(135,095,215)\n\n\nhsl(260,060%,060%)\n\n\nMediumPurple3\n\n\n\n  \n\n99\n\n\n#875fff\n\n\nrgb(135,095,255)\n\n\nhsl(255,100%,068%)\n\n\nSlateBlue1\n\n\n\n  \n\n100\n\n\n#878700\n\n\nrgb(135,135,000)\n\n\nhsl(060,100%,026%)\n\n\nYellow4\n\n\n\n  \n\n101\n\n\n#87875f\n\n\nrgb(135,135,095)\n\n\nhsl(060,017%,045%)\n\n\nWheat4\n\n\n\n  \n\n102\n\n\n#878787\n\n\nrgb(135,135,135)\n\n\nhsl(000,000%,052%)\n\n\nGrey53\n\n\n\n  \n\n103\n\n\n#8787af\n\n\nrgb(135,135,175)\n\n\nhsl(240,020%,060%)\n\n\nLightSlateGrey\n\n\n\n  \n\n104\n\n\n#8787d7\n\n\nrgb(135,135,215)\n\n\nhsl(240,050%,068%)\n\n\nMediumPurple\n\n\n\n  \n\n105\n\n\n#8787ff\n\n\nrgb(135,135,255)\n\n\nhsl(240,100%,076%)\n\n\nLightSlateBlue\n\n\n\n  \n\n106\n\n\n#87af00\n\n\nrgb(135,175,000)\n\n\nhsl(003,100%,034%)\n\n\nYellow4\n\n\n\n  \n\n107\n\n\n#87af5f\n\n\nrgb(135,175,095)\n\n\nhsl(090,033%,052%)\n\n\nDarkOliveGreen3\n\n\n\n  \n\n108\n\n\n#87af87\n\n\nrgb(135,175,135)\n\n\nhsl(120,020%,060%)\n\n\nDarkSeaGreen\n\n\n\n  \n\n109\n\n\n#87afaf\n\n\nrgb(135,175,175)\n\n\nhsl(180,020%,060%)\n\n\nLightSkyBlue3\n\n\n\n  \n\n110\n\n\n#87afd7\n\n\nrgb(135,175,215)\n\n\nhsl(210,050%,068%)\n\n\nLightSkyBlue3\n\n\n\n  \n\n111\n\n\n#87afff\n\n\nrgb(135,175,255)\n\n\nhsl(220,100%,076%)\n\n\nSkyBlue2\n\n\n\n  \n\n112\n\n\n#87d700\n\n\nrgb(135,215,000)\n\n\nhsl(002,100%,042%)\n\n\nChartreuse2\n\n\n\n  \n\n113\n\n\n#87d75f\n\n\nrgb(135,215,095)\n\n\nhsl(100,060%,060%)\n\n\nDarkOliveGreen3\n\n\n\n  \n\n114\n\n\n#87d787\n\n\nrgb(135,215,135)\n\n\nhsl(120,050%,068%)\n\n\nPaleGreen3\n\n\n\n  \n\n115\n\n\n#87d7af\n\n\nrgb(135,215,175)\n\n\nhsl(150,050%,068%)\n\n\nDarkSeaGreen3\n\n\n\n  \n\n116\n\n\n#87d7d7\n\n\nrgb(135,215,215)\n\n\nhsl(180,050%,068%)\n\n\nDarkSlateGray3\n\n\n\n  \n\n117\n\n\n#87d7ff\n\n\nrgb(135,215,255)\n\n\nhsl(200,100%,076%)\n\n\nSkyBlue1\n\n\n\n  \n\n118\n\n\n#87ff00\n\n\nrgb(135,255,000)\n\n\nhsl(008,100%,050%)\n\n\nChartreuse1\n\n\n\n  \n\n119\n\n\n#87ff5f\n\n\nrgb(135,255,095)\n\n\nhsl(105,100%,068%)\n\n\nLightGreen\n\n\n\n  \n\n120\n\n\n#87ff87\n\n\nrgb(135,255,135)\n\n\nhsl(120,100%,076%)\n\n\nLightGreen\n\n\n\n  \n\n121\n\n\n#87ffaf\n\n\nrgb(135,255,175)\n\n\nhsl(140,100%,076%)\n\n\nPaleGreen1\n\n\n\n  \n\n122\n\n\n#87ffd7\n\n\nrgb(135,255,215)\n\n\nhsl(160,100%,076%)\n\n\nAquamarine1\n\n\n\n  \n\n123\n\n\n#87ffff\n\n\nrgb(135,255,255)\n\n\nhsl(180,100%,076%)\n\n\nDarkSlateGray1\n\n\n\n  \n\n124\n\n\n#af0000\n\n\nrgb(175,000,000)\n\n\nhsl(000,100%,034%)\n\n\nRed3\n\n\n\n  \n\n125\n\n\n#af005f\n\n\nrgb(175,000,095)\n\n\nhsl(027,100%,034%)\n\n\nDeepPink4\n\n\n\n  \n\n126\n\n\n#af0087\n\n\nrgb(175,000,135)\n\n\nhsl(013,100%,034%)\n\n\nMediumVioletRed\n\n\n\n  \n\n127\n\n\n#af00af\n\n\nrgb(175,000,175)\n\n\nhsl(300,100%,034%)\n\n\nMagenta3\n\n\n\n  \n\n128\n\n\n#af00d7\n\n\nrgb(175,000,215)\n\n\nhsl(088,100%,042%)\n\n\nDarkViolet\n\n\n\n  \n\n129\n\n\n#af00ff\n\n\nrgb(175,000,255)\n\n\nhsl(081,100%,050%)\n\n\nPurple\n\n\n\n  \n\n130\n\n\n#af5f00\n\n\nrgb(175,095,000)\n\n\nhsl(002,100%,034%)\n\n\nDarkOrange3\n\n\n\n  \n\n131\n\n\n#af5f5f\n\n\nrgb(175,095,095)\n\n\nhsl(000,033%,052%)\n\n\nIndianRed\n\n\n\n  \n\n132\n\n\n#af5f87\n\n\nrgb(175,095,135)\n\n\nhsl(330,033%,052%)\n\n\nHotPink3\n\n\n\n  \n\n133\n\n\n#af5faf\n\n\nrgb(175,095,175)\n\n\nhsl(300,033%,052%)\n\n\nMediumOrchid3\n\n\n\n  \n\n134\n\n\n#af5fd7\n\n\nrgb(175,095,215)\n\n\nhsl(280,060%,060%)\n\n\nMediumOrchid\n\n\n\n  \n\n135\n\n\n#af5fff\n\n\nrgb(175,095,255)\n\n\nhsl(270,100%,068%)\n\n\nMediumPurple2\n\n\n\n  \n\n136\n\n\n#af8700\n\n\nrgb(175,135,000)\n\n\nhsl(006,100%,034%)\n\n\nDarkGoldenrod\n\n\n\n  \n\n137\n\n\n#af875f\n\n\nrgb(175,135,095)\n\n\nhsl(030,033%,052%)\n\n\nLightSalmon3\n\n\n\n  \n\n138\n\n\n#af8787\n\n\nrgb(175,135,135)\n\n\nhsl(000,020%,060%)\n\n\nRosyBrown\n\n\n\n  \n\n139\n\n\n#af87af\n\n\nrgb(175,135,175)\n\n\nhsl(300,020%,060%)\n\n\nGrey63\n\n\n\n  \n\n140\n\n\n#af87d7\n\n\nrgb(175,135,215)\n\n\nhsl(270,050%,068%)\n\n\nMediumPurple2\n\n\n\n  \n\n141\n\n\n#af87ff\n\n\nrgb(175,135,255)\n\n\nhsl(260,100%,076%)\n\n\nMediumPurple1\n\n\n\n  \n\n142\n\n\n#afaf00\n\n\nrgb(175,175,000)\n\n\nhsl(060,100%,034%)\n\n\nGold3\n\n\n\n  \n\n143\n\n\n#afaf5f\n\n\nrgb(175,175,095)\n\n\nhsl(060,033%,052%)\n\n\nDarkKhaki\n\n\n\n  \n\n144\n\n\n#afaf87\n\n\nrgb(175,175,135)\n\n\nhsl(060,020%,060%)\n\n\nNavajoWhite3\n\n\n\n  \n\n145\n\n\n#afafaf\n\n\nrgb(175,175,175)\n\n\nhsl(000,000%,068%)\n\n\nGrey69\n\n\n\n  \n\n146\n\n\n#afafd7\n\n\nrgb(175,175,215)\n\n\nhsl(240,033%,076%)\n\n\nLightSteelBlue3\n\n\n\n  \n\n147\n\n\n#afafff\n\n\nrgb(175,175,255)\n\n\nhsl(240,100%,084%)\n\n\nLightSteelBlue\n\n\n\n  \n\n148\n\n\n#afd700\n\n\nrgb(175,215,000)\n\n\nhsl(001,100%,042%)\n\n\nYellow3\n\n\n\n  \n\n149\n\n\n#afd75f\n\n\nrgb(175,215,095)\n\n\nhsl(080,060%,060%)\n\n\nDarkOliveGreen3\n\n\n\n  \n\n150\n\n\n#afd787\n\n\nrgb(175,215,135)\n\n\nhsl(090,050%,068%)\n\n\nDarkSeaGreen3\n\n\n\n  \n\n151\n\n\n#afd7af\n\n\nrgb(175,215,175)\n\n\nhsl(120,033%,076%)\n\n\nDarkSeaGreen2\n\n\n\n  \n\n152\n\n\n#afd7d7\n\n\nrgb(175,215,215)\n\n\nhsl(180,033%,076%)\n\n\nLightCyan3\n\n\n\n  \n\n153\n\n\n#afd7ff\n\n\nrgb(175,215,255)\n\n\nhsl(210,100%,084%)\n\n\nLightSkyBlue1\n\n\n\n  \n\n154\n\n\n#afff00\n\n\nrgb(175,255,000)\n\n\nhsl(008,100%,050%)\n\n\nGreenYellow\n\n\n\n  \n\n155\n\n\n#afff5f\n\n\nrgb(175,255,095)\n\n\nhsl(090,100%,068%)\n\n\nDarkOliveGreen2\n\n\n\n  \n\n156\n\n\n#afff87\n\n\nrgb(175,255,135)\n\n\nhsl(100,100%,076%)\n\n\nPaleGreen1\n\n\n\n  \n\n157\n\n\n#afffaf\n\n\nrgb(175,255,175)\n\n\nhsl(120,100%,084%)\n\n\nDarkSeaGreen2\n\n\n\n  \n\n158\n\n\n#afffd7\n\n\nrgb(175,255,215)\n\n\nhsl(150,100%,084%)\n\n\nDarkSeaGreen1\n\n\n\n  \n\n159\n\n\n#afffff\n\n\nrgb(175,255,255)\n\n\nhsl(180,100%,084%)\n\n\nPaleTurquoise1\n\n\n\n  \n\n160\n\n\n#d70000\n\n\nrgb(215,000,000)\n\n\nhsl(000,100%,042%)\n\n\nRed3\n\n\n\n  \n\n161\n\n\n#d7005f\n\n\nrgb(215,000,095)\n\n\nhsl(033,100%,042%)\n\n\nDeepPink3\n\n\n\n  \n\n162\n\n\n#d70087\n\n\nrgb(215,000,135)\n\n\nhsl(022,100%,042%)\n\n\nDeepPink3\n\n\n\n  \n\n163\n\n\n#d700af\n\n\nrgb(215,000,175)\n\n\nhsl(011,100%,042%)\n\n\nMagenta3\n\n\n\n  \n\n164\n\n\n#d700d7\n\n\nrgb(215,000,215)\n\n\nhsl(300,100%,042%)\n\n\nMagenta3\n\n\n\n  \n\n165\n\n\n#d700ff\n\n\nrgb(215,000,255)\n\n\nhsl(090,100%,050%)\n\n\nMagenta2\n\n\n\n  \n\n166\n\n\n#d75f00\n\n\nrgb(215,095,000)\n\n\nhsl(006,100%,042%)\n\n\nDarkOrange3\n\n\n\n  \n\n167\n\n\n#d75f5f\n\n\nrgb(215,095,095)\n\n\nhsl(000,060%,060%)\n\n\nIndianRed\n\n\n\n  \n\n168\n\n\n#d75f87\n\n\nrgb(215,095,135)\n\n\nhsl(340,060%,060%)\n\n\nHotPink3\n\n\n\n  \n\n169\n\n\n#d75faf\n\n\nrgb(215,095,175)\n\n\nhsl(320,060%,060%)\n\n\nHotPink2\n\n\n\n  \n\n170\n\n\n#d75fd7\n\n\nrgb(215,095,215)\n\n\nhsl(300,060%,060%)\n\n\nOrchid\n\n\n\n  \n\n171\n\n\n#d75fff\n\n\nrgb(215,095,255)\n\n\nhsl(285,100%,068%)\n\n\nMediumOrchid1\n\n\n\n  \n\n172\n\n\n#d78700\n\n\nrgb(215,135,000)\n\n\nhsl(007,100%,042%)\n\n\nOrange3\n\n\n\n  \n\n173\n\n\n#d7875f\n\n\nrgb(215,135,095)\n\n\nhsl(020,060%,060%)\n\n\nLightSalmon3\n\n\n\n  \n\n174\n\n\n#d78787\n\n\nrgb(215,135,135)\n\n\nhsl(000,050%,068%)\n\n\nLightPink3\n\n\n\n  \n\n175\n\n\n#d787af\n\n\nrgb(215,135,175)\n\n\nhsl(330,050%,068%)\n\n\nPink3\n\n\n\n  \n\n176\n\n\n#d787d7\n\n\nrgb(215,135,215)\n\n\nhsl(300,050%,068%)\n\n\nPlum3\n\n\n\n  \n\n177\n\n\n#d787ff\n\n\nrgb(215,135,255)\n\n\nhsl(280,100%,076%)\n\n\nViolet\n\n\n\n  \n\n178\n\n\n#d7af00\n\n\nrgb(215,175,000)\n\n\nhsl(008,100%,042%)\n\n\nGold3\n\n\n\n  \n\n179\n\n\n#d7af5f\n\n\nrgb(215,175,095)\n\n\nhsl(040,060%,060%)\n\n\nLightGoldenrod3\n\n\n\n  \n\n180\n\n\n#d7af87\n\n\nrgb(215,175,135)\n\n\nhsl(030,050%,068%)\n\n\nTan\n\n\n\n  \n\n181\n\n\n#d7afaf\n\n\nrgb(215,175,175)\n\n\nhsl(000,033%,076%)\n\n\nMistyRose3\n\n\n\n  \n\n182\n\n\n#d7afd7\n\n\nrgb(215,175,215)\n\n\nhsl(300,033%,076%)\n\n\nThistle3\n\n\n\n  \n\n183\n\n\n#d7afff\n\n\nrgb(215,175,255)\n\n\nhsl(270,100%,084%)\n\n\nPlum2\n\n\n\n  \n\n184\n\n\n#d7d700\n\n\nrgb(215,215,000)\n\n\nhsl(060,100%,042%)\n\n\nYellow3\n\n\n\n  \n\n185\n\n\n#d7d75f\n\n\nrgb(215,215,095)\n\n\nhsl(060,060%,060%)\n\n\nKhaki3\n\n\n\n  \n\n186\n\n\n#d7d787\n\n\nrgb(215,215,135)\n\n\nhsl(060,050%,068%)\n\n\nLightGoldenrod2\n\n\n\n  \n\n187\n\n\n#d7d7af\n\n\nrgb(215,215,175)\n\n\nhsl(060,033%,076%)\n\n\nLightYellow3\n\n\n\n  \n\n188\n\n\n#d7d7d7\n\n\nrgb(215,215,215)\n\n\nhsl(000,000%,084%)\n\n\nGrey84\n\n\n\n  \n\n189\n\n\n#d7d7ff\n\n\nrgb(215,215,255)\n\n\nhsl(240,100%,092%)\n\n\nLightSteelBlue1\n\n\n\n  \n\n190\n\n\n#d7ff00\n\n\nrgb(215,255,000)\n\n\nhsl(009,100%,050%)\n\n\nYellow2\n\n\n\n  \n\n191\n\n\n#d7ff5f\n\n\nrgb(215,255,095)\n\n\nhsl(075,100%,068%)\n\n\nDarkOliveGreen1\n\n\n\n  \n\n192\n\n\n#d7ff87\n\n\nrgb(215,255,135)\n\n\nhsl(080,100%,076%)\n\n\nDarkOliveGreen1\n\n\n\n  \n\n193\n\n\n#d7ffaf\n\n\nrgb(215,255,175)\n\n\nhsl(090,100%,084%)\n\n\nDarkSeaGreen1\n\n\n\n  \n\n194\n\n\n#d7ffd7\n\n\nrgb(215,255,215)\n\n\nhsl(120,100%,092%)\n\n\nHoneydew2\n\n\n\n  \n\n195\n\n\n#d7ffff\n\n\nrgb(215,255,255)\n\n\nhsl(180,100%,092%)\n\n\nLightCyan1\n\n\n\n  \n\n196\n\n\n#ff0000\n\n\nrgb(255,000,000)\n\n\nhsl(000,100%,050%)\n\n\nRed1\n\n\n\n  \n\n197\n\n\n#ff005f\n\n\nrgb(255,000,095)\n\n\nhsl(037,100%,050%)\n\n\nDeepPink2\n\n\n\n  \n\n198\n\n\n#ff0087\n\n\nrgb(255,000,135)\n\n\nhsl(028,100%,050%)\n\n\nDeepPink1\n\n\n\n  \n\n199\n\n\n#ff00af\n\n\nrgb(255,000,175)\n\n\nhsl(018,100%,050%)\n\n\nDeepPink1\n\n\n\n  \n\n200\n\n\n#ff00d7\n\n\nrgb(255,000,215)\n\n\nhsl(009,100%,050%)\n\n\nMagenta2\n\n\n\n  \n\n201\n\n\n#ff00ff\n\n\nrgb(255,000,255)\n\n\nhsl(300,100%,050%)\n\n\nMagenta1\n\n\n\n  \n\n202\n\n\n#ff5f00\n\n\nrgb(255,095,000)\n\n\nhsl(002,100%,050%)\n\n\nOrangeRed1\n\n\n\n  \n\n203\n\n\n#ff5f5f\n\n\nrgb(255,095,095)\n\n\nhsl(000,100%,068%)\n\n\nIndianRed1\n\n\n\n  \n\n204\n\n\n#ff5f87\n\n\nrgb(255,095,135)\n\n\nhsl(345,100%,068%)\n\n\nIndianRed1\n\n\n\n  \n\n205\n\n\n#ff5faf\n\n\nrgb(255,095,175)\n\n\nhsl(330,100%,068%)\n\n\nHotPink\n\n\n\n  \n\n206\n\n\n#ff5fd7\n\n\nrgb(255,095,215)\n\n\nhsl(315,100%,068%)\n\n\nHotPink\n\n\n\n  \n\n207\n\n\n#ff5fff\n\n\nrgb(255,095,255)\n\n\nhsl(300,100%,068%)\n\n\nMediumOrchid1\n\n\n\n  \n\n208\n\n\n#ff8700\n\n\nrgb(255,135,000)\n\n\nhsl(001,100%,050%)\n\n\nDarkOrange\n\n\n\n  \n\n209\n\n\n#ff875f\n\n\nrgb(255,135,095)\n\n\nhsl(015,100%,068%)\n\n\nSalmon1\n\n\n\n  \n\n210\n\n\n#ff8787\n\n\nrgb(255,135,135)\n\n\nhsl(000,100%,076%)\n\n\nLightCoral\n\n\n\n  \n\n211\n\n\n#ff87af\n\n\nrgb(255,135,175)\n\n\nhsl(340,100%,076%)\n\n\nPaleVioletRed1\n\n\n\n  \n\n212\n\n\n#ff87d7\n\n\nrgb(255,135,215)\n\n\nhsl(320,100%,076%)\n\n\nOrchid2\n\n\n\n  \n\n213\n\n\n#ff87ff\n\n\nrgb(255,135,255)\n\n\nhsl(300,100%,076%)\n\n\nOrchid1\n\n\n\n  \n\n214\n\n\n#ffaf00\n\n\nrgb(255,175,000)\n\n\nhsl(001,100%,050%)\n\n\nOrange1\n\n\n\n  \n\n215\n\n\n#ffaf5f\n\n\nrgb(255,175,095)\n\n\nhsl(030,100%,068%)\n\n\nSandyBrown\n\n\n\n  \n\n216\n\n\n#ffaf87\n\n\nrgb(255,175,135)\n\n\nhsl(020,100%,076%)\n\n\nLightSalmon1\n\n\n\n  \n\n217\n\n\n#ffafaf\n\n\nrgb(255,175,175)\n\n\nhsl(000,100%,084%)\n\n\nLightPink1\n\n\n\n  \n\n218\n\n\n#ffafd7\n\n\nrgb(255,175,215)\n\n\nhsl(330,100%,084%)\n\n\nPink1\n\n\n\n  \n\n219\n\n\n#ffafff\n\n\nrgb(255,175,255)\n\n\nhsl(300,100%,084%)\n\n\nPlum1\n\n\n\n  \n\n220\n\n\n#ffd700\n\n\nrgb(255,215,000)\n\n\nhsl(000,100%,050%)\n\n\nGold1\n\n\n\n  \n\n221\n\n\n#ffd75f\n\n\nrgb(255,215,095)\n\n\nhsl(045,100%,068%)\n\n\nLightGoldenrod2\n\n\n\n  \n\n222\n\n\n#ffd787\n\n\nrgb(255,215,135)\n\n\nhsl(040,100%,076%)\n\n\nLightGoldenrod2\n\n\n\n  \n\n223\n\n\n#ffd7af\n\n\nrgb(255,215,175)\n\n\nhsl(030,100%,084%)\n\n\nNavajoWhite1\n\n\n\n  \n\n224\n\n\n#ffd7d7\n\n\nrgb(255,215,215)\n\n\nhsl(000,100%,092%)\n\n\nMistyRose1\n\n\n\n  \n\n225\n\n\n#ffd7ff\n\n\nrgb(255,215,255)\n\n\nhsl(300,100%,092%)\n\n\nThistle1\n\n\n\n  \n\n226\n\n\n#ffff00\n\n\nrgb(255,255,000)\n\n\nhsl(060,100%,050%)\n\n\nYellow1\n\n\n\n  \n\n227\n\n\n#ffff5f\n\n\nrgb(255,255,095)\n\n\nhsl(060,100%,068%)\n\n\nLightGoldenrod1\n\n\n\n  \n\n228\n\n\n#ffff87\n\n\nrgb(255,255,135)\n\n\nhsl(060,100%,076%)\n\n\nKhaki1\n\n\n\n  \n\n229\n\n\n#ffffaf\n\n\nrgb(255,255,175)\n\n\nhsl(060,100%,084%)\n\n\nWheat1\n\n\n\n  \n\n230\n\n\n#ffffd7\n\n\nrgb(255,255,215)\n\n\nhsl(060,100%,092%)\n\n\nCornsilk1\n\n\n\n  \n\n231\n\n\n#ffffff\n\n\nrgb(255,255,255)\n\n\nhsl(000,000%,100%)\n\n\nGrey100\n\n\n\n  \n\n232\n\n\n#080808\n\n\nrgb(008,008,008)\n\n\nhsl(000,000%,003%)\n\n\nGrey3\n\n\n\n  \n\n233\n\n\n#121212\n\n\nrgb(018,018,018)\n\n\nhsl(000,000%,007%)\n\n\nGrey7\n\n\n\n  \n\n234\n\n\n#1c1c1c\n\n\nrgb(028,028,028)\n\n\nhsl(000,000%,010%)\n\n\nGrey11\n\n\n\n  \n\n235\n\n\n#262626\n\n\nrgb(038,038,038)\n\n\nhsl(000,000%,014%)\n\n\nGrey15\n\n\n\n  \n\n236\n\n\n#303030\n\n\nrgb(048,048,048)\n\n\nhsl(000,000%,018%)\n\n\nGrey19\n\n\n\n  \n\n237\n\n\n#3a3a3a\n\n\nrgb(058,058,058)\n\n\nhsl(000,000%,022%)\n\n\nGrey23\n\n\n\n  \n\n238\n\n\n#444444\n\n\nrgb(068,068,068)\n\n\nhsl(000,000%,026%)\n\n\nGrey27\n\n\n\n  \n\n239\n\n\n#4e4e4e\n\n\nrgb(078,078,078)\n\n\nhsl(000,000%,030%)\n\n\nGrey30\n\n\n\n  \n\n240\n\n\n#585858\n\n\nrgb(088,088,088)\n\n\nhsl(000,000%,034%)\n\n\nGrey35\n\n\n\n  \n\n241\n\n\n#626262\n\n\nrgb(098,098,098)\n\n\nhsl(000,000%,037%)\n\n\nGrey39\n\n\n\n  \n\n242\n\n\n#6c6c6c\n\n\nrgb(108,108,108)\n\n\nhsl(000,000%,040%)\n\n\nGrey42\n\n\n\n  \n\n243\n\n\n#767676\n\n\nrgb(118,118,118)\n\n\nhsl(000,000%,046%)\n\n\nGrey46\n\n\n\n  \n\n244\n\n\n#808080\n\n\nrgb(128,128,128)\n\n\nhsl(000,000%,050%)\n\n\nGrey50\n\n\n\n  \n\n245\n\n\n#8a8a8a\n\n\nrgb(138,138,138)\n\n\nhsl(000,000%,054%)\n\n\nGrey54\n\n\n\n  \n\n246\n\n\n#949494\n\n\nrgb(148,148,148)\n\n\nhsl(000,000%,058%)\n\n\nGrey58\n\n\n\n  \n\n247\n\n\n#9e9e9e\n\n\nrgb(158,158,158)\n\n\nhsl(000,000%,061%)\n\n\nGrey62\n\n\n\n  \n\n248\n\n\n#a8a8a8\n\n\nrgb(168,168,168)\n\n\nhsl(000,000%,065%)\n\n\nGrey66\n\n\n\n  \n\n249\n\n\n#b2b2b2\n\n\nrgb(178,178,178)\n\n\nhsl(000,000%,069%)\n\n\nGrey70\n\n\n\n  \n\n250\n\n\n#bcbcbc\n\n\nrgb(188,188,188)\n\n\nhsl(000,000%,073%)\n\n\nGrey74\n\n\n\n  \n\n251\n\n\n#c6c6c6\n\n\nrgb(198,198,198)\n\n\nhsl(000,000%,077%)\n\n\nGrey78\n\n\n\n  \n\n252\n\n\n#d0d0d0\n\n\nrgb(208,208,208)\n\n\nhsl(000,000%,081%)\n\n\nGrey82\n\n\n\n  \n\n253\n\n\n#dadada\n\n\nrgb(218,218,218)\n\n\nhsl(000,000%,085%)\n\n\nGrey85\n\n\n\n  \n\n254\n\n\n#e4e4e4\n\n\nrgb(228,228,228)\n\n\nhsl(000,000%,089%)\n\n\nGrey89\n\n\n\n  \n\n255\n\n\n#eeeeee\n\n\nrgb(238,238,238)\n\n\nhsl(000,000%,093%)\n\n\nGrey93",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Git Reference"
+      "Color Scheme Reference",
+      "ANSI 256 Color Table"
     ]
   },
   {
-    "objectID": "reference/environment-setup/git.html#configuration",
-    "href": "reference/environment-setup/git.html#configuration",
-    "title": "Git Reference",
-    "section": "Configuration",
-    "text": "Configuration\nYou can edit a git configuration either from the command line or edit a .gitconfig that lives in your home directory.\n\nCommand Line Entry\nTo edit a parameter from the command line that will edit your git config file, run a command in the following format:\ngit config --global &lt;section&gt;.&lt;key&gt; &lt;value&gt;\nFor instance, if you would like to edit the user name for all commits made from an account, run the command:\ngit config --global user.name \"Your Name\"\nSimilarly, if you would like to change the default name to main (instead of the usual default master) run the following command:\ngit config --global init.defaultBranch main\n\n\n.gitconfig file\nThe .gitconfig file lives in your home directory, or is created upon the first run of a git config command. It takes the format”\n[section0]\n    key = value\n\n[section1]\n    key = value",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "Git Reference"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/git.html#submodules",
-    "href": "reference/environment-setup/git.html#submodules",
-    "title": "Git Reference",
-    "section": "Submodules",
-    "text": "Submodules\n\nAdd Submodule\nTo add a submodule, first add the repository in the web interface of your Git remote host, e.g. GitHub or Azure DevOps.\nIn the repository that you would like to use to contain the submodule, use the following command:\ngit submodule add &lt;submodule address&gt;\nE.g.\ngit submodule add git@github.com:rebeccajr/test-submodule.git\n\n\nInitialization\nWhen first adding a submodule, or when cloning a repository with submodules you must run:\ngit submodule update --init --recursive\nNote The --recursive flag is only necessary if there are nested submodules, however it won’t hurt anything if there aren’t nested submodules.\n\n\nUpdate Submodule\nAfter the initialization of a submodule, to simply update that submodule, i.e. pull down any new commits, run:\ngit submodule update --recursive",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "Git Reference"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/git.html#ssh-key-setup",
-    "href": "reference/environment-setup/git.html#ssh-key-setup",
-    "title": "Git Reference",
-    "section": "SSH Key Setup",
-    "text": "SSH Key Setup\nTo enable seamless authentication for Git without repeating logins, follow these steps to configure SSH keys. This guide covers setup for both GitHub and Azure DevOps.\n\nGitHub\nThe following information was taken from the following source:\nGitHub SSH Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -t ed25519 -C \"email@address.com\"\nOutput\nGenerating public/private ed25519 key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_ed25519):\nEnter passphrase (empty for no passphrase):\nEnter same passphrase again:\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_ed25519.pub\nThe key fingerprint is:\n################################################## email@address.com\nThe key's randomart image is:\n+--[ED25519 256]--+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 59566\nRegister your private SSH key with the SSH Agent.\nssh-add ~/.ssh/id_ed25519\nOutput\nIdentity added: /home/flux/.ssh/id_ed25519 (email@address.com)\nGo to settings.\n\nGo to SSH keys.\n\nClick New SSH key button.\n\n\n\n\nAzure DevOps\nThe following information was taken from the following source:\nAzure DevOps Key Setup Reource\n\nGenerate an SSH key.\nssh-keygen -m PEM -t rsa -b 4096\nOutput\nGenerating public/private rsa key pair.\nHit enter after each of the following prompts.\nEnter file in which to save the key (/home/&lt;user_name&gt;/.ssh/id_rsa): (hit enter)\nEnter passphrase (empty for no passphrase): (hit enter)\nEnter same passphrase again: (hit enter)\nOutput\nYour identification has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa\nYour public key has been saved in /home/&lt;user_name&gt;/.ssh/id_rsa.pub\nThe key fingerprint is:\nSHA256:########################################### user@computer\nThe key's randomart image is:\n+---[RSA 4096]----+\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n|   ###########   |\n+----[SHA256]-----+\nStart the SSH Agent in the background.\neval \"$(ssh-agent -s)\"\nOutput\nAgent pid 12956\nFrom Azure DevOps web interface",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "Git Reference"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup/application-installation.html",
-    "href": "reference/environment-setup/application-installation.html",
-    "title": "Application Installation",
+    "objectID": "reference/color-scheme__reference/putty-color.html",
+    "href": "reference/color-scheme__reference/putty-color.html",
+    "title": "PuTTY Color Configuration",
     "section": "",
-    "text": "This is my essential checklist of applications for setting up a new development environment, including links to their official install sources.",
+    "text": "Learn how to customize your terminal’s appearance by modifying the PuTTY configuration color values.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "PuTTY Color Configuration"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/putty-color.html#export-default-configuration-file",
+    "href": "reference/color-scheme__reference/putty-color.html#export-default-configuration-file",
+    "title": "PuTTY Color Configuration",
+    "section": "Export Default Configuration File",
+    "text": "Export Default Configuration File\nFollow these instructions to export your PuTTY configuration file.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "PuTTY Color Configuration"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/putty-color.html#color-labels",
+    "href": "reference/color-scheme__reference/putty-color.html#color-labels",
+    "title": "PuTTY Color Configuration",
+    "section": "Color Labels",
+    "text": "Color Labels\nIn the .reg file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:\n\"Colour#\"=\"#,#,#\".\nNote that # of Colour# does not correspond with normal ANSI colors, i.e. 0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.\n\n\n\nLabel\nColor\n\n\n\n\nColour0\nForeground\n\n\nColour1\nBright Foreground\n\n\nColour2\nBackground\n\n\nColour3\nBright Background\n\n\nColour4\nCursor Foreground\n\n\nColour5\nCursor Background\n\n\nColour6\nBlack\n\n\nColour7\nBright Black\n\n\nColour8\nRed\n\n\nColour9\nBright Red\n\n\nColour10\nGreen\n\n\nColour11\nBright Green\n\n\nColour12\nYellow\n\n\nColour13\nBright Yellow\n\n\nColour14\nBlue\n\n\nColour15\nBright Blue\n\n\nColour16\nMagenta\n\n\nColour17\nBright Magenta\n\n\nColour18\nCyan\n\n\nColour19\nBright Cyan\n\n\nColour20\nWhite\n\n\nColour21\nBright White\n\n\n\n\nSample Color Theme Section\nNote: Whitespace is permitted in the configuration file.\n\"Colour0\" =\"187, 187, 187\"\n\"Colour1\" =\"255, 255, 255\"\n\"Colour2\" =\" 28,  28,  28\"\n\"Colour3\" =\" 95,  95,  95\"\n\"Colour4\" =\" 12,  12,  12\"\n\"Colour5\" =\"255, 135,  95\"\n\"Colour6\" =\" 18,  18,  18\"\n\"Colour7\" =\" 48,  48,  48\"\n\"Colour8\" =\"215,  95, 135\"\n\"Colour9\" =\"255,  95, 135\"\n\"Colour10\"=\"135, 215,  95\"\n\"Colour11\"=\"135, 255,  95\"\n\"Colour12\"=\"255, 135,  95\"\n\"Colour13\"=\"215, 215,  95\"\n\"Colour14\"=\" 95, 135, 215\"\n\"Colour15\"=\" 95, 135, 255\"\n\"Colour16\"=\"175,  95, 215\"\n\"Colour17\"=\"175,  95, 255\"\n\"Colour18\"=\" 95, 175, 215\"\n\"Colour19\"=\" 95, 175, 255\"\n\"Colour20\"=\"215, 215, 215\"\n\"Colour21\"=\"255, 255, 255\"",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "PuTTY Color Configuration"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/putty-color.html#import-configuration-file",
+    "href": "reference/color-scheme__reference/putty-color.html#import-configuration-file",
+    "title": "PuTTY Color Configuration",
+    "section": "Import Configuration File",
+    "text": "Import Configuration File\nFollow these instructions to import your modified PuTTY configuration file.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "PuTTY Color Configuration"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/index.html",
+    "href": "reference/color-scheme__reference/index.html",
+    "title": "Color Scheme Reference",
+    "section": "",
+    "text": "Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI Color Codes Explained\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI 256 Color Table\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTERM Environment Variable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLS_COLORS & dircolors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVS Code Color Theme\n\n\nA detailed example on how to create and load a VS Code color theme file\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGNOME Color Profile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPuTTY Color Configuration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Color Scheme\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/vs-code.html",
+    "href": "reference/environment-setup__reference/vs-code.html",
+    "title": "Visual Studio Code Setup",
+    "section": "",
+    "text": "This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "New Environment Setup",
-      "Application Installation"
+      "Visual Studio Code Setup"
     ]
   },
   {
-    "objectID": "reference/environment-setup/application-installation.html#ubuntu",
-    "href": "reference/environment-setup/application-installation.html#ubuntu",
-    "title": "Application Installation",
-    "section": "Ubuntu",
-    "text": "Ubuntu\n\nCreate root password\npasswd\n\n\nInstall from apt\nUse sudo before all apt commands if you do not have a root password.\nsu\napt install build-essential\napt install cmake\napt install vim\napt install emacs\napt install nano\napt install gedit\napt install git\napt install zsh\napt install curl\napt install tmux\napt install python3-pip\napt install graphviz # Make block diagrams using a scripting language\n\n\nInstall from snap\nsudo snap install discord\n\n\nFrom App Center\n\nSteam\nSlack\nVisual Studio Code (“code”)\n\n\n\nInstall from .deb\n\nChrome\nFrom directory with .deb file\nsudo dpkg -i &lt;.deb file&gt;\n\n\nDrawIO\nDownload .deb from here.\nRun with\ndrawio\nIf you get this error\nFATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /opt/drawio/chrome-sandbox is owned by root and has mode 4755.\nRun this command\nsudo chmod 4755 /opt/drawio/chrome-sandbox\nSource\n\n\n\nArduino CLI\n\nInstall Arduino CLI\nSource: Arduino CLI\n\nCreate ~/local/ if it doesn’t already exist:\nmkdir ~/local\nNavigate to ~/local and run command to install arduino-cli\ncurl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh\nPre-pended $PATH environment variable with this line in ~/.bash_profile\nexport PATH=~/local/bin:$PATH\nSource .bash_profile\nsource ~/.bash_profile\nVerify arduino-cli was installed\n&gt; which arduino-cli\n/home/flux/local/bin/arduino-cli\nUpdate arduino-cli\narduino-cli upgrade\nSee the Arduino CLI wiki page for information on configuration.\n\n\n\n\nCalibre\nThis app is used to view and print .epub files.\nsudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin",
+    "objectID": "reference/environment-setup__reference/vs-code.html#settings",
+    "href": "reference/environment-setup__reference/vs-code.html#settings",
+    "title": "Visual Studio Code Setup",
+    "section": "Settings",
+    "text": "Settings\nThe settings.json file contains settings for VS Code and usually lives in the following locations:\n\n\n\n\n\n\n\nOS\nPath\n\n\n\n\nUnix\n/home/&lt;user-name&gt;/.config/Code/User/settings.json\n\n\nWindows\nC:\\\\Users\\&lt;user-name&gt;\\\\AppData\\\\Roaming\\\\Code\\\\User\\\\settings.json\n\n\n\nAccess my settings.json and custom color theme below. If you need help with color theme installation, see this page.\nsettings.json Original Color Scheme\n\nSettings Override\nThe settings.json file located at the user level will take precedence. To override or add to the settings at the workspace or directory level, create a new directory called .vscode and add another settings.json file here.",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "New Environment Setup",
-      "Application Installation"
+      "Visual Studio Code Setup"
     ]
   },
   {
-    "objectID": "reference/environment-setup/application-installation.html#windows",
-    "href": "reference/environment-setup/application-installation.html#windows",
-    "title": "Application Installation",
-    "section": "Windows",
-    "text": "Windows\n\nTurn off alert sounds\nWindows makes an alert sound every time tab complete doesn’t work or other silly things. Turn it off in settings.\nGo to Audio - change other sound settings or\nSound -&gt; sound control panel -&gt; Sounds tab -&gt; Sound Scheme dropdown -&gt; No Sounds\nIn the window labeled Sound -&gt; tab labeled Sounds select the menu option No Sounds\n\n\n\nCygwin\nDownload cygwin, install packages\n\nlynx\nwget\ntar\ngit\nvim\ndos2unix\n\n\n\nSoftware Downloads\n\nPython\nVisual Studio Code\nChrome\nSpotify\nSlack\nSteam",
+    "objectID": "reference/environment-setup__reference/vs-code.html#extensions",
+    "href": "reference/environment-setup__reference/vs-code.html#extensions",
+    "title": "Visual Studio Code Setup",
+    "section": "Extensions",
+    "text": "Extensions\nInstall the following extensions:\n\nC/C++ by Microsoft\nPython by Microsoft\nPython Debugger by Microsoft\nCode Runner by Jun Han\nVim by vscodevim\nCMake by twxs\nCMake Tools by Microsoft",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "New Environment Setup",
-      "Application Installation"
+      "Visual Studio Code Setup"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/ls-colors.html",
-    "href": "reference/color-theme__reference/ls-colors.html",
-    "title": "LS_COLORS & dircolors",
+    "objectID": "reference/environment-setup__reference/vs-code.html#vim",
+    "href": "reference/environment-setup__reference/vs-code.html#vim",
+    "title": "Visual Studio Code Setup",
+    "section": "Vim",
+    "text": "Vim\nPoint Vim extension to local .vimrc file.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "Visual Studio Code Setup"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/vs-code.html#code-runner-configuration",
+    "href": "reference/environment-setup__reference/vs-code.html#code-runner-configuration",
+    "title": "Visual Studio Code Setup",
+    "section": "Code Runner Configuration",
+    "text": "Code Runner Configuration\n\nEnable Clear Previous Output\nDisable Show Execution Message",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "Visual Studio Code Setup"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/arduino-cli.html",
+    "href": "reference/environment-setup__reference/arduino-cli.html",
+    "title": "Arduino Command Line Interface",
     "section": "",
-    "text": "The shell environment variable LS_COLORS is used to define the colors displayed when listing file types with the ls command. It is configured via the dircolors command, which typically runs during your shell’s startup.\nThere are two ways to modify the file type display colors, i.e. the LS_COLORS environment variable:",
+    "text": "This page serves as a quick reference for the Arduino CLI commands I use most frequently. I’ve compiled these here to save time on recurring lookups.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "LS_COLORS & dircolors"
+      "New Environment Setup",
+      "Arduino Command Line Interface"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/ls-colors.html#set-ls_colors-with-dircolors",
-    "href": "reference/color-theme__reference/ls-colors.html#set-ls_colors-with-dircolors",
-    "title": "LS_COLORS & dircolors",
-    "section": "Set LS_COLORS with dircolors",
-    "text": "Set LS_COLORS with dircolors\nThis section explains how to set file type colors using the dircolors command.\n\nTL;DR\n\nSave a .dircolors file with your preferred coloring per file type.\nInsert the following commands in your .bashrc or .bash_profile:\neval `dircolors -b path/to/your/.dircolors/file`\nalias ls='ls --color=auto'\n\n\n\nSample .dircolors File\nFor reference, here is my .dircolors file.\n\n\nDefault dircolors\nYou can see the default file type colors by executing the following command.\ndircolors -p\nSummarized output:\n# Configuration file for dircolors, a utility to help you set the\n# LS_COLORS environment variable used by GNU ls with the --color option.\n...\n#.cmd 01;32 # executables (bright green)\n#.exe 01;32\n#.com 01;32\n#.btm 01;32\n#.bat 01;32\n...\n\n\nChange LS_COLORS Using dircolors\n\nSave the output of dircolors -p to a file. In this example we are naming the file .dircolors-mod, but you can name your file whatever you’d like.\ndircolors -p &gt; ~/.dircolors-mod\nEdit .dircolors-mod using a preferred text editor.\ngedit ~/.dircolors-mod\nExecute\n# This syntax works using bash and zsh\neval `dircolors -b ~/.dircolors-mod`\n\n\n\nTest dircolors Output\nAny modifications made to .dircolors-mod will be reflected in LS_COLORS. To test:\n\nAdd the following text to the end of .dircolors-mod\n.randomfiletype 01;35\nExecute\neval `dircolors -b ~/.dircolors-mod`\nPrint LS_COLORS to the screen.\necho $LS_COLORS\nSummarized sample output:\ns=0:di=01;34:ln=01;36:mh=00:pi=40;33\n...\n*.randomfiletype=01;35:\nNotice that the value *.randomfiletype=01;35 is now shown at the end of the LS_COLORS printout.\nSave a file with the name .randomfiletype and run the command\n# Use the -la to display hidden files\nls -la --color=auto\nThe file named .randomfiletype should be displayed in the color magenta, or whatever you have ANSI color 5 set to. See this page for more information about ANSI color codes.",
+    "objectID": "reference/environment-setup__reference/arduino-cli.html#install-cores",
+    "href": "reference/environment-setup__reference/arduino-cli.html#install-cores",
+    "title": "Arduino Command Line Interface",
+    "section": "Install Cores",
+    "text": "Install Cores\nBefore you can upload a program to a specific Arduino Board, you need to install the relevant core.\nThese two cores are used for the MKR1010 and Nano ESP32.\narduino-cli core install arduino:samd\narduino-cli core install arduino:esp32",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "LS_COLORS & dircolors"
+      "New Environment Setup",
+      "Arduino Command Line Interface"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/ls-colors.html#set-ls_colors-directly",
-    "href": "reference/color-theme__reference/ls-colors.html#set-ls_colors-directly",
-    "title": "LS_COLORS & dircolors",
-    "section": "Set LS_COLORS Directly",
-    "text": "Set LS_COLORS Directly\nSet the environment variable LS_COLORS using the following format:\nexport LS_COLORS=\"*.ext0=&lt;attr&gt;;&lt;color&gt;:*.ext1=&lt;attr&gt;;&lt;color&gt;\"\nWhere\n&lt;attr&gt;    : Attribute code, listed below\n&lt;color&gt;   : Color code, listed below\next0, ext1: File extensions\nNote that the color codes correspond with the ANSI 16 color codes as described here.\n\nAdd to .bashrc or .bash_profile\nOnce you decide which file types to color, you can save your definition of LS_COLORS to your .bashrc or .bash_profile.\nNote: If you are running zsh as your environment, make sure you are not overwriting theses colors in your .zshrc or theme file.\n\n\nAttribute Codes\n\n\n\nCode\nAttribute\n\n\n\n\n00\nnone\n\n\n01\nbold\n\n\n04\nunderscore\n\n\n05\nblink\n\n\n07\nreverse\n\n\n08\nconcealed\n\n\n\n\n\nForeground Text Color Codes\n\n\n\nCode\nColor\n\n\n\n\n30\nblack\n\n\n31\nred\n\n\n32\ngreen\n\n\n33\nyellow\n\n\n34\nblue\n\n\n35\nmagenta\n\n\n36\ncyan\n\n\n37\nwhite\n\n\n\n\n\nBackground Color Codes\n\n\n\nCode\nColor\n\n\n\n\n40\nblack\n\n\n41\nred\n\n\n42\ngreen\n\n\n43\nyellow\n\n\n44\nblue\n\n\n45\nmagenta\n\n\n46\ncyan\n\n\n47\nwhite",
+    "objectID": "reference/environment-setup__reference/arduino-cli.html#library-search",
+    "href": "reference/environment-setup__reference/arduino-cli.html#library-search",
+    "title": "Arduino Command Line Interface",
+    "section": "Library Search",
+    "text": "Library Search\narduino-cli lib search &lt;search_term&gt;\nFind the Name field of the library you want to install, e.g.\nName: \"Adafruit AW9523\"\n  Author: Adafruit\n  Maintainer: Adafruit &lt;info@adafruit.com&gt;\n  Sentence: Arduino library for the AW9523 GPIO expanders in the Adafruit shop\n  Paragraph: Arduino library for the AW9523 GPIO expanders in the Adafruit shop\n  Website: https://github.com/adafruit/Adafruit_AW9523\n  Category: Signal Input/Output\n  Architecture: *\n  Types: Contributed\n  Versions: [1.0.0, 1.0.1, 1.0.2, 1.0.3, 1.0.4, 1.0.5]\n  Dependencies: Adafruit BusIO\n\nIn this case, the name of the library is Adafruit AW9523.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "LS_COLORS & dircolors"
+      "New Environment Setup",
+      "Arduino Command Line Interface"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/ls-colors.html#tmux-caveat",
-    "href": "reference/color-theme__reference/ls-colors.html#tmux-caveat",
-    "title": "LS_COLORS & dircolors",
-    "section": "tmux Caveat",
-    "text": "tmux Caveat\ntmux is a terminal multiplexer that allows you to create and manage multiple panes within a single window. It’s a neat way to streamline your workflow.\n\nUsing tmux can affect your environment, particularly how colors are displayed. You may need to set the TERM environment variable explicitly to ensure colors render correctly. See this page for more information.",
+    "objectID": "reference/environment-setup__reference/arduino-cli.html#library-installation",
+    "href": "reference/environment-setup__reference/arduino-cli.html#library-installation",
+    "title": "Arduino Command Line Interface",
+    "section": "Library Installation",
+    "text": "Library Installation\narduino-cli lib install \"library name\"\nE.g.\n&gt; arduino-cli lib install \"Adafruit AW9523\"\nAlready installed Adafruit BusIO@1.16.0\nDownloading Adafruit AW9523@1.0.5...\nAdafruit AW9523@1.0.5 downloaded\nInstalling Adafruit AW9523@1.0.5...\nInstalled Adafruit AW9523@1.0.5\nNote The line Already installed Adafruit BusIO@1.16.0 is because one of the dependencies for this library is already installed.\nUse library in code\n#include &lt;Adafruit_AW9523&gt;",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "LS_COLORS & dircolors"
+      "New Environment Setup",
+      "Arduino Command Line Interface"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/vim-color.html",
-    "href": "reference/color-theme__reference/vim-color.html",
-    "title": "Vim Color Scheme",
+    "objectID": "reference/environment-setup__reference/putty.html",
+    "href": "reference/environment-setup__reference/putty.html",
+    "title": "PuTTY Configuration",
     "section": "",
-    "text": "This page includes information about color schemes in Vim. Vim color schemes use the extension .vim.",
+    "text": "This page describes how to access a configuration file for a saved PuTTY session. Each saved session is saved in a *.reg file and can be imported or exported through the Windows Registry Editor.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "Vim Color Scheme"
+      "New Environment Setup",
+      "PuTTY Configuration"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/vim-color.html#color-scheme-paths",
-    "href": "reference/color-theme__reference/vim-color.html#color-scheme-paths",
-    "title": "Vim Color Scheme",
-    "section": "Color Scheme Paths",
-    "text": "Color Scheme Paths\n\nLinux\nInstalled color schemes live here:\n# XX here indicates the vim version, e.g. vim80, vim91\n/usr/share/vim/vimXX/colors\nUser created themes go here:\n~/.vim/colors/\n\n\nWindows\nUser created themes for gVim go here:\n# Create this directory if it does not exist\nC:\\Users\\&lt;username&gt;\\vimfiles\\colors",
+    "objectID": "reference/environment-setup__reference/putty.html#access-saved-session-configurations",
+    "href": "reference/environment-setup__reference/putty.html#access-saved-session-configurations",
+    "title": "PuTTY Configuration",
+    "section": "Access Saved Session Configurations",
+    "text": "Access Saved Session Configurations\n\nWindows key + r, type regedit. Click OK.\n\nOn the left sidebar, navigate to HKEY_CURRENT_USER/SOFTWARE/SimonTatham/PuTTY/Sessions/&lt;saved-session-name&gt;. By default, there should be a saved session called Default%20Settings.\nNote: %20 corresponds with the ASCII code for space, so Default%20Settings translates to Default Settings",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "Vim Color Scheme"
+      "New Environment Setup",
+      "PuTTY Configuration"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/vim-color.html#flux-dark-original-theme",
-    "href": "reference/color-theme__reference/vim-color.html#flux-dark-original-theme",
-    "title": "Vim Color Scheme",
-    "section": "Flux Dark (Original Theme)",
-    "text": "Flux Dark (Original Theme)\nThe Vim color scheme I designed can be found here. The theme is organized into three modular files; to install it, copy the following into your local colors directory (typically ~/.vim/colors/):\n\nflux-base.vim\nflux-colors-dark.vim\nflux-dark.vim",
+    "objectID": "reference/environment-setup__reference/putty.html#export-configuration",
+    "href": "reference/environment-setup__reference/putty.html#export-configuration",
+    "title": "PuTTY Configuration",
+    "section": "Export Configuration",
+    "text": "Export Configuration\n\nFrom the Registry Editor, access the saved configuration you would like to export.\nRight-click on the directory corresponding with the saved session to export. Select Export.\n\nName the file and save the configuration in your preferred location.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "Vim Color Scheme"
+      "New Environment Setup",
+      "PuTTY Configuration"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/vim-color.html#highlight-syntax-options",
-    "href": "reference/color-theme__reference/vim-color.html#highlight-syntax-options",
-    "title": "Vim Color Scheme",
-    "section": "Highlight Syntax Options",
-    "text": "Highlight Syntax Options\nFor more information on Vim syntax highlighting, visit this page.\n\nCommon Highlight Groups\n\nUI Elements\n\n\n\nHighlight Group\nDescription\n\n\n\n\nNormal\nDefault text color\n\n\nCursor\nThe cursor itself\n\n\nCursorLine\nThe current line background\n\n\nStatusLine\nActive status line\n\n\nStatusLineNC\nInactive status line\n\n\nVertSplit\nVertical split line\n\n\nVisual\nText selected in visual mode\n\n\nLineNr\nLine numbers in the gutter\n\n\nFolded\nFolded text color\n\n\n\n\n\nSyntax Elements\n\n\n\nHighlight Group\nDescription\n\n\n\n\nComment\nComments (//, #, etc.)\n\n\nConstant\nConstants (like numbers, strings)\n\n\nIdentifier\nVariable names\n\n\nStatement\nControl flow keywords (if, for, return)\n\n\nPreProc\nPreprocessor directives (#include, import)\n\n\nType\nType names (int, float, char)\n\n\nSpecial\nSpecial symbols or escape sequences\n\n\n\n\n\n\nSpecial Effects\n\n\n\nHighlight Group\nDescription\n\n\n\n\nError\nError messages\n\n\nTodo\nTODO comments\n\n\nSearch\nMatches from /search\n\n\nIncSearch\nIncremental search matches\n\n\nMatchParen\nMatching parentheses",
+    "objectID": "reference/environment-setup__reference/putty.html#import-configuration",
+    "href": "reference/environment-setup__reference/putty.html#import-configuration",
+    "title": "PuTTY Configuration",
+    "section": "Import Configuration",
+    "text": "Import Configuration\n\nFrom the Registry Editor, go to File &gt; Import.\n\nNavigate to the saved configuration .reg file. Click Open.\n\nThere will be a dialog box confirming that settings were imported. Click OK.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "Vim Color Scheme"
+      "New Environment Setup",
+      "PuTTY Configuration"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/ansi-color-explained.html",
-    "href": "reference/color-theme__reference/ansi-color-explained.html",
-    "title": "ANSI Color Codes Explained",
+    "objectID": "reference/environment-setup__reference/putty.html#color-settings",
+    "href": "reference/environment-setup__reference/putty.html#color-settings",
+    "title": "PuTTY Configuration",
+    "section": "Color Settings",
+    "text": "Color Settings\nFollow these instructions to customize your PuTTY terminal color scheme.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "PuTTY Configuration"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/putty.html#all-configuration-settings",
+    "href": "reference/environment-setup__reference/putty.html#all-configuration-settings",
+    "title": "PuTTY Configuration",
+    "section": "All Configuration Settings",
+    "text": "All Configuration Settings\nThis section contains screenshots of all the configuration settings of a PuTTY window.\n\nSession\n  \n\n\nTerminal\n   \n\n\nWindow\n         \n\n\nConnection\n      \n\nAuth\n     \n\n\nBugs",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "New Environment Setup",
+      "PuTTY Configuration"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__reference/index.html",
+    "href": "reference/environment-setup__reference/index.html",
+    "title": "New Environment Setup",
     "section": "",
-    "text": "ANSI color codes, as used in terminals, can be categorized into three main types:",
+    "text": "I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my setup, I’ve compiled these pages as a resource for my standard applications and a guide on how to create configuration settings for tools like Git and Visual Studio Code.\nThis repository contains the ‘dotfiles’ and configuration files I use for various applications.\nSetup Files Repository",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "ANSI Color Codes Explained"
+      "New Environment Setup"
     ]
   },
   {
-    "objectID": "reference/color-theme__reference/ansi-color-explained.html#ansi-16-color-codes-standard-colors",
-    "href": "reference/color-theme__reference/ansi-color-explained.html#ansi-16-color-codes-standard-colors",
-    "title": "ANSI Color Codes Explained",
-    "section": "ANSI 16 Color Codes (Standard Colors)",
-    "text": "ANSI 16 Color Codes (Standard Colors)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis is the original set of terminal colors defined by the ANSI standard.\nANSI color codes use a consistent pattern: the least significant digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / ‘bright’.\nFor example, the color 41 corresponds with a foreground as bright red; i.e.:\n\n1 = red\n4 = bright foreground\n\nDescriptions of prefixes are defined below.\n\nANSI 16 Prefix\nThis is a list of the prefixes used in ANSI 16 color codes.\n\n\n\nPrefix\nApplication\n\n\n\n\n3\nForeground, normal\n\n\n4\nBackground, normal\n\n\n9\nForeground, bold\n\n\n10\nBackground, bold\n\n\n\n\n\nANSI 16 Color Codes\nHere is a list of the ANSI 16 color codes and their meanings.\n\n\n\nName\nBase Index\nFG Normal\nBG Normal\nFG Bold\nBG Bold\n\n\n\n\nBlack\n0\n30\n40\n90\n100\n\n\nRed\n1\n31\n41\n91\n101\n\n\nGreen\n2\n32\n42\n92\n102\n\n\nYellow\n3\n33\n43\n93\n103\n\n\nBlue\n4\n34\n44\n94\n104\n\n\nMagenta\n5\n35\n45\n95\n105\n\n\nCyan\n6\n36\n46\n96\n106\n\n\nWhite\n7\n37\n47\n97\n107",
+    "objectID": "reference/environment-setup__reference/index.html#reference-material",
+    "href": "reference/environment-setup__reference/index.html#reference-material",
+    "title": "New Environment Setup",
+    "section": "Reference Material",
+    "text": "Reference Material",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "Color Scheme Reference",
-      "ANSI Color Codes Explained"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/ansi-color-explained.html#ansi-256-color-codes",
-    "href": "reference/color-theme__reference/ansi-color-explained.html#ansi-256-color-codes",
-    "title": "ANSI Color Codes Explained",
-    "section": "ANSI 256 Color Codes",
-    "text": "ANSI 256 Color Codes\nModern terminals have the ability to display 256 colors that are broken up as described:\n\n16 Base Colors (Color Codes 0-15)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\n\nThese map to the same values as the 16-color codes.\nThese colors are often set by your terminal environment.\n\n\n\nANSI 256 Color Cube (Color Codes 16-231)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThe ANSI 256 color cube consists of 216 colors arranged as a 6×6×6 RGB grid. Each color is formed by selecting one of six discrete intensity levels for the red, green, and blue channels: 00, 5F, 87, AF, D7, and FF. These colors occupy indices 16-231 of the ANSI 256 palette and provide a uniformly sampled subset of the RGB color space.\n\nRGB to ANSI 256 Index Conversion\nThis table lists all ANSI 256 color codes and their corresponding RGB values. You can also manually calculate the color index from an RGB value, as described below.\n\nRGB -&gt; ANSI 256 Python Function\nI’ve written a Python module that performs the conversion from RGB to an ANSI 256 index, which you can find here.\n\n\nBase Colors\nThe 16 base colors are defined by your environment, so there is no direct conversion from RGB to ANSI 256 for indices 1-16.\n\n\nColor Cube\nValid RGB component values used by the 6x6x6 color cube (ANSI 256 indices 16–231):\n\n\n\nDecimal Value\nHex Value\n\n\n\n\n0\n0x00\n\n\n95\n0x5f\n\n\n135\n0x87\n\n\n175\n0xaf\n\n\n215\n0xd7\n\n\n255\n0xff\n\n\n\nTo convert the RGB values to the ANSI index, use the following calculation:\n#_______________________________________________\n# Round each RGB component to the nearest\n# valid value from the table above. The variable\n# definitions used in the calculation are\n# described as follows:\n#\n# red_near = the rounded red value\n# grn_near = the rounded green value\n# blu_near = the rounded blue value\n#_______________________________________________\n\nr = floor((red_near / 255.0) * 5)\ng = floor((grn_near / 255.0) * 5)\nb = floor((blu_near / 255.0) * 5)\n\n# Compute ANSI 256 color value\nansi_index = 16 + (r * 36) + (g * 6) + b\n\n\n\n\nGrayscale (Color Codes 232-255)\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis section covers the grayscale ramp, occupying indices 232 (near black) through 255 (near white). In the RGB model, gray is produced when the red, green, and blue components are equal (R=G=B). The table below lists the specific values used for these components within the ANSI 256-color grayscale range.\n\n\n\nANSI Index\nHex (R=G=B)\nDecimal (R=G=B)\n\n\n\n\n232\n#080808\n8\n\n\n233\n#121212\n18\n\n\n234\n#1c1c1c\n28\n\n\n…\n…\n…\n\n\n254\n#e4e4e4\n228\n\n\n255\n#eeeeee\n238\n\n\n\n\nRGB to ANSI 256 Index Conversion\nFor shades of gray, each of the RGB components have the same value.\nIf each RGB component is closest to one of the color cube levels (00, 5F, 87, AF, D7, or FF), use the equation described in the Color Cube section.\nOtherwise, use the following equation:\n#_______________________________________________\n# grey_near is the RGB component value (0-255)\n# rounded to the nearest valid step in the ANSI\n# grayscale table (e.g., 8, 18, 28...).\n#_______________________________________________\nansi_index = 232 + (floor((grey_near - 8) / 10))",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "ANSI Color Codes Explained"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/ansi-color-explained.html#bit-true-color-16-million-colors",
-    "href": "reference/color-theme__reference/ansi-color-explained.html#bit-true-color-16-million-colors",
-    "title": "ANSI Color Codes Explained",
-    "section": "24-bit True Color (16 Million Colors)",
-    "text": "24-bit True Color (16 Million Colors)\nSupported by most modern terminals, 24-bit true color allows you to specify exact RGB values.\n\nForeground Format: \\e[38;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m\nBackground Format: \\e[48;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m\n\nExample:\necho -e \"\\e[38;2;255;0;0mThis is bright red text\\e[0m\"\n\n38 for foreground, 48 for background.\n&lt;R&gt;, &lt;G&gt;, &lt;B&gt; represent red, green, and blue values (0–255).",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "ANSI Color Codes Explained"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/vscode-color.html",
-    "href": "reference/color-theme__reference/vscode-color.html",
-    "title": "VS Code Color Theme",
-    "section": "",
-    "text": "See this page for a complete list of VS Code color theme properties.\nSee this link for a copy of my personally designed dark and light themes.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "VS Code Color Theme"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/vscode-color.html#custom-theme-tutorial",
-    "href": "reference/color-theme__reference/vscode-color.html#custom-theme-tutorial",
-    "title": "VS Code Color Theme",
-    "section": "Custom Theme Tutorial",
-    "text": "Custom Theme Tutorial\n\nFile Location\n\nTo install a custom theme, create a new directory in the following location (on a Linux system):\n~/.vscode/extensions/\nThis example uses the directory named my-color-themes; you can name this directory whatever you would like.\nmkdir ~/.vscode/extensions/my-color-themes\nIn my-color-themes create a file named package.json.\n# The touch command creates a blank file\ntouch ~/.vscode/extensions/my-color-themes/package.json\nEdit package.json to include this minimal information.\nIn this example, we are assuming there to be two theme files, my-dark-theme.json and my-light-theme.json. The \"label\" property will be displayed in the color theme drop down menu in VS Code.\n{ \"name\"          : \"my-theme-pack\"\n, \"displayName\"   : \"My Theme Pack\"\n, \"publisher\"     : \"Your Name\"\n, \"version\"       : \"0.0.1\"\n, \"engines\"       : { \"vscode\": \"*\" }\n, \"contributes\"   :\n\n  { \"themes\"      :\n    [ { \"label\"   : \"My Dark theme\"\n      , \"uiTheme\" : \"vs-dark\"\n      , \"path\"    : \"./my-dark-theme.json\"\n      }\n    , { \"label\"   : \"My Light Theme\"\n      , \"uiTheme\" : \"vs\"\n      , \"path\"    : \"./my-light-theme.json\"\n      }\n    ]\n  }\n}\nIn ~/.vscode/extensions/my-color-themes include the files for my-dark-theme.json and my-light-theme.json.\n\nNote: For the uiTheme property in package.json, use vs-dark for a dark theme and vs for a light theme. This ensures that any undefined properties inherit the correct default colors. In the My Dark Theme example, vs was intentionally selected instead of vs-dark; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.\n\n\n\nMinimal Color Theme File\nThis text is included in the minimal color theme file my-dark-theme.json.\n{\n  \"$schema\"     : \"vscode://schemas/color-theme\"\n\n, \"colors\":\n  { \"editor.background\"                 : \"#1c1c1c\"\n  , \"editor.foreground\"                 : \"#c6c6c6\"\n  }\n\n, \"tokenColors\":\n  [ { \"scope\": \"comment\"\n    , \"settings\": { \"foreground\": \"#d7af5f\" }\n    }\n\n  , { \"scope\": \"string\"\n    , \"settings\": { \"foreground\": \"#af5faf\" }\n    }\n  ]\n\n  // These properties override tokenColors\n, \"semanticTokenColors\":\n  { \"variable\"      : \"#00afd7\"\n  }\n}\n\n\nLoad Custom Theme\n\nLoad From VS Code\nTo load the theme, from the search bar type &gt;Color Theme and select Preferences: Color Theme. You can also pull up this search bar with the shortcut Ctrl+Shift+p.\n\nThe theme My Dark Theme should now display in the drop down options.\n\nYou should now see your defined colors in the editor window.\n\n\n\nAdd to settings.json\nYou can also add the color theme to your settings.json file:\n{\n  \"workbench.colorTheme\": \"My Dark Theme\"\n}",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "VS Code Color Theme"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/vscode-color.html#existing-theme",
-    "href": "reference/color-theme__reference/vscode-color.html#existing-theme",
-    "title": "VS Code Color Theme",
-    "section": "Existing Theme",
-    "text": "Existing Theme\nYou may want to start from an existing theme file. You can use the dark theme I have created here. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:\n/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "VS Code Color Theme"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/vscode-color.html#autoformat-.json-in-vim",
-    "href": "reference/color-theme__reference/vscode-color.html#autoformat-.json-in-vim",
-    "title": "VS Code Color Theme",
-    "section": "Autoformat .json in Vim",
-    "text": "Autoformat .json in Vim\nIf the the json file is not formatted, you can use the following Vim command to autoformat the json file:\n:%!python3 -m json.tool",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "VS Code Color Theme"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/gnome-terminal-color.html",
-    "href": "reference/color-theme__reference/gnome-terminal-color.html",
-    "title": "GNOME Color Profile",
-    "section": "",
-    "text": "This page describes how to create a color scheme for GNOME terminal in Ubuntu.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "GNOME Color Profile"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/gnome-terminal-color.html#identify-profile-id",
-    "href": "reference/color-theme__reference/gnome-terminal-color.html#identify-profile-id",
-    "title": "GNOME Color Profile",
-    "section": "Identify Profile ID",
-    "text": "Identify Profile ID\nFrom BASH, run the following:\ndconf list /org/gnome/terminal/legacy/profiles:/\nOutput:\n:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/\nIn this example, b1dcc9dd-5262-4d8d-a863-c897e6d979b9 is the profile id.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "GNOME Color Profile"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/gnome-terminal-color.html#load-.dconf-file",
-    "href": "reference/color-theme__reference/gnome-terminal-color.html#load-.dconf-file",
-    "title": "GNOME Color Profile",
-    "section": "Load .dconf File",
-    "text": "Load .dconf File\nRun a command in the following format:\ndconf load /org/gnome/terminal/legacy/profiles:/:&lt;profile-id&gt;/ &lt; file/path.dconf\nExample command:\ndconf load /org/gnome/terminal/legacy/profiles:/:b1dcc9dd-5262-4d8d-a863-c897e6d979b9/ &lt; .themes/flux-bunny-dark.dconf",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "GNOME Color Profile"
-    ]
-  },
-  {
-    "objectID": "reference/color-theme__reference/gnome-terminal-color.html#sample-dconf",
-    "href": "reference/color-theme__reference/gnome-terminal-color.html#sample-dconf",
-    "title": "GNOME Color Profile",
-    "section": "Sample dconf",
-    "text": "Sample dconf\n[/]\nbackground-color='rgb(38, 38, 38)'\nforeground-color='rgb(198, 198, 198)'\npalette=['rgb(28, 28, 28)','rgb(215, 135, 175)','rgb(175, 215, 135)','rgb(255, 175, 135)','rgb(135, 175, 215)','rgb(175, 135, 215)','rgb(135, 215, 175)','rgb(215, 215, 215)','rgb(18, 18, 18)','rgb(215, 95, 135)','rgb(135, 175, 95)','rgb(255, 215, 135)','rgb(0, 175, 215)','rgb(175, 135, 175)','rgb(95, 175, 175)','rgb(208, 208, 208)']\nNote: You cannot reformat the palette variable to be defined on multiple lines.\nThe order of the color entries in the palette are arranged by ANSI index as listed below.\n#_________________________________\n# COLOR           ANSI COLOR INDEX\n#_________________________________\n# Black                 30\n# Red                   31\n# Green                 32\n# Yellow                33\n# Blue                  34\n# Magenta               35\n# Cyan                  36\n# White                 37\n# Bright Black          90\n# Bright Red            91\n# Bright Green          92\n# Bright Yellow         93\n# Bright Blue           94\n# Bright Magenta        95\n# Bright Cyan           96\n# Bright White          97",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "GNOME Color Profile"
+      "New Environment Setup"
     ]
   },
   {

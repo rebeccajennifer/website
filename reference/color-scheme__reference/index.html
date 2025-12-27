@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="A detailed example on how to create and load a VS Code color theme file">
 
-<title>VS Code Color Theme – Rebecca Jennifer Rashkin</title>
+<title>Color Scheme Reference – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -32,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -70,7 +71,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../flux-bunny-style.css">
 </head>
@@ -140,7 +199,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/vscode-color.html">VS Code Color Theme</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -167,7 +226,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/environment-setup/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/environment-setup__reference/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">New Environment Setup</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -176,37 +235,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/application-installation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/application-installation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Application Installation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/vs-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/vs-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code Setup</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/git.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/default-shell.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/default-shell.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Default Shell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/arduino-cli.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino Command Line Interface</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup/putty.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__reference/putty.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Configuration</span></a>
   </div>
 </li>
@@ -214,7 +273,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/color-scheme__reference/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Color Scheme Reference</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -223,49 +282,49 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI Color Codes Explained</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI 256 Color Table</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TERM Environment Variable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/color-scheme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">VS Code Color Theme</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GNOME Color Profile</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Color Configuration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Vim Color Scheme</span></a>
   </div>
 </li>
@@ -284,17 +343,12 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-theme__reference/vscode-color.html">VS Code Color Theme</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/index.html">Color Scheme Reference</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">VS Code Color Theme</h1>
-<p class="subtitle lead">How to create a VS Code color theme file.</p>
+<h1 class="title">Color Scheme Reference</h1>
+<p class="subtitle lead">Bring joy into your environment.</p>
 </div>
 
-<div>
-  <div class="description">
-    <p>A detailed example on how to create and load a VS Code color theme file</p>
-  </div>
-</div>
 
 
 <div class="quarto-title-meta">
@@ -334,110 +388,226 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Reference page for creating a VS Code color scheme.
+|   Reference page for color scheme related information.
 |____________________________________________________________________-->
-<p><img src="images__color-scheme-reference/vscode-flux-dark-screenshot.png" class="img-fluid"></p>
-<p>See <a href="https://code.visualstudio.com/api/references/theme-color">this page</a> for a complete list of VS Code color theme properties.</p>
-<p>See <a href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes">this link</a> for a copy of my personally designed dark and light themes.</p>
-<section id="custom-theme-tutorial" class="level2">
-<h2 class="anchored" data-anchor-id="custom-theme-tutorial">Custom Theme Tutorial</h2>
-<section id="file-location" class="level3">
-<h3 class="anchored" data-anchor-id="file-location">File Location</h3>
-<ol type="1">
-<li><p>To install a custom theme, create a new directory in the following location (on a Linux system):</p>
-<pre class="bash"><code>~/.vscode/extensions/</code></pre></li>
-<li><p>This example uses the directory named <code>my-color-themes</code>; you can name this directory whatever you would like.</p>
-<pre class="bash"><code>mkdir ~/.vscode/extensions/my-color-themes</code></pre></li>
-<li><p>In <code>my-color-themes</code> create a file named <code>package.json</code>.</p>
-<pre class="bash"><code># The touch command creates a blank file
-touch ~/.vscode/extensions/my-color-themes/package.json</code></pre></li>
-<li><p>Edit <code>package.json</code> to include this minimal information.</p>
-<p>In this example, we are assuming there to be two theme files, <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>. The <code>"label"</code> property will be displayed in the color theme drop down menu in VS Code.</p>
-<pre class="json"><code>{ "name"          : "my-theme-pack"
-, "displayName"   : "My Theme Pack"
-, "publisher"     : "Your Name"
-, "version"       : "0.0.1"
-, "engines"       : { "vscode": "*" }
-, "contributes"   :
-
-  { "themes"      :
-    [ { "label"   : "My Dark theme"
-      , "uiTheme" : "vs-dark"
-      , "path"    : "./my-dark-theme.json"
-      }
-    , { "label"   : "My Light Theme"
-      , "uiTheme" : "vs"
-      , "path"    : "./my-light-theme.json"
-      }
-    ]
-  }
-}</code></pre></li>
-<li><p>In <code>~/.vscode/extensions/my-color-themes</code> include the files for <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>.</p></li>
-</ol>
-<p><strong>Note:</strong> For the <code>uiTheme</code> property in <code>package.json</code>, use <code>vs-dark</code> for a dark theme and <code>vs</code> for a light theme. This ensures that any undefined properties inherit the correct default colors. In the <code>My Dark Theme</code> example, <code>vs</code> was intentionally selected instead of <code>vs-dark</code>; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.</p>
-<p><img src="images__color-scheme-reference/vscode-wrong-uitheme-example.png" class="img-fluid"></p>
-</section>
-<section id="minimal-color-theme-file" class="level3">
-<h3 class="anchored" data-anchor-id="minimal-color-theme-file">Minimal Color Theme File</h3>
-<p>This text is included in the minimal color theme file <code>my-dark-theme.json</code>.</p>
-<pre class="json"><code>{
-  "$schema"     : "vscode://schemas/color-theme"
-
-, "colors":
-  { "editor.background"                 : "#1c1c1c"
-  , "editor.foreground"                 : "#c6c6c6"
-  }
-
-, "tokenColors":
-  [ { "scope": "comment"
-    , "settings": { "foreground": "#d7af5f" }
-    }
-
-  , { "scope": "string"
-    , "settings": { "foreground": "#af5faf" }
-    }
-  ]
-
-  // These properties override tokenColors
-, "semanticTokenColors":
-  { "variable"      : "#00afd7"
-  }
-}</code></pre>
-</section>
-<section id="load-custom-theme" class="level3">
-<h3 class="anchored" data-anchor-id="load-custom-theme">Load Custom Theme</h3>
-<section id="load-from-vs-code" class="level4">
-<h4 class="anchored" data-anchor-id="load-from-vs-code">Load From VS Code</h4>
-<p>To load the theme, from the search bar type <code>&gt;Color Theme</code> and select <code>Preferences: Color Theme</code>. You can also pull up this search bar with the shortcut <code>Ctrl+Shift+p</code>.</p>
-<p><img src="images__color-scheme-reference/vscode-select-pref-color-theme.png" class="img-fluid"></p>
-<p>The theme <code>My Dark Theme</code> should now display in the drop down options.</p>
-<p><img src="images__color-scheme-reference/vscode-color-theme-selection.png" class="img-fluid"></p>
-<p>You should now see your defined colors in the editor window.</p>
-<p><img src="images__color-scheme-reference/vscode-miminal-theme-example.png" class="img-fluid"></p>
-</section>
-<section id="add-to-settings.json" class="level4">
-<h4 class="anchored" data-anchor-id="add-to-settings.json">Add to <code>settings.json</code></h4>
-<p>You can also add the color theme to your <code>settings.json</code> file:</p>
-<pre class="json"><code>{
-  "workbench.colorTheme": "My Dark Theme"
-}</code></pre>
-</section>
-</section>
-</section>
-<section id="existing-theme" class="level2">
-<h2 class="anchored" data-anchor-id="existing-theme">Existing Theme</h2>
-<p>You may want to start from an existing theme file. You can use the dark theme I have created <a href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/flux-bunny-color-schemes/flux-bunny-dark.json">here</a>. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:</p>
-<pre class="bash"><code>/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes</code></pre>
-</section>
-<section id="autoformat-.json-in-vim" class="level2">
-<h2 class="anchored" data-anchor-id="autoformat-.json-in-vim">Autoformat .json in Vim</h2>
-<p>If the the json file is not formatted, you can use the following Vim command to autoformat the json file:</p>
-<pre class="vim"><code>:%!python3 -m json.tool</code></pre>
+<style>
+/* Hide table search bar */
+div.listing-actions-group    { display : none; } /* Hide filter bar */
+/*.quarto-listing-table thead  { display : none; } /* Hide header row */
+.quarto-listing-table tr, td { border  : none; } /* Hide cell borders */
+</style>
+<p>Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.</p>
 
 
-</section>
+<style>
 
-</main> <!-- /main -->
+table
+{
+  width: 100%
+}
+
+.color-block{
+  height:       16px;
+}
+</style>
+
+
+<table>
+<tbody><tr>
+<td class="color-block" ,="" style="background-color:#1c1c1c">  </td>
+<td class="color-block" ,="" style="background-color:#d787af">  </td>
+<td class="color-block" ,="" style="background-color:#afd787">  </td>
+<td class="color-block" ,="" style="background-color:#ffaf87">  </td>
+<td class="color-block" ,="" style="background-color:#87afd7">  </td>
+<td class="color-block" ,="" style="background-color:#af87d7">  </td>
+<td class="color-block" ,="" style="background-color:#87d7af">  </td>
+<td class="color-block" ,="" style="background-color:#c6c6c6">  </td>
+</tr>
+<tr>
+<td class="color-block" ,="" style="background-color:#303030">  </td>
+<td class="color-block" ,="" style="background-color:#d75f87">  </td>
+<td class="color-block" ,="" style="background-color:#87d75f">  </td>
+<td class="color-block" ,="" style="background-color:#ff875f">  </td>
+<td class="color-block" ,="" style="background-color:#00afd7">  </td>
+<td class="color-block" ,="" style="background-color:#875fd7">  </td>
+<td class="color-block" ,="" style="background-color:#00afaf">  </td>
+<td class="color-block" ,="" style="background-color:#d7d7d7">  </td>
+</tr>
+</tbody></table>
+
+
+<p>This set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.</p>
+
+
+
+
+<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
+<div class="list grid quarto-listing-cols-3">
+<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1766806967119" data-listing-reading-time-sort="8" data-listing-word-count-sort="1510">
+<a href="../../reference/color-scheme__reference/ansi-color-explained.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-scheme__reference/images__color-scheme-reference/ansi016-color-square.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ANSI Color Codes Explained
+</h5>
+<div class="card-text listing-description delink">
+ANSI color codes, as used in terminals, can be categorized into three main types:
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1766806967120" data-listing-reading-time-sort="4" data-listing-word-count-sort="739">
+<a href="../../reference/color-scheme__reference/ansi256-colors.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-scheme__reference/images__color-scheme-reference/ansi256-color-cube.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+ANSI 256 Color Table
+</h5>
+<div class="card-text listing-description delink">
+Refer to the table below to quickly identify color codes for terminal customization and scripting.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1766806967127" data-listing-reading-time-sort="7" data-listing-word-count-sort="1316">
+<a href="../../reference/color-scheme__reference/term-env-var.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images__color-scheme-reference/term__ansi-color-print__zsh-screen.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+TERM Environment Variable
+</h5>
+<div class="card-text listing-description delink">
+The environment variable <code>TERM</code> specifies the terminal type and the set of features, such as color support, that applications can rely on when rendering output.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1766806967127" data-listing-reading-time-sort="7" data-listing-word-count-sort="1339">
+<a href="../../reference/color-scheme__reference/ls-colors.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images__color-scheme-reference/dircolors-sample-header.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+LS_COLORS &amp; dircolors
+</h5>
+<div class="card-text listing-description delink">
+The shell environment variable <code>LS_COLORS</code> is used to define the colors displayed when listing file types with the <code>ls</code> command. It is configured via the <code>dircolors</code> command…
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1766806967127" data-listing-reading-time-sort="8" data-listing-word-count-sort="1410">
+<a href="../../reference/color-scheme__reference/vscode-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top"><img src="images__color-scheme-reference/vscode-flux-dark-screenshot.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+VS Code Color Theme
+</h5>
+<div class="card-text listing-description delink">
+<p>A detailed example on how to create and load a VS Code color theme file</p>
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1766806967120" data-listing-reading-time-sort="6" data-listing-word-count-sort="1088">
+<a href="../../reference/color-scheme__reference/gnome-terminal-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-scheme__reference/images__color-scheme-reference/gnome-theme-screenshot.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+GNOME Color Profile
+</h5>
+<div class="card-text listing-description delink">
+This page describes how to create a color scheme for GNOME terminal in Ubuntu.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1766806967127" data-listing-reading-time-sort="5" data-listing-word-count-sort="971">
+<a href="../../reference/color-scheme__reference/putty-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/environment-setup__reference/images__env-setup/putty-config-2-window-09.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+PuTTY Color Configuration
+</h5>
+<div class="card-text listing-description delink">
+Learn how to customize your terminal’s appearance by modifying the PuTTY configuration color values.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1766806967127" data-listing-reading-time-sort="6" data-listing-word-count-sort="1047">
+<a href="../../reference/color-scheme__reference/vim-color.html" class="quarto-grid-link">
+<div class="quarto-grid-item card h-100 card-left">
+<p class="card-img-top">
+<img loading="lazy" src="../../reference/color-scheme__reference/images__color-scheme-reference/vim-color-screenshot.png" class="thumbnail-image card-img" style="height: 150px;">
+</p>
+<div class="card-body post-contents">
+<h5 class="no-anchor card-title listing-title">
+Vim Color Scheme
+</h5>
+<div class="card-text listing-description delink">
+This page includes information about color schemes in Vim. Vim color schemes use the extension <code>.vim</code>.
+</div>
+<div class="card-attribution card-text-small start">
+<div class="listing-author">
+
+</div>
+</div>
+</div>
+</div></a>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
