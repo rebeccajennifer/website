@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>The Reference Library – Rebecca Jennifer Rashkin</title>
+<title>Application Installation – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,27 +23,25 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<link href="../assets/icons/rabbit-face.png" rel="icon" type="image/png">
-<script src="../site_libs/quarto-listing/list.min.js"></script>
-<script src="../site_libs/quarto-listing/quarto-listing.js"></script>
-<script src="../site_libs/quarto-html/quarto.js" type="module"></script>
-<script src="../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
-<script src="../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<script src="../../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../../">
+<link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
+<script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
+<script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
+<script src="../../site_libs/quarto-html/popper.min.js"></script>
+<script src="../../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../../site_libs/quarto-html/quarto-syntax-highlighting-2b384705af00959c2399f46f5d610324.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../../site_libs/bootstrap/bootstrap-14644ed58620a7108ed1f98fd37c99c0.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -71,67 +69,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
 
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
-
-<link rel="stylesheet" href="../flux-bunny-style.css">
+<link rel="stylesheet" href="../../flux-bunny-style.css">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -141,9 +81,9 @@ window.Quarto = {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a href="../index.html" class="navbar-brand navbar-brand-logo">
+    <a href="../../index.html" class="navbar-brand navbar-brand-logo">
     </a>
-    <a class="navbar-brand" href="../index.html">
+    <a class="navbar-brand" href="../../index.html">
     <span class="navbar-title">Rebecca Jennifer Rashkin</span>
     </a>
   </div>
@@ -154,11 +94,11 @@ window.Quarto = {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll ms-auto">
   <li class="nav-item">
-    <a class="nav-link" href="../projects/index.html"> 
+    <a class="nav-link" href="../../projects/index.html"> 
 <span class="menu-text">Projects</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link active" href="../reference/index.html" aria-current="page"> 
+    <a class="nav-link active" href="../../reference/index.html" aria-current="page"> 
 <span class="menu-text">Reference</span></a>
   </li>  
   <li class="nav-item dropdown ">
@@ -167,21 +107,21 @@ window.Quarto = {
     </a>
     <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="nav-menu-teaching">    
         <li>
-    <a class="dropdown-item" href="../education/how-to-learn.html">
+    <a class="dropdown-item" href="../../education/how-to-learn.html">
  <span class="dropdown-text">How to Learn</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../education/comp-org/index.html">
+    <a class="dropdown-item" href="../../education/comp-org/index.html">
  <span class="dropdown-text">Computer Systems and Assembly Course</span></a>
   </li>  
         <li>
-    <a class="dropdown-item" href="../education/comp-org/worksheet-answers.html">
+    <a class="dropdown-item" href="../../education/comp-org/worksheet-answers.html">
  <span class="dropdown-text">How to View Worksheet Answers</span></a>
   </li>  
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="../contact.html"> 
+    <a class="nav-link" href="../../contact.html"> 
 <span class="menu-text">Contact</span></a>
   </li>  
 </ul>
@@ -199,7 +139,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../reference/index.html">The Reference Library</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/application-installation.html">Application Installation</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -210,14 +150,14 @@ window.Quarto = {
 <!-- sidebar -->
   <nav id="quarto-sidebar" class="sidebar collapse collapse-horizontal quarto-sidebar-collapse-item sidebar-navigation floating overflow-auto">
     <div class="pt-lg-2 mt-2 text-left sidebar-header">
-      <a href="../index.html" class="sidebar-logo-link">
+      <a href="../../index.html" class="sidebar-logo-link">
       </a>
       </div>
     <div class="sidebar-menu-container"> 
     <ul class="list-unstyled mt-1">
         <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../reference/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../reference/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">The Reference Library</span></a>
           <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-1" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -226,46 +166,46 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../reference/environment-setup/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/environment-setup/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">New Environment Setup</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/environment-setup/application-installation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/application-installation.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">Application Installation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/environment-setup/vs-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/vs-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code Setup</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/environment-setup/git.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/environment-setup/default-shell.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/default-shell.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Default Shell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/arduino-cli.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino Command Line Interface</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/environment-setup/putty.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup/putty.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Configuration</span></a>
   </div>
 </li>
@@ -273,7 +213,7 @@ window.Quarto = {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/color-theme__reference/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Color Scheme Reference</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -282,49 +222,49 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI Color Codes Explained</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI 256 Color Table</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TERM Environment Variable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">VS Code Color Theme</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GNOME Color Profile</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Color Configuration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-theme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Vim Color Scheme</span></a>
   </div>
 </li>
@@ -337,16 +277,44 @@ window.Quarto = {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#ubuntu" id="toc-ubuntu" class="nav-link active" data-scroll-target="#ubuntu">Ubuntu</a>
+  <ul>
+  <li><a href="#create-root-password" id="toc-create-root-password" class="nav-link" data-scroll-target="#create-root-password">Create root password</a></li>
+  <li><a href="#install-from-apt" id="toc-install-from-apt" class="nav-link" data-scroll-target="#install-from-apt">Install from apt</a></li>
+  <li><a href="#install-from-snap" id="toc-install-from-snap" class="nav-link" data-scroll-target="#install-from-snap">Install from snap</a></li>
+  <li><a href="#from-app-center" id="toc-from-app-center" class="nav-link" data-scroll-target="#from-app-center">From App Center</a></li>
+  <li><a href="#install-from-.deb" id="toc-install-from-.deb" class="nav-link" data-scroll-target="#install-from-.deb">Install from <code>.deb</code></a>
+  <ul>
+  <li><a href="#chrome" id="toc-chrome" class="nav-link" data-scroll-target="#chrome">Chrome</a></li>
+  <li><a href="#drawio" id="toc-drawio" class="nav-link" data-scroll-target="#drawio">DrawIO</a></li>
+  </ul></li>
+  <li><a href="#arduino-cli" id="toc-arduino-cli" class="nav-link" data-scroll-target="#arduino-cli">Arduino CLI</a>
+  <ul>
+  <li><a href="#install-arduino-cli" id="toc-install-arduino-cli" class="nav-link" data-scroll-target="#install-arduino-cli">Install Arduino CLI</a></li>
+  </ul></li>
+  <li><a href="#calibre" id="toc-calibre" class="nav-link" data-scroll-target="#calibre">Calibre</a></li>
+  </ul></li>
+  <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a>
+  <ul>
+  <li><a href="#turn-off-alert-sounds" id="toc-turn-off-alert-sounds" class="nav-link" data-scroll-target="#turn-off-alert-sounds">Turn off alert sounds</a></li>
+  <li><a href="#cygwin" id="toc-cygwin" class="nav-link" data-scroll-target="#cygwin">Cygwin</a></li>
+  <li><a href="#software-downloads" id="toc-software-downloads" class="nav-link" data-scroll-target="#software-downloads">Software Downloads</a></li>
+  </ul></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default">
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/index.html">New Environment Setup</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup/application-installation.html">Application Installation</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">The Reference Library</h1>
-<p class="subtitle lead">Notes to my future self</p>
+<h1 class="title">Application Installation</h1>
+<p class="subtitle lead">My essentials</p>
 </div>
 
 
@@ -388,60 +356,130 @@ window.Quarto = {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   List of references
+|   My new environment setup.
 |____________________________________________________________________-->
-<p>This set of pages includes references I have developed for unifying development environments, streamlining setup, and documenting various software tools.</p>
+<p>This is my essential checklist of applications for setting up a new development environment, including links to their official install sources.</p>
+<section id="ubuntu" class="level2">
+<h2 class="anchored" data-anchor-id="ubuntu">Ubuntu</h2>
+<section id="create-root-password" class="level3">
+<h3 class="anchored" data-anchor-id="create-root-password">Create root password</h3>
+<pre class="bash"><code>passwd</code></pre>
+</section>
+<section id="install-from-apt" class="level3">
+<h3 class="anchored" data-anchor-id="install-from-apt">Install from apt</h3>
+<p>Use <code>sudo</code> before all <code>apt</code> commands if you do not have a root password.</p>
+<pre><code>su
+apt install build-essential
+apt install cmake
+apt install vim
+apt install emacs
+apt install nano
+apt install gedit
+apt install git
+apt install zsh
+apt install curl
+apt install tmux
+apt install python3-pip
+apt install graphviz # Make block diagrams using a scripting language</code></pre>
+</section>
+<section id="install-from-snap" class="level3">
+<h3 class="anchored" data-anchor-id="install-from-snap">Install from snap</h3>
+<p><code>sudo snap install discord</code></p>
+</section>
+<section id="from-app-center" class="level3">
+<h3 class="anchored" data-anchor-id="from-app-center">From App Center</h3>
+<ul>
+<li>Steam</li>
+<li>Slack</li>
+<li>Visual Studio Code (“code”)</li>
+</ul>
+</section>
+<section id="install-from-.deb" class="level3">
+<h3 class="anchored" data-anchor-id="install-from-.deb">Install from <code>.deb</code></h3>
+<section id="chrome" class="level4">
+<h4 class="anchored" data-anchor-id="chrome">Chrome</h4>
+<p>From directory with <code>.deb</code> file</p>
+<pre><code>sudo dpkg -i &lt;.deb file&gt;</code></pre>
+</section>
+<section id="drawio" class="level4">
+<h4 class="anchored" data-anchor-id="drawio">DrawIO</h4>
+<p>Download <code>.deb</code> from <a href="https://github.com/jgraph/drawio-desktop/releases/tag/v26.0.4">here</a>.</p>
+<p>Run with</p>
+<pre class="bash"><code>drawio</code></pre>
+<p>If you get this error</p>
+<pre class="bash"><code>FATAL:setuid_sandbox_host.cc(163)] The SUID sandbox helper binary was found, but is not configured correctly. Rather than run without sandboxing I'm aborting now. You need to make sure that /opt/drawio/chrome-sandbox is owned by root and has mode 4755.</code></pre>
+<p>Run this command</p>
+<pre class="bash"><code>sudo chmod 4755 /opt/drawio/chrome-sandbox</code></pre>
+<p><a href="https://github.com/jgraph/drawio-desktop/issues/150">Source</a></p>
+</section>
+</section>
+<section id="arduino-cli" class="level3">
+<h3 class="anchored" data-anchor-id="arduino-cli">Arduino CLI</h3>
+<section id="install-arduino-cli" class="level4">
+<h4 class="anchored" data-anchor-id="install-arduino-cli">Install Arduino CLI</h4>
+<p>Source: <a href="https://arduino.github.io/arduino-cli/0.35/installation/">Arduino CLI</a></p>
+<ol type="1">
+<li><p>Create <code>~/local/</code> if it doesn’t already exist:</p>
+<pre class="bash"><code>mkdir ~/local</code></pre></li>
+<li><p>Navigate to <code>~/local</code> and run command to install <code>arduino-cli</code></p>
+<pre class="bash"><code>curl -fsSL https://raw.githubusercontent.com/arduino/arduino-cli/master/install.sh | sh</code></pre></li>
+<li><p>Pre-pended <code>$PATH</code> environment variable with this line in <code>~/.bash_profile</code></p>
+<pre class="bash"><code>export PATH=~/local/bin:$PATH</code></pre></li>
+<li><p>Source <code>.bash_profile</code></p>
+<pre class="bash"><code>source ~/.bash_profile</code></pre></li>
+<li><p>Verify <code>arduino-cli</code> was installed</p>
+<pre class="bash"><code>&gt; which arduino-cli
+/home/flux/local/bin/arduino-cli</code></pre></li>
+<li><p>Update <code>arduino-cli</code></p>
+<pre class="bash"><code>arduino-cli upgrade</code></pre></li>
+<li><p>See the <code>Arduino CLI</code> wiki page for information on configuration.</p></li>
+</ol>
+</section>
+</section>
+<section id="calibre" class="level3">
+<h3 class="anchored" data-anchor-id="calibre">Calibre</h3>
+<p>This app is used to view and print <code>.epub</code> files.</p>
+<pre class="bash"><code>sudo -v &amp;&amp; wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | sudo sh /dev/stdin</code></pre>
+</section>
+</section>
+<section id="windows" class="level2">
+<h2 class="anchored" data-anchor-id="windows">Windows</h2>
+<section id="turn-off-alert-sounds" class="level3">
+<h3 class="anchored" data-anchor-id="turn-off-alert-sounds">Turn off alert sounds</h3>
+<p>Windows makes an alert sound every time tab complete doesn’t work or other silly things. Turn it off in settings.</p>
+<p>Go to Audio - change other sound settings or</p>
+<p>Sound -&gt; sound control panel -&gt; Sounds tab -&gt; Sound Scheme dropdown -&gt; No Sounds</p>
+<p>In the window labeled <code>Sound</code> -&gt; tab labeled <code>Sounds</code> select the menu option <code>No Sounds</code></p>
+<p><img src="./images__env-setup/windows-alert-sounds.png" class="img-fluid"></p>
+</section>
+<section id="cygwin" class="level3">
+<h3 class="anchored" data-anchor-id="cygwin">Cygwin</h3>
+<p>Download cygwin, install packages</p>
+<ul>
+<li>lynx</li>
+<li>wget</li>
+<li>tar</li>
+<li>git</li>
+<li>vim</li>
+<li>dos2unix</li>
+</ul>
+</section>
+<section id="software-downloads" class="level3">
+<h3 class="anchored" data-anchor-id="software-downloads">Software Downloads</h3>
+<ul>
+<li>Python</li>
+<li>Visual Studio Code</li>
+<li>Chrome</li>
+<li>Spotify</li>
+<li>Slack</li>
+<li>Steam</li>
+</ul>
 
 
+</section>
+</section>
 
-
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1766803222360" data-listing-reading-time-sort="4" data-listing-word-count-sort="764">
-<a href="../reference/environment-setup/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../reference/environment-setup/images__env-setup/vs-code-settings-screenshot-thumb.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-New Environment Setup
-</h5>
-<div class="card-text listing-description delink">
-I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my setup, I’ve compiled these pages as a resource for my…
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1766783613356" data-listing-reading-time-sort="5" data-listing-word-count-sort="804">
-<a href="../reference/color-theme__reference/index.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../reference/color-theme__reference/images__color-scheme-reference/ansi016-color-square-flux-bunny-scheme.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Color Scheme Reference
-</h5>
-<div class="card-text listing-description delink">
-Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -470,7 +508,7 @@ Color brings me joy, and integrating color into my development environment bring
 |   Footer containing javascript that should be included on each page.
 |____________________________________________________________________-->
 
-<script src="../darkmode.js"></script>
+<script src="../../darkmode.js"></script>
 <script id="quarto-html-after-body" type="application/javascript">
   window.document.addEventListener("DOMContentLoaded", function (event) {
     const icon = "";

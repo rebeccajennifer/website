@@ -1,5 +1,13 @@
 [
   {
+    "listing": "/index.html",
+    "items": [
+      "/projects/index.html",
+      "/reference/index.html",
+      "/education/comp-org/index.html"
+    ]
+  },
+  {
     "listing": "/reference/index.html",
     "items": [
       "/reference/environment-setup/index.html",
@@ -17,6 +25,17 @@
       "/reference/color-theme__reference/gnome-terminal-color.html",
       "/reference/color-theme__reference/putty-color.html",
       "/reference/color-theme__reference/vim-color.html"
+    ]
+  },
+  {
+    "listing": "/reference/environment-setup/index.html",
+    "items": [
+      "/reference/environment-setup/application-installation.html",
+      "/reference/environment-setup/vs-code.html",
+      "/reference/environment-setup/git.html",
+      "/reference/environment-setup/default-shell.html",
+      "/reference/environment-setup/arduino-cli.html",
+      "/reference/environment-setup/putty.html"
     ]
   },
   {
