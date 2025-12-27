@@ -49,13 +49,7 @@ website:
         href: reference/index.qmd
 
       - text: "Teaching"
-        menu:
-          - text: "How to Learn"
-            href: education/how-to-learn.qmd
-          - text: "Computer Systems and Assembly Course"
-            href: education/comp-org/index.qmd
-          - text: How to View Worksheet Answers
-            href: education/comp-org/worksheet-answers.qmd
+        href: education/comp-org/index.qmd
 
       - text: "Contact"
         href: contact.qmd
