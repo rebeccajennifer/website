@@ -44,7 +44,8 @@ This is my essential checklist of applications for setting up a new development 
 passwd
 ```
 
-### Install from apt
+### Install From `apt`
+
 Use `sudo` before all `apt` commands if you do not have a root password.
 
 ```
@@ -63,17 +64,20 @@ apt install python3-pip
 apt install graphviz # Make block diagrams using a scripting language
 ```
 
-### Install from snap
+### Install From `snap`
+
 ``
 sudo snap install discord
 ``
 
-### From App Center
+### Install From App Center
+
 - Steam
 - Slack
 - Visual Studio Code ("code")
 
-### Install from `.deb`
+### Install From `.deb`
+
 #### Chrome
 
 From directory with `.deb` file
@@ -83,6 +87,7 @@ sudo dpkg -i <.deb file>
 ```
 
 #### DrawIO
+
 Download `.deb` from [here](https://github.com/jgraph/drawio-desktop/releases/tag/v26.0.4).
 
 Run with
@@ -108,6 +113,7 @@ sudo chmod 4755 /opt/drawio/chrome-sandbox
 ### Arduino CLI
 
 #### Install Arduino CLI
+
 Source:  [Arduino CLI ](https://arduino.github.io/arduino-cli/0.35/installation/)
 
 1. Create `~/local/` if it doesn't already exist:
@@ -145,6 +151,7 @@ Source:  [Arduino CLI ](https://arduino.github.io/arduino-cli/0.35/installation/
 1. See the `Arduino CLI` wiki page for information on configuration.
 
 ### Calibre
+
 This app is used to view and print `.epub` files.
 
 ```bash
@@ -169,7 +176,7 @@ In the window labeled `Sound` -> tab labeled `Sounds` select the menu option `No
 
 ### Cygwin
 
-Download cygwin, install packages
+Download [Cygwin](https://cygwin.org/) and install packages
 
 - lynx
 - wget
