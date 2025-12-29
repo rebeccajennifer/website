@@ -646,6 +646,8 @@ ol .breadcrumb-item::before
   border            : 1px solid var(--flux-bg-bold);
 }
 
+.list.quarto-listing-default
+
 .quarto-title-banner.page-columns.page-full .quarto-title.column-body
 {
   border-bottom     : none;
@@ -654,9 +656,15 @@ ol .breadcrumb-item::before
   margin            : 0;
 }
 
-.quarto-title.column-body
+.quarto-post *
 {
-  padding: 0px;
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+}
+
+.listing-category
+{
+  color             : var(--flux-fg-mute) !important;     /* ! needed */
+  border            : 1px solid var(--flux-fg-mute) !important;
 }
 
 /*--------------------------------------------------------------------*/
