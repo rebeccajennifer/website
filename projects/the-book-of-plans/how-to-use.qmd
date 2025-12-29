@@ -1,3 +1,10 @@
+---
+title: How to Use The Book of Plans
+toc: true
+toc-depth: 6
+subtitle: How to fill out planner pages.
+order: 0
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,14 +32,6 @@
 <!--DESCRIPTION
 |   How to use The Book of Plans.
 |____________________________________________________________________-->
-
----
-title: How to Use The Book of Plans
-toc: true
-toc-depth: 6
-subtitle: How to fill out planner pages.
-order: 0
----
 
 This page describes each of the types of pages in _The Book of Plans_ and instructions on how to fill them out.
 

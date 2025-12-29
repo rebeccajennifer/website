@@ -1,3 +1,10 @@
+---
+title: How to Assemble The Book of Plans
+toc: true
+toc-depth: 6
+subtitle: How to print and assemble The Book of Plans.
+order: 1
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -25,14 +32,6 @@
 <!--DESCRIPTION
 |   Instructions on how to assemble The Book of Plans
 |____________________________________________________________________-->
-
----
-title: How to Assemble The Book of Plans
-toc: true
-toc-depth: 6
-subtitle: How to print and assemble The Book of Plans.
-order: 1
----
 
 <style>
     a.flux-button
