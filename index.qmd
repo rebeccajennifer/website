@@ -142,10 +142,10 @@ I’m a software engineer who values clean code, workflow efficiency, and clear 
 ## What I Care About
 
 <div style="text-align: center;">
-  <a class="flux-button _3" href="/education/comp-org/comp-org.html">Engineering</a>
+  <a class="flux-button _3" href="/education/comp-org/index.html">Engineering</a>
   <a class="flux-button _3" href="https://flyingrabbitmovement.com">Movement</a>
-  <a class="flux-button _3" href="projects/color-clock/about-color-clock.html">Creativity</a>
-  <a class="flux-button _3" href="projects/the-book-of-plans/the-book-of-plans.html">Growth</a>
+  <a class="flux-button _3" href="projects/color-clock/index.html">Creativity</a>
+  <a class="flux-button _3" href="projects/the-book-of-plans/index.html">Growth</a>
 </div>
 
 ## About This Site
