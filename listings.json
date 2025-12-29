@@ -24,6 +24,13 @@
     ]
   },
   {
+    "listing": "/projects/the-book-of-plans/index.html",
+    "items": [
+      "/projects/the-book-of-plans/how-to-use.html",
+      "/projects/the-book-of-plans/assembly-instructions.html"
+    ]
+  },
+  {
     "listing": "/projects/color-clock/blog__color-clock/index.html",
     "items": [
       "/projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",

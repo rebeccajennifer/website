@@ -1484,7 +1484,7 @@
     "href": "projects/the-book-of-plans/index.html",
     "title": "The Book of Plans",
     "section": "",
-    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder. Assembly instructions are provided here.",
+    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.",
     "crumbs": [
       "Projects",
       "The Book of Plans"
@@ -1507,6 +1507,28 @@
     "title": "The Book of Plans",
     "section": "About the Code",
     "text": "About the Code\nThe Book of Plans was created in Python using the modules svgwrite and PdfWriter. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.\nSource Code",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/index.html#full-preview",
+    "href": "projects/the-book-of-plans/index.html#full-preview",
+    "title": "The Book of Plans",
+    "section": "Full Preview",
+    "text": "Full Preview\nThis file serves as a preview of the planner; it it not formatted for printing. For printing instructions, visit How to Assemble The Book of Plans.\nPlanner Preview",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/index.html#instructions",
+    "href": "projects/the-book-of-plans/index.html#instructions",
+    "title": "The Book of Plans",
+    "section": "Instructions",
+    "text": "Instructions",
     "crumbs": [
       "Projects",
       "The Book of Plans"

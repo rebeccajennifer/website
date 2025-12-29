@@ -31,6 +31,8 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
+<script src="../../site_libs/quarto-listing/list.min.js"></script>
+<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -69,7 +71,65 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
+<script>
 
+  window.document.addEventListener("DOMContentLoaded", function (_event) {
+    const listingTargetEl = window.document.querySelector('#listing-listing .list');
+    if (!listingTargetEl) {
+      // No listing discovered, do not attach.
+      return; 
+    }
+
+    const options = {
+      valueNames: ['listing-title','listing-author','listing-subtitle','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      
+      searchColumns: ["listing-title","listing-author","listing-subtitle","listing-image","listing-description"],
+    };
+
+    window['quarto-listings'] = window['quarto-listings'] || {};
+    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
+
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  });
+
+  window.addEventListener('hashchange',() => {
+    if (window['quarto-listing-loaded']) {
+      window['quarto-listing-loaded']();
+    }
+  })
+  </script>
+
+  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
+  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
+
+<script type="text/javascript">
+const typesetMath = (el) => {
+  if (window.MathJax) {
+    // MathJax Typeset
+    window.MathJax.typeset([el]);
+  } else if (window.katex) {
+    // KaTeX Render
+    var mathElements = el.getElementsByClassName("math");
+    var macros = [];
+    for (var i = 0; i < mathElements.length; i++) {
+      var texText = mathElements[i].firstChild;
+      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
+        window.katex.render(texText.data, mathElements[i], {
+          displayMode: mathElements[i].classList.contains('display'),
+          throwOnError: false,
+          macros: macros,
+          fleqn: false
+        });
+      }
+    }
+  }
+}
+window.Quarto = {
+  typesetMath
+};
+</script>
 
 <link rel="stylesheet" href="../../flux-bunny-style.css">
 <meta property="og:title" content="The Book of Plans – Rebecca Jennifer Rashkin">
@@ -300,14 +360,14 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-4" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../projects/the-book-of-plans/assembly-instructions.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to Assemble The Book of Plans</span></a>
+  <a href="../../projects/the-book-of-plans/how-to-use.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Use The Book of Plans</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../projects/the-book-of-plans/how-to-use.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">How to Use The Book of Plans</span></a>
+  <a href="../../projects/the-book-of-plans/assembly-instructions.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">How to Assemble The Book of Plans</span></a>
   </div>
 </li>
       </ul>
@@ -379,7 +439,7 @@ ul.task-list li input[type="checkbox"] {
 |   Site page for The Book of Plans.
 |____________________________________________________________________-->
 <p>The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.</p>
-<p>The planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder. Assembly instructions are provided <a href="../../projects/the-book-of-plans/assembly-instructions.html">here</a>.</p>
+<p>The planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.</p>
 <section id="why-three-months" class="level2">
 <h2 class="anchored" data-anchor-id="why-three-months">Why Three Months?</h2>
 <p>Three months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.</p>
@@ -394,11 +454,68 @@ Here is a sample layout of one of the pages.
 <h2 class="anchored" data-anchor-id="about-the-code">About the Code</h2>
 <p><strong><em>The Book of Plans</em></strong> was created in Python using the modules <a href="https://pypi.org/project/svgwrite/">svgwrite</a> and <a href="https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html">PdfWriter</a>. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.</p>
 <p><a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/python">Source Code</a></p>
+</section>
+<section id="full-preview" class="level2">
+<h2 class="anchored" data-anchor-id="full-preview">Full Preview</h2>
+<p>This file serves as a preview of the planner; it it not formatted for printing. For printing instructions, visit <a href="../../projects/the-book-of-plans/assembly-instructions.html">How to Assemble The Book of Plans</a>.</p>
+<p><a class="flux-button _2" href="./images__the-book-of-plans/book-of-plans-full-preview.pdf">Planner Preview</a></p>
+</section>
+<section id="instructions" class="level2">
+<h2 class="anchored" data-anchor-id="instructions">Instructions</h2>
+
 
 
 </section>
 
-</main> <!-- /main -->
+<div class="quarto-listing quarto-listing-container-default" id="listing-listing">
+<div class="list quarto-listing-default">
+<div class="quarto-post image-right" data-index="0" data-listing-file-modified-sort="1767030156642" data-listing-reading-time-sort="7" data-listing-word-count-sort="1224">
+<div class="thumbnail"><a href="../../projects/the-book-of-plans/how-to-use.html" class="no-external">
+
+<p class="card-img-top"><img src="images__the-book-of-plans/year-vision.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../projects/the-book-of-plans/how-to-use.html" class="no-external">How to Use The Book of Plans</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../projects/the-book-of-plans/how-to-use.html" class="no-external">How to fill out planner pages.</a>
+</div>
+<div class="delink listing-description"><a href="../../projects/the-book-of-plans/how-to-use.html" class="no-external">
+This page describes each of the types of pages in <em>The Book of Plans</em> and instructions on how to fill them out.
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../projects/the-book-of-plans/how-to-use.html" class="no-external">
+</a>
+</div>
+</div>
+<div class="quarto-post image-right" data-index="1" data-listing-file-modified-sort="1767030169094" data-listing-reading-time-sort="8" data-listing-word-count-sort="1486">
+<div class="thumbnail"><a href="../../projects/the-book-of-plans/assembly-instructions.html" class="no-external">
+
+<p class="card-img-top"><img src="images__the-book-of-plans/mini-binder-holes.png"  class="thumbnail-image card-img"/></p>
+
+</a></div>
+<div class="body">
+<h3 class="no-anchor listing-title">
+<a href="../../projects/the-book-of-plans/assembly-instructions.html" class="no-external">How to Assemble The Book of Plans</a>
+</h3>
+<div class="listing-subtitle">
+<a href="../../projects/the-book-of-plans/assembly-instructions.html" class="no-external">How to print and assemble The Book of Plans.</a>
+</div>
+<div class="delink listing-description"><a href="../../projects/the-book-of-plans/assembly-instructions.html" class="no-external">
+The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below.
+</a></div>
+</div>
+<div class="metadata">
+<a href="../../projects/the-book-of-plans/assembly-instructions.html" class="no-external">
+</a>
+</div>
+</div>
+</div>
+<div class="listing-no-matching d-none">No matching items</div>
+</div></main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
