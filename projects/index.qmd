@@ -81,7 +81,7 @@ Tell time with color. An immersive art installation that transforms time passage
 <a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
-[![](./color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0-square__color-clock.jpg){.img-fluid .plain}](/projects/color-clock/index.qmd)
+[![](./color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0-square__color-clock.jpg){.img-fluid}](/projects/color-clock/index.qmd)
 :::
 :::
 
@@ -123,7 +123,7 @@ A digital home for my projects and resources. An open notebook for my technical 
 <a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/website"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
-[![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only .plain}](/index.qmd)
-[![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only .plain}](/index.qmd)
+[![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only}](/index.qmd)
+[![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only}](/index.qmd)
 :::
 :::

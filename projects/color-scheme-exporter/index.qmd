@@ -33,7 +33,7 @@ order: 2
 |   About Color Scheme Exporter.
 |____________________________________________________________________-->
 
-![](./color-scheme-exporter-screenshot.png){.plain}
+![](./color-scheme-exporter-screenshot.png)
 
 __Color Scheme Exporter__ is a utility designed to synchronize your visual experience across various terminal and development environments. By defining a standard ANSI 16-color palette in a single JSON source, users can instantly generate color configuration files for various terminal emulators, including GNOME Terminal and Cygwin.
 

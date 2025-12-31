@@ -79,7 +79,7 @@ These products are just examples of tools you can use to assemble _The Book of P
 
 Set your holes to punch at the following measurements to fit in a 3-ring mini binder:
 
-![](./images__the-book-of-plans/mini-binder-holes.png){width="50%"}
+![](./images__the-book-of-plans/mini-binder-holes.png){width="50%" .background}
 
 ### General Notes
 

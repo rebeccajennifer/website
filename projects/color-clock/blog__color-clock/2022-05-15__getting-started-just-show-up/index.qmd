@@ -32,5 +32,5 @@ Here is a digital display showing the current minute and second that is tracked 
 
 I've wired up the clock module along with the debugging display. Here's where I'm at.
 
-![](./color-clock-circuit__2022-05-24.png)
+![](./color-clock-circuit__2022-05-24.png){.background}
 
