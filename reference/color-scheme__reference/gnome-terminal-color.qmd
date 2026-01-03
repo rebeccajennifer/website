@@ -35,7 +35,7 @@ This page describes how to create a color scheme for GNOME terminal in Ubuntu.
 
 ## Identify Profile ID
 
-From BASH, run the following:
+From bash, run the following:
 
 ```bash
 dconf list /org/gnome/terminal/legacy/profiles:/

@@ -65,7 +65,7 @@ order: 1
 
 ### Videos
 
-[BASH Basics](https://www.youtube.com/watch?v=x73WTEltyHU&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=5)
+[Bash Basics](https://www.youtube.com/watch?v=x73WTEltyHU&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=5)
 
 [Terminal Basics for Beginners](https://www.youtube.com/watch?v=5XgBd6rjuDQ&list=PLzDdlaxoYgBsAEpBBLrzQR2IXcjBlEL1R&index=4)
 
