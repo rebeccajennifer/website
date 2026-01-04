@@ -65,7 +65,7 @@ order: 1
    source ~/qnx800/qnxsdp-env.sh
    ```
 
-   Example Output
+   Example Output:
 
    ```bash
    QNX_HOST=/home/flux/qnx800/host/linux/x86_64
@@ -79,7 +79,7 @@ order: 1
    which mkqnximage
    ```
 
-   Example Output
+   Example Output:
 
    ```bash
    /home/flux/qnx800/host/common/bin/mkqnximage
@@ -140,7 +140,7 @@ order: 1
 
 1. Press `<Enter>` to bring up the prompt, indicated by `#`. Enter the command `uname -a` to confirm that the target is running.
 
-   Example
+   Example:
 
    ```bash
    # uname -a
@@ -260,37 +260,3 @@ Solution: Install VMware. Note that in this example we are using `qemu` instead 
    # ---
    ```
 
-### Errors When Creating Virtual Target Using Visual Studio Code
-
-#### Error: Non-Existent SSH Key File
-
-You may see the following error in the terminal.
-
-```bash
---ssh-ident refers to non-existent file: ~/.ssh/id_ed25519.pub
-```
-
-Solution: If you are confident that the path provided for the public key is correct, use the full path instead of using `~` for home.
-
-#### Error: `dnsmasq` Not Running
-
-```
-dnsmasq not running on br0 for DHCP service
-You might be better off installing libvirt so you can use virbr0.
-To do this, run:
-
-    sudo apt install libvirt-clients libvirt-daemon-system
-
-or whatever is appropriate for your system.
-
-Need to configure networking for QEMU
-Unable to configure networking please run:
-    /home/flux/qnx800/host/linux/x86_64/../../common/mkqnximage/qemu/check-net
-Command exited with error code: 2
-```
-
-Solution: Install `libvirt`.
-
-```bash
-sudo apt install libvirt-clients libvirt-daemon-system
-```

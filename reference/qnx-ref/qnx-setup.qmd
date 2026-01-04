@@ -91,7 +91,7 @@ order       : 0
 
 1. Specify installation path. Hit `<enter>` to accept the default install location.
 
-   Example
+   Example:
 
    ```bash
    Specify installation path (default: /home/flux/qnx):
@@ -142,7 +142,7 @@ order       : 0
 
 1. From QNX Software Center, click `Installed` and expand `QNX Software Development Platform 8.0` to view installed packages.
 
-   ![](./images__qnx-ref/1__setup-00-installed-packages.png)
+   ![](./images__qnx-ref/0__install-12-installed-packages.png)
 
 ## Installed Files
 
@@ -182,7 +182,7 @@ The VS Code QNX Toolkit extension allows you to create and run QNX projects from
 
 1. Install `QNX Toolkit` from extensions.
 
-   ![](./images__qnx-ref/1__setup-01-vscode-ext.png)
+   ![](./images__qnx-ref/1__setup-00-vscode-install-ext.png)
 
 1. Ensure prerequsites are installed. These are listed in the quickstart guide on the QNX website.
 
