@@ -37,6 +37,10 @@ order: 1
 
 [mkqnximage](https://www.qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.utilities/topic/m/mkqnximage.html){class="flux-button _3"}
 
+## Note
+
+On this page, commands preceded by `#` indicate that the command is run in the terminal window of a running target.
+
 ## Prerequisites
 
 1. [Install QNX SDP 8.0](./qnx-setup.qmd).

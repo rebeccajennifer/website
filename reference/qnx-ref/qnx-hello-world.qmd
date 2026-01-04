@@ -44,6 +44,10 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
 
 [Quickstart Guide](https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html){class="flux-button _3"}
 
+## Note
+
+On this page, commands preceded by `#` indicate that the command is run in the terminal window of a running target.
+
 ## Visual Studio Code: Create New Project
 
 1. In VS Code, select QNX from the Activity Bar on the left side of the screen.
@@ -293,3 +297,24 @@ sudo apt install net-tools
    Screenshot:
 
    ![](./images__qnx-ref/3__hello-world-08.png)
+
+### Notes
+
+#### Visual Studio Code Run: Executable Location
+
+When running the program through VS Code, the executable is placed in the /tmp directory of the target.
+
+To verify, connect to the target either through VS Code, or on the command line. Navigate to `/tmp` and list the directory contents.
+
+Commands On Running Target:
+
+```bash
+# cd /tmp
+# ls
+```
+
+Output On Running Target:
+
+```bash
+hello_world
+```

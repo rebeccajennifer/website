@@ -71,14 +71,14 @@ order       : 0
 1. In your terminal window, navigate to the downloaded file and make the file executable.
 
    ```bash
-   (prompt): cd ~/Downloads
-   (prompt): chmod +x qnx-setup-2.0.4-202501021438-linux.run
+   (linux): cd ~/Downloads
+   (linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run
    ```
 
 1. Run the file to install software center.
 
    ```bash
-   (prompt): ./qnx-setup-2.0.4-202501021438-linux.run
+   (linux): ./qnx-setup-2.0.4-202501021438-linux.run
    ```
 
 1. Scroll to the bottom of the license agreement by hitting `<enter>` several times or type `q` to jump to the bottom.
@@ -100,8 +100,8 @@ order       : 0
 1. After specifying the installation path, your terminal will look similar to this.
 
    ```bash
-   (prompt): chmod +x qnx-setup-2.0.4-202501021438-linux.run
-   (prompt): ./qnx-setup-2.0.4-202501021438-linux.run
+   (linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run
+   (linux): ./qnx-setup-2.0.4-202501021438-linux.run
    Verifying archive integrity... All good.
    Uncompressing QNX Software Center 2.0.4  100%
    Please type y to accept, n otherwise: y
@@ -149,7 +149,7 @@ order       : 0
 After installation, in your terminal, show the contents of th QNX installation folder.
 
 ```bash
-(prompt): ls ~/qnx800
+(linux): ls ~/qnx800
 host  qnxsdp-env.bat  qnxsdp-env.sh  target
 ```
 

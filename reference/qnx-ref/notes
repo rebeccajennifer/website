@@ -17,11 +17,11 @@ From command line:
 
 ```bash
 # Confirm target is connected
-(prompt): ls /dev/ttyUSB*
+(linux): ls /dev/ttyUSB*
 /dev/tty/ttyUSB0
 
 #
-(prompt): sudo screen /dev/ttyUSB0 115200
+(linux): sudo screen /dev/ttyUSB0 115200
 [sudo] password for username:
 
 # uname -a

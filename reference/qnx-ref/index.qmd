@@ -17,4 +17,8 @@ The official QNX documentation provides authoritative reference material and gui
 
 [QNX Quickstart Guide](https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html){class="flux-button _3"}
 
+## Note
+
+On pages in this section, commands preceded by `#` indicate that they are run in the terminal window of a running target.
+
 ## QNX Learning Tutorials
