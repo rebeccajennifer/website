@@ -1,0 +1,16 @@
+---
+title: Inkscape Reference
+description: >
+  This page provides instructions on the Inkscape features I use most frequently.
+image: ./images__inkscape-ref/hs-stag-silhouette.svg
+listing:
+  contents: ./
+  type: grid
+order: 3
+---
+
+## Official Docs
+
+<a class="flux-button _3" href= "https://inkscape-manuals.readthedocs.io/en/latest/">Inkscape Beginner's Guide</a>
+
+## My Pages
