@@ -43,30 +43,30 @@ order       : 0
 
 1. Log in with myQNX. Hover over `Developers`, then click `FREE Non-Commercial License`.
 
-   ![](./images__qnx-ref/0__install-00-free-license.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-00-free-license.png)
 
 1. If you click this more than once, you will see this screen after you've already requested a license.
 
-   ![](./images__qnx-ref/0__install-01-qnx-access.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-01-qnx-access.png)
 
 1. You should receive an email within 30 minutes indicating that your Non-Commercial license is ready.
 
 1. Go to <https://qnx.com/account/dashboard/>.
 
-   ![](./images__qnx-ref/0__install-02-license-manager.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-02-license-manager.png)
 
 1. Under the `Users` column, click on the text `Click to deploy to users` then on the button `Deploy`. Type the email address used for your QNX account.
 
-   ![](./images__qnx-ref/0__install-03-deploy0.png)
-   ![](./images__qnx-ref/0__install-03-deploy1.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-03-deploy0.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-03-deploy1.png)
 
 1. From myQNX home <https://qnx.com/account>, click on the `QNX Software Center` link.
 
-   ![](./images__qnx-ref/0__install-04-sw-center0.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-04-sw-center0.png)
 
 1. Scroll down to the download section and select the appropriate version for your OS.
 
-   ![](./images__qnx-ref/0__install-05-download.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-05-download.png)
 
 1. In your terminal window, navigate to the downloaded file and make the file executable.
 
@@ -83,11 +83,11 @@ order       : 0
 
 1. Scroll to the bottom of the license agreement by hitting `<enter>` several times or type `q` to jump to the bottom.
 
-   ![](./images__qnx-ref/0__install-06-agreement.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-06-agreement.png)
 
 1. Type `y` to accept agreement.
 
-   ![](./images__qnx-ref/0__install-07-agreement-accept.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-07-agreement-accept.png)
 
 1. Specify installation path. Hit `<enter>` to accept the default install location.
 
@@ -115,34 +115,34 @@ order       : 0
 
 1. Type your myQNX credentials.
 
-   ![](./images__qnx-ref/0__install-08-credentials.png)
-   ![](./images__qnx-ref/0__install-09-password-hint.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-08-credentials.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-09-password-hint.png)
 
 1. From the QNX Software Center window, click `Add Installation`.
 
-   ![](./images__qnx-ref/0__install-10-add-installation.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-10-add-installation.png)
 
 1. Expand `QNX Software Development Platform 8.0`, select `QNX Software Development Platform 8.0` and click `Next` on this and the following window.
 
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-0.png)
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-1.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-0.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-1.png)
 
 1. The window might show `Synchronizing with remote repository, it may take a while` for a few minutes. Click `Next` when the window changes. Click `Next` for the next couple screens.
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-2.png)
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-3.png)
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-4.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-2.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-3.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-4.png)
 
 1. Accept the license agreement and click `Finish`.
 
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-5.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-5.png)
 
 1. After a few minutes, this window will pop up. Click `Close`.
 
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-6.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-6.png)
 
 1. From QNX Software Center, click `Installed` and expand `QNX Software Development Platform 8.0` to view installed packages.
 
-   ![](./images__qnx-ref/0__install-12-installed-packages.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-12-installed-packages.png)
 
 ## Installed Files
 
