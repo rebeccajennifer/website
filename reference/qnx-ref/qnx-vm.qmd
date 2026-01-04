@@ -205,26 +205,26 @@ Solution: Install VMware. Note that in this example we are using `qemu` instead 
 
 1. Select the QNX extension from the activity bar. From `QNX TARGETS`, click the button labeled `Add new QNX Virtual Target`.
 
-   ![](./images__qnx-ref/2__vscode-virtual-target-00.png)
+   ![](./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-00.png)
 
 1. Select the virtual machine type. In this example we are using `qemu`.
 
-   ![](./images__qnx-ref/2__vscode-virtual-target-01.png)
+   ![](./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-01.png)
 
 1. Select the architecture.
 
-   ![](./images__qnx-ref/2__vscode-virtual-target-02.png)
+   ![](./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-02.png)
 
 1. For `Enter extra mkqnximage options`, add `--ssh-ident=/path/to/public/ssh/key`.
 
    Make sure to use the full path, i.e. `/home/username` instead of `~`. If you do not have an SSH Key set up already, follow instructions [here](/reference/environment-setup__reference/git.qmd#github).
 
-   ![](./images__qnx-ref/2__vscode-virtual-target-03.png)
+   ![](./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-03.png)
 
 
 1. In the sidebar under `QNX TARGETS`, a new target should be visible.
 
-   ![](./images__qnx-ref/2__vscode-virtual-target-04.png)
+   ![](./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-04.png)
 
 1. The following should be printed to the terminal window.
 
