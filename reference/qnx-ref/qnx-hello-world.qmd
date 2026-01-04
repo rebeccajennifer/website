@@ -18,7 +18,7 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
 
 ## Create New Project
 
-1. In VS Code, select QNX from the Activity Bar on the left side of the screen. Select
+1. In VS Code, select QNX from the Activity Bar on the left side of the screen.
 
    ![](./images__qnx-ref/1__setup-01-vscode-walkthrough.png)
 
