@@ -1,3 +1,12 @@
+---
+title: Spoiler Alert!
+subtitle:  >
+  Get the worksheet answers for
+  [Computer Systems and Assembly Language](./index.qmd).
+
+description: Unlock the secret to viewing the worksheet answers.
+order: 2
+---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -27,13 +36,6 @@
 |   and Assembly Language.
 |____________________________________________________________________-->
 
-
----
-title: Spoiler Alert!
-subtitle:  >
-  Get the worksheet answers for
-  [Computer Systems and Assembly Language](./index.qmd).
----
 
 <style>
 img

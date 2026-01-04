@@ -43,7 +43,7 @@ To recap, the light fixture design entails two or three outer rings of light ref
 
 
 <figure>
-![](../../assets__color-clock/diagrams__color-clock/light-display_2024-02-23.png)
+![](../../assets__color-clock/diagrams__color-clock/light-display_2024-02-23.png){.background}
 <figcaption>
 **Light Display:** Outer rings of color light traverse through the spectrum at different rates, representing different granularity of time. The central light can be controlled by participants.
 </figcaption>

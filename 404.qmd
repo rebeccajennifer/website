@@ -58,7 +58,7 @@ toc: false
 It looks like you've fallen down a rabbit hole. Let's hop back [home](/index.qmd).
 :::
 ::: {.g-col-12 .g-col-md-6}
-[![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only .plain}](/index.qmd)
-[![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only .plain}](/index.qmd)
+[![](../assets/photos-general-assets/flux-grass-line-art-black-square.svg){.img-fluid .lite-only}](/index.qmd)
+[![](../assets/photos-general-assets/flux-grass-line-art-white-square.svg){.img-fluid .dark-only}](/index.qmd)
 :::
 :::

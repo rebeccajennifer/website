@@ -40,6 +40,12 @@ website:
   favicon: assets/icons/rabbit-face.png
   open-graph:
     image: assets/photos-general-assets/flux-grass-line-art-black-square.png
+    description: >
+      Software Engineer • Educator | Values clean code and
+      documentation. Explore personal projects and a collection of
+      resources on computer organization, development environment, and
+      software tools.
+
   navbar:
     right:
       - text: "Projects"
@@ -49,13 +55,7 @@ website:
         href: reference/index.qmd
 
       - text: "Teaching"
-        menu:
-          - text: "How to Learn"
-            href: education/how-to-learn.qmd
-          - text: "Computer Systems and Assembly Course"
-            href: education/comp-org/index.qmd
-          - text: How to View Worksheet Answers
-            href: education/comp-org/worksheet-answers.qmd
+        href: education/comp-org/index.qmd
 
       - text: "Contact"
         href: contact.qmd

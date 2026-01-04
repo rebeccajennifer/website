@@ -14,7 +14,7 @@ order       : -6
 I have decided on a multi-stage approach to development where each iteration has increased functionality to the previous. This diagram illustrates the top-level electronic design, with each iteration of implementation.
 
 <figure>
-![](./color-clock-block_2024-02-03.png)
+![](./color-clock-block_2024-02-03.png){.background}
 <figcaption>
 Top level schematic
 </figcaption>

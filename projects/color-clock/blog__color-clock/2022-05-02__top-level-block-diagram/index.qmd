@@ -11,7 +11,7 @@ order       : 0
 
 This diagram illustrates the first iteration of the design. The host computer is a Raspberry Pi which runs the code to interface with the peripheral devices. Descriptions of the components listed below.
 
-![](./color-clock-block__2022-04.png)
+![](./color-clock-block__2022-04.png){.background}
 
 ### RGB LEDs
 The RGB LEDs make up the heart of the piece - the main display light intended for audience view.

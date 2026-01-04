@@ -27,7 +27,7 @@ The participant is sitting quite close to the light display in the original stru
 I don't have much experience with structural fabrication, so my construction lead sketched out this design of the rooftop extension.
 
 <figure>
-![](./structure-bo-hand-drawn.png)
+![](./structure-bo-hand-drawn.png){.background}
 <figcaption>
 The rooftop extension enables the participant to sit further from the light.
 </figcaption>

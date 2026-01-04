@@ -1,0 +1,40 @@
+---
+title: Convert Bitmap to Vector
+description: >
+  This page describes how to convert a bitmap image to a vector image.
+image: ./images__inkscape-ref/hs-stag-silhouette.svg
+---
+
+## Official Docs
+
+Click here for the official Inkscape tutorial on the Trace Bitmap feature.
+
+<a class="flux-button _3" href="https://inkscape-manuals.readthedocs.io/en/latest/tracing-an-image.html">Tracing an Image</a>
+
+## Steps
+
+1. Open Inkscape and import your image, either from `File > Import...` or drag and drop the image onto the canvas.
+
+1. Press `S` for the selection tool. Click on the image.
+
+   ![](./images__inkscape-ref/bitmap2vect-1-click-img.png)
+
+1. From the top menu, go to `Path > Trace Bitmap...` (`Shift + Alt + B`). Select your options and click `Apply`.
+
+   ![](./images__inkscape-ref/bitmap2vect-2-trace-bitmap.png)
+
+1. Go to the `Layers` panel with `Ctrl + Shift + L` or from the top menu navigate to `Layer > Layers and Objects...`.
+
+1. Expand `Layer 1`. Click the image object and hit the `Delete` key.
+
+   ![](./images__inkscape-ref/bitmap2vect-3-layers.png)
+
+1. Select the newly created path object to see the nodes.
+
+1. To change the color, navigate to `Object > Fill and Stroke...` (`Ctrl + Shift + F`) and select your preferred color.
+
+   ![](./images__inkscape-ref/bitmap2vect-5-color.png)
+
+## The Vector Image
+
+![](./images__inkscape-ref/hs-stag-silhouette.svg)
