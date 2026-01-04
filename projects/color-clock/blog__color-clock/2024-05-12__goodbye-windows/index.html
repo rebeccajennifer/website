@@ -399,7 +399,7 @@ ul.task-list li input[type="checkbox"] {
 <pre class="text"><code>dfu-util: Cannot open DFU device 2341:0070 found on devnum 10 (LIBUSB_ERROR_ACCESS)
 dfu-util: No DFU capable USB device available
 Failed uploading: uploading error: exit status 74</code></pre>
-<p>I discovered that this was a known problem with this board and found in the Arduino forums that there is a <a href="https://arduino.github.io/arduino-cli/0.35/platform-specification/#post-install-script"><code>post_install.sh</code></a> script I need to run for the computer to see the Arduino. But this was a Bash script, and I was developing on Windows. I tried running the command in Git Bash, but I needed to use sudo and Git Bash didn’t have sudo then I tried to run it in PowerShell just for fun.</p>
+<p>I discovered that this was a known problem with this board and found in the Arduino forums that there is a <a href="https://arduino.github.io/arduino-cli/0.35/platform-specification/#post-install-script"><code>post_install.sh</code></a> script I need to run for the computer to see the Arduino. But this was a bash script, and I was developing on Windows. I tried running the command in Git Bash, but I needed to use sudo and Git Bash didn’t have sudo then I tried to run it in PowerShell just for fun.</p>
 <section id="a-side-note" class="level3">
 <h3 class="anchored" data-anchor-id="a-side-note">A Side Note</h3>
 <p>Skipping ahead to the present, as I’m cleaning up this post and adding links, I have discovered that there is indeed a <code>post_install.bat</code> script that I probably could have run on Windows, but we’re here now.</p>

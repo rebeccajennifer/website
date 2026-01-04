@@ -17,10 +17,18 @@
     ]
   },
   {
+    "listing": "/reference/inkscape__reference/index.html",
+    "items": [
+      "/reference/inkscape__reference/bitmap2vector.html"
+    ]
+  },
+  {
     "listing": "/reference/index.html",
     "items": [
       "/reference/environment-setup__reference/index.html",
-      "/reference/color-scheme__reference/index.html"
+      "/reference/color-scheme__reference/index.html",
+      "/reference/qnx-ref/index.html",
+      "/reference/inkscape__reference/index.html"
     ]
   },
   {
@@ -65,6 +73,14 @@
       "/reference/color-scheme__reference/gnome-terminal-color.html",
       "/reference/color-scheme__reference/putty-color.html",
       "/reference/color-scheme__reference/vim-color.html"
+    ]
+  },
+  {
+    "listing": "/reference/qnx-ref/index.html",
+    "items": [
+      "/reference/qnx-ref/qnx-setup.html",
+      "/reference/qnx-ref/qnx-vm.html",
+      "/reference/qnx-ref/qnx-hello-world.html"
     ]
   },
   {

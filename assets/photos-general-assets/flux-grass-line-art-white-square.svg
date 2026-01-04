@@ -9,6 +9,9 @@
    viewBox="0 0 450.00001 449.99999"
    sodipodi:docname="flux-grass-line-art-white-square.svg"
    inkscape:version="1.2.2 (b0a8486541, 2022-12-01)"
+   inkscape:export-filename="flux-grass-line-art-darkmode-square.png"
+   inkscape:export-xdpi="300"
+   inkscape:export-ydpi="300"
    xmlns:inkscape="http://www.inkscape.org/namespaces/inkscape"
    xmlns:sodipodi="http://sodipodi.sourceforge.net/DTD/sodipodi-0.dtd"
    xmlns="http://www.w3.org/2000/svg"
@@ -25,9 +28,9 @@
      inkscape:pagecheckerboard="0"
      inkscape:deskcolor="#d1d1d1"
      showgrid="false"
-     inkscape:zoom="12.856102"
-     inkscape:cx="228.37404"
-     inkscape:cy="103.88063"
+     inkscape:zoom="1.6070128"
+     inkscape:cx="245.1754"
+     inkscape:cy="133.47747"
      inkscape:window-width="3374"
      inkscape:window-height="1371"
      inkscape:window-x="1986"
@@ -39,6 +42,13 @@
      inkscape:label="Image"
      id="g16188"
      transform="translate(-382.22784,-289.18755)">
+    <rect
+       style="fill:#262626;fill-opacity:1;stroke-width:1.97578"
+       id="rect170"
+       width="456.20096"
+       height="453.52417"
+       x="379.13403"
+       y="287.42511" />
     <path
        id="path16246"
        style="fill:#eeeeee;fill-opacity:1"

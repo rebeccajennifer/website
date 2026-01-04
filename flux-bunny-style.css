@@ -146,7 +146,8 @@ h3
 
 h4
 {
-  margin-left: 0px;
+  margin-left     : 0px;
+  text-decoration : underline;
 }
 
 h5
@@ -671,17 +672,12 @@ ol .breadcrumb-item::before
 /* IMAGES
 /*--------------------------------------------------------------------*/
 
-/* Ensures all images are visible, even in dark mode */
-img
+/* Ensures images with transparent background are always visible */
+img.background
 {
   background-color  : var(--norm--wht-07);
-  border            : 1px solid var(--flux-bg-norm);
-}
-
-img.plain
-{
-  background-color  : transparent;
-  border            : none;
+  padding           : 10px;
+  border            : 1px solid var(--flux-bg-bold);
 }
 
 /* Hide the dark image by default */
