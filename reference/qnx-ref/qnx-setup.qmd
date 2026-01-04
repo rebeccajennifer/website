@@ -182,7 +182,7 @@ The VS Code QNX Toolkit extension allows you to create and run QNX projects from
 
 1. Install `QNX Toolkit` from extensions.
 
-   ![](./images__qnx-ref/1__setup-00-vscode-install-ext.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-00-vscode-install-ext.png)
 
 1. Ensure prerequsites are installed. These are listed in the quickstart guide on the QNX website.
 
@@ -190,18 +190,18 @@ The VS Code QNX Toolkit extension allows you to create and run QNX projects from
 
 1. Click the QNX extension in the Activity Bar on the left side of the screen. In the sidebar under `QNX COMMANDS` expand `Configuration` and select `Open QNX Tookit Walkthrough`
 
-   ![](./images__qnx-ref/1__setup-01-vscode-walkthrough.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-01-vscode-walkthrough.png)
 
 1. From the main window, click `Edit Settings`.
 
-   ![](./images__qnx-ref/1__setup-02-vscode-settings.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-02-vscode-settings.png)
 
 1. Go to VS Code settings with the shortcut `Ctrl + ,`.
 1. Expand `Extensions` and select `QNX Toolkit`.
 1. Set `Sdp Path` is set to the installation directory and `Default Projects Root` to the project directory path.
 
-   ![](./images__qnx-ref/1__setup-03-vscode-settings-sdp-path.png)
-   ![](./images__qnx-ref/1__setup-04-vscode-settings-projects-root.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-03-vscode-settings-sdp-path.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-04-vscode-settings-projects-root.png)
 
    The corresponding properties in `settings.json` are listed below.
 
