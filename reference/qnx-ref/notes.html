@@ -6,9 +6,8 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="This page describes two ways to set up a QNX virtual target: using bash commands or using Visual Studio Code. These instructions were written for Ubuntu and may require adjustments for other Linux distributions.">
 
-<title>Set Up a Virtual QNX Target – Rebecca Jennifer Rashkin</title>
+<title>notes – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,9 +72,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../flux-bunny-style.css">
-<meta property="og:title" content="Set Up a Virtual QNX Target – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="https://rebeccajennifer.com/reference/qnx-ref/assets/photos-general-assets/flux-grass-line-art-black-square.png">
+<meta property="og:image" content="assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
 </head>
 
@@ -129,7 +128,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/index.html">QNX Reference</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/qnx-vm.html">Set Up a Virtual QNX Target</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/index.html">QNX Reference</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/notes.html">—</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -277,7 +276,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/qnx-ref/qnx-vm.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/qnx-ref/qnx-vm.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Set Up a Virtual QNX Target</span></a>
   </div>
 </li>
@@ -285,6 +284,12 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../reference/qnx-ref/qnx-hello-world.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Hello World With QNX</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/qnx-ref/notes.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">—</span></a>
   </div>
 </li>
       </ul>
@@ -313,262 +318,77 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">Table of Contents</h2>
-   
-  <ul>
-  <li><a href="#official-qnx-docs" id="toc-official-qnx-docs" class="nav-link active" data-scroll-target="#official-qnx-docs">Official QNX Docs</a></li>
-  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#create-target-using-bash" id="toc-create-target-using-bash" class="nav-link" data-scroll-target="#create-target-using-bash">Create Target Using Bash</a>
-  <ul>
-  <li><a href="#run-target-after-creation" id="toc-run-target-after-creation" class="nav-link" data-scroll-target="#run-target-after-creation">Run Target After Creation</a></li>
-  <li><a href="#errors-when-running-mkqnximage" id="toc-errors-when-running-mkqnximage" class="nav-link" data-scroll-target="#errors-when-running-mkqnximage">Errors When Running <code>mkqnximage</code></a>
-  <ul>
-  <li><a href="#error-cannot-find-brctl" id="toc-error-cannot-find-brctl" class="nav-link" data-scroll-target="#error-cannot-find-brctl">Error: Cannot Find brctl</a></li>
-  <li><a href="#error-ssh-identity-file" id="toc-error-ssh-identity-file" class="nav-link" data-scroll-target="#error-ssh-identity-file">Error: SSH Identity File</a></li>
-  <li><a href="#error-unable-to-run-vmrun" id="toc-error-unable-to-run-vmrun" class="nav-link" data-scroll-target="#error-unable-to-run-vmrun">Error: Unable to Run vmrun</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#create-target-using-visual-studio-code-qnx-toolkit" id="toc-create-target-using-visual-studio-code-qnx-toolkit" class="nav-link" data-scroll-target="#create-target-using-visual-studio-code-qnx-toolkit">Create Target Using Visual Studio Code QNX Toolkit</a>
-  <ul>
-  <li><a href="#errors-with-virtual-target-creation-in-visual-studio-code" id="toc-errors-with-virtual-target-creation-in-visual-studio-code" class="nav-link" data-scroll-target="#errors-with-virtual-target-creation-in-visual-studio-code">Errors With Virtual Target Creation in Visual Studio Code</a>
-  <ul>
-  <li><a href="#error-non-existent-ssh-key-file" id="toc-error-non-existent-ssh-key-file" class="nav-link" data-scroll-target="#error-non-existent-ssh-key-file">Error: Non-Existent SSH Key File</a></li>
-  <li><a href="#error-dnsmasq-not-running" id="toc-error-dnsmasq-not-running" class="nav-link" data-scroll-target="#error-dnsmasq-not-running">Error: dnsmasq Not Running</a></li>
-  </ul></li>
-  </ul></li>
-  </ul>
-</nav>
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
+        
     </div>
 <!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/index.html">QNX Reference</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/qnx-vm.html">Set Up a Virtual QNX Target</a></li></ol></nav>
-<div class="quarto-title">
-<h1 class="title">Set Up a Virtual QNX Target</h1>
-</div>
-
-<div>
-  <div class="description">
-    <p>This page describes two ways to set up a QNX virtual target: using bash commands or using Visual Studio Code. These instructions were written for Ubuntu and may require adjustments for other Linux distributions.</p>
-  </div>
-</div>
+<main class="content" id="quarto-document-content"><header id="title-block-header" class="quarto-title-block"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/index.html">QNX Reference</a></li><li class="breadcrumb-item"><a href="../../reference/qnx-ref/notes.html">—</a></li></ol></nav></header>
 
 
-<div class="quarto-title-meta">
-
-    
-  
-    
-  </div>
-  
 
 
-</header>
-
-
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<!--DESCRIPTION
-|   How to set up a virtual QNX target
-|____________________________________________________________________-->
-<section id="official-qnx-docs" class="level2">
-<h2 class="anchored" data-anchor-id="official-qnx-docs">Official QNX Docs</h2>
-<p><a href="https://www.qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.utilities/topic/m/mkqnximage.html" class="flux-button _3">mkqnximage</a></p>
+<section id="qnx-toolkit-for-visual-studio-code-qnx-os-8.0-deep-dive" class="level2">
+<h2 class="anchored" data-anchor-id="qnx-toolkit-for-visual-studio-code-qnx-os-8.0-deep-dive">QNX Toolkit for Visual Studio Code + QNX OS 8.0 Deep Dive</h2>
+<p><a href="https://www.youtube.com/watch?v=M02X6AqdK7M" class="uri">https://www.youtube.com/watch?v=M02X6AqdK7M</a></p>
+<p>Need to tell VS Code where QNX documentation is.</p>
+<section id="prereqs" class="level3">
+<h3 class="anchored" data-anchor-id="prereqs">Prereqs</h3>
+<ul>
+<li>Raspberry Pi 4
+<ul>
+<li>Ethernet connection</li>
+<li>Serial connection</li>
+</ul></li>
+</ul>
+<p>Get image from software center</p>
 </section>
-<section id="prerequisites" class="level2">
-<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<section id="confirm-target-is-running" class="level3">
+<h3 class="anchored" data-anchor-id="confirm-target-is-running">Confirm Target is Running</h3>
+<ul>
+<li>Connect over serial - from RazPi to computer over USB</li>
+</ul>
+<p>From command line:</p>
+<pre class="bash"><code># Confirm target is connected
+(prompt): ls /dev/ttyUSB*
+/dev/tty/ttyUSB0
+
+#
+(prompt): sudo screen /dev/ttyUSB0 115200
+[sudo] password for username:
+
+# uname -a
+QNX localhost 8.0.0 YYYY/MM/DD-hh:mm:ssEST RaspberryPi4B aarch64le</code></pre>
+</section>
+</section>
+<section id="new-project" class="level2">
+<h2 class="anchored" data-anchor-id="new-project">New Project</h2>
 <ol type="1">
-<li><p><a href="../../reference/qnx-ref/qnx-setup.html">Install QNX SDP 8.0</a>.</p></li>
-<li><p><a href="../../reference/environment-setup__reference/git.html#github">Create an SSH Key</a>.</p></li>
-<li><p>Install the following packages via <code>apt</code>.</p>
-<pre class="bash"><code>sudo apt install qemu-system-x86 qemu-utils
-sudo apt install bridge-utils
-sudo apt install libvirt-clients libvirt-daemon-system
-sudo apt install net-tools</code></pre></li>
+<li><p>To run the code, right-click the project directory, go to <code>QNX &gt; Run as QNX Application...</code>.</p>
+<p><img src="./images__qnx-ref/3__hello-world-06.png" class="img-fluid"></p></li>
 </ol>
+<section id="error-getaddrinfor-ebusy" class="level4">
+<h4 class="anchored" data-anchor-id="error-getaddrinfor-ebusy">Error: getaddrinfor EBUSY</h4>
+<pre class="bash"><code>Error: Cannot launch, check Debug Console for failure message
+Error: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -</code></pre>
+<p>Solution: Unsolved</p>
+<p>Error: Cannot determine IP address for qemu-qnx800-x86_64</p>
+<p>Default <code>launch.json</code> from project creation.</p>
+<pre class="json"><code></code></pre>
+<p>Edit</p>
 </section>
-<section id="create-target-using-bash" class="level2">
-<h2 class="anchored" data-anchor-id="create-target-using-bash">Create Target Using Bash</h2>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
 <ol type="1">
-<li><p>Run bash if you aren’t already.</p>
-<pre class="bash"><code>bash</code></pre></li>
-<li><p>Source <code>qnxsdp-env.sh</code> from your QNX installation.</p>
-<pre class="bash"><code>source ~/qnx800/qnxsdp-env.sh</code></pre>
-<p>Example Output:</p>
-<pre class="bash"><code>QNX_HOST=/home/flux/qnx800/host/linux/x86_64
-QNX_TARGET=/home/flux/qnx800/target/qnx
-MAKEFLAGS=-I/home/flux/qnx800/target/qnx/usr/include</code></pre></li>
-<li><p>Check that <code>mkqnximage</code> is found.</p>
-<pre class="bash"><code>which mkqnximage</code></pre>
-<p>Example Output:</p>
-<pre class="bash"><code>/home/flux/qnx800/host/common/bin/mkqnximage</code></pre></li>
-<li><p>Create a directory to hold the VM image.</p>
-<pre class="bash"><code>mkdir ~/qnx-vm
-cd ~/qnx-vm</code></pre></li>
-<li><p>Run <code>mkqnximage</code> to build the VM. Use <code>--run</code> to run the target.</p>
-<pre class="bash"><code>mkqnximage                             \
---type=qemu                            \
---arch=x86_64                          \
---ssh-ident=$HOME/.ssh/id_ed25519.pub  \
---run</code></pre></li>
-<li><p>Upon connection to the virtual target, the following will be printed to the terminal screen.</p>
-<pre class="bash"><code>SeaBIOS (version 1.16.3-debian-1.16.3-2)
-
-
-iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+3EFCACB0+3EF0ACB0 CA00
-
-
-
-Booting from ROM..
-non UEFI or UEFI+CSM boot
-ACPI table not found (0x4746434d)
-overriding mask for controller 2, vector_base 0
----&gt; Starting slogger2
----&gt; Starting PCI Services
----&gt; Starting fsevmgr
-# ---&gt; Starting devb
----&gt; Mounting file systems
-Path=0 - Intel 82371SB
- target=0 lun=0     Direct-Access(0) -          QEMU HARDDISK    Rev: 2.5+
-Path=1 - Intel 82371SB
- target=0 lun=0            CD-ROM(5) - QEMU     QEMU DVD-ROM     Rev: 2.5+
----&gt; Mounting file systems
----&gt; Starting Networking
----&gt; Starting sshd
----&gt; Starting misc
-
-To exit QEMU, type &lt;ctrl&gt;a x
-
-Process count:22
-Startup complete
-QNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64</code></pre></li>
-<li><p>Press <code>&lt;Enter&gt;</code> to bring up the prompt, indicated by <code>#</code>. Enter the command <code>uname -a</code> to confirm that the target is running.</p>
-<p>Example:</p>
-<pre class="bash"><code># uname -a
-QNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64</code></pre></li>
+<li>The <code>QNX Recursive Makefile</code> template creates structure to that allows for compilation of different binaries for different architectures.### Errors When Creating Virtual Target Using Visual Studio Code</li>
 </ol>
-<section id="run-target-after-creation" class="level3">
-<h3 class="anchored" data-anchor-id="run-target-after-creation">Run Target After Creation</h3>
-<p>After creating the target, navigate to the target directory (in this case <code>~/qnx-vm</code>) and execute the following command. Always source <code>qnxsdp-env.sh</code> before invoking <code>mkqnximage</code>.</p>
-<pre class="bash"><code>mkqnximage --run</code></pre>
-</section>
-<section id="errors-when-running-mkqnximage" class="level3">
-<h3 class="anchored" data-anchor-id="errors-when-running-mkqnximage">Errors When Running <code>mkqnximage</code></h3>
-<section id="error-cannot-find-brctl" class="level4">
-<h4 class="anchored" data-anchor-id="error-cannot-find-brctl">Error: Cannot Find brctl</h4>
-<p>Solution: Install <code>bridge-utils</code>:</p>
-<pre class="bash"><code>sudo apt install bridge-utils</code></pre>
-</section>
-<section id="error-ssh-identity-file" class="level4">
-<h4 class="anchored" data-anchor-id="error-ssh-identity-file">Error: SSH Identity File</h4>
-<p>You may encounter this error:</p>
-<pre class="bash"><code>To allow root ssh, you need an ssh identity file. You probably want to use an option such as: --ssh-ident=~/.ssh/id_ed25519.pub</code></pre>
-<p>Solution: Include the <code>--ssh-ident</code> parameter in the <code>mkqnximage</code> command.</p>
-<pre class="bash"><code>--ssh-ident=$HOME/.ssh/id_ed25519.pub</code></pre>
-<p>If you do not already have an SSH key set up, follow instructions from <a href="../../reference/environment-setup__reference/git.html#github">this page</a>.</p>
-</section>
-<section id="error-unable-to-run-vmrun" class="level4">
-<h4 class="anchored" data-anchor-id="error-unable-to-run-vmrun">Error: Unable to Run vmrun</h4>
-<p>You may encounter this error if you use <code>--type=vmware</code></p>
-<pre class="bash"><code>Unable to run vmrun. If you have VMWare Workstation Pro installed
-you will need to add its directory to your PATH. If you are using
-VMWare Workstation Player you will have to open the virtual
-machine local/vmware_files/vmware.vmx directly.</code></pre>
-<p>Solution: Install VMware. Note that in this example we are using <code>qemu</code> instead of VMware.</p>
-</section>
-</section>
-</section>
-<section id="create-target-using-visual-studio-code-qnx-toolkit" class="level2">
-<h2 class="anchored" data-anchor-id="create-target-using-visual-studio-code-qnx-toolkit">Create Target Using Visual Studio Code QNX Toolkit</h2>
-<ol type="1">
-<li><p><a href="../../reference/qnx-ref/qnx-setup.html#visual-studio-code-qnx-toolkit">Install the QNX Toolkit extension</a>.</p></li>
-<li><p>Select the QNX extension from the activity bar. From <code>QNX TARGETS</code>, click the button labeled <code>Add new QNX Virtual Target</code>.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-00.png" class="img-fluid"></p></li>
-<li><p>Select the virtual machine type. In this example we are using <code>qemu</code>.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-01.png" class="img-fluid"></p></li>
-<li><p>Select the architecture.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-02.png" class="img-fluid"></p></li>
-<li><p>For <code>Enter extra mkqnximage options</code>, add <code>--ssh-ident=/path/to/public/ssh/key</code>.</p>
-<p>Make sure to use the full path, i.e.&nbsp;<code>/home/username</code> instead of <code>~</code>. If you do not have an SSH Key set up already, follow instructions <a href="../../reference/environment-setup__reference/git.html#github">here</a>.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-03.png" class="img-fluid"></p></li>
-<li><p>In the sidebar under <code>QNX TARGETS</code>, a new target should be visible.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-04.png" class="img-fluid"></p></li>
-<li><p>The following should be printed to the terminal window.</p>
-<pre class="bash"><code>SeaBIOS (version 1.16.3-debian-1.16.3-2)
-
-
-iPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+3EFCACB0+3EF0ACB0 C0
-
-
-
-Booting from ROM..
-non UEFI or UEFI+CSM boot
-ACPI table not found (0x4746434d)
-overriding mask for controller 2, vector_base 0
----&gt; Starting slogger2
----&gt; Starting PCI Services
----&gt; Starting fsevmgr
-# ---&gt; Starting devb
----&gt; Mounting file systems
-Path=0 - Intel 82371SB
- target=0 lun=0     Direct-Access(0) -          QEMU HARDDISK    Rev: 2.+
-Path=1 - Intel 82371SB
- target=0 lun=0            CD-ROM(5) - QEMU     QEMU DVD-ROM     Rev: 2.+
----&gt; Mounting file systems
----&gt; Starting Networking
----&gt; Starting sshd
----&gt; Starting misc
-
-To exit QEMU, type &lt;ctrl&gt;a x
-
-Process count:22
-Startup complete
-QNX qemu-qnx800-x86_64 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64
----
-
-#</code></pre></li>
-<li><p>At the prompt, type <code>uname -a</code> to confirm that you are running the virtual target.</p>
-<pre class="bash"><code># uname -a
-QNX qemu-qnx800-x86_64 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64
-# ---</code></pre></li>
-</ol>
-<section id="errors-with-virtual-target-creation-in-visual-studio-code" class="level3">
-<h3 class="anchored" data-anchor-id="errors-with-virtual-target-creation-in-visual-studio-code">Errors With Virtual Target Creation in Visual Studio Code</h3>
 <section id="error-non-existent-ssh-key-file" class="level4">
 <h4 class="anchored" data-anchor-id="error-non-existent-ssh-key-file">Error: Non-Existent SSH Key File</h4>
-<p>You may encounter the following error in the terminal window:</p>
+<p>You may see the following error in the terminal.</p>
 <pre class="bash"><code>--ssh-ident refers to non-existent file: ~/.ssh/id_ed25519.pub</code></pre>
 <p>Solution: If you are confident that the path provided for the public key is correct, use the full path instead of using <code>~</code> for home.</p>
-<p>Example:</p>
-<pre class="bash"><code>--ssh-ident=/home/flux/id_ed25519.pub</code></pre>
 </section>
 <section id="error-dnsmasq-not-running" class="level4">
-<h4 class="anchored" data-anchor-id="error-dnsmasq-not-running">Error: dnsmasq Not Running</h4>
-<p>You may encounter this error in the terminal:</p>
+<h4 class="anchored" data-anchor-id="error-dnsmasq-not-running">Error: <code>dnsmasq</code> Not Running</h4>
 <pre><code>dnsmasq not running on br0 for DHCP service
 You might be better off installing libvirt so you can use virbr0.
 To do this, run:
@@ -581,7 +401,7 @@ Need to configure networking for QEMU
 Unable to configure networking please run:
     /home/flux/qnx800/host/linux/x86_64/../../common/mkqnximage/qemu/check-net
 Command exited with error code: 2</code></pre>
-<p>Solution: Install <code>libvirt</code>:</p>
+<p>Solution: Install <code>libvirt</code>.</p>
 <pre class="bash"><code>sudo apt install libvirt-clients libvirt-daemon-system</code></pre>
 
 
@@ -692,7 +512,7 @@ Command exited with error code: 2</code></pre>
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rebeccajennifer\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

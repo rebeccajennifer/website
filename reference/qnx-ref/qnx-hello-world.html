@@ -312,8 +312,30 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#official-qnx-resources" id="toc-official-qnx-resources" class="nav-link active" data-scroll-target="#official-qnx-resources">Official QNX Resources</a>
+  <ul>
+  <li><a href="#tutorial-video" id="toc-tutorial-video" class="nav-link" data-scroll-target="#tutorial-video">Tutorial Video</a></li>
+  <li><a href="#quickstart-guide" id="toc-quickstart-guide" class="nav-link" data-scroll-target="#quickstart-guide">Quickstart Guide</a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-create-new-project" id="toc-visual-studio-code-create-new-project" class="nav-link" data-scroll-target="#visual-studio-code-create-new-project">Visual Studio Code: Create New Project</a>
+  <ul>
+  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
+  </ul></li>
+  <li><a href="#visual-studio-code-run-project" id="toc-visual-studio-code-run-project" class="nav-link" data-scroll-target="#visual-studio-code-run-project">Visual Studio Code: Run Project</a>
+  <ul>
+  <li><a href="#errors-when-running-application-in-visual-studio-code" id="toc-errors-when-running-application-in-visual-studio-code" class="nav-link" data-scroll-target="#errors-when-running-application-in-visual-studio-code">Errors When Running Application in Visual Studio Code</a>
+  <ul>
+  <li><a href="#error-getaddrinfor-ebusy" id="toc-error-getaddrinfor-ebusy" class="nav-link" data-scroll-target="#error-getaddrinfor-ebusy">Error: getaddrinfor EBUSY</a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#command-line-run-project" id="toc-command-line-run-project" class="nav-link" data-scroll-target="#command-line-run-project">Command Line: Run Project</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
@@ -338,6 +360,33 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   How to create and run hello world project.
+|____________________________________________________________________-->
 <section id="official-qnx-resources" class="level2">
 <h2 class="anchored" data-anchor-id="official-qnx-resources">Official QNX Resources</h2>
 <section id="tutorial-video" class="level3">
@@ -350,11 +399,11 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html" class="flux-button _3">Quickstart Guide</a></p>
 </section>
 </section>
-<section id="create-new-project" class="level2">
-<h2 class="anchored" data-anchor-id="create-new-project">Create New Project</h2>
+<section id="visual-studio-code-create-new-project" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-create-new-project">Visual Studio Code: Create New Project</h2>
 <ol type="1">
 <li><p>In VS Code, select QNX from the Activity Bar on the left side of the screen.</p>
-<p><img src="./images__qnx-ref/1__setup-01-vscode-walkthrough.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-00-ext.png" class="img-fluid"></p></li>
 <li><p>From the left sidebar under <code>QNX COMMANDS</code> select <code>Projects &gt; Create new Project...</code>.</p>
 <p><img src="./images__qnx-ref/3__hello-world-00.png" class="img-fluid"></p></li>
 <li><p>Type the name of your project, e.g.&nbsp;<code>hello_world</code>.</p>
@@ -396,9 +445,65 @@ make[2]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/x86_64'
 make[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'
  *  Terminal will be reused by tasks, press any key to close it.</code></pre></li>
 </ol>
+<section id="note" class="level3">
+<h3 class="anchored" data-anchor-id="note">Note</h3>
+<p>The <code>QNX Recursive Makefile</code> template creates a structure that allows for compilation of different binaries for different architectures.</p>
 </section>
-<section id="run-project-through-command-line" class="level2">
-<h2 class="anchored" data-anchor-id="run-project-through-command-line">Run Project Through Command Line</h2>
+</section>
+<section id="visual-studio-code-run-project" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-run-project">Visual Studio Code: Run Project</h2>
+<ol type="1">
+<li><p><a href="../../reference/qnx-ref/qnx-vm.html#create-target-using-visual-studio-code-qnx-toolkit">Create a virtual target</a> through Visual Studio Code.</p></li>
+<li><p>Verify that the target created is labeled as <code>default</code> from the <code>QNX TARGETS</code> section of the QNX sidebar.</p>
+<p><img src="./images__qnx-ref/3__hello-world-run-vscode-00.png" class="img-fluid"></p></li>
+<li><p>Open <code>launch.json</code> in <code>&lt;project-dir&gt;/.vscode</code> and confirm that the <code>qnxtarget</code> property is set to <code>default</code>.</p>
+<p>The default <code>launch.json</code> created by VS Code should look similar to the following:</p>
+<pre class="json"><code>{
+  "version": "2.0.0",
+  "configurations": [
+    {
+      "type"          : "qnx-gdb",
+      "request"       : "launch",
+      "name"          : "QNX: hello_world",
+      "gdb"           : "gdb",
+      "program"       : "${command:qnx.autodetectBinary}",
+      "remotePath"    : "hello_world",
+
+      //________________________________________________________
+      // Verify this value
+      //________________________________________________________
+      "qnxtarget"     : "default",
+      //________________________________________________________
+
+      "upload"        : true,
+      "stopAtEntry"   : true,
+      "preLaunchTask" : "${defaultBuildTask}"
+    }
+  ]
+}</code></pre></li>
+<li><p>Right-click on the project folder and go to <code>QNX &gt; Run as QNX Application...</code>.</p>
+<p><img src="./images__qnx-ref/3__hello-world-run-vscode-01.png" class="img-fluid"></p></li>
+<li><p>If everything is configured properly, <code>Hello QNX</code> should print to the debug console.</p>
+<p><img src="./images__qnx-ref/3__hello-world-run-vscode-02.png" class="img-fluid"></p></li>
+</ol>
+<section id="errors-when-running-application-in-visual-studio-code" class="level3">
+<h3 class="anchored" data-anchor-id="errors-when-running-application-in-visual-studio-code">Errors When Running Application in Visual Studio Code</h3>
+<section id="error-getaddrinfor-ebusy" class="level4">
+<h4 class="anchored" data-anchor-id="error-getaddrinfor-ebusy">Error: getaddrinfor EBUSY</h4>
+<p>You may encounter this error if you do not have the <code>arp</code> command.</p>
+<pre class="bash"><code>Error: Cannot launch, check Debug Console for failure message
+Error: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -</code></pre>
+<p><img src="./images__qnx-ref/3__hello-world-errors-00-getaddrinfo.png" class="img-fluid"></p>
+<p>From the terminal panel, select the <code>getip</code> terminal tab. Notice if there is an error that says:</p>
+<pre class="bash"><code>Cannot find arp command.</code></pre>
+<p><img src="./images__qnx-ref/3__hello-world-errors-01-arp.png" class="img-fluid"></p>
+<p>Solution: Install <code>net-tools</code>:</p>
+<pre class="bash"><code>sudo apt install net-tools</code></pre>
+</section>
+</section>
+</section>
+<section id="command-line-run-project" class="level2">
+<h2 class="anchored" data-anchor-id="command-line-run-project">Command Line: Run Project</h2>
 <ol type="1">
 <li><p><a href="../../reference/qnx-ref/qnx-vm.html#create-target-using-bash">Set up a virtual target using <code>mkqnximage</code></a>. Make sure to include the <code>--ssh-ident</code> parameter.</p></li>
 <li><p>To <a href="../../reference/qnx-ref/qnx-vm.html#run-target-after-creation">run the virtual target</a> in the terminal, from the directory where the target was created, execute this command:</p>
@@ -408,7 +513,7 @@ make[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'
 <pre><code>SeaBIOS (version 1.16.3-debian-1.16.3-2)
 ...
 QNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64</code></pre></li>
-<li><p>From the terminal of the running target, run <code>ifconfig</code> to determine its IP address. The address appears in the <code>vtnet0</code> section after <code>inet</code>; in this example, it is <code>192.168.122.146</code>.</p>
+<li><p>From the terminal of the running target, execute <code>ifconfig</code> to determine its IP address. The address appears in the <code>vtnet0</code> section after <code>inet</code>; in this example, it is <code>192.168.122.146</code>.</p>
 <p>Example Output (From Running Target):</p>
 <pre class="bash"><code># ifconfig
 enc0: flags=0&lt;&gt; metric 0 mtu 1536
@@ -435,9 +540,9 @@ vtnet0: flags=8863&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 15
         media: Ethernet autoselect (10Gbase-T &lt;full-duplex&gt;)
         status: active
         nd6 options=1&lt;PERFORMNUD&gt;</code></pre></li>
-<li><p>Open a new terminal window and navigate to the output executable of your project. It might be in the following location:</p>
-<pre class="bash"><code>&lt;project-path&gt;/nto/x86_64/o</code></pre></li>
-<li><p>Locate the executable. This is usually named after the project directory and has no file extension. In this case, it is named <code>hello_world</code>.</p>
+<li><p>Open a new terminal window on the Linux host and navigate to the output executable of your project. It might be in the following location:</p>
+<pre class="bash"><code>&lt;project-dir&gt;/nto/x86_64/o</code></pre></li>
+<li><p>Locate the executable. If the project was build with VS Code, the executable usually has the same name as the project directory and has no file extension. In this case, it is named <code>hello_world</code>.</p>
 <p>Example Commands (From Linux Host):</p>
 <pre class="bash"><code>(linux host): cd ~/qnx-projects/hello_world/nto/x86_64/o # Navigate to output directory
 (linux host): ls # List contents of directory
