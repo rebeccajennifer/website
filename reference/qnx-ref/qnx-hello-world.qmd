@@ -52,27 +52,27 @@ On this page, commands preceded by `#` indicate that the command is run in the t
 
 1. In VS Code, select QNX from the Activity Bar on the left side of the screen.
 
-   ![](./images__qnx-ref/3__hello-world-00-ext.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-00-ext.png)
 
 1. From the left sidebar under `QNX COMMANDS` select `Projects > Create new Project...`.
 
-   ![](./images__qnx-ref/3__hello-world-00.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-00.png)
 
 1. Type the name of your project, e.g. `hello_world`.
 
-   ![](./images__qnx-ref/3__hello-world-01-project-name.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-01-project-name.png)
 
 1. Select `QNX Recursive Makefile` for the template.
 
-   ![](./images__qnx-ref/3__hello-world-02-project-template.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-02-project-template.png)
 
 1. Select `c` for language.
 
-   ![](./images__qnx-ref/3__hello-world-03-language.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-03-language.png)
 
 1. Select `Executable` for build artifact.
 
-   ![](./images__qnx-ref/3__hello-world-04-artifact.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-04-artifact.png)
 
 1. A default `Hello World` program is added to `hello_world.c`
 
@@ -87,7 +87,7 @@ On this page, commands preceded by `#` indicate that the command is run in the t
 
 1. To compile, right-click on the project folder and go to `QNX > Build Active Project`.
 
-   ![](./images__qnx-ref/3__hello-world-05.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-05.png)
 
    Example Terminal Output (From VS Code):
 
@@ -124,7 +124,7 @@ The `QNX Recursive Makefile` template creates a structure that allows for compil
 
 1. Verify that the target created is labeled as `default` from the `QNX TARGETS` section of the  QNX sidebar.
 
-   ![](./images__qnx-ref/3__hello-world-run-vscode-00.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-00.png)
 
 1. Open `launch.json` in `<project-dir>/.vscode` and confirm that the `qnxtarget` property is set to `default`.
 
@@ -158,11 +158,11 @@ The `QNX Recursive Makefile` template creates a structure that allows for compil
 
 1. Right-click on the project folder and go to `QNX > Run as QNX Application...`.
 
-   ![](./images__qnx-ref/3__hello-world-run-vscode-01.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-01.png)
 
 1. If everything is configured properly, `Hello QNX` should print to the debug console.
 
-   ![](./images__qnx-ref/3__hello-world-run-vscode-02.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-02.png)
 
 ### Errors When Running Application in Visual Studio Code
 
@@ -175,7 +175,7 @@ Error: Cannot launch, check Debug Console for failure message
 Error: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -
 ```
 
-![](./images__qnx-ref/3__hello-world-errors-00-getaddrinfo.png)
+![](./images__qnx-ref/3__hello-world-img/3__hello-world-errors-00-getaddrinfo.png)
 
 From the terminal panel, select the `getip` terminal tab. Notice if there is an error that says:
 
@@ -183,7 +183,7 @@ From the terminal panel, select the `getip` terminal tab. Notice if there is an 
 Cannot find arp command.
 ```
 
-![](./images__qnx-ref/3__hello-world-errors-01-arp.png)
+![](./images__qnx-ref/3__hello-world-img/3__hello-world-errors-01-arp.png)
 
 Solution: Install `net-tools`:
 
@@ -278,7 +278,7 @@ sudo apt install net-tools
 
    In this screenshot, the left pane is the running target, and the right pane is the Linux host computer.
 
-   ![](./images__qnx-ref/3__hello-world-07.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-07.png)
 
 1. From the target terminal, run the executable.
 
@@ -296,7 +296,7 @@ sudo apt install net-tools
 
    Screenshot:
 
-   ![](./images__qnx-ref/3__hello-world-08.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-08.png)
 
 ### Notes
 
