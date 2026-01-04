@@ -1,13 +1,5 @@
 ---
-
-## QNX Toolkit for Visual Studio Code + QNX OS 8.0 Deep Dive
-
-
-<https://www.youtube.com/watch?v=M02X6AqdK7M>
-
-
-Need to tell VS Code where QNX documentation is.
-
+---
 
 ### Prereqs
 
@@ -36,81 +28,4 @@ From command line:
 QNX localhost 8.0.0 YYYY/MM/DD-hh:mm:ssEST RaspberryPi4B aarch64le
 ```
 
-## New Project
 
-
-1. To run the code, right-click the project directory, go to `QNX > Run as QNX Application...`.
-
-   ![](./images__qnx-ref/3__hello-world-06.png)
-
-
-Error: getaddrinfor EBUSY
-```bash
-Error: Cannot launch, check Debug Console for failure message
-Error: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -
-```
-
-Solution: Unsolved
-
-Error: Cannot determine IP address for qemu-qnx800-x86_64
-
-
-Default `launch.json` from project creation.
-
-```json
-{
-  "version": "2.0.0",
-  "configurations": [
-    {
-      "type": "qnx-gdb",
-      "request": "launch",
-      "name": "QNX: hello_world",
-      "gdb": "gdb",
-      "program": "${command:qnx.autodetectBinary}",
-      "remotePath": "hello_world",
-      "qnxtarget": "default",
-      "upload": true,
-      "stopAtEntry": true,
-      "preLaunchTask": "${defaultBuildTask}"
-    }
-  ]
-}
-```
-
-Edit
-
-### Notes
-1. The `QNX Recursive Makefile` template creates structure to that allows for compilation of different binaries for different architectures.### Errors When Creating Virtual Target Using Visual Studio Code
-
-#### Error: Non-Existent SSH Key File
-
-You may see the following error in the terminal.
-
-```bash
---ssh-ident refers to non-existent file: ~/.ssh/id_ed25519.pub
-```
-
-Solution: If you are confident that the path provided for the public key is correct, use the full path instead of using `~` for home.
-
-#### Error: `dnsmasq` Not Running
-
-```
-dnsmasq not running on br0 for DHCP service
-You might be better off installing libvirt so you can use virbr0.
-To do this, run:
-
-    sudo apt install libvirt-clients libvirt-daemon-system
-
-or whatever is appropriate for your system.
-
-Need to configure networking for QEMU
-Unable to configure networking please run:
-    /home/flux/qnx800/host/linux/x86_64/../../common/mkqnximage/qemu/check-net
-Command exited with error code: 2
-```
-
-Solution: Install `libvirt`.
-
-```bash
-sudo apt install libvirt-clients libvirt-daemon-system
-```

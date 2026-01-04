@@ -39,7 +39,7 @@ order: 1
 
 ## Prerequisites
 
-1. [Install QNX SDP 8.0.](./qnx-setup.qmd).
+1. [Install QNX SDP 8.0](./qnx-setup.qmd).
 
 1. [Create an SSH Key](/reference/environment-setup__reference/git.qmd#github).
 
@@ -49,6 +49,7 @@ order: 1
    sudo apt install qemu-system-x86 qemu-utils
    sudo apt install bridge-utils
    sudo apt install libvirt-clients libvirt-daemon-system
+   sudo apt install net-tools
    ```
 
 ## Create Target Using Bash
@@ -101,7 +102,6 @@ order: 1
    --ssh-ident=$HOME/.ssh/id_ed25519.pub  \
    --run
    ```
-
 
 1. Upon connection to the virtual target, the following will be printed to the terminal screen.
 
@@ -157,9 +157,13 @@ After creating the target, navigate to the target directory (in this case `~/qnx
 
 ### Errors When Running `mkqnximage`
 
-#### Error: `Cannot find brctl`
+#### Error: Cannot Find brctl
 
-Solution: Install `bridge-utils`
+Solution: Install `bridge-utils`:
+
+```bash
+sudo apt install bridge-utils
+```
 
 #### Error: SSH Identity File
 
@@ -169,7 +173,11 @@ You may encounter this error:
 To allow root ssh, you need an ssh identity file. You probably want to use an option such as: --ssh-ident=~/.ssh/id_ed25519.pub
 ```
 
-Solution: Include the `--ssh-ident` parameter in the `mkqnximage` command
+Solution: Include the `--ssh-ident` parameter in the `mkqnximage` command.
+
+```bash
+--ssh-ident=$HOME/.ssh/id_ed25519.pub
+```
 
 If you do not already have an SSH key set up, follow instructions from [this page](/reference/environment-setup__reference/git.qmd#github).
 
@@ -260,3 +268,45 @@ Solution: Install VMware. Note that in this example we are using `qemu` instead 
    # ---
    ```
 
+### Errors With Virtual Target Creation in Visual Studio Code
+
+#### Error: Non-Existent SSH Key File
+
+You may encounter the following error in the terminal window:
+
+```bash
+--ssh-ident refers to non-existent file: ~/.ssh/id_ed25519.pub
+```
+
+Solution: If you are confident that the path provided for the public key is correct, use the full path instead of using `~` for home.
+
+Example:
+
+```bash
+--ssh-ident=/home/flux/id_ed25519.pub
+```
+
+#### Error: dnsmasq Not Running
+
+You may encounter this error in the terminal:
+
+```
+dnsmasq not running on br0 for DHCP service
+You might be better off installing libvirt so you can use virbr0.
+To do this, run:
+
+    sudo apt install libvirt-clients libvirt-daemon-system
+
+or whatever is appropriate for your system.
+
+Need to configure networking for QEMU
+Unable to configure networking please run:
+    /home/flux/qnx800/host/linux/x86_64/../../common/mkqnximage/qemu/check-net
+Command exited with error code: 2
+```
+
+Solution: Install `libvirt`:
+
+```bash
+sudo apt install libvirt-clients libvirt-daemon-system
+```
