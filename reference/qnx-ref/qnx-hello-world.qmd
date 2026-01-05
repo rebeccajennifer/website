@@ -278,7 +278,7 @@ sudo apt install net-tools
 
    In this screenshot, the left pane is the running target, and the right pane is the Linux host computer.
 
-   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-07.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-06-term-loc.png)
 
 1. From the target terminal, run the executable.
 
@@ -296,7 +296,7 @@ sudo apt install net-tools
 
    Screenshot:
 
-   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-08.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-07-term-run.png)
 
 ### Notes
 
