@@ -6,6 +6,7 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="This page describes how to run a minimal QNX project on a virtual target. The accompanying tutorial video demonstrates a similar workflow using a Raspberry Pi target.">
 
 <title>Hello World With QNX – Rebecca Jennifer Rashkin</title>
 <style>
@@ -322,7 +323,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#official-qnx-resources" id="toc-official-qnx-resources" class="nav-link active" data-scroll-target="#official-qnx-resources">Official QNX Resources</a>
   <ul>
   <li><a href="#tutorial-video" id="toc-tutorial-video" class="nav-link" data-scroll-target="#tutorial-video">Tutorial Video</a></li>
-  <li><a href="#quickstart-guide" id="toc-quickstart-guide" class="nav-link" data-scroll-target="#quickstart-guide">Quickstart Guide</a></li>
+  <li><a href="#documentation" id="toc-documentation" class="nav-link" data-scroll-target="#documentation">Documentation</a></li>
   </ul></li>
   <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
   <li><a href="#visual-studio-code-create-new-project" id="toc-visual-studio-code-create-new-project" class="nav-link" data-scroll-target="#visual-studio-code-create-new-project">Visual Studio Code: Create New Project</a>
@@ -355,6 +356,11 @@ ul.task-list li input[type="checkbox"] {
 <p class="subtitle lead">How to create and run minimal project on a virtual target.</p>
 </div>
 
+<div>
+  <div class="description">
+    <p>This page describes how to run a minimal QNX project on a virtual target. The accompanying tutorial video demonstrates a similar workflow using a Raspberry Pi target.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -400,12 +406,11 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="official-qnx-resources">Official QNX Resources</h2>
 <section id="tutorial-video" class="level3">
 <h3 class="anchored" data-anchor-id="tutorial-video">Tutorial Video</h3>
-<p>This video demonstrates how to run a simple project using a Raspberry Pi target; however, on this page we are using a virtual target instead.</p>
 <div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/M02X6AqdK7M" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="quickstart-guide" class="level3">
-<h3 class="anchored" data-anchor-id="quickstart-guide">Quickstart Guide</h3>
-<p><a href="https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html" class="flux-button _3">Quickstart Guide</a></p>
+<section id="documentation" class="level3">
+<h3 class="anchored" data-anchor-id="documentation">Documentation</h3>
+<p><a href="https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html" class="flux-button _3">Quickstart Guide</a> <a href="https://www.qnx.com/developers/docs/qnxtoolkit/index.html" class="flux-button _3">QNX Toolkit for Visual Studio Code</a></p>
 </section>
 </section>
 <section id="note" class="level2">
@@ -580,13 +585,12 @@ hello_world  hello_world.dep  hello_world.o  Makefile</code></pre></li>
 <h3 class="anchored" data-anchor-id="notes">Notes</h3>
 <section id="visual-studio-code-run-executable-location" class="level4">
 <h4 class="anchored" data-anchor-id="visual-studio-code-run-executable-location">Visual Studio Code Run: Executable Location</h4>
-<p>When running the program through VS Code, the executable is placed in the /tmp directory of the target.</p>
+<p>When running the program through VS Code, the executable is placed in the <code>/tmp</code> directory of the target.</p>
 <p>To verify, connect to the target either through VS Code, or on the command line. Navigate to <code>/tmp</code> and list the directory contents.</p>
 <p>Commands On Running Target:</p>
-<pre class="bash"><code># cd /tmp
-# ls</code></pre>
+<pre class="bash"><code># ls /tmp</code></pre>
 <p>Output On Running Target:</p>
-<pre class="bash"><code>hello_world</code></pre>
+<pre class="bash"><code>hello_world keep_files</code></pre>
 
 
 </section>

@@ -284,7 +284,7 @@
     "href": "reference/qnx-ref/qnx-hello-world.html",
     "title": "Hello World With QNX",
     "section": "",
-    "text": "This video demonstrates how to run a simple project using a Raspberry Pi target; however, on this page we are using a virtual target instead.\n\n\n\n\nQuickstart Guide",
+    "text": "Quickstart Guide QNX Toolkit for Visual Studio Code",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -297,7 +297,7 @@
     "href": "reference/qnx-ref/qnx-hello-world.html#official-qnx-resources",
     "title": "Hello World With QNX",
     "section": "",
-    "text": "This video demonstrates how to run a simple project using a Raspberry Pi target; however, on this page we are using a virtual target instead.\n\n\n\n\nQuickstart Guide",
+    "text": "Quickstart Guide QNX Toolkit for Visual Studio Code",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -349,7 +349,7 @@
     "href": "reference/qnx-ref/qnx-hello-world.html#command-line-run-project",
     "title": "Hello World With QNX",
     "section": "Command Line: Run Project",
-    "text": "Command Line: Run Project\n\nSet up a virtual target using mkqnximage. Make sure to include the --ssh-ident parameter.\nTo run the virtual target in the terminal, from the directory where the target was created, execute this command:\nCommand (From Linux Host):\nmkqnximage --run\nExample Output (From Running Target):\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n...\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\nFrom the terminal of the running target, execute ifconfig to determine its IP address. The address appears in the vtnet0 section after inet; in this example, it is 192.168.122.146.\nExample Output (From Running Target):\n# ifconfig\nenc0: flags=0&lt;&gt; metric 0 mtu 1536\n        groups: enc\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\nlo0: flags=8049&lt;UP,LOOPBACK,RUNNING,MULTICAST&gt; metric 0 mtu 16384\n        options=680003&lt;RXCSUM,TXCSUM,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6&gt;\n        inet 127.0.0.1 netmask 0xff000000\n        inet6 ::1 prefixlen 128\n        inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2\n        groups: lo\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\npflog0: flags=0&lt;&gt; metric 0 mtu 33144\n        groups: pflog\npfsync0: flags=0&lt;&gt; metric 0 mtu 1500\n        syncpeer: 0.0.0.0 maxupd: 128 defer: off\n        syncok: 1\n        groups: pfsync\nvtnet0: flags=8863&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1500\n        options=4c07bb&lt;RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,TSO6,LRO,VLAN_HWTSO,LINKSTATE,TXCSUM_IPV6&gt;\n        ether 52:54:00:75:e8:8f\n        inet6 fe80::5054:ff:fe75:e88f%vtnet0 prefixlen 64 scopeid 0x5\n        inet 192.168.122.146 netmask 0xffffff00 broadcast 192.168.122.255\n        media: Ethernet autoselect (10Gbase-T &lt;full-duplex&gt;)\n        status: active\n        nd6 options=1&lt;PERFORMNUD&gt;\nOpen a new terminal window on the Linux host and navigate to the output executable of your project. It might be in the following location:\n&lt;project-dir&gt;/nto/x86_64/o\nLocate the executable. If the project was build with VS Code, the executable usually has the same name as the project directory and has no file extension. In this case, it is named hello_world.\nExample Commands (From Linux Host):\n(linux host): cd ~/qnx-projects/hello_world/nto/x86_64/o # Navigate to output directory\n(linux host): ls # List contents of directory\nhello_world  hello_world.dep  hello_world.o  Makefile\nFrom the Linux host, use scp (secure copy) to copy the executable to the running target.\nExample Command (From Linux Host):\n(linux host): scp hello_world root@192.168.122.146:/data/home/root\nExample Output (From Linux Host):\nhello_world                   100%   10KB  21.8MB/s   00:00\nOn the running target, navigate to /data/home/root and execute ls. You should see your hello_world executable.\nIn this screenshot, the left pane is the running target, and the right pane is the Linux host computer.\n\nFrom the target terminal, run the executable.\nExample Command (From Running Target):\n./hello_world\nExample Output (From Running Target):\nHello QNX!\nScreenshot:\n\n\n\nNotes\n\nVisual Studio Code Run: Executable Location\nWhen running the program through VS Code, the executable is placed in the /tmp directory of the target.\nTo verify, connect to the target either through VS Code, or on the command line. Navigate to /tmp and list the directory contents.\nCommands On Running Target:\n# cd /tmp\n# ls\nOutput On Running Target:\nhello_world",
+    "text": "Command Line: Run Project\n\nSet up a virtual target using mkqnximage. Make sure to include the --ssh-ident parameter.\nTo run the virtual target in the terminal, from the directory where the target was created, execute this command:\nCommand (From Linux Host):\nmkqnximage --run\nExample Output (From Running Target):\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n...\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\nFrom the terminal of the running target, execute ifconfig to determine its IP address. The address appears in the vtnet0 section after inet; in this example, it is 192.168.122.146.\nExample Output (From Running Target):\n# ifconfig\nenc0: flags=0&lt;&gt; metric 0 mtu 1536\n        groups: enc\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\nlo0: flags=8049&lt;UP,LOOPBACK,RUNNING,MULTICAST&gt; metric 0 mtu 16384\n        options=680003&lt;RXCSUM,TXCSUM,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6&gt;\n        inet 127.0.0.1 netmask 0xff000000\n        inet6 ::1 prefixlen 128\n        inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2\n        groups: lo\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\npflog0: flags=0&lt;&gt; metric 0 mtu 33144\n        groups: pflog\npfsync0: flags=0&lt;&gt; metric 0 mtu 1500\n        syncpeer: 0.0.0.0 maxupd: 128 defer: off\n        syncok: 1\n        groups: pfsync\nvtnet0: flags=8863&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1500\n        options=4c07bb&lt;RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,TSO6,LRO,VLAN_HWTSO,LINKSTATE,TXCSUM_IPV6&gt;\n        ether 52:54:00:75:e8:8f\n        inet6 fe80::5054:ff:fe75:e88f%vtnet0 prefixlen 64 scopeid 0x5\n        inet 192.168.122.146 netmask 0xffffff00 broadcast 192.168.122.255\n        media: Ethernet autoselect (10Gbase-T &lt;full-duplex&gt;)\n        status: active\n        nd6 options=1&lt;PERFORMNUD&gt;\nOpen a new terminal window on the Linux host and navigate to the output executable of your project. It might be in the following location:\n&lt;project-dir&gt;/nto/x86_64/o\nLocate the executable. If the project was build with VS Code, the executable usually has the same name as the project directory and has no file extension. In this case, it is named hello_world.\nExample Commands (From Linux Host):\n(linux host): cd ~/qnx-projects/hello_world/nto/x86_64/o # Navigate to output directory\n(linux host): ls # List contents of directory\nhello_world  hello_world.dep  hello_world.o  Makefile\nFrom the Linux host, use scp (secure copy) to copy the executable to the running target.\nExample Command (From Linux Host):\n(linux host): scp hello_world root@192.168.122.146:/data/home/root\nExample Output (From Linux Host):\nhello_world                   100%   10KB  21.8MB/s   00:00\nOn the running target, navigate to /data/home/root and execute ls. You should see your hello_world executable.\nIn this screenshot, the left pane is the running target, and the right pane is the Linux host computer.\n\nFrom the target terminal, run the executable.\nExample Command (From Running Target):\n./hello_world\nExample Output (From Running Target):\nHello QNX!\nScreenshot:\n\n\n\nNotes\n\nVisual Studio Code Run: Executable Location\nWhen running the program through VS Code, the executable is placed in the /tmp directory of the target.\nTo verify, connect to the target either through VS Code, or on the command line. Navigate to /tmp and list the directory contents.\nCommands On Running Target:\n# ls /tmp\nOutput On Running Target:\nhello_world keep_files",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -2429,7 +2429,7 @@
     "href": "reference/qnx-ref/index.html",
     "title": "QNX Reference",
     "section": "",
-    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide",
+    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide QNX Documentation",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -2437,11 +2437,11 @@
     ]
   },
   {
-    "objectID": "reference/qnx-ref/index.html#official-qnx-documentation",
-    "href": "reference/qnx-ref/index.html#official-qnx-documentation",
+    "objectID": "reference/qnx-ref/index.html#official-resources",
+    "href": "reference/qnx-ref/index.html#official-resources",
     "title": "QNX Reference",
     "section": "",
-    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide",
+    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide QNX Documentation",
     "crumbs": [
       "Reference",
       "The Reference Library",
