@@ -319,6 +319,7 @@ ul.task-list li input[type="checkbox"] {
    
   <ul>
   <li><a href="#official-qnx-docs" id="toc-official-qnx-docs" class="nav-link active" data-scroll-target="#official-qnx-docs">Official QNX Docs</a></li>
+  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
   <li><a href="#create-target-using-bash" id="toc-create-target-using-bash" class="nav-link" data-scroll-target="#create-target-using-bash">Create Target Using Bash</a>
   <ul>
@@ -398,6 +399,10 @@ ul.task-list li input[type="checkbox"] {
 <section id="official-qnx-docs" class="level2">
 <h2 class="anchored" data-anchor-id="official-qnx-docs">Official QNX Docs</h2>
 <p><a href="https://www.qnx.com/developers/docs/8.0/com.qnx.doc.neutrino.utilities/topic/m/mkqnximage.html" class="flux-button _3">mkqnximage</a></p>
+</section>
+<section id="note" class="level2">
+<h2 class="anchored" data-anchor-id="note">Note</h2>
+<p>On this page, commands preceded by <code>#</code> indicate that the command is run in the terminal window of a running target.</p>
 </section>
 <section id="prerequisites" class="level2">
 <h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
@@ -507,16 +512,16 @@ machine local/vmware_files/vmware.vmx directly.</code></pre>
 <ol type="1">
 <li><p><a href="../../reference/qnx-ref/qnx-setup.html#visual-studio-code-qnx-toolkit">Install the QNX Toolkit extension</a>.</p></li>
 <li><p>Select the QNX extension from the activity bar. From <code>QNX TARGETS</code>, click the button labeled <code>Add new QNX Virtual Target</code>.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-00.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-00.png" class="img-fluid"></p></li>
 <li><p>Select the virtual machine type. In this example we are using <code>qemu</code>.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-01.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-01.png" class="img-fluid"></p></li>
 <li><p>Select the architecture.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-02.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-02.png" class="img-fluid"></p></li>
 <li><p>For <code>Enter extra mkqnximage options</code>, add <code>--ssh-ident=/path/to/public/ssh/key</code>.</p>
 <p>Make sure to use the full path, i.e.&nbsp;<code>/home/username</code> instead of <code>~</code>. If you do not have an SSH Key set up already, follow instructions <a href="../../reference/environment-setup__reference/git.html#github">here</a>.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-03.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-03.png" class="img-fluid"></p></li>
 <li><p>In the sidebar under <code>QNX TARGETS</code>, a new target should be visible.</p>
-<p><img src="./images__qnx-ref/2__vscode-virtual-target-04.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-04.png" class="img-fluid"></p></li>
 <li><p>The following should be printed to the terminal window.</p>
 <pre class="bash"><code>SeaBIOS (version 1.16.3-debian-1.16.3-2)
 

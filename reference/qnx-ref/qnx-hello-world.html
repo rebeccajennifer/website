@@ -322,9 +322,10 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#tutorial-video" id="toc-tutorial-video" class="nav-link" data-scroll-target="#tutorial-video">Tutorial Video</a></li>
   <li><a href="#quickstart-guide" id="toc-quickstart-guide" class="nav-link" data-scroll-target="#quickstart-guide">Quickstart Guide</a></li>
   </ul></li>
+  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
   <li><a href="#visual-studio-code-create-new-project" id="toc-visual-studio-code-create-new-project" class="nav-link" data-scroll-target="#visual-studio-code-create-new-project">Visual Studio Code: Create New Project</a>
   <ul>
-  <li><a href="#note" id="toc-note" class="nav-link" data-scroll-target="#note">Note</a></li>
+  <li><a href="#note-1" id="toc-note-1" class="nav-link" data-scroll-target="#note-1">Note</a></li>
   </ul></li>
   <li><a href="#visual-studio-code-run-project" id="toc-visual-studio-code-run-project" class="nav-link" data-scroll-target="#visual-studio-code-run-project">Visual Studio Code: Run Project</a>
   <ul>
@@ -333,7 +334,13 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#error-getaddrinfor-ebusy" id="toc-error-getaddrinfor-ebusy" class="nav-link" data-scroll-target="#error-getaddrinfor-ebusy">Error: getaddrinfor EBUSY</a></li>
   </ul></li>
   </ul></li>
-  <li><a href="#command-line-run-project" id="toc-command-line-run-project" class="nav-link" data-scroll-target="#command-line-run-project">Command Line: Run Project</a></li>
+  <li><a href="#command-line-run-project" id="toc-command-line-run-project" class="nav-link" data-scroll-target="#command-line-run-project">Command Line: Run Project</a>
+  <ul>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a>
+  <ul>
+  <li><a href="#visual-studio-code-run-executable-location" id="toc-visual-studio-code-run-executable-location" class="nav-link" data-scroll-target="#visual-studio-code-run-executable-location">Visual Studio Code Run: Executable Location</a></li>
+  </ul></li>
+  </ul></li>
   </ul>
 </nav>
     </div>
@@ -399,21 +406,25 @@ ul.task-list li input[type="checkbox"] {
 <p><a href="https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html" class="flux-button _3">Quickstart Guide</a></p>
 </section>
 </section>
+<section id="note" class="level2">
+<h2 class="anchored" data-anchor-id="note">Note</h2>
+<p>On this page, commands preceded by <code>#</code> indicate that the command is run in the terminal window of a running target.</p>
+</section>
 <section id="visual-studio-code-create-new-project" class="level2">
 <h2 class="anchored" data-anchor-id="visual-studio-code-create-new-project">Visual Studio Code: Create New Project</h2>
 <ol type="1">
 <li><p>In VS Code, select QNX from the Activity Bar on the left side of the screen.</p>
-<p><img src="./images__qnx-ref/3__hello-world-00-ext.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-00-ext.png" class="img-fluid"></p></li>
 <li><p>From the left sidebar under <code>QNX COMMANDS</code> select <code>Projects &gt; Create new Project...</code>.</p>
-<p><img src="./images__qnx-ref/3__hello-world-00.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-00.png" class="img-fluid"></p></li>
 <li><p>Type the name of your project, e.g.&nbsp;<code>hello_world</code>.</p>
-<p><img src="./images__qnx-ref/3__hello-world-01-project-name.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-01-project-name.png" class="img-fluid"></p></li>
 <li><p>Select <code>QNX Recursive Makefile</code> for the template.</p>
-<p><img src="./images__qnx-ref/3__hello-world-02-project-template.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-02-project-template.png" class="img-fluid"></p></li>
 <li><p>Select <code>c</code> for language.</p>
-<p><img src="./images__qnx-ref/3__hello-world-03-language.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-03-language.png" class="img-fluid"></p></li>
 <li><p>Select <code>Executable</code> for build artifact.</p>
-<p><img src="./images__qnx-ref/3__hello-world-04-artifact.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-04-artifact.png" class="img-fluid"></p></li>
 <li><p>A default <code>Hello World</code> program is added to <code>hello_world.c</code></p>
 <pre class="c"><code>#include &lt;stdio.h&gt;
 
@@ -422,7 +433,7 @@ ul.task-list li input[type="checkbox"] {
      return 0;
  }</code></pre></li>
 <li><p>To compile, right-click on the project folder and go to <code>QNX &gt; Build Active Project</code>.</p>
-<p><img src="./images__qnx-ref/3__hello-world-05.png" class="img-fluid"></p>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-05.png" class="img-fluid"></p>
 <p>Example Terminal Output (From VS Code):</p>
 <pre class="bash"><code> *  Executing task in folder hello_world: make DEBUG=-g OPTIMIZE_TYPE=NONE
 
@@ -445,8 +456,8 @@ make[2]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/x86_64'
 make[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'
  *  Terminal will be reused by tasks, press any key to close it.</code></pre></li>
 </ol>
-<section id="note" class="level3">
-<h3 class="anchored" data-anchor-id="note">Note</h3>
+<section id="note-1" class="level3">
+<h3 class="anchored" data-anchor-id="note-1">Note</h3>
 <p>The <code>QNX Recursive Makefile</code> template creates a structure that allows for compilation of different binaries for different architectures.</p>
 </section>
 </section>
@@ -455,7 +466,7 @@ make[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'
 <ol type="1">
 <li><p><a href="../../reference/qnx-ref/qnx-vm.html#create-target-using-visual-studio-code-qnx-toolkit">Create a virtual target</a> through Visual Studio Code.</p></li>
 <li><p>Verify that the target created is labeled as <code>default</code> from the <code>QNX TARGETS</code> section of the QNX sidebar.</p>
-<p><img src="./images__qnx-ref/3__hello-world-run-vscode-00.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-00.png" class="img-fluid"></p></li>
 <li><p>Open <code>launch.json</code> in <code>&lt;project-dir&gt;/.vscode</code> and confirm that the <code>qnxtarget</code> property is set to <code>default</code>.</p>
 <p>The default <code>launch.json</code> created by VS Code should look similar to the following:</p>
 <pre class="json"><code>{
@@ -482,9 +493,9 @@ make[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'
   ]
 }</code></pre></li>
 <li><p>Right-click on the project folder and go to <code>QNX &gt; Run as QNX Application...</code>.</p>
-<p><img src="./images__qnx-ref/3__hello-world-run-vscode-01.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-01.png" class="img-fluid"></p></li>
 <li><p>If everything is configured properly, <code>Hello QNX</code> should print to the debug console.</p>
-<p><img src="./images__qnx-ref/3__hello-world-run-vscode-02.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-02.png" class="img-fluid"></p></li>
 </ol>
 <section id="errors-when-running-application-in-visual-studio-code" class="level3">
 <h3 class="anchored" data-anchor-id="errors-when-running-application-in-visual-studio-code">Errors When Running Application in Visual Studio Code</h3>
@@ -493,10 +504,10 @@ make[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'
 <p>You may encounter this error if you do not have the <code>arp</code> command.</p>
 <pre class="bash"><code>Error: Cannot launch, check Debug Console for failure message
 Error: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -</code></pre>
-<p><img src="./images__qnx-ref/3__hello-world-errors-00-getaddrinfo.png" class="img-fluid"></p>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-errors-00-getaddrinfo.png" class="img-fluid"></p>
 <p>From the terminal panel, select the <code>getip</code> terminal tab. Notice if there is an error that says:</p>
 <pre class="bash"><code>Cannot find arp command.</code></pre>
-<p><img src="./images__qnx-ref/3__hello-world-errors-01-arp.png" class="img-fluid"></p>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-errors-01-arp.png" class="img-fluid"></p>
 <p>Solution: Install <code>net-tools</code>:</p>
 <pre class="bash"><code>sudo apt install net-tools</code></pre>
 </section>
@@ -554,17 +565,30 @@ hello_world  hello_world.dep  hello_world.o  Makefile</code></pre></li>
 <pre class="bash"><code>hello_world                   100%   10KB  21.8MB/s   00:00</code></pre></li>
 <li><p>On the running target, navigate to <code>/data/home/root</code> and execute <code>ls</code>. You should see your <code>hello_world</code> executable.</p>
 <p>In this screenshot, the left pane is the running target, and the right pane is the Linux host computer.</p>
-<p><img src="./images__qnx-ref/3__hello-world-07.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-06-term-loc.png" class="img-fluid"></p></li>
 <li><p>From the target terminal, run the executable.</p>
 <p>Example Command (From Running Target):</p>
 <pre class="bash"><code>./hello_world</code></pre>
 <p>Example Output (From Running Target):</p>
 <pre class="bash"><code>Hello QNX!</code></pre>
 <p>Screenshot:</p>
-<p><img src="./images__qnx-ref/3__hello-world-08.png" class="img-fluid"></p></li>
+<p><img src="./images__qnx-ref/3__hello-world-img/3__hello-world-07-term-run.png" class="img-fluid"></p></li>
 </ol>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
+<section id="visual-studio-code-run-executable-location" class="level4">
+<h4 class="anchored" data-anchor-id="visual-studio-code-run-executable-location">Visual Studio Code Run: Executable Location</h4>
+<p>When running the program through VS Code, the executable is placed in the /tmp directory of the target.</p>
+<p>To verify, connect to the target either through VS Code, or on the command line. Navigate to <code>/tmp</code> and list the directory contents.</p>
+<p>Commands On Running Target:</p>
+<pre class="bash"><code># cd /tmp
+# ls</code></pre>
+<p>Output On Running Target:</p>
+<pre class="bash"><code>hello_world</code></pre>
 
 
+</section>
+</section>
 </section>
 
 </main> <!-- /main -->
