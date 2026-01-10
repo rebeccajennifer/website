@@ -11,11 +11,12 @@ listing:
   type: grid
 ---
 
-## Official QNX Documentation
+## Official Resources
 
 The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.
 
 [QNX Quickstart Guide](https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html){class="flux-button _3"}
+[QNX Documentation](https://www.qnx.com/developers/docs/8.0/){class="flux-button _3"}
 
 ## Note
 
