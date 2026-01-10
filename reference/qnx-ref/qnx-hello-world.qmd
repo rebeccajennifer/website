@@ -1,46 +1,80 @@
 ---
 title: Hello World With QNX
 subtitle: How to create and run minimal project on a virtual target.
+image: ./images__qnx-ref/3__hello-world-img/3__hello-world-07-term-run.png
+description: >
+  This page describes how to run a minimal QNX project on a virtual target. The accompanying tutorial video demonstrates a similar workflow using a Raspberry Pi target.
+toc-depth: 6
 order: 2
 ---
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   How to create and run hello world project.
+|____________________________________________________________________-->
 
 ## Official QNX Resources
 
 ### Tutorial Video
 
-This video demonstrates how to run a simple project using a Raspberry Pi target; however, on this page we are using a virtual target instead.
-
 {{< video  https://www.youtube.com/watch?v=M02X6AqdK7M >}}
 
-### Quickstart Guide
+### Documentation
 
 [Quickstart Guide](https://www.qnx.com/developers/docs/8.0/com.qnx.doc.qnxtoolkit.user_guide/topic/quickstart_guide.html){class="flux-button _3"}
+[QNX Toolkit for Visual Studio Code](https://www.qnx.com/developers/docs/qnxtoolkit/index.html){class="flux-button _3"}
 
-## Create New Project
+## Note
 
-1. In VS Code, select QNX from the Activity Bar on the left side of the screen. Select
+On this page, commands preceded by `#` indicate that the command is run in the terminal window of a running target.
 
-   ![](./images__qnx-ref/1__setup-01-vscode-walkthrough.png)
+## Visual Studio Code: Create New Project
+
+1. In VS Code, select QNX from the Activity Bar on the left side of the screen.
+
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-00-ext.png)
 
 1. From the left sidebar under `QNX COMMANDS` select `Projects > Create new Project...`.
 
-   ![](./images__qnx-ref/3__hello-world-00.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-00.png)
 
 1. Type the name of your project, e.g. `hello_world`.
 
-   ![](./images__qnx-ref/3__hello-world-01-project-name.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-01-project-name.png)
 
 1. Select `QNX Recursive Makefile` for the template.
 
-   ![](./images__qnx-ref/3__hello-world-02-project-template.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-02-project-template.png)
 
 1. Select `c` for language.
 
-   ![](./images__qnx-ref/3__hello-world-03-language.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-03-language.png)
 
 1. Select `Executable` for build artifact.
 
-   ![](./images__qnx-ref/3__hello-world-04-artifact.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-04-artifact.png)
 
 1. A default `Hello World` program is added to `hello_world.c`
 
@@ -55,7 +89,7 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
 
 1. To compile, right-click on the project folder and go to `QNX > Build Active Project`.
 
-   ![](./images__qnx-ref/3__hello-world-05.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-05.png)
 
    Example Terminal Output (From VS Code):
 
@@ -82,7 +116,85 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
     *  Terminal will be reused by tasks, press any key to close it.
   ```
 
-## Run Project Through Command Line
+### Note
+
+The `QNX Recursive Makefile` template creates a structure that allows for compilation of different binaries for different architectures.
+
+## Visual Studio Code: Run Project
+
+1. [Create a virtual target](./qnx-vm.qmd#create-target-using-visual-studio-code-qnx-toolkit) through Visual Studio Code.
+
+1. Verify that the target created is labeled as `default` from the `QNX TARGETS` section of the  QNX sidebar.
+
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-00.png)
+
+1. Open `launch.json` in `<project-dir>/.vscode` and confirm that the `qnxtarget` property is set to `default`.
+
+   The default `launch.json` created by VS Code should look similar to the following:
+
+   ```json
+   {
+     "version": "2.0.0",
+     "configurations": [
+       {
+         "type"          : "qnx-gdb",
+         "request"       : "launch",
+         "name"          : "QNX: hello_world",
+         "gdb"           : "gdb",
+         "program"       : "${command:qnx.autodetectBinary}",
+         "remotePath"    : "hello_world",
+
+         //________________________________________________________
+         // Verify this value
+         //________________________________________________________
+         "qnxtarget"     : "default",
+         //________________________________________________________
+
+         "upload"        : true,
+         "stopAtEntry"   : true,
+         "preLaunchTask" : "${defaultBuildTask}"
+       }
+     ]
+   }
+   ```
+
+1. Right-click on the project folder and go to `QNX > Run as QNX Application...`.
+
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-01.png)
+
+1. If everything is configured properly, `Hello QNX` should print to the debug console.
+
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-run-vscode-02.png)
+
+### Errors When Running Application in Visual Studio Code
+
+#### Error: getaddrinfor EBUSY
+
+You may encounter this error if you do not have the `arp` command.
+
+```bash
+Error: Cannot launch, check Debug Console for failure message
+Error: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -
+```
+
+![](./images__qnx-ref/3__hello-world-img/3__hello-world-errors-00-getaddrinfo.png)
+
+From the terminal panel, select the `getip` terminal tab. Notice if there is an error that says:
+
+```bash
+Cannot find arp command.
+```
+
+![](./images__qnx-ref/3__hello-world-img/3__hello-world-errors-01-arp.png)
+
+Solution: Install `net-tools`:
+
+```bash
+sudo apt install net-tools
+```
+
+## Command Line: Run Project
+
 
 1. [Set up a virtual target using `mkqnximage`](./qnx-vm.qmd#create-target-using-bash). Make sure to include the `--ssh-ident` parameter.
 
@@ -102,7 +214,7 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
    QNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64
    ```
 
-1. From the terminal of the running target, run `ifconfig` to determine its IP address. The address appears in the `vtnet0` section after `inet`; in this example, it is `192.168.122.146`.
+1. From the terminal of the running target, execute `ifconfig` to determine its IP address. The address appears in the `vtnet0` section after `inet`; in this example, it is `192.168.122.146`.
 
    Example Output (From Running Target):
 
@@ -134,13 +246,13 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
            nd6 options=1<PERFORMNUD>
    ```
 
-1. Open a new terminal window and navigate to the output executable of your project. It might be in the following location:
+1. Open a new terminal window on the Linux host and navigate to the output executable of your project. It might be in the following location:
 
    ```bash
-   <project-path>/nto/x86_64/o
+   <project-dir>/nto/x86_64/o
    ```
 
-1. Locate the executable. This is usually named after the project directory and has no file extension. In this case, it is named `hello_world`.
+1. Locate the executable. If the project was build with VS Code, the executable usually has the same name as the project directory and has no file extension. In this case, it is named `hello_world`.
 
    Example Commands (From Linux Host):
 
@@ -168,7 +280,7 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
 
    In this screenshot, the left pane is the running target, and the right pane is the Linux host computer.
 
-   ![](./images__qnx-ref/3__hello-world-07.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-06-term-loc.png)
 
 1. From the target terminal, run the executable.
 
@@ -186,4 +298,24 @@ This video demonstrates how to run a simple project using a Raspberry Pi target;
 
    Screenshot:
 
-   ![](./images__qnx-ref/3__hello-world-08.png)
+   ![](./images__qnx-ref/3__hello-world-img/3__hello-world-07-term-run.png)
+
+### Notes
+
+#### Visual Studio Code Run: Executable Location
+
+When running the program through VS Code, the executable is placed in the `/tmp` directory of the target.
+
+To verify, connect to the target either through VS Code, or on the command line. Navigate to `/tmp` and list the directory contents.
+
+Commands On Running Target:
+
+```bash
+# ls /tmp
+```
+
+Output On Running Target:
+
+```bash
+hello_world keep_files
+```

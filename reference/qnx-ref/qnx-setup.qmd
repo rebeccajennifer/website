@@ -43,51 +43,51 @@ order       : 0
 
 1. Log in with myQNX. Hover over `Developers`, then click `FREE Non-Commercial License`.
 
-   ![](./images__qnx-ref/0__install-00-free-license.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-00-free-license.png)
 
 1. If you click this more than once, you will see this screen after you've already requested a license.
 
-   ![](./images__qnx-ref/0__install-01-qnx-access.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-01-qnx-access.png)
 
 1. You should receive an email within 30 minutes indicating that your Non-Commercial license is ready.
 
 1. Go to <https://qnx.com/account/dashboard/>.
 
-   ![](./images__qnx-ref/0__install-02-license-manager.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-02-license-manager.png)
 
 1. Under the `Users` column, click on the text `Click to deploy to users` then on the button `Deploy`. Type the email address used for your QNX account.
 
-   ![](./images__qnx-ref/0__install-03-deploy0.png)
-   ![](./images__qnx-ref/0__install-03-deploy1.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-03-deploy0.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-03-deploy1.png)
 
 1. From myQNX home <https://qnx.com/account>, click on the `QNX Software Center` link.
 
-   ![](./images__qnx-ref/0__install-04-sw-center0.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-04-sw-center0.png)
 
 1. Scroll down to the download section and select the appropriate version for your OS.
 
-   ![](./images__qnx-ref/0__install-05-download.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-05-download.png)
 
 1. In your terminal window, navigate to the downloaded file and make the file executable.
 
    ```bash
-   (prompt): cd ~/Downloads
-   (prompt): chmod +x qnx-setup-2.0.4-202501021438-linux.run
+   (linux): cd ~/Downloads
+   (linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run
    ```
 
 1. Run the file to install software center.
 
    ```bash
-   (prompt): ./qnx-setup-2.0.4-202501021438-linux.run
+   (linux): ./qnx-setup-2.0.4-202501021438-linux.run
    ```
 
 1. Scroll to the bottom of the license agreement by hitting `<enter>` several times or type `q` to jump to the bottom.
 
-   ![](./images__qnx-ref/0__install-06-agreement.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-06-agreement.png)
 
 1. Type `y` to accept agreement.
 
-   ![](./images__qnx-ref/0__install-07-agreement-accept.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-07-agreement-accept.png)
 
 1. Specify installation path. Hit `<enter>` to accept the default install location.
 
@@ -100,8 +100,8 @@ order       : 0
 1. After specifying the installation path, your terminal will look similar to this.
 
    ```bash
-   (prompt): chmod +x qnx-setup-2.0.4-202501021438-linux.run
-   (prompt): ./qnx-setup-2.0.4-202501021438-linux.run
+   (linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run
+   (linux): ./qnx-setup-2.0.4-202501021438-linux.run
    Verifying archive integrity... All good.
    Uncompressing QNX Software Center 2.0.4  100%
    Please type y to accept, n otherwise: y
@@ -115,41 +115,41 @@ order       : 0
 
 1. Type your myQNX credentials.
 
-   ![](./images__qnx-ref/0__install-08-credentials.png)
-   ![](./images__qnx-ref/0__install-09-password-hint.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-08-credentials.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-09-password-hint.png)
 
 1. From the QNX Software Center window, click `Add Installation`.
 
-   ![](./images__qnx-ref/0__install-10-add-installation.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-10-add-installation.png)
 
 1. Expand `QNX Software Development Platform 8.0`, select `QNX Software Development Platform 8.0` and click `Next` on this and the following window.
 
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-0.png)
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-1.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-0.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-1.png)
 
 1. The window might show `Synchronizing with remote repository, it may take a while` for a few minutes. Click `Next` when the window changes. Click `Next` for the next couple screens.
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-2.png)
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-3.png)
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-4.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-2.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-3.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-4.png)
 
 1. Accept the license agreement and click `Finish`.
 
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-5.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-5.png)
 
 1. After a few minutes, this window will pop up. Click `Close`.
 
-   ![](./images__qnx-ref/0__install-11-install-qnx-8.0-6.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-6.png)
 
 1. From QNX Software Center, click `Installed` and expand `QNX Software Development Platform 8.0` to view installed packages.
 
-   ![](./images__qnx-ref/0__install-12-installed-packages.png)
+   ![](./images__qnx-ref/0__install-qnx-img/0__install-12-installed-packages.png)
 
 ## Installed Files
 
 After installation, in your terminal, show the contents of th QNX installation folder.
 
 ```bash
-(prompt): ls ~/qnx800
+(linux): ls ~/qnx800
 host  qnxsdp-env.bat  qnxsdp-env.sh  target
 ```
 
@@ -182,7 +182,7 @@ The VS Code QNX Toolkit extension allows you to create and run QNX projects from
 
 1. Install `QNX Toolkit` from extensions.
 
-   ![](./images__qnx-ref/1__setup-00-vscode-install-ext.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-00-vscode-install-ext.png)
 
 1. Ensure prerequsites are installed. These are listed in the quickstart guide on the QNX website.
 
@@ -190,18 +190,18 @@ The VS Code QNX Toolkit extension allows you to create and run QNX projects from
 
 1. Click the QNX extension in the Activity Bar on the left side of the screen. In the sidebar under `QNX COMMANDS` expand `Configuration` and select `Open QNX Tookit Walkthrough`
 
-   ![](./images__qnx-ref/1__setup-01-vscode-walkthrough.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-01-vscode-walkthrough.png)
 
 1. From the main window, click `Edit Settings`.
 
-   ![](./images__qnx-ref/1__setup-02-vscode-settings.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-02-vscode-settings.png)
 
 1. Go to VS Code settings with the shortcut `Ctrl + ,`.
 1. Expand `Extensions` and select `QNX Toolkit`.
 1. Set `Sdp Path` is set to the installation directory and `Default Projects Root` to the project directory path.
 
-   ![](./images__qnx-ref/1__setup-03-vscode-settings-sdp-path.png)
-   ![](./images__qnx-ref/1__setup-04-vscode-settings-projects-root.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-03-vscode-settings-sdp-path.png)
+   ![](./images__qnx-ref/1__setup-qnx-img/1__setup-04-vscode-settings-projects-root.png)
 
    The corresponding properties in `settings.json` are listed below.
 
