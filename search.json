@@ -1617,7 +1617,7 @@
     "href": "projects/color-scheme-exporter/index.html#how-to-use-output",
     "title": "Color Scheme Exporter",
     "section": "How To Use Output",
-    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVS Code Terminal\nCopy the output and save to your settings.json file.",
+    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVisual Studio Code Terminal\nCopy the output and save to your settings.json file.\n\n\nVisual Studio Code\nFollow instructions here to add your theme file as a pacakge to VS Code.",
     "crumbs": [
       "Projects",
       "Color Scheme Exporter"
