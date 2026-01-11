@@ -104,7 +104,11 @@ Follow instructions [here](../../reference/color-scheme__reference/gnome-termina
 
 Save the output file as `.minttyrc` and save in your home directory.
 
-### VS Code Terminal
+### Visual Studio Code Terminal
 
 Copy the output and save to your `settings.json` file.
+
+### Visual Studio Code
+
+Follow instructions [here](/reference/color-scheme__reference/vscode-color.qmd) to add your theme file as a pacakge to VS Code.
 

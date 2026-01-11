@@ -60,6 +60,11 @@ img   { margin-top: 1em; }
   object-fit    : cover;
 }
 
+img.thumbnail-image.card-img
+{
+  background-color  : var(--norm--wht-07);
+}
+
 a.flux-button._3.source-code::after
 {
   content       : "Source Code";

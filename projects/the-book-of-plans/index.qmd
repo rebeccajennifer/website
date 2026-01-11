@@ -34,6 +34,17 @@ listing:
 |   Site page for The Book of Plans.
 |____________________________________________________________________-->
 
+<style>
+
+img.thumbnail-image.card-img
+{
+  background-color  : var(--norm--wht-07);
+  padding           : 1%;
+}
+
+</style>
+
+
 The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.
 
 The planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.
@@ -43,7 +54,7 @@ The planner consists of a series of PDFs formatted for printing on 8.5×11 sheet
 Three months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.
 
 <figure>
-![](images__the-book-of-plans/week-reflection-plan.png)
+![](images__the-book-of-plans/week-reflection-plan.png){.background}
 <figcaption>
 Here is a sample layout of one of the pages.
 </figcaption>
