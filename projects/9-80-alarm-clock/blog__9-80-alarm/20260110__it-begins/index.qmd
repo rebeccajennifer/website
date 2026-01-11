@@ -1,0 +1,22 @@
+---
+title       : It Begins...
+description : >
+  I've decided to take on another project as a practical way to become a stronger software developer.
+date        : 2026-01-10
+categories  : [9-80-alarm]
+draft       : false
+order       : 0
+---
+
+I am using this first post to outline
+
+## Environment Setup
+
+My first step in the pursuit of well rested off-Friday mornings was to download the QNX Software Development package and get a [Hello World](/reference/qnx__ref/qnx-hello-world.qmd) project working. And of course documenting the process for future reference 👩‍🏫
+
+## Requirements
+
+- Set current time
+- Set current week (on or off)
+
+

@@ -1,0 +1,65 @@
+---
+title: 4+1 View Model of Software Architecture
+toc-depth: 6
+description: >
+  This page contains notes for the 4+1 view model of software architecture published by Philippe Krutchen in 1995.
+order: 0
+---
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   4+1 view model of software architecture
+|____________________________________________________________________-->
+
+## Original Published Paper
+
+[IEEE Xplore](https://ieeexplore.ieee.org/document/469759){class="flux-button _3"}
+[ResearchGate](https://www.researchgate.net/publication/220018231_The_41_View_Model_of_Architecture){class="flux-button _3"}
+
+## The Views
+
+View | Brief Description
+-|-
+Logical     | Object model of the design
+Process     | Concurrency and synchronization aspects
+Development | Static organization of software
+Physical    | Mapping of software on hardware
+Scenarios   | Use cases
+
+## Logical View
+
+What should the system provide to its users?
+Contains structural logic
+
+## Process View
+
+State transition diagrams
+
+## Glossary
+
+Term | Definition
+-|-
+Task    | A thread of control, scheduled individually
+Process | Grouping of tasks that form an executable unit
