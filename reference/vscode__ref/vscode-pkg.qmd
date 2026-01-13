@@ -1,0 +1,66 @@
+---
+title: 📦 Creating a .vsix Package for a VS Code Theme
+description: This page describes how to package a color theme package into a `.vsix` file.
+---
+
+To install your theme locally or share it without publishing, you can package it into a `.vsix` file.
+
+---
+
+### 1. Install the VS Code Extension Packaging Tool
+
+```bash
+npm install -g @vscode/vsce
+```
+
+---
+
+### 2. Package the Extension
+
+In the root of your theme directory (where `package.json` is located), run:
+
+```bash
+vsce package
+```
+
+This will generate a `.vsix` file named like:
+
+```
+lagomorphic-constructs-theme-pack-0.0.1.vsix
+```
+
+The name and version come from your `package.json`.
+
+---
+
+### 3. Install the `.vsix` in VS Code
+
+1. Open the Command Palette:
+   `Ctrl+Shift+P` (Windows/Linux) or `Cmd+Shift+P` (macOS)
+2. Run: **Extensions: Install from VSIX…**
+3. Select the generated `.vsix` file
+4. Apply the theme via:
+   **Preferences → Color Theme**
+
+---
+
+### Optional: Generate via VS Code UI (No Terminal Needed)
+
+VS Code also supports packaging through the Command Palette:
+
+1. `Ctrl+Shift+P`
+2. Run: **Developer: Generate VSIX from Extension…**
+3. Select your extension folder
+4. The `.vsix` file will be generated automatically
+
+---
+
+### Notes
+
+- Your `package.json` must include a valid `publisher` field, e.g.:
+
+```json
+"publisher": "Rebecca Jennifer"
+```
+
+- A personal access token is **not required** unless you plan to publish to the Marketplace.
