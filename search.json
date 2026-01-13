@@ -490,53 +490,66 @@
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html",
     "href": "reference/color-scheme__reference/vscode-color.html",
-    "title": "VS Code Color Theme",
+    "title": "VS Code Custom Color Theme Example",
     "section": "",
     "text": "See this page for a complete list of VS Code color theme properties.\nSee this link for a copy of my personally designed dark and light themes.",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Color Theme"
+      "VS Code Custom Color Theme Example"
+    ]
+  },
+  {
+    "objectID": "reference/color-scheme__reference/vscode-color.html#install-flux-bunny-themes",
+    "href": "reference/color-scheme__reference/vscode-color.html#install-flux-bunny-themes",
+    "title": "VS Code Custom Color Theme Example",
+    "section": "Install Flux Bunny Themes",
+    "text": "Install Flux Bunny Themes\nTo install my custom color themes, follow these instructions.\n\nDownload or clone the directory flux-bunny-color-schemes from here:\nFlux Bunny Color Schemes\nSave this directory to your user extensions directory, often located in the following directories:\nLinux Path\n/home/username/.vscode/extensions\nWindows Path\nC:\\Users\\username\\.vscode\\extensions\nYou can delete flux-bunny-template.json from this directory.\nIn VS Code, use the shortcut Ctrl+Shift+P to go to the Command Palette. Type Color Theme and select the option for Color Theme. You should see Flux Bunny Lite under light themes and Flux Bunny Dark under dark themes.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Color Scheme Reference",
+      "VS Code Custom Color Theme Example"
     ]
   },
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html#custom-theme-tutorial",
     "href": "reference/color-scheme__reference/vscode-color.html#custom-theme-tutorial",
-    "title": "VS Code Color Theme",
+    "title": "VS Code Custom Color Theme Example",
     "section": "Custom Theme Tutorial",
     "text": "Custom Theme Tutorial\n\nFile Location\n\nTo install a custom theme, create a new directory in the following location (on a Linux system):\n~/.vscode/extensions/\nThis example uses the directory named my-color-themes; you can name this directory whatever you would like.\nmkdir ~/.vscode/extensions/my-color-themes\nIn my-color-themes create a file named package.json.\n# The touch command creates a blank file\ntouch ~/.vscode/extensions/my-color-themes/package.json\nEdit package.json to include this minimal information.\nIn this example, we are assuming there to be two theme files, my-dark-theme.json and my-light-theme.json. The \"label\" property will be displayed in the color theme drop down menu in VS Code.\n{ \"name\"          : \"my-theme-pack\"\n, \"displayName\"   : \"My Theme Pack\"\n, \"publisher\"     : \"Your Name\"\n, \"version\"       : \"0.0.1\"\n, \"engines\"       : { \"vscode\": \"*\" }\n, \"contributes\"   :\n\n  { \"themes\"      :\n    [ { \"label\"   : \"My Dark theme\"\n      , \"uiTheme\" : \"vs-dark\"\n      , \"path\"    : \"./my-dark-theme.json\"\n      }\n    , { \"label\"   : \"My Light Theme\"\n      , \"uiTheme\" : \"vs\"\n      , \"path\"    : \"./my-light-theme.json\"\n      }\n    ]\n  }\n}\nIn ~/.vscode/extensions/my-color-themes include the files for my-dark-theme.json and my-light-theme.json.\n\nNote: For the uiTheme property in package.json, use vs-dark for a dark theme and vs for a light theme. This ensures that any undefined properties inherit the correct default colors. In the My Dark Theme example, vs was intentionally selected instead of vs-dark; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.\n\n\n\nMinimal Color Theme File\nThis text is included in the minimal color theme file my-dark-theme.json.\n{\n  \"$schema\"     : \"vscode://schemas/color-theme\"\n\n, \"colors\":\n  { \"editor.background\"                 : \"#1c1c1c\"\n  , \"editor.foreground\"                 : \"#c6c6c6\"\n  }\n\n, \"tokenColors\":\n  [ { \"scope\": \"comment\"\n    , \"settings\": { \"foreground\": \"#d7af5f\" }\n    }\n\n  , { \"scope\": \"string\"\n    , \"settings\": { \"foreground\": \"#af5faf\" }\n    }\n  ]\n\n  // These properties override tokenColors\n, \"semanticTokenColors\":\n  { \"variable\"      : \"#00afd7\"\n  }\n}\n\n\nLoad Custom Theme\n\nLoad From VS Code\nTo load the theme, from the search bar type &gt;Color Theme and select Preferences: Color Theme. You can also pull up this search bar with the shortcut Ctrl+Shift+p.\n\nThe theme My Dark Theme should now display in the drop down options.\n\nYou should now see your defined colors in the editor window.\n\n\n\nAdd to settings.json\nYou can also add the color theme to your settings.json file:\n{\n  \"workbench.colorTheme\": \"My Dark Theme\"\n}",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Color Theme"
+      "VS Code Custom Color Theme Example"
     ]
   },
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html#existing-theme",
     "href": "reference/color-scheme__reference/vscode-color.html#existing-theme",
-    "title": "VS Code Color Theme",
+    "title": "VS Code Custom Color Theme Example",
     "section": "Existing Theme",
     "text": "Existing Theme\nYou may want to start from an existing theme file. You can use the dark theme I have created here. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:\n/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Color Theme"
+      "VS Code Custom Color Theme Example"
     ]
   },
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html#autoformat-.json-in-vim",
     "href": "reference/color-scheme__reference/vscode-color.html#autoformat-.json-in-vim",
-    "title": "VS Code Color Theme",
+    "title": "VS Code Custom Color Theme Example",
     "section": "Autoformat .json in Vim",
     "text": "Autoformat .json in Vim\nIf the the json file is not formatted, you can use the following Vim command to autoformat the json file:\n:%!python3 -m json.tool",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Color Theme"
+      "VS Code Custom Color Theme Example"
     ]
   },
   {
@@ -1617,7 +1630,7 @@
     "href": "projects/color-scheme-exporter/index.html#how-to-use-output",
     "title": "Color Scheme Exporter",
     "section": "How To Use Output",
-    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVisual Studio Code Terminal\nCopy the output and save to your settings.json file.\n\n\nVisual Studio Code\nFollow instructions here to add your theme file as a pacakge to VS Code.",
+    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVisual Studio Code Terminal\nCopy the output and save to your settings.json file.\n\n\nVisual Studio Code\nFollow instructions here to add your theme file as a package to VS Code.",
     "crumbs": [
       "Projects",
       "Color Scheme Exporter"
@@ -2365,7 +2378,7 @@
     "href": "reference/color-scheme__reference/index.html",
     "title": "Color Scheme Reference",
     "section": "",
-    "text": "Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI Color Codes Explained\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI 256 Color Table\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTERM Environment Variable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLS_COLORS & dircolors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVS Code Color Theme\n\n\nA detailed example on how to create and load a VS Code color theme file\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGNOME Color Profile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPuTTY Color Configuration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Color Scheme\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI Color Codes Explained\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI 256 Color Table\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTERM Environment Variable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLS_COLORS & dircolors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVS Code Custom Color Theme Example\n\n\nA detailed example on how to create and load a VS Code color theme file\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGNOME Color Profile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPuTTY Color Configuration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Color Scheme\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Reference",
       "The Reference Library",

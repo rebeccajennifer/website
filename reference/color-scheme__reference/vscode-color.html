@@ -8,7 +8,7 @@
 
 <meta name="description" content="A detailed example on how to create and load a VS Code color theme file">
 
-<title>VS Code Color Theme – Rebecca Jennifer Rashkin</title>
+<title>VS Code Custom Color Theme Example – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../flux-bunny-style.css">
-<meta property="og:title" content="VS Code Color Theme – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="VS Code Custom Color Theme Example – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
 <meta property="og:image" content="https://rebeccajennifer.com/reference/color-scheme__reference/assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/vscode-color.html">VS Code Color Theme</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/vscode-color.html">VS Code Custom Color Theme Example</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -237,7 +237,7 @@ ul.task-list li input[type="checkbox"] {
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../reference/color-scheme__reference/vscode-color.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">VS Code Color Theme</span></a>
+ <span class="menu-text">VS Code Custom Color Theme Example</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -313,15 +313,33 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#install-flux-bunny-themes" id="toc-install-flux-bunny-themes" class="nav-link active" data-scroll-target="#install-flux-bunny-themes">Install Flux Bunny Themes</a></li>
+  <li><a href="#custom-theme-tutorial" id="toc-custom-theme-tutorial" class="nav-link" data-scroll-target="#custom-theme-tutorial">Custom Theme Tutorial</a>
+  <ul>
+  <li><a href="#file-location" id="toc-file-location" class="nav-link" data-scroll-target="#file-location">File Location</a></li>
+  <li><a href="#minimal-color-theme-file" id="toc-minimal-color-theme-file" class="nav-link" data-scroll-target="#minimal-color-theme-file">Minimal Color Theme File</a></li>
+  <li><a href="#load-custom-theme" id="toc-load-custom-theme" class="nav-link" data-scroll-target="#load-custom-theme">Load Custom Theme</a>
+  <ul>
+  <li><a href="#load-from-vs-code" id="toc-load-from-vs-code" class="nav-link" data-scroll-target="#load-from-vs-code">Load From VS Code</a></li>
+  <li><a href="#add-to-settings.json" id="toc-add-to-settings.json" class="nav-link" data-scroll-target="#add-to-settings.json">Add to <code>settings.json</code></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#existing-theme" id="toc-existing-theme" class="nav-link" data-scroll-target="#existing-theme">Existing Theme</a></li>
+  <li><a href="#autoformat-.json-in-vim" id="toc-autoformat-.json-in-vim" class="nav-link" data-scroll-target="#autoformat-.json-in-vim">Autoformat .json in Vim</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/vscode-color.html">VS Code Color Theme</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__reference/vscode-color.html">VS Code Custom Color Theme Example</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">VS Code Color Theme</h1>
+<h1 class="title">VS Code Custom Color Theme Example</h1>
 <p class="subtitle lead">How to create a VS Code color theme file.</p>
 </div>
 
@@ -374,6 +392,23 @@ ul.task-list li input[type="checkbox"] {
 <p><img src="images__color-scheme-reference/vscode-flux-dark-screenshot.png" class="img-fluid"></p>
 <p>See <a href="https://code.visualstudio.com/api/references/theme-color">this page</a> for a complete list of VS Code color theme properties.</p>
 <p>See <a href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes">this link</a> for a copy of my personally designed dark and light themes.</p>
+<section id="install-flux-bunny-themes" class="level2">
+<h2 class="anchored" data-anchor-id="install-flux-bunny-themes">Install Flux Bunny Themes</h2>
+<p>To install my custom color themes, follow these instructions.</p>
+<ol type="1">
+<li><p>Download or clone the directory <code>flux-bunny-color-schemes</code> from here:</p>
+<p><a href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes" class="flux-button _3">Flux Bunny Color Schemes</a></p></li>
+<li><p>Save this directory to your user extensions directory, often located in the following directories:</p>
+<p>Linux Path</p>
+<pre class="bash"><code>/home/username/.vscode/extensions</code></pre>
+<p>Windows Path</p>
+<pre class="bash"><code>C:\Users\username\.vscode\extensions</code></pre></li>
+<li><p>You can delete <code>flux-bunny-template.json</code> from this directory.</p></li>
+<li><p>In VS Code, use the shortcut <code>Ctrl+Shift+P</code> to go to the Command Palette. Type <code>Color Theme</code> and select the option for Color Theme. You should see <code>Flux Bunny Lite</code> under light themes and <code>Flux Bunny Dark</code> under dark themes.</p>
+<p><img src="images__color-scheme-reference/vscode-select-pref-color-theme.png" class="img-fluid"></p>
+<p><img src="images__color-scheme-reference/vscode-color-theme-flux-bunny-colors.png" class="img-fluid"></p></li>
+</ol>
+</section>
 <section id="custom-theme-tutorial" class="level2">
 <h2 class="anchored" data-anchor-id="custom-theme-tutorial">Custom Theme Tutorial</h2>
 <section id="file-location" class="level3">
@@ -461,7 +496,7 @@ touch ~/.vscode/extensions/my-color-themes/package.json</code></pre></li>
 </section>
 <section id="existing-theme" class="level2">
 <h2 class="anchored" data-anchor-id="existing-theme">Existing Theme</h2>
-<p>You may want to start from an existing theme file. You can use the dark theme I have created <a href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/flux-bunny-color-schemes/flux-bunny-dark.json">here</a>. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:</p>
+<p>You may want to start from an existing theme file. You can use the dark theme I have created <a href="#install-flux-bunny-themes">here</a>. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:</p>
 <pre class="bash"><code>/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes</code></pre>
 </section>
 <section id="autoformat-.json-in-vim" class="level2">
