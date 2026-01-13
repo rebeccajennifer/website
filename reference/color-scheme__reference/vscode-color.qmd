@@ -1,9 +1,10 @@
 ---
-title: VS Code Color Theme
+title: VS Code Custom Color Theme Example
 subtitle: How to create a VS Code color theme file.
 description: >
   A detailed example on how to create and load a VS Code color theme
   file
+toc-depth: 6
 order: 4
 ---
 <!--___________________________________________________________________|
@@ -39,6 +40,36 @@ order: 4
 See [this page](https://code.visualstudio.com/api/references/theme-color) for a complete list of VS Code color theme properties.
 
 See [this link](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes) for a copy of my personally designed dark and light themes.
+
+## Install Flux Bunny Themes
+
+To install my custom color themes, follow these instructions.
+
+1. Download or clone the directory `flux-bunny-color-schemes` from here:
+
+   [Flux Bunny Color Schemes](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes){class="flux-button _3"}
+
+1. Save this directory to your user extensions directory, often located in the following directories:
+
+   Linux Path
+
+   ```bash
+   /home/username/.vscode/extensions
+   ```
+
+   Windows Path
+
+   ```bash
+   C:\Users\username\.vscode\extensions
+   ```
+
+1. You can delete `flux-bunny-template.json` from this directory.
+
+1. In VS Code, use the shortcut `Ctrl+Shift+P` to go to the Command Palette. Type `Color Theme` and select the option for Color Theme. You should see `Flux Bunny Lite` under light themes and `Flux Bunny Dark` under dark themes.
+
+   ![](images__color-scheme-reference/vscode-select-pref-color-theme.png)
+
+   ![](images__color-scheme-reference/vscode-color-theme-flux-bunny-colors.png)
 
 ## Custom Theme Tutorial
 
@@ -152,7 +183,7 @@ You can also add the color theme to your `settings.json` file:
 
 ## Existing Theme
 
-You may want to start from an existing theme file. You can use the dark theme I have created [here](https://github.com/rebeccajennifer/setup-files/blob/main/vscode/flux-bunny-color-schemes/flux-bunny-dark.json). You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:
+You may want to start from an existing theme file. You can use the dark theme I have created [here](#install-flux-bunny-themes). You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:
 
 ```bash
 /snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes
