@@ -2,8 +2,7 @@
 title: VS Code Custom Color Theme Example
 subtitle: How to create a VS Code color theme file.
 description: >
-  A detailed example on how to create and load a VS Code color theme
-  file
+  Here you’ll find instructions for installing my custom VS Code themes, plus a walkthrough on how to make and load your own.
 toc-depth: 6
 order: 4
 ---
