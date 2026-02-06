@@ -1,27 +1,121 @@
 ---
 title: 📦 Creating a .vsix Package for a VS Code Theme
-description: This page describes how to package a color theme package into a `.vsix` file.
+description: >
+  This page explains how to package a color theme into a .vsix file so it can be installed locally or shared without publishing.
+toc-depth: 6
+order: 2
 ---
 
-To install your theme locally or share it without publishing, you can package it into a `.vsix` file.
+## Prerequisites
 
----
+### Package Installation
 
-### 1. Install the VS Code Extension Packaging Tool
+The following packages are installed:
+
+```bash
+npm
+nodejs version 22+
+```
+
+To install these packages, run:
+
+```bash
+# Install npm
+sudo apt install npm
+
+# Install nodejs
+curl -fsSL https://deb.nodesource.com/setup_22.x | sudo -E bash -
+sudo apt install -y nodejs
+```
+
+### Create a VS Code Publisher
+
+To create a .vsix file, you must specify a publisher for your extension. The following link provides instructions on how to set up a publisher.
+
+[Create a Publisher](https://code.visualstudio.com/api/working-with-extensions/publishing-extension#create-a-publisher){class="flux-button _3"}
+
+
+## 1. Install the VS Code Extension Packaging Tool
+
+
+Command:
+
+```bash
+sudo npm install -g @vscode/vsce
+```
+
+Example Successful Output:
+
+```bash
+added 314 packages in 11s
+```
+
+### Installation Warnings
+
+If your system `Node.js` version is older than what vsce requires, npm will emit engine warnings during installation. These warnings indicate that the current `Node.js` version does not meet the minimum version expected by the package.
+
+
+
+### Permission Error
+
+When installing `vsce` globally without elevated permissions, npm may throw a permission-related error. The example below shows the type of message you might see:
+
+Example Input:
 
 ```bash
 npm install -g @vscode/vsce
 ```
 
+Example Error Output:
+
+```
+npm ERR! code EACCES
+npm ERR! syscall mkdir
+npm ERR! path /usr/local/lib/node_modules
+...
+npm ERR! The operation was rejected by your operating system.
+npm ERR! It is likely you do not have the permissions to access this file as the current user
+...
+```
+
 ---
 
-### 2. Package the Extension
+## 3. Package the Extension
 
 In the root of your theme directory (where `package.json` is located), run:
 
 ```bash
 vsce package
 ```
+
+### File is Not Defined Error
+
+When running `vsce` package, you may encounter a runtime error originating from the `undici` dependency. This typically occurs when the installed version of `vsce` depends on newer Web API implementations that are not available in the system’s `Node.js` version. In these cases, the process fails before completing the `.vsix` packaging step and prints a stack trace similar to the one below.
+
+```
+/usr/local/lib/node_modules/@vscode/vsce/node_modules/undici/lib/web/webidl/index.js:533
+webidl.is.File = webidl.util.MakeTypeAssertion(File)
+                                               ^
+
+ReferenceError: File is not defined
+    at Object.<anonymous> (/usr/local/lib/node_modules/@vscode/vsce/node_modules/undici/lib/web/webidl/index.js:533:48)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+    at Module.load (node:internal/modules/cjs/loader:1197:32)
+    at Module._load (node:internal/modules/cjs/loader:1013:12)
+    at Module.require (node:internal/modules/cjs/loader:1225:19)
+    at require (node:internal/modules/helpers:177:18)
+    at Object.<anonymous> (/usr/local/lib/node_modules/@vscode/vsce/node_modules/undici/lib/web/fetch/util.js:12:20)
+    at Module._compile (node:internal/modules/cjs/loader:1356:14)
+    at Module._extensions..js (node:internal/modules/cjs/loader:1414:10)
+
+Node.js v18.19.1
+```
+
+
+
+
+
 
 This will generate a `.vsix` file named like:
 
