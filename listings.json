@@ -17,26 +17,18 @@
     ]
   },
   {
-    "listing": "/reference/inkscape__reference/index.html",
-    "items": [
-      "/reference/inkscape__reference/bitmap2vector.html"
-    ]
+    "listing": "/reference/sw-arch__ref/index.html",
+    "items": []
   },
   {
-    "listing": "/reference/index.html",
+    "listing": "/reference/environment-setup__ref/index.html",
     "items": [
-      "/reference/environment-setup__reference/index.html",
-      "/reference/color-scheme__reference/index.html",
-      "/reference/qnx__ref/index.html",
-      "/reference/inkscape__reference/index.html"
-    ]
-  },
-  {
-    "listing": "/reference/qnx__ref/index.html",
-    "items": [
-      "/reference/qnx__ref/qnx-setup.html",
-      "/reference/qnx__ref/qnx-vm.html",
-      "/reference/qnx__ref/qnx-hello-world.html"
+      "/reference/environment-setup__ref/application-installation.html",
+      "/reference/environment-setup__ref/vs-code.html",
+      "/reference/environment-setup__ref/git.html",
+      "/reference/environment-setup__ref/default-shell.html",
+      "/reference/environment-setup__ref/arduino-cli.html",
+      "/reference/environment-setup__ref/putty.html"
     ]
   },
   {
@@ -75,31 +67,39 @@
     ]
   },
   {
-    "listing": "/reference/color-scheme__reference/index.html",
+    "listing": "/reference/inkscape__ref/index.html",
     "items": [
-      "/reference/color-scheme__reference/ansi-color-explained.html",
-      "/reference/color-scheme__reference/ansi256-colors.html",
-      "/reference/color-scheme__reference/term-env-var.html",
-      "/reference/color-scheme__reference/ls-colors.html",
-      "/reference/color-scheme__reference/vscode-color.html",
-      "/reference/color-scheme__reference/gnome-terminal-color.html",
-      "/reference/color-scheme__reference/putty-color.html",
-      "/reference/color-scheme__reference/vim-color.html"
+      "/reference/inkscape__ref/bitmap2vector.html"
     ]
   },
   {
-    "listing": "/reference/environment-setup__reference/index.html",
+    "listing": "/reference/qnx__ref/index.html",
     "items": [
-      "/reference/environment-setup__reference/application-installation.html",
-      "/reference/environment-setup__reference/vs-code.html",
-      "/reference/environment-setup__reference/git.html",
-      "/reference/environment-setup__reference/default-shell.html",
-      "/reference/environment-setup__reference/arduino-cli.html",
-      "/reference/environment-setup__reference/putty.html"
+      "/reference/qnx__ref/qnx-setup.html",
+      "/reference/qnx__ref/qnx-vm.html",
+      "/reference/qnx__ref/qnx-hello-world.html"
     ]
   },
   {
-    "listing": "/reference/sw-arch__ref/index.html",
-    "items": []
+    "listing": "/reference/index.html",
+    "items": [
+      "/reference/environment-setup__ref/index.html",
+      "/reference/color-scheme__ref/index.html",
+      "/reference/qnx__ref/index.html",
+      "/reference/inkscape__ref/index.html"
+    ]
+  },
+  {
+    "listing": "/reference/color-scheme__ref/index.html",
+    "items": [
+      "/reference/color-scheme__ref/ansi-color-explained.html",
+      "/reference/color-scheme__ref/ansi256-colors.html",
+      "/reference/color-scheme__ref/term-env-var.html",
+      "/reference/color-scheme__ref/ls-colors.html",
+      "/reference/color-scheme__ref/vscode-color.html",
+      "/reference/color-scheme__ref/gnome-terminal-color.html",
+      "/reference/color-scheme__ref/putty-color.html",
+      "/reference/color-scheme__ref/vim-color.html"
+    ]
   }
 ]

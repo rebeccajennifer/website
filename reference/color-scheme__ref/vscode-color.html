@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="This page describes how to convert a bitmap image to a vector image.">
+<meta name="description" content="A detailed example on how to create and load a Visual Studio Code color theme file">
 
-<title>Convert Bitmap to Vector – Rebecca Jennifer Rashkin</title>
+<title>VS Code Color Theme – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,9 +73,9 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../flux-bunny-style.css">
-<meta property="og:title" content="Convert Bitmap to Vector – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="VS Code Color Theme – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="https://rebeccajennifer.com/reference/inkscape__reference/images__inkscape-ref/hs-stag-silhouette.svg">
+<meta property="og:image" content="https://rebeccajennifer.com/reference/color-scheme__ref/assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
 </head>
 
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/inkscape__reference/index.html">Inkscape Reference</a></li><li class="breadcrumb-item"><a href="../../reference/inkscape__reference/bitmap2vector.html">Convert Bitmap to Vector</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/vscode-color.html">VS Code Color Theme</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -156,7 +156,7 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/environment-setup__reference/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/environment-setup__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">New Environment Setup</span></a>
           <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
@@ -165,37 +165,37 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup__reference/application-installation.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__ref/application-installation.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Application Installation</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup__reference/vs-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__ref/vs-code.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code Setup</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup__reference/git.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__ref/git.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Git Reference</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup__reference/default-shell.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__ref/default-shell.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Default Shell</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup__reference/arduino-cli.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__ref/arduino-cli.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino Command Line Interface</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup__reference/putty.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__ref/putty.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Configuration</span></a>
   </div>
 </li>
@@ -203,58 +203,58 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/color-scheme__reference/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/color-scheme__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Color Scheme Reference</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI Color Codes Explained</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/ansi256-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/ansi256-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI 256 Color Table</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/term-env-var.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/term-env-var.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">TERM Environment Variable</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/ls-colors.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/ls-colors.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">LS_COLORS &amp; dircolors</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/vscode-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/vscode-color.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">VS Code Color Theme</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/gnome-terminal-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">GNOME Color Profile</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/putty-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/putty-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Color Configuration</span></a>
   </div>
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__reference/vim-color.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/color-scheme__ref/vim-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Vim Color Scheme</span></a>
   </div>
 </li>
@@ -291,16 +291,16 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/inkscape__reference/index.html" class="sidebar-item-text sidebar-link">
+            <a href="../../reference/inkscape__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Inkscape Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-6" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/inkscape__reference/bitmap2vector.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/inkscape__ref/bitmap2vector.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Convert Bitmap to Vector</span></a>
   </div>
 </li>
@@ -313,20 +313,43 @@ ul.task-list li input[type="checkbox"] {
 </nav>
 <div id="quarto-sidebar-glass" class="quarto-sidebar-collapse-item" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item"></div>
 <!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar zindex-bottom">
-        
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        <nav id="TOC" role="doc-toc" class="toc-active">
+    <h2 id="toc-title">Table of Contents</h2>
+   
+  <ul>
+  <li><a href="#official-documentation" id="toc-official-documentation" class="nav-link active" data-scroll-target="#official-documentation">Official Documentation</a></li>
+  <li><a href="#my-original-themes" id="toc-my-original-themes" class="nav-link" data-scroll-target="#my-original-themes">My Original Themes</a>
+  <ul>
+  <li><a href="#custom-theme-installation-instructions" id="toc-custom-theme-installation-instructions" class="nav-link" data-scroll-target="#custom-theme-installation-instructions">Custom Theme Installation Instructions</a></li>
+  </ul></li>
+  <li><a href="#custom-theme-tutorial" id="toc-custom-theme-tutorial" class="nav-link" data-scroll-target="#custom-theme-tutorial">Custom Theme Tutorial</a>
+  <ul>
+  <li><a href="#file-location" id="toc-file-location" class="nav-link" data-scroll-target="#file-location">File Location</a></li>
+  <li><a href="#minimal-color-theme-file" id="toc-minimal-color-theme-file" class="nav-link" data-scroll-target="#minimal-color-theme-file">Minimal Color Theme File</a></li>
+  <li><a href="#load-custom-theme" id="toc-load-custom-theme" class="nav-link" data-scroll-target="#load-custom-theme">Load Custom Theme</a>
+  <ul>
+  <li><a href="#load-from-vs-code" id="toc-load-from-vs-code" class="nav-link" data-scroll-target="#load-from-vs-code">Load From VS Code</a></li>
+  <li><a href="#add-to-settings.json" id="toc-add-to-settings.json" class="nav-link" data-scroll-target="#add-to-settings.json">Add to <code>settings.json</code></a></li>
+  </ul></li>
+  </ul></li>
+  <li><a href="#existing-theme" id="toc-existing-theme" class="nav-link" data-scroll-target="#existing-theme">Existing Theme</a></li>
+  <li><a href="#autoformat-.json-in-vim" id="toc-autoformat-.json-in-vim" class="nav-link" data-scroll-target="#autoformat-.json-in-vim">Autoformat .json in Vim</a></li>
+  </ul>
+</nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/inkscape__reference/index.html">Inkscape Reference</a></li><li class="breadcrumb-item"><a href="../../reference/inkscape__reference/bitmap2vector.html">Convert Bitmap to Vector</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/vscode-color.html">VS Code Color Theme</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Convert Bitmap to Vector</h1>
+<h1 class="title">VS Code Color Theme</h1>
+<p class="subtitle lead">How to create a Visual Studio Code color theme file.</p>
 </div>
 
 <div>
   <div class="description">
-    <p>This page describes how to convert a bitmap image to a vector image.</p>
+    <p>A detailed example on how to create and load a Visual Studio Code color theme file</p>
   </div>
 </div>
 
@@ -343,30 +366,162 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="official-docs" class="level2">
-<h2 class="anchored" data-anchor-id="official-docs">Official Docs</h2>
-<p>Click here for the official Inkscape tutorial on the Trace Bitmap feature.</p>
-<p><a class="flux-button _3" href="https://inkscape-manuals.readthedocs.io/en/latest/tracing-an-image.html">Tracing an Image</a></p>
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2025, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   Reference page for creating a VS Code color scheme.
+|____________________________________________________________________-->
+<p><img src="images__color-scheme-reference/vscode-flux-dark-screenshot.png" class="img-fluid"></p>
+<section id="official-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="official-documentation">Official Documentation</h2>
+<p>See this page for a complete list of VS Code color theme properties.</p>
+<p><a href="https://code.visualstudio.com/api/references/theme-color" class="flux-button _3">VS Code Docs: Color Theme Properties</a></p>
 </section>
-<section id="steps" class="level2">
-<h2 class="anchored" data-anchor-id="steps">Steps</h2>
+<section id="my-original-themes" class="level2">
+<h2 class="anchored" data-anchor-id="my-original-themes">My Original Themes</h2>
+<p>See this link for a copy of my personally designed dark and light themes.</p>
+<p><a href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-themes" class="flux-button _3">Lagomorphic Constructs Theme Pack</a></p>
+<section id="custom-theme-installation-instructions" class="level3">
+<h3 class="anchored" data-anchor-id="custom-theme-installation-instructions">Custom Theme Installation Instructions</h3>
+<p>Download the directory <code>flux-bunny-themes</code> and copy it into your VS Code extensions directory.</p>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>OS</th>
+<th>Extensions Directory Path</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Linux</td>
+<td><code>~/.vscode/extensions</code></td>
+</tr>
+<tr class="even">
+<td>Windows</td>
+<td><code>C:\&lt;username&gt;\.vscode\extensions</code></td>
+</tr>
+</tbody>
+</table>
+<p><strong>Note:</strong> If you installed VS Code in a non-conventional way, your extensions directory might exist in a different location than listed above. Verify the location of your extensions directory by selecting <code>Developer: Open Extensions Folder</code> from the command palette.</p>
+<p><img src="./images__color-scheme-reference/vscode-open-extensions-dir.png" class="img-fluid"></p>
+</section>
+</section>
+<section id="custom-theme-tutorial" class="level2">
+<h2 class="anchored" data-anchor-id="custom-theme-tutorial">Custom Theme Tutorial</h2>
+<section id="file-location" class="level3">
+<h3 class="anchored" data-anchor-id="file-location">File Location</h3>
 <ol type="1">
-<li><p>Open Inkscape and import your image, either from <code>File &gt; Import...</code> or drag and drop the image onto the canvas.</p></li>
-<li><p>Press <code>S</code> for the selection tool. Click on the image.</p>
-<p><img src="./images__inkscape-ref/bitmap2vect-1-click-img.png" class="img-fluid"></p></li>
-<li><p>From the top menu, go to <code>Path &gt; Trace Bitmap...</code> (<code>Shift + Alt + B</code>). Select your options and click <code>Apply</code>.</p>
-<p><img src="./images__inkscape-ref/bitmap2vect-2-trace-bitmap.png" class="img-fluid"></p></li>
-<li><p>Go to the <code>Layers</code> panel with <code>Ctrl + Shift + L</code> or from the top menu navigate to <code>Layer &gt; Layers and Objects...</code>.</p></li>
-<li><p>Expand <code>Layer 1</code>. Click the image object and hit the <code>Delete</code> key.</p>
-<p><img src="./images__inkscape-ref/bitmap2vect-3-layers.png" class="img-fluid"></p></li>
-<li><p>Select the newly created path object to see the nodes.</p></li>
-<li><p>To change the color, navigate to <code>Object &gt; Fill and Stroke...</code> (<code>Ctrl + Shift + F</code>) and select your preferred color.</p>
-<p><img src="./images__inkscape-ref/bitmap2vect-5-color.png" class="img-fluid"></p></li>
+<li><p>To install a custom theme, create a new directory in the following location (on a Linux system):</p>
+<pre class="bash"><code>~/.vscode/extensions/</code></pre></li>
+<li><p>This example uses the directory named <code>my-color-themes</code>; you can name this directory whatever you would like.</p>
+<pre class="bash"><code>mkdir ~/.vscode/extensions/my-color-themes</code></pre></li>
+<li><p>In <code>my-color-themes</code> create a file named <code>package.json</code>.</p>
+<pre class="bash"><code># The touch command creates a blank file
+touch ~/.vscode/extensions/my-color-themes/package.json</code></pre></li>
+<li><p>Edit <code>package.json</code> to include this minimal information.</p>
+<p>In this example, we are assuming there to be two theme files, <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>. The <code>"label"</code> property will be displayed in the color theme drop down menu in VS Code.</p>
+<pre class="json"><code>{ "name"          : "my-theme-pack"
+, "displayName"   : "My Theme Pack"
+, "publisher"     : "Your Name"
+, "version"       : "0.0.1"
+, "engines"       : { "vscode": "*" }
+, "contributes"   :
+
+  { "themes"      :
+    [ { "label"   : "My Dark theme"
+      , "uiTheme" : "vs-dark"
+      , "path"    : "./my-dark-theme.json"
+      }
+    , { "label"   : "My Light Theme"
+      , "uiTheme" : "vs"
+      , "path"    : "./my-light-theme.json"
+      }
+    ]
+  }
+}</code></pre></li>
+<li><p>In <code>~/.vscode/extensions/my-color-themes</code> include the files for <code>my-dark-theme.json</code> and <code>my-light-theme.json</code>.</p></li>
 </ol>
+<p><strong>Note:</strong> For the <code>uiTheme</code> property in <code>package.json</code>, use <code>vs-dark</code> for a dark theme and <code>vs</code> for a light theme. This ensures that any undefined properties inherit the correct default colors. In the <code>My Dark Theme</code> example, <code>vs</code> was intentionally selected instead of <code>vs-dark</code>; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.</p>
+<p><img src="images__color-scheme-reference/vscode-wrong-uitheme-example.png" class="img-fluid"></p>
 </section>
-<section id="the-vector-image" class="level2">
-<h2 class="anchored" data-anchor-id="the-vector-image">The Vector Image</h2>
-<p><img src="./images__inkscape-ref/hs-stag-silhouette.svg" class="img-fluid"></p>
+<section id="minimal-color-theme-file" class="level3">
+<h3 class="anchored" data-anchor-id="minimal-color-theme-file">Minimal Color Theme File</h3>
+<p>This text is included in the minimal color theme file <code>my-dark-theme.json</code>.</p>
+<pre class="json"><code>{
+  "$schema"     : "vscode://schemas/color-theme"
+
+, "colors":
+  { "editor.background"                 : "#1c1c1c"
+  , "editor.foreground"                 : "#c6c6c6"
+  }
+
+, "tokenColors":
+  [ { "scope": "comment"
+    , "settings": { "foreground": "#d7af5f" }
+    }
+
+  , { "scope": "string"
+    , "settings": { "foreground": "#af5faf" }
+    }
+  ]
+
+  // These properties override tokenColors
+, "semanticTokenColors":
+  { "variable"      : "#00afd7"
+  }
+}</code></pre>
+</section>
+<section id="load-custom-theme" class="level3">
+<h3 class="anchored" data-anchor-id="load-custom-theme">Load Custom Theme</h3>
+<section id="load-from-vs-code" class="level4">
+<h4 class="anchored" data-anchor-id="load-from-vs-code">Load From VS Code</h4>
+<p>To load the theme, from the search bar type <code>&gt;Color Theme</code> and select <code>Preferences: Color Theme</code>. You can also pull up this search bar with the shortcut <code>Ctrl+Shift+p</code>.</p>
+<p><img src="images__color-scheme-reference/vscode-select-pref-color-theme.png" class="img-fluid"></p>
+<p>The theme <code>My Dark Theme</code> should now display in the drop down options.</p>
+<p><img src="images__color-scheme-reference/vscode-color-theme-selection.png" class="img-fluid"></p>
+<p>You should now see your defined colors in the editor window.</p>
+<p><img src="images__color-scheme-reference/vscode-miminal-theme-example.png" class="img-fluid"></p>
+</section>
+<section id="add-to-settings.json" class="level4">
+<h4 class="anchored" data-anchor-id="add-to-settings.json">Add to <code>settings.json</code></h4>
+<p>You can also add the color theme to your <code>settings.json</code> file:</p>
+<pre class="json"><code>{
+  "workbench.colorTheme": "My Dark Theme"
+}</code></pre>
+</section>
+</section>
+</section>
+<section id="existing-theme" class="level2">
+<h2 class="anchored" data-anchor-id="existing-theme">Existing Theme</h2>
+<p>You may want to start from an existing theme file. You can use the dark theme I have created <a href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/flux-bunny-color-schemes/flux-bunny-dark.json">here</a>. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:</p>
+<pre class="bash"><code>/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes</code></pre>
+</section>
+<section id="autoformat-.json-in-vim" class="level2">
+<h2 class="anchored" data-anchor-id="autoformat-.json-in-vim">Autoformat .json in Vim</h2>
+<p>If the the json file is not formatted, you can use the following Vim command to autoformat the json file:</p>
+<pre class="vim"><code>:%!python3 -m json.tool</code></pre>
 
 
 </section>

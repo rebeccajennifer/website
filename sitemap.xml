@@ -13,51 +13,51 @@
     <lastmod>2026-02-06T13:39:25.001Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/inkscape__reference/index.html</loc>
-    <lastmod>2026-02-06T13:39:25.007Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/index.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx__ref/index.html</loc>
-    <lastmod>2026-02-06T13:43:38.128Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-setup.html</loc>
-    <lastmod>2026-02-06T13:43:38.128Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/environment-setup__reference/application-installation.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/environment-setup__reference/git.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/environment-setup__reference/default-shell.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/gnome-terminal-color.html</loc>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/gnome-terminal-color.html</loc>
     <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/vscode-color.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/vscode-color.html</loc>
+    <lastmod>2026-02-06T14:28:39.902Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/ansi-color-explained.html</loc>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/ansi-color-explained.html</loc>
     <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/vim-color.html</loc>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/vim-color.html</loc>
     <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/ls-colors.html</loc>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/ls-colors.html</loc>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-hello-world.html</loc>
+    <lastmod>2026-02-06T13:43:38.128Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-vm.html</loc>
+    <lastmod>2026-02-06T13:56:37.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/environment-setup__ref/index.html</loc>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/environment-setup__ref/putty.html</loc>
+    <lastmod>2026-02-06T13:56:37.570Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/environment-setup__ref/arduino-cli.html</loc>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/environment-setup__ref/vs-code.html</loc>
+    <lastmod>2026-02-06T13:56:37.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/inkscape__ref/bitmap2vector.html</loc>
     <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
@@ -114,7 +114,7 @@
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-scheme-exporter/index.html</loc>
-    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
+    <lastmod>2026-02-06T13:56:37.569Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/the-book-of-plans/assembly-instructions.html</loc>
@@ -173,48 +173,48 @@
     <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/term-env-var.html</loc>
+    <loc>https://rebeccajennifer.com/reference/inkscape__ref/index.html</loc>
+    <lastmod>2026-02-06T13:39:25.007Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/environment-setup__ref/default-shell.html</loc>
     <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/ansi256-colors.html</loc>
-    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/putty-color.html</loc>
+    <loc>https://rebeccajennifer.com/reference/environment-setup__ref/git.html</loc>
     <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/color-scheme__reference/index.html</loc>
-    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/environment-setup__reference/vs-code.html</loc>
+    <loc>https://rebeccajennifer.com/reference/environment-setup__ref/application-installation.html</loc>
     <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/environment-setup__reference/arduino-cli.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/environment-setup__reference/putty.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/environment-setup__reference/index.html</loc>
-    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-vm.html</loc>
-    <lastmod>2026-02-06T13:43:38.129Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-hello-world.html</loc>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-setup.html</loc>
     <lastmod>2026-02-06T13:43:38.128Z</lastmod>
   </url>
   <url>
-    <loc>https://rebeccajennifer.com/reference/inkscape__reference/bitmap2vector.html</loc>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/index.html</loc>
+    <lastmod>2026-02-06T13:43:38.128Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/index.html</loc>
     <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/term-env-var.html</loc>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/ansi256-colors.html</loc>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/putty-color.html</loc>
+    <lastmod>2026-02-06T13:56:37.569Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/color-scheme__ref/index.html</loc>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/education/comp-org/links__comp-org.html</loc>
