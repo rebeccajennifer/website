@@ -1,9 +1,10 @@
 ---
 title: VS Code Color Theme
-subtitle: How to create a VS Code color theme file.
+subtitle: How to create a Visual Studio Code color theme file.
 description: >
-  A detailed example on how to create and load a VS Code color theme
+  A detailed example on how to create and load a Visual Studio Code color theme
   file
+toc-depth: 6
 order: 4
 ---
 <!--___________________________________________________________________|
@@ -36,9 +37,30 @@ order: 4
 
 ![](images__color-scheme-reference/vscode-flux-dark-screenshot.png)
 
-See [this page](https://code.visualstudio.com/api/references/theme-color) for a complete list of VS Code color theme properties.
+## Official Documentation
 
-See [this link](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes) for a copy of my personally designed dark and light themes.
+See this page for a complete list of VS Code color theme properties.
+
+[VS Code Docs: Color Theme Properties](https://code.visualstudio.com/api/references/theme-color){class="flux-button _3"}
+
+## My Original Themes
+
+See this link for a copy of my personally designed dark and light themes.
+
+[Lagomorphic Constructs Theme Pack](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-themes){class="flux-button _3"}
+
+### Custom Theme Installation Instructions
+
+Download the directory `flux-bunny-themes` and copy it into your VS Code extensions directory.
+
+OS | Extensions Directory Path
+-|-
+Linux   | `~/.vscode/extensions`
+Windows | `C:\<username>\.vscode\extensions`
+
+__Note:__ If you installed VS Code in a non-conventional way, your extensions directory might exist in a different location than listed above. Verify the location of your extensions directory by selecting `Developer: Open Extensions Folder` from the command palette.
+
+![](./images__color-scheme-reference/vscode-open-extensions-dir.png)
 
 ## Custom Theme Tutorial
 
