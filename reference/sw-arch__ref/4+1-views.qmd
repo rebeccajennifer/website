@@ -4,6 +4,7 @@ toc-depth: 6
 description: >
   This page contains notes for the 4+1 view model of software architecture published by Philippe Krutchen in 1995.
 order: 0
+draft: true
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|

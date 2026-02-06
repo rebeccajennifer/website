@@ -4,7 +4,7 @@ description : >
   I've decided to take on another project as a practical way to become a stronger software developer.
 date        : 2026-01-10
 categories  : [9-80-alarm]
-draft       : false
+draft       : true
 order       : 0
 ---
 
