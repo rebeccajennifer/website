@@ -17,7 +17,7 @@ order: 1
 |______________________________________________________________________|
 |                                                                      |
 |----------------------------------------------------------------------|
-|   Copyright 2025, Rebecca Rashkin                                    |
+|   Copyright 2026, Rebecca Rashkin                                    |
 |   -------------------------------                                    |
 |   This code may be copied, redistributed, transformed, or built      |
 |   upon in any format for educational, non-commercial purposes.       |
