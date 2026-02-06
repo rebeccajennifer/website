@@ -51,8 +51,19 @@ Scenarios   | Use cases
 
 ## Logical View
 
+### Answers Question
 What should the system provide to its users?
-Contains structural logic
+
+### This View Contains
+
+- Structural logic
+- High level view of classes and relationships
+
+### Avoid
+
+- Specialization of classes
+- Core affinity
+- Task
 
 ## Process View
 
