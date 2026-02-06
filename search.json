@@ -150,6 +150,106 @@
     ]
   },
   {
+    "objectID": "reference/qnx__ref/index.html",
+    "href": "reference/qnx__ref/index.html",
+    "title": "QNX Reference",
+    "section": "",
+    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide QNX Documentation",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/index.html#official-resources",
+    "href": "reference/qnx__ref/index.html#official-resources",
+    "title": "QNX Reference",
+    "section": "",
+    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide QNX Documentation",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/index.html#note",
+    "href": "reference/qnx__ref/index.html#note",
+    "title": "QNX Reference",
+    "section": "Note",
+    "text": "Note\nOn pages in this section, commands preceded by # indicate that they are run in the terminal window of a running target.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/index.html#qnx-learning-tutorials",
+    "href": "reference/qnx__ref/index.html#qnx-learning-tutorials",
+    "title": "QNX Reference",
+    "section": "QNX Learning Tutorials",
+    "text": "QNX Learning Tutorials",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-setup.html#installation",
+    "href": "reference/qnx__ref/qnx-setup.html#installation",
+    "title": "QNX SDP Installation and Setup",
+    "section": "Installation",
+    "text": "Installation\n\nSign up for myQNX account from https://qnx.com.\nLog in with myQNX. Hover over Developers, then click FREE Non-Commercial License.\n\nIf you click this more than once, you will see this screen after you’ve already requested a license.\n\nYou should receive an email within 30 minutes indicating that your Non-Commercial license is ready.\nGo to https://qnx.com/account/dashboard/.\n\nUnder the Users column, click on the text Click to deploy to users then on the button Deploy. Type the email address used for your QNX account.\n \nFrom myQNX home https://qnx.com/account, click on the QNX Software Center link.\n\nScroll down to the download section and select the appropriate version for your OS.\n\nIn your terminal window, navigate to the downloaded file and make the file executable.\n(linux): cd ~/Downloads\n(linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run\nRun the file to install software center.\n(linux): ./qnx-setup-2.0.4-202501021438-linux.run\nScroll to the bottom of the license agreement by hitting &lt;enter&gt; several times or type q to jump to the bottom.\n\nType y to accept agreement.\n\nSpecify installation path. Hit &lt;enter&gt; to accept the default install location.\nExample:\nSpecify installation path (default: /home/flux/qnx):\nAfter specifying the installation path, your terminal will look similar to this.\n(linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run\n(linux): ./qnx-setup-2.0.4-202501021438-linux.run\nVerifying archive integrity... All good.\nUncompressing QNX Software Center 2.0.4  100%\nPlease type y to accept, n otherwise: y\nCurrent directory: /home/flux/Downloads\nSpecify installation path (default: /home/flux/qnx):\n\nInstalling QNX Software Center into /home/flux/qnx/qnxsoftwarecenter\nUser configuration is stored in /home/flux/.qnx\nLaunching QNX Software Center using /home/flux/qnx/qnxsoftwarecenter/qnxsoftwarecenter\nType your myQNX credentials.\n \nFrom the QNX Software Center window, click Add Installation.\n\nExpand QNX Software Development Platform 8.0, select QNX Software Development Platform 8.0 and click Next on this and the following window.\n \nThe window might show Synchronizing with remote repository, it may take a while for a few minutes. Click Next when the window changes. Click Next for the next couple screens.   \nAccept the license agreement and click Finish.\n\nAfter a few minutes, this window will pop up. Click Close.\n\nFrom QNX Software Center, click Installed and expand QNX Software Development Platform 8.0 to view installed packages.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "QNX SDP Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-setup.html#installed-files",
+    "href": "reference/qnx__ref/qnx-setup.html#installed-files",
+    "title": "QNX SDP Installation and Setup",
+    "section": "Installed Files",
+    "text": "Installed Files\nAfter installation, in your terminal, show the contents of th QNX installation folder.\n(linux): ls ~/qnx800\nhost  qnxsdp-env.bat  qnxsdp-env.sh  target\n\n\n\n\n\n\n\nFile Object\nDescription\n\n\n\n\nhost\nContains list of host binaries included in SDP binaries that run on Linux / Development host that allow you to best interact with QNX SDP\n\n\ntarget\nContains list of binaries, libraries, tools intended to run on QNX target\n\n\nqnxsdp-env.*\nScripts that set up the shell environment for QNX.\n\n\n\n\nShell Setup Script\nBefore executing QNX commands on the command line, you must source the appropriate qnxsdp-env.\n# Sets up shell environment for QNX development\n# Sets environment variables:\n# QNX_HOST=/home/username/qnx800/host/linux/x86_64\n# QNX_TARGET=/home/username/qnx800/target/qnx\n# MAKEFLAGS=-I/home/username/qnx800/target/qnx/usr/include\nsource qnxsdp-env.sh",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "QNX SDP Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-setup.html#qnx-momentix-ide",
+    "href": "reference/qnx__ref/qnx-setup.html#qnx-momentix-ide",
+    "title": "QNX SDP Installation and Setup",
+    "section": "QNX Momentix IDE",
+    "text": "QNX Momentix IDE\nQNX Momentix IDE is the IDE for QNX that comes with QNX Software Center. Follow instructions from the video to install this software.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "QNX SDP Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-setup.html#visual-studio-code-qnx-toolkit",
+    "href": "reference/qnx__ref/qnx-setup.html#visual-studio-code-qnx-toolkit",
+    "title": "QNX SDP Installation and Setup",
+    "section": "Visual Studio Code QNX Toolkit",
+    "text": "Visual Studio Code QNX Toolkit\nThe VS Code QNX Toolkit extension allows you to create and run QNX projects from VS Code.\n\nInstall QNX Toolkit from extensions.\n\nEnsure prerequsites are installed. These are listed in the quickstart guide on the QNX website.\nhttps://www.qnx.com/developers/docs/qnxtoolkit/\nClick the QNX extension in the Activity Bar on the left side of the screen. In the sidebar under QNX COMMANDS expand Configuration and select Open QNX Tookit Walkthrough\n\nFrom the main window, click Edit Settings.\n\nGo to VS Code settings with the shortcut Ctrl + ,.\nExpand Extensions and select QNX Toolkit.\nSet Sdp Path is set to the installation directory and Default Projects Root to the project directory path.\n \nThe corresponding properties in settings.json are listed below.\n\"qnx.sdpPath\"                   : \"/home/username/qnx800\"\n\"qnx.config.defaultProjectsRoot\": \"${userHome}/qnxprojects\"",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "QNX SDP Installation and Setup"
+    ]
+  },
+  {
     "objectID": "reference/environment-setup__reference/application-installation.html",
     "href": "reference/environment-setup__reference/application-installation.html",
     "title": "Application Installation",
@@ -280,162 +380,6 @@
     ]
   },
   {
-    "objectID": "reference/qnx-ref/qnx-hello-world.html",
-    "href": "reference/qnx-ref/qnx-hello-world.html",
-    "title": "Hello World With QNX",
-    "section": "",
-    "text": "Quickstart Guide QNX Toolkit for Visual Studio Code",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Hello World With QNX"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-hello-world.html#official-qnx-resources",
-    "href": "reference/qnx-ref/qnx-hello-world.html#official-qnx-resources",
-    "title": "Hello World With QNX",
-    "section": "",
-    "text": "Quickstart Guide QNX Toolkit for Visual Studio Code",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Hello World With QNX"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-hello-world.html#note",
-    "href": "reference/qnx-ref/qnx-hello-world.html#note",
-    "title": "Hello World With QNX",
-    "section": "Note",
-    "text": "Note\nOn this page, commands preceded by # indicate that the command is run in the terminal window of a running target.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Hello World With QNX"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-hello-world.html#visual-studio-code-create-new-project",
-    "href": "reference/qnx-ref/qnx-hello-world.html#visual-studio-code-create-new-project",
-    "title": "Hello World With QNX",
-    "section": "Visual Studio Code: Create New Project",
-    "text": "Visual Studio Code: Create New Project\n\nIn VS Code, select QNX from the Activity Bar on the left side of the screen.\n\nFrom the left sidebar under QNX COMMANDS select Projects &gt; Create new Project....\n\nType the name of your project, e.g. hello_world.\n\nSelect QNX Recursive Makefile for the template.\n\nSelect c for language.\n\nSelect Executable for build artifact.\n\nA default Hello World program is added to hello_world.c\n#include &lt;stdio.h&gt;\n\n int main() {\n     printf(\"Hello QNX!\\n\");\n     return 0;\n }\nTo compile, right-click on the project folder and go to QNX &gt; Build Active Project.\n\nExample Terminal Output (From VS Code):\n *  Executing task in folder hello_world: make DEBUG=-g OPTIMIZE_TYPE=NONE\n\nmake  -Cnto -fMakefile\nmake[1]: Entering directory '/home/flux/qnx-projects/hello_world/nto'\nmake  -Caarch64 -fMakefile\nmake[2]: Entering directory '/home/flux/qnx-projects/hello_world/nto/aarch64'\nmake -j 1 -Co-le -fMakefile\nmake[3]: Entering directory '/home/flux/qnx-projects/hello_world/nto/aarch64/o-le'\nmake[3]: Nothing to be done for 'first'.\nmake[3]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/aarch64/o-le'\nmake[2]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/aarch64'\nmake  -Cx86_64 -fMakefile\nmake[2]: Entering directory '/home/flux/qnx-projects/hello_world/nto/x86_64'\nmake -j 1 -Co -fMakefile\nmake[3]: Entering directory '/home/flux/qnx-projects/hello_world/nto/x86_64/o'\nmake[3]: Nothing to be done for 'first'.\nmake[3]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/x86_64/o'\nmake[2]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/x86_64'\nmake[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'\n *  Terminal will be reused by tasks, press any key to close it.\n\n\nNote\nThe QNX Recursive Makefile template creates a structure that allows for compilation of different binaries for different architectures.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Hello World With QNX"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-hello-world.html#visual-studio-code-run-project",
-    "href": "reference/qnx-ref/qnx-hello-world.html#visual-studio-code-run-project",
-    "title": "Hello World With QNX",
-    "section": "Visual Studio Code: Run Project",
-    "text": "Visual Studio Code: Run Project\n\nCreate a virtual target through Visual Studio Code.\nVerify that the target created is labeled as default from the QNX TARGETS section of the QNX sidebar.\n\nOpen launch.json in &lt;project-dir&gt;/.vscode and confirm that the qnxtarget property is set to default.\nThe default launch.json created by VS Code should look similar to the following:\n{\n  \"version\": \"2.0.0\",\n  \"configurations\": [\n    {\n      \"type\"          : \"qnx-gdb\",\n      \"request\"       : \"launch\",\n      \"name\"          : \"QNX: hello_world\",\n      \"gdb\"           : \"gdb\",\n      \"program\"       : \"${command:qnx.autodetectBinary}\",\n      \"remotePath\"    : \"hello_world\",\n\n      //________________________________________________________\n      // Verify this value\n      //________________________________________________________\n      \"qnxtarget\"     : \"default\",\n      //________________________________________________________\n\n      \"upload\"        : true,\n      \"stopAtEntry\"   : true,\n      \"preLaunchTask\" : \"${defaultBuildTask}\"\n    }\n  ]\n}\nRight-click on the project folder and go to QNX &gt; Run as QNX Application....\n\nIf everything is configured properly, Hello QNX should print to the debug console.\n\n\n\nErrors When Running Application in Visual Studio Code\n\nError: getaddrinfor EBUSY\nYou may encounter this error if you do not have the arp command.\nError: Cannot launch, check Debug Console for failure message\nError: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -\n\nFrom the terminal panel, select the getip terminal tab. Notice if there is an error that says:\nCannot find arp command.\n\nSolution: Install net-tools:\nsudo apt install net-tools",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Hello World With QNX"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-hello-world.html#command-line-run-project",
-    "href": "reference/qnx-ref/qnx-hello-world.html#command-line-run-project",
-    "title": "Hello World With QNX",
-    "section": "Command Line: Run Project",
-    "text": "Command Line: Run Project\n\nSet up a virtual target using mkqnximage. Make sure to include the --ssh-ident parameter.\nTo run the virtual target in the terminal, from the directory where the target was created, execute this command:\nCommand (From Linux Host):\nmkqnximage --run\nExample Output (From Running Target):\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n...\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\nFrom the terminal of the running target, execute ifconfig to determine its IP address. The address appears in the vtnet0 section after inet; in this example, it is 192.168.122.146.\nExample Output (From Running Target):\n# ifconfig\nenc0: flags=0&lt;&gt; metric 0 mtu 1536\n        groups: enc\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\nlo0: flags=8049&lt;UP,LOOPBACK,RUNNING,MULTICAST&gt; metric 0 mtu 16384\n        options=680003&lt;RXCSUM,TXCSUM,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6&gt;\n        inet 127.0.0.1 netmask 0xff000000\n        inet6 ::1 prefixlen 128\n        inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2\n        groups: lo\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\npflog0: flags=0&lt;&gt; metric 0 mtu 33144\n        groups: pflog\npfsync0: flags=0&lt;&gt; metric 0 mtu 1500\n        syncpeer: 0.0.0.0 maxupd: 128 defer: off\n        syncok: 1\n        groups: pfsync\nvtnet0: flags=8863&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1500\n        options=4c07bb&lt;RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,TSO6,LRO,VLAN_HWTSO,LINKSTATE,TXCSUM_IPV6&gt;\n        ether 52:54:00:75:e8:8f\n        inet6 fe80::5054:ff:fe75:e88f%vtnet0 prefixlen 64 scopeid 0x5\n        inet 192.168.122.146 netmask 0xffffff00 broadcast 192.168.122.255\n        media: Ethernet autoselect (10Gbase-T &lt;full-duplex&gt;)\n        status: active\n        nd6 options=1&lt;PERFORMNUD&gt;\nOpen a new terminal window on the Linux host and navigate to the output executable of your project. It might be in the following location:\n&lt;project-dir&gt;/nto/x86_64/o\nLocate the executable. If the project was build with VS Code, the executable usually has the same name as the project directory and has no file extension. In this case, it is named hello_world.\nExample Commands (From Linux Host):\n(linux host): cd ~/qnx-projects/hello_world/nto/x86_64/o # Navigate to output directory\n(linux host): ls # List contents of directory\nhello_world  hello_world.dep  hello_world.o  Makefile\nFrom the Linux host, use scp (secure copy) to copy the executable to the running target.\nExample Command (From Linux Host):\n(linux host): scp hello_world root@192.168.122.146:/data/home/root\nExample Output (From Linux Host):\nhello_world                   100%   10KB  21.8MB/s   00:00\nOn the running target, navigate to /data/home/root and execute ls. You should see your hello_world executable.\nIn this screenshot, the left pane is the running target, and the right pane is the Linux host computer.\n\nFrom the target terminal, run the executable.\nExample Command (From Running Target):\n./hello_world\nExample Output (From Running Target):\nHello QNX!\nScreenshot:\n\n\n\nNotes\n\nVisual Studio Code Run: Executable Location\nWhen running the program through VS Code, the executable is placed in the /tmp directory of the target.\nTo verify, connect to the target either through VS Code, or on the command line. Navigate to /tmp and list the directory contents.\nCommands On Running Target:\n# ls /tmp\nOutput On Running Target:\nhello_world keep_files",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Hello World With QNX"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-vm.html",
-    "href": "reference/qnx-ref/qnx-vm.html",
-    "title": "Set Up a Virtual QNX Target",
-    "section": "",
-    "text": "mkqnximage",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Set Up a Virtual QNX Target"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-vm.html#official-qnx-docs",
-    "href": "reference/qnx-ref/qnx-vm.html#official-qnx-docs",
-    "title": "Set Up a Virtual QNX Target",
-    "section": "",
-    "text": "mkqnximage",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Set Up a Virtual QNX Target"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-vm.html#note",
-    "href": "reference/qnx-ref/qnx-vm.html#note",
-    "title": "Set Up a Virtual QNX Target",
-    "section": "Note",
-    "text": "Note\nOn this page, commands preceded by # indicate that the command is run in the terminal window of a running target.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Set Up a Virtual QNX Target"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-vm.html#prerequisites",
-    "href": "reference/qnx-ref/qnx-vm.html#prerequisites",
-    "title": "Set Up a Virtual QNX Target",
-    "section": "Prerequisites",
-    "text": "Prerequisites\n\nInstall QNX SDP 8.0.\nCreate an SSH Key.\nInstall the following packages via apt.\nsudo apt install qemu-system-x86 qemu-utils\nsudo apt install bridge-utils\nsudo apt install libvirt-clients libvirt-daemon-system\nsudo apt install net-tools",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Set Up a Virtual QNX Target"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-vm.html#create-target-using-bash",
-    "href": "reference/qnx-ref/qnx-vm.html#create-target-using-bash",
-    "title": "Set Up a Virtual QNX Target",
-    "section": "Create Target Using Bash",
-    "text": "Create Target Using Bash\n\nRun bash if you aren’t already.\nbash\nSource qnxsdp-env.sh from your QNX installation.\nsource ~/qnx800/qnxsdp-env.sh\nExample Output:\nQNX_HOST=/home/flux/qnx800/host/linux/x86_64\nQNX_TARGET=/home/flux/qnx800/target/qnx\nMAKEFLAGS=-I/home/flux/qnx800/target/qnx/usr/include\nCheck that mkqnximage is found.\nwhich mkqnximage\nExample Output:\n/home/flux/qnx800/host/common/bin/mkqnximage\nCreate a directory to hold the VM image.\nmkdir ~/qnx-vm\ncd ~/qnx-vm\nRun mkqnximage to build the VM. Use --run to run the target.\nmkqnximage                             \\\n--type=qemu                            \\\n--arch=x86_64                          \\\n--ssh-ident=$HOME/.ssh/id_ed25519.pub  \\\n--run\nUpon connection to the virtual target, the following will be printed to the terminal screen.\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n\n\niPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+3EFCACB0+3EF0ACB0 CA00\n\n\n\nBooting from ROM..\nnon UEFI or UEFI+CSM boot\nACPI table not found (0x4746434d)\noverriding mask for controller 2, vector_base 0\n---&gt; Starting slogger2\n---&gt; Starting PCI Services\n---&gt; Starting fsevmgr\n# ---&gt; Starting devb\n---&gt; Mounting file systems\nPath=0 - Intel 82371SB\n target=0 lun=0     Direct-Access(0) -          QEMU HARDDISK    Rev: 2.5+\nPath=1 - Intel 82371SB\n target=0 lun=0            CD-ROM(5) - QEMU     QEMU DVD-ROM     Rev: 2.5+\n---&gt; Mounting file systems\n---&gt; Starting Networking\n---&gt; Starting sshd\n---&gt; Starting misc\n\nTo exit QEMU, type &lt;ctrl&gt;a x\n\nProcess count:22\nStartup complete\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\nPress &lt;Enter&gt; to bring up the prompt, indicated by #. Enter the command uname -a to confirm that the target is running.\nExample:\n# uname -a\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\n\n\nRun Target After Creation\nAfter creating the target, navigate to the target directory (in this case ~/qnx-vm) and execute the following command. Always source qnxsdp-env.sh before invoking mkqnximage.\nmkqnximage --run\n\n\nErrors When Running mkqnximage\n\nError: Cannot Find brctl\nSolution: Install bridge-utils:\nsudo apt install bridge-utils\n\n\nError: SSH Identity File\nYou may encounter this error:\nTo allow root ssh, you need an ssh identity file. You probably want to use an option such as: --ssh-ident=~/.ssh/id_ed25519.pub\nSolution: Include the --ssh-ident parameter in the mkqnximage command.\n--ssh-ident=$HOME/.ssh/id_ed25519.pub\nIf you do not already have an SSH key set up, follow instructions from this page.\n\n\nError: Unable to Run vmrun\nYou may encounter this error if you use --type=vmware\nUnable to run vmrun. If you have VMWare Workstation Pro installed\nyou will need to add its directory to your PATH. If you are using\nVMWare Workstation Player you will have to open the virtual\nmachine local/vmware_files/vmware.vmx directly.\nSolution: Install VMware. Note that in this example we are using qemu instead of VMware.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Set Up a Virtual QNX Target"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-vm.html#create-target-using-visual-studio-code-qnx-toolkit",
-    "href": "reference/qnx-ref/qnx-vm.html#create-target-using-visual-studio-code-qnx-toolkit",
-    "title": "Set Up a Virtual QNX Target",
-    "section": "Create Target Using Visual Studio Code QNX Toolkit",
-    "text": "Create Target Using Visual Studio Code QNX Toolkit\n\nInstall the QNX Toolkit extension.\nSelect the QNX extension from the activity bar. From QNX TARGETS, click the button labeled Add new QNX Virtual Target.\n\nSelect the virtual machine type. In this example we are using qemu.\n\nSelect the architecture.\n\nFor Enter extra mkqnximage options, add --ssh-ident=/path/to/public/ssh/key.\nMake sure to use the full path, i.e. /home/username instead of ~. If you do not have an SSH Key set up already, follow instructions here.\n\nIn the sidebar under QNX TARGETS, a new target should be visible.\n\nThe following should be printed to the terminal window.\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n\n\niPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+3EFCACB0+3EF0ACB0 C0\n\n\n\nBooting from ROM..\nnon UEFI or UEFI+CSM boot\nACPI table not found (0x4746434d)\noverriding mask for controller 2, vector_base 0\n---&gt; Starting slogger2\n---&gt; Starting PCI Services\n---&gt; Starting fsevmgr\n# ---&gt; Starting devb\n---&gt; Mounting file systems\nPath=0 - Intel 82371SB\n target=0 lun=0     Direct-Access(0) -          QEMU HARDDISK    Rev: 2.+\nPath=1 - Intel 82371SB\n target=0 lun=0            CD-ROM(5) - QEMU     QEMU DVD-ROM     Rev: 2.+\n---&gt; Mounting file systems\n---&gt; Starting Networking\n---&gt; Starting sshd\n---&gt; Starting misc\n\nTo exit QEMU, type &lt;ctrl&gt;a x\n\nProcess count:22\nStartup complete\nQNX qemu-qnx800-x86_64 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\n---\n\n#\nAt the prompt, type uname -a to confirm that you are running the virtual target.\n# uname -a\nQNX qemu-qnx800-x86_64 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\n# ---\n\n\nErrors With Virtual Target Creation in Visual Studio Code\n\nError: Non-Existent SSH Key File\nYou may encounter the following error in the terminal window:\n--ssh-ident refers to non-existent file: ~/.ssh/id_ed25519.pub\nSolution: If you are confident that the path provided for the public key is correct, use the full path instead of using ~ for home.\nExample:\n--ssh-ident=/home/flux/id_ed25519.pub\n\n\nError: dnsmasq Not Running\nYou may encounter this error in the terminal:\ndnsmasq not running on br0 for DHCP service\nYou might be better off installing libvirt so you can use virbr0.\nTo do this, run:\n\n    sudo apt install libvirt-clients libvirt-daemon-system\n\nor whatever is appropriate for your system.\n\nNeed to configure networking for QEMU\nUnable to configure networking please run:\n    /home/flux/qnx800/host/linux/x86_64/../../common/mkqnximage/qemu/check-net\nCommand exited with error code: 2\nSolution: Install libvirt:\nsudo apt install libvirt-clients libvirt-daemon-system",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "Set Up a Virtual QNX Target"
-    ]
-  },
-  {
     "objectID": "reference/color-scheme__reference/gnome-terminal-color.html",
     "href": "reference/color-scheme__reference/gnome-terminal-color.html",
     "title": "GNOME Color Profile",
@@ -490,66 +434,53 @@
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html",
     "href": "reference/color-scheme__reference/vscode-color.html",
-    "title": "VS Code Custom Color Theme Example",
+    "title": "VS Code Color Theme",
     "section": "",
     "text": "See this page for a complete list of VS Code color theme properties.\nSee this link for a copy of my personally designed dark and light themes.",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Custom Color Theme Example"
-    ]
-  },
-  {
-    "objectID": "reference/color-scheme__reference/vscode-color.html#install-flux-bunny-themes",
-    "href": "reference/color-scheme__reference/vscode-color.html#install-flux-bunny-themes",
-    "title": "VS Code Custom Color Theme Example",
-    "section": "Install Flux Bunny Themes",
-    "text": "Install Flux Bunny Themes\nTo install my custom color themes, follow these instructions.\n\nDownload or clone the directory flux-bunny-color-schemes from here:\nFlux Bunny Color Schemes\nSave this directory to your user extensions directory, often located in the following directories:\nLinux Path\n/home/username/.vscode/extensions\nWindows Path\nC:\\Users\\username\\.vscode\\extensions\nYou can delete flux-bunny-template.json from this directory.\nIn VS Code, use the shortcut Ctrl+Shift+P to go to the Command Palette. Type Color Theme and select the option for Color Theme. You should see Flux Bunny Lite under light themes and Flux Bunny Dark under dark themes.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "Color Scheme Reference",
-      "VS Code Custom Color Theme Example"
+      "VS Code Color Theme"
     ]
   },
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html#custom-theme-tutorial",
     "href": "reference/color-scheme__reference/vscode-color.html#custom-theme-tutorial",
-    "title": "VS Code Custom Color Theme Example",
+    "title": "VS Code Color Theme",
     "section": "Custom Theme Tutorial",
     "text": "Custom Theme Tutorial\n\nFile Location\n\nTo install a custom theme, create a new directory in the following location (on a Linux system):\n~/.vscode/extensions/\nThis example uses the directory named my-color-themes; you can name this directory whatever you would like.\nmkdir ~/.vscode/extensions/my-color-themes\nIn my-color-themes create a file named package.json.\n# The touch command creates a blank file\ntouch ~/.vscode/extensions/my-color-themes/package.json\nEdit package.json to include this minimal information.\nIn this example, we are assuming there to be two theme files, my-dark-theme.json and my-light-theme.json. The \"label\" property will be displayed in the color theme drop down menu in VS Code.\n{ \"name\"          : \"my-theme-pack\"\n, \"displayName\"   : \"My Theme Pack\"\n, \"publisher\"     : \"Your Name\"\n, \"version\"       : \"0.0.1\"\n, \"engines\"       : { \"vscode\": \"*\" }\n, \"contributes\"   :\n\n  { \"themes\"      :\n    [ { \"label\"   : \"My Dark theme\"\n      , \"uiTheme\" : \"vs-dark\"\n      , \"path\"    : \"./my-dark-theme.json\"\n      }\n    , { \"label\"   : \"My Light Theme\"\n      , \"uiTheme\" : \"vs\"\n      , \"path\"    : \"./my-light-theme.json\"\n      }\n    ]\n  }\n}\nIn ~/.vscode/extensions/my-color-themes include the files for my-dark-theme.json and my-light-theme.json.\n\nNote: For the uiTheme property in package.json, use vs-dark for a dark theme and vs for a light theme. This ensures that any undefined properties inherit the correct default colors. In the My Dark Theme example, vs was intentionally selected instead of vs-dark; consequently, only the defined elements appear dark, while the rest default to the light theme pictured below.\n\n\n\nMinimal Color Theme File\nThis text is included in the minimal color theme file my-dark-theme.json.\n{\n  \"$schema\"     : \"vscode://schemas/color-theme\"\n\n, \"colors\":\n  { \"editor.background\"                 : \"#1c1c1c\"\n  , \"editor.foreground\"                 : \"#c6c6c6\"\n  }\n\n, \"tokenColors\":\n  [ { \"scope\": \"comment\"\n    , \"settings\": { \"foreground\": \"#d7af5f\" }\n    }\n\n  , { \"scope\": \"string\"\n    , \"settings\": { \"foreground\": \"#af5faf\" }\n    }\n  ]\n\n  // These properties override tokenColors\n, \"semanticTokenColors\":\n  { \"variable\"      : \"#00afd7\"\n  }\n}\n\n\nLoad Custom Theme\n\nLoad From VS Code\nTo load the theme, from the search bar type &gt;Color Theme and select Preferences: Color Theme. You can also pull up this search bar with the shortcut Ctrl+Shift+p.\n\nThe theme My Dark Theme should now display in the drop down options.\n\nYou should now see your defined colors in the editor window.\n\n\n\nAdd to settings.json\nYou can also add the color theme to your settings.json file:\n{\n  \"workbench.colorTheme\": \"My Dark Theme\"\n}",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Custom Color Theme Example"
+      "VS Code Color Theme"
     ]
   },
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html#existing-theme",
     "href": "reference/color-scheme__reference/vscode-color.html#existing-theme",
-    "title": "VS Code Custom Color Theme Example",
+    "title": "VS Code Color Theme",
     "section": "Existing Theme",
     "text": "Existing Theme\nYou may want to start from an existing theme file. You can use the dark theme I have created here. You can also copy an existing theme from the defaults. Depending on how VS Code was installed, default theme files might be found here:\n/snap/code/current/usr/share/code/resources/app/extensions/theme-*/themes",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Custom Color Theme Example"
+      "VS Code Color Theme"
     ]
   },
   {
     "objectID": "reference/color-scheme__reference/vscode-color.html#autoformat-.json-in-vim",
     "href": "reference/color-scheme__reference/vscode-color.html#autoformat-.json-in-vim",
-    "title": "VS Code Custom Color Theme Example",
+    "title": "VS Code Color Theme",
     "section": "Autoformat .json in Vim",
     "text": "Autoformat .json in Vim\nIf the the json file is not formatted, you can use the following Vim command to autoformat the json file:\n:%!python3 -m json.tool",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference",
-      "VS Code Custom Color Theme Example"
+      "VS Code Color Theme"
     ]
   },
   {
@@ -1630,7 +1561,7 @@
     "href": "projects/color-scheme-exporter/index.html#how-to-use-output",
     "title": "Color Scheme Exporter",
     "section": "How To Use Output",
-    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVisual Studio Code Terminal\nCopy the output and save to your settings.json file.\n\n\nVisual Studio Code\nFollow instructions here to add your theme file as a package to VS Code.",
+    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVS Code Terminal\nCopy the output and save to your settings.json file.",
     "crumbs": [
       "Projects",
       "Color Scheme Exporter"
@@ -1737,6 +1668,50 @@
     "crumbs": [
       "Projects",
       "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/index.html",
+    "href": "projects/9-80-alarm-clock/index.html",
+    "title": "The 9-80 Alarm Clock",
+    "section": "",
+    "text": "I work a 9-80 schedule, meaning I work 80 hours over 9 working days and take every other Friday off. This creates a problem when setting my nightstand alarm, since I haven’t been able to find a standalone alarm clock that lets me change the alarm time based not only on the day, but also on the week.\nI have decided to design and build such a device myself, not only for the utility of the end product and its direct application in my life, but also as an opportunity to put into practice RTOS development and the implementation of the 4+1 model for software architecture.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock"
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/index.html#motivation",
+    "href": "projects/9-80-alarm-clock/index.html#motivation",
+    "title": "The 9-80 Alarm Clock",
+    "section": "",
+    "text": "I work a 9-80 schedule, meaning I work 80 hours over 9 working days and take every other Friday off. This creates a problem when setting my nightstand alarm, since I haven’t been able to find a standalone alarm clock that lets me change the alarm time based not only on the day, but also on the week.\nI have decided to design and build such a device myself, not only for the utility of the end product and its direct application in my life, but also as an opportunity to put into practice RTOS development and the implementation of the 4+1 model for software architecture.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock"
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/index.html#platform",
+    "href": "projects/9-80-alarm-clock/index.html#platform",
+    "title": "The 9-80 Alarm Clock",
+    "section": "Platform",
+    "text": "Platform\nI am designing this product with QNX due to its common use in industry and the availability of a free non-commercial license. I will be using a Raspberry Pi target and the DS323 real-time clock module that I used in ColorClock.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock"
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/index.html#the-development-process",
+    "href": "projects/9-80-alarm-clock/index.html#the-development-process",
+    "title": "The 9-80 Alarm Clock",
+    "section": "The Development Process",
+    "text": "The Development Process\nJust like ColorClock, I will be documenting my process as I learn the framework, design the software, and prototype the hardware.\nBlog",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock"
     ]
   },
   {
@@ -2378,111 +2353,11 @@
     "href": "reference/color-scheme__reference/index.html",
     "title": "Color Scheme Reference",
     "section": "",
-    "text": "Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI Color Codes Explained\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI 256 Color Table\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTERM Environment Variable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLS_COLORS & dircolors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVS Code Custom Color Theme Example\n\n\nHere you’ll find instructions for installing my custom VS Code themes, plus a walkthrough on how to make and load your own.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGNOME Color Profile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPuTTY Color Configuration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Color Scheme\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "Color brings me joy, and integrating color into my development environment brings an extra level of satisfaction to coding.\n\n\n\n\n\n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n  \n  \n  \n  \n  \n  \n  \n  \n\n\n\n\nThis set of pages is a collection of resources I’ve created in my efforts to unify color schemes across multiple terminal and coding environments.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI Color Codes Explained\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nANSI 256 Color Table\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nTERM Environment Variable\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nLS_COLORS & dircolors\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVS Code Color Theme\n\n\nA detailed example on how to create and load a VS Code color theme file\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nGNOME Color Profile\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nPuTTY Color Configuration\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVim Color Scheme\n\n\n\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Reference",
       "The Reference Library",
       "Color Scheme Reference"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-setup.html#installation",
-    "href": "reference/qnx-ref/qnx-setup.html#installation",
-    "title": "QNX SDP Installation and Setup",
-    "section": "Installation",
-    "text": "Installation\n\nSign up for myQNX account from https://qnx.com.\nLog in with myQNX. Hover over Developers, then click FREE Non-Commercial License.\n\nIf you click this more than once, you will see this screen after you’ve already requested a license.\n\nYou should receive an email within 30 minutes indicating that your Non-Commercial license is ready.\nGo to https://qnx.com/account/dashboard/.\n\nUnder the Users column, click on the text Click to deploy to users then on the button Deploy. Type the email address used for your QNX account.\n \nFrom myQNX home https://qnx.com/account, click on the QNX Software Center link.\n\nScroll down to the download section and select the appropriate version for your OS.\n\nIn your terminal window, navigate to the downloaded file and make the file executable.\n(linux): cd ~/Downloads\n(linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run\nRun the file to install software center.\n(linux): ./qnx-setup-2.0.4-202501021438-linux.run\nScroll to the bottom of the license agreement by hitting &lt;enter&gt; several times or type q to jump to the bottom.\n\nType y to accept agreement.\n\nSpecify installation path. Hit &lt;enter&gt; to accept the default install location.\nExample:\nSpecify installation path (default: /home/flux/qnx):\nAfter specifying the installation path, your terminal will look similar to this.\n(linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run\n(linux): ./qnx-setup-2.0.4-202501021438-linux.run\nVerifying archive integrity... All good.\nUncompressing QNX Software Center 2.0.4  100%\nPlease type y to accept, n otherwise: y\nCurrent directory: /home/flux/Downloads\nSpecify installation path (default: /home/flux/qnx):\n\nInstalling QNX Software Center into /home/flux/qnx/qnxsoftwarecenter\nUser configuration is stored in /home/flux/.qnx\nLaunching QNX Software Center using /home/flux/qnx/qnxsoftwarecenter/qnxsoftwarecenter\nType your myQNX credentials.\n \nFrom the QNX Software Center window, click Add Installation.\n\nExpand QNX Software Development Platform 8.0, select QNX Software Development Platform 8.0 and click Next on this and the following window.\n \nThe window might show Synchronizing with remote repository, it may take a while for a few minutes. Click Next when the window changes. Click Next for the next couple screens.   \nAccept the license agreement and click Finish.\n\nAfter a few minutes, this window will pop up. Click Close.\n\nFrom QNX Software Center, click Installed and expand QNX Software Development Platform 8.0 to view installed packages.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "QNX SDP Installation and Setup"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-setup.html#installed-files",
-    "href": "reference/qnx-ref/qnx-setup.html#installed-files",
-    "title": "QNX SDP Installation and Setup",
-    "section": "Installed Files",
-    "text": "Installed Files\nAfter installation, in your terminal, show the contents of th QNX installation folder.\n(linux): ls ~/qnx800\nhost  qnxsdp-env.bat  qnxsdp-env.sh  target\n\n\n\n\n\n\n\nFile Object\nDescription\n\n\n\n\nhost\nContains list of host binaries included in SDP binaries that run on Linux / Development host that allow you to best interact with QNX SDP\n\n\ntarget\nContains list of binaries, libraries, tools intended to run on QNX target\n\n\nqnxsdp-env.*\nScripts that set up the shell environment for QNX.\n\n\n\n\nShell Setup Script\nBefore executing QNX commands on the command line, you must source the appropriate qnxsdp-env.\n# Sets up shell environment for QNX development\n# Sets environment variables:\n# QNX_HOST=/home/username/qnx800/host/linux/x86_64\n# QNX_TARGET=/home/username/qnx800/target/qnx\n# MAKEFLAGS=-I/home/username/qnx800/target/qnx/usr/include\nsource qnxsdp-env.sh",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "QNX SDP Installation and Setup"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-setup.html#qnx-momentix-ide",
-    "href": "reference/qnx-ref/qnx-setup.html#qnx-momentix-ide",
-    "title": "QNX SDP Installation and Setup",
-    "section": "QNX Momentix IDE",
-    "text": "QNX Momentix IDE\nQNX Momentix IDE is the IDE for QNX that comes with QNX Software Center. Follow instructions from the video to install this software.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "QNX SDP Installation and Setup"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/qnx-setup.html#visual-studio-code-qnx-toolkit",
-    "href": "reference/qnx-ref/qnx-setup.html#visual-studio-code-qnx-toolkit",
-    "title": "QNX SDP Installation and Setup",
-    "section": "Visual Studio Code QNX Toolkit",
-    "text": "Visual Studio Code QNX Toolkit\nThe VS Code QNX Toolkit extension allows you to create and run QNX projects from VS Code.\n\nInstall QNX Toolkit from extensions.\n\nEnsure prerequsites are installed. These are listed in the quickstart guide on the QNX website.\nhttps://www.qnx.com/developers/docs/qnxtoolkit/\nClick the QNX extension in the Activity Bar on the left side of the screen. In the sidebar under QNX COMMANDS expand Configuration and select Open QNX Tookit Walkthrough\n\nFrom the main window, click Edit Settings.\n\nGo to VS Code settings with the shortcut Ctrl + ,.\nExpand Extensions and select QNX Toolkit.\nSet Sdp Path is set to the installation directory and Default Projects Root to the project directory path.\n \nThe corresponding properties in settings.json are listed below.\n\"qnx.sdpPath\"                   : \"/home/username/qnx800\"\n\"qnx.config.defaultProjectsRoot\": \"${userHome}/qnxprojects\"",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference",
-      "QNX SDP Installation and Setup"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/index.html",
-    "href": "reference/qnx-ref/index.html",
-    "title": "QNX Reference",
-    "section": "",
-    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide QNX Documentation",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/index.html#official-resources",
-    "href": "reference/qnx-ref/index.html#official-resources",
-    "title": "QNX Reference",
-    "section": "",
-    "text": "The official QNX documentation provides authoritative reference material and guides for working with the QNX RTOS.\nQNX Quickstart Guide QNX Documentation",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/index.html#note",
-    "href": "reference/qnx-ref/index.html#note",
-    "title": "QNX Reference",
-    "section": "Note",
-    "text": "Note\nOn pages in this section, commands preceded by # indicate that they are run in the terminal window of a running target.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference"
-    ]
-  },
-  {
-    "objectID": "reference/qnx-ref/index.html#qnx-learning-tutorials",
-    "href": "reference/qnx-ref/index.html#qnx-learning-tutorials",
-    "title": "QNX Reference",
-    "section": "QNX Learning Tutorials",
-    "text": "QNX Learning Tutorials",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "QNX Reference"
     ]
   },
   {
@@ -2702,6 +2577,162 @@
       "Reference",
       "The Reference Library",
       "New Environment Setup"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-vm.html",
+    "href": "reference/qnx__ref/qnx-vm.html",
+    "title": "Set Up a Virtual QNX Target",
+    "section": "",
+    "text": "mkqnximage",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Set Up a Virtual QNX Target"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-vm.html#official-qnx-docs",
+    "href": "reference/qnx__ref/qnx-vm.html#official-qnx-docs",
+    "title": "Set Up a Virtual QNX Target",
+    "section": "",
+    "text": "mkqnximage",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Set Up a Virtual QNX Target"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-vm.html#note",
+    "href": "reference/qnx__ref/qnx-vm.html#note",
+    "title": "Set Up a Virtual QNX Target",
+    "section": "Note",
+    "text": "Note\nOn this page, commands preceded by # indicate that the command is run in the terminal window of a running target.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Set Up a Virtual QNX Target"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-vm.html#prerequisites",
+    "href": "reference/qnx__ref/qnx-vm.html#prerequisites",
+    "title": "Set Up a Virtual QNX Target",
+    "section": "Prerequisites",
+    "text": "Prerequisites\n\nInstall QNX SDP 8.0.\nCreate an SSH Key.\nInstall the following packages via apt.\nsudo apt install qemu-system-x86 qemu-utils\nsudo apt install bridge-utils\nsudo apt install libvirt-clients libvirt-daemon-system\nsudo apt install net-tools",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Set Up a Virtual QNX Target"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-vm.html#create-target-using-bash",
+    "href": "reference/qnx__ref/qnx-vm.html#create-target-using-bash",
+    "title": "Set Up a Virtual QNX Target",
+    "section": "Create Target Using Bash",
+    "text": "Create Target Using Bash\n\nRun bash if you aren’t already.\nbash\nSource qnxsdp-env.sh from your QNX installation.\nsource ~/qnx800/qnxsdp-env.sh\nExample Output:\nQNX_HOST=/home/flux/qnx800/host/linux/x86_64\nQNX_TARGET=/home/flux/qnx800/target/qnx\nMAKEFLAGS=-I/home/flux/qnx800/target/qnx/usr/include\nCheck that mkqnximage is found.\nwhich mkqnximage\nExample Output:\n/home/flux/qnx800/host/common/bin/mkqnximage\nCreate a directory to hold the VM image.\nmkdir ~/qnx-vm\ncd ~/qnx-vm\nRun mkqnximage to build the VM. Use --run to run the target.\nmkqnximage                             \\\n--type=qemu                            \\\n--arch=x86_64                          \\\n--ssh-ident=$HOME/.ssh/id_ed25519.pub  \\\n--run\nUpon connection to the virtual target, the following will be printed to the terminal screen.\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n\n\niPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+3EFCACB0+3EF0ACB0 CA00\n\n\n\nBooting from ROM..\nnon UEFI or UEFI+CSM boot\nACPI table not found (0x4746434d)\noverriding mask for controller 2, vector_base 0\n---&gt; Starting slogger2\n---&gt; Starting PCI Services\n---&gt; Starting fsevmgr\n# ---&gt; Starting devb\n---&gt; Mounting file systems\nPath=0 - Intel 82371SB\n target=0 lun=0     Direct-Access(0) -          QEMU HARDDISK    Rev: 2.5+\nPath=1 - Intel 82371SB\n target=0 lun=0            CD-ROM(5) - QEMU     QEMU DVD-ROM     Rev: 2.5+\n---&gt; Mounting file systems\n---&gt; Starting Networking\n---&gt; Starting sshd\n---&gt; Starting misc\n\nTo exit QEMU, type &lt;ctrl&gt;a x\n\nProcess count:22\nStartup complete\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\nPress &lt;Enter&gt; to bring up the prompt, indicated by #. Enter the command uname -a to confirm that the target is running.\nExample:\n# uname -a\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\n\n\nRun Target After Creation\nAfter creating the target, navigate to the target directory (in this case ~/qnx-vm) and execute the following command. Always source qnxsdp-env.sh before invoking mkqnximage.\nmkqnximage --run\n\n\nErrors When Running mkqnximage\n\nError: Cannot Find brctl\nSolution: Install bridge-utils:\nsudo apt install bridge-utils\n\n\nError: SSH Identity File\nYou may encounter this error:\nTo allow root ssh, you need an ssh identity file. You probably want to use an option such as: --ssh-ident=~/.ssh/id_ed25519.pub\nSolution: Include the --ssh-ident parameter in the mkqnximage command.\n--ssh-ident=$HOME/.ssh/id_ed25519.pub\nIf you do not already have an SSH key set up, follow instructions from this page.\n\n\nError: Unable to Run vmrun\nYou may encounter this error if you use --type=vmware\nUnable to run vmrun. If you have VMWare Workstation Pro installed\nyou will need to add its directory to your PATH. If you are using\nVMWare Workstation Player you will have to open the virtual\nmachine local/vmware_files/vmware.vmx directly.\nSolution: Install VMware. Note that in this example we are using qemu instead of VMware.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Set Up a Virtual QNX Target"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-vm.html#create-target-using-visual-studio-code-qnx-toolkit",
+    "href": "reference/qnx__ref/qnx-vm.html#create-target-using-visual-studio-code-qnx-toolkit",
+    "title": "Set Up a Virtual QNX Target",
+    "section": "Create Target Using Visual Studio Code QNX Toolkit",
+    "text": "Create Target Using Visual Studio Code QNX Toolkit\n\nInstall the QNX Toolkit extension.\nSelect the QNX extension from the activity bar. From QNX TARGETS, click the button labeled Add new QNX Virtual Target.\n\nSelect the virtual machine type. In this example we are using qemu.\n\nSelect the architecture.\n\nFor Enter extra mkqnximage options, add --ssh-ident=/path/to/public/ssh/key.\nMake sure to use the full path, i.e. /home/username instead of ~. If you do not have an SSH Key set up already, follow instructions here.\n\nIn the sidebar under QNX TARGETS, a new target should be visible.\n\nThe following should be printed to the terminal window.\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n\n\niPXE (https://ipxe.org) 00:03.0 CA00 PCI2.10 PnP PMM+3EFCACB0+3EF0ACB0 C0\n\n\n\nBooting from ROM..\nnon UEFI or UEFI+CSM boot\nACPI table not found (0x4746434d)\noverriding mask for controller 2, vector_base 0\n---&gt; Starting slogger2\n---&gt; Starting PCI Services\n---&gt; Starting fsevmgr\n# ---&gt; Starting devb\n---&gt; Mounting file systems\nPath=0 - Intel 82371SB\n target=0 lun=0     Direct-Access(0) -          QEMU HARDDISK    Rev: 2.+\nPath=1 - Intel 82371SB\n target=0 lun=0            CD-ROM(5) - QEMU     QEMU DVD-ROM     Rev: 2.+\n---&gt; Mounting file systems\n---&gt; Starting Networking\n---&gt; Starting sshd\n---&gt; Starting misc\n\nTo exit QEMU, type &lt;ctrl&gt;a x\n\nProcess count:22\nStartup complete\nQNX qemu-qnx800-x86_64 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\n---\n\n#\nAt the prompt, type uname -a to confirm that you are running the virtual target.\n# uname -a\nQNX qemu-qnx800-x86_64 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\n# ---\n\n\nErrors With Virtual Target Creation in Visual Studio Code\n\nError: Non-Existent SSH Key File\nYou may encounter the following error in the terminal window:\n--ssh-ident refers to non-existent file: ~/.ssh/id_ed25519.pub\nSolution: If you are confident that the path provided for the public key is correct, use the full path instead of using ~ for home.\nExample:\n--ssh-ident=/home/flux/id_ed25519.pub\n\n\nError: dnsmasq Not Running\nYou may encounter this error in the terminal:\ndnsmasq not running on br0 for DHCP service\nYou might be better off installing libvirt so you can use virbr0.\nTo do this, run:\n\n    sudo apt install libvirt-clients libvirt-daemon-system\n\nor whatever is appropriate for your system.\n\nNeed to configure networking for QEMU\nUnable to configure networking please run:\n    /home/flux/qnx800/host/linux/x86_64/../../common/mkqnximage/qemu/check-net\nCommand exited with error code: 2\nSolution: Install libvirt:\nsudo apt install libvirt-clients libvirt-daemon-system",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Set Up a Virtual QNX Target"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-hello-world.html",
+    "href": "reference/qnx__ref/qnx-hello-world.html",
+    "title": "Hello World With QNX",
+    "section": "",
+    "text": "Quickstart Guide QNX Toolkit for Visual Studio Code",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Hello World With QNX"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-hello-world.html#official-qnx-resources",
+    "href": "reference/qnx__ref/qnx-hello-world.html#official-qnx-resources",
+    "title": "Hello World With QNX",
+    "section": "",
+    "text": "Quickstart Guide QNX Toolkit for Visual Studio Code",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Hello World With QNX"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-hello-world.html#note",
+    "href": "reference/qnx__ref/qnx-hello-world.html#note",
+    "title": "Hello World With QNX",
+    "section": "Note",
+    "text": "Note\nOn this page, commands preceded by # indicate that the command is run in the terminal window of a running target.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Hello World With QNX"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-hello-world.html#visual-studio-code-create-new-project",
+    "href": "reference/qnx__ref/qnx-hello-world.html#visual-studio-code-create-new-project",
+    "title": "Hello World With QNX",
+    "section": "Visual Studio Code: Create New Project",
+    "text": "Visual Studio Code: Create New Project\n\nIn VS Code, select QNX from the Activity Bar on the left side of the screen.\n\nFrom the left sidebar under QNX COMMANDS select Projects &gt; Create new Project....\n\nType the name of your project, e.g. hello_world.\n\nSelect QNX Recursive Makefile for the template.\n\nSelect c for language.\n\nSelect Executable for build artifact.\n\nA default Hello World program is added to hello_world.c\n#include &lt;stdio.h&gt;\n\n int main() {\n     printf(\"Hello QNX!\\n\");\n     return 0;\n }\nTo compile, right-click on the project folder and go to QNX &gt; Build Active Project.\n\nExample Terminal Output (From VS Code):\n *  Executing task in folder hello_world: make DEBUG=-g OPTIMIZE_TYPE=NONE\n\nmake  -Cnto -fMakefile\nmake[1]: Entering directory '/home/flux/qnx-projects/hello_world/nto'\nmake  -Caarch64 -fMakefile\nmake[2]: Entering directory '/home/flux/qnx-projects/hello_world/nto/aarch64'\nmake -j 1 -Co-le -fMakefile\nmake[3]: Entering directory '/home/flux/qnx-projects/hello_world/nto/aarch64/o-le'\nmake[3]: Nothing to be done for 'first'.\nmake[3]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/aarch64/o-le'\nmake[2]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/aarch64'\nmake  -Cx86_64 -fMakefile\nmake[2]: Entering directory '/home/flux/qnx-projects/hello_world/nto/x86_64'\nmake -j 1 -Co -fMakefile\nmake[3]: Entering directory '/home/flux/qnx-projects/hello_world/nto/x86_64/o'\nmake[3]: Nothing to be done for 'first'.\nmake[3]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/x86_64/o'\nmake[2]: Leaving directory '/home/flux/qnx-projects/hello_world/nto/x86_64'\nmake[1]: Leaving directory '/home/flux/qnx-projects/hello_world/nto'\n *  Terminal will be reused by tasks, press any key to close it.\n\n\nNote\nThe QNX Recursive Makefile template creates a structure that allows for compilation of different binaries for different architectures.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Hello World With QNX"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-hello-world.html#visual-studio-code-run-project",
+    "href": "reference/qnx__ref/qnx-hello-world.html#visual-studio-code-run-project",
+    "title": "Hello World With QNX",
+    "section": "Visual Studio Code: Run Project",
+    "text": "Visual Studio Code: Run Project\n\nCreate a virtual target through Visual Studio Code.\nVerify that the target created is labeled as default from the QNX TARGETS section of the QNX sidebar.\n\nOpen launch.json in &lt;project-dir&gt;/.vscode and confirm that the qnxtarget property is set to default.\nThe default launch.json created by VS Code should look similar to the following:\n{\n  \"version\": \"2.0.0\",\n  \"configurations\": [\n    {\n      \"type\"          : \"qnx-gdb\",\n      \"request\"       : \"launch\",\n      \"name\"          : \"QNX: hello_world\",\n      \"gdb\"           : \"gdb\",\n      \"program\"       : \"${command:qnx.autodetectBinary}\",\n      \"remotePath\"    : \"hello_world\",\n\n      //________________________________________________________\n      // Verify this value\n      //________________________________________________________\n      \"qnxtarget\"     : \"default\",\n      //________________________________________________________\n\n      \"upload\"        : true,\n      \"stopAtEntry\"   : true,\n      \"preLaunchTask\" : \"${defaultBuildTask}\"\n    }\n  ]\n}\nRight-click on the project folder and go to QNX &gt; Run as QNX Application....\n\nIf everything is configured properly, Hello QNX should print to the debug console.\n\n\n\nErrors When Running Application in Visual Studio Code\n\nError: getaddrinfor EBUSY\nYou may encounter this error if you do not have the arp command.\nError: Cannot launch, check Debug Console for failure message\nError: Cannot connect to qemu-qnx800-x86_64/-: Error: getaddrinfo EBUSY -\n\nFrom the terminal panel, select the getip terminal tab. Notice if there is an error that says:\nCannot find arp command.\n\nSolution: Install net-tools:\nsudo apt install net-tools",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Hello World With QNX"
+    ]
+  },
+  {
+    "objectID": "reference/qnx__ref/qnx-hello-world.html#command-line-run-project",
+    "href": "reference/qnx__ref/qnx-hello-world.html#command-line-run-project",
+    "title": "Hello World With QNX",
+    "section": "Command Line: Run Project",
+    "text": "Command Line: Run Project\n\nSet up a virtual target using mkqnximage. Make sure to include the --ssh-ident parameter.\nTo run the virtual target in the terminal, from the directory where the target was created, execute this command:\nCommand (From Linux Host):\nmkqnximage --run\nExample Output (From Running Target):\nSeaBIOS (version 1.16.3-debian-1.16.3-2)\n...\nQNX noname 8.0.0 2025/07/30-19:24:08EDT x86pc x86_64\nFrom the terminal of the running target, execute ifconfig to determine its IP address. The address appears in the vtnet0 section after inet; in this example, it is 192.168.122.146.\nExample Output (From Running Target):\n# ifconfig\nenc0: flags=0&lt;&gt; metric 0 mtu 1536\n        groups: enc\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\nlo0: flags=8049&lt;UP,LOOPBACK,RUNNING,MULTICAST&gt; metric 0 mtu 16384\n        options=680003&lt;RXCSUM,TXCSUM,LINKSTATE,RXCSUM_IPV6,TXCSUM_IPV6&gt;\n        inet 127.0.0.1 netmask 0xff000000\n        inet6 ::1 prefixlen 128\n        inet6 fe80::1%lo0 prefixlen 64 scopeid 0x2\n        groups: lo\n        nd6 options=21&lt;PERFORMNUD,AUTO_LINKLOCAL&gt;\npflog0: flags=0&lt;&gt; metric 0 mtu 33144\n        groups: pflog\npfsync0: flags=0&lt;&gt; metric 0 mtu 1500\n        syncpeer: 0.0.0.0 maxupd: 128 defer: off\n        syncok: 1\n        groups: pfsync\nvtnet0: flags=8863&lt;UP,BROADCAST,RUNNING,SIMPLEX,MULTICAST&gt; metric 0 mtu 1500\n        options=4c07bb&lt;RXCSUM,TXCSUM,VLAN_MTU,VLAN_HWTAGGING,JUMBO_MTU,VLAN_HWCSUM,TSO4,TSO6,LRO,VLAN_HWTSO,LINKSTATE,TXCSUM_IPV6&gt;\n        ether 52:54:00:75:e8:8f\n        inet6 fe80::5054:ff:fe75:e88f%vtnet0 prefixlen 64 scopeid 0x5\n        inet 192.168.122.146 netmask 0xffffff00 broadcast 192.168.122.255\n        media: Ethernet autoselect (10Gbase-T &lt;full-duplex&gt;)\n        status: active\n        nd6 options=1&lt;PERFORMNUD&gt;\nOpen a new terminal window on the Linux host and navigate to the output executable of your project. It might be in the following location:\n&lt;project-dir&gt;/nto/x86_64/o\nLocate the executable. If the project was build with VS Code, the executable usually has the same name as the project directory and has no file extension. In this case, it is named hello_world.\nExample Commands (From Linux Host):\n(linux host): cd ~/qnx-projects/hello_world/nto/x86_64/o # Navigate to output directory\n(linux host): ls # List contents of directory\nhello_world  hello_world.dep  hello_world.o  Makefile\nFrom the Linux host, use scp (secure copy) to copy the executable to the running target.\nExample Command (From Linux Host):\n(linux host): scp hello_world root@192.168.122.146:/data/home/root\nExample Output (From Linux Host):\nhello_world                   100%   10KB  21.8MB/s   00:00\nOn the running target, navigate to /data/home/root and execute ls. You should see your hello_world executable.\nIn this screenshot, the left pane is the running target, and the right pane is the Linux host computer.\n\nFrom the target terminal, run the executable.\nExample Command (From Running Target):\n./hello_world\nExample Output (From Running Target):\nHello QNX!\nScreenshot:\n\n\n\nNotes\n\nVisual Studio Code Run: Executable Location\nWhen running the program through VS Code, the executable is placed in the /tmp directory of the target.\nTo verify, connect to the target either through VS Code, or on the command line. Navigate to /tmp and list the directory contents.\nCommands On Running Target:\n# ls /tmp\nOutput On Running Target:\nhello_world keep_files",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "QNX Reference",
+      "Hello World With QNX"
     ]
   },
   {

@@ -2,226 +2,230 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://rebeccajennifer.com/index.html</loc>
-    <lastmod>2026-01-12T23:51:53.994Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.001Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/education/comp-org/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.500Z</lastmod>
+    <lastmod>2026-02-06T13:55:02.854Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/education/comp-org/sample-exams__comp-org.html</loc>
-    <lastmod>2026-01-04T01:39:37.500Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.001Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/inkscape__reference/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.507Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.007Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/index.html</loc>
-    <lastmod>2025-12-27T04:44:02.610Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/index.html</loc>
+    <lastmod>2026-02-06T13:43:38.128Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-setup.html</loc>
+    <lastmod>2026-02-06T13:43:38.128Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__reference/application-installation.html</loc>
-    <lastmod>2026-01-04T01:39:37.503Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__reference/git.html</loc>
-    <lastmod>2026-01-02T20:20:03.273Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__reference/default-shell.html</loc>
-    <lastmod>2025-12-27T04:44:02.597Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx-ref/qnx-hello-world.html</loc>
-    <lastmod>2026-01-11T18:07:07.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx-ref/qnx-vm.html</loc>
-    <lastmod>2026-01-11T18:07:07.526Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/gnome-terminal-color.html</loc>
-    <lastmod>2026-01-04T01:39:37.503Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/vscode-color.html</loc>
-    <lastmod>2026-01-13T02:09:51.499Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/ansi-color-explained.html</loc>
-    <lastmod>2025-12-27T04:44:02.588Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/vim-color.html</loc>
-    <lastmod>2025-12-27T04:44:02.596Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/ls-colors.html</loc>
-    <lastmod>2025-12-27T04:44:02.595Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/contact.html</loc>
-    <lastmod>2025-12-24T20:05:45.382Z</lastmod>
+    <lastmod>2026-02-06T13:39:24.985Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/index.html</loc>
-    <lastmod>2025-12-27T04:44:02.587Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-05-12__goodbye-windows/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-05-28__persistence-makes-progress/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-09-04__we-did-it/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-06-15__smooth-operation/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-07-13__the-optimal-solution/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-04-12__build-flags-please/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-01-28__color-clock-design-is-shaping-up/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-06-23__another-futile-effort/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.256Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/the-book-of-plans/how-to-use.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-scheme-exporter/index.html</loc>
-    <lastmod>2026-01-12T23:54:48.027Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/the-book-of-plans/assembly-instructions.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/the-book-of-plans/index.html</loc>
-    <lastmod>2026-01-11T18:17:53.685Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/projects/9-80-alarm-clock/index.html</loc>
+    <lastmod>2026-02-06T13:43:38.118Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-02-03__an-iterative-approach/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-03-20__throw-some-shade/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-08-18__its-alive/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-08-16__mind-parens/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-02-23__navigating-vision-vs-feasibility/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.501Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.256Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2022-08-06__test-early-test-often-refactor/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/color-clock/blog__color-clock/2024-01-10__tale-of-the-lost-serial-ports/index.html</loc>
-    <lastmod>2025-12-24T21:06:55.255Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.004Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/projects/index.html</loc>
-    <lastmod>2026-01-11T18:19:52.156Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/term-env-var.html</loc>
-    <lastmod>2025-12-27T04:44:02.596Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/ansi256-colors.html</loc>
-    <lastmod>2025-12-27T04:44:02.589Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/putty-color.html</loc>
-    <lastmod>2025-12-27T04:44:02.596Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/color-scheme__reference/index.html</loc>
-    <lastmod>2025-12-27T04:44:02.595Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx-ref/qnx-setup.html</loc>
-    <lastmod>2026-01-11T18:07:07.525Z</lastmod>
-  </url>
-  <url>
-    <loc>https://rebeccajennifer.com/reference/qnx-ref/index.html</loc>
-    <lastmod>2026-01-11T18:07:07.525Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.005Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__reference/vs-code.html</loc>
-    <lastmod>2025-12-27T04:44:02.610Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__reference/arduino-cli.html</loc>
-    <lastmod>2025-12-27T04:44:02.597Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__reference/putty.html</loc>
-    <lastmod>2025-12-27T04:44:02.610Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__reference/index.html</loc>
-    <lastmod>2026-01-04T01:39:37.503Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-vm.html</loc>
+    <lastmod>2026-02-06T13:43:38.129Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-hello-world.html</loc>
+    <lastmod>2026-02-06T13:43:38.128Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/inkscape__reference/bitmap2vector.html</loc>
-    <lastmod>2026-01-04T01:39:37.503Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.006Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/education/comp-org/links__comp-org.html</loc>
-    <lastmod>2026-01-04T01:39:37.500Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.001Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/education/comp-org/worksheet-answers__comp-org.html</loc>
-    <lastmod>2026-01-04T01:39:37.500Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.001Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/education/comp-org/how-to-learn.html</loc>
-    <lastmod>2026-01-04T01:39:37.500Z</lastmod>
+    <lastmod>2026-02-06T13:39:25.001Z</lastmod>
   </url>
 </urlset>

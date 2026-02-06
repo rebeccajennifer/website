@@ -82,9 +82,9 @@ ul.task-list li input[type="checkbox"] {
     }
 
     const options = {
-      valueNames: ['listing-date','listing-title','listing-author','listing-image','listing-description','listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
+      valueNames: ['listing-categories',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
       
-      searchColumns: ["listing-date","listing-title","listing-author","listing-image","listing-description","listing-categories"],
+      searchColumns: ["listing-categories"],
     };
 
     window['quarto-listings'] = window['quarto-listings'] || {};
@@ -135,7 +135,7 @@ window.Quarto = {
 <link rel="stylesheet" href="../../flux-bunny-style.css">
 <meta property="og:title" content="The 9-80 Alarm Clock – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="assets/photos-general-assets/flux-grass-line-art-black-square.png">
+<meta property="og:image" content="https://rebeccajennifer.com/projects/9-80-alarm-clock/assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
 </head>
 
@@ -397,12 +397,6 @@ window.Quarto = {
           </a> 
       </div>
       <ul id="quarto-sidebar-section-6" class="collapse list-unstyled sidebar-section depth3 ">  
-          <li class="sidebar-item">
-  <div class="sidebar-item-container"> 
-  <a href="../../projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html" class="sidebar-item-text sidebar-link">
- <span class="menu-text">It Begins…</span></a>
-  </div>
-</li>
       </ul>
   </li>
       </ul>
@@ -416,7 +410,7 @@ window.Quarto = {
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
         
-    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(1)</span></div><div class="category" data-category="OS04MC1hbGFybQ==">9-80-alarm <span class="quarto-category-count">(1)</span></div></div></div>
+    <h5 class="quarto-listing-category-title">Categories</h5><div class="quarto-listing-category category-default"><div class="category" data-category="">All <span class="quarto-category-count">(0)</span></div></div></div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
@@ -494,36 +488,7 @@ window.Quarto = {
 
 <div class="quarto-listing quarto-listing-container-default" id="listing-listing">
 <div class="list quarto-listing-default">
-<div class="quarto-post image-right" data-index="0" data-categories="OS04MC1hbGFybQ==" data-listing-date-sort="1768028400000" data-listing-file-modified-sort="1768090739745" data-listing-date-modified-sort="NaN" data-listing-reading-time-sort="1" data-listing-word-count-sort="44">
-<div class="thumbnail"><a href="../../projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html" class="no-external">
 
-<div class="listing-item-img-placeholder card-img-top" >&nbsp;</div>
-
-</a></div>
-<div class="body">
-<h3 class="no-anchor listing-title">
-<a href="../../projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html" class="no-external">It Begins…</a>
-</h3>
-<div class="listing-categories">
-
-<div class="listing-category" onclick="window.quartoListingCategory('OS04MC1hbGFybQ=='); return false;">9-80-alarm</div>
-
-</div>
-<div class="delink listing-description"><a href="../../projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html" class="no-external">
-<p>I’ve decided to take on another project as a practical way to become a stronger software developer.</p>
-</a></div>
-</div>
-<div class="metadata">
-<a href="../../projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html" class="no-external">
-<div class="listing-date">
-Jan 10, 2026
-</div>
-<div class="listing-author">
-Rebecca Jennifer Rashkin
-</div>
-</a>
-</div>
-</div>
 </div>
 <div class="listing-no-matching d-none">No matching items</div>
 </div></main> <!-- /main -->
@@ -629,7 +594,7 @@ Rebecca Jennifer Rashkin
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp('/' + window.location.host + '/');
+        var filterRegex = new RegExp("https:\/\/rebeccajennifer\.com");
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

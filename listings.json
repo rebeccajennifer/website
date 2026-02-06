@@ -27,8 +27,16 @@
     "items": [
       "/reference/environment-setup__reference/index.html",
       "/reference/color-scheme__reference/index.html",
-      "/reference/qnx-ref/index.html",
+      "/reference/qnx__ref/index.html",
       "/reference/inkscape__reference/index.html"
+    ]
+  },
+  {
+    "listing": "/reference/qnx__ref/index.html",
+    "items": [
+      "/reference/qnx__ref/qnx-setup.html",
+      "/reference/qnx__ref/qnx-vm.html",
+      "/reference/qnx__ref/qnx-hello-world.html"
     ]
   },
   {
@@ -37,6 +45,10 @@
       "/projects/the-book-of-plans/how-to-use.html",
       "/projects/the-book-of-plans/assembly-instructions.html"
     ]
+  },
+  {
+    "listing": "/projects/9-80-alarm-clock/index.html",
+    "items": []
   },
   {
     "listing": "/projects/color-clock/blog__color-clock/index.html",
@@ -76,14 +88,6 @@
     ]
   },
   {
-    "listing": "/reference/qnx-ref/index.html",
-    "items": [
-      "/reference/qnx-ref/qnx-setup.html",
-      "/reference/qnx-ref/qnx-vm.html",
-      "/reference/qnx-ref/qnx-hello-world.html"
-    ]
-  },
-  {
     "listing": "/reference/environment-setup__reference/index.html",
     "items": [
       "/reference/environment-setup__reference/application-installation.html",
@@ -93,5 +97,9 @@
       "/reference/environment-setup__reference/arduino-cli.html",
       "/reference/environment-setup__reference/putty.html"
     ]
+  },
+  {
+    "listing": "/reference/sw-arch__ref/index.html",
+    "items": []
   }
 ]
