@@ -1,51 +1,85 @@
 ---
 title       : It Begins...
 description : >
-  I've decided to take on another project as a practical way to practice RTOS design and implementation.
-date        : 2026-01-10
-categories  : [9-80-alarm]
-draft       : true
+  The first steps in my pursuit of well-rested off-Friday mornings was to define the requirements and high level system design.
+date        : 2026-02-06
+image       : ../../images__9-80-alarm/use-case__9-80-alarm__20260206.png
+draft       : false
 order       : 0
 ---
 
 ## Requirements
 
-These are my preliminary requirements.
+Software design begins with defining requirements and identifying high-level system components.
 
-Options to set:
+### User Settings
 
-- Current time
-- Current week (on or off)
-- Normal weekday alarm
-- On-Friday alarm
+Setting | Description
+-|-
+Time and Date | Set the current time.
+Week Schedule | Toggle the week type (on or off Friday).
+Weekday Alarm | Configure the standard daily alarm.
+Friday Alarm  | Set a specific alarm for "On-Friday" schedules.
 
-Nice-to-haves:
+### Hardware Components
 
-- Built-in light that brightens gradually as the alarm time approaches
+Functionality | Description
+-|-
+Core Platform | Raspberry Pi.
+Audio         | Speaker for alarm.
+Visual        | LED display for time readout.
+Timing        | Real-time clock module for accurate timekeeping.
+
+### Software Architecture
+
+Functionality | Description
+-|-
+Main Driver         | Coordinates system operations.
+Time Controller     | Manages clock logic and synchronization.
+Display Controller  | Handles visual output to the LED.
+Alarm Manager       | Controls setting and triggering logic.
+
+### Nice-to-Haves
+
+Feature | Description
+-|-
+Gradual Wake Light  | Integrated lighting that brightens as the alarm approaches.
+Nightlight Mode     | Multi-purpose illumination similar to the ColorClock project.
+
+### User Experience Considerations
+
+Consideration | Notes
+-|-
+Simplified Interaction  | Prioritize intuitive user programming while maintaining a minimal set of physical controls.
+Audio Balance           | Select an alarm sound that is effective for waking but remains pleasant rather than abrasive.
 
 ## The Environment
 
 I decided to use QNX due to the accessibility to the software development package, and its utility in industry. QNX is a common framework used in automotive design and they offer a [free license](/reference/qnx__ref/qnx-setup.qmd) for non-commercial purposes.
 
-So, my first step in the pursuit of well rested off-Friday mornings was to download the QNX Software Development package and get a [Hello World](/reference/qnx__ref/qnx-hello-world.qmd) project working. And of course documenting the process for future reference 👩‍🏫
+Keeping in line with my learning style, the first steps to learning the QNX framework was to get a minimal "[Hello World](/reference/qnx__ref/qnx-hello-world.qmd)" project working. And of course documenting the process for future reference 👩‍🏫
+
+![](/reference/qnx__ref/images__qnx-ref/3__hello-world-img/3__hello-world-06-term-loc.png)
 
 ## Let's Do This the Right Way
 
-Now that I have gained some familiarity with the development environment I need to take a step back and think about my development process.
+Now that I have gained some familiarity with the development environment, I need to take a step back and think about the design process.
 
 Since this project is a skill-building exercise, I want to focus on software design and follow the proper steps for architecting the system. I aim to create the software architecture using the 4+1 View Model as described in Philippe Kruchten's 1995 IEEE paper,
 ["The 4+1 View Model of Architecture"](https://www.researchgate.net/publication/220018231_The_41_View_Model_of_Architecture).
 
-## Model Views
+## The First View: The Use Case
 
-### Use Case Diagram
+While complex systems often require multiple use case diagrams, this project's simplicity warrants only a single illustration.
 
+<figure>
 ![](../../images__9-80-alarm/use-case__9-80-alarm__20260206.png)
-
-## User Experience Considerations
-
-- Intuitive programming, yet simple controls
-
-
+<figcaption>
+This diagram illustrates the interactions between the primary actor (User) and the various hardware peripherals and software modules that define the system's functionality.
+</figcaption>
+</figure>
 
 
+## Next Steps
+
+I have yet to implement a minimal application on a physical target, so in the coming weeks I plan to run Hello World on a Raspberry Pi. Additionally, the next step in software design will be to diagram the Logical View using UML.

@@ -30,13 +30,13 @@
 #______________________________________________________________________#
 #______________________________________________________________________#
 
-# email: "rebeccajenniferrabbit@gmail.com"
 # Re-render posts only when a change to the source file is made.
 freeze: auto
 
 # Enable banner style title blocks.
 title-block-banner: false
 title-block-style: default
+categories  : [9-80-alarm]
 
 # My author information.
 author:
