@@ -1614,6 +1614,220 @@
     ]
   },
   {
+    "objectID": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html",
+    "href": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html",
+    "title": "It Begins…",
+    "section": "",
+    "text": "Software design begins with defining requirements and identifying high-level system components.\n\n\n\n\n\nSetting\nDescription\n\n\n\n\nTime and Date\nSet the current time.\n\n\nWeek Schedule\nToggle the week type (on or off Friday).\n\n\nWeekday Alarm\nConfigure the standard daily alarm.\n\n\nFriday Alarm\nSet a specific alarm for “On-Friday” schedules.\n\n\n\n\n\n\n\n\n\nFunctionality\nDescription\n\n\n\n\nCore Platform\nRaspberry Pi.\n\n\nAudio\nSpeaker for alarm.\n\n\nVisual\nLED display for time readout.\n\n\nTiming\nReal-time clock module for accurate timekeeping.\n\n\n\n\n\n\n\n\n\nFunctionality\nDescription\n\n\n\n\nMain Driver\nCoordinates system operations.\n\n\nTime Controller\nManages clock logic and synchronization.\n\n\nDisplay Controller\nHandles visual output to the LED.\n\n\nAlarm Manager\nControls setting and triggering logic.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nDescription\n\n\n\n\nGradual Wake Light\nIntegrated lighting that brightens as the alarm approaches.\n\n\nNightlight Mode\nMulti-purpose illumination similar to the ColorClock project.\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsideration\nNotes\n\n\n\n\nSimplified Interaction\nPrioritize intuitive user programming while maintaining a minimal set of physical controls.\n\n\nAudio Balance\nSelect an alarm sound that is effective for waking but remains pleasant rather than abrasive.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock",
+      "A Quest For Rest",
+      "It Begins..."
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#requirements",
+    "href": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#requirements",
+    "title": "It Begins…",
+    "section": "",
+    "text": "Software design begins with defining requirements and identifying high-level system components.\n\n\n\n\n\nSetting\nDescription\n\n\n\n\nTime and Date\nSet the current time.\n\n\nWeek Schedule\nToggle the week type (on or off Friday).\n\n\nWeekday Alarm\nConfigure the standard daily alarm.\n\n\nFriday Alarm\nSet a specific alarm for “On-Friday” schedules.\n\n\n\n\n\n\n\n\n\nFunctionality\nDescription\n\n\n\n\nCore Platform\nRaspberry Pi.\n\n\nAudio\nSpeaker for alarm.\n\n\nVisual\nLED display for time readout.\n\n\nTiming\nReal-time clock module for accurate timekeeping.\n\n\n\n\n\n\n\n\n\nFunctionality\nDescription\n\n\n\n\nMain Driver\nCoordinates system operations.\n\n\nTime Controller\nManages clock logic and synchronization.\n\n\nDisplay Controller\nHandles visual output to the LED.\n\n\nAlarm Manager\nControls setting and triggering logic.\n\n\n\n\n\n\n\n\n\n\n\n\n\nFeature\nDescription\n\n\n\n\nGradual Wake Light\nIntegrated lighting that brightens as the alarm approaches.\n\n\nNightlight Mode\nMulti-purpose illumination similar to the ColorClock project.\n\n\n\n\n\n\n\n\n\n\n\n\n\nConsideration\nNotes\n\n\n\n\nSimplified Interaction\nPrioritize intuitive user programming while maintaining a minimal set of physical controls.\n\n\nAudio Balance\nSelect an alarm sound that is effective for waking but remains pleasant rather than abrasive.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock",
+      "A Quest For Rest",
+      "It Begins..."
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#the-environment",
+    "href": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#the-environment",
+    "title": "It Begins…",
+    "section": "The Environment",
+    "text": "The Environment\nI decided to use QNX due to the accessibility to the software development package, and its utility in industry. QNX is a common framework used in automotive design and they offer a free license for non-commercial purposes.\nKeeping in line with my learning style, the first steps to learning the QNX framework was to get a minimal “Hello World” project working. And of course documenting the process for future reference 👩‍🏫",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock",
+      "A Quest For Rest",
+      "It Begins..."
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#lets-do-this-the-right-way",
+    "href": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#lets-do-this-the-right-way",
+    "title": "It Begins…",
+    "section": "Let’s Do This the Right Way",
+    "text": "Let’s Do This the Right Way\nNow that I have gained some familiarity with the development environment, I need to take a step back and think about the design process.\nSince this project is a skill-building exercise, I want to focus on software design and follow the proper steps for architecting the system. I aim to create the software architecture using the 4+1 View Model as described in Philippe Kruchten’s 1995 IEEE paper, “The 4+1 View Model of Architecture”.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock",
+      "A Quest For Rest",
+      "It Begins..."
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#the-first-view-the-use-case",
+    "href": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#the-first-view-the-use-case",
+    "title": "It Begins…",
+    "section": "The First View: The Use Case",
+    "text": "The First View: The Use Case\nWhile complex systems often require multiple use case diagrams, this project’s simplicity warrants only a single illustration.\n\n\n\nThis diagram illustrates the interactions between the primary actor (User) and the various hardware peripherals and software modules that define the system’s functionality.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock",
+      "A Quest For Rest",
+      "It Begins..."
+    ]
+  },
+  {
+    "objectID": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#next-steps",
+    "href": "projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html#next-steps",
+    "title": "It Begins…",
+    "section": "Next Steps",
+    "text": "Next Steps\nI have yet to implement a minimal application on a physical target, so in the coming weeks I plan to run Hello World on a Raspberry Pi. Additionally, the next step in software design will be to diagram the Logical View using UML.",
+    "crumbs": [
+      "Projects",
+      "The 9-80 Alarm Clock",
+      "A Quest For Rest",
+      "It Begins..."
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/index.html",
+    "href": "projects/the-book-of-plans/index.html",
+    "title": "The Book of Plans",
+    "section": "",
+    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/index.html#why-three-months",
+    "href": "projects/the-book-of-plans/index.html#why-three-months",
+    "title": "The Book of Plans",
+    "section": "Why Three Months?",
+    "text": "Why Three Months?\nThree months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.\n\n\n\nHere is a sample layout of one of the pages.",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/index.html#about-the-code",
+    "href": "projects/the-book-of-plans/index.html#about-the-code",
+    "title": "The Book of Plans",
+    "section": "About the Code",
+    "text": "About the Code\nThe Book of Plans was created in Python using the modules svgwrite and PdfWriter. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.\nSource Code",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/index.html#full-preview",
+    "href": "projects/the-book-of-plans/index.html#full-preview",
+    "title": "The Book of Plans",
+    "section": "Full Preview",
+    "text": "Full Preview\nThis file serves as a preview of the planner; it it not formatted for printing. For printing instructions, visit How to Assemble The Book of Plans.\nPlanner Preview",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/index.html#instructions",
+    "href": "projects/the-book-of-plans/index.html#instructions",
+    "title": "The Book of Plans",
+    "section": "Instructions",
+    "text": "Instructions",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html",
+    "href": "projects/the-book-of-plans/assembly-instructions.html",
+    "title": "How to Assemble The Book of Plans",
+    "section": "",
+    "text": "The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below.\nThese steps are admittedly tedious. I can print and prepare the pages for you and mail them for a fee. Contact me if you’d like to arrange this.",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans",
+      "How to Assemble The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
+    "title": "How to Assemble The Book of Plans",
+    "section": "Required Tools",
+    "text": "Required Tools\nPaper cutter\n1/2 sheet 3 hole punch\n3-ring mini binder\n\nNote\nThese products are just examples of tools you can use to assemble The Book of Plans. I’m not an Amazon affiliate and don’t earn anything from these links.",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans",
+      "How to Assemble The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#instructions",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#instructions",
+    "title": "How to Assemble The Book of Plans",
+    "section": "Instructions",
+    "text": "Instructions\n\nHole Punch Settings\nSet your holes to punch at the following measurements to fit in a 3-ring mini binder:\n\n\n\nGeneral Notes\n\nPrint, cut and stack each individual PDF separately to ensure proper page ordering.\nYou can mix single- and double-sided printing. I print everything single-sided except the nightly log, which I print double-sided. Do whatever works for you.\n\n\n\nSingle-Sided Assembly Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\nfalse\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Take the stack on the left, and put it right on top of the stack on the right.\nHole punch the packet.\nInsert into binder.\n\n\n\nDouble-Sided Print Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\n\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\ntrue, set to flip on short edge &lt;- This will likely be different from the default print double-sided setting.\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Think of this as an open book. Take the left stack and fold it over the right stack like you are closing a book.\nHole punch the packet.\nInsert into binder.",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans",
+      "How to Assemble The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
+    "href": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
+    "title": "How to Assemble The Book of Plans",
+    "section": "The PDFs",
+    "text": "The PDFs\n\nPDF Descriptions\n\n\n\n\n\n\n\n\nFile Name\nPrint Quantity\nDescription\n\n\n\n\n__0__main-intr.pdf\nPrint one copy for the entire quarter.\nContains vision prompts, goal entries, calendar.\n\n\n__1__main-week.pdf\nPrint one copy per week, i.e. 12 copies total.\nContains one weekly log and seven daily logs.\n\n\n__2__xtra-nite.pdf\nPrint as needed.\nEach page contains enough space for one week’s worth of entries.\n\n\n__3__ace_-ref_.pdf\nPrint once.\nContains instructions for using the ACE Worksheets.\n\n\n__4__ace_-wksh.pdf\nPrint as needed.\nContains worksheets for the ACE exercise.\n\n\n\n\n\nSingle-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed single-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf\n\n\nDouble-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed double-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf",
+    "crumbs": [
+      "Projects",
+      "The Book of Plans",
+      "How to Assemble The Book of Plans"
+    ]
+  },
+  {
+    "objectID": "projects/color-scheme-exporter/index.html",
+    "href": "projects/color-scheme-exporter/index.html",
+    "title": "Color Scheme Exporter",
+    "section": "",
+    "text": "Color Scheme Exporter is a utility designed to synchronize your visual experience across various terminal and development environments. By defining a standard ANSI 16-color palette in a single JSON source, users can instantly generate color configuration files for various terminal emulators, including GNOME Terminal and Cygwin.\nAs a software engineer, I frequently find myself developing in numerous terminal environments and want to maintain a unified color experience. I built this tool to eliminate the manual effort of redundant configuration and ensure visual consistency no matter which terminal I’m using.\nSource Code",
+    "crumbs": [
+      "Projects",
+      "Color Scheme Exporter"
+    ]
+  },
+  {
+    "objectID": "projects/color-scheme-exporter/index.html#how-it-works",
+    "href": "projects/color-scheme-exporter/index.html#how-it-works",
+    "title": "Color Scheme Exporter",
+    "section": "How It Works",
+    "text": "How It Works\n\nDefine your color scheme using a simple JSON configuration. Map your preferred RGB hex values to the background, foreground, and ANSI palette as shown below, omitting the comments:\n{ \"intense-bold\"              : \"false\"\n, \"background-color\"          : \"0x262626\"\n, \"background-color-intense\"  : \"0x303030\"\n, \"foreground-color\"          : \"0xc6c6c6\"\n, \"foreground-color-intense\"  : \"0xafafaf\"\n, \"cursor-color\"              : \"0xff875f\"\n, \"palette\"                   :\n  [ \"0x1c1c1c\" // Color  0: Black\n  , \"0xd787af\" // Color  1: Red\n  , \"0xafd787\" // Color  2: Green\n  , \"0xffaf87\" // Color  3: Yellow\n  , \"0x87afd7\" // Color  4: Blue\n  , \"0xaf87d7\" // Color  5: Magenta\n  , \"0x87d7af\" // Color  6: Cyan\n  , \"0xd7d7d7\" // Color  7: White\n  , \"0x121212\" // Color  8: Bright black\n  , \"0xd75f87\" // Color  9: Bright red\n  , \"0x87af5f\" // Color 10: Bright green\n  , \"0xffd787\" // Color 11: Bright yellow\n  , \"0x00afd7\" // Color 12: Bright blue\n  , \"0xaf5faf\" // Color 13: Bright magenta\n  , \"0x5fafaf\" // Color 14: Bright cyan\n  , \"0xd0d0d0\" // Color 15: Bright white\n  ]\n}\nRun the script using the required arguments. To view the most up-to-date options and usage instructions, use the help flag:\npython color_scheme_exporter.py --help\nExample command:\npython color_scheme_exporter.py \\\n-f input-file.json              \\\n-n my-color-scheme              \\\n-o ~/.themes                    \\\n-s gnome",
+    "crumbs": [
+      "Projects",
+      "Color Scheme Exporter"
+    ]
+  },
+  {
+    "objectID": "projects/color-scheme-exporter/index.html#how-to-use-output",
+    "href": "projects/color-scheme-exporter/index.html#how-to-use-output",
+    "title": "Color Scheme Exporter",
+    "section": "How To Use Output",
+    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVS Code Terminal\nCopy the output and save to your settings.json file.",
+    "crumbs": [
+      "Projects",
+      "Color Scheme Exporter"
+    ]
+  },
+  {
     "objectID": "projects/the-book-of-plans/how-to-use.html",
     "href": "projects/the-book-of-plans/how-to-use.html",
     "title": "How to Use The Book of Plans",
@@ -1698,139 +1912,15 @@
     ]
   },
   {
-    "objectID": "projects/color-scheme-exporter/index.html",
-    "href": "projects/color-scheme-exporter/index.html",
-    "title": "Color Scheme Exporter",
+    "objectID": "projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
+    "href": "projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
+    "title": "A Quest For Rest",
     "section": "",
-    "text": "Color Scheme Exporter is a utility designed to synchronize your visual experience across various terminal and development environments. By defining a standard ANSI 16-color palette in a single JSON source, users can instantly generate color configuration files for various terminal emulators, including GNOME Terminal and Cygwin.\nAs a software engineer, I frequently find myself developing in numerous terminal environments and want to maintain a unified color experience. I built this tool to eliminate the manual effort of redundant configuration and ensure visual consistency no matter which terminal I’m using.\nSource Code",
+    "text": "It Begins…\n\n\n\n9-80-alarm\n\n\n\nThe first steps in my pursuit of well-rested off-Friday mornings was to define the requirements and high level system design.\n\n\n\n\n\nFeb 6, 2026\n\n\nRebecca Jennifer Rashkin\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Projects",
-      "Color Scheme Exporter"
-    ]
-  },
-  {
-    "objectID": "projects/color-scheme-exporter/index.html#how-it-works",
-    "href": "projects/color-scheme-exporter/index.html#how-it-works",
-    "title": "Color Scheme Exporter",
-    "section": "How It Works",
-    "text": "How It Works\n\nDefine your color scheme using a simple JSON configuration. Map your preferred RGB hex values to the background, foreground, and ANSI palette as shown below, omitting the comments:\n{ \"intense-bold\"              : \"false\"\n, \"background-color\"          : \"0x262626\"\n, \"background-color-intense\"  : \"0x303030\"\n, \"foreground-color\"          : \"0xc6c6c6\"\n, \"foreground-color-intense\"  : \"0xafafaf\"\n, \"cursor-color\"              : \"0xff875f\"\n, \"palette\"                   :\n  [ \"0x1c1c1c\" // Color  0: Black\n  , \"0xd787af\" // Color  1: Red\n  , \"0xafd787\" // Color  2: Green\n  , \"0xffaf87\" // Color  3: Yellow\n  , \"0x87afd7\" // Color  4: Blue\n  , \"0xaf87d7\" // Color  5: Magenta\n  , \"0x87d7af\" // Color  6: Cyan\n  , \"0xd7d7d7\" // Color  7: White\n  , \"0x121212\" // Color  8: Bright black\n  , \"0xd75f87\" // Color  9: Bright red\n  , \"0x87af5f\" // Color 10: Bright green\n  , \"0xffd787\" // Color 11: Bright yellow\n  , \"0x00afd7\" // Color 12: Bright blue\n  , \"0xaf5faf\" // Color 13: Bright magenta\n  , \"0x5fafaf\" // Color 14: Bright cyan\n  , \"0xd0d0d0\" // Color 15: Bright white\n  ]\n}\nRun the script using the required arguments. To view the most up-to-date options and usage instructions, use the help flag:\npython color_scheme_exporter.py --help\nExample command:\npython color_scheme_exporter.py \\\n-f input-file.json              \\\n-n my-color-scheme              \\\n-o ~/.themes                    \\\n-s gnome",
-    "crumbs": [
-      "Projects",
-      "Color Scheme Exporter"
-    ]
-  },
-  {
-    "objectID": "projects/color-scheme-exporter/index.html#how-to-use-output",
-    "href": "projects/color-scheme-exporter/index.html#how-to-use-output",
-    "title": "Color Scheme Exporter",
-    "section": "How To Use Output",
-    "text": "How To Use Output\nThis section describes how to use the output file(s) produced by this utility.\n\nGNOME\nFollow instructions here for how to invoke a GNOME color scheme.\n\n\nMintty / Cygwin\nSave the output file as .minttyrc and save in your home directory.\n\n\nVS Code Terminal\nCopy the output and save to your settings.json file.",
-    "crumbs": [
-      "Projects",
-      "Color Scheme Exporter"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html",
-    "href": "projects/the-book-of-plans/assembly-instructions.html",
-    "title": "How to Assemble The Book of Plans",
-    "section": "",
-    "text": "The pages are formatted for both double-sided and single-sided printing. Assembly instructions for each are provided below.\nThese steps are admittedly tedious. I can print and prepare the pages for you and mail them for a fee. Contact me if you’d like to arrange this.",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans",
-      "How to Assemble The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
-    "href": "projects/the-book-of-plans/assembly-instructions.html#required-tools",
-    "title": "How to Assemble The Book of Plans",
-    "section": "Required Tools",
-    "text": "Required Tools\nPaper cutter\n1/2 sheet 3 hole punch\n3-ring mini binder\n\nNote\nThese products are just examples of tools you can use to assemble The Book of Plans. I’m not an Amazon affiliate and don’t earn anything from these links.",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans",
-      "How to Assemble The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html#instructions",
-    "href": "projects/the-book-of-plans/assembly-instructions.html#instructions",
-    "title": "How to Assemble The Book of Plans",
-    "section": "Instructions",
-    "text": "Instructions\n\nHole Punch Settings\nSet your holes to punch at the following measurements to fit in a 3-ring mini binder:\n\n\n\nGeneral Notes\n\nPrint, cut and stack each individual PDF separately to ensure proper page ordering.\nYou can mix single- and double-sided printing. I print everything single-sided except the nightly log, which I print double-sided. Do whatever works for you.\n\n\n\nSingle-Sided Assembly Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\nfalse\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Take the stack on the left, and put it right on top of the stack on the right.\nHole punch the packet.\nInsert into binder.\n\n\n\nDouble-Sided Print Instructions\n\nEach PDF should be printed with the following settings:\n\n\n\n\n\n\n\nPrint Property\nValue\n\n\n\n\nScaling\n100%\n\n\nPrint double sided\ntrue, set to flip on short edge &lt;- This will likely be different from the default print double-sided setting.\n\n\n\nUse the paper cutter to cut down the center. You will be left with two stacks of paper. Think of this as an open book. Take the left stack and fold it over the right stack like you are closing a book.\nHole punch the packet.\nInsert into binder.",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans",
-      "How to Assemble The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
-    "href": "projects/the-book-of-plans/assembly-instructions.html#the-pdfs",
-    "title": "How to Assemble The Book of Plans",
-    "section": "The PDFs",
-    "text": "The PDFs\n\nPDF Descriptions\n\n\n\n\n\n\n\n\nFile Name\nPrint Quantity\nDescription\n\n\n\n\n__0__main-intr.pdf\nPrint one copy for the entire quarter.\nContains vision prompts, goal entries, calendar.\n\n\n__1__main-week.pdf\nPrint one copy per week, i.e. 12 copies total.\nContains one weekly log and seven daily logs.\n\n\n__2__xtra-nite.pdf\nPrint as needed.\nEach page contains enough space for one week’s worth of entries.\n\n\n__3__ace_-ref_.pdf\nPrint once.\nContains instructions for using the ACE Worksheets.\n\n\n__4__ace_-wksh.pdf\nPrint as needed.\nContains worksheets for the ACE exercise.\n\n\n\n\n\nSingle-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed single-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf\n\n\nDouble-Sided PDFs\nThis section contains links to the PDFs that are intended to be printed double-sided.\n__0__main-intr.pdf __1__main-week.pdf __2__xtra-nite.pdf __3__ace_-ref_.pdf __4__ace_-wksh.pdf",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans",
-      "How to Assemble The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/index.html",
-    "href": "projects/the-book-of-plans/index.html",
-    "title": "The Book of Plans",
-    "section": "",
-    "text": "The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.\nThe planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/index.html#why-three-months",
-    "href": "projects/the-book-of-plans/index.html#why-three-months",
-    "title": "The Book of Plans",
-    "section": "Why Three Months?",
-    "text": "Why Three Months?\nThree months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.\n\n\n\nHere is a sample layout of one of the pages.",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/index.html#about-the-code",
-    "href": "projects/the-book-of-plans/index.html#about-the-code",
-    "title": "The Book of Plans",
-    "section": "About the Code",
-    "text": "About the Code\nThe Book of Plans was created in Python using the modules svgwrite and PdfWriter. Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.\nSource Code",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/index.html#full-preview",
-    "href": "projects/the-book-of-plans/index.html#full-preview",
-    "title": "The Book of Plans",
-    "section": "Full Preview",
-    "text": "Full Preview\nThis file serves as a preview of the planner; it it not formatted for printing. For printing instructions, visit How to Assemble The Book of Plans.\nPlanner Preview",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans"
-    ]
-  },
-  {
-    "objectID": "projects/the-book-of-plans/index.html#instructions",
-    "href": "projects/the-book-of-plans/index.html#instructions",
-    "title": "The Book of Plans",
-    "section": "Instructions",
-    "text": "Instructions",
-    "crumbs": [
-      "Projects",
-      "The Book of Plans"
+      "The 9-80 Alarm Clock",
+      "A Quest For Rest"
     ]
   },
   {
@@ -1871,7 +1961,7 @@
     "href": "projects/9-80-alarm-clock/index.html#the-development-process",
     "title": "The 9-80 Alarm Clock",
     "section": "The Development Process",
-    "text": "The Development Process\nJust like ColorClock, I will be documenting my process as I learn the framework, design the software, and prototype the hardware.\nBlog",
+    "text": "The Development Process\nJust like ColorClock, I will be documenting my process as I learn the framework, design the software, and prototype the hardware.",
     "crumbs": [
       "Projects",
       "The 9-80 Alarm Clock"

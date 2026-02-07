@@ -39,8 +39,10 @@
     ]
   },
   {
-    "listing": "/projects/9-80-alarm-clock/index.html",
-    "items": []
+    "listing": "/projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
+    "items": [
+      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html"
+    ]
   },
   {
     "listing": "/projects/color-clock/blog__color-clock/index.html",
