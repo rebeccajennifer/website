@@ -47,3 +47,5 @@ I am designing this product with [QNX](/reference/qnx__ref/) due to its common u
 ## The Development Process
 
 Just like ColorClock, I will be documenting my process as I learn the framework, design the software, and prototype the hardware.
+
+[The Blog](./blog__9-80-alarm/){class="flux-button _2"}
