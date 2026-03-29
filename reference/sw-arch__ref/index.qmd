@@ -1,0 +1,12 @@
+---
+title: Software Architecture Reference
+description: >
+  These pages contain notes on software architecture.
+order: 3
+
+listing:
+  contents: ./
+  type: grid
+
+draft: true
+---

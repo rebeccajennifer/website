@@ -1,10 +1,8 @@
 ---
-title: The Book of Plans
-subtitle: Enable your journey to your ideal self.
-order: 1
-listing:
-  contents: ./
-  type: default
+title: "The 9-80 Alarm Clock"
+subtitle: A practical implementation of RTOS.
+order: 3
+draft: false
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
@@ -18,7 +16,7 @@ listing:
 |______________________________________________________________________|
 |                                                                      |
 |----------------------------------------------------------------------|
-|   Copyright 2026, Rebecca Rashkin                                    |
+|   Copyright 2025, Rebecca Rashkin                                    |
 |   -------------------------------                                    |
 |   This code may be copied, redistributed, transformed, or built      |
 |   upon in any format for educational, non-commercial purposes.       |
@@ -31,34 +29,23 @@ listing:
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Site page for The Book of Plans.
+|   This file contains configuration information for the 9-80 alarm
+|   blog.
 |____________________________________________________________________-->
 
-The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.
 
-The planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.
+## Motivation
 
-## Why Three Months?
+I work a 9-80 schedule, meaning I work 80 hours over 9 working days and take every other Friday off. This creates a problem when setting my nightstand alarm, since I haven’t been able to find a standalone alarm clock that lets me change the alarm time based not only on the day, but also on the week.
 
-Three months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.
+I have decided to design and build such a device myself, not only for the utility of the end product and its direct application in my life, but also as an opportunity to put into practice RTOS development and the implementation of the [4+1 model for software architecture](https://en.wikipedia.org/wiki/4%2B1_architectural_view_model).
 
-<figure>
-![](images__the-book-of-plans/week-reflection-plan.png){.background}
-<figcaption>
-Here is a sample layout of one of the pages.
-</figcaption>
-</figure>
+## Platform
 
-## About the Code
+I am designing this product with [QNX](/reference/qnx__ref/) due to its common use in industry and the availability of a free non-commercial license. I will be using a Raspberry Pi target and the DS323 real-time clock module that I used in [ColorClock](/projects/color-clock/).
 
-___The Book of Plans___ was created in Python using the modules [svgwrite](https://pypi.org/project/svgwrite/) and [PdfWriter](https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html). Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.
+## The Development Process
 
-<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/python">Source Code</a>
+Just like ColorClock, I will be documenting my process as I learn the framework, design the software, and prototype the hardware.
 
-## Full Preview
-
-This file serves as a preview of the planner; it it not formatted for printing. For printing instructions, visit [How to Assemble The Book of Plans](./assembly-instructions.qmd).
-
-<a class="flux-button _2" href="./images__the-book-of-plans/book-of-plans-full-preview.pdf">Planner Preview</a>
-
-## Instructions
+[The Blog](./blog__9-80-alarm/){class="flux-button _2"}

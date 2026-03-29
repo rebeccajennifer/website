@@ -1,7 +1,7 @@
 ---
 title: PuTTY Color Configuration
 subtitle: Defining custom color schemes in the PuTTY configuration.
-image: ../environment-setup__reference/images__env-setup/putty-config-2-window-09.png
+image: ../environment-setup__ref/images__env-setup/putty-config-2-window-09.png
 toc: true
 toc-depth: 6
 ---
@@ -37,7 +37,7 @@ Learn how to customize your terminal's appearance by modifying the PuTTY configu
 
 ## Export Default Configuration File
 
-Follow [these instructions](../environment-setup__reference/putty.html#access-saved-session-configurations) to export your PuTTY configuration file.
+Follow [these instructions](../environment-setup__ref/putty.html#access-saved-session-configurations) to export your PuTTY configuration file.
 
 ## Color Labels
 
@@ -103,4 +103,4 @@ __Note:__ Whitespace is permitted in the configuration file.
 
 ## Import Configuration File
 
-Follow [these instructions](../environment-setup__reference/putty.html#import-configuration) to import your modified PuTTY configuration file.
+Follow [these instructions](../environment-setup__ref/putty.html#import-configuration) to import your modified PuTTY configuration file.

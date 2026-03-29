@@ -332,7 +332,7 @@ display(HTML("".join(html_parts)))
 ### Spoiler Alert!
 
 How do I see the answers?
-<p><a  class="flux-button _1" href="worksheet-answers.qmd">Here You Go!</a></p>
+<p><a  class="flux-button _1" href="worksheet-answers__comp-org.qmd">Here You Go!</a></p>
 
 ## Extra Credit
 

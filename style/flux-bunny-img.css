@@ -1,0 +1,62 @@
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS style sheet for images.
+/*____________________________________________________________________*/
+
+@import "flux-bunny-colors.css";
+@import "flux-bunny-const.css";
+
+/* Ensures images with transparent background are always visible */
+img.background
+{
+  background-color  : var(--norm--wht-07);
+  padding           : 10px;
+  border            : 1px solid var(--flux-bg-bold);
+}
+
+/* Hide the dark image by default */
+.dark-only            { display: none; }
+
+/* When dark-mode class is active, swap them */
+.dark-mode .lite-only { display: none;  }
+.dark-mode .dark-only { display: block; }
+
+/*--------------------------------------------------------------------*/
+
+/* Blog description on page under title */
+.quarto-title .description p
+{
+  color             : var(--flux-bg-norm);
+}
+
+figcaption
+{
+  font-size         : var(--size-base);
+  color             : var(--flux-fg-mute);
+  text-align        : left;
+  margin-top        : 5px;
+  font-style        : italic;
+}

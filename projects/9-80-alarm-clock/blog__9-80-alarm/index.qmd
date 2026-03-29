@@ -1,11 +1,13 @@
 ---
-title: The Book of Plans
-subtitle: Enable your journey to your ideal self.
-order: 1
+title: "A Quest For Rest"
+subtitle: An RTOS alarm clock development story ⏱️
 listing:
   contents: ./
   type: default
+  sort: "date desc"
+  categories: true
 ---
+
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -31,34 +33,8 @@ listing:
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Site page for The Book of Plans.
+|   This file contains configuration information for the blog.
 |____________________________________________________________________-->
 
-The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.
 
-The planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.
-
-## Why Three Months?
-
-Three months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.
-
-<figure>
-![](images__the-book-of-plans/week-reflection-plan.png){.background}
-<figcaption>
-Here is a sample layout of one of the pages.
-</figcaption>
-</figure>
-
-## About the Code
-
-___The Book of Plans___ was created in Python using the modules [svgwrite](https://pypi.org/project/svgwrite/) and [PdfWriter](https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html). Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.
-
-<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/python">Source Code</a>
-
-## Full Preview
-
-This file serves as a preview of the planner; it it not formatted for printing. For printing instructions, visit [How to Assemble The Book of Plans](./assembly-instructions.qmd).
-
-<a class="flux-button _2" href="./images__the-book-of-plans/book-of-plans-full-preview.pdf">Planner Preview</a>
-
-## Instructions
+![](../images__9-80-alarm/use-case__9-80-alarm__20260206.png)

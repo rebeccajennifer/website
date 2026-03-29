@@ -1,10 +1,10 @@
 ---
-title: The Book of Plans
-subtitle: Enable your journey to your ideal self.
-order: 1
-listing:
-  contents: ./
-  type: default
+title: 4+1 View Model of Software Architecture
+toc-depth: 6
+description: >
+  This page contains notes for the 4+1 view model of software architecture published by Philippe Krutchen in 1995.
+order: 0
+draft: true
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
@@ -18,7 +18,7 @@ listing:
 |______________________________________________________________________|
 |                                                                      |
 |----------------------------------------------------------------------|
-|   Copyright 2026, Rebecca Rashkin                                    |
+|   Copyright 2025, Rebecca Rashkin                                    |
 |   -------------------------------                                    |
 |   This code may be copied, redistributed, transformed, or built      |
 |   upon in any format for educational, non-commercial purposes.       |
@@ -31,34 +31,47 @@ listing:
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Site page for The Book of Plans.
+|   4+1 view model of software architecture
 |____________________________________________________________________-->
 
-The Book of Plans is a value-based three-month planner that helps you make meaningful progress on your goals and grow into the person you want to become.
+## Original Published Paper
 
-The planner consists of a series of PDFs formatted for printing on 8.5×11 sheets, which are then cut in half and placed into a half-sheet three-ring binder.
+[IEEE Xplore](https://ieeexplore.ieee.org/document/469759){class="flux-button _3"}
+[ResearchGate](https://www.researchgate.net/publication/220018231_The_41_View_Model_of_Architecture){class="flux-button _3"}
 
-## Why Three Months?
+## The Views
 
-Three months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.
+View | Brief Description
+-|-
+Logical     | Object model of the design
+Process     | Concurrency and synchronization aspects
+Development | Static organization of software
+Physical    | Mapping of software on hardware
+Scenarios   | Use cases
 
-<figure>
-![](images__the-book-of-plans/week-reflection-plan.png){.background}
-<figcaption>
-Here is a sample layout of one of the pages.
-</figcaption>
-</figure>
+## Logical View
 
-## About the Code
+### Answers Question
+What should the system provide to its users?
 
-___The Book of Plans___ was created in Python using the modules [svgwrite](https://pypi.org/project/svgwrite/) and [PdfWriter](https://pypdf.readthedocs.io/en/stable/modules/PdfWriter.html). Each page is composed of individual SVG elements that are grouped together and then exported as PDFs.
+### This View Contains
 
-<a class="flux-button _2" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner/python">Source Code</a>
+- Structural logic
+- High level view of classes and relationships
 
-## Full Preview
+### Avoid
 
-This file serves as a preview of the planner; it it not formatted for printing. For printing instructions, visit [How to Assemble The Book of Plans](./assembly-instructions.qmd).
+- Specialization of classes
+- Core affinity
+- Task
 
-<a class="flux-button _2" href="./images__the-book-of-plans/book-of-plans-full-preview.pdf">Planner Preview</a>
+## Process View
 
-## Instructions
+State transition diagrams
+
+## Glossary
+
+Term | Definition
+-|-
+Task    | A thread of control, scheduled individually
+Process | Grouping of tasks that form an executable unit

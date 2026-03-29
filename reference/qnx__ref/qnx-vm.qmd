@@ -45,7 +45,7 @@ On this page, commands preceded by `#` indicate that the command is run in the t
 
 1. [Install QNX SDP 8.0](./qnx-setup.qmd).
 
-1. [Create an SSH Key](/reference/environment-setup__reference/git.qmd#github).
+1. [Create an SSH Key](/reference/environment-setup__ref/git.qmd#github).
 
 1. Install the following packages via `apt`.
 
@@ -183,7 +183,7 @@ Solution: Include the `--ssh-ident` parameter in the `mkqnximage` command.
 --ssh-ident=$HOME/.ssh/id_ed25519.pub
 ```
 
-If you do not already have an SSH key set up, follow instructions from [this page](/reference/environment-setup__reference/git.qmd#github).
+If you do not already have an SSH key set up, follow instructions from [this page](/reference/environment-setup__ref/git.qmd#github).
 
 #### Error: Unable to Run vmrun
 
@@ -217,7 +217,7 @@ Solution: Install VMware. Note that in this example we are using `qemu` instead 
 
 1. For `Enter extra mkqnximage options`, add `--ssh-ident=/path/to/public/ssh/key`.
 
-   Make sure to use the full path, i.e. `/home/username` instead of `~`. If you do not have an SSH Key set up already, follow instructions [here](/reference/environment-setup__reference/git.qmd#github).
+   Make sure to use the full path, i.e. `/home/username` instead of `~`. If you do not have an SSH Key set up already, follow instructions [here](/reference/environment-setup__ref/git.qmd#github).
 
    ![](./images__qnx-ref/2__vscode-virtual-target-img/2__vscode-virtual-target-03.png)
 

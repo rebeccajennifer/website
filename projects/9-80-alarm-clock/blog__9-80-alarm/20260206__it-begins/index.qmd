@@ -1,0 +1,114 @@
+---
+title       : It Begins...
+description : >
+  The first steps in my pursuit of well-rested off-Friday mornings is to define the requirements and high level system design.
+date        : 2026-02-06
+image       : ../../images__9-80-alarm/use-case__9-80-alarm__20260206.png
+draft       : false
+order       : 0
+---
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   This file contains a blog entry for the 9-80 alarm project.
+|____________________________________________________________________-->
+
+
+## Requirements
+
+Software design begins with defining requirements and identifying high-level system components.
+
+### User Settings
+
+Setting | Description
+-|-
+Time and Date | Set the current time.
+Week Schedule | Toggle the week type (on or off Friday).
+Weekday Alarm | Configure the standard daily alarm.
+Friday Alarm  | Set a specific alarm for "On-Friday" schedules.
+Friday Alarm  | Set a specific alarm for "On-Friday" schedules.
+
+### Hardware Components
+
+Functionality | Description
+-|-
+Core Platform | Raspberry Pi.
+Audio         | Speaker for alarm.
+Visual        | LED display for time readout.
+Timing        | Real-time clock module for accurate timekeeping.
+
+### Software Architecture
+
+Functionality | Description
+-|-
+Main Driver         | Coordinates system operations.
+Time Controller     | Manages clock logic and synchronization.
+Display Controller  | Handles visual output to the LED.
+Alarm Manager       | Controls setting and triggering logic.
+
+### Nice-to-Haves
+
+Feature | Description
+-|-
+Gradual Wake Light  | Integrated lighting that brightens as the alarm approaches.
+Nightlight Mode     | Multi-purpose illumination similar to the ColorClock project.
+
+### User Experience Considerations
+
+Consideration | Notes
+-|-
+Simplified Interaction  | Prioritize intuitive user programming while maintaining a minimal set of physical controls.
+Audio Balance           | Select an alarm sound that is effective for waking but remains pleasant rather than abrasive.
+
+## The Environment
+
+I decided to use QNX due to the accessibility to the software development package, and its utility in industry. QNX is a common framework used in automotive design and they offer a [free license](/reference/qnx__ref/qnx-setup.qmd) for non-commercial purposes.
+
+Keeping in line with my learning style, the first steps to learning the QNX framework was to get a minimal "[Hello World](/reference/qnx__ref/qnx-hello-world.qmd)" project working. And of course documenting the process for future reference 👩‍🏫
+
+![](/reference/qnx__ref/images__qnx-ref/3__hello-world-img/3__hello-world-06-term-loc.png)
+
+## Let's Do This the Right Way
+
+Now that I have gained some familiarity with the development environment, I need to take a step back and think about the design process.
+
+Since this project is a skill-building exercise, I want to focus on software design and follow the proper steps for architecting the system. I aim to create the software architecture using the 4+1 View Model as described in Philippe Kruchten's 1995 IEEE paper,
+["The 4+1 View Model of Architecture"](https://www.researchgate.net/publication/220018231_The_41_View_Model_of_Architecture).
+
+## The First View: The Use Case
+
+While complex systems often require multiple use case diagrams, this project's simplicity warrants only a single illustration.
+
+<figure>
+![](../../images__9-80-alarm/use-case__9-80-alarm__20260206.png)
+<figcaption>
+This diagram illustrates the interactions between the primary actor (User) and the various hardware peripherals and software modules that define the system's functionality.
+</figcaption>
+</figure>
+
+
+## Next Steps
+
+I have yet to implement a minimal application on a physical target, so in the coming weeks I plan to run Hello World on a Raspberry Pi. Additionally, the next step in software design will be to diagram the Logical View using UML.

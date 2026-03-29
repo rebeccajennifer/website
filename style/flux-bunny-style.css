@@ -1,0 +1,190 @@
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS style sheet for website.
+/*____________________________________________________________________*/
+
+@import "flux-bunny-colors.css";
+@import "flux-bunny-const.css";
+@import "flux-bunny-headings.css";
+@import "flux-bunny-links.css";
+@import "flux-bunny-nav.css";
+@import "flux-bunny-search.css";
+@import "flux-bunny-img.css";
+@import "flux-bunny-sidebar-toc.css";
+
+
+/*--------------------------------------------------------------------*/
+body
+{
+  font-family       : var(--font-fam-normal);
+  color             : var(--flux-fg-norm);
+  background-color  : var(--flux-bg-norm);
+}
+
+/*--------------------------------------------------------------------*/
+/* FULL WIDTH ELEMENTS
+/*--------------------------------------------------------------------*/
+.full-bleed
+{
+  width       : 100vw;
+  /* Adjust for the center justification of quarto content */
+  margin-left : 50%;
+  transform   : translateX(-50%);
+}
+
+/*--------------------------------------------------------------------*/
+/* FOOTER
+/*--------------------------------------------------------------------*/
+.nav-footer
+{
+  background-color  : var(--flux-color-1);
+  color             : var(--flux-bg-norm);
+  font-family       : var(--font-fam-header);
+  z-index           : 1000;
+}
+
+.nav-footer .nav-link, .nav-footer .nav-link:visited
+{
+  color             : var(--flux-bg-norm);
+}
+
+main
+{
+  padding-bottom  : var(--pg-padding);
+  border-bottom   : var(--content-border)
+}
+
+/*--------------------------------------------------------------------*/
+/* CODE BLOCKS
+/*--------------------------------------------------------------------*/
+
+/* Inline Code Blocks */
+code
+{
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+}
+
+.sourceCode, code, .code-with-copy
+{
+  border-radius     : 0 !important;                       /* ! needed */
+  border            : none !important;                    /* ! needed */
+  background-color  : var(--flux-bg-bold)!important;      /* ! needed */
+}
+
+/*--------------------------------------------------------------------*/
+/* DROP DOWN
+/*--------------------------------------------------------------------*/
+
+/* Header for drop down */
+details summary
+{
+  color           : var(--flux-fg-mute);
+  cursor          : pointer;
+  display         : list-item;  /* Restores triangle behavior */
+  margin-top      : 0.5em;
+}
+
+details summary:hover
+{
+  color           : var(--flux-fg-mute);
+}
+
+/* Style when drop down is open */
+details[open] summary {
+  color         : var(--flux-color-3);
+  font-weight   : bold;
+}
+
+details > *:not(summary) {
+  margin-left: 1em;         /* slight indent for nested content */
+}
+
+details {
+  margin-bottom   : 1em;
+  border-left     : 3px solid var(--flux-color-2);
+  padding-left    : 0.5em;
+}
+
+/*--------------------------------------------------------------------*/
+/* BLOG
+/*--------------------------------------------------------------------*/
+
+/* Blog entry title background */
+.quarto-title-banner
+{
+  background-color  : var(--flux-color-2);
+  color             : var(--flux-bg-norm);
+  font-family       : var(--font-fam-header);
+  padding           : var(--content-padding);
+  margin-bottom     : var(--content-padding);
+}
+
+/* Blog entry title */
+.quarto-title-banner.page-columns.page-full h1.title
+{
+  color             : var(--flux-bg-norm);
+}
+
+
+/*--------------------------------------------------------------------*/
+
+.quarto-title-banner .subtitle.lead
+{
+  color             : var(--flux-bg-norm) !important;
+}
+
+/* Blog entry preview */
+.quarto-grid-item.card
+{
+  color             : var(--flux-fg-norm);
+  background-color  : var(--flux-bg-bold);
+  border            : 1px solid var(--flux-bg-bold);
+}
+
+.quarto-title-banner.page-columns.page-full .quarto-title.column-body
+{
+  border-bottom     : none;
+
+  /* Remove extra bottom space in blog title banner */
+  margin            : 0;
+}
+
+.quarto-post *
+{
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+}
+
+.listing-category
+{
+  color             : var(--flux-fg-mute) !important;     /* ! needed */
+  border            : 1px solid var(--flux-fg-mute) !important;
+}
+
+/* Blog description on page under title */
+.quarto-title .description p
+{
+  color             : var(--flux-bg-norm);
+}
