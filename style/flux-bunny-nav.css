@@ -1,0 +1,182 @@
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS style sheet for navigation bars.
+/*____________________________________________________________________*/
+
+@import "flux-bunny-colors.css";
+@import "flux-bunny-const.css";
+@import "flux-bunny-headings.css";
+@import "flux-bunny-links.css";
+
+
+/*--------------------------------------------------------------------*/
+/* NAVIGATION BAR
+/*--------------------------------------------------------------------*/
+/* navbar       - Whole navigation bar
+/* navbar-nav   - Container that holds nav links
+/* nav-link     - Each link in navbar
+/*--------------------------------------------------------------------*/
+
+.navbar .navbar-nav .nav-link
+{
+  font-family     : var(--font-fam-header);
+  color           : var(--flux-bg-norm);
+  font-variant    : small-caps;
+}
+
+.navbar .navbar-nav .nav-link:hover
+{
+  font-weight     : normal;
+  text-decoration : underline;
+}
+
+.navbar
+{
+  background-color: var(--flux-color-1);
+}
+
+/* Site name */
+.navbar-brand
+{
+  font-family       : var(--font-fam-header);
+  font-size         : var(--size-h4);
+  color             : var(--flux-bg-norm);
+  font-variant      : small-caps;
+}
+
+.navbar-brand:visited
+{
+  color             : var(--flux-bg-norm);
+}
+
+.navbar-brand:hover
+{
+  font-weight       : normal;
+}
+
+.navbar-link:hover
+{
+  font-weight       : normal;
+}
+
+.navbar-nav
+{
+  padding-right: var(--pg-padding);
+}
+
+.navbar-tools
+{
+  padding-right: var(--pg-padding);
+}
+
+/*--------------------------------------------------------------------*/
+/* Nav Icons
+/*--------------------------------------------------------------------*/
+.nav-icon
+{
+  height: 100px;
+}
+
+.quarto-navbar-tools .quarto-navigation-tool
+{
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
+}
+.aa-DetachedSearchButtonIcon svg {
+  color           : var(--flux-bg-norm) !important;       /* ! needed */
+}
+
+.navbar-toggler-icon{background-image: none;}
+/* Hamburger menu icon for mobile */
+.navbar-toggler-icon::before {
+  content         : "☰";
+  font-size       : var(--size-h4);
+  color           : var(--flux-bg-norm);
+}
+
+/* Hamburger menu icon positioning */
+.navbar-toggler-icon {
+  display         : flex;
+  align-items     : center;
+  justify-content : center;
+}
+/*--------------------------------------------------------------------*/
+/* Navigation bar for blog entry */
+nav.quarto-page-breadcrumbs a
+{
+  color             : var(--flux-fg-mute) !important;     /* ! needed */
+  font-size         : var(--size-small);
+}
+
+ol a:hover
+{
+  text-decoration: underline !important;
+}
+
+/* Before symbol in breadcrumb, i.e., the " > " */
+ol .breadcrumb-item::before
+{
+  color             : var(--flux-fg-mute) !important;     /* ! needed */
+}
+
+#title-block-header ol.breadcrumb
+{
+  border-bottom     : var(--h3-border);
+  vertical-align    : bottom;
+  padding-top       : 0;
+  padding-bottom    : var(--content-padding);
+}
+
+/*--------------------------------------------------------------------*/
+/* Breadcrumb with narrow page
+/*--------------------------------------------------------------------*/
+.quarto-page-breadcrumbs ol.breadcrumb
+{
+  padding-bottom    : 0;
+}
+
+.quarto-secondary-nav
+{
+  font-size         : var(--size-small);
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
+  padding: none;
+}
+.dropdown-menu
+{
+  font-family       : var(--font-fam-normal);
+  background-color  : var(--flux-color-2);
+}
+
+.dropdown-item:hover
+{
+  background-color  : var(--flux-color-3);
+  color             : var(--flux-bg-norm);
+}
+
+.dropdown-item
+{
+  background-color  : var(--flux-bg-bold);
+  color             : var(--flux-fg-norm);
+}
