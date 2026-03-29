@@ -29,9 +29,13 @@
 @import "flux-bunny-colors.css";
 @import "flux-bunny-const.css";
 @import "flux-bunny-headings.css";
+@import "flux-bunny-links.css";
 @import "flux-bunny-search.css";
 @import "flux-bunny-img.css";
+@import "flux-bunny-sidebar-toc.css";
 
+
+/*--------------------------------------------------------------------*/
 body
 {
   font-family       : var(--font-fam-normal);
@@ -48,93 +52,6 @@ body
   /* Adjust for the center justification of quarto content */
   margin-left : 50%;
   transform   : translateX(-50%);
-}
-
-
-/*--------------------------------------------------------------------*/
-/* TABLE OF CONTENTS SIDE BAR
-/*--------------------------------------------------------------------*/
-#toc-title
-{
-  font-family   : var(--font-fam-header);
-  color         : var(--flux-fg-mute);
-  font-variant  : small-caps;
-  border-top    : none;
-  font-size     : var(--size-h4);
-}
-
-#quarto-margin-sidebar #TOC
-{
-  padding           : var(--content-padding);
-  color             : var(--flux-fg-mute);
-  background-color  : var(--flux-bg-bold);
-}
-
-#quarto-margin-sidebar a:hover
-{
-  color         : var(--flux-color-2) !important;         /* ! needed */
-}
-
-#quarto-margin-sidebar #TOC .nav-link
-{
-  font-size     : var(--size-toc-gen);
-}
-
-#quarto-margin-sidebar #TOC .nav-link
-{
-  border        : none;
-}
-
-#quarto-margin-sidebar #TOC .nav-link.active
-{
-  color         : var(--flux-color-1) !important;         /* ! needed */
-  font-weight   : bold;
-  border        : none;
-}
-
-/* Keep the quarto margin sidebar TOC fully expanded */
-#quarto-margin-sidebar #TOC .collapse {
-  display: block;
-}
-
-/* Top level link in TOC */
-#quarto-margin-sidebar #TOC > ul > li:not(:has(ul)) > a.nav-link,
-#quarto-margin-sidebar #TOC > ul > li:has(> ul) > a.nav-link
-{
-  font-family   : var(--font-fam-normal);
-  font-size     : var(--size-toc-top);
-  padding-top   : var(--toc-link-padding);
-}
-
-/*--------------------------------------------------------------------*/
-/* PAGE NAVIGATION SIDEBAR
-/*--------------------------------------------------------------------*/
-#quarto-sidebar
-{
-  background-color: var(--flux-bg-norm);
-  font-family     : var(--font-fam-header);
-  border-right    : var(--h3-border);
-}
-
-#quarto-sidebar div
-{
-  color         : var(--flux-fg-mute);
-}
-
-#quarto-sidebar .active
-{
-  color           : var(--flux-color-1) !important;       /* ! needed */
-  font-weight     : bold;
-}
-
-#quarto-sidebar a:visited
-{
-  color         : inherit;
-}
-
-#quarto-sidebar a:hover
-{
-  color: var(--flux-color-2);
 }
 
 /*--------------------------------------------------------------------*/
@@ -270,65 +187,6 @@ main
 }
 
 /*--------------------------------------------------------------------*/
-/* BUTTONS & HYPERLINKS
-/*--------------------------------------------------------------------*/
-
-.flux-button
-{
-  font-family       : var(--font-fam-header);
-  color             : var(--flux-bg-norm);
-  display           : inline-block;
-  text-decoration   : none; /* Don't underline */
-  font-size         : var(--size-h4);
-  text-align        : center;
-
-  padding           : 0px 10px; /* Second entry is horizonal padding */
-  margin-top        : 10px;
-
-  align-items       : center;
-  outline           : none;
-  border            : none;
-  border-radius     : 10px; /* make rounded */
-}
-
-.flux-button:visited { color: var(--flux_button_txt); }
-
-.flux-button._1
-{
-  background-color  : var(--flux-color-1);
-}
-
-.flux-button._3
-{
-  background-color  : var(--flux-color-3);
-  font-size         : var(--size-h3);
-}
-
-.flux-button._2
-{
-  background-color  : var(--flux-color-2);
-  font-size         : var(--size-h3);
-}
-
-.flux-button:hover
-{
-  color             : var(--flux-color-3);
-  background-color  : var(--flux-bg-bold);
-}
-
-.flux-button:active
-{
-  color             : var(--flux-bg-norm);
-  background-color  : var(--flux-fg-mute);
-}
-
-/* Hyperlinks */
-a         { color        : var(--flux-color-3); }
-a:hover   { font-weight  : bold;                }
-a:active  { color        : var(--flux-color-2); }
-a:visited { color        : var(--flux-color-1); }
-
-/*--------------------------------------------------------------------*/
 /* CODE BLOCKS
 /*--------------------------------------------------------------------*/
 
@@ -454,8 +312,6 @@ ol .breadcrumb-item::before
   border            : 1px solid var(--flux-bg-bold);
 }
 
-.list.quarto-listing-default
-
 .quarto-title-banner.page-columns.page-full .quarto-title.column-body
 {
   border-bottom     : none;
@@ -480,4 +336,3 @@ ol .breadcrumb-item::before
 {
   color             : var(--flux-bg-norm);
 }
-

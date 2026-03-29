@@ -1,0 +1,88 @@
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS style sheet for hyperlinks and buttons.
+/*____________________________________________________________________*/
+
+@import "flux-bunny-colors.css";
+@import "flux-bunny-const.css";
+@import "flux-bunny-headings.css";
+
+
+/*--------------------------------------------------------------------*/
+.flux-button
+{
+  font-family       : var(--font-fam-header);
+  color             : var(--flux-bg-norm);
+  display           : inline-block;
+  text-decoration   : none; /* Don't underline */
+  font-size         : var(--size-h4);
+  text-align        : center;
+
+  padding           : 0px 10px; /* Second entry is horizonal padding */
+  margin-top        : 10px;
+
+  align-items       : center;
+  outline           : none;
+  border            : none;
+  border-radius     : 10px; /* make rounded */
+}
+
+.flux-button:visited { color: var(--flux_button_txt); }
+
+.flux-button._1
+{
+  background-color  : var(--flux-color-1);
+}
+
+.flux-button._3
+{
+  background-color  : var(--flux-color-3);
+  font-size         : var(--size-h3);
+}
+
+.flux-button._2
+{
+  background-color  : var(--flux-color-2);
+  font-size         : var(--size-h3);
+}
+
+.flux-button:hover
+{
+  color             : var(--flux-color-3);
+  background-color  : var(--flux-bg-bold);
+}
+
+.flux-button:active
+{
+  color             : var(--flux-bg-norm);
+  background-color  : var(--flux-fg-mute);
+}
+
+/* Hyperlinks */
+a         { color        : var(--flux-color-3); }
+a:hover   { font-weight  : bold;                }
+a:active  { color        : var(--flux-color-2); }
+a:visited { color        : var(--flux-color-1); }
