@@ -43,7 +43,7 @@ The planner consists of a series of PDFs formatted for printing on 8.5×11 sheet
 Three months is long enough to make meaningful progress and short enough to stay flexible as your priorities change. Quarterly goal-setting keeps your plans aligned with your life.
 
 <figure>
-![](images__the-book-of-plans/week-reflection-plan.png)
+![](images__the-book-of-plans/week-reflection-plan.png){.background}
 <figcaption>
 Here is a sample layout of one of the pages.
 </figcaption>

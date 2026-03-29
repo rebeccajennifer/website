@@ -95,7 +95,7 @@ A paper-based system for personal growth, providing the structure needed to alig
 <a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/responsible-rabbit/tree/main/planner"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
-[![](./the-book-of-plans/images__the-book-of-plans/daily-log-thumb-square.png)](./the-book-of-plans/index.qmd)
+[![](./the-book-of-plans/images__the-book-of-plans/daily-log-thumb-square.png){.background}](./the-book-of-plans/index.qmd)
 :::
 :::
 
