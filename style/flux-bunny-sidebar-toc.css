@@ -1,0 +1,117 @@
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS style sheet for website.
+/*____________________________________________________________________*/
+
+@import "flux-bunny-colors.css";
+@import "flux-bunny-const.css";
+@import "flux-bunny-headings.css";
+@import "flux-bunny-links.css";
+
+
+/*--------------------------------------------------------------------*/
+#toc-title
+{
+  font-family   : var(--font-fam-header);
+  color         : var(--flux-fg-mute);
+  font-variant  : small-caps;
+  border-top    : none;
+  font-size     : var(--size-h4);
+}
+
+#quarto-margin-sidebar #TOC
+{
+  padding           : var(--content-padding);
+  color             : var(--flux-fg-mute);
+  background-color  : var(--flux-bg-bold);
+}
+
+#quarto-margin-sidebar a:hover
+{
+  color         : var(--flux-color-2) !important;         /* ! needed */
+}
+
+#quarto-margin-sidebar #TOC .nav-link
+{
+  font-size     : var(--size-toc-gen);
+}
+
+#quarto-margin-sidebar #TOC .nav-link
+{
+  border        : none;
+}
+
+#quarto-margin-sidebar #TOC .nav-link.active
+{
+  color         : var(--flux-color-1) !important;         /* ! needed */
+  font-weight   : bold;
+  border        : none;
+}
+
+/* Keep the quarto margin sidebar TOC fully expanded */
+#quarto-margin-sidebar #TOC .collapse {
+  display: block;
+}
+
+/* Top level link in TOC */
+#quarto-margin-sidebar #TOC > ul > li:not(:has(ul)) > a.nav-link,
+#quarto-margin-sidebar #TOC > ul > li:has(> ul) > a.nav-link
+{
+  font-family   : var(--font-fam-normal);
+  font-size     : var(--size-toc-top);
+  padding-top   : var(--toc-link-padding);
+}
+
+/*--------------------------------------------------------------------*/
+/* PAGE NAVIGATION SIDEBAR
+/*--------------------------------------------------------------------*/
+#quarto-sidebar
+{
+  background-color: var(--flux-bg-norm);
+  font-family     : var(--font-fam-header);
+  border-right    : var(--h3-border);
+}
+
+#quarto-sidebar div
+{
+  color         : var(--flux-fg-mute);
+}
+
+#quarto-sidebar .active
+{
+  color           : var(--flux-color-1) !important;       /* ! needed */
+  font-weight     : bold;
+}
+
+#quarto-sidebar a:visited
+{
+  color         : inherit;
+}
+
+#quarto-sidebar a:hover
+{
+  color: var(--flux-color-2);
+}

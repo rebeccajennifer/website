@@ -17,31 +17,26 @@
     ]
   },
   {
-    "listing": "/reference/sw-arch__ref/index.html",
-    "items": []
-  },
-  {
-    "listing": "/reference/environment-setup__ref/index.html",
+    "listing": "/reference/index.html",
     "items": [
-      "/reference/environment-setup__ref/application-installation.html",
-      "/reference/environment-setup__ref/vs-code.html",
-      "/reference/environment-setup__ref/git.html",
-      "/reference/environment-setup__ref/default-shell.html",
-      "/reference/environment-setup__ref/arduino-cli.html",
-      "/reference/environment-setup__ref/putty.html"
+      "/reference/environment-setup__ref/index.html",
+      "/reference/color-scheme__ref/index.html",
+      "/reference/qnx__ref/index.html",
+      "/reference/inkscape__ref/index.html"
     ]
   },
   {
-    "listing": "/projects/the-book-of-plans/index.html",
+    "listing": "/reference/qnx__ref/index.html",
     "items": [
-      "/projects/the-book-of-plans/how-to-use.html",
-      "/projects/the-book-of-plans/assembly-instructions.html"
+      "/reference/qnx__ref/qnx-setup.html",
+      "/reference/qnx__ref/qnx-vm.html",
+      "/reference/qnx__ref/qnx-hello-world.html"
     ]
   },
   {
-    "listing": "/projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
+    "listing": "/reference/inkscape__ref/index.html",
     "items": [
-      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260110__it-begins/index.html"
+      "/reference/inkscape__ref/bitmap2vector.html"
     ]
   },
   {
@@ -69,27 +64,33 @@
     ]
   },
   {
-    "listing": "/reference/inkscape__ref/index.html",
+    "listing": "/projects/the-book-of-plans/index.html",
     "items": [
-      "/reference/inkscape__ref/bitmap2vector.html"
+      "/projects/the-book-of-plans/how-to-use.html",
+      "/projects/the-book-of-plans/assembly-instructions.html"
     ]
   },
   {
-    "listing": "/reference/qnx__ref/index.html",
+    "listing": "/projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
     "items": [
-      "/reference/qnx__ref/qnx-setup.html",
-      "/reference/qnx__ref/qnx-vm.html",
-      "/reference/qnx__ref/qnx-hello-world.html"
+      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260329__uml/index.html",
+      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260206__it-begins/index.html"
     ]
   },
   {
-    "listing": "/reference/index.html",
+    "listing": "/reference/environment-setup__ref/index.html",
     "items": [
-      "/reference/environment-setup__ref/index.html",
-      "/reference/color-scheme__ref/index.html",
-      "/reference/qnx__ref/index.html",
-      "/reference/inkscape__ref/index.html"
+      "/reference/environment-setup__ref/application-installation.html",
+      "/reference/environment-setup__ref/vs-code.html",
+      "/reference/environment-setup__ref/git.html",
+      "/reference/environment-setup__ref/default-shell.html",
+      "/reference/environment-setup__ref/arduino-cli.html",
+      "/reference/environment-setup__ref/putty.html"
     ]
+  },
+  {
+    "listing": "/reference/sw-arch__ref/index.html",
+    "items": []
   },
   {
     "listing": "/reference/color-scheme__ref/index.html",
@@ -101,7 +102,8 @@
       "/reference/color-scheme__ref/vscode-color.html",
       "/reference/color-scheme__ref/gnome-terminal-color.html",
       "/reference/color-scheme__ref/putty-color.html",
-      "/reference/color-scheme__ref/vim-color.html"
+      "/reference/color-scheme__ref/vim-color.html",
+      "/reference/color-scheme__ref/ls-colors-sample/a-file.html"
     ]
   }
 ]
