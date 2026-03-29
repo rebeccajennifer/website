@@ -1,0 +1,128 @@
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS style sheet for headings.
+/*____________________________________________________________________*/
+
+@import "flux-bunny-colors.css";
+@import "flux-bunny-const.css";
+
+
+h1, h2, h3, h4, h5 .flux-site-title
+{
+  font-family: var(--font-fam-header);
+}
+
+h1
+{
+  font-size     : var(--size-h1);
+  color         : var(--flux-color-2);
+  font-variant  : small-caps;
+  padding-top   : var(--content-padding)
+}
+
+.flux-site-title
+{
+  font-family   : var(--font-fam-header);
+  font-size     : var(--size-site-title);
+  color         : var(--flux-color-2);
+  font-weight   : bold;
+  font-variant  : small-caps;
+  text-align    : center;
+  border        : none;
+  padding-top   : 0px;
+}
+
+.site-subtitle
+{
+  font-size       : var(--size-h4);
+  color           : var(--flux-fg-mute);
+  font-family     : var(--font-fam-header);
+  text-align      : center;
+  border          : none;
+  padding-top: 0px;
+}
+
+h2
+{
+  font-size     : var(--size-h2);
+  color         : var(--flux-color-1);
+  padding-top   : var(--content-padding);
+  border-top    : var(--h2-border);
+  border-bottom : none;
+}
+
+h3
+{
+  font-size     : var(--size-h3);
+  color         : var(--flux-fg-mute);
+  padding-top   : var(--content-padding);
+  border-top    : var(--h3-border);
+  font-variant  : small-caps;
+}
+
+h4
+{
+  margin-left     : 0px;
+  text-decoration : underline;
+}
+
+h5
+{
+  font-family   : var(--font-fam-header);
+  color         : var(--flux-color-2);
+  font-weight   : bold;
+}
+
+
+/*--------------------------------------------------------------------*/
+/* PAGE TITLE
+/*--------------------------------------------------------------------*/
+.quarto-title p
+{
+  font-size       : var(--size-h4);
+  color           : var(--flux-fg-mute);
+  font-family     : var(--font-fam-header);
+}
+
+.quarto-title
+{
+  padding-bottom  : var(--content-padding);
+  border-bottom   : var(--content-border);
+  margin-bottom   : var(--pg-padding);
+}
+
+/*--------------------------------------------------------------------*/
+/* Don't apply top border to first h2 in main content.
+/* Each time h2 is used in quarto, it adds a new .level2 section.
+/* This code is targeting the h2 of first instance of level2 in main.
+/*
+/* Not currently active but keeping for reference.
+/*--------------------------------------------------------------------*/
+/*
+main .level2:first-of-type h2{
+  border-top: none;
+}
+*/

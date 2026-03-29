@@ -1,0 +1,80 @@
+/*_____________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|  -------------------------------                                     |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|_____________________________________________________________________*/
+/*  DESCRIPTION
+/*  CSS style sheet for website.
+/*____________________________________________________________________*/
+
+@import "flux-bunny-colors.css";
+@import "flux-bunny-const.css";
+
+.aa-Panel *
+{
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
+}
+
+.search-result-container:hover
+, .search-result-container:hover *:not(.search-match)
+, .search-result-doc-section.search-item:hover
+, .search-result-doc-section.search-item:hover *:not(.search-match)
+, .search-result-more:hover
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
+}
+
+.search-match
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-1) !important;     /* ! needed */
+}
+
+/* Search entry pop up */
+.aa-DetachedFormContainer
+{
+  background-color  : var(--flux-bg-norm) !important;     /* ! needed */
+}
+
+/* Cancel search button */
+.aa-DetachedCancelButton
+{
+  color             : var(--flux-bg-norm) !important;     /* ! needed */
+  background-color  : var(--flux-color-2) !important;     /* ! needed */
+  font-family       : var(--font-fam-header) !important;  /* ! needed */
+  border            : none;
+}
+
+/* Text entry */
+input
+{
+  color             : var(--flux-fg-norm) !important;     /* ! needed */
+}
+
+/* Search text entry */
+.aa-Form.d-flex
+{
+  background-color  : var(--flux-bg-bold);
+  border            : 1px solid var(--flux-fg-mute);
+}
