@@ -10,7 +10,7 @@
 #_______________________________________________________________________
 #
 #-----------------------------------------------------------------------
-#   Copyright 2025, Rebecca Rashkin
+#   Copyright 2026, Rebecca Rashkin
 #   -------------------------------
 #   This code may be copied, redistributed, transformed, or built
 #   upon in any format for educational, non-commercial purposes.
@@ -72,7 +72,7 @@ website:
         href: https://www.instagram.com/anonymous_rabbit/
 
   page-footer:
-    center: "©2025 Rebecca Jennifer Rashkin"
+    center: "©2026 Rebecca Jennifer Rashkin"
     left  : rebeccarashkin (at) gmail (dot) com
     right :
       - icon: linkedin
