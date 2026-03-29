@@ -32,6 +32,10 @@ order       : 0
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 
+## Class Diagrams
+
+Based on the [4+1 View Model](https://www.researchgate.net/publication/220018231_The_41_View_Model_of_Architecture), the logical view represents the static structure of the system by defining its objects and their relationships. [UML class diagrams](https://www.geeksforgeeks.org/system-design/unified-modeling-language-uml-class-diagrams/) are typically used to map out these connections.
+
 ## PlantUML
 
 I began my UML diagram using AutoCAD due to my background knowledge, but I quickly realized the tedium of this exercise and searched for a more automated way to construct a class diagram. A quick internet search introduced me to PlantUML, a scripting language based on GraphViz where I can define architectural elements and their relationships to have the diagram generated automatically.
@@ -55,7 +59,7 @@ Class | Description
 -|-
 `Adafruit_AlphaNum4 ` | Third party class to control LED display.
 `Alarm              ` | Alarm information.
-`AlphaDisplay       ` | Alphanumeric display control and formatting.
+`AlphaDisplay       ` | Alphanumeric display control.
 `AudioCtrl          ` | Interacts with speaker for alarm.
 `ClockWrapper       ` | Clock object and time setter functions based on hardware implementation. Tracks off-Friday week.
 `DS3231             ` | Third party real-time clock module driver.
@@ -67,8 +71,41 @@ Class | Description
 
 ## With Members
 
-I'm leveraging a lot of the class functionality I implemented in [ColorClock](/projects/color-clock/) and also started to outline
+I've started outlining the class methods and member variables, heavily leveraging off of the classes I implemented in ColorClock [ColorClock](/projects/color-clock/). Here is my work-in-progress class diagram from above, in more detail.
 
+[![](./nine-eighty-alarm-class-diagram-with-members-dark.svg){.dark-only}](./nine-eighty-alarm-class-diagram-with-members-dark.svg)
+[![](./nine-eighty-alarm-class-diagram-with-members-lite.svg){.lite-only}](./nine-eighty-alarm-class-diagram-with-members-lite.svg)
+
+## To Dos
+
+I have more functionality to flesh out, and more software architecture views to depict, but I've also been disconnected from RTOS development for quite some time. I might start dabbling with QNX again just to get some basic functionality on an actual hardware target. We'll see what inspires me in the next few weeks...
+
+Here is a non-exhaustive list of To Dos in no particular:
+
+### Software Architecture
+
+- Generate state transition diagrams for:
+  - Button functionality
+  - Time set
+  - Alarm set
+
+### QNX
+
+- Load QNX onto a Raspberry Pi
+- Create a minimal QNX project with several tasks
+- Interface with peripherals
+  - Button
+  - Clock module
+  - Alphanumeric display
+- Implement a hardware interrupt
+- Implement a timer
+- Implement a timer interrupt
+
+### Hardware
+
+- Identify a speaker for alarm sound
+- Interface with speaker
+- Design circuit board for hand soldering / PCB (?)
 
 ## A Side Note
 

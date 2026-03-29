@@ -27,3 +27,4 @@
 **/*.quarto_ipynb
 docs/
 publish/
+_freeze/
