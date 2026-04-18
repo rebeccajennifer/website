@@ -58,6 +58,7 @@ apt install nano
 apt install gedit
 apt install git
 apt install zsh
+apt install screen
 apt install curl
 apt install tmux
 apt install python3-pip
