@@ -1,0 +1,18 @@
+---
+title: Enable SSH
+description: >
+  This page describes how to enable ssh on a computer.
+draft: false
+---
+
+SSH allows you to access another computer from the command line. It lets you run commands on a remote system and transfer files between machines.
+
+To accept incoming connections, the SSH server must be enabled on the target computer. This page describes how to enable the SSH server on Linux and macOS systems.
+
+## MacOS
+
+1. Open `System Preferences` and select `Sharing`.
+![](./images__env-setup/enable-ssh__env-setup__images/macos-sharing.png)
+
+1. From the sidebar, select `Remote Login`.
+![](./images__env-setup/enable-ssh__env-setup__images/macos-enable-ssh.png)
