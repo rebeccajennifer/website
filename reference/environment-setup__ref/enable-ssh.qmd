@@ -2,6 +2,7 @@
 title: Enable SSH
 description: >
   This page describes how to enable ssh on a computer.
+toc-depth: 6
 draft: false
 ---
 
@@ -16,3 +17,95 @@ To accept incoming connections, the SSH server must be enabled on the target com
 
 1. From the sidebar, select `Remote Login`.
 ![](./images__env-setup/enable-ssh__env-setup__images/macos-enable-ssh.png)
+
+## Linux
+
+1. Install `openssh-server`.
+
+   ```bash
+   sudo apt update
+   sudo apt install openssh-server
+   ```
+
+1. Check if ssh is enabled. In this example, ssh is disabled
+
+   ```bash
+   > sudo systemctl status ssh
+
+   ○ ssh.service - OpenBSD Secure Shell server
+        Loaded: loaded (/usr/lib/systemd/system/ssh.service; disabled; preset: enabled)
+        Active: inactive (dead)
+   TriggeredBy: ● ssh.socket
+          Docs: man:sshd(8)
+                man:sshd_config(5)
+   ```
+
+1. Enable ssh
+
+   ```bash
+   > sudo systemctl enable ssh
+
+   Synchronizing state of ssh.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
+   Executing: /usr/lib/systemd/systemd-sysv-install enable ssh
+   Created symlink /etc/systemd/system/sshd.service → /usr/lib/systemd/system/ssh.service.
+   Created symlink /etc/systemd/system/multi-user.target.wants/ssh.service → /usr/lib/systemd/system/ssh.service.
+   ```
+
+## Test Connection
+
+In this example, the local machine will be my Macbook, and the remote machine will be the Linux host.
+
+1. On the remote machine, run `ifconfig` to check its IP address. It will likely be in the form `192.168.0.##`.
+
+   This computer is connected to the network using WiFi, so the key in ifconfig is labeled `wlo1`.
+
+   ```bash
+   > ifconfig
+
+   ...
+
+   wlo1: flags=4163<UP,BROADCAST,RUNNING,MULTICAST>  mtu 1500
+           inet 192.168.0.##  netmask 255.255.255.0  broadcast 192.168.0.255
+
+   ...
+   ```
+
+1. From the local machine, run `ping`. If the remote computer is reachable on the network, the terminal will display periodic replies indicating that the connection is active.
+
+   ```bash
+   > ping 192.168.0.##
+
+   PING 192.168.0.## (192.168.0.##): 56 data bytes
+   64 bytes from 192.168.0.##: icmp_seq=0 ttl=64 time=0.068 ms
+   64 bytes from 192.168.0.##: icmp_seq=1 ttl=64 time=0.100 ms
+   64 bytes from 192.168.0.##: icmp_seq=2 ttl=64 time=0.108 ms
+   ```
+
+1. Try to remote in using `ssh`. Type in the password for the remote user.
+
+   Example of successful login:
+
+   ```bash
+   > ssh <remote-user-name>@192.168.0.##
+
+   <remote-user-name>@192.168.0.##'s password:
+
+   Welcome to Ubuntu 24.04.4 LTS (GNU/Linux 6.17.0-20-generic x86_64)
+    * Documentation:  https://help.ubuntu.com
+    * Management:     https://landscape.canonical.com
+    * Support:        https://ubuntu.com/pro
+   Expanded Security Maintenance for Applications is not enabled.
+   88 updates can be applied immediately.
+   To see these additional updates run: apt list --upgradable
+   35 additional security updates can be applied with ESM Apps.
+   Learn more about enabling ESM Apps service at https://ubuntu.com/esm
+   Last login: Fri Apr 17 21:24:14 2026 from 192.168.0.95
+   ```
+
+   In this example, SSH access is currently disabled for this account, so the login attempt failed. Enable SSH access and try again.
+
+   ```bash
+   > ssh <remote-user-name>@192.168.0.##
+
+   ssh: connect to host 192.168.0.93 port 22: Connection refused
+   ```
