@@ -24,6 +24,8 @@ The instructions on this page were created based on using a Linux host computer
 - Host computer
 - Raspberry Pi 4
 - Power cable for Raspberry Pi
+- Micro SD card, minimum size, 16 GB
+- Micro SD card adapter (if necessary)
 - [USB-TTY adapter](https://a.co/d/04hH812L)
 
 ### Note
@@ -116,6 +118,26 @@ USB-TTY Adapter  | [SH-U09C5](https://a.co/d/04hH812L)
    > source ~/qnx800/qnxsdp-env.sh
    ```
 
+1. Navigate to the image.
+
+   ```bash
+   > cd ~/qnx800/images/rpi4
+   ```
+
+1. Run the script `unpack_rpi4_image.sh`
+
+   ```bash
+   > ./unpack_rpi4_image.sh
+   ```
+
+1. The image can be found in
+
+   ```bash
+   ~/qnx800/images/rpi4/rpi4/rpi4.img
+   ```
+
+
+<!--
 1. Locate the bsp `.zip` file and extract it. In this example, the zip file is extracted into a directory named `pi-bcm2711`.
 
    ```bash
@@ -157,6 +179,7 @@ USB-TTY Adapter  | [SH-U09C5](https://a.co/d/04hH812L)
    -rw-r--r-- 1 <user> <user>    30404 Dec 10 11:51 rpi4.build
    -rwxrwxr-x 1 <user> <user>   157296 Mar 29 17:11 startup-bcm2711-rpi4.sym
    ```
+   -->
 
 ## Copy Image to SD Card Reader Computer
 
@@ -168,12 +191,12 @@ Command from local computer (in my case, my Macbook that has an SD card reader).
 # The connection to user@192.168.0.x is the computer that contains the
 # QNX image. In this context, my MacBook with the SD card reader is the
 # "local" machine, and my Linux host is the "remote" machine.
-scp user@192.168.0.x:~/path/to/ifs-rpi4.bin
+scp user@192.168.0.x:~/path/to/rpi4.img
 ```
 
 ## Write QNX Image to SD Card
 
-These are the steps I used to write the QNX image onto an SD card on a Macbook Pro from 2014. The steps will likely be similar on a Linux machine.
+These are the steps I used to write the QNX image onto an SD card on a Macbook Pro from 2014. The steps will likely be similar on a Linux machine. Note that image file is 11 GB, so ensure you have an SD card that is large enough.
 
 1. Insert the SD card, the run:
 
@@ -216,16 +239,33 @@ These are the steps I used to write the QNX image onto an SD card on a Macbook P
    Unmount of all volumes on disk2 was successful
    ```
 
-1. Write the `.bin` file to the raw disk. This will overwrite the entire SD card.
+1. Write the `.img` file to the raw disk. This will overwrite the entire SD card.
+
+   __Note:__ This step might take 1 - 2 _hours_. With my setup, it took 1h 5m 2s.
 
    ```bash
    # Note that on a linux system the value of bs= might need to be 4M (capital)
-   > sudo dd if=/path/to/file.bin of=/dev/disk2 bs=4m
+   > sudo dd if=/path/to/rpi4.img of=/dev/disk2 bs=4m
+   ```
 
-   Password:
-   8+1 records in
-   8+0 records out
-   34305664 bytes transferred in 69.440696 secs (494028 bytes/sec)
+   The command will appear to hang. To view current progress of `dd` while it is running, from another terminal window, run:
+
+   ```
+   sudo kill -INFO $(pgrep ^dd$)
+   ```
+
+   Example output from `dd` window:
+
+   ```bash
+   363+0 records in
+   362+0 records out
+   1518338048 bytes transferred in 486.378867 secs (3121719 bytes/sec)
+   ```
+
+   To continuously print SD card write progress, you can run the command to print progress continuously every second. From a terminal window or pane different from the window running the `dd` command, execute the following loop:
+
+   ```bash
+   while true; do sudo kill -INFO $(pgrep ^dd$); sleep 1; done &
    ```
 
 1. Eject safely.
