@@ -3,7 +3,7 @@ title: Enable SSH
 description: >
   This page describes how to enable ssh on a computer.
 toc-depth: 6
-draft: false
+draft: true
 ---
 
 SSH allows you to access another computer from the command line. It lets you run commands on a remote system and transfer files between machines.

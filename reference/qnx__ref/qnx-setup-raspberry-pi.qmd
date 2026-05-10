@@ -278,6 +278,8 @@ These are the steps I used to write the QNX image onto an SD card on a Macbook P
 
 ## Connect to Raspberry Pi
 
+1. Insert
+
 ### Connect to Host Computer Using Serial
 
 1. Obtain a USB to TTL UART adapter, e.g. [SH-U09C5](https://a.co/d/04hH812L).
