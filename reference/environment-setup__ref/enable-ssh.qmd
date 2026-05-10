@@ -3,7 +3,8 @@ title: Enable SSH
 description: >
   This page describes how to enable ssh on a computer.
 toc-depth: 6
-draft: true
+image: ./images__env-setup/enable-ssh__env-setup__images/macos-enable-ssh.png
+draft: false
 ---
 
 SSH allows you to access another computer from the command line. It lets you run commands on a remote system and transfer files between machines.
@@ -20,6 +21,16 @@ To accept incoming connections, the SSH server must be enabled on the target com
 
 ## Linux
 
+### Reference
+
+```bash
+sudo sudo systemctl  enable --now ssh    # Enable ssh
+sudo sudo systemctl disable --now ssh    # Disable ssh
+ifconfig                                 # Network interface configuration utility
+```
+
+### Enable SSH Procedure
+
 1. Install `openssh-server`.
 
    ```bash
@@ -30,7 +41,7 @@ To accept incoming connections, the SSH server must be enabled on the target com
 1. Check if ssh is enabled. In this example, ssh is disabled
 
    ```bash
-   > sudo systemctl status ssh
+   > systemctl status ssh
 
    ○ ssh.service - OpenBSD Secure Shell server
         Loaded: loaded (/usr/lib/systemd/system/ssh.service; disabled; preset: enabled)
@@ -43,7 +54,7 @@ To accept incoming connections, the SSH server must be enabled on the target com
 1. Enable ssh
 
    ```bash
-   > sudo systemctl enable ssh
+   > sudo systemctl enable --now ssh
 
    Synchronizing state of ssh.service with SysV service script with /usr/lib/systemd/systemd-sysv-install.
    Executing: /usr/lib/systemd/systemd-sysv-install enable ssh
@@ -55,7 +66,7 @@ To accept incoming connections, the SSH server must be enabled on the target com
 
 In this example, the local machine will be my Macbook, and the remote machine will be the Linux host.
 
-1. On the remote machine, run `ifconfig` to check its IP address. It will likely be in the form `192.168.0.##`.
+1. On the _remote_ machine, run `ifconfig` to check its IP address. It will likely be in the form `192.168.0.##`.
 
    This computer is connected to the network using WiFi, so the key in ifconfig is labeled `wlo1`.
 
@@ -70,7 +81,7 @@ In this example, the local machine will be my Macbook, and the remote machine wi
    ...
    ```
 
-1. From the local machine, run `ping`. If the remote computer is reachable on the network, the terminal will display periodic replies indicating that the connection is active.
+1. From the _local_ machine, run `ping`. If the remote computer is reachable on the network, the terminal will display periodic replies indicating that the connection is active.
 
    ```bash
    > ping 192.168.0.##
@@ -83,7 +94,7 @@ In this example, the local machine will be my Macbook, and the remote machine wi
 
 1. Try to remote in using `ssh`. Type in the password for the remote user.
 
-   Example of successful login:
+   __Successful Login Example__
 
    ```bash
    > ssh <remote-user-name>@192.168.0.##
@@ -102,10 +113,12 @@ In this example, the local machine will be my Macbook, and the remote machine wi
    Last login: Fri Apr 17 21:24:14 2026 from 192.168.0.95
    ```
 
-   In this example, SSH access is currently disabled for this account, so the login attempt failed. Enable SSH access and try again.
+   __Unsuccessful Login Example__
+
+   In this example, SSH access is disabled for the remote host, so the login attempt failed.
 
    ```bash
    > ssh <remote-user-name>@192.168.0.##
 
-   ssh: connect to host 192.168.0.93 port 22: Connection refused
+   ssh: connect to host 192.168.0.## port 22: Connection refused
    ```

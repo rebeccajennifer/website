@@ -2,7 +2,7 @@
 title: Font Install
 description: >
   Sometimes if you open a file that was created on another machine, the font might not show up correctly. This page describes how to install a font on your machine.
-
+image: ./images__env-setup/font-install__env-setup__images/04__draw.io-font-change-01.png
 toc-depth: 6
 draft: false
 ---
@@ -101,7 +101,7 @@ In this example, the font that was installed was named `Lucida Console W1G VF`, 
 
    ![](./images__env-setup/font-install__env-setup__images/04__draw.io-font-change-00.png)
 
-1. The selected text now displays the correct font. However, the rest of the text in the drawing is still set to `Lucida Console` instead of the installed font name `Lucida Console W1G VF`.
+1. The text `Arduino` now displays the correct font. However, the rest of the text in the drawing is still set to `Lucida Console` instead of the installed font name `Lucida Console W1G VF`.
 
    ![](./images__env-setup/font-install__env-setup__images/04__draw.io-font-change-01.png)
 
