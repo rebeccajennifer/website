@@ -4,5 +4,12 @@
     "iostream": "cpp",
     "ostream": "cpp"
   },
-  "sarif-viewer.connectToGithubCodeScanning": "off"
+  "sarif-viewer.connectToGithubCodeScanning": "off",
+  "cSpell.words": [
+    "mkxfs",
+    "procnto",
+    "qnxsoftwarecenter",
+    "raspberrypi",
+    "sysv"
+  ]
 }

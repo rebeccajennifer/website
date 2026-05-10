@@ -16,7 +16,7 @@ A couple weeks ago I was tearing my house apart to find a package from Adafruit 
 
 I finally decided to find the email delivery confirmation but it was non existent in my inbox. And then I went to the Adafruit website and found a shopping cart containing all the items I was expecting in my package 😑 Looking at my shopping cart of unpurchased items, the real memory of what happened came flooding back... I was shopping for an encoder but couldn't commit and probably went to bed with intentions of finishing my shopping the next day but life got in the way. Studying my shopping cart, I discovered that one of the items I had planned to purchase was no longer in stock 😫
 
-### Lesons Learned
+### Lessons Learned
 
 1. When having trouble finding a mailed package, first check if the items were ever ordered.
 1. Don't put off ordering a shopping cart full of items in hopes of finding that last perfect addition.
@@ -29,7 +29,7 @@ I ordered an Arduino Nano ESP32 where nearly all of the pins are configurable to
 
 ## Nothing Good is Ever Easy
 
-So, I had this new Arduino and I just wanted to do a simple test so that I know I can talk to it. In my last post I shared my frustration with figuring out how to set build variables so I went back to developing on my beloved decade-old MacBook Pro. But after I figured out how to set build variables I migrated back to my new fancy Windows machine and applied the same changes to the boards.txt deep in the file system in the Arudino hardware folder. At that point I continued development on Windows.
+So, I had this new Arduino and I just wanted to do a simple test so that I know I can talk to it. In my last post I shared my frustration with figuring out how to set build variables so I went back to developing on my beloved decade-old MacBook Pro. But after I figured out how to set build variables I migrated back to my new fancy Windows machine and applied the same changes to the boards.txt deep in the file system in the Arduino hardware folder. At that point I continued development on Windows.
 
 Ok, back to the new Arduino board... I installed the drivers to talk to this board but I kept getting errors when trying to program it:
 

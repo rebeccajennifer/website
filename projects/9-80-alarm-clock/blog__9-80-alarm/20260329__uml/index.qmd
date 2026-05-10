@@ -80,7 +80,7 @@ I've started outlining the class methods and member variables, heavily leveragin
 
 I have more functionality to flesh out, and more software architecture views to depict, but I've also been disconnected from RTOS development for quite some time. I might start dabbling with QNX again just to get some basic functionality on an actual hardware target. We'll see what inspires me in the next few weeks...
 
-Here is a non-exhaustive list of To Dos in no particular:
+Here is a non-exhaustive list of To Dos in no particular order:
 
 ### Software Architecture
 

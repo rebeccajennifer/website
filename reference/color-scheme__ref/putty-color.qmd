@@ -1,7 +1,7 @@
 ---
 title: PuTTY Color Configuration
 subtitle: Defining custom color schemes in the PuTTY configuration.
-image: ../environment-setup__ref/images__env-setup/putty-config-2-window-09.png
+image: ../environment-setup__ref/images__env-setup/putty-config__env-setup__images/putty-config-2-window-09.png
 toc: true
 toc-depth: 6
 ---
