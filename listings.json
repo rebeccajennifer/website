@@ -34,9 +34,30 @@
     ]
   },
   {
-    "listing": "/reference/inkscape__ref/index.html",
+    "listing": "/reference/environment-setup__ref/index.html",
     "items": [
-      "/reference/inkscape__ref/bitmap2vector.html"
+      "/reference/environment-setup__ref/application-installation.html",
+      "/reference/environment-setup__ref/vs-code.html",
+      "/reference/environment-setup__ref/git.html",
+      "/reference/environment-setup__ref/default-shell.html",
+      "/reference/environment-setup__ref/arduino-cli.html",
+      "/reference/environment-setup__ref/enable-ssh.html",
+      "/reference/environment-setup__ref/font-install.html",
+      "/reference/environment-setup__ref/putty.html"
+    ]
+  },
+  {
+    "listing": "/projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
+    "items": [
+      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260329__uml/index.html",
+      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260206__it-begins/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/the-book-of-plans/index.html",
+    "items": [
+      "/projects/the-book-of-plans/how-to-use.html",
+      "/projects/the-book-of-plans/assembly-instructions.html"
     ]
   },
   {
@@ -64,28 +85,9 @@
     ]
   },
   {
-    "listing": "/projects/the-book-of-plans/index.html",
+    "listing": "/reference/inkscape__ref/index.html",
     "items": [
-      "/projects/the-book-of-plans/how-to-use.html",
-      "/projects/the-book-of-plans/assembly-instructions.html"
-    ]
-  },
-  {
-    "listing": "/projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
-    "items": [
-      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260329__uml/index.html",
-      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260206__it-begins/index.html"
-    ]
-  },
-  {
-    "listing": "/reference/environment-setup__ref/index.html",
-    "items": [
-      "/reference/environment-setup__ref/application-installation.html",
-      "/reference/environment-setup__ref/vs-code.html",
-      "/reference/environment-setup__ref/git.html",
-      "/reference/environment-setup__ref/default-shell.html",
-      "/reference/environment-setup__ref/arduino-cli.html",
-      "/reference/environment-setup__ref/putty.html"
+      "/reference/inkscape__ref/bitmap2vector.html"
     ]
   },
   {

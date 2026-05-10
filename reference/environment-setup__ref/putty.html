@@ -74,7 +74,7 @@ ul.task-list li input[type="checkbox"] {
 <link rel="stylesheet" href="../../style/flux-bunny-style.css">
 <meta property="og:title" content="PuTTY Configuration – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="https://rebeccajennifer.com/reference/environment-setup__ref/images__env-setup/putty-config-0-session-0.png">
+<meta property="og:image" content="https://rebeccajennifer.com/reference/environment-setup__ref/images__env-setup/putty-config__env-setup__images/putty-config-0-session-0.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
 <meta property="og:image:height" content="442">
 <meta property="og:image:width" content="452">
@@ -192,6 +192,18 @@ ul.task-list li input[type="checkbox"] {
   <div class="sidebar-item-container"> 
   <a href="../../reference/environment-setup__ref/arduino-cli.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Arduino Command Line Interface</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/environment-setup__ref/enable-ssh.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Enable SSH</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/environment-setup__ref/font-install.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Font Install</span></a>
   </div>
 </li>
           <li class="sidebar-item">
@@ -408,10 +420,10 @@ ul.task-list li input[type="checkbox"] {
 <h2 class="anchored" data-anchor-id="access-saved-session-configurations">Access Saved Session Configurations</h2>
 <ol type="1">
 <li><p><code>Windows key</code> + <code>r</code>, type <code>regedit</code>. Click <code>OK</code>.</p>
-<p><img src="./images__env-setup/putty-00.png" class="img-fluid"></p></li>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-00.png" class="img-fluid"></p></li>
 <li><p>On the left sidebar, navigate to <code>HKEY_CURRENT_USER/SOFTWARE/SimonTatham/PuTTY/Sessions/&lt;saved-session-name&gt;</code>. By default, there should be a saved session called <code>Default%20Settings</code>.</p>
 <p><strong>Note:</strong> <code>%20</code> corresponds with the ASCII code for space, so <code>Default%20Settings</code> translates to <code>Default Settings</code></p>
-<p><img src="./images__env-setup/putty-01.png" class="img-fluid"></p></li>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-01.png" class="img-fluid"></p></li>
 </ol>
 </section>
 <section id="export-configuration" class="level2">
@@ -419,20 +431,20 @@ ul.task-list li input[type="checkbox"] {
 <ol type="1">
 <li><p>From the Registry Editor, <a href="#access-saved-session-configurations">access the saved configuration</a> you would like to export.</p></li>
 <li><p>Right-click on the directory corresponding with the saved session to export. Select <code>Export</code>.</p>
-<p><img src="./images__env-setup/putty-02.png" class="img-fluid"></p></li>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-02.png" class="img-fluid"></p></li>
 <li><p>Name the file and save the configuration in your preferred location.</p>
-<p><img src="./images__env-setup/putty-03.png" class="img-fluid"></p></li>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-03.png" class="img-fluid"></p></li>
 </ol>
 </section>
 <section id="import-configuration" class="level2">
 <h2 class="anchored" data-anchor-id="import-configuration">Import Configuration</h2>
 <ol type="1">
 <li><p>From the Registry Editor, go to <code>File &gt; Import</code>.</p>
-<p><img src="./images__env-setup/putty-04.png" class="img-fluid"></p></li>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-04.png" class="img-fluid"></p></li>
 <li><p>Navigate to the saved configuration <code>.reg</code> file. Click <code>Open</code>.</p>
-<p><img src="./images__env-setup/putty-05.png" class="img-fluid"></p></li>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-05.png" class="img-fluid"></p></li>
 <li><p>There will be a dialog box confirming that settings were imported. Click <code>OK</code>.</p>
-<p><img src="./images__env-setup/putty-06.png" class="img-fluid"></p></li>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-06.png" class="img-fluid"></p></li>
 </ol>
 </section>
 <section id="color-settings" class="level2">
@@ -444,26 +456,26 @@ ul.task-list li input[type="checkbox"] {
 <p>This section contains screenshots of all the configuration settings of a PuTTY window.</p>
 <section id="session" class="level3">
 <h3 class="anchored" data-anchor-id="session">Session</h3>
-<p><img src="./images__env-setup/putty-config-0-session-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-0-session-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-0-session-2.png" class="img-fluid"></p>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-config-0-session-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-0-session-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-0-session-2.png" class="img-fluid"></p>
 </section>
 <section id="terminal" class="level3">
 <h3 class="anchored" data-anchor-id="terminal">Terminal</h3>
-<p><img src="./images__env-setup/putty-config-1-terminal-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-1-terminal-3.png" class="img-fluid"></p>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-config-1-terminal-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-1-terminal-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-1-terminal-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-1-terminal-3.png" class="img-fluid"></p>
 </section>
 <section id="window" class="level3">
 <h3 class="anchored" data-anchor-id="window">Window</h3>
-<p><img src="./images__env-setup/putty-config-2-window-00.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-01.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-02.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-03.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-04.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-05.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-06.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-07.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-08.png" class="img-fluid"> <img src="./images__env-setup/putty-config-2-window-09.png" class="img-fluid"></p>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-00.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-01.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-02.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-03.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-04.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-05.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-06.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-07.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-08.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-2-window-09.png" class="img-fluid"></p>
 </section>
 <section id="connection" class="level3">
 <h3 class="anchored" data-anchor-id="connection">Connection</h3>
-<p><img src="./images__env-setup/putty-config-3-connection-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config-3-connection-6.png" class="img-fluid"></p>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-config-3-connection-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-3-connection-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-3-connection-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-3-connection-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-3-connection-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-3-connection-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-3-connection-6.png" class="img-fluid"></p>
 <section id="auth" class="level4">
 <h4 class="anchored" data-anchor-id="auth">Auth</h4>
-<p><img src="./images__env-setup/putty-config-4-auth-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-4-auth-5.png" class="img-fluid"></p>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-config-4-auth-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-4-auth-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-4-auth-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-4-auth-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-4-auth-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-4-auth-5.png" class="img-fluid"></p>
 </section>
 <section id="bugs" class="level4">
 <h4 class="anchored" data-anchor-id="bugs">Bugs</h4>
-<p><img src="./images__env-setup/putty-config-5-bugs-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config-5-bugs-6.png" class="img-fluid"></p>
+<p><img src="./images__env-setup/putty-config__env-setup__images/putty-config-5-bugs-0.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-5-bugs-1.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-5-bugs-2.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-5-bugs-3.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-5-bugs-4.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-5-bugs-5.png" class="img-fluid"> <img src="./images__env-setup/putty-config__env-setup__images/putty-config-5-bugs-6.png" class="img-fluid"></p>
 
 
 </section>
