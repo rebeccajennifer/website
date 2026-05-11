@@ -78,6 +78,7 @@ Tell time with color. An immersive art installation that transforms time passage
 
 **Developed in C++ using the Arduino Command Line Interface.**
 
+[Design Document](color-clock/assets__color-clock/slide-deck__color-clock/color-clock-design__20260508.pdf){class="flux-button _3"}
 <a class="flux-button _3 source-code" href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"></a>
 :::
 ::: {.g-col-12 .g-col-md-4}
