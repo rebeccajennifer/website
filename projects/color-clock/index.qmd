@@ -38,6 +38,10 @@ table td:first-child  { width:  50%; }
 
 ![](/projects/color-clock/assets__color-clock/photos__color-clock/overall__photos__color-clock/cover-photo-0__color-clock.jpg)
 
+[Design Document](assets__color-clock/slide-deck__color-clock/color-clock-design__20260508.pdf){class="flux-button _2"}
+[Source Code](https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver){class="flux-button _2"}
+[Blog](blog__color-clock/index.qmd){class="flux-button _2"}
+
 ## What is it?
 
 ColorClock is a decade-long passion project that combines art with
@@ -52,12 +56,4 @@ Burning Man 2024. It was a simple circular light display housed in a
 practical lean-to structure with a bench.
 
 
-<table style="width: 100%"><tr>
-<td><a
-  href="https://github.com/rebeccajennifer/color-clock/tree/main/sw/arduino/color-clock-driver"
-  class="flux-button _2">Source Code</a></td>
-<td><a
-  href="blog__color-clock/index.html"
-  class="flux-button _2">Blog</a>
-</td>
-</tr></table>
+
