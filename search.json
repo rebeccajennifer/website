@@ -752,11 +752,22 @@
     "text": "Loading…"
   },
   {
+    "objectID": "projects/color-clock/index.html",
+    "href": "projects/color-clock/index.html",
+    "title": "ColorClock",
+    "section": "",
+    "text": "Design Document Source Code Blog",
+    "crumbs": [
+      "Projects",
+      "ColorClock"
+    ]
+  },
+  {
     "objectID": "projects/color-clock/index.html#what-is-it",
     "href": "projects/color-clock/index.html#what-is-it",
     "title": "ColorClock",
     "section": "What is it?",
-    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I have taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.\n\n\n\nSource Code\n\n\nBlog",
+    "text": "What is it?\nColorClock is a decade-long passion project that combines art with engineering and color with time. Put simply, it’s a clock that displays time through color instead of symbols. For me, it represents perseverance and pride, and stands as the most hard-earned engineering accomplishment I have taken from conception to design to full deployment.\nColorClock V1 was an RGB LED art installation displayed at Burning Man 2024. It was a simple circular light display housed in a practical lean-to structure with a bench.",
     "crumbs": [
       "Projects",
       "ColorClock"
@@ -2482,7 +2493,7 @@
     "href": "projects/index.html#colorclock",
     "title": "Projects",
     "section": "ColorClock",
-    "text": "ColorClock\nTell time with color. An immersive art installation that transforms time passage into a light spectrum. A decade-long journey from initial concept to final deployment.\nDeveloped in C++ using the Arduino Command Line Interface.",
+    "text": "ColorClock\nTell time with color. An immersive art installation that transforms time passage into a light spectrum. A decade-long journey from initial concept to final deployment.\nDeveloped in C++ using the Arduino Command Line Interface.\nDesign Document",
     "crumbs": [
       "Projects"
     ]
