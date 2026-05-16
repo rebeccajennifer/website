@@ -79,17 +79,19 @@ sudo snap install discord
 
 ### Install From `.deb`
 
-#### Chrome
-
 From directory with `.deb` file
 
-```
+```bash
 sudo dpkg -i <.deb file>
 ```
 
+#### Apps
+- [Chrome](https://www.google.com/chrome/)
+- [draw.io](https://www.drawio.com/)
+
 #### DrawIO
 
-Download `.deb` from [here](https://github.com/jgraph/drawio-desktop/releases/tag/v26.0.4).
+Download `.deb` from [here](https://www.drawio.com/).
 
 Run with
 

@@ -47,7 +47,7 @@ See this page for a complete list of VS Code color theme properties.
 
 See this link for a copy of my personally designed dark and light themes.
 
-[Lagomorphic Constructs Theme Pack](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-themes){class="flux-button _3"}
+[Lagomorphic Constructs Theme Pack](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/rebecca-jennifer.flux-bunny-themes){class="flux-button _3"}
 
 ### Custom Theme Installation Instructions
 
