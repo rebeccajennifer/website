@@ -172,7 +172,7 @@
     "href": "reference/color-scheme__ref/vscode-color.html#my-original-themes",
     "title": "VS Code Color Theme",
     "section": "My Original Themes",
-    "text": "My Original Themes\nSee this link for a copy of my personally designed dark and light themes.\nLagomorphic Constructs Theme Pack\n\nCustom Theme Installation Instructions\nDownload the directory flux-bunny-themes and copy it into your VS Code extensions directory.\n\n\n\nOS\nExtensions Directory Path\n\n\n\n\nLinux\n~/.vscode/extensions\n\n\nWindows\nC:\\&lt;username&gt;\\.vscode\\extensions\n\n\n\nNote: If you installed VS Code in a non-conventional way, your extensions directory might exist in a different location than listed above. Verify the location of your extensions directory by selecting Developer: Open Extensions Folder from the command palette.",
+    "text": "My Original Themes\nSee this link for a copy of my personally designed dark and light themes.\nLagomorphic Constructs Theme Pack\n\nCustom Theme Installation Instructions\nDownload the directory rebecca-jennifer.flux-bunny-themes and copy it into your VS Code extensions directory.\n\n\n\nOS\nExtensions Directory Path\n\n\n\n\nLinux\n~/.vscode/extensions\n\n\nWindows\nC:\\&lt;username&gt;\\.vscode\\extensions\n\n\n\nNote: If you installed VS Code in a non-conventional way, your extensions directory might exist in a different location than listed above. Verify the location of your extensions directory by selecting Developer: Open Extensions Folder from the command palette.",
     "crumbs": [
       "Reference",
       "The Reference Library",
