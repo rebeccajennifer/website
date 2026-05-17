@@ -51,7 +51,7 @@ See this link for a copy of my personally designed dark and light themes.
 
 ### Custom Theme Installation Instructions
 
-Download the directory `flux-bunny-themes` and copy it into your VS Code extensions directory.
+Download the directory `rebecca-jennifer.flux-bunny-themes` and copy it into your VS Code extensions directory.
 
 OS | Extensions Directory Path
 -|-

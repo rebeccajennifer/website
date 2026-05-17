@@ -75,7 +75,7 @@ This page describes how to access a configuration file for a saved PuTTY session
 
 ## Color Settings
 
-Follow [these instructions](../environment-setup__ref/putty.html#import-configuration) to customize your PuTTY terminal color scheme.
+Follow [these instructions](../color-scheme__ref/putty-color.qmd) to customize your PuTTY terminal color scheme.
 
 ## All Configuration Settings
 
