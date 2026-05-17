@@ -1,8 +1,10 @@
 ---
 title: VxWorks Getting Started
-toc: false
+description: >
+  Get VxWorks running in QEMU, a machine emulator.
+image: ./images__vxw/00__vxw__logo-terminal.png
 toc-depth: 6
-draft: true
+draft: false
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
@@ -36,14 +38,16 @@ draft: true
 
 1. These instructions were executed on a Linux machine, version `Ubuntu 24.04.4 LTS (Noble Numbat)`.
 1. Lines starting with `>` represent commands entered at the command prompt.
-1. Instructions were taken from official references.
+1. Instructions were taken from official references listed below.
 
 ## Official VxWorks Links
 
-[Download page](https://forums.windriver.com/t/vxworks-software-development-kit-sdk/43)
-[README](https://d13321s3lxgewa.cloudfront.net/downloads/wrsdk-vxworks7-docs/2603/README_qemu.html)
+[Download page](https://forums.windriver.com/t/vxworks-software-development-kit-sdk/43){class="flux-button _3"}
+[README](https://d13321s3lxgewa.cloudfront.net/downloads/wrsdk-vxworks7-docs/2603/README_qemu.html){class="flux-button _3"}
 
-Prerequisites
+## Prerequisites
+
+Before proceeding with these instructions, ensure the following packages are installed.
 
 ```bash
 sudo apt install build-essential libc6:i386
@@ -52,7 +56,9 @@ sudo apt install python3-pyftpdlib
 sudo apt install qemu-system-x86
 ```
 
-VxWorks SDK for IA - QEMU (x86-64)
+## Download SDK and Boot VxWorks Image
+
+1. Download `VxWorks SDK for IA - QEMU (x86-64)`.
 
 1. Extract the compressed file. This may take a couple minutes.
 
@@ -80,10 +86,9 @@ VxWorks SDK for IA - QEMU (x86-64)
    > source sdkenv.sh
    ```
 
-   __Note:__ If you get this error after sourcing the file, [reconfigure `/bin/sh/` to bash](#reconfigure-binsh):
+   __Note:__ If you get this error after sourcing the file, [reconfigure `/bin/sh/` to bash](#reconfigure-binsh) as described at the end of this page.
 
    ```bash
-   > source sdkenv.sh
    The default shell is dash, please change your default shell to bash.
    ```
 
@@ -94,7 +99,7 @@ VxWorks SDK for IA - QEMU (x86-64)
    /home/flux/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0
    ```
 
-1. Boot VxWorks on QEMU
+1. Boot VxWorks on QEMU. From the VxWorks SDK root, run the following command (in this example the SDK root is: `~/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0`).
 
    ```bash
    > qemu-system-x86_64 -m 1024M -kernel vxsdk/bsps/itl_generic_3_0_0_5/vxWorks \
@@ -162,20 +167,20 @@ VxWorks SDK for IA - QEMU (x86-64)
 
    __Note:__ If the VxWorks image did not load, a terminal window will pop up and might look like this:
 
-   ![](./images__vxw/00__vxw__qemu-start.png)
+   ![](./images__vxw/00__vxw__qemu-start-error.png)
 
    If you click on the QEMU terminal, you might not be able to click anywhere on your machine. press `Ctrl+Alt+G` to release the grab.
 
-## Hello World on VxWorks
+## Hello World
 
-1. Create a `hello` project.
+1. Create a 'hello world' source file named `hello.c`.
 
    ```cpp
    #include <stdio.h>
 
    int main(void)
      {
-       printf("hello, world!\n");
+       printf("\n\nHello there :)\n\n");
        return 0;
      }
    ```
@@ -193,8 +198,6 @@ VxWorks SDK for IA - QEMU (x86-64)
    wr-cc -rtp hello.c -static -o hello.exe
    ```
 
-## Run Application
-
 1. Start an FTP server.
 
    ```bash
@@ -203,6 +206,12 @@ VxWorks SDK for IA - QEMU (x86-64)
    [I 2026-05-16 19:58:35] masquerade (NAT) address: None
    [I 2026-05-16 19:58:35] passive ports: None
    [I 2026-05-16 19:58:35] >>> starting FTP server on 0.0.0.0:21, pid=406255 <<<
+   ```
+
+   To turn off FTP logging, append the command with `> /dev/null 2>&1`
+
+   ```bash
+   sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME > /dev/null 2>&1
    ```
 
 1. Move the FTP server process to the background by pressing `Ctrl+Z`. Run `bg` to keep the process running.
@@ -215,7 +224,75 @@ VxWorks SDK for IA - QEMU (x86-64)
    [3]    continued  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
    ```
 
-### Reconfigure `/bin/sh`
+1. Boot VxWorks on QEMU as described above.
+
+   ```bash
+   > qemu-system-x86_64 -m 1024M -kernel vxsdk/bsps/itl_generic_3_0_0_5/vxWorks \
+     -net nic -net user,hostfwd=tcp::1534-:1534,hostfwd=tcp::2345-:2345         \
+     -display none -serial stdio -monitor none                                  \
+     -append "bootline:fs(0,0)host:vxWorks h=10.0.2.2 e=10.0.2.15 u=target pw=vxTarget o=gei0"
+   ```
+
+1. Run `cmd`.
+
+   ```text
+   -> cmd
+   [vxWorks *]# cd <path to hello.exe>
+   ```
+
+   __Example__
+
+   __Note:__ If logging was not redirected when starting the FTP server, FTP session messages may appear during command execution. These can be safely ignored.
+
+   ```text
+   -> cmd
+   [vxWorks *]# cd ~/git/sample-programs/vxworks/hello-vxworks
+   [I 2026-05-16 20:34:53] 127.0.0.1:42454-[] FTP session opened (connect)
+   [I 2026-05-16 20:34:53] 127.0.0.1:42454-[target] USER 'target' logged in.
+   [I 2026-05-16 20:34:53] 127.0.0.1:42454-[target] FTP session closed (disconnect).
+   [I 2026-05-16 20:34:53] 127.0.0.1:42458-[] FTP session opened (connect)
+   [I 2026-05-16 20:34:53] 127.0.0.1:42458-[target] USER 'target' logged in.
+   [I 2026-05-16 20:34:53] 127.0.0.1:42458-[target] FTP session closed (disconnect).
+   [I 2026-05-16 20:34:53] 127.0.0.1:42474-[] FTP session opened (connect)
+   [I 2026-05-16 20:34:53] 127.0.0.1:42474-[target] USER 'target' logged in.
+   [I 2026-05-16 20:34:53] 127.0.0.1:42474-[target] FTP session closed (disconnect).
+   [I 2026-05-16 20:34:53] 127.0.0.1:42478-[] FTP session opened (connect)
+   [I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] USER 'target' logged in.
+   [I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] FTP session closed (disconnect).
+
+   [vxWorks *]# hello.exe
+   Launching process 'hello.exe' ...
+   Process 'hello.exe' (process Id = 0xffff800006ede000) launched.
+
+
+   Hello there :)
+   ```
+
+1. To shut down the VxWorks image, exit `cmd` and then press `Ctrl+C`.
+
+   ```text
+   [vxWorks *]# exit
+   Au revoir!
+   qemu-system-x86_64: terminating on signal 2
+   ```
+
+## Stop FTP Server Process
+
+1. Determine the PID for the process.
+
+   ```bash
+   > sudo lsof -i :21
+   COMMAND    PID USER   FD   TYPE   DEVICE SIZE/OFF NODE NAME
+   python3 406255 root    4u  IPv4 11734009      0t0  TCP *:ftp (LISTEN)
+   ```
+
+1. Kill the process, in this case, `406255`.
+
+   ```bash
+   > sudo kill 406255
+   ```
+
+## Reconfigure `/bin/sh`
 
 The script `sdkenv.sh` assumes that `/bin/sh` is configured to `bash`, but in this example, it was configured to `dash`. This section describes how to reconfigure `/bin/sh` to `bash`.
 
