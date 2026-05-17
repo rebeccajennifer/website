@@ -6,9 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
-<meta name="description" content="This page contains installation steps for the QNX Software Development Package 8.0 on Ubuntu 24.04, based on the official QNX release video.">
+<meta name="description" content="Get VxWorks running in QEMU, a machine emulator.">
 
-<title>QNX SDP Installation and Setup – Rebecca Jennifer Rashkin</title>
+<title>VxWorks Getting Started – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,10 +73,12 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../style/flux-bunny-style.css">
-<meta property="og:title" content="QNX SDP Installation and Setup – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="VxWorks Getting Started – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="https://rebeccajennifer.com/reference/qnx__ref/assets/photos-general-assets/flux-grass-line-art-black-square.png">
+<meta property="og:image" content="https://rebeccajennifer.com/reference/vxworks__ref/images__vxw/00__vxw__logo-terminal.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
+<meta property="og:image:height" content="595">
+<meta property="og:image:width" content="756">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -129,7 +131,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/qnx__ref/index.html">QNX Reference</a></li><li class="breadcrumb-item"><a href="../../reference/qnx__ref/qnx-setup.html">QNX SDP Installation and Setup</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vxworks__ref/index.html">VxWorks Getting Started</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -293,14 +295,14 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../reference/qnx__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">QNX Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/qnx__ref/qnx-setup.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/qnx__ref/qnx-setup.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">QNX SDP Installation and Setup</span></a>
   </div>
 </li>
@@ -337,7 +339,7 @@ ul.task-list li input[type="checkbox"] {
   </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/vxworks__ref/index.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/vxworks__ref/index.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">VxWorks Getting Started</span></a>
   </div>
 </li>
@@ -353,28 +355,27 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#official-qnx-tutorial" id="toc-official-qnx-tutorial" class="nav-link active" data-scroll-target="#official-qnx-tutorial">Official QNX Tutorial</a></li>
-  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
-  <li><a href="#installed-files" id="toc-installed-files" class="nav-link" data-scroll-target="#installed-files">Installed Files</a>
-  <ul>
-  <li><a href="#shell-setup-script" id="toc-shell-setup-script" class="nav-link" data-scroll-target="#shell-setup-script">Shell Setup Script</a></li>
-  </ul></li>
-  <li><a href="#qnx-momentix-ide" id="toc-qnx-momentix-ide" class="nav-link" data-scroll-target="#qnx-momentix-ide">QNX Momentix IDE</a></li>
-  <li><a href="#visual-studio-code-qnx-toolkit" id="toc-visual-studio-code-qnx-toolkit" class="nav-link" data-scroll-target="#visual-studio-code-qnx-toolkit">Visual Studio Code QNX Toolkit</a></li>
+  <li><a href="#notes" id="toc-notes" class="nav-link active" data-scroll-target="#notes">Notes</a></li>
+  <li><a href="#official-vxworks-links" id="toc-official-vxworks-links" class="nav-link" data-scroll-target="#official-vxworks-links">Official VxWorks Links</a></li>
+  <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
+  <li><a href="#download-sdk-and-boot-vxworks-image" id="toc-download-sdk-and-boot-vxworks-image" class="nav-link" data-scroll-target="#download-sdk-and-boot-vxworks-image">Download SDK and Boot VxWorks Image</a></li>
+  <li><a href="#hello-world" id="toc-hello-world" class="nav-link" data-scroll-target="#hello-world">Hello World</a></li>
+  <li><a href="#stop-ftp-server-process" id="toc-stop-ftp-server-process" class="nav-link" data-scroll-target="#stop-ftp-server-process">Stop FTP Server Process</a></li>
+  <li><a href="#reconfigure-binsh" id="toc-reconfigure-binsh" class="nav-link" data-scroll-target="#reconfigure-binsh">Reconfigure <code>/bin/sh</code></a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/qnx__ref/index.html">QNX Reference</a></li><li class="breadcrumb-item"><a href="../../reference/qnx__ref/qnx-setup.html">QNX SDP Installation and Setup</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vxworks__ref/index.html">VxWorks Getting Started</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">QNX SDP Installation and Setup</h1>
+<h1 class="title">VxWorks Getting Started</h1>
 </div>
 
 <div>
   <div class="description">
-    <p>This page contains installation steps for the QNX Software Development Package 8.0 on Ubuntu 24.04, based on the official QNX release video.</p>
+    <p>Get VxWorks running in QEMU, a machine emulator.</p>
   </div>
 </div>
 
@@ -416,133 +417,205 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   How to install QNX SDP.
+|   Reference page for PuTTY configuration
 |____________________________________________________________________-->
-<section id="official-qnx-tutorial" class="level2">
-<h2 class="anchored" data-anchor-id="official-qnx-tutorial">Official QNX Tutorial</h2>
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/s8_rvkSfj10" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-</section>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
 <ol type="1">
-<li><p>Sign up for myQNX account from <a href="https://qnx.com" class="uri">https://qnx.com</a>.</p></li>
-<li><p>Log in with myQNX. Hover over <code>Developers</code>, then click <code>FREE Non-Commercial License</code>.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-00-free-license.png" class="img-fluid"></p></li>
-<li><p>If you click this more than once, you will see this screen after you’ve already requested a license.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-01-qnx-access.png" class="img-fluid"></p></li>
-<li><p>You should receive an email within 30 minutes indicating that your Non-Commercial license is ready.</p></li>
-<li><p>Go to <a href="https://qnx.com/account/dashboard/" class="uri">https://qnx.com/account/dashboard/</a>.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-02-license-manager.png" class="img-fluid"></p></li>
-<li><p>Under the <code>Users</code> column, click on the text <code>Click to deploy to users</code> then on the button <code>Deploy</code>. Type the email address used for your QNX account.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-03-deploy0.png" class="img-fluid"> <img src="./images__qnx-ref/0__install-qnx-img/0__install-03-deploy1.png" class="img-fluid"></p></li>
-<li><p>From myQNX home <a href="https://qnx.com/account" class="uri">https://qnx.com/account</a>, click on the <code>QNX Software Center</code> link.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-04-sw-center0.png" class="img-fluid"></p></li>
-<li><p>Scroll down to the download section and select the appropriate version for your OS.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-05-download.png" class="img-fluid"></p></li>
-<li><p>In your terminal window, navigate to the downloaded file and make the file executable.</p>
-<pre class="bash"><code>(linux): cd ~/Downloads
-(linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run</code></pre></li>
-<li><p>Run the file to install software center.</p>
-<pre class="bash"><code>(linux): ./qnx-setup-2.0.4-202501021438-linux.run</code></pre></li>
-<li><p>Scroll to the bottom of the license agreement by hitting <code>&lt;enter&gt;</code> several times or type <code>q</code> to jump to the bottom.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-06-agreement.png" class="img-fluid"></p></li>
-<li><p>Type <code>y</code> to accept agreement.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-07-agreement-accept.png" class="img-fluid"></p></li>
-<li><p>Specify installation path. Hit <code>&lt;enter&gt;</code> to accept the default install location.</p>
-<p>Example:</p>
-<pre class="bash"><code>Specify installation path (default: /home/flux/qnx):</code></pre></li>
-<li><p>After specifying the installation path, your terminal will look similar to this.</p>
-<pre class="bash"><code>(linux): chmod +x qnx-setup-2.0.4-202501021438-linux.run
-(linux): ./qnx-setup-2.0.4-202501021438-linux.run
-Verifying archive integrity... All good.
-Uncompressing QNX Software Center 2.0.4  100%
-Please type y to accept, n otherwise: y
-Current directory: /home/flux/Downloads
-Specify installation path (default: /home/flux/qnx):
-
-Installing QNX Software Center into /home/flux/qnx/qnxsoftwarecenter
-User configuration is stored in /home/flux/.qnx
-Launching QNX Software Center using /home/flux/qnx/qnxsoftwarecenter/qnxsoftwarecenter</code></pre></li>
-<li><p>Type your myQNX credentials.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-08-credentials.png" class="img-fluid"> <img src="./images__qnx-ref/0__install-qnx-img/0__install-09-password-hint.png" class="img-fluid"></p></li>
-<li><p>From the QNX Software Center window, click <code>Add Installation</code>.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-10-add-installation.png" class="img-fluid"></p></li>
-<li><p>Expand <code>QNX Software Development Platform 8.0</code>, select <code>QNX Software Development Platform 8.0</code> and click <code>Next</code> on this and the following window.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-0.png" class="img-fluid"> <img src="./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-1.png" class="img-fluid"></p></li>
-<li><p>The window might show <code>Synchronizing with remote repository, it may take a while</code> for a few minutes. Click <code>Next</code> when the window changes. Click <code>Next</code> for the next couple screens. <img src="./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-2.png" class="img-fluid"> <img src="./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-3.png" class="img-fluid"> <img src="./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-4.png" class="img-fluid"></p></li>
-<li><p>Accept the license agreement and click <code>Finish</code>.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-5.png" class="img-fluid"></p></li>
-<li><p>After a few minutes, this window will pop up. Click <code>Close</code>.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-11-install-qnx-8.0-6.png" class="img-fluid"></p></li>
-<li><p>From QNX Software Center, click <code>Installed</code> and expand <code>QNX Software Development Platform 8.0</code> to view installed packages.</p>
-<p><img src="./images__qnx-ref/0__install-qnx-img/0__install-12-installed-packages.png" class="img-fluid"></p></li>
+<li>These instructions were executed on a Linux machine, version <code>Ubuntu 24.04.4 LTS (Noble Numbat)</code>.</li>
+<li>Lines starting with <code>&gt;</code> represent commands entered at the command prompt.</li>
+<li>Instructions were taken from official references listed below.</li>
 </ol>
 </section>
-<section id="installed-files" class="level2">
-<h2 class="anchored" data-anchor-id="installed-files">Installed Files</h2>
-<p>After installation, in your terminal, show the contents of th QNX installation folder.</p>
-<pre class="bash"><code>(linux): ls ~/qnx800
-host  qnxsdp-env.bat  qnxsdp-env.sh  target</code></pre>
-<table class="caption-top table">
-<colgroup>
-<col style="width: 50%">
-<col style="width: 50%">
-</colgroup>
-<thead>
-<tr class="header">
-<th>File Object</th>
-<th>Description</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>host</code></td>
-<td>Contains list of host binaries included in SDP binaries that run on Linux / Development host that allow you to best interact with QNX SDP</td>
-</tr>
-<tr class="even">
-<td><code>target</code></td>
-<td>Contains list of binaries, libraries, tools intended to run on QNX target</td>
-</tr>
-<tr class="odd">
-<td><code>qnxsdp-env.*</code></td>
-<td>Scripts that set up the shell environment for QNX.</td>
-</tr>
-</tbody>
-</table>
-<section id="shell-setup-script" class="level3">
-<h3 class="anchored" data-anchor-id="shell-setup-script">Shell Setup Script</h3>
-<p>Before executing QNX commands on the command line, you must source the appropriate <code>qnxsdp-env</code>.</p>
-<pre class="bash"><code># Sets up shell environment for QNX development
-# Sets environment variables:
-# QNX_HOST=/home/username/qnx800/host/linux/x86_64
-# QNX_TARGET=/home/username/qnx800/target/qnx
-# MAKEFLAGS=-I/home/username/qnx800/target/qnx/usr/include
-source qnxsdp-env.sh</code></pre>
+<section id="official-vxworks-links" class="level2">
+<h2 class="anchored" data-anchor-id="official-vxworks-links">Official VxWorks Links</h2>
+<p><a href="https://forums.windriver.com/t/vxworks-software-development-kit-sdk/43" class="flux-button _3">Download page</a> <a href="https://d13321s3lxgewa.cloudfront.net/downloads/wrsdk-vxworks7-docs/2603/README_qemu.html" class="flux-button _3">README</a></p>
 </section>
+<section id="prerequisites" class="level2">
+<h2 class="anchored" data-anchor-id="prerequisites">Prerequisites</h2>
+<p>Before proceeding with these instructions, ensure the following packages are installed.</p>
+<pre class="bash"><code>sudo apt install build-essential libc6:i386
+sudo apt install python3-pip
+sudo apt install python3-pyftpdlib
+sudo apt install qemu-system-x86</code></pre>
 </section>
-<section id="qnx-momentix-ide" class="level2">
-<h2 class="anchored" data-anchor-id="qnx-momentix-ide">QNX Momentix IDE</h2>
-<p>QNX Momentix IDE is the IDE for QNX that comes with QNX Software Center. Follow instructions from the video to install this software.</p>
-</section>
-<section id="visual-studio-code-qnx-toolkit" class="level2">
-<h2 class="anchored" data-anchor-id="visual-studio-code-qnx-toolkit">Visual Studio Code QNX Toolkit</h2>
-<p>The VS Code QNX Toolkit extension allows you to create and run QNX projects from VS Code.</p>
+<section id="download-sdk-and-boot-vxworks-image" class="level2">
+<h2 class="anchored" data-anchor-id="download-sdk-and-boot-vxworks-image">Download SDK and Boot VxWorks Image</h2>
 <ol type="1">
-<li><p>Install <code>QNX Toolkit</code> from extensions.</p>
-<p><img src="./images__qnx-ref/1__setup-qnx-img/1__setup-00-vscode-install-ext.png" class="img-fluid"></p></li>
-<li><p>Ensure prerequsites are installed. These are listed in the quickstart guide on the QNX website.</p>
-<p><a href="https://www.qnx.com/developers/docs/qnxtoolkit/" class="uri">https://www.qnx.com/developers/docs/qnxtoolkit/</a></p></li>
-<li><p>Click the QNX extension in the Activity Bar on the left side of the screen. In the sidebar under <code>QNX COMMANDS</code> expand <code>Configuration</code> and select <code>Open QNX Tookit Walkthrough</code></p>
-<p><img src="./images__qnx-ref/1__setup-qnx-img/1__setup-01-vscode-walkthrough.png" class="img-fluid"></p></li>
-<li><p>From the main window, click <code>Edit Settings</code>.</p>
-<p><img src="./images__qnx-ref/1__setup-qnx-img/1__setup-02-vscode-settings.png" class="img-fluid"></p></li>
-<li><p>Go to VS Code settings with the shortcut <code>Ctrl + ,</code>.</p></li>
-<li><p>Expand <code>Extensions</code> and select <code>QNX Toolkit</code>.</p></li>
-<li><p>Set <code>Sdp Path</code> is set to the installation directory and <code>Default Projects Root</code> to the project directory path.</p>
-<p><img src="./images__qnx-ref/1__setup-qnx-img/1__setup-03-vscode-settings-sdp-path.png" class="img-fluid"> <img src="./images__qnx-ref/1__setup-qnx-img/1__setup-04-vscode-settings-projects-root.png" class="img-fluid"></p>
-<p>The corresponding properties in <code>settings.json</code> are listed below.</p>
-<pre class="json"><code>"qnx.sdpPath"                   : "/home/username/qnx800"
-"qnx.config.defaultProjectsRoot": "${userHome}/qnxprojects"</code></pre></li>
+<li><p>Download <code>VxWorks SDK for IA - QEMU (x86-64)</code>.</p></li>
+<li><p>Extract the compressed file. This may take a couple minutes.</p>
+<pre class="bash"><code># x = extract
+# j = use bzip2 compression
+# f = filename follows
+tar -xjf wrsdk-vxworks7-qemu-1.17.0.tar.bz2</code></pre></li>
+<li><p>If preferred, move the extracted directory.</p>
+<pre class="bash"><code># Make new directory
+&gt; mkdir ~/apps/wind-river
+
+# Move extracted directory to new location
+&gt; mv wrsdk-vxworks7-qemu-1.17.0 ~/apps/wind-river</code></pre></li>
+<li><p>Navigate to the extracted directory and source <code>sdkenv.sh</code>.</p>
+<pre class="bash"><code>&gt; cd ~/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0
+&gt; source sdkenv.sh</code></pre>
+<p><strong>Note:</strong> If you get this error after sourcing the file, <a href="#reconfigure-binsh">reconfigure <code>/bin/sh/</code> to bash</a> as described at the end of this page.</p>
+<pre class="bash"><code>The default shell is dash, please change your default shell to bash.</code></pre></li>
+<li><p>Verify that the environment <code>$WIND_HOME</code> has been set.</p>
+<pre class="bash"><code>&gt; echo $WIND_HOME
+/home/flux/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0</code></pre></li>
+<li><p>Boot VxWorks on QEMU. From the VxWorks SDK root, run the following command (in this example the SDK root is: <code>~/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0</code>).</p>
+<pre class="bash"><code>&gt; qemu-system-x86_64 -m 1024M -kernel vxsdk/bsps/itl_generic_3_0_0_5/vxWorks \
+  -net nic -net user,hostfwd=tcp::1534-:1534,hostfwd=tcp::2345-:2345         \
+  -display none -serial stdio -monitor none                                  \
+  -append "bootline:fs(0,0)host:vxWorks h=10.0.2.2 e=10.0.2.15 u=target pw=vxTarget o=gei0"</code></pre>
+<pre class="bash"><code>Instantiating /ram0 as rawFs, device = 0x1
+Instantiating /ram0 as rawFs,  device = 0x1
+Formatting /ram0 for HRFS v1.2
+Formatting...OK.
+Target Name: vxTarget
+Instantiating /tmp as rawFs, device = 0x10001
+Instantiating /tmp as rawFs,  device = 0x10001
+Formatting /tmp for HRFS v1.2
+Formatting...OK.
+
+ _________            _________
+ \........\          /......../
+  \........\        /......../
+   \........\      /......../
+    \........\    /......../
+     \........\   \......./
+      \........\   \...../              VxWorks SMP 64-bit
+       \........\   \.../
+        \........\   \./     Release version: 26.03
+         \........\   -      Build date: May  6 2026 15:25:23
+          \........\
+           \......./         Copyright Wind River Systems, Inc.
+            \...../   -                 1984-2026
+             \.../   /.\
+              \./   /...\
+               -   -------
+
+                   Board: x86_64 Processor (ACPI_BOOT_OP) SMP/SMT
+               CPU Count: 1
+          OS Memory Size: ~958MB
+        ED&amp;R Policy Mode: Deployed
+     Debug Agent: Started (always)
+         Stop Mode Agent: Not started
+
+Instantiating /ram as rawFs,  device = 0x20001
+Formatting /ram for DOSFS
+Instantiating /ram as rawFs, device = 0x20001
+Formatting...Retrieved old volume params with %38 confidence:
+Volume Parameters: FAT type: FAT32, sectors per cluster 0
+  0 FAT copies, 0 clusters, 0 sectors per FAT
+  Sectors reserved 0, hidden 0, FAT sectors 0
+  Root dir entries 0, sysId (null)  , serial number 110000
+  Label:"           " ...
+Disk with 64 sectors of 512 bytes will be formatted with:
+Volume Parameters: FAT type: FAT12, sectors per cluster 1
+  2 FAT copies, 54 clusters, 1 sectors per FAT
+  Sectors reserved 1, hidden 0, FAT sectors 2
+  Root dir entries 112, sysId VXDOS12 , serial number 110000
+  Label:"           " ...
+OK.
+
+ Adding 28098 symbols for standalone.
+
+-&gt;</code></pre>
+<p><strong>Note:</strong> If the VxWorks image did not load, a terminal window will pop up and might look like this:</p>
+<p><img src="./images__vxw/00__vxw__qemu-start-error.png" class="img-fluid"></p>
+<p>If you click on the QEMU terminal, you might not be able to click anywhere on your machine. press <code>Ctrl+Alt+G</code> to release the grab.</p></li>
+</ol>
+</section>
+<section id="hello-world" class="level2">
+<h2 class="anchored" data-anchor-id="hello-world">Hello World</h2>
+<ol type="1">
+<li><p>Create a ‘hello world’ source file named <code>hello.c</code>.</p>
+<pre class="cpp"><code>#include &lt;stdio.h&gt;
+
+int main(void)
+  {
+    printf("\n\nHello there :)\n\n");
+    return 0;
+  }</code></pre></li>
+<li><p>Source the <code>sdkenv.sh</code> script from the root of the SDK.</p>
+<pre class="bash"><code>&gt; cd ~/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0
+&gt; source sdkenv.sh</code></pre></li>
+<li><p>Compile the source file.</p>
+<pre class="bash"><code>wr-cc -rtp hello.c -static -o hello.exe</code></pre></li>
+<li><p>Start an FTP server.</p>
+<pre class="bash"><code>&gt; sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
+[I 2026-05-16 19:58:35] concurrency model: async
+[I 2026-05-16 19:58:35] masquerade (NAT) address: None
+[I 2026-05-16 19:58:35] passive ports: None
+[I 2026-05-16 19:58:35] &gt;&gt;&gt; starting FTP server on 0.0.0.0:21, pid=406255 &lt;&lt;&lt;</code></pre>
+<p>To turn off FTP logging, append the command with <code>&gt; /dev/null 2&gt;&amp;1</code></p>
+<pre class="bash"><code>sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME &gt; /dev/null 2&gt;&amp;1</code></pre></li>
+<li><p>Move the FTP server process to the background by pressing <code>Ctrl+Z</code>. Run <code>bg</code> to keep the process running.</p>
+<pre class="bash"><code>  ^Z
+zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
+
+&gt; bg
+[3]    continued  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME</code></pre></li>
+<li><p>Boot VxWorks on QEMU as described above.</p>
+<pre class="bash"><code>&gt; qemu-system-x86_64 -m 1024M -kernel vxsdk/bsps/itl_generic_3_0_0_5/vxWorks \
+  -net nic -net user,hostfwd=tcp::1534-:1534,hostfwd=tcp::2345-:2345         \
+  -display none -serial stdio -monitor none                                  \
+  -append "bootline:fs(0,0)host:vxWorks h=10.0.2.2 e=10.0.2.15 u=target pw=vxTarget o=gei0"</code></pre></li>
+<li><p>Run <code>cmd</code>.</p>
+<pre class="text"><code>-&gt; cmd
+[vxWorks *]# cd &lt;path to hello.exe&gt;</code></pre>
+<p><strong>Example</strong></p>
+<p><strong>Note:</strong> If logging was not redirected when starting the FTP server, FTP session messages may appear during command execution. These can be safely ignored.</p>
+<pre class="text"><code>-&gt; cmd
+[vxWorks *]# cd ~/git/sample-programs/vxworks/hello-vxworks
+[I 2026-05-16 20:34:53] 127.0.0.1:42454-[] FTP session opened (connect)
+[I 2026-05-16 20:34:53] 127.0.0.1:42454-[target] USER 'target' logged in.
+[I 2026-05-16 20:34:53] 127.0.0.1:42454-[target] FTP session closed (disconnect).
+[I 2026-05-16 20:34:53] 127.0.0.1:42458-[] FTP session opened (connect)
+[I 2026-05-16 20:34:53] 127.0.0.1:42458-[target] USER 'target' logged in.
+[I 2026-05-16 20:34:53] 127.0.0.1:42458-[target] FTP session closed (disconnect).
+[I 2026-05-16 20:34:53] 127.0.0.1:42474-[] FTP session opened (connect)
+[I 2026-05-16 20:34:53] 127.0.0.1:42474-[target] USER 'target' logged in.
+[I 2026-05-16 20:34:53] 127.0.0.1:42474-[target] FTP session closed (disconnect).
+[I 2026-05-16 20:34:53] 127.0.0.1:42478-[] FTP session opened (connect)
+[I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] USER 'target' logged in.
+[I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] FTP session closed (disconnect).
+
+[vxWorks *]# hello.exe
+Launching process 'hello.exe' ...
+Process 'hello.exe' (process Id = 0xffff800006ede000) launched.
+
+
+Hello there :)</code></pre></li>
+<li><p>To shut down the VxWorks image, exit <code>cmd</code> and then press <code>Ctrl+C</code>.</p>
+<pre class="text"><code>[vxWorks *]# exit
+Au revoir!
+qemu-system-x86_64: terminating on signal 2</code></pre></li>
+</ol>
+</section>
+<section id="stop-ftp-server-process" class="level2">
+<h2 class="anchored" data-anchor-id="stop-ftp-server-process">Stop FTP Server Process</h2>
+<ol type="1">
+<li><p>Determine the PID for the process.</p>
+<pre class="bash"><code>&gt; sudo lsof -i :21
+COMMAND    PID USER   FD   TYPE   DEVICE SIZE/OFF NODE NAME
+python3 406255 root    4u  IPv4 11734009      0t0  TCP *:ftp (LISTEN)</code></pre></li>
+<li><p>Kill the process, in this case, <code>406255</code>.</p>
+<pre class="bash"><code>&gt; sudo kill 406255</code></pre></li>
+</ol>
+</section>
+<section id="reconfigure-binsh" class="level2">
+<h2 class="anchored" data-anchor-id="reconfigure-binsh">Reconfigure <code>/bin/sh</code></h2>
+<p>The script <code>sdkenv.sh</code> assumes that <code>/bin/sh</code> is configured to <code>bash</code>, but in this example, it was configured to <code>dash</code>. This section describes how to reconfigure <code>/bin/sh</code> to <code>bash</code>.</p>
+<ol type="1">
+<li><p>Verify <code>/bin/sh</code> is pointing to <code>dash</code>.</p>
+<pre class="bash"><code>&gt; ls -la /bin/sh
+rwxrwxrwx 1 root root 4 Mar 31  2024 /bin/sh -&gt; dash</code></pre></li>
+<li><p>Force <code>/bin/sh</code> to link to <code>bash</code>.</p>
+<pre class="bash"><code>&gt; sudo ln -sf /usr/bin/bash /bin/sh</code></pre></li>
+<li><p>Verify <code>/bin/sh</code> has been reconfigured to <code>/usr/bin/bash</code>.</p>
+<pre class="bash"><code>&gt; readlink -f /bin/sh
+/usr/bin/bash</code></pre></li>
 </ol>
 
 

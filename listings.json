@@ -22,7 +22,8 @@
       "/reference/environment-setup__ref/index.html",
       "/reference/color-scheme__ref/index.html",
       "/reference/qnx__ref/index.html",
-      "/reference/inkscape__ref/index.html"
+      "/reference/inkscape__ref/index.html",
+      "/reference/vxworks__ref/index.html"
     ]
   },
   {
@@ -47,20 +48,6 @@
     ]
   },
   {
-    "listing": "/projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
-    "items": [
-      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260329__uml/index.html",
-      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260206__it-begins/index.html"
-    ]
-  },
-  {
-    "listing": "/projects/the-book-of-plans/index.html",
-    "items": [
-      "/projects/the-book-of-plans/how-to-use.html",
-      "/projects/the-book-of-plans/assembly-instructions.html"
-    ]
-  },
-  {
     "listing": "/projects/color-clock/blog__color-clock/index.html",
     "items": [
       "/projects/color-clock/blog__color-clock/2025-02-08__back-in-dev/index.html",
@@ -82,6 +69,20 @@
       "/projects/color-clock/blog__color-clock/2022-05-30__arduino-cli-induced-flow/index.html",
       "/projects/color-clock/blog__color-clock/2022-05-15__getting-started-just-show-up/index.html",
       "/projects/color-clock/blog__color-clock/2022-05-02__top-level-block-diagram/index.html"
+    ]
+  },
+  {
+    "listing": "/projects/the-book-of-plans/index.html",
+    "items": [
+      "/projects/the-book-of-plans/how-to-use.html",
+      "/projects/the-book-of-plans/assembly-instructions.html"
+    ]
+  },
+  {
+    "listing": "/projects/9-80-alarm-clock/blog__9-80-alarm/index.html",
+    "items": [
+      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260329__uml/index.html",
+      "/projects/9-80-alarm-clock/blog__9-80-alarm/20260206__it-begins/index.html"
     ]
   },
   {
