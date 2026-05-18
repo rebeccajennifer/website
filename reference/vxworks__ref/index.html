@@ -541,7 +541,7 @@ int main(void)
 <pre class="bash"><code>&gt; cd ~/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0
 &gt; source sdkenv.sh</code></pre></li>
 <li><p>Compile the source file.</p>
-<pre class="bash"><code>wr-cc -rtp hello.c -static -o hello.exe</code></pre></li>
+<pre class="bash"><code>wr-cc -rtp hello.c -static -o hello.vxe</code></pre></li>
 <li><p>Start an FTP server.</p>
 <pre class="bash"><code>&gt; sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
 [I 2026-05-16 19:58:35] concurrency model: async
@@ -563,7 +563,7 @@ zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
   -append "bootline:fs(0,0)host:vxWorks h=10.0.2.2 e=10.0.2.15 u=target pw=vxTarget o=gei0"</code></pre></li>
 <li><p>Run <code>cmd</code>.</p>
 <pre class="text"><code>-&gt; cmd
-[vxWorks *]# cd &lt;path to hello.exe&gt;</code></pre>
+[vxWorks *]# cd &lt;path to hello.vxe&gt;</code></pre>
 <p><strong>Example</strong></p>
 <p><strong>Note:</strong> If logging was not redirected when starting the FTP server, FTP session messages may appear during command execution. These can be safely ignored.</p>
 <pre class="text"><code>-&gt; cmd
@@ -581,9 +581,9 @@ zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
 [I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] USER 'target' logged in.
 [I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] FTP session closed (disconnect).
 
-[vxWorks *]# hello.exe
-Launching process 'hello.exe' ...
-Process 'hello.exe' (process Id = 0xffff800006ede000) launched.
+[vxWorks *]# hello.vxe
+Launching process 'hello.vxe' ...
+Process 'hello.vxe' (process Id = 0xffff800006ede000) launched.
 
 
 Hello there :)</code></pre></li>
