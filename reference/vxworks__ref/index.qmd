@@ -195,7 +195,7 @@ sudo apt install qemu-system-x86
 1. Compile the source file.
 
    ```bash
-   wr-cc -rtp hello.c -static -o hello.exe
+   wr-cc -rtp hello.c -static -o hello.vxe
    ```
 
 1. Start an FTP server.
@@ -237,7 +237,7 @@ sudo apt install qemu-system-x86
 
    ```text
    -> cmd
-   [vxWorks *]# cd <path to hello.exe>
+   [vxWorks *]# cd <path to hello.vxe>
    ```
 
    __Example__
@@ -260,9 +260,9 @@ sudo apt install qemu-system-x86
    [I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] USER 'target' logged in.
    [I 2026-05-16 20:34:53] 127.0.0.1:42478-[target] FTP session closed (disconnect).
 
-   [vxWorks *]# hello.exe
-   Launching process 'hello.exe' ...
-   Process 'hello.exe' (process Id = 0xffff800006ede000) launched.
+   [vxWorks *]# hello.vxe
+   Launching process 'hello.vxe' ...
+   Process 'hello.vxe' (process Id = 0xffff800006ede000) launched.
 
 
    Hello there :)
