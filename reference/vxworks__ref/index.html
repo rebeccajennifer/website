@@ -358,8 +358,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#notes" id="toc-notes" class="nav-link active" data-scroll-target="#notes">Notes</a></li>
   <li><a href="#official-vxworks-links" id="toc-official-vxworks-links" class="nav-link" data-scroll-target="#official-vxworks-links">Official VxWorks Links</a></li>
   <li><a href="#prerequisites" id="toc-prerequisites" class="nav-link" data-scroll-target="#prerequisites">Prerequisites</a></li>
-  <li><a href="#download-sdk-and-boot-vxworks-image" id="toc-download-sdk-and-boot-vxworks-image" class="nav-link" data-scroll-target="#download-sdk-and-boot-vxworks-image">Download SDK and Boot VxWorks Image</a></li>
-  <li><a href="#hello-world" id="toc-hello-world" class="nav-link" data-scroll-target="#hello-world">Hello World</a></li>
+  <li><a href="#download-sdk-and-boot-vxworks-image" id="toc-download-sdk-and-boot-vxworks-image" class="nav-link" data-scroll-target="#download-sdk-and-boot-vxworks-image">Download SDK and Boot VxWorks Image</a>
+  <ul>
+  <li><a href="#notes-1" id="toc-notes-1" class="nav-link" data-scroll-target="#notes-1">Notes</a></li>
+  </ul></li>
+  <li><a href="#hello-world-rtp" id="toc-hello-world-rtp" class="nav-link" data-scroll-target="#hello-world-rtp">Hello World RTP</a></li>
+  <li><a href="#hello-world-dkm" id="toc-hello-world-dkm" class="nav-link" data-scroll-target="#hello-world-dkm">Hello World DKM</a></li>
   <li><a href="#stop-ftp-server-process" id="toc-stop-ftp-server-process" class="nav-link" data-scroll-target="#stop-ftp-server-process">Stop FTP Server Process</a></li>
   <li><a href="#reconfigure-binsh" id="toc-reconfigure-binsh" class="nav-link" data-scroll-target="#reconfigure-binsh">Reconfigure <code>/bin/sh</code></a></li>
   </ul>
@@ -520,21 +524,27 @@ OK.
 
  Adding 28098 symbols for standalone.
 
--&gt;</code></pre>
-<p><strong>Note:</strong> If the VxWorks image did not load, a terminal window will pop up and might look like this:</p>
+-&gt;</code></pre></li>
+</ol>
+<section id="notes-1" class="level3">
+<h3 class="anchored" data-anchor-id="notes-1">Notes</h3>
+<ol type="1">
+<li><p>If the VxWorks image did not load, a terminal window will pop up and might look like this:</p>
 <p><img src="./images__vxw/00__vxw__qemu-start-error.png" class="img-fluid"></p>
 <p>If you click on the QEMU terminal, you might not be able to click anywhere on your machine. press <code>Ctrl+Alt+G</code> to release the grab.</p></li>
+<li><p>The backspace key might not work from the VxWorks terminal. To use backspace, press <code>Ctrl+H</code>.</p></li>
 </ol>
 </section>
-<section id="hello-world" class="level2">
-<h2 class="anchored" data-anchor-id="hello-world">Hello World</h2>
+</section>
+<section id="hello-world-rtp" class="level2">
+<h2 class="anchored" data-anchor-id="hello-world-rtp">Hello World RTP</h2>
 <ol type="1">
 <li><p>Create a ‘hello world’ source file named <code>hello.c</code>.</p>
 <pre class="cpp"><code>#include &lt;stdio.h&gt;
 
 int main(void)
   {
-    printf("\n\nHello there :)\n\n");
+    printf("\nHello there :)\n\n");
     return 0;
   }</code></pre></li>
 <li><p>Source the <code>sdkenv.sh</code> script from the root of the SDK.</p>
@@ -551,7 +561,7 @@ int main(void)
 <p>To turn off FTP logging, append the command with <code>&gt; /dev/null 2&gt;&amp;1</code></p>
 <pre class="bash"><code>sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME &gt; /dev/null 2&gt;&amp;1</code></pre></li>
 <li><p>Move the FTP server process to the background by pressing <code>Ctrl+Z</code>. Run <code>bg</code> to keep the process running.</p>
-<pre class="bash"><code>  ^Z
+<pre class="bash"><code>^Z
 zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
 
 &gt; bg
@@ -585,12 +595,65 @@ zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
 Launching process 'hello.vxe' ...
 Process 'hello.vxe' (process Id = 0xffff800006ede000) launched.
 
-
 Hello there :)</code></pre></li>
 <li><p>To shut down the VxWorks image, exit <code>cmd</code> and then press <code>Ctrl+C</code>.</p>
 <pre class="text"><code>[vxWorks *]# exit
 Au revoir!
 qemu-system-x86_64: terminating on signal 2</code></pre></li>
+</ol>
+</section>
+<section id="hello-world-dkm" class="level2">
+<h2 class="anchored" data-anchor-id="hello-world-dkm">Hello World DKM</h2>
+<ol type="1">
+<li><p>Using the same ‘hello world’ file from <a href="#hello-world-rtp">Hello World RTP</a>, build as a DKM.</p>
+<pre class="bash"><code>wr-cc -dkm hello.c -o hello.out</code></pre></li>
+<li><p>Start the FTP server, rerouting logging to a null file. The terminal will look like its hanging. Press <code>Ctrl+Z</code> then <code>bg</code> to keep the process running in the background.</p>
+<pre class="bash"><code>&gt; sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME &gt; /dev/null 2&gt;&amp;1
+
+^Z
+zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME &gt; /dev/null 2&gt;
+
+&gt; bg
+[1]  + continued  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME &gt; /dev/null 2&gt;</code></pre></li>
+<li><p>Navigate to the root of the SDK, source the <code>sdkenv.sh</code> script and boot QEMU.</p>
+<pre class="bash"><code>&gt; cd ~/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0
+
+&gt; source sdkenv.sh
+
+&gt; qemu-system-x86_64 -m 1024M                               \
+  -kernel vxsdk/bsps/itl_generic_3_0_0_5/vxWorks            \
+  -net nic                                                  \
+  -net user,hostfwd=tcp::1534-:1534,hostfwd=tcp::2345-:2345 \
+  -display none                                             \
+  -monitor none                                             \
+  -serial  stdio                                            \
+  -append "bootline:fs(0,0)host:vxWorks h=10.0.2.2 e=10.0.2.15 u=target pw=vxTarget o=gei0"
+...
+ _________            _________
+ \........\          /......../
+  \........\        /......../
+   \........\      /......../
+    \........\    /......../
+     \........\   \......./
+      \........\   \...../              VxWorks SMP 64-bit
+       \........\   \.../
+        \........\   \./     Release version: 26.03
+         \........\   -      Build date: May  6 2026 15:25:23
+          \........\
+           \......./         Copyright Wind River Systems, Inc.
+            \...../   -                 1984-2026
+             \.../   /.\
+              \./   /...\
+               -   -------</code></pre></li>
+<li><p>Use <code>ld</code> to load <code>hello.out</code> onto the system.</p>
+<pre class="bash"><code>-&gt; ld &lt; path/to/hello.out
+value = -140737372340224 = 0xffff800006ea4000 = _sysTableEnd + 0xffff800006a96000</code></pre></li>
+<li><p>Run the main function.</p>
+<pre class="bash"><code>-&gt; main
+
+Hello there :)
+
+value = 0 = 0x0</code></pre></li>
 </ol>
 </section>
 <section id="stop-ftp-server-process" class="level2">
