@@ -165,13 +165,17 @@ sudo apt install qemu-system-x86
    ->
    ```
 
-   __Note:__ If the VxWorks image did not load, a terminal window will pop up and might look like this:
+### Notes
+
+1. If the VxWorks image did not load, a terminal window will pop up and might look like this:
 
    ![](./images__vxw/00__vxw__qemu-start-error.png)
 
    If you click on the QEMU terminal, you might not be able to click anywhere on your machine. press `Ctrl+Alt+G` to release the grab.
 
-## Hello World
+2. The backspace key might not work from the VxWorks terminal. To use backspace, press `Ctrl+H`.
+
+## Hello World RTP
 
 1. Create a 'hello world' source file named `hello.c`.
 
@@ -180,7 +184,7 @@ sudo apt install qemu-system-x86
 
    int main(void)
      {
-       printf("\n\nHello there :)\n\n");
+       printf("\nHello there :)\n\n");
        return 0;
      }
    ```
@@ -195,7 +199,7 @@ sudo apt install qemu-system-x86
 1. Compile the source file.
 
    ```bash
-   wr-cc -rtp hello.c -static -o hello.vxe
+   > wr-cc -rtp hello.c -static -o hello.vxe
    ```
 
 1. Start an FTP server.
@@ -211,13 +215,13 @@ sudo apt install qemu-system-x86
    To turn off FTP logging, append the command with `> /dev/null 2>&1`
 
    ```bash
-   sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME > /dev/null 2>&1
+   > sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME > /dev/null 2>&1
    ```
 
 1. Move the FTP server process to the background by pressing `Ctrl+Z`. Run `bg` to keep the process running.
 
    ```bash
-     ^Z
+   ^Z
    zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME
 
    > bg
@@ -264,7 +268,6 @@ sudo apt install qemu-system-x86
    Launching process 'hello.vxe' ...
    Process 'hello.vxe' (process Id = 0xffff800006ede000) launched.
 
-
    Hello there :)
    ```
 
@@ -274,6 +277,78 @@ sudo apt install qemu-system-x86
    [vxWorks *]# exit
    Au revoir!
    qemu-system-x86_64: terminating on signal 2
+   ```
+
+
+## Hello World DKM
+
+1. Using the same 'hello world' file from [Hello World RTP](#hello-world-rtp), build as a DKM.
+
+   ```bash
+   > wr-cc -dkm hello.c -o hello.out
+   ```
+
+1. Start the FTP server, rerouting logging to a null file. The terminal will look like its hanging. Press `Ctrl+Z` then `bg` to keep the process running in the background.
+
+   ```bash
+   > sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME > /dev/null 2>&1
+
+   ^Z
+   zsh: suspended  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME > /dev/null 2>
+
+   > bg
+   [1]  + continued  sudo python3 -m pyftpdlib -p 21 -u target -P vxTarget -d $HOME > /dev/null 2>
+   ```
+
+1. Navigate to the root of the SDK, source the `sdkenv.sh` script and boot QEMU.
+
+   ```bash
+   > cd ~/apps/wind-river/wrsdk-vxworks7-qemu-1.17.0
+
+   > source sdkenv.sh
+
+   > qemu-system-x86_64 -m 1024M                               \
+     -kernel vxsdk/bsps/itl_generic_3_0_0_5/vxWorks            \
+     -net nic                                                  \
+     -net user,hostfwd=tcp::1534-:1534,hostfwd=tcp::2345-:2345 \
+     -display none                                             \
+     -monitor none                                             \
+     -serial  stdio                                            \
+     -append "bootline:fs(0,0)host:vxWorks h=10.0.2.2 e=10.0.2.15 u=target pw=vxTarget o=gei0"
+   ...
+    _________            _________
+    \........\          /......../
+     \........\        /......../
+      \........\      /......../
+       \........\    /......../
+        \........\   \......./
+         \........\   \...../              VxWorks SMP 64-bit
+          \........\   \.../
+           \........\   \./     Release version: 26.03
+            \........\   -      Build date: May  6 2026 15:25:23
+             \........\
+              \......./         Copyright Wind River Systems, Inc.
+               \...../   -                 1984-2026
+                \.../   /.\
+                 \./   /...\
+                  -   -------
+   ```
+
+1. Use `ld` to load `hello.out` onto the system.
+
+   ```bash
+   -> ld < path/to/hello.out
+   value = -140737372340224 = 0xffff800006ea4000 = _sysTableEnd + 0xffff800006a96000
+   ```
+
+1. Run the main function.
+
+   ```bash
+   -> main
+
+   Hello there :)
+
+   value = 0 = 0x0
    ```
 
 ## Stop FTP Server Process
