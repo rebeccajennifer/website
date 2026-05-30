@@ -328,7 +328,7 @@
     "href": "reference/index.html",
     "title": "The Reference Library",
     "section": "",
-    "text": "This set of pages includes references I have developed for unifying development environments, streamlining setup, and documenting various software tools.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment Setup\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColor Scheme Reference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVxWorks Getting Started\n\n\nGet VxWorks running in QEMU, a machine emulator.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQNX Reference\n\n\nThese pages provide tutorial-style guidance that complements the official QNX documentation for using the QNX RTOS framework.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInkscape Reference\n\n\nThis page provides instructions on the Inkscape features I use most frequently.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "This set of pages includes references I have developed for unifying development environments, streamlining setup, and documenting various software tools.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment Setup\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColor Scheme Reference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual Studio Code Reference\n\n\nThis set of pages includes information on VS Code features like debugger settings and how to set up tasks.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVxWorks Getting Started\n\n\nGet VxWorks running in QEMU, a machine emulator.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQNX Reference\n\n\nThese pages provide tutorial-style guidance that complements the official QNX documentation for using the QNX RTOS framework.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInkscape Reference\n\n\nThis page provides instructions on the Inkscape features I use most frequently.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Reference",
       "The Reference Library"
@@ -432,6 +432,18 @@
       "The Reference Library",
       "QNX Reference",
       "QNX SDP Installation and Setup"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/index.html",
+    "href": "reference/vscode__ref/index.html",
+    "title": "Visual Studio Code Reference",
+    "section": "",
+    "text": "Visual Studio Code Settings\n\n\nMy preferred settings for VS Code\n\n\nThis page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVisual Studio Code Tasks\n\n\nSample tasks for VS Code\n\n\nVS Code tasks automate command-line operations and make them available directly from the editor.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVS Code Color Theme\n\n\nHow to create a Visual Studio Code color theme file.\n\n\nA detailed example on how to create and load a Visual Studio Code color theme file\n\n\n\n\n\n\n\n\nNo matching items",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference"
     ]
   },
   {
