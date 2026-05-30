@@ -23,7 +23,7 @@ Click here for the official Inkscape tutorial on the Trace Bitmap feature.
 
    ![](./images__inkscape-ref/bitmap2vect-2-trace-bitmap.png)
 
-1. Go to the `Layers` panel with `Ctrl + Shift + L` or from the top menu navigate to `Layer > Layers and Objects...`.
+1. Go to the `Layers` panel with `Ctrl+Shift+L` or from the top menu navigate to `Layer > Layers and Objects...`.
 
 1. Expand `Layer 1`. Click the image object and hit the `Delete` key.
 
@@ -31,7 +31,7 @@ Click here for the official Inkscape tutorial on the Trace Bitmap feature.
 
 1. Select the newly created path object to see the nodes.
 
-1. To change the color, navigate to `Object > Fill and Stroke...` (`Ctrl + Shift + F`) and select your preferred color.
+1. To change the color, navigate to `Object > Fill and Stroke...` (`Ctrl+Shift+F`) and select your preferred color.
 
    ![](./images__inkscape-ref/bitmap2vect-5-color.png)
 

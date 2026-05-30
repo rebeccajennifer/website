@@ -46,7 +46,6 @@ order: 2
 1. In the workspace root, create a `.vscode` directory if it does not already exist.
 1. Inside `.vscode`, create a file named `tasks.json`.
 
-
 ## Example
 
 ### Hello World Program
