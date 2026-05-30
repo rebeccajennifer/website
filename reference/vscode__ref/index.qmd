@@ -7,6 +7,7 @@ listing:
   contents:
     - ../environment-setup__ref/vs-code.qmd
     - ../color-scheme__ref/vscode-color.qmd
+    - ./launch-json.qmd
     - ./tasks-json.qmd
 draft: false
 order: 2
