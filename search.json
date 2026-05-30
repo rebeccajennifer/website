@@ -478,7 +478,20 @@
     "href": "reference/vscode__ref/launch-json.html#python-example",
     "title": "VS Code Debugger",
     "section": "Python Example",
-    "text": "Python Example\n\nExample Python Program\n#_______________________________________________________________\n# This file is named arg_test.py\n#_______________________________________________________________\nimport argparse\n\nif __name__ == '__main__':\n  parser: argparse.ArgumentParser = argparse.ArgumentParser()\n  parser.add_argument('--in0', '-i0', help='Input 0', action='store')\n  parser.add_argument('--in1', '-i1', help='Input 1', action='store')\n  args: argparse.Namespace = parser.parse_args()\n\n  print(str(\n    f'\\nInput argument 0: {args.in0}'\n    f'\\nInput argument 1: {args.in1}'\n    )\n  )\n\n\nSample launch.json\nThis launch.json file contains two Python debug configurations with alternative inputs.\n{ \"version\":        \"0.2.0\"\n\n, \"configurations\":\n  [ { \"name\"    : \"sample py debug\"\n    , \"type\"    : \"debugpy\"\n    , \"request\" : \"launch\"\n    , \"program\" : \"${workspaceFolder}/arg_test.py\"\n    , \"console\" : \"integratedTerminal\"\n    , \"args\"    :\n      [ \"--in0\", \"42\"\n      , \"-i1\"  , \"3.14\"\n      ]\n    }\n\n  , { \"name\"    : \"alternate input sample py\"\n    , \"type\"    : \"debugpy\"\n    , \"request\" : \"launch\"\n    , \"program\" : \"${workspaceFolder}/arg_test.py\"\n    , \"console\" : \"integratedTerminal\"\n    , \"args\"    :\n      [ \"--in0\", \"64\"\n      , \"--in1\", \"4096\"\n      ]\n    }\n  ]\n}\nSelect the icon for Run and Debug from the activity bar. Click the drop down menu and select a configuration in launch.json. \n\n\nKey Descriptions\n\n\n\n\n\n\n\nKey\nDescription\n\n\n\n\nlabel\nName of configuration.\n\n\ntype\nType of debugger. Common values are debugpy for python, gdb for cpp.\n\n\nprogram\nPath to program to execute.\n\n\nargs\nArguments passed to the program.\n\n\nconsole\nUse integratedTerminal to use the VS Code terminal for program execution.\n\n\n\n\n\nExample C++ Program\n#include &lt;stdio.h&gt;\n\nint main()\n{\n  int i = 0;\n  i++;\n  printf(\"\\ni: %d\", i);\n  return 0;\n}",
+    "text": "Python Example\n\nExample Python Program\n#_______________________________________________________________\n# This file is named arg_test.py\n#_______________________________________________________________\nimport argparse\n\nif __name__ == '__main__':\n  parser: argparse.ArgumentParser = argparse.ArgumentParser()\n  parser.add_argument('--in0', '-i0', help='Input 0', action='store')\n  parser.add_argument('--in1', '-i1', help='Input 1', action='store')\n  args: argparse.Namespace = parser.parse_args()\n\n  print(str(\n    f'\\nInput argument 0: {args.in0}'\n    f'\\nInput argument 1: {args.in1}'\n    )\n  )\n\n\nSample launch.json\nThis launch.json file contains two Python debug configurations with alternative inputs.\n{ \"version\":        \"0.2.0\"\n\n, \"configurations\":\n  [ { \"name\"    : \"sample py debug\"\n    , \"type\"    : \"debugpy\"\n    , \"request\" : \"launch\"\n    , \"program\" : \"${workspaceFolder}/arg_test.py\"\n    , \"console\" : \"integratedTerminal\"\n    , \"args\"    :\n      [ \"--in0\", \"42\"\n      , \"-i1\"  , \"3.14\"\n      ]\n    }\n\n  , { \"name\"    : \"alternate input sample py\"\n    , \"type\"    : \"debugpy\"\n    , \"request\" : \"launch\"\n    , \"program\" : \"${workspaceFolder}/arg_test.py\"\n    , \"console\" : \"integratedTerminal\"\n    , \"args\"    :\n      [ \"--in0\", \"64\"\n      , \"--in1\", \"4096\"\n      ]\n    }\n  ]\n}\n\nKey Descriptions\n\n\n\n\n\n\n\nKey\nDescription\n\n\n\n\nname\nName of configuration.\n\n\ntype\nType of debugger. Common values are debugpy for python, gdb for cpp.\n\n\nrequest\nSpecifies what kind of debugging action VS Code should perform. launch = Start a new programattach = Attach debugger to a program that is already running.\n\n\nprogram\nPath to program to execute.\n\n\nconsole\nUse integratedTerminal to use the VS Code terminal for program execution.\n\n\nargs\nArguments passed to the program.\n\n\n\n\n\n\nRun Debug Configuration\n\nSelect the icon for Run and Debug from the activity bar. Click the drop down menu and select a configuration in launch.json.\n\nClick the triangle (▷) play symbol to run the debug configuration.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference",
+      "VS Code Debugger"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/launch-json.html#c-example",
+    "href": "reference/vscode__ref/launch-json.html#c-example",
+    "title": "VS Code Debugger",
+    "section": "C++ Example",
+    "text": "C++ Example\n\nNotes\n\nDebugging a C++ program requires debug symbols. When using g++, enable them with the -g command-line option.\nYou can create a VS Code task to build the C++ program using debug symbols.\n\n\n\nExample C++ Program\n#include &lt;cstdio&gt;\n#include &lt;cstdlib&gt;\n\nint main(int argc, char* argv[])\n{\n  int i = -1;\n\n  // Convert command line input C-style string (e.g. char*) to integer\n  if (argc &gt; 1)\n  {\n    i = std::atoi(argv[1]);\n  }\n\n  printf(\n    \"\\n\\nHello there :)\"\n    \"\\n\\nInput argument: %d\"\n    \"\\n\\n\"\n    , i\n  );\n\n  return 0;\n}\n\n\nSample launch.json C++ Configuration\n{ \"version\": \"0.2.0\"\n, \"configurations\":\n  [ { \"name\"            : \"hello-cpp-debug\"\n    , \"type\"            : \"cppdbg\"\n    , \"request\"         : \"launch\"\n    , \"cwd\"             : \"${workspaceFolder}\"\n    , \"program\"         : \"${workspaceFolder}/hello/hello.out\"\n    , \"args\"            : [\"42\"]\n    , \"stopAtEntry\"     : true\n    , \"externalConsole\" : false\n    }\n  ]\n}\n\nKey Descriptions\n\n\n\n\n\n\n\nKey\nDescription\n\n\n\n\nname\nName of configuration.\n\n\ntype\nType of debugger. Common value for C++ is “cppdbg”\n\n\nrequest\nSpecifies what kind of debugging action VS Code should perform. launch = Start a new programattach = Attach debugger to a program that is already running.\n\n\ncwd\nDefines the working directory used when running the command.\n\n\nprogram\nPath to program to execute.\n\n\nargs\nArguments passed to the program.\n\n\nstopAtEntry\nSets a breakpoint at program entry.\n\n\nexternalConsole\nUse integratedTerminal to use the VS Code terminal for program execution.\n\n\n\n\n\n\nSample tasks.json C++ Debug Build\nThe following tasks.json example defines a VS Code task that builds a C++ program with debug symbols using the -g option of g++.\n{ \"version\": \"2.0.0\"\n, \"tasks\":\n  [\n    { \"label\"   : \"compile-hello-debug\"\n    , \"type\"    : \"shell\"\n    , \"command\" : \"g++\"\n    , \"args\"    :\n      [ \"${workspaceFolder}/hello/hello.cpp\"\n      , \"-g\"\n      , \"-o\"\n      , \"${workspaceFolder}/hello/hello.out\"\n      ]\n\n      // Close task terminal after execution\n    , \"presentation\"  :\n      { \"close\": true\n      }\n\n      // Disable error detection for task\n    , \"problemMatcher\": []\n    }\n  ]\n}",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -2745,7 +2758,7 @@
     "href": "reference/inkscape__ref/bitmap2vector.html#steps",
     "title": "Convert Bitmap to Vector",
     "section": "Steps",
-    "text": "Steps\n\nOpen Inkscape and import your image, either from File &gt; Import... or drag and drop the image onto the canvas.\nPress S for the selection tool. Click on the image.\n\nFrom the top menu, go to Path &gt; Trace Bitmap... (Shift + Alt + B). Select your options and click Apply.\n\nGo to the Layers panel with Ctrl + Shift + L or from the top menu navigate to Layer &gt; Layers and Objects....\nExpand Layer 1. Click the image object and hit the Delete key.\n\nSelect the newly created path object to see the nodes.\nTo change the color, navigate to Object &gt; Fill and Stroke... (Ctrl + Shift + F) and select your preferred color.",
+    "text": "Steps\n\nOpen Inkscape and import your image, either from File &gt; Import... or drag and drop the image onto the canvas.\nPress S for the selection tool. Click on the image.\n\nFrom the top menu, go to Path &gt; Trace Bitmap... (Shift + Alt + B). Select your options and click Apply.\n\nGo to the Layers panel with Ctrl+Shift+L or from the top menu navigate to Layer &gt; Layers and Objects....\nExpand Layer 1. Click the image object and hit the Delete key.\n\nSelect the newly created path object to see the nodes.\nTo change the color, navigate to Object &gt; Fill and Stroke... (Ctrl+Shift+F) and select your preferred color.",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -3068,7 +3081,33 @@
     "href": "reference/vscode__ref/tasks-json.html#example",
     "title": "VS Code Tasks",
     "section": "Example",
-    "text": "Example\n\nHello World Program\nAssume you have a simple C++ Hello World program:\n#include &lt;stdio.h&gt;\n\nint main()\n{\n  printf(\"\\nHello!\\n\\n\");\n  return 0;\n}\n\n\nSample tasks.json\nThis tasks.json file contains two tasks, one that compiles the file (compile-hello) and another that runs the executable (run-hello).\n{ \"version\": \"2.0.0\"\n, \"tasks\":\n  [\n    { \"label\": \"compile-hello\"\n    , \"type\": \"shell\"\n    , \"command\": \"g++\"\n    , \"args\":\n      [ \"${workspaceFolder}/hello.cpp\"\n      , \"-o\"\n      , \"hello.out\"\n      ]\n    , \"presentation\":\n      { \"close\": true\n      }\n    , \"problemMatcher\": []\n    }\n\n  , { \"label\": \"run-hello\"\n    , \"type\": \"shell\"\n    , \"command\": \"${workspaceFolder}/hello.out\"\n    , \"dependsOn\":\n      [ \"compile-hello\"\n      ]\n    , \"problemMatcher\": []\n    }\n  ]\n}\n\n\nKey Descriptions\n\n\n\n\n\n\n\nKey\nDescription\n\n\n\n\nlabel\nName of the task.\n\n\ncommand\nCommand to execute.\n\n\nargs\nArguments passed to the command.\n\n\npresentation\nSet \"close\": true to automatically close the task terminal when the task completes.\n\n\nproblemMatcher\nSpecifies how VS Code detects errors and warnings in task output and displays them in the Problems panel.. Set to [] to disable this behavior.\n\n\ndependsOn\nList of tasks that must run before this task.",
+    "text": "Example\n\nHello World Program\nAssume you have a simple C++ Hello World program:\n#include &lt;stdio.h&gt;\n\nint main()\n{\n  printf(\"\\nHello!\\n\\n\");\n  return 0;\n}",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference",
+      "VS Code Tasks"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/tasks-json.html#sample-tasks.json",
+    "href": "reference/vscode__ref/tasks-json.html#sample-tasks.json",
+    "title": "VS Code Tasks",
+    "section": "Sample tasks.json",
+    "text": "Sample tasks.json\nThis tasks.json file contains two tasks, one that compiles the file (compile-hello) and another that runs the executable (run-hello).\n{ \"version\": \"2.0.0\"\n, \"tasks\":\n  [\n    { \"label\": \"compile-hello-debug\"\n    , \"type\": \"shell\"\n    , \"command\": \"g++\"\n    , \"args\":\n      [ \"${workspaceFolder}/hello.cpp\"\n      , \"-g\"\n      , \"-o\"\n      , \"hello.out\"\n      ]\n    , \"presentation\":\n      { \"close\": true\n      }\n    , \"problemMatcher\": []\n    }\n\n  , { \"label\": \"run-hello\"\n    , \"type\": \"shell\"\n    , \"command\": \"${workspaceFolder}/hello.out\"\n    , \"dependsOn\":\n      [ \"compile-hello\"\n      ]\n    , \"problemMatcher\": []\n    }\n  ]\n}\n\nKey Descriptions\n\n\n\n\n\n\n\nKey\nDescription\n\n\n\n\nlabel\nName of the task.\n\n\ncommand\nCommand to execute.\n\n\nargs\nArguments passed to the command.\n\n\npresentation\nSet \"close\": true to automatically close the task terminal when the task completes.\n\n\nproblemMatcher\nSpecifies how VS Code detects errors and warnings in task output and displays them in the Problems panel.. Set to [] to disable this behavior.\n\n\ndependsOn\nList of tasks that must run before this task.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference",
+      "VS Code Tasks"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/tasks-json.html#run-task",
+    "href": "reference/vscode__ref/tasks-json.html#run-task",
+    "title": "VS Code Tasks",
+    "section": "Run Task",
+    "text": "Run Task\n\nPress Ctrl+Shift+P to enter a command in the command palette. Start to type Run Task. Select Tasks: Run Task.\n\nSelect the task you would like to run.\n\nTerminal Output",
     "crumbs": [
       "Reference",
       "The Reference Library",

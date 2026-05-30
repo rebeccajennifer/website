@@ -393,9 +393,12 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a>
   <ul>
   <li><a href="#hello-world-program" id="toc-hello-world-program" class="nav-link" data-scroll-target="#hello-world-program">Hello World Program</a></li>
-  <li><a href="#sample-tasks.json" id="toc-sample-tasks.json" class="nav-link" data-scroll-target="#sample-tasks.json">Sample <code>tasks.json</code></a></li>
+  </ul></li>
+  <li><a href="#sample-tasks.json" id="toc-sample-tasks.json" class="nav-link" data-scroll-target="#sample-tasks.json">Sample <code>tasks.json</code></a>
+  <ul>
   <li><a href="#key-descriptions" id="toc-key-descriptions" class="nav-link" data-scroll-target="#key-descriptions">Key Descriptions</a></li>
   </ul></li>
+  <li><a href="#run-task" id="toc-run-task" class="nav-link" data-scroll-target="#run-task">Run Task</a></li>
   </ul>
 </nav>
     </div>
@@ -479,17 +482,19 @@ int main()
   return 0;
 }</code></pre>
 </section>
-<section id="sample-tasks.json" class="level3">
-<h3 class="anchored" data-anchor-id="sample-tasks.json">Sample <code>tasks.json</code></h3>
+</section>
+<section id="sample-tasks.json" class="level2">
+<h2 class="anchored" data-anchor-id="sample-tasks.json">Sample <code>tasks.json</code></h2>
 <p>This <code>tasks.json</code> file contains two tasks, one that compiles the file (<code>compile-hello</code>) and another that runs the executable (<code>run-hello</code>).</p>
 <pre class="json"><code>{ "version": "2.0.0"
 , "tasks":
   [
-    { "label": "compile-hello"
+    { "label": "compile-hello-debug"
     , "type": "shell"
     , "command": "g++"
     , "args":
       [ "${workspaceFolder}/hello.cpp"
+      , "-g"
       , "-o"
       , "hello.out"
       ]
@@ -509,7 +514,6 @@ int main()
     }
   ]
 }</code></pre>
-</section>
 <section id="key-descriptions" class="level3">
 <h3 class="anchored" data-anchor-id="key-descriptions">Key Descriptions</h3>
 <table class="caption-top table">
@@ -550,9 +554,20 @@ int main()
 </tr>
 </tbody>
 </table>
-
-
 </section>
+</section>
+<section id="run-task" class="level2">
+<h2 class="anchored" data-anchor-id="run-task">Run Task</h2>
+<ol type="1">
+<li><p>Press <code>Ctrl+Shift+P</code> to enter a command in the command palette. Start to type <code>Run Task</code>. Select <code>Tasks: Run Task</code>.</p>
+<p><img src="./images__vscode/tasks-0__vscode.png" class="img-fluid"></p></li>
+<li><p>Select the task you would like to run.</p>
+<p><img src="./images__vscode/tasks-1__vscode.png" class="img-fluid"></p>
+<p>Terminal Output</p>
+<p><img src="./images__vscode/tasks-2__vscode.png" class="img-fluid"></p></li>
+</ol>
+
+
 </section>
 
 </main> <!-- /main -->

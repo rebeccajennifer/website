@@ -393,9 +393,21 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#python-example" id="toc-python-example" class="nav-link" data-scroll-target="#python-example">Python Example</a>
   <ul>
   <li><a href="#example-python-program" id="toc-example-python-program" class="nav-link" data-scroll-target="#example-python-program">Example Python Program</a></li>
-  <li><a href="#sample-launch.json" id="toc-sample-launch.json" class="nav-link" data-scroll-target="#sample-launch.json">Sample <code>launch.json</code></a></li>
+  <li><a href="#sample-launch.json" id="toc-sample-launch.json" class="nav-link" data-scroll-target="#sample-launch.json">Sample <code>launch.json</code></a>
+  <ul>
   <li><a href="#key-descriptions" id="toc-key-descriptions" class="nav-link" data-scroll-target="#key-descriptions">Key Descriptions</a></li>
+  </ul></li>
+  <li><a href="#run-debug-configuration" id="toc-run-debug-configuration" class="nav-link" data-scroll-target="#run-debug-configuration">Run Debug Configuration</a></li>
+  </ul></li>
+  <li><a href="#c-example" id="toc-c-example" class="nav-link" data-scroll-target="#c-example">C++ Example</a>
+  <ul>
+  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">Notes</a></li>
   <li><a href="#example-c-program" id="toc-example-c-program" class="nav-link" data-scroll-target="#example-c-program">Example C++ Program</a></li>
+  <li><a href="#sample-launch.json-c-configuration" id="toc-sample-launch.json-c-configuration" class="nav-link" data-scroll-target="#sample-launch.json-c-configuration">Sample <code>launch.json</code> C++ Configuration</a>
+  <ul>
+  <li><a href="#key-descriptions-1" id="toc-key-descriptions-1" class="nav-link" data-scroll-target="#key-descriptions-1">Key Descriptions</a></li>
+  </ul></li>
+  <li><a href="#sample-tasks.json-c-debug-build" id="toc-sample-tasks.json-c-debug-build" class="nav-link" data-scroll-target="#sample-tasks.json-c-debug-build">Sample <code>tasks.json</code> C++ Debug Build</a></li>
   </ul></li>
   </ul>
 </nav>
@@ -517,10 +529,8 @@ if __name__ == '__main__':
     }
   ]
 }</code></pre>
-<p>Select the icon for <code>Run and Debug</code> from the activity bar. Click the drop down menu and select a configuration in <code>launch.json</code>. <img src="./images__vscode/debugger-0__vscode.png" class="img-fluid"></p>
-</section>
-<section id="key-descriptions" class="level3">
-<h3 class="anchored" data-anchor-id="key-descriptions">Key Descriptions</h3>
+<section id="key-descriptions" class="level4">
+<h4 class="anchored" data-anchor-id="key-descriptions">Key Descriptions</h4>
 <table class="caption-top table">
 <colgroup>
 <col style="width: 50%">
@@ -534,12 +544,120 @@ if __name__ == '__main__':
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>label</code></td>
+<td><code>name</code></td>
 <td>Name of configuration.</td>
 </tr>
 <tr class="even">
 <td><code>type</code></td>
 <td>Type of debugger. Common values are <code>debugpy</code> for python, <code>gdb</code> for <code>cpp</code>.</td>
+</tr>
+<tr class="odd">
+<td><code>request</code></td>
+<td>Specifies what kind of debugging action VS Code should perform. <br><code>launch</code> = Start a new program<br><code>attach</code> = Attach debugger to a program that is already running.</td>
+</tr>
+<tr class="even">
+<td><code>program</code></td>
+<td>Path to program to execute.</td>
+</tr>
+<tr class="odd">
+<td><code>console</code></td>
+<td>Use <code>integratedTerminal</code> to use the VS Code terminal for program execution.</td>
+</tr>
+<tr class="even">
+<td><code>args</code></td>
+<td>Arguments passed to the program.</td>
+</tr>
+</tbody>
+</table>
+</section>
+</section>
+<section id="run-debug-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="run-debug-configuration">Run Debug Configuration</h3>
+<ol type="1">
+<li><p>Select the icon for <code>Run and Debug</code> from the activity bar. Click the drop down menu and select a configuration in <code>launch.json</code>.</p>
+<p><img src="./images__vscode/debugger-0__vscode.png" class="img-fluid"></p></li>
+<li><p>Click the triangle (▷) play symbol to run the debug configuration.</p></li>
+</ol>
+</section>
+</section>
+<section id="c-example" class="level2">
+<h2 class="anchored" data-anchor-id="c-example">C++ Example</h2>
+<section id="notes" class="level3">
+<h3 class="anchored" data-anchor-id="notes">Notes</h3>
+<ol type="1">
+<li>Debugging a C++ program requires debug symbols. When using <code>g++</code>, enable them with the <code>-g</code> command-line option.</li>
+<li>You can create a VS Code <a href="../../reference/vscode__ref/tasks-json.html">task</a> to build the C++ program using debug symbols.</li>
+</ol>
+</section>
+<section id="example-c-program" class="level3">
+<h3 class="anchored" data-anchor-id="example-c-program">Example C++ Program</h3>
+<pre class="cpp"><code>#include &lt;cstdio&gt;
+#include &lt;cstdlib&gt;
+
+int main(int argc, char* argv[])
+{
+  int i = -1;
+
+  // Convert command line input C-style string (e.g. char*) to integer
+  if (argc &gt; 1)
+  {
+    i = std::atoi(argv[1]);
+  }
+
+  printf(
+    "\n\nHello there :)"
+    "\n\nInput argument: %d"
+    "\n\n"
+    , i
+  );
+
+  return 0;
+}</code></pre>
+</section>
+<section id="sample-launch.json-c-configuration" class="level3">
+<h3 class="anchored" data-anchor-id="sample-launch.json-c-configuration">Sample <code>launch.json</code> C++ Configuration</h3>
+<pre class="json"><code>{ "version": "0.2.0"
+, "configurations":
+  [ { "name"            : "hello-cpp-debug"
+    , "type"            : "cppdbg"
+    , "request"         : "launch"
+    , "cwd"             : "${workspaceFolder}"
+    , "program"         : "${workspaceFolder}/hello/hello.out"
+    , "args"            : ["42"]
+    , "stopAtEntry"     : true
+    , "externalConsole" : false
+    }
+  ]
+}</code></pre>
+<section id="key-descriptions-1" class="level4">
+<h4 class="anchored" data-anchor-id="key-descriptions-1">Key Descriptions</h4>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Key</th>
+<th>Description</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><code>name</code></td>
+<td>Name of configuration.</td>
+</tr>
+<tr class="even">
+<td><code>type</code></td>
+<td>Type of debugger. Common value for C++ is “cppdbg”</td>
+</tr>
+<tr class="odd">
+<td><code>request</code></td>
+<td>Specifies what kind of debugging action VS Code should perform. <br><code>launch</code> = Start a new program<br><code>attach</code> = Attach debugger to a program that is already running.</td>
+</tr>
+<tr class="even">
+<td><code>cwd</code></td>
+<td>Defines the working directory used when running the command.</td>
 </tr>
 <tr class="odd">
 <td><code>program</code></td>
@@ -550,22 +668,42 @@ if __name__ == '__main__':
 <td>Arguments passed to the program.</td>
 </tr>
 <tr class="odd">
-<td><code>console</code></td>
+<td><code>stopAtEntry</code></td>
+<td>Sets a breakpoint at program entry.</td>
+</tr>
+<tr class="even">
+<td><code>externalConsole</code></td>
 <td>Use <code>integratedTerminal</code> to use the VS Code terminal for program execution.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="example-c-program" class="level3">
-<h3 class="anchored" data-anchor-id="example-c-program">Example C++ Program</h3>
-<pre class="cpp"><code>#include &lt;stdio.h&gt;
+</section>
+<section id="sample-tasks.json-c-debug-build" class="level3">
+<h3 class="anchored" data-anchor-id="sample-tasks.json-c-debug-build">Sample <code>tasks.json</code> C++ Debug Build</h3>
+<p>The following <code>tasks.json</code> example defines a VS Code <a href="../../reference/vscode__ref/tasks-json.html">task</a> that builds a C++ program with debug symbols using the <code>-g</code> option of <code>g++</code>.</p>
+<pre class="json"><code>{ "version": "2.0.0"
+, "tasks":
+  [
+    { "label"   : "compile-hello-debug"
+    , "type"    : "shell"
+    , "command" : "g++"
+    , "args"    :
+      [ "${workspaceFolder}/hello/hello.cpp"
+      , "-g"
+      , "-o"
+      , "${workspaceFolder}/hello/hello.out"
+      ]
 
-int main()
-{
-  int i = 0;
-  i++;
-  printf("\ni: %d", i);
-  return 0;
+      // Close task terminal after execution
+    , "presentation"  :
+      { "close": true
+      }
+
+      // Disable error detection for task
+    , "problemMatcher": []
+    }
+  ]
 }</code></pre>
 
 
