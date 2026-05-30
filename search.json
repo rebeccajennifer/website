@@ -155,11 +155,11 @@
     ]
   },
   {
-    "objectID": "reference/color-scheme__ref/vscode-color.html#official-documentation",
-    "href": "reference/color-scheme__ref/vscode-color.html#official-documentation",
+    "objectID": "reference/color-scheme__ref/vscode-color.html#visual-studio-code-documentation",
+    "href": "reference/color-scheme__ref/vscode-color.html#visual-studio-code-documentation",
     "title": "VS Code Color Theme",
-    "section": "Official Documentation",
-    "text": "Official Documentation\nSee this page for a complete list of VS Code color theme properties.\nVS Code Docs: Color Theme Properties",
+    "section": "Visual Studio Code Documentation",
+    "text": "Visual Studio Code Documentation\nSee this page for a complete list of VS Code color theme properties.\nColor Theme Properties",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -487,11 +487,11 @@
     ]
   },
   {
-    "objectID": "reference/vscode__ref/vscode-color.html#official-documentation",
-    "href": "reference/vscode__ref/vscode-color.html#official-documentation",
+    "objectID": "reference/vscode__ref/vscode-color.html#visual-studio-code-documentation",
+    "href": "reference/vscode__ref/vscode-color.html#visual-studio-code-documentation",
     "title": "VS Code Color Theme",
-    "section": "Official Documentation",
-    "text": "Official Documentation\nSee this page for a complete list of VS Code color theme properties.\nVS Code Docs: Color Theme Properties",
+    "section": "Visual Studio Code Documentation",
+    "text": "Visual Studio Code Documentation\nSee this page for a complete list of VS Code color theme properties.\nColor Theme Properties",
     "crumbs": [
       "Reference",
       "The Reference Library",
