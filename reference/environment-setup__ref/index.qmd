@@ -1,6 +1,6 @@
 ---
-title: New Environment Setup
-subtitle: My approach to setting up a new development environment
+title: Environment Setup
+subtitle: My approach to setting up development environments
 image: ./images__env-setup/vs-code-settings-screenshot-thumb.png
 order: 0
 
