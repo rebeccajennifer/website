@@ -35,7 +35,7 @@ order: 4
 |   Reference page for creating a VS Code color scheme.
 |____________________________________________________________________-->
 
-![](images__color-scheme-reference/vscode-flux-dark-screenshot.png)
+![](/reference/color-scheme__ref/images__color-scheme-reference/vscode-flux-dark-screenshot.png)
 
 ## Official Documentation
 

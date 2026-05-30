@@ -4,11 +4,7 @@ description: >
   This set of pages includes information on VS Code features like debugger settings and how to set up tasks.
 
 listing:
-  contents:
-    - ../environment-setup__ref/vs-code.qmd
-    - ../color-scheme__ref/vscode-color.qmd
-    - ./launch-json.qmd
-    - ./tasks-json.qmd
+  contents: ./
 draft: false
 order: 2
 ---

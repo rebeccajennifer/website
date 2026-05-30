@@ -3,10 +3,10 @@ title: Visual Studio Code Settings
 subtitle: My preferred settings for VS Code
 description: >
   This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.
-image: ./images__env-setup/vs-code-settings-screenshot-thumb.png
+image: /reference/environment-setup__ref/images__env-setup/vs-code-settings-screenshot-thumb.png
 toc: true
 toc-depth: 6
-order: 1
+order: 0
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|

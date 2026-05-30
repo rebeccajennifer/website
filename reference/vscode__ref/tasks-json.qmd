@@ -1,11 +1,11 @@
 ---
-title: Visual Studio Code Tasks
-subtitle: Sample tasks for VS Code
+title: VS Code Tasks
+subtitle: Sample tasks for Visual Studio Code
 description: >
   VS Code tasks automate command-line operations and make them available directly from the editor.
 toc: true
 toc-depth: 6
-order: 1
+order: 2
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
@@ -32,7 +32,7 @@ order: 1
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   VS Code setup
+|   VS Code tasks
 |____________________________________________________________________-->
 
 ## Visual Studio Code Documentation
