@@ -8,6 +8,6 @@ listing:
     - ../environment-setup__ref/vs-code.qmd
     - ../color-scheme__ref/vscode-color.qmd
     - ./tasks-json.qmd
-draft: true
+draft: false
 order: 2
 ---
