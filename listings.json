@@ -21,9 +21,9 @@
     "items": [
       "/reference/environment-setup__ref/index.html",
       "/reference/color-scheme__ref/index.html",
+      "/reference/vxworks__ref/index.html",
       "/reference/qnx__ref/index.html",
-      "/reference/inkscape__ref/index.html",
-      "/reference/vxworks__ref/index.html"
+      "/reference/inkscape__ref/index.html"
     ]
   },
   {
@@ -32,6 +32,14 @@
       "/reference/qnx__ref/qnx-setup.html",
       "/reference/qnx__ref/qnx-vm.html",
       "/reference/qnx__ref/qnx-hello-world.html"
+    ]
+  },
+  {
+    "listing": "/reference/vscode__ref/index.html",
+    "items": [
+      "/reference/environment-setup__ref/vs-code.html",
+      "/reference/vscode__ref/tasks-json.html",
+      "/reference/color-scheme__ref/vscode-color.html"
     ]
   },
   {

@@ -38,7 +38,7 @@
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/qnx__ref/index.html</loc>
-    <lastmod>2026-03-29T16:44:32.671Z</lastmod>
+    <lastmod>2026-05-30T05:16:12.834Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-setup.html</loc>
@@ -46,7 +46,7 @@
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__ref/index.html</loc>
-    <lastmod>2026-03-29T16:44:32.660Z</lastmod>
+    <lastmod>2026-05-30T04:12:03.958Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__ref/application-installation.html</loc>
@@ -62,7 +62,7 @@
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__ref/vs-code.html</loc>
-    <lastmod>2026-03-29T16:44:32.660Z</lastmod>
+    <lastmod>2026-05-30T05:13:58.483Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/inkscape__ref/bitmap2vector.html</loc>
@@ -194,11 +194,11 @@
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/vxworks__ref/index.html</loc>
-    <lastmod>2026-05-20T03:05:23.836Z</lastmod>
+    <lastmod>2026-05-30T05:18:57.155Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/inkscape__ref/index.html</loc>
-    <lastmod>2026-03-29T16:44:32.663Z</lastmod>
+    <lastmod>2026-05-30T05:20:49.021Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__ref/default-shell.html</loc>
@@ -215,6 +215,10 @@
   <url>
     <loc>https://rebeccajennifer.com/reference/environment-setup__ref/font-install.html</loc>
     <lastmod>2026-05-10T22:49:39.292Z</lastmod>
+  </url>
+  <url>
+    <loc>https://rebeccajennifer.com/reference/vscode__ref/tasks-json.html</loc>
+    <lastmod>2026-05-30T05:21:31.151Z</lastmod>
   </url>
   <url>
     <loc>https://rebeccajennifer.com/reference/qnx__ref/qnx-vm.html</loc>

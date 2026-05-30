@@ -328,7 +328,7 @@
     "href": "reference/index.html",
     "title": "The Reference Library",
     "section": "",
-    "text": "This set of pages includes references I have developed for unifying development environments, streamlining setup, and documenting various software tools.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nNew Environment Setup\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColor Scheme Reference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQNX Reference\n\n\nThese pages provide tutorial-style guidance that complements the official QNX documentation for using the QNX RTOS framework.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInkscape Reference\n\n\nThis page provides instructions on the Inkscape features I use most frequently.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVxWorks Getting Started\n\n\nGet VxWorks running in QEMU, a machine emulator.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
+    "text": "This set of pages includes references I have developed for unifying development environments, streamlining setup, and documenting various software tools.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nEnvironment Setup\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nColor Scheme Reference\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nVxWorks Getting Started\n\n\nGet VxWorks running in QEMU, a machine emulator.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nQNX Reference\n\n\nThese pages provide tutorial-style guidance that complements the official QNX documentation for using the QNX RTOS framework.\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\n\nInkscape Reference\n\n\nThis page provides instructions on the Inkscape features I use most frequently.\n\n\n\n\n\n\n\n\n\n\nNo matching items",
     "crumbs": [
       "Reference",
       "The Reference Library"
@@ -437,25 +437,25 @@
   {
     "objectID": "reference/environment-setup__ref/index.html",
     "href": "reference/environment-setup__ref/index.html",
-    "title": "New Environment Setup",
+    "title": "Environment Setup",
     "section": "",
     "text": "I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my workspace settings, I’ve compiled these pages as a resource for my standard applications and a guide on configuring tools like Git and Visual Studio Code.\nThis repository contains the ‘dotfiles’ and configuration files I use for various applications.\nSetup Files Repository",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup"
+      "Environment Setup"
     ]
   },
   {
     "objectID": "reference/environment-setup__ref/index.html#reference-material",
     "href": "reference/environment-setup__ref/index.html#reference-material",
-    "title": "New Environment Setup",
+    "title": "Environment Setup",
     "section": "Reference Material",
     "text": "Reference Material",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup"
+      "Environment Setup"
     ]
   },
   {
@@ -467,7 +467,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Application Installation"
     ]
   },
@@ -480,7 +480,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Application Installation"
     ]
   },
@@ -493,7 +493,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Application Installation"
     ]
   },
@@ -506,7 +506,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "PuTTY Configuration"
     ]
   },
@@ -519,7 +519,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "PuTTY Configuration"
     ]
   },
@@ -532,7 +532,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "PuTTY Configuration"
     ]
   },
@@ -545,7 +545,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "PuTTY Configuration"
     ]
   },
@@ -558,7 +558,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "PuTTY Configuration"
     ]
   },
@@ -571,7 +571,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "PuTTY Configuration"
     ]
   },
@@ -584,7 +584,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Arduino Command Line Interface"
     ]
   },
@@ -597,7 +597,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Arduino Command Line Interface"
     ]
   },
@@ -610,7 +610,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Arduino Command Line Interface"
     ]
   },
@@ -623,73 +623,73 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Arduino Command Line Interface"
     ]
   },
   {
     "objectID": "reference/environment-setup__ref/vs-code.html",
     "href": "reference/environment-setup__ref/vs-code.html",
-    "title": "Visual Studio Code Setup",
+    "title": "Visual Studio Code Settings",
     "section": "",
-    "text": "This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.",
+    "text": "For more information on VS Code, like how to set up tasks and create a color scheme, visit this page.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
+      "Environment Setup",
+      "Visual Studio Code Settings"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__ref/vs-code.html#additional-vs-code-reference",
+    "href": "reference/environment-setup__ref/vs-code.html#additional-vs-code-reference",
+    "title": "Visual Studio Code Settings",
+    "section": "",
+    "text": "For more information on VS Code, like how to set up tasks and create a color scheme, visit this page.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Environment Setup",
+      "Visual Studio Code Settings"
+    ]
+  },
+  {
+    "objectID": "reference/environment-setup__ref/vs-code.html#checklist",
+    "href": "reference/environment-setup__ref/vs-code.html#checklist",
+    "title": "Visual Studio Code Settings",
+    "section": "Checklist",
+    "text": "Checklist\n\nAdd settings.json.\nInstall color themes.\nAdd extensions.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Environment Setup",
+      "Visual Studio Code Settings"
     ]
   },
   {
     "objectID": "reference/environment-setup__ref/vs-code.html#settings",
     "href": "reference/environment-setup__ref/vs-code.html#settings",
-    "title": "Visual Studio Code Setup",
+    "title": "Visual Studio Code Settings",
     "section": "Settings",
-    "text": "Settings\nThe settings.json file contains settings for VS Code and usually lives in the following locations:\n\n\n\n\n\n\n\nOS\nPath\n\n\n\n\nUnix\n/home/&lt;user-name&gt;/.config/Code/User/settings.json\n\n\nWindows\nC:\\\\Users\\&lt;user-name&gt;\\\\AppData\\\\Roaming\\\\Code\\\\User\\\\settings.json\n\n\n\nAccess my settings.json and custom color theme below. If you need help with color theme installation, see this page.\nsettings.json Original Color Scheme\n\nSettings Override\nThe settings.json file located at the user level will take precedence. To override or add to the settings at the workspace or directory level, create a new directory called .vscode and add another settings.json file here.",
+    "text": "Settings\nThe settings.json file contains settings for VS Code and usually lives in the following locations:\n\n\n\n\n\n\n\nOS\nPath\n\n\n\n\nUnix\n/home/&lt;user-name&gt;/.config/Code/User/settings.json\n\n\nWindows\nC:\\\\Users\\&lt;user-name&gt;\\\\AppData\\\\Roaming\\\\Code\\\\User\\\\settings.json\n\n\n\nAccess my settings.json and custom color theme below. If you need help with color theme installation, see this page.\nsettings.json Original Color Themes\n\nSettings Override\nThe settings.json file located at the user level will take precedence. To override or add to the settings at the workspace or directory level, create a new directory called .vscode and add another settings.json file here.",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
+      "Environment Setup",
+      "Visual Studio Code Settings"
     ]
   },
   {
     "objectID": "reference/environment-setup__ref/vs-code.html#extensions",
     "href": "reference/environment-setup__ref/vs-code.html#extensions",
-    "title": "Visual Studio Code Setup",
+    "title": "Visual Studio Code Settings",
     "section": "Extensions",
-    "text": "Extensions\nInstall the following extensions:\n\nC/C++ by Microsoft\nPython by Microsoft\nPython Debugger by Microsoft\nCode Runner by Jun Han\nVim by vscodevim\nCMake by twxs\nCMake Tools by Microsoft",
+    "text": "Extensions\n\n\n\n\n\n\n\nExtension Name\nPublisher\n\n\n\n\nC/C++\nMicrosoft\n\n\nC/C++ DevTools\nMicrosoft\n\n\nC/C++ Extension Pack\nMicrosoft\n\n\nPython\nMicrosoft\n\n\nPython Debugger\nMicrosoft\n\n\nPython Environments\nMicrosoft\n\n\nCMake Tools\nMicrosoft\n\n\nCode Runner\nJun Han\n\n\nRemote-SSH\nMicrosoft\n\n\nPDF Viewer\nMathematic Inc\n\n\nVim\nvscode vim\n\n\nHex Editor\nMicrosoft\n\n\nMarkdown All in One\nYu Zhang\n\n\nmarkdownlint\nDavid Anson\n\n\nCode Spell Checker\nStreet Side Software\n\n\nPlantUML\njebbs\n\n\nGraphviz (dot) language support for Visual Studio Code\nStephanvs\n\n\nQuarto\nQuarto\n\n\n\n\nVim\nPoint Vim extension to local .vimrc file.\n\n\nCode Runner Configuration\n\nEnable Clear Previous Output\nDisable Show Execution Message",
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup__ref/vs-code.html#vim",
-    "href": "reference/environment-setup__ref/vs-code.html#vim",
-    "title": "Visual Studio Code Setup",
-    "section": "Vim",
-    "text": "Vim\nPoint Vim extension to local .vimrc file.",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
-    ]
-  },
-  {
-    "objectID": "reference/environment-setup__ref/vs-code.html#code-runner-configuration",
-    "href": "reference/environment-setup__ref/vs-code.html#code-runner-configuration",
-    "title": "Visual Studio Code Setup",
-    "section": "Code Runner Configuration",
-    "text": "Code Runner Configuration\n\nEnable Clear Previous Output\nDisable Show Execution Message",
-    "crumbs": [
-      "Reference",
-      "The Reference Library",
-      "New Environment Setup",
-      "Visual Studio Code Setup"
+      "Environment Setup",
+      "Visual Studio Code Settings"
     ]
   },
   {
@@ -2545,7 +2545,7 @@
     "href": "reference/vxworks__ref/index.html#official-vxworks-links",
     "title": "VxWorks Getting Started",
     "section": "Official VxWorks Links",
-    "text": "Official VxWorks Links\nDownload page README",
+    "text": "Official VxWorks Links\nDownload README",
     "crumbs": [
       "Reference",
       "The Reference Library",
@@ -2669,7 +2669,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Default Shell"
     ]
   },
@@ -2682,7 +2682,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Default Shell"
     ]
   },
@@ -2695,7 +2695,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Default Shell"
     ]
   },
@@ -2708,7 +2708,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Git Reference"
     ]
   },
@@ -2721,7 +2721,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Git Reference"
     ]
   },
@@ -2734,7 +2734,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Git Reference"
     ]
   },
@@ -2747,7 +2747,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Git Reference"
     ]
   },
@@ -2760,7 +2760,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Enable SSH"
     ]
   },
@@ -2773,7 +2773,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Enable SSH"
     ]
   },
@@ -2786,7 +2786,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Enable SSH"
     ]
   },
@@ -2799,7 +2799,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Enable SSH"
     ]
   },
@@ -2812,7 +2812,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Font Install"
     ]
   },
@@ -2825,7 +2825,7 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Font Install"
     ]
   },
@@ -2838,8 +2838,60 @@
     "crumbs": [
       "Reference",
       "The Reference Library",
-      "New Environment Setup",
+      "Environment Setup",
       "Font Install"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/tasks-json.html",
+    "href": "reference/vscode__ref/tasks-json.html",
+    "title": "Visual Studio Code Tasks",
+    "section": "",
+    "text": "Tasks",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference",
+      "Visual Studio Code Tasks"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/tasks-json.html#visual-studio-code-documentation",
+    "href": "reference/vscode__ref/tasks-json.html#visual-studio-code-documentation",
+    "title": "Visual Studio Code Tasks",
+    "section": "",
+    "text": "Tasks",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference",
+      "Visual Studio Code Tasks"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/tasks-json.html#procedure",
+    "href": "reference/vscode__ref/tasks-json.html#procedure",
+    "title": "Visual Studio Code Tasks",
+    "section": "Procedure",
+    "text": "Procedure\n\nOpen the workspace directory in VS Code.\nIn the workspace root, create a .vscode directory if it does not already exist.\nInside .vscode, create a file named tasks.json.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference",
+      "Visual Studio Code Tasks"
+    ]
+  },
+  {
+    "objectID": "reference/vscode__ref/tasks-json.html#example",
+    "href": "reference/vscode__ref/tasks-json.html#example",
+    "title": "Visual Studio Code Tasks",
+    "section": "Example",
+    "text": "Example\n\nHello World Program\nAssume you have a simple C++ Hello World program:\n#include &lt;stdio.h&gt;\n\nint main()\n{\n  printf(\"\\nHello!\\n\\n\");\n  return 0;\n}\n\n\nSample tasks.json\nThis tasks.json file contains two tasks, one that compiles the file (compile-hello) and another that runs the executable (run-hello).\n{ \"version\": \"2.0.0\"\n, \"tasks\":\n  [\n    { \"label\": \"compile-hello\"\n    , \"type\": \"shell\"\n    , \"command\": \"g++\"\n    , \"args\":\n      [ \"${workspaceFolder}/hello.cpp\"\n      , \"-o\"\n      , \"hello.out\"\n      ]\n    , \"presentation\":\n      { \"close\": true\n      }\n    , \"problemMatcher\": []\n    }\n\n  , { \"label\": \"run-hello\"\n    , \"type\": \"shell\"\n    , \"command\": \"${workspaceFolder}/hello.out\"\n    , \"dependsOn\":\n      [ \"compile-hello\"\n      ]\n    , \"problemMatcher\": []\n    }\n  ]\n}\n\n\nKey Descriptions\n\n\n\n\n\n\n\nKey\nDescription\n\n\n\n\nlabel\nName of the task.\n\n\ncommand\nCommand to execute.\n\n\nargs\nArguments passed to the command.\n\n\npresentation\nSet \"close\": true to automatically close the task terminal when the task completes.\n\n\nproblemMatcher\nSpecifies how VS Code detects errors and warnings in task output and displays them in the Problems panel.. Set to [] to disable this behavior.\n\n\ndependsOn\nList of tasks that must run before this task.",
+    "crumbs": [
+      "Reference",
+      "The Reference Library",
+      "Visual Studio Code Reference",
+      "Visual Studio Code Tasks"
     ]
   },
   {

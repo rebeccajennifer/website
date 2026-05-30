@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="VS Code tasks automate command-line operations and make them available directly from the editor.">
 
-<title>PuTTY Color Configuration – Rebecca Jennifer Rashkin</title>
+<title>Visual Studio Code Tasks – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,12 +73,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../style/flux-bunny-style.css">
-<meta property="og:title" content="PuTTY Color Configuration – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="Visual Studio Code Tasks – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="https://rebeccajennifer.com/reference/environment-setup__ref/images__env-setup/putty-config__env-setup__images/putty-config-2-window-09.png">
+<meta property="og:image" content="https://rebeccajennifer.com/reference/vscode__ref/assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
-<meta property="og:image:height" content="442">
-<meta property="og:image:width" content="452">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -130,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/putty-color.html">PuTTY Color Configuration</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/tasks-json.html">Visual Studio Code Tasks</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -218,11 +217,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../reference/color-scheme__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Color Scheme Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../reference/color-scheme__ref/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
@@ -261,7 +260,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__ref/putty-color.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/color-scheme__ref/putty-color.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">PuTTY Color Configuration</span></a>
   </div>
 </li>
@@ -354,24 +353,31 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#export-default-configuration-file" id="toc-export-default-configuration-file" class="nav-link active" data-scroll-target="#export-default-configuration-file">Export Default Configuration File</a></li>
-  <li><a href="#color-labels" id="toc-color-labels" class="nav-link" data-scroll-target="#color-labels">Color Labels</a>
+  <li><a href="#visual-studio-code-documentation" id="toc-visual-studio-code-documentation" class="nav-link active" data-scroll-target="#visual-studio-code-documentation">Visual Studio Code Documentation</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a></li>
+  <li><a href="#example" id="toc-example" class="nav-link" data-scroll-target="#example">Example</a>
   <ul>
-  <li><a href="#sample-color-theme-section" id="toc-sample-color-theme-section" class="nav-link" data-scroll-target="#sample-color-theme-section">Sample Color Theme Section</a></li>
+  <li><a href="#hello-world-program" id="toc-hello-world-program" class="nav-link" data-scroll-target="#hello-world-program">Hello World Program</a></li>
+  <li><a href="#sample-tasks.json" id="toc-sample-tasks.json" class="nav-link" data-scroll-target="#sample-tasks.json">Sample <code>tasks.json</code></a></li>
+  <li><a href="#key-descriptions" id="toc-key-descriptions" class="nav-link" data-scroll-target="#key-descriptions">Key Descriptions</a></li>
   </ul></li>
-  <li><a href="#import-configuration-file" id="toc-import-configuration-file" class="nav-link" data-scroll-target="#import-configuration-file">Import Configuration File</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/putty-color.html">PuTTY Color Configuration</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/tasks-json.html">Visual Studio Code Tasks</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">PuTTY Color Configuration</h1>
-<p class="subtitle lead">Defining custom color schemes in the PuTTY configuration.</p>
+<h1 class="title">Visual Studio Code Tasks</h1>
+<p class="subtitle lead">Sample tasks for VS Code</p>
 </div>
 
+<div>
+  <div class="description">
+    <p>VS Code tasks automate command-line operations and make them available directly from the editor.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -411,148 +417,107 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Reference page for PuTTY color configuration.
+|   VS Code setup
 |____________________________________________________________________-->
-<p>Learn how to customize your terminal’s appearance by modifying the PuTTY configuration color values.</p>
-<section id="export-default-configuration-file" class="level2">
-<h2 class="anchored" data-anchor-id="export-default-configuration-file">Export Default Configuration File</h2>
-<p>Follow <a href="../environment-setup__ref/putty.html#access-saved-session-configurations">these instructions</a> to export your PuTTY configuration file.</p>
+<section id="visual-studio-code-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-documentation">Visual Studio Code Documentation</h2>
+<p><a href="https://code.visualstudio.com/docs/debugtest/tasks" class="flux-button _3">Tasks</a></p>
 </section>
-<section id="color-labels" class="level2">
-<h2 class="anchored" data-anchor-id="color-labels">Color Labels</h2>
-<p>In the <code>.reg</code> file of a saved session configuration, the colors can be found in the section of text where lines are in the following format:</p>
-<p><code>"Colour#"="#,#,#"</code>.</p>
-<p>Note that <code>#</code> of <code>Colour#</code> does <em>not</em> correspond with normal ANSI colors, i.e.&nbsp;0 = black, 1 = red, etc. The meaning of the color labels are listed in the table below.</p>
+<section id="procedure" class="level2">
+<h2 class="anchored" data-anchor-id="procedure">Procedure</h2>
+<ol type="1">
+<li>Open the workspace directory in VS Code.</li>
+<li>In the workspace root, create a <code>.vscode</code> directory if it does not already exist.</li>
+<li>Inside <code>.vscode</code>, create a file named <code>tasks.json</code>.</li>
+</ol>
+</section>
+<section id="example" class="level2">
+<h2 class="anchored" data-anchor-id="example">Example</h2>
+<section id="hello-world-program" class="level3">
+<h3 class="anchored" data-anchor-id="hello-world-program">Hello World Program</h3>
+<p>Assume you have a simple C++ <code>Hello World</code> program:</p>
+<pre class="cpp"><code>#include &lt;stdio.h&gt;
+
+int main()
+{
+  printf("\nHello!\n\n");
+  return 0;
+}</code></pre>
+</section>
+<section id="sample-tasks.json" class="level3">
+<h3 class="anchored" data-anchor-id="sample-tasks.json">Sample <code>tasks.json</code></h3>
+<p>This <code>tasks.json</code> file contains two tasks, one that compiles the file (<code>compile-hello</code>) and another that runs the executable (<code>run-hello</code>).</p>
+<pre class="json"><code>{ "version": "2.0.0"
+, "tasks":
+  [
+    { "label": "compile-hello"
+    , "type": "shell"
+    , "command": "g++"
+    , "args":
+      [ "${workspaceFolder}/hello.cpp"
+      , "-o"
+      , "hello.out"
+      ]
+    , "presentation":
+      { "close": true
+      }
+    , "problemMatcher": []
+    }
+
+  , { "label": "run-hello"
+    , "type": "shell"
+    , "command": "${workspaceFolder}/hello.out"
+    , "dependsOn":
+      [ "compile-hello"
+      ]
+    , "problemMatcher": []
+    }
+  ]
+}</code></pre>
+</section>
+<section id="key-descriptions" class="level3">
+<h3 class="anchored" data-anchor-id="key-descriptions">Key Descriptions</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Label</th>
-<th>Color</th>
+<th>Key</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>Colour0</code></td>
-<td>Foreground</td>
+<td><code>label</code></td>
+<td>Name of the task.</td>
 </tr>
 <tr class="even">
-<td><code>Colour1</code></td>
-<td>Bright Foreground</td>
+<td><code>command</code></td>
+<td>Command to execute.</td>
 </tr>
 <tr class="odd">
-<td><code>Colour2</code></td>
-<td>Background</td>
+<td><code>args</code></td>
+<td>Arguments passed to the command.</td>
 </tr>
 <tr class="even">
-<td><code>Colour3</code></td>
-<td>Bright Background</td>
+<td><code>presentation</code></td>
+<td>Set <code>"close": true</code> to automatically close the task terminal when the task completes.</td>
 </tr>
 <tr class="odd">
-<td><code>Colour4</code></td>
-<td>Cursor Foreground</td>
+<td><code>problemMatcher</code></td>
+<td>Specifies how VS Code detects errors and warnings in task output and displays them in the Problems panel.. Set to <code>[]</code> to disable this behavior.</td>
 </tr>
 <tr class="even">
-<td><code>Colour5</code></td>
-<td>Cursor Background</td>
-</tr>
-<tr class="odd">
-<td><code>Colour6</code></td>
-<td>Black</td>
-</tr>
-<tr class="even">
-<td><code>Colour7</code></td>
-<td>Bright Black</td>
-</tr>
-<tr class="odd">
-<td><code>Colour8</code></td>
-<td>Red</td>
-</tr>
-<tr class="even">
-<td><code>Colour9</code></td>
-<td>Bright Red</td>
-</tr>
-<tr class="odd">
-<td><code>Colour10</code></td>
-<td>Green</td>
-</tr>
-<tr class="even">
-<td><code>Colour11</code></td>
-<td>Bright Green</td>
-</tr>
-<tr class="odd">
-<td><code>Colour12</code></td>
-<td>Yellow</td>
-</tr>
-<tr class="even">
-<td><code>Colour13</code></td>
-<td>Bright Yellow</td>
-</tr>
-<tr class="odd">
-<td><code>Colour14</code></td>
-<td>Blue</td>
-</tr>
-<tr class="even">
-<td><code>Colour15</code></td>
-<td>Bright Blue</td>
-</tr>
-<tr class="odd">
-<td><code>Colour16</code></td>
-<td>Magenta</td>
-</tr>
-<tr class="even">
-<td><code>Colour17</code></td>
-<td>Bright Magenta</td>
-</tr>
-<tr class="odd">
-<td><code>Colour18</code></td>
-<td>Cyan</td>
-</tr>
-<tr class="even">
-<td><code>Colour19</code></td>
-<td>Bright Cyan</td>
-</tr>
-<tr class="odd">
-<td><code>Colour20</code></td>
-<td>White</td>
-</tr>
-<tr class="even">
-<td><code>Colour21</code></td>
-<td>Bright White</td>
+<td><code>dependsOn</code></td>
+<td>List of tasks that must run before this task.</td>
 </tr>
 </tbody>
 </table>
-<section id="sample-color-theme-section" class="level3">
-<h3 class="anchored" data-anchor-id="sample-color-theme-section">Sample Color Theme Section</h3>
-<p><strong>Note:</strong> Whitespace is permitted in the configuration file.</p>
-<pre><code>"Colour0" ="187, 187, 187"
-"Colour1" ="255, 255, 255"
-"Colour2" =" 28,  28,  28"
-"Colour3" =" 95,  95,  95"
-"Colour4" =" 12,  12,  12"
-"Colour5" ="255, 135,  95"
-"Colour6" =" 18,  18,  18"
-"Colour7" =" 48,  48,  48"
-"Colour8" ="215,  95, 135"
-"Colour9" ="255,  95, 135"
-"Colour10"="135, 215,  95"
-"Colour11"="135, 255,  95"
-"Colour12"="255, 135,  95"
-"Colour13"="215, 215,  95"
-"Colour14"=" 95, 135, 215"
-"Colour15"=" 95, 135, 255"
-"Colour16"="175,  95, 215"
-"Colour17"="175,  95, 255"
-"Colour18"=" 95, 175, 215"
-"Colour19"=" 95, 175, 255"
-"Colour20"="215, 215, 215"
-"Colour21"="255, 255, 255"</code></pre>
-</section>
-</section>
-<section id="import-configuration-file" class="level2">
-<h2 class="anchored" data-anchor-id="import-configuration-file">Import Configuration File</h2>
-<p>Follow <a href="../environment-setup__ref/putty.html#import-configuration">these instructions</a> to import your modified PuTTY configuration file.</p>
 
 
+</section>
 </section>
 
 </main> <!-- /main -->
