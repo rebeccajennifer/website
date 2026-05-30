@@ -31,29 +31,56 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Helper to swap icons
   const updateIcon = (is_dark) => {
+    if (!moon) return;
+
     if (is_dark) {
       moon.classList.replace('bi-moon', 'bi-sun');
     } else {
-      moon.classList.replace('bi-sun', 'bi-moon');
+      moon.classList.replace("bi-sun", "bi-moon");
     }
   };
 
-  // 1. Restore saved state
-  if (localStorage.getItem("dark-mode") === "true") {
-    document.documentElement.classList.add("dark-mode");
-    if (moon) updateIcon(true);
+  // 1. Restore saved state or use system preference
+  const saved = localStorage.getItem("dark-mode");
+
+  let is_dark;
+
+  if (saved !== null) {
+    is_dark = saved === "true";
+  } else {
+    is_dark = window.matchMedia("(prefers-color-scheme: dark)").matches;
   }
+
+  document.documentElement.classList.toggle("dark-mode", is_dark);
+  updateIcon(is_dark);
+
+  // Follow system theme changes if the user has not chosen a preference
+  const media = window.matchMedia("(prefers-color-scheme: dark)");
+
+  media.addEventListener("change", (event) => {
+    if (localStorage.getItem("dark-mode") !== null) {
+      return;
+    }
+
+    const is_dark = event.matches;
+
+    document.documentElement.classList.toggle("dark-mode", is_dark);
+    updateIcon(is_dark);
+  });
 
   if (!moon) return;
 
-  // 2. Click Handler
+  // 2. Click handler
   moon.addEventListener("click", () => {
-    const is_dark_now = document.documentElement.classList.toggle("dark-mode");
+    const is_dark_now =
+      document.documentElement.classList.toggle("dark-mode");
 
-    // Swap the icon class
     updateIcon(is_dark_now);
 
-    // Save state
-    localStorage.setItem("dark-mode", is_dark_now ? "true" : "false");
+    // Save explicit user preference
+    localStorage.setItem(
+      "dark-mode",
+      is_dark_now ? "true" : "false"
+    );
   });
 });
