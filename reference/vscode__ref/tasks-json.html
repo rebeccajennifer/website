@@ -8,7 +8,7 @@
 
 <meta name="description" content="VS Code tasks automate command-line operations and make them available directly from the editor.">
 
-<title>Visual Studio Code Tasks – Rebecca Jennifer Rashkin</title>
+<title>VS Code Tasks – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -73,7 +73,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../style/flux-bunny-style.css">
-<meta property="og:title" content="Visual Studio Code Tasks – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="VS Code Tasks – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
 <meta property="og:image" content="https://rebeccajennifer.com/reference/vscode__ref/assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
@@ -129,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/tasks-json.html">Visual Studio Code Tasks</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/tasks-json.html">VS Code Tasks</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -171,7 +171,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/environment-setup__ref/vs-code.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/environment-setup__ref/vscode-settings.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code Settings</span></a>
   </div>
 </li>
@@ -300,8 +300,26 @@ ul.task-list li input[type="checkbox"] {
       <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
+  <a href="../../reference/vscode__ref/vscode-settings.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Visual Studio Code Settings</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/vscode__ref/launch-json.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VS Code Debugger</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
   <a href="../../reference/vscode__ref/tasks-json.html" class="sidebar-item-text sidebar-link active">
- <span class="menu-text">Visual Studio Code Tasks</span></a>
+ <span class="menu-text">VS Code Tasks</span></a>
+  </div>
+</li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/vscode__ref/vscode-color.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">VS Code Color Theme</span></a>
   </div>
 </li>
       </ul>
@@ -384,10 +402,10 @@ ul.task-list li input[type="checkbox"] {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/tasks-json.html">Visual Studio Code Tasks</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/tasks-json.html">VS Code Tasks</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Visual Studio Code Tasks</h1>
-<p class="subtitle lead">Sample tasks for VS Code</p>
+<h1 class="title">VS Code Tasks</h1>
+<p class="subtitle lead">Sample tasks for Visual Studio Code</p>
 </div>
 
 <div>
@@ -434,7 +452,7 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   VS Code setup
+|   VS Code tasks
 |____________________________________________________________________-->
 <section id="visual-studio-code-documentation" class="level2">
 <h2 class="anchored" data-anchor-id="visual-studio-code-documentation">Visual Studio Code Documentation</h2>

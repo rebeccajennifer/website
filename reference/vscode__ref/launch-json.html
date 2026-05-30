@@ -6,8 +6,9 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="description" content="The launch.json file defines debug configurations for Visual Studio Code. This page includes examples demonstrating common launch.json setups.">
 
-<title>ANSI Color Codes Explained – Rebecca Jennifer Rashkin</title>
+<title>VS Code Debugger – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -72,12 +73,10 @@ ul.task-list li input[type="checkbox"] {
 
 
 <link rel="stylesheet" href="../../style/flux-bunny-style.css">
-<meta property="og:title" content="ANSI Color Codes Explained – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="VS Code Debugger – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="https://rebeccajennifer.com/reference/color-scheme__ref/images__color-scheme-reference/ansi016-color-square.png">
+<meta property="og:image" content="https://rebeccajennifer.com/reference/vscode__ref/assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
-<meta property="og:image:height" content="450">
-<meta property="og:image:width" content="490">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
@@ -130,7 +129,7 @@ ul.task-list li input[type="checkbox"] {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/ansi-color-explained.html">ANSI Color Codes Explained</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/launch-json.html">VS Code Debugger</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -218,14 +217,14 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../reference/color-scheme__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Color Scheme Reference</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-3" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-3" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/color-scheme__ref/ansi-color-explained.html" class="sidebar-item-text sidebar-link active">
+  <a href="../../reference/color-scheme__ref/ansi-color-explained.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">ANSI Color Codes Explained</span></a>
   </div>
 </li>
@@ -294,11 +293,11 @@ ul.task-list li input[type="checkbox"] {
       <div class="sidebar-item-container"> 
             <a href="../../reference/vscode__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Visual Studio Code Reference</span></a>
-          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="false" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-5" role="navigation" aria-expanded="true" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 ">  
+      <ul id="quarto-sidebar-section-5" class="collapse list-unstyled sidebar-section depth2 show">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../reference/vscode__ref/vscode-settings.html" class="sidebar-item-text sidebar-link">
@@ -307,7 +306,7 @@ ul.task-list li input[type="checkbox"] {
 </li>
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
-  <a href="../../reference/vscode__ref/launch-json.html" class="sidebar-item-text sidebar-link">
+  <a href="../../reference/vscode__ref/launch-json.html" class="sidebar-item-text sidebar-link active">
  <span class="menu-text">VS Code Debugger</span></a>
   </div>
 </li>
@@ -389,41 +388,32 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of Contents</h2>
    
   <ul>
-  <li><a href="#ansi-16-color-codes-standard-colors" id="toc-ansi-16-color-codes-standard-colors" class="nav-link active" data-scroll-target="#ansi-16-color-codes-standard-colors">ANSI 16 Color Codes (Standard Colors)</a>
+  <li><a href="#visual-studio-code-documentation" id="toc-visual-studio-code-documentation" class="nav-link active" data-scroll-target="#visual-studio-code-documentation">Visual Studio Code Documentation</a></li>
+  <li><a href="#procedure" id="toc-procedure" class="nav-link" data-scroll-target="#procedure">Procedure</a></li>
+  <li><a href="#python-example" id="toc-python-example" class="nav-link" data-scroll-target="#python-example">Python Example</a>
   <ul>
-  <li><a href="#ansi-16-prefix" id="toc-ansi-16-prefix" class="nav-link" data-scroll-target="#ansi-16-prefix">ANSI 16 Prefix</a></li>
-  <li><a href="#ansi-16-color-codes" id="toc-ansi-16-color-codes" class="nav-link" data-scroll-target="#ansi-16-color-codes">ANSI 16 Color Codes</a></li>
+  <li><a href="#example-python-program" id="toc-example-python-program" class="nav-link" data-scroll-target="#example-python-program">Example Python Program</a></li>
+  <li><a href="#sample-launch.json" id="toc-sample-launch.json" class="nav-link" data-scroll-target="#sample-launch.json">Sample <code>launch.json</code></a></li>
+  <li><a href="#key-descriptions" id="toc-key-descriptions" class="nav-link" data-scroll-target="#key-descriptions">Key Descriptions</a></li>
+  <li><a href="#example-c-program" id="toc-example-c-program" class="nav-link" data-scroll-target="#example-c-program">Example C++ Program</a></li>
   </ul></li>
-  <li><a href="#ansi-256-color-codes" id="toc-ansi-256-color-codes" class="nav-link" data-scroll-target="#ansi-256-color-codes">ANSI 256 Color Codes</a>
-  <ul>
-  <li><a href="#base-colors-color-codes-0-15" id="toc-base-colors-color-codes-0-15" class="nav-link" data-scroll-target="#base-colors-color-codes-0-15">16 Base Colors (Color Codes 0-15)</a></li>
-  <li><a href="#ansi-256-color-cube-color-codes-16-231" id="toc-ansi-256-color-cube-color-codes-16-231" class="nav-link" data-scroll-target="#ansi-256-color-cube-color-codes-16-231">ANSI 256 Color Cube (Color Codes 16-231)</a>
-  <ul>
-  <li><a href="#rgb-to-ansi-256-index-conversion" id="toc-rgb-to-ansi-256-index-conversion" class="nav-link" data-scroll-target="#rgb-to-ansi-256-index-conversion">RGB to ANSI 256 Index Conversion</a>
-  <ul>
-  <li><a href="#rgb---ansi-256-python-function" id="toc-rgb---ansi-256-python-function" class="nav-link" data-scroll-target="#rgb---ansi-256-python-function">RGB -&gt; ANSI 256 Python Function</a></li>
-  <li><a href="#base-colors" id="toc-base-colors" class="nav-link" data-scroll-target="#base-colors">Base Colors</a></li>
-  <li><a href="#color-cube" id="toc-color-cube" class="nav-link" data-scroll-target="#color-cube">Color Cube</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#grayscale-color-codes-232-255" id="toc-grayscale-color-codes-232-255" class="nav-link" data-scroll-target="#grayscale-color-codes-232-255">Grayscale (Color Codes 232-255)</a>
-  <ul>
-  <li><a href="#rgb-to-ansi-256-index-conversion-1" id="toc-rgb-to-ansi-256-index-conversion-1" class="nav-link" data-scroll-target="#rgb-to-ansi-256-index-conversion-1">RGB to ANSI 256 Index Conversion</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#bit-true-color-16-million-colors" id="toc-bit-true-color-16-million-colors" class="nav-link" data-scroll-target="#bit-true-color-16-million-colors">24-bit True Color (16 Million Colors)</a></li>
   </ul>
 </nav>
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/index.html">Color Scheme Reference</a></li><li class="breadcrumb-item"><a href="../../reference/color-scheme__ref/ansi-color-explained.html">ANSI Color Codes Explained</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/index.html">Visual Studio Code Reference</a></li><li class="breadcrumb-item"><a href="../../reference/vscode__ref/launch-json.html">VS Code Debugger</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">ANSI Color Codes Explained</h1>
-<p class="subtitle lead">ANSI 256? ANSI 16? 24-Bit Color?</p>
+<h1 class="title">VS Code Debugger</h1>
+<p class="subtitle lead">Debugger configurations for Visual Studio Code</p>
 </div>
 
+<div>
+  <div class="description">
+    <p>The <code>launch.json</code> file defines debug configurations for Visual Studio Code. This page includes examples demonstrating common <code>launch.json</code> setups.</p>
+  </div>
+</div>
 
 
 <div class="quarto-title-meta">
@@ -463,706 +453,123 @@ ul.task-list li input[type="checkbox"] {
 |   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
-|   Reference page for information about ANSI colors.
+|   VS Code debugger setup
 |____________________________________________________________________-->
-<p>ANSI color codes, as used in terminals, can be categorized into three main types:</p>
+<section id="visual-studio-code-documentation" class="level2">
+<h2 class="anchored" data-anchor-id="visual-studio-code-documentation">Visual Studio Code Documentation</h2>
+<p><a href="https://code.visualstudio.com/docs/debugtest/debugging-configuration" class="flux-button _3">Debug Configuration</a></p>
+</section>
+<section id="procedure" class="level2">
+<h2 class="anchored" data-anchor-id="procedure">Procedure</h2>
 <ol type="1">
-<li>16 colors</li>
-<li>256 colors</li>
-<li>24-bit true colors</li>
+<li>Open the workspace directory in VS Code.</li>
+<li>In the workspace root, create a <code>.vscode</code> directory if it does not already exist.</li>
+<li>Inside <code>.vscode</code>, create a file named <code>launch.json</code>.</li>
 </ol>
-<section id="ansi-16-color-codes-standard-colors" class="level2">
-<h2 class="anchored" data-anchor-id="ansi-16-color-codes-standard-colors">ANSI 16 Color Codes (Standard Colors)</h2>
+</section>
+<section id="python-example" class="level2">
+<h2 class="anchored" data-anchor-id="python-example">Python Example</h2>
+<section id="example-python-program" class="level3">
+<h3 class="anchored" data-anchor-id="example-python-program">Example Python Program</h3>
+<pre class="python"><code>#_______________________________________________________________
+# This file is named arg_test.py
+#_______________________________________________________________
+import argparse
 
+if __name__ == '__main__':
+  parser: argparse.ArgumentParser = argparse.ArgumentParser()
+  parser.add_argument('--in0', '-i0', help='Input 0', action='store')
+  parser.add_argument('--in1', '-i1', help='Input 1', action='store')
+  args: argparse.Namespace = parser.parse_args()
 
-<style>
+  print(str(
+    f'\nInput argument 0: {args.in0}'
+    f'\nInput argument 1: {args.in1}'
+    )
+  )</code></pre>
+</section>
+<section id="sample-launch.json" class="level3">
+<h3 class="anchored" data-anchor-id="sample-launch.json">Sample <code>launch.json</code></h3>
+<p>This <code>launch.json</code> file contains two Python debug configurations with alternative inputs.</p>
+<pre class="json"><code>{ "version":        "0.2.0"
 
-table
-{
-  width: 100%
-}
+, "configurations":
+  [ { "name"    : "sample py debug"
+    , "type"    : "debugpy"
+    , "request" : "launch"
+    , "program" : "${workspaceFolder}/arg_test.py"
+    , "console" : "integratedTerminal"
+    , "args"    :
+      [ "--in0", "42"
+      , "-i1"  , "3.14"
+      ]
+    }
 
-.color-block{
-  height:       16px;
-}
-</style>
-
-
-<table>
-<tbody><tr>
-<td class="color-block" ,="" style="background-color:#000000">  </td>
-<td class="color-block" ,="" style="background-color:#800000">  </td>
-<td class="color-block" ,="" style="background-color:#008000">  </td>
-<td class="color-block" ,="" style="background-color:#808000">  </td>
-<td class="color-block" ,="" style="background-color:#000080">  </td>
-<td class="color-block" ,="" style="background-color:#800080">  </td>
-<td class="color-block" ,="" style="background-color:#008080">  </td>
-<td class="color-block" ,="" style="background-color:#c0c0c0">  </td>
-<td class="color-block" ,="" style="background-color:#808080">  </td>
-<td class="color-block" ,="" style="background-color:#ff0000">  </td>
-<td class="color-block" ,="" style="background-color:#00ff00">  </td>
-<td class="color-block" ,="" style="background-color:#ffff00">  </td>
-<td class="color-block" ,="" style="background-color:#0000ff">  </td>
-<td class="color-block" ,="" style="background-color:#ff00ff">  </td>
-<td class="color-block" ,="" style="background-color:#00ffff">  </td>
-<td class="color-block" ,="" style="background-color:#ffffff">  </td>
-</tr>
-</tbody></table>
-
-
-<p>This is the original set of terminal colors defined by the ANSI standard.</p>
-<p>ANSI color codes use a consistent pattern: the least significant digit identifies the color, and the prefix determines whether it applies to the text foreground (FG), background (BG), or bold / ‘bright’.</p>
-<p>For example, the color <code>41</code> corresponds with a foreground as bright red; i.e.:</p>
-<ul>
-<li>1 = red</li>
-<li>4 = bright foreground</li>
-</ul>
-<p>Descriptions of prefixes are defined below.</p>
-<section id="ansi-16-prefix" class="level3">
-<h3 class="anchored" data-anchor-id="ansi-16-prefix">ANSI 16 Prefix</h3>
-<p>This is a list of the prefixes used in ANSI 16 color codes.</p>
+  , { "name"    : "alternate input sample py"
+    , "type"    : "debugpy"
+    , "request" : "launch"
+    , "program" : "${workspaceFolder}/arg_test.py"
+    , "console" : "integratedTerminal"
+    , "args"    :
+      [ "--in0", "64"
+      , "--in1", "4096"
+      ]
+    }
+  ]
+}</code></pre>
+<p>Select the icon for <code>Run and Debug</code> from the activity bar. Click the drop down menu and select a configuration in <code>launch.json</code>. <img src="./images__vscode/debugger-0__vscode.png" class="img-fluid"></p>
+</section>
+<section id="key-descriptions" class="level3">
+<h3 class="anchored" data-anchor-id="key-descriptions">Key Descriptions</h3>
 <table class="caption-top table">
+<colgroup>
+<col style="width: 50%">
+<col style="width: 50%">
+</colgroup>
 <thead>
 <tr class="header">
-<th>Prefix</th>
-<th>Application</th>
+<th>Key</th>
+<th>Description</th>
 </tr>
 </thead>
 <tbody>
 <tr class="odd">
-<td><code>3</code></td>
-<td>Foreground, normal</td>
+<td><code>label</code></td>
+<td>Name of configuration.</td>
 </tr>
 <tr class="even">
-<td><code>4</code></td>
-<td>Background, normal</td>
+<td><code>type</code></td>
+<td>Type of debugger. Common values are <code>debugpy</code> for python, <code>gdb</code> for <code>cpp</code>.</td>
 </tr>
 <tr class="odd">
-<td><code>9</code></td>
-<td>Foreground, bold</td>
+<td><code>program</code></td>
+<td>Path to program to execute.</td>
 </tr>
 <tr class="even">
-<td><code>10</code></td>
-<td>Background, bold</td>
+<td><code>args</code></td>
+<td>Arguments passed to the program.</td>
+</tr>
+<tr class="odd">
+<td><code>console</code></td>
+<td>Use <code>integratedTerminal</code> to use the VS Code terminal for program execution.</td>
 </tr>
 </tbody>
 </table>
 </section>
-<section id="ansi-16-color-codes" class="level3">
-<h3 class="anchored" data-anchor-id="ansi-16-color-codes">ANSI 16 Color Codes</h3>
-<p>Here is a list of the ANSI 16 color codes and their meanings.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Name</th>
-<th>Base Index</th>
-<th>FG Normal</th>
-<th>BG Normal</th>
-<th>FG Bold</th>
-<th>BG Bold</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td>Black</td>
-<td><code>0</code></td>
-<td><code>30</code></td>
-<td><code>40</code></td>
-<td><code>90</code></td>
-<td><code>100</code></td>
-</tr>
-<tr class="even">
-<td>Red</td>
-<td><code>1</code></td>
-<td><code>31</code></td>
-<td><code>41</code></td>
-<td><code>91</code></td>
-<td><code>101</code></td>
-</tr>
-<tr class="odd">
-<td>Green</td>
-<td><code>2</code></td>
-<td><code>32</code></td>
-<td><code>42</code></td>
-<td><code>92</code></td>
-<td><code>102</code></td>
-</tr>
-<tr class="even">
-<td>Yellow</td>
-<td><code>3</code></td>
-<td><code>33</code></td>
-<td><code>43</code></td>
-<td><code>93</code></td>
-<td><code>103</code></td>
-</tr>
-<tr class="odd">
-<td>Blue</td>
-<td><code>4</code></td>
-<td><code>34</code></td>
-<td><code>44</code></td>
-<td><code>94</code></td>
-<td><code>104</code></td>
-</tr>
-<tr class="even">
-<td>Magenta</td>
-<td><code>5</code></td>
-<td><code>35</code></td>
-<td><code>45</code></td>
-<td><code>95</code></td>
-<td><code>105</code></td>
-</tr>
-<tr class="odd">
-<td>Cyan</td>
-<td><code>6</code></td>
-<td><code>36</code></td>
-<td><code>46</code></td>
-<td><code>96</code></td>
-<td><code>106</code></td>
-</tr>
-<tr class="even">
-<td>White</td>
-<td><code>7</code></td>
-<td><code>37</code></td>
-<td><code>47</code></td>
-<td><code>97</code></td>
-<td><code>107</code></td>
-</tr>
-</tbody>
-</table>
-<hr>
-</section>
-</section>
-<section id="ansi-256-color-codes" class="level2">
-<h2 class="anchored" data-anchor-id="ansi-256-color-codes">ANSI 256 Color Codes</h2>
-<p>Modern terminals have the ability to display 256 colors that are broken up as described:</p>
-<section id="base-colors-color-codes-0-15" class="level3">
-<h3 class="anchored" data-anchor-id="base-colors-color-codes-0-15">16 Base Colors (Color Codes 0-15)</h3>
+<section id="example-c-program" class="level3">
+<h3 class="anchored" data-anchor-id="example-c-program">Example C++ Program</h3>
+<pre class="cpp"><code>#include &lt;stdio.h&gt;
 
-
-<style>
-
-table
+int main()
 {
-  width: 100%
-}
-
-.color-block{
-  height:       16px;
-}
-</style>
+  int i = 0;
+  i++;
+  printf("\ni: %d", i);
+  return 0;
+}</code></pre>
 
 
-<table>
-<tbody><tr>
-<td class="color-block" ,="" style="background-color:#000000">  </td>
-<td class="color-block" ,="" style="background-color:#800000">  </td>
-<td class="color-block" ,="" style="background-color:#008000">  </td>
-<td class="color-block" ,="" style="background-color:#808000">  </td>
-<td class="color-block" ,="" style="background-color:#000080">  </td>
-<td class="color-block" ,="" style="background-color:#800080">  </td>
-<td class="color-block" ,="" style="background-color:#008080">  </td>
-<td class="color-block" ,="" style="background-color:#c0c0c0">  </td>
-<td class="color-block" ,="" style="background-color:#808080">  </td>
-<td class="color-block" ,="" style="background-color:#ff0000">  </td>
-<td class="color-block" ,="" style="background-color:#00ff00">  </td>
-<td class="color-block" ,="" style="background-color:#ffff00">  </td>
-<td class="color-block" ,="" style="background-color:#0000ff">  </td>
-<td class="color-block" ,="" style="background-color:#ff00ff">  </td>
-<td class="color-block" ,="" style="background-color:#00ffff">  </td>
-<td class="color-block" ,="" style="background-color:#ffffff">  </td>
-</tr>
-</tbody></table>
-
-
-<ul>
-<li>These map to the same values as the 16-color codes.</li>
-<li>These colors are often set by your terminal environment.</li>
-</ul>
 </section>
-<section id="ansi-256-color-cube-color-codes-16-231" class="level3">
-<h3 class="anchored" data-anchor-id="ansi-256-color-cube-color-codes-16-231">ANSI 256 Color Cube (Color Codes 16-231)</h3>
-
-
-<style>
-
-table
-{
-  width: 100%
-}
-
-.color-block{
-  height:       108px;
-}
-</style>
-
-
-<table>
-<tbody><tr>
-<td class="color-block" ,="" style="background-color:#000000">  </td>
-<td class="color-block" ,="" style="background-color:#00005f">  </td>
-<td class="color-block" ,="" style="background-color:#000087">  </td>
-<td class="color-block" ,="" style="background-color:#0000af">  </td>
-<td class="color-block" ,="" style="background-color:#0000d7">  </td>
-<td class="color-block" ,="" style="background-color:#0000ff">  </td>
-<td class="color-block" ,="" style="background-color:#005f00">  </td>
-<td class="color-block" ,="" style="background-color:#005f5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#005f87">  </td>
-<td class="color-block" ,="" style="background-color:#005faf">  </td>
-<td class="color-block" ,="" style="background-color:#005fd7">  </td>
-<td class="color-block" ,="" style="background-color:#005fff">  </td>
-<td class="color-block" ,="" style="background-color:#008700">  </td>
-<td class="color-block" ,="" style="background-color:#00875f">  </td>
-<td class="color-block" ,="" style="background-color:#008787">  </td>
-<td class="color-block" ,="" style="background-color:#0087af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#0087d7">  </td>
-<td class="color-block" ,="" style="background-color:#0087ff">  </td>
-<td class="color-block" ,="" style="background-color:#00af00">  </td>
-<td class="color-block" ,="" style="background-color:#00af5f">  </td>
-<td class="color-block" ,="" style="background-color:#00af87">  </td>
-<td class="color-block" ,="" style="background-color:#00afaf">  </td>
-<td class="color-block" ,="" style="background-color:#00afd7">  </td>
-<td class="color-block" ,="" style="background-color:#00afff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#00d700">  </td>
-<td class="color-block" ,="" style="background-color:#00d75f">  </td>
-<td class="color-block" ,="" style="background-color:#00d787">  </td>
-<td class="color-block" ,="" style="background-color:#00d7af">  </td>
-<td class="color-block" ,="" style="background-color:#00d7d7">  </td>
-<td class="color-block" ,="" style="background-color:#00d7ff">  </td>
-<td class="color-block" ,="" style="background-color:#00ff00">  </td>
-<td class="color-block" ,="" style="background-color:#00ff5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#00ff87">  </td>
-<td class="color-block" ,="" style="background-color:#00ffaf">  </td>
-<td class="color-block" ,="" style="background-color:#00ffd7">  </td>
-<td class="color-block" ,="" style="background-color:#00ffff">  </td>
-<td class="color-block" ,="" style="background-color:#5f0000">  </td>
-<td class="color-block" ,="" style="background-color:#5f005f">  </td>
-<td class="color-block" ,="" style="background-color:#5f0087">  </td>
-<td class="color-block" ,="" style="background-color:#5f00af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#5f00d7">  </td>
-<td class="color-block" ,="" style="background-color:#5f00ff">  </td>
-<td class="color-block" ,="" style="background-color:#5f5f00">  </td>
-<td class="color-block" ,="" style="background-color:#5f5f5f">  </td>
-<td class="color-block" ,="" style="background-color:#5f5f87">  </td>
-<td class="color-block" ,="" style="background-color:#5f5faf">  </td>
-<td class="color-block" ,="" style="background-color:#5f5fd7">  </td>
-<td class="color-block" ,="" style="background-color:#5f5fff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#5f8700">  </td>
-<td class="color-block" ,="" style="background-color:#5f875f">  </td>
-<td class="color-block" ,="" style="background-color:#5f8787">  </td>
-<td class="color-block" ,="" style="background-color:#5f87af">  </td>
-<td class="color-block" ,="" style="background-color:#5f87d7">  </td>
-<td class="color-block" ,="" style="background-color:#5f87ff">  </td>
-<td class="color-block" ,="" style="background-color:#5faf00">  </td>
-<td class="color-block" ,="" style="background-color:#5faf5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#5faf87">  </td>
-<td class="color-block" ,="" style="background-color:#5fafaf">  </td>
-<td class="color-block" ,="" style="background-color:#5fafd7">  </td>
-<td class="color-block" ,="" style="background-color:#5fafff">  </td>
-<td class="color-block" ,="" style="background-color:#5fd700">  </td>
-<td class="color-block" ,="" style="background-color:#5fd75f">  </td>
-<td class="color-block" ,="" style="background-color:#5fd787">  </td>
-<td class="color-block" ,="" style="background-color:#5fd7af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#5fd7d7">  </td>
-<td class="color-block" ,="" style="background-color:#5fd7ff">  </td>
-<td class="color-block" ,="" style="background-color:#5fff00">  </td>
-<td class="color-block" ,="" style="background-color:#5fff5f">  </td>
-<td class="color-block" ,="" style="background-color:#5fff87">  </td>
-<td class="color-block" ,="" style="background-color:#5fffaf">  </td>
-<td class="color-block" ,="" style="background-color:#5fffd7">  </td>
-<td class="color-block" ,="" style="background-color:#5fffff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#870000">  </td>
-<td class="color-block" ,="" style="background-color:#87005f">  </td>
-<td class="color-block" ,="" style="background-color:#870087">  </td>
-<td class="color-block" ,="" style="background-color:#8700af">  </td>
-<td class="color-block" ,="" style="background-color:#8700d7">  </td>
-<td class="color-block" ,="" style="background-color:#8700ff">  </td>
-<td class="color-block" ,="" style="background-color:#875f00">  </td>
-<td class="color-block" ,="" style="background-color:#875f5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#875f87">  </td>
-<td class="color-block" ,="" style="background-color:#875faf">  </td>
-<td class="color-block" ,="" style="background-color:#875fd7">  </td>
-<td class="color-block" ,="" style="background-color:#875fff">  </td>
-<td class="color-block" ,="" style="background-color:#878700">  </td>
-<td class="color-block" ,="" style="background-color:#87875f">  </td>
-<td class="color-block" ,="" style="background-color:#878787">  </td>
-<td class="color-block" ,="" style="background-color:#8787af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#8787d7">  </td>
-<td class="color-block" ,="" style="background-color:#8787ff">  </td>
-<td class="color-block" ,="" style="background-color:#87af00">  </td>
-<td class="color-block" ,="" style="background-color:#87af5f">  </td>
-<td class="color-block" ,="" style="background-color:#87af87">  </td>
-<td class="color-block" ,="" style="background-color:#87afaf">  </td>
-<td class="color-block" ,="" style="background-color:#87afd7">  </td>
-<td class="color-block" ,="" style="background-color:#87afff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#87d700">  </td>
-<td class="color-block" ,="" style="background-color:#87d75f">  </td>
-<td class="color-block" ,="" style="background-color:#87d787">  </td>
-<td class="color-block" ,="" style="background-color:#87d7af">  </td>
-<td class="color-block" ,="" style="background-color:#87d7d7">  </td>
-<td class="color-block" ,="" style="background-color:#87d7ff">  </td>
-<td class="color-block" ,="" style="background-color:#87ff00">  </td>
-<td class="color-block" ,="" style="background-color:#87ff5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#87ff87">  </td>
-<td class="color-block" ,="" style="background-color:#87ffaf">  </td>
-<td class="color-block" ,="" style="background-color:#87ffd7">  </td>
-<td class="color-block" ,="" style="background-color:#87ffff">  </td>
-<td class="color-block" ,="" style="background-color:#af0000">  </td>
-<td class="color-block" ,="" style="background-color:#af005f">  </td>
-<td class="color-block" ,="" style="background-color:#af0087">  </td>
-<td class="color-block" ,="" style="background-color:#af00af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#af00d7">  </td>
-<td class="color-block" ,="" style="background-color:#af00ff">  </td>
-<td class="color-block" ,="" style="background-color:#af5f00">  </td>
-<td class="color-block" ,="" style="background-color:#af5f5f">  </td>
-<td class="color-block" ,="" style="background-color:#af5f87">  </td>
-<td class="color-block" ,="" style="background-color:#af5faf">  </td>
-<td class="color-block" ,="" style="background-color:#af5fd7">  </td>
-<td class="color-block" ,="" style="background-color:#af5fff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#af8700">  </td>
-<td class="color-block" ,="" style="background-color:#af875f">  </td>
-<td class="color-block" ,="" style="background-color:#af8787">  </td>
-<td class="color-block" ,="" style="background-color:#af87af">  </td>
-<td class="color-block" ,="" style="background-color:#af87d7">  </td>
-<td class="color-block" ,="" style="background-color:#af87ff">  </td>
-<td class="color-block" ,="" style="background-color:#afaf00">  </td>
-<td class="color-block" ,="" style="background-color:#afaf5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#afaf87">  </td>
-<td class="color-block" ,="" style="background-color:#afafaf">  </td>
-<td class="color-block" ,="" style="background-color:#afafd7">  </td>
-<td class="color-block" ,="" style="background-color:#afafff">  </td>
-<td class="color-block" ,="" style="background-color:#afd700">  </td>
-<td class="color-block" ,="" style="background-color:#afd75f">  </td>
-<td class="color-block" ,="" style="background-color:#afd787">  </td>
-<td class="color-block" ,="" style="background-color:#afd7af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#afd7d7">  </td>
-<td class="color-block" ,="" style="background-color:#afd7ff">  </td>
-<td class="color-block" ,="" style="background-color:#afff00">  </td>
-<td class="color-block" ,="" style="background-color:#afff5f">  </td>
-<td class="color-block" ,="" style="background-color:#afff87">  </td>
-<td class="color-block" ,="" style="background-color:#afffaf">  </td>
-<td class="color-block" ,="" style="background-color:#afffd7">  </td>
-<td class="color-block" ,="" style="background-color:#afffff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d70000">  </td>
-<td class="color-block" ,="" style="background-color:#d7005f">  </td>
-<td class="color-block" ,="" style="background-color:#d70087">  </td>
-<td class="color-block" ,="" style="background-color:#d700af">  </td>
-<td class="color-block" ,="" style="background-color:#d700d7">  </td>
-<td class="color-block" ,="" style="background-color:#d700ff">  </td>
-<td class="color-block" ,="" style="background-color:#d75f00">  </td>
-<td class="color-block" ,="" style="background-color:#d75f5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d75f87">  </td>
-<td class="color-block" ,="" style="background-color:#d75faf">  </td>
-<td class="color-block" ,="" style="background-color:#d75fd7">  </td>
-<td class="color-block" ,="" style="background-color:#d75fff">  </td>
-<td class="color-block" ,="" style="background-color:#d78700">  </td>
-<td class="color-block" ,="" style="background-color:#d7875f">  </td>
-<td class="color-block" ,="" style="background-color:#d78787">  </td>
-<td class="color-block" ,="" style="background-color:#d787af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d787d7">  </td>
-<td class="color-block" ,="" style="background-color:#d787ff">  </td>
-<td class="color-block" ,="" style="background-color:#d7af00">  </td>
-<td class="color-block" ,="" style="background-color:#d7af5f">  </td>
-<td class="color-block" ,="" style="background-color:#d7af87">  </td>
-<td class="color-block" ,="" style="background-color:#d7afaf">  </td>
-<td class="color-block" ,="" style="background-color:#d7afd7">  </td>
-<td class="color-block" ,="" style="background-color:#d7afff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d7d700">  </td>
-<td class="color-block" ,="" style="background-color:#d7d75f">  </td>
-<td class="color-block" ,="" style="background-color:#d7d787">  </td>
-<td class="color-block" ,="" style="background-color:#d7d7af">  </td>
-<td class="color-block" ,="" style="background-color:#d7d7d7">  </td>
-<td class="color-block" ,="" style="background-color:#d7d7ff">  </td>
-<td class="color-block" ,="" style="background-color:#d7ff00">  </td>
-<td class="color-block" ,="" style="background-color:#d7ff5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#d7ff87">  </td>
-<td class="color-block" ,="" style="background-color:#d7ffaf">  </td>
-<td class="color-block" ,="" style="background-color:#d7ffd7">  </td>
-<td class="color-block" ,="" style="background-color:#d7ffff">  </td>
-<td class="color-block" ,="" style="background-color:#ff0000">  </td>
-<td class="color-block" ,="" style="background-color:#ff005f">  </td>
-<td class="color-block" ,="" style="background-color:#ff0087">  </td>
-<td class="color-block" ,="" style="background-color:#ff00af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#ff00d7">  </td>
-<td class="color-block" ,="" style="background-color:#ff00ff">  </td>
-<td class="color-block" ,="" style="background-color:#ff5f00">  </td>
-<td class="color-block" ,="" style="background-color:#ff5f5f">  </td>
-<td class="color-block" ,="" style="background-color:#ff5f87">  </td>
-<td class="color-block" ,="" style="background-color:#ff5faf">  </td>
-<td class="color-block" ,="" style="background-color:#ff5fd7">  </td>
-<td class="color-block" ,="" style="background-color:#ff5fff">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#ff8700">  </td>
-<td class="color-block" ,="" style="background-color:#ff875f">  </td>
-<td class="color-block" ,="" style="background-color:#ff8787">  </td>
-<td class="color-block" ,="" style="background-color:#ff87af">  </td>
-<td class="color-block" ,="" style="background-color:#ff87d7">  </td>
-<td class="color-block" ,="" style="background-color:#ff87ff">  </td>
-<td class="color-block" ,="" style="background-color:#ffaf00">  </td>
-<td class="color-block" ,="" style="background-color:#ffaf5f">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#ffaf87">  </td>
-<td class="color-block" ,="" style="background-color:#ffafaf">  </td>
-<td class="color-block" ,="" style="background-color:#ffafd7">  </td>
-<td class="color-block" ,="" style="background-color:#ffafff">  </td>
-<td class="color-block" ,="" style="background-color:#ffd700">  </td>
-<td class="color-block" ,="" style="background-color:#ffd75f">  </td>
-<td class="color-block" ,="" style="background-color:#ffd787">  </td>
-<td class="color-block" ,="" style="background-color:#ffd7af">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#ffd7d7">  </td>
-<td class="color-block" ,="" style="background-color:#ffd7ff">  </td>
-<td class="color-block" ,="" style="background-color:#ffff00">  </td>
-<td class="color-block" ,="" style="background-color:#ffff5f">  </td>
-<td class="color-block" ,="" style="background-color:#ffff87">  </td>
-<td class="color-block" ,="" style="background-color:#ffffaf">  </td>
-<td class="color-block" ,="" style="background-color:#ffffd7">  </td>
-<td class="color-block" ,="" style="background-color:#ffffff">  </td>
-</tr>
-</tbody></table>
-
-
-<p>The ANSI 256 color cube consists of 216 colors arranged as a 6×6×6 RGB grid. Each color is formed by selecting one of six discrete intensity levels for the red, green, and blue channels: 00, 5F, 87, AF, D7, and FF. These colors occupy indices 16-231 of the ANSI 256 palette and provide a uniformly sampled subset of the RGB color space.</p>
-<section id="rgb-to-ansi-256-index-conversion" class="level4">
-<h4 class="anchored" data-anchor-id="rgb-to-ansi-256-index-conversion">RGB to ANSI 256 Index Conversion</h4>
-<p><a href="../../reference/color-scheme__ref/ansi256-colors.html">This table</a> lists all ANSI 256 color codes and their corresponding RGB values. You can also manually calculate the color index from an RGB value, as described below.</p>
-<section id="rgb---ansi-256-python-function" class="level5">
-<h5 class="anchored" data-anchor-id="rgb---ansi-256-python-function">RGB -&gt; ANSI 256 Python Function</h5>
-<p>I’ve written a Python module that performs the conversion from RGB to an ANSI 256 index, which you can find <a href="https://github.com/rebeccajennifer/color-scheme-exporter/blob/f2e7f5b845b25bad660d66eac306114ae063ba16/classes/rgb_color.py#L193-L246">here</a>.</p>
-</section>
-<section id="base-colors" class="level5">
-<h5 class="anchored" data-anchor-id="base-colors">Base Colors</h5>
-<p>The 16 base colors are defined by your environment, so there is no direct conversion from RGB to ANSI 256 for indices 1-16.</p>
-</section>
-<section id="color-cube" class="level5">
-<h5 class="anchored" data-anchor-id="color-cube">Color Cube</h5>
-<p>Valid RGB component values used by the 6x6x6 color cube (ANSI 256 indices 16–231):</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>Decimal Value</th>
-<th>Hex Value</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>0</code></td>
-<td><code>0x00</code></td>
-</tr>
-<tr class="even">
-<td><code>95</code></td>
-<td><code>0x5f</code></td>
-</tr>
-<tr class="odd">
-<td><code>135</code></td>
-<td><code>0x87</code></td>
-</tr>
-<tr class="even">
-<td><code>175</code></td>
-<td><code>0xaf</code></td>
-</tr>
-<tr class="odd">
-<td><code>215</code></td>
-<td><code>0xd7</code></td>
-</tr>
-<tr class="even">
-<td><code>255</code></td>
-<td><code>0xff</code></td>
-</tr>
-</tbody>
-</table>
-<p>To convert the RGB values to the ANSI index, use the following calculation:</p>
-<pre class="python"><code>#_______________________________________________
-# Round each RGB component to the nearest
-# valid value from the table above. The variable
-# definitions used in the calculation are
-# described as follows:
-#
-# red_near = the rounded red value
-# grn_near = the rounded green value
-# blu_near = the rounded blue value
-#_______________________________________________
-
-r = floor((red_near / 255.0) * 5)
-g = floor((grn_near / 255.0) * 5)
-b = floor((blu_near / 255.0) * 5)
-
-# Compute ANSI 256 color value
-ansi_index = 16 + (r * 36) + (g * 6) + b</code></pre>
-</section>
-</section>
-</section>
-<section id="grayscale-color-codes-232-255" class="level3">
-<h3 class="anchored" data-anchor-id="grayscale-color-codes-232-255">Grayscale (Color Codes 232-255)</h3>
-
-
-<style>
-
-table
-{
-  width: 100%
-}
-
-.color-block{
-  height:       6px;
-}
-</style>
-
-
-<table>
-<tbody><tr>
-<td class="color-block" ,="" style="background-color:#080808">  </td>
-<td class="color-block" ,="" style="background-color:#121212">  </td>
-<td class="color-block" ,="" style="background-color:#1c1c1c">  </td>
-<td class="color-block" ,="" style="background-color:#262626">  </td>
-<td class="color-block" ,="" style="background-color:#303030">  </td>
-<td class="color-block" ,="" style="background-color:#3a3a3a">  </td>
-<td class="color-block" ,="" style="background-color:#444444">  </td>
-<td class="color-block" ,="" style="background-color:#4e4e4e">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#585858">  </td>
-<td class="color-block" ,="" style="background-color:#626262">  </td>
-<td class="color-block" ,="" style="background-color:#6c6c6c">  </td>
-<td class="color-block" ,="" style="background-color:#767676">  </td>
-<td class="color-block" ,="" style="background-color:#808080">  </td>
-<td class="color-block" ,="" style="background-color:#8a8a8a">  </td>
-<td class="color-block" ,="" style="background-color:#949494">  </td>
-<td class="color-block" ,="" style="background-color:#9e9e9e">  </td>
-</tr>
-<tr>
-<td class="color-block" ,="" style="background-color:#a8a8a8">  </td>
-<td class="color-block" ,="" style="background-color:#b2b2b2">  </td>
-<td class="color-block" ,="" style="background-color:#bcbcbc">  </td>
-<td class="color-block" ,="" style="background-color:#c6c6c6">  </td>
-<td class="color-block" ,="" style="background-color:#d0d0d0">  </td>
-<td class="color-block" ,="" style="background-color:#dadada">  </td>
-<td class="color-block" ,="" style="background-color:#e4e4e4">  </td>
-<td class="color-block" ,="" style="background-color:#eeeeee">  </td>
-</tr>
-</tbody></table>
-
-
-<p>This section covers the grayscale ramp, occupying indices 232 (near black) through 255 (near white). In the RGB model, gray is produced when the red, green, and blue components are equal (R=G=B). The table below lists the specific values used for these components within the ANSI 256-color grayscale range.</p>
-<table class="caption-top table">
-<thead>
-<tr class="header">
-<th>ANSI Index</th>
-<th>Hex (R=G=B)</th>
-<th>Decimal (R=G=B)</th>
-</tr>
-</thead>
-<tbody>
-<tr class="odd">
-<td><code>232</code></td>
-<td><code>#080808</code></td>
-<td><code>8</code></td>
-</tr>
-<tr class="even">
-<td><code>233</code></td>
-<td><code>#121212</code></td>
-<td><code>18</code></td>
-</tr>
-<tr class="odd">
-<td><code>234</code></td>
-<td><code>#1c1c1c</code></td>
-<td><code>28</code></td>
-</tr>
-<tr class="even">
-<td>…</td>
-<td>…</td>
-<td>…</td>
-</tr>
-<tr class="odd">
-<td><code>254</code></td>
-<td><code>#e4e4e4</code></td>
-<td><code>228</code></td>
-</tr>
-<tr class="even">
-<td><code>255</code></td>
-<td><code>#eeeeee</code></td>
-<td><code>238</code></td>
-</tr>
-</tbody>
-</table>
-<section id="rgb-to-ansi-256-index-conversion-1" class="level4">
-<h4 class="anchored" data-anchor-id="rgb-to-ansi-256-index-conversion-1">RGB to ANSI 256 Index Conversion</h4>
-<p>For shades of gray, each of the RGB components have the same value.</p>
-<p>If each RGB component is closest to one of the color cube levels (00, 5F, 87, AF, D7, or FF), use the equation described in the <a href="#color-cube">Color Cube section</a>.</p>
-<p>Otherwise, use the following equation:</p>
-<pre class="python"><code>#_______________________________________________
-# grey_near is the RGB component value (0-255)
-# rounded to the nearest valid step in the ANSI
-# grayscale table (e.g., 8, 18, 28...).
-#_______________________________________________
-ansi_index = 232 + (floor((grey_near - 8) / 10))</code></pre>
-<hr>
-</section>
-</section>
-</section>
-<section id="bit-true-color-16-million-colors" class="level2">
-<h2 class="anchored" data-anchor-id="bit-true-color-16-million-colors">24-bit True Color (16 Million Colors)</h2>
-<p>Supported by most modern terminals, 24-bit true color allows you to specify exact RGB values.</p>
-<ul>
-<li><strong>Foreground Format</strong>: <code>\e[38;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m</code></li>
-<li><strong>Background Format</strong>: <code>\e[48;2;&lt;R&gt;;&lt;G&gt;;&lt;B&gt;m</code></li>
-</ul>
-<p>Example:</p>
-<pre class="bash"><code>echo -e "\e[38;2;255;0;0mThis is bright red text\e[0m"</code></pre>
-<ul>
-<li><code>38</code> for foreground, 48 for background.</li>
-<li><code>&lt;R&gt;</code>, <code>&lt;G&gt;</code>, <code>&lt;B&gt;</code> represent red, green, and blue values (0–255).</li>
-</ul>
-
-
 </section>
 
 </main> <!-- /main -->
