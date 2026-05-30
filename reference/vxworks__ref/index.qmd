@@ -4,6 +4,7 @@ description: >
   Get VxWorks running in QEMU, a machine emulator.
 image: ./images__vxw/00__vxw__logo-terminal.png
 toc-depth: 6
+order: 3
 draft: false
 ---
 <!--___________________________________________________________________|
@@ -28,7 +29,7 @@ draft: false
 |----------------------------------------------------------------------|
 |                                                                      |
 |______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|   //\o.o/\\  //\^.^/\\  //\o.o/\\  //\^.^/\\  //\o.o/\\  //\^.^/\\   |
 |____________________________________________________________________-->
 <!--DESCRIPTION
 |   Reference page for PuTTY configuration
@@ -42,7 +43,7 @@ draft: false
 
 ## Official VxWorks Links
 
-[Download page](https://forums.windriver.com/t/vxworks-software-development-kit-sdk/43){class="flux-button _3"}
+[Download](https://forums.windriver.com/t/vxworks-software-development-kit-sdk/43){class="flux-button _3"}
 [README](https://d13321s3lxgewa.cloudfront.net/downloads/wrsdk-vxworks7-docs/2603/README_qemu.html){class="flux-button _3"}
 
 ## Prerequisites
