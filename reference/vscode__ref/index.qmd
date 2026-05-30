@@ -1,3 +1,10 @@
 ---
-draft: true
+title: Visual Studio Code Reference
+description: >
+  This set of pages includes information on VS Code features like debugger settings and how to set up tasks.
+
+listing:
+  contents: ./
+draft: false
+order: 2
 ---

@@ -6,7 +6,7 @@ image: ./images__inkscape-ref/hs-stag-silhouette.svg
 listing:
   contents: ./
   type: grid
-order: 3
+order: 5
 ---
 
 ## Official Docs

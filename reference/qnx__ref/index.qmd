@@ -4,7 +4,7 @@ subtitle: QNX Tutorials
 description: >
   These pages provide tutorial-style guidance that complements the official QNX documentation for using the QNX RTOS framework.
 image: ./images__qnx-ref/0___qnx-ref.png
-order: 2
+order: 4
 
 listing:
   contents: ./

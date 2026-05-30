@@ -1,10 +1,12 @@
 ---
-title: Visual Studio Code Setup
-subtitle: My preferred setup for VS Code
-image: ./images__env-setup/vs-code-settings-screenshot-thumb.png
+title: Visual Studio Code Settings
+subtitle: My preferred settings for VS Code
+description: >
+  This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.
+image: /reference/environment-setup__ref/images__env-setup/vs-code-settings-screenshot-thumb.png
 toc: true
 toc-depth: 6
-order: 1
+order: 0
 ---
 <!--___________________________________________________________________|
 |______________________________________________________________________|
@@ -34,7 +36,15 @@ order: 1
 |   VS Code setup
 |____________________________________________________________________-->
 
-This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.
+## Additional VS Code Reference
+
+For more information on VS Code, like how to set up tasks and create a color scheme, visit [this page](/reference/vscode__ref/).
+
+## Checklist
+
+1. Add `settings.json`.
+1. Install color themes.
+1. Add extensions.
 
 ## Settings
 
@@ -47,8 +57,8 @@ Windows | `C:\\Users\<user-name>\\AppData\\Roaming\\Code\\User\\settings.json`
 
 Access my `settings.json` and custom color theme below. If you need help with color theme installation, see  [this page](/reference/color-scheme__ref/vscode-color.qmd).
 
-<a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/blob/main/vscode/settings.json">settings.json</a>
-<a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files/tree/main/vscode/flux-bunny-color-schemes">Original Color Scheme</a>
+[settings.json](https://github.com/rebeccajennifer/setup-files/blob/main/vscode/settings.json){class="flux-button _3"}
+[Original Color Themes](https://github.com/rebeccajennifer/setup-files/tree/main/vscode/rebecca-jennifer.flux-bunny-themes){class="flux-button _3"}
 
 ### Settings Override
 
@@ -59,20 +69,32 @@ file here.
 
 ## Extensions
 
-Install the following extensions:
+Extension Name | Publisher
+-|-
+C/C++                                                   | Microsoft
+C/C++ DevTools                                          | Microsoft
+C/C++ Extension Pack                                    | Microsoft
+Python                                                  | Microsoft
+Python Debugger                                         | Microsoft
+Python Environments                                     | Microsoft
+CMake Tools                                             | Microsoft
+Code Runner                                             | Jun Han
+Remote-SSH                                              | Microsoft
+PDF Viewer                                              | Mathematic Inc
+Vim                                                     | vscode vim
+Hex Editor                                              | Microsoft
+Markdown All in One                                     | Yu Zhang
+markdownlint                                            | David Anson
+Code Spell Checker                                      | Street Side Software
+PlantUML                                                | jebbs
+Graphviz (dot) language support for Visual Studio Code  | Stephanvs
+Quarto                                                  | Quarto
 
-- C/C++ by Microsoft
-- Python by Microsoft
-- Python Debugger by Microsoft
-- Code Runner by Jun Han
-- Vim by vscodevim
-- CMake by twxs
-- CMake Tools by Microsoft
-
-## Vim
+### Vim
 
 Point Vim extension to local `.vimrc` file.
 
-## Code Runner Configuration
+### Code Runner Configuration
+
 - Enable `Clear Previous Output`
 - Disable `Show Execution Message`
