@@ -52,7 +52,7 @@ To set `zsh` as the default terminal profile in VS Code, define the shell paths 
 }
 ```
 
-See [this page](./vs-code.qmd) for more information about VS Code settings.
+See [this page](/reference/environment-setup__ref/vscode-settings.qmd) for more information about VS Code settings.
 
 ## tmux
 

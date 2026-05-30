@@ -43,9 +43,9 @@ To accept incoming connections, the SSH server must be enabled on the target com
 ### Reference
 
 ```bash
-sudo sudo systemctl  enable --now ssh    # Enable ssh
-sudo sudo systemctl disable --now ssh    # Disable ssh
-ifconfig                                 # Network interface configuration utility
+sudo systemctl  enable --now ssh    # Enable ssh
+sudo systemctl disable --now ssh    # Disable ssh
+ifconfig                            # Network interface configuration utility
 ```
 
 ### Enable SSH Procedure
