@@ -1,0 +1,13 @@
+---
+title: Visual Studio Code Reference
+description: >
+  This set of pages includes information on VS Code features like debugger settings and how to set up tasks.
+
+listing:
+  contents:
+    - ../environment-setup__ref/vs-code.qmd
+    - ../color-scheme__ref/vscode-color.qmd
+    - ./tasks-json.qmd
+draft: true
+order: 2
+---
