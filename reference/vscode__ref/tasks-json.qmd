@@ -53,7 +53,6 @@ order: 2
 
 Assume you have a simple C++ `Hello World` program:
 
-
 ```cpp
 #include <stdio.h>
 
@@ -64,7 +63,7 @@ int main()
 }
 ```
 
-### Sample `tasks.json`
+## Sample `tasks.json`
 
 This `tasks.json` file contains two tasks, one that compiles the file (`compile-hello`) and another that runs the executable (`run-hello`).
 
@@ -72,11 +71,12 @@ This `tasks.json` file contains two tasks, one that compiles the file (`compile-
 { "version": "2.0.0"
 , "tasks":
   [
-    { "label": "compile-hello"
+    { "label": "compile-hello-debug"
     , "type": "shell"
     , "command": "g++"
     , "args":
       [ "${workspaceFolder}/hello.cpp"
+      , "-g"
       , "-o"
       , "hello.out"
       ]
@@ -108,3 +108,17 @@ Key               | Description
 `presentation`    | Set `"close": true` to automatically close the task terminal when the task completes.
 `problemMatcher`  | Specifies how VS Code detects errors and warnings in task output and displays them in the Problems panel.. Set to `[]` to disable this behavior.
 `dependsOn`       | List of tasks that must run before this task.
+
+## Run Task
+
+1. Press `Ctrl+Shift+P` to enter a command in the command palette. Start to type `Run Task`. Select `Tasks: Run Task`.
+
+   ![](./images__vscode/tasks-0__vscode.png)
+
+1. Select the task you would like to run.
+
+   ![](./images__vscode/tasks-1__vscode.png)
+
+   Terminal Output
+
+   ![](./images__vscode/tasks-2__vscode.png)
