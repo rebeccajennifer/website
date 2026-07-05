@@ -46,29 +46,27 @@ passwd
 
 ### Install From `apt`
 
-Use `sudo` before all `apt` commands if you do not have a root password.
-
 ```
-su
-apt install build-essential
-apt install cmake
-apt install vim
-apt install emacs
-apt install nano
-apt install gedit
-apt install git
-apt install zsh
-apt install screen
-apt install curl
-apt install tmux
-apt install python3-pip
-apt install graphviz # Make block diagrams using a scripting language
+sudo apt install build-essential
+sudo apt install cmake
+sudo apt install vim
+sudo apt install emacs
+sudo apt install nano
+sudo apt install gedit
+sudo apt install git
+sudo apt install zsh
+sudo apt install screen
+sudo apt install curl
+sudo apt install tmux
+sudo apt install python3-pip
+sudo apt install graphviz
 ```
 
 ### Install From `snap`
 
 ``
 sudo snap install discord
+sudo snap install kolourpaint
 ``
 
 ### Install From App Center
@@ -168,14 +166,17 @@ sudo -v && wget -nv -O- https://download.calibre-ebook.com/linux-installer.sh | 
 Windows makes an alert sound every time tab complete doesn't work or other silly things. Turn it off in settings.
 
 Go to Audio - change other sound settings
+
 or
 
-Sound -> sound control panel -> Sounds tab -> Sound Scheme dropdown -> No Sounds
-
-In the window labeled `Sound` -> tab labeled `Sounds` select the menu option `No Sounds`
+`Sound > sound control panel > Sounds tab > Sound Scheme dropdown > No Sounds`.
 
 ![](./images__env-setup/windows-alert-sounds.png)
 
+
+### Show Hidden Files
+
+Open File Explorer and click `View > Show > Hidden items`.
 
 ### Cygwin
 

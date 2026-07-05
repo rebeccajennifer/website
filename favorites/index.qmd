@@ -1,0 +1,69 @@
+---
+title: The Rabbit Hole
+subtitle: My collection of favorites
+description: >
+  These pages include miscellaneous resources from book suggestions to original recipes.
+listing:
+  contents: ./*/index.qmd
+  type: grid
+order: 1
+draft: true
+---
+<!--___________________________________________________________________|
+|______________________________________________________________________|
+|        _   __   _   _ _   _   _   _         _                        |
+|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
+|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
+|    _  _         _ ___  _       _ ___   _                    / /      |
+|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
+|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
+|______________________________________________________________________|
+|______________________________________________________________________|
+|                                                                      |
+|----------------------------------------------------------------------|
+|   Copyright 2026, Rebecca Rashkin                                    |
+|   -------------------------------                                    |
+|   This code may be copied, redistributed, transformed, or built      |
+|   upon in any format for educational, non-commercial purposes.       |
+|                                                                      |
+|   Please give me appropriate credit should you choose to use this    |
+|   resource. Thank you :)                                             |
+|----------------------------------------------------------------------|
+|                                                                      |
+|______________________________________________________________________|
+|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
+|____________________________________________________________________-->
+<!--DESCRIPTION
+|   List of favorites
+|____________________________________________________________________-->
+
+## Books
+
+
+[Atomic Habits](https://jamesclear.com/atomic-habits)
+
+_James Clear_
+
+> You do not rise to the level of your goals. You fall to the level of your systems.
+
+Out of all the personal development books I've read, this one has had the most utility for me.
+
+📚
+
+[Motivational Interviewing in Nutrition and Fitness](https://www.helmpublishing.com/products/motivational-interviewing-in-nutrition-and-fitness)
+
+_Dawn Clifford & Laura Curtis_
+
+This book reshaped how I communicate with others. It taught me to meet people where they are and that the best way to help someone on their personal development journey is to support the changes they are ready to make themselves.
+
+📚
+
+[Think Again](https://adamgrant.net/book/think-again/)
+
+_Adam Grant_
+
+📚
+
+[Atlas of the Heart](https://brenebrown.com/book/atlas-of-the-heart/)
+
+_Brené Brown_
