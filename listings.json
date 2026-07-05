@@ -8,15 +8,6 @@
     ]
   },
   {
-    "listing": "/education/comp-org/index.html",
-    "items": [
-      "/education/comp-org/sample-exams__comp-org.html",
-      "/education/comp-org/links__comp-org.html",
-      "/education/comp-org/worksheet-answers__comp-org.html",
-      "/education/comp-org/how-to-learn.html"
-    ]
-  },
-  {
     "listing": "/reference/index.html",
     "items": [
       "/reference/environment-setup__ref/index.html",
@@ -118,5 +109,18 @@
       "/reference/color-scheme__ref/vim-color.html",
       "/reference/color-scheme__ref/ls-colors-sample/a-file.html"
     ]
+  },
+  {
+    "listing": "/education/comp-org/index.html",
+    "items": [
+      "/education/comp-org/sample-exams__comp-org.html",
+      "/education/comp-org/links__comp-org.html",
+      "/education/comp-org/worksheet-answers__comp-org.html",
+      "/education/comp-org/how-to-learn.html"
+    ]
+  },
+  {
+    "listing": "/favorites/index.html",
+    "items": []
   }
 ]

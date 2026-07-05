@@ -7,7 +7,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
 
-<title>Environment Setup – Rebecca Jennifer Rashkin</title>
+<title>Serial Interfaces – Rebecca Jennifer Rashkin</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -31,8 +31,6 @@ ul.task-list li input[type="checkbox"] {
 <script src="../../site_libs/quarto-search/quarto-search.js"></script>
 <meta name="quarto:offset" content="../../">
 <link href="../../assets/icons/rabbit-face.png" rel="icon" type="image/png">
-<script src="../../site_libs/quarto-listing/list.min.js"></script>
-<script src="../../site_libs/quarto-listing/quarto-listing.js"></script>
 <script src="../../site_libs/quarto-html/quarto.js" type="module"></script>
 <script src="../../site_libs/quarto-html/tabsets/tabsets.js" type="module"></script>
 <script src="../../site_libs/quarto-html/axe/axe-check.js" type="module"></script>
@@ -71,79 +69,20 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script>
+<meta name="quarto:status" content="draft">
 
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    const listingTargetEl = window.document.querySelector('#listing-listing .list');
-    if (!listingTargetEl) {
-      // No listing discovered, do not attach.
-      return; 
-    }
-
-    const options = {
-      valueNames: ['listing-title','listing-author','listing-image','listing-description',{ data: ['index'] },{ data: ['categories'] },{ data: ['listing-date-sort'] },{ data: ['listing-file-modified-sort'] }],
-      
-      searchColumns: ["listing-title","listing-author","listing-image","listing-description"],
-    };
-
-    window['quarto-listings'] = window['quarto-listings'] || {};
-    window['quarto-listings']['listing-listing'] = new List('listing-listing', options);
-
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  });
-
-  window.addEventListener('hashchange',() => {
-    if (window['quarto-listing-loaded']) {
-      window['quarto-listing-loaded']();
-    }
-  })
-  </script>
-
-  <script src="https://cdnjs.cloudflare.com/polyfill/v3/polyfill.min.js?features=es6"></script>
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<script type="text/javascript">
-const typesetMath = (el) => {
-  if (window.MathJax) {
-    // MathJax Typeset
-    window.MathJax.typeset([el]);
-  } else if (window.katex) {
-    // KaTeX Render
-    var mathElements = el.getElementsByClassName("math");
-    var macros = [];
-    for (var i = 0; i < mathElements.length; i++) {
-      var texText = mathElements[i].firstChild;
-      if (mathElements[i].tagName == "SPAN" && texText && texText.data) {
-        window.katex.render(texText.data, mathElements[i], {
-          displayMode: mathElements[i].classList.contains('display'),
-          throwOnError: false,
-          macros: macros,
-          fleqn: false
-        });
-      }
-    }
-  }
-}
-window.Quarto = {
-  typesetMath
-};
-</script>
 
 <link rel="stylesheet" href="../../style/flux-bunny-style.css">
-<meta property="og:title" content="Environment Setup – Rebecca Jennifer Rashkin">
+<meta property="og:title" content="Serial Interfaces – Rebecca Jennifer Rashkin">
 <meta property="og:description" content="Software Engineer • Educator | Values clean code and documentation. Explore personal projects and a collection of resources on computer organization, development environment, and software tools.">
-<meta property="og:image" content="https://rebeccajennifer.com/reference/environment-setup__ref/images__env-setup/vs-code-settings-screenshot-thumb.png">
+<meta property="og:image" content="assets/photos-general-assets/flux-grass-line-art-black-square.png">
 <meta property="og:site_name" content="Rebecca Jennifer Rashkin">
-<meta property="og:image:height" content="1077">
-<meta property="og:image:width" content="1077">
 </head>
 
 <body class="nav-sidebar floating nav-fixed quarto-light">
 
 <div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
+  <header id="quarto-header" class="headroom fixed-top"><div id="quarto-draft-alert" class="alert alert-warning"><i class="bi bi-pencil-square"></i>Draft</div>
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
@@ -190,7 +129,7 @@ window.Quarto = {
       <button type="button" class="quarto-btn-toggle btn" data-bs-toggle="collapse" role="button" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
         <i class="bi bi-layout-text-sidebar-reverse"></i>
       </button>
-        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup__ref/index.html">Environment Setup</a></li></ol></nav>
+        <nav class="quarto-page-breadcrumbs" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/serial__ref/serial.html">Serial Ref</a></li><li class="breadcrumb-item"><a href="../../reference/serial__ref/serial.html">Serial Interfaces</a></li></ol></nav>
         <a class="flex-grow-1" role="navigation" data-bs-toggle="collapse" data-bs-target=".quarto-sidebar-collapse-item" aria-controls="quarto-sidebar" aria-expanded="false" aria-label="Toggle sidebar navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">      
         </a>
     </div>
@@ -217,13 +156,13 @@ window.Quarto = {
       <ul id="quarto-sidebar-section-1" class="collapse list-unstyled sidebar-section depth1 show">  
           <li class="sidebar-item sidebar-item-section">
       <div class="sidebar-item-container"> 
-            <a href="../../reference/environment-setup__ref/index.html" class="sidebar-item-text sidebar-link active">
+            <a href="../../reference/environment-setup__ref/index.html" class="sidebar-item-text sidebar-link">
  <span class="menu-text">Environment Setup</span></a>
-          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="true" aria-label="Toggle section">
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-2" role="navigation" aria-expanded="false" aria-label="Toggle section">
             <i class="bi bi-chevron-right ms-2"></i>
           </a> 
       </div>
-      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 show">  
+      <ul id="quarto-sidebar-section-2" class="collapse list-unstyled sidebar-section depth2 ">  
           <li class="sidebar-item">
   <div class="sidebar-item-container"> 
   <a href="../../reference/environment-setup__ref/application-installation.html" class="sidebar-item-text sidebar-link">
@@ -418,6 +357,12 @@ window.Quarto = {
  <span class="menu-text">Hello World With QNX</span></a>
   </div>
 </li>
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/qnx__ref/qnx-setup-raspberry-pi.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Raspberry Pi Setup with QNX</span></a>
+  </div>
+</li>
       </ul>
   </li>
           <li class="sidebar-item sidebar-item-section">
@@ -437,6 +382,40 @@ window.Quarto = {
 </li>
       </ul>
   </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a href="../../reference/sw-arch__ref/index.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">Software Architecture Reference</span></a>
+          <a class="sidebar-item-toggle text-start collapsed" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-8" role="navigation" aria-expanded="false" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-8" class="collapse list-unstyled sidebar-section depth2 ">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/sw-arch__ref/4+1-views.html" class="sidebar-item-text sidebar-link">
+ <span class="menu-text">4+1 View Model of Software Architecture</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
+          <li class="sidebar-item sidebar-item-section">
+      <div class="sidebar-item-container"> 
+            <a class="sidebar-item-text sidebar-link text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true">
+ <span class="menu-text">Serial Ref</span></a>
+          <a class="sidebar-item-toggle text-start" data-bs-toggle="collapse" data-bs-target="#quarto-sidebar-section-9" role="navigation" aria-expanded="true" aria-label="Toggle section">
+            <i class="bi bi-chevron-right ms-2"></i>
+          </a> 
+      </div>
+      <ul id="quarto-sidebar-section-9" class="collapse list-unstyled sidebar-section depth2 show">  
+          <li class="sidebar-item">
+  <div class="sidebar-item-container"> 
+  <a href="../../reference/serial__ref/serial.html" class="sidebar-item-text sidebar-link active">
+ <span class="menu-text">Serial Interfaces</span></a>
+  </div>
+</li>
+      </ul>
+  </li>
       </ul>
   </li>
     </ul>
@@ -450,10 +429,9 @@ window.Quarto = {
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/environment-setup__ref/index.html">Environment Setup</a></li></ol></nav>
+<header id="title-block-header" class="quarto-title-block default"><nav class="quarto-page-breadcrumbs quarto-title-breadcrumbs d-none d-lg-block" aria-label="breadcrumb"><ol class="breadcrumb"><li class="breadcrumb-item"><a href="../../reference/index.html">The Reference Library</a></li><li class="breadcrumb-item"><a href="../../reference/serial__ref/serial.html">Serial Ref</a></li><li class="breadcrumb-item"><a href="../../reference/serial__ref/serial.html">Serial Interfaces</a></li></ol></nav>
 <div class="quarto-title">
-<h1 class="title">Environment Setup</h1>
-<p class="subtitle lead">My approach to setting up development environments</p>
+<h1 class="title">Serial Interfaces</h1>
 </div>
 
 
@@ -470,214 +448,97 @@ window.Quarto = {
 </header>
 
 
-<!--___________________________________________________________________|
-|______________________________________________________________________|
-|        _   __   _   _ _   _   _   _         _                        |
-|   |   |_| | _  | | | V | | | | / |_/ |_| | /                         |
-|   |__ | | |__| |_| |   | |_| | \ |   | | | \_                        |
-|    _  _         _ ___  _       _ ___   _                    / /      |
-|   /  | | |\ |  \   |  | / | | /   |   \                    (^^)      |
-|   \_ |_| | \| _/   |  | \ |_| \_  |  _/                    (____)o   |
-|______________________________________________________________________|
-|______________________________________________________________________|
-|                                                                      |
-|----------------------------------------------------------------------|
-|   Copyright 2026, Rebecca Rashkin                                    |
-|   -------------------------------                                    |
-|   This code may be copied, redistributed, transformed, or built      |
-|   upon in any format for educational, non-commercial purposes.       |
-|                                                                      |
-|   Please give me appropriate credit should you choose to use this    |
-|   resource. Thank you :)                                             |
-|----------------------------------------------------------------------|
-|                                                                      |
-|______________________________________________________________________|
-|   //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\  //\^.^/\\   |
-|____________________________________________________________________-->
-<!--DESCRIPTION
-|   My new environment setup.
-|____________________________________________________________________-->
-<p>I’ve set up new development environments more times than I can count. Because I am constantly tinkering with my workspace settings, I’ve compiled these pages as a resource for my standard applications and a guide on configuring tools like Git and Visual Studio Code.</p>
-<p>This repository contains the ‘dotfiles’ and configuration files I use for various applications.</p>
-<p><a class="flux-button _3" href="https://github.com/rebeccajennifer/setup-files">Setup Files Repository</a></p>
-<section id="reference-material" class="level2">
-<h2 class="anchored" data-anchor-id="reference-material">Reference Material</h2>
-
+<section id="flash-cards" class="level2">
+<h2 class="anchored" data-anchor-id="flash-cards">Flash Cards</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 44%">
+<col style="width: 55%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Front</th>
+<th>Back</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>I2C diagram</td>
+<td>I2C - Inter-Integrated Circuit (I²C)</td>
+</tr>
+<tr class="even">
+<td>SPI diagram</td>
+<td>SPI - Serial Peripheral Interface</td>
+</tr>
+<tr class="odd">
+<td>UART diagram</td>
+<td>UART - Universal Asynchronous Receiver/Transmitter</td>
+</tr>
+<tr class="even">
+<td>SPI devices - device roles</td>
+<td>One controller, one or more peripherals</td>
+</tr>
+<tr class="odd">
+<td>I2C devices - device roles</td>
+<td>One or more controllers, one or more peripherals</td>
+</tr>
+<tr class="even">
+<td>UART devices - device roles</td>
+<td>Two devices, no controllers or peripherals</td>
+</tr>
+<tr class="odd">
+<td>I2C signals</td>
+<td>SDA = Serial Data, SCL = Serial Clock Line</td>
+</tr>
+<tr class="even">
+<td>SPI signals</td>
+<td>SCLK = Serial Clock; COPI = Controller Out, Peripheral In; CIPO = Controller In, Peripheral Out; CS = Chip Select</td>
+</tr>
+<tr class="odd">
+<td>UART signals</td>
+<td>TX = Transmit; RX = Receive; GND = Common ground between devices</td>
+</tr>
+<tr class="even">
+<td>Device selection: I2C, SPI, UART</td>
+<td>Address, Chip Select, None</td>
+</tr>
+<tr class="odd">
+<td>Asynchronous</td>
+<td>Does not use a shared clock signal between transmitter and receiver. Instead, timing is coordinated using an agreed baud rate so the receiver samples bits at the correct intervals.</td>
+</tr>
+<tr class="even">
+<td>Full duplex</td>
+<td>Controller and peripheral can send data simultaneously</td>
+</tr>
+<tr class="odd">
+<td>Half duplex</td>
+<td>A device can transmit and receive, but not at the same time</td>
+</tr>
+<tr class="even">
+<td>Duplex model: I2C, SPI, UART</td>
+<td>Half duplex, full duplex, full duplex</td>
+</tr>
+<tr class="odd">
+<td>I2C vs SPI - Speed</td>
+<td>SPI is faster</td>
+</tr>
+</tbody>
+</table>
+<p>UART Packets</p>
+<ul>
+<li>Start bit</li>
+<li>Data frame</li>
+<li>Parity bit - used as an error check mechanism</li>
+<li>Stop bits</li>
+</ul>
+</section>
+<section id="i2c-i-squared-c" class="level2">
+<h2 class="anchored" data-anchor-id="i2c-i-squared-c">I2C (“I Squared C”)</h2>
 
 
 </section>
 
-<div class="quarto-listing quarto-listing-container-grid" id="listing-listing">
-<div class="list grid quarto-listing-cols-3">
-<div class="g-col-1" data-index="0" data-listing-file-modified-sort="1783291719760" data-listing-reading-time-sort="6" data-listing-word-count-sort="1082">
-<a href="../../reference/environment-setup__ref/application-installation.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../reference/environment-setup__ref/images__env-setup/penguin-emoji.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Application Installation
-</h5>
-<div class="card-text listing-description delink">
-This is my essential checklist of applications for setting up a new development environment, including links to their official install sources.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="1" data-listing-file-modified-sort="1780182064243" data-listing-reading-time-sort="9" data-listing-word-count-sort="1654">
-<a href="../../reference/environment-setup__ref/vscode-settings.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../reference/environment-setup__ref/images__env-setup/vs-code-settings-screenshot-thumb.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Visual Studio Code Settings
-</h5>
-<div class="card-text listing-description delink">
-<p>This page provides information on the Visual Studio Code settings file and a checklist of tasks I follow when setting up this application on a new machine.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="2" data-listing-file-modified-sort="1774802672650" data-listing-reading-time-sort="8" data-listing-word-count-sort="1598">
-<a href="../../reference/environment-setup__ref/git.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top"><img src="images__env-setup/git-ssh-github-0.png" style="height: 150px;"  class="thumbnail-image card-img"/></p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Git Reference
-</h5>
-<div class="card-text listing-description delink">
-This page describes common Git commands that I have encountered in my personal coding projects. It it written as a reference, but by no means a comprehensive reference.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="3" data-listing-file-modified-sort="1780182064240" data-listing-reading-time-sort="5" data-listing-word-count-sort="825">
-<a href="../../reference/environment-setup__ref/default-shell.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../reference/environment-setup__ref/images__env-setup/vs-code-default-shell.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Default Shell
-</h5>
-<div class="card-text listing-description delink">
-This page describes how to change the default shell in several applications that are typically used in development.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="4" data-listing-file-modified-sort="1774802672650" data-listing-reading-time-sort="5" data-listing-word-count-sort="904">
-<a href="../../reference/environment-setup__ref/arduino-cli.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../reference/environment-setup__ref/images__env-setup/arduino-logo.svg" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Arduino Command Line Interface
-</h5>
-<div class="card-text listing-description delink">
-This page serves as a quick reference for the Arduino CLI commands I use most frequently. I’ve compiled these here to save time on recurring lookups.
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="5" data-listing-file-modified-sort="1780182064240" data-listing-reading-time-sort="7" data-listing-word-count-sort="1348">
-<a href="../../reference/environment-setup__ref/enable-ssh.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../reference/environment-setup__ref/images__env-setup/enable-ssh__env-setup__images/macos-enable-ssh.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Enable SSH
-</h5>
-<div class="card-text listing-description delink">
-<p>This page describes how to enable ssh on a computer.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="6" data-listing-file-modified-sort="1778453379292" data-listing-reading-time-sort="7" data-listing-word-count-sort="1303">
-<a href="../../reference/environment-setup__ref/font-install.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../reference/environment-setup__ref/images__env-setup/font-install__env-setup__images/04__draw.io-font-change-01.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-Font Install
-</h5>
-<div class="card-text listing-description delink">
-<p>Sometimes if you open a file that was created on another machine, the font might not show up correctly. This page describes how to install a font on your machine.</p>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-<div class="g-col-1" data-index="7" data-listing-file-modified-sort="1780182064240" data-listing-reading-time-sort="5" data-listing-word-count-sort="918">
-<a href="../../reference/environment-setup__ref/putty.html" class="quarto-grid-link">
-<div class="quarto-grid-item card h-100 card-left">
-<p class="card-img-top">
-<img loading="lazy" src="../../reference/environment-setup__ref/images__env-setup/putty-config__env-setup__images/putty-config-0-session-0.png" class="thumbnail-image card-img" style="height: 150px;">
-</p>
-<div class="card-body post-contents">
-<h5 class="no-anchor card-title listing-title">
-PuTTY Configuration
-</h5>
-<div class="card-text listing-description delink">
-This page describes how to access a configuration file for a saved PuTTY session. Each saved session is saved in a <code>*.reg</code> file and can be imported or exported through the…<code></code>
-</div>
-<div class="card-attribution card-text-small start">
-<div class="listing-author">
-
-</div>
-</div>
-</div>
-</div></a>
-</div>
-</div>
-<div class="listing-no-matching d-none">No matching items</div>
-</div></main> <!-- /main -->
+</main> <!-- /main -->
 <!--___________________________________________________________________|
 |______________________________________________________________________|
 |        _   __   _   _ _   _   _   _         _                        |
@@ -780,7 +641,7 @@ This page describes how to access a configuration file for a saved PuTTY session
     }
       var localhostRegex = new RegExp(/^(?:http|https):\/\/localhost\:?[0-9]*\//);
       var mailtoRegex = new RegExp(/^mailto:/);
-        var filterRegex = new RegExp("https:\/\/rebeccajennifer\.com");
+        var filterRegex = new RegExp('/' + window.location.host + '/');
       var isInternal = (href) => {
           return filterRegex.test(href) || localhostRegex.test(href) || mailtoRegex.test(href);
       }

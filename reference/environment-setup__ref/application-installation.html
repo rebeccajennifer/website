@@ -409,6 +409,7 @@ ul.task-list li input[type="checkbox"] {
   <li><a href="#windows" id="toc-windows" class="nav-link" data-scroll-target="#windows">Windows</a>
   <ul>
   <li><a href="#turn-off-alert-sounds" id="toc-turn-off-alert-sounds" class="nav-link" data-scroll-target="#turn-off-alert-sounds">Turn off alert sounds</a></li>
+  <li><a href="#show-hidden-files" id="toc-show-hidden-files" class="nav-link" data-scroll-target="#show-hidden-files">Show Hidden Files</a></li>
   <li><a href="#cygwin" id="toc-cygwin" class="nav-link" data-scroll-target="#cygwin">Cygwin</a></li>
   <li><a href="#software-downloads" id="toc-software-downloads" class="nav-link" data-scroll-target="#software-downloads">Software Downloads</a></li>
   </ul></li>
@@ -474,25 +475,23 @@ ul.task-list li input[type="checkbox"] {
 </section>
 <section id="install-from-apt" class="level3">
 <h3 class="anchored" data-anchor-id="install-from-apt">Install From <code>apt</code></h3>
-<p>Use <code>sudo</code> before all <code>apt</code> commands if you do not have a root password.</p>
-<pre><code>su
-apt install build-essential
-apt install cmake
-apt install vim
-apt install emacs
-apt install nano
-apt install gedit
-apt install git
-apt install zsh
-apt install screen
-apt install curl
-apt install tmux
-apt install python3-pip
-apt install graphviz # Make block diagrams using a scripting language</code></pre>
+<pre><code>sudo apt install build-essential
+sudo apt install cmake
+sudo apt install vim
+sudo apt install emacs
+sudo apt install nano
+sudo apt install gedit
+sudo apt install git
+sudo apt install zsh
+sudo apt install screen
+sudo apt install curl
+sudo apt install tmux
+sudo apt install python3-pip
+sudo apt install graphviz</code></pre>
 </section>
 <section id="install-from-snap" class="level3">
 <h3 class="anchored" data-anchor-id="install-from-snap">Install From <code>snap</code></h3>
-<p><code>sudo snap install discord</code></p>
+<p><code>sudo snap install discord sudo snap install kolourpaint</code></p>
 </section>
 <section id="install-from-app-center" class="level3">
 <h3 class="anchored" data-anchor-id="install-from-app-center">Install From App Center</h3>
@@ -559,10 +558,14 @@ apt install graphviz # Make block diagrams using a scripting language</code></pr
 <section id="turn-off-alert-sounds" class="level3">
 <h3 class="anchored" data-anchor-id="turn-off-alert-sounds">Turn off alert sounds</h3>
 <p>Windows makes an alert sound every time tab complete doesn’t work or other silly things. Turn it off in settings.</p>
-<p>Go to Audio - change other sound settings or</p>
-<p>Sound -&gt; sound control panel -&gt; Sounds tab -&gt; Sound Scheme dropdown -&gt; No Sounds</p>
-<p>In the window labeled <code>Sound</code> -&gt; tab labeled <code>Sounds</code> select the menu option <code>No Sounds</code></p>
+<p>Go to Audio - change other sound settings</p>
+<p>or</p>
+<p><code>Sound &gt; sound control panel &gt; Sounds tab &gt; Sound Scheme dropdown &gt; No Sounds</code>.</p>
 <p><img src="./images__env-setup/windows-alert-sounds.png" class="img-fluid"></p>
+</section>
+<section id="show-hidden-files" class="level3">
+<h3 class="anchored" data-anchor-id="show-hidden-files">Show Hidden Files</h3>
+<p>Open File Explorer and click <code>View &gt; Show &gt; Hidden items</code>.</p>
 </section>
 <section id="cygwin" class="level3">
 <h3 class="anchored" data-anchor-id="cygwin">Cygwin</h3>
